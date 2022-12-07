@@ -1,0 +1,54 @@
+.heading {
+    text-align: center;
+    margin: 15px;
+   }
+   
+   .contact-form {
+    margin: 7vh 0;
+   }
+   
+   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   }
+   
+   .field {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .label {
+    margin-left: 10px;
+   }
+   
+   .input-details {
+    margin: 5px 10px;
+    padding: 5px 0 3px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+   }
+
+   footer {
+    line-height: 50px;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    overflow: hidden;
+   }
+   footer span {
+    padding: 20px;
+    float: left;
+    text-align: center;
+   }
+   footer a {
+     text-decoration:none;
+     color: white;
+   }

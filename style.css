@@ -1,0 +1,147 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#load{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	background: #fff url(/img/Loading_icon.gif) no-repeat center;
+	z-index: 9999999;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.logo {
+  background-color: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Start of Header */
+
+.logo {
+	width: 50px;
+	height: 50px;
+	margin: 0 5px;
+	/* border-radius: 50%; */
+}
+
+.navbar {
+	background-color: #64d8d8;
+}
+
+/* Start of Our Team Section */
+
+.head{
+	padding-top: 10vh;
+}
+
+#projects {
+	background-color: #62cfcfc8;
+}
+
+.team-grp {
+	display: flexbox;
+	justify-content: center;
+}
+
+.team .team-1 {
+	text-align: center;
+	margin-bottom: 80px;
+	position: relative;
+}
+
+.team .team-1 .pic {
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.team .team-1 img {
+	transition: all ease-in-out 0.4s;
+}
+
+.team .team-1:hover img {
+	transform: scale(1.1);
+}
+
+.team .team-1 .team-info {
+	position: absolute;
+	bottom: -48px;
+	left: 20px;
+	right: 20px;
+	background: #1EE196;
+	padding: 15px 0;
+	border-radius: 4px;
+}
+
+.team .team-1 h4 {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #fff;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.team .team-1 h4:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 1px;
+	background: #1d3501;
+	bottom: 0;
+	left: calc(50% - 25px);
+}
+
+.team .team-1 span {
+	font-style: italic;
+	display: block;
+	font-size: 13px;
+	color: #fff;
+}
+
+.team .team-1 .social {
+	margin-top: 15px;
+}
+
+.team .team-1 .social a {
+	transition: color 0.3s;
+	color: #01290d;
+}
+
+.team .team-1 .social a:hover {
+	color: #fff;
+}
+
+.team .team-1 .social i {
+	font-size: 16px;
+	margin: 0 2px;
+}
+
+/* End of Our Team Section */
+
+
+/* Start of Footer */
+
+footer{
+	width:100vw;
+	background-color: #62cfcfe8;
+	padding: 20px 0px 20px 0px;
+}
+
+/* End of Footer */
