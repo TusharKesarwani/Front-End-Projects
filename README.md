@@ -1,6 +1,6 @@
 # Front-End-Projects
 
-![Front-End-Projects](https://socialify.git.ci/TusharKesarwani/Front-End-Projects/image?description=1&descriptionEditable=A%20place%20for%20Developers.%20%0A%F0%9F%8F%8B%EF%B8%8F%0A%F0%9F%8F%8B%EF%B8%8F&font=Bitter&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+![Front-End-Projects](https://socialify.git.ci/TusharKesarwani/Front-End-Projects/image?description=1&descriptionEditable=A%20place%20for%20Developers&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
 <p align="center">
   <a href="https://frontendprojects.netlify.app/">
