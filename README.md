@@ -56,13 +56,13 @@ You can refer to the following articles on **_basics of Git and Github and also 
  <h2 align=center>Project Mentors</h2>
 <table align="center">
 	<tr>
-    <td align="center">
-            <a href="https://github.com/TusharKesarwani">
-              <img src="https://avatars.githubusercontent.com/u/92527686?v=4" width="100px" alt=""/><br />
-              <sub><b>TusharKesarwani</b></sub>
-            </a>
-   </td>
-  </tr>
+		<td align="center">
+			<a href="https://github.com/TusharKesarwani">
+				<img src="https://avatars.githubusercontent.com/u/92527686?v=4" width="100px" alt=""/><br />
+				<sub><b>TusharKesarwani</b></sub>
+			</a>
+		</td>
+	</tr>
 </table>
 
 <h2 align=center>Project Contributors⭐</h2> 
@@ -75,3 +75,9 @@ You can refer to the following articles on **_basics of Git and Github and also 
     </td>
   </tr>
 </table>
+
+<hr>
+
+<h1 align=center>Happy Coding 👨‍💻</h1>
+
+Show some ❤️&nbsp; by giving the star to this repo
