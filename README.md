@@ -8,6 +8,47 @@
    </a>
 </p>
 
+
+<div align="center">
+ <p>
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=TusharKesarwani%2FFront-End-Projects%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/TusharKesarwani/Front-End-Projects)
+![GitHub Repo stars](https://img.shields.io/github/stars/TusharKesarwani/Front-End-Projects)
+![GitHub contributors](https://img.shields.io/github/contributors/TusharKesarwani/Front-End-Projects)
+![GitHub last commit](https://img.shields.io/github/last-commit/TusharKesarwani/Front-End-Projects)
+  
+![GitHub repo size](https://img.shields.io/github/repo-size/TusharKesarwani/Front-End-Projects)
+
+![Github](https://img.shields.io/github/license/TusharKesarwani/Front-End-Projects)
+![GitHub issues](https://img.shields.io/github/issues/TusharKesarwani/Front-End-Projects)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/TusharKesarwani/Front-End-Projects)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/TusharKesarwani/Front-End-Projects)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TusharKesarwani/Front-End-Projects)
+ </p>
+</div>
+ 
+ ## 📌 Open Source Program
+
+ ### This project is a part of following Open Source Programs
+
+ ---
+
+<div align="center">
+
+![SWOC 3.0](https://raw.githubusercontent.com/TusharKesarwani/Front-End-Projects/main/img/9630b803-7d9b-4b19-ae68-cdbfc16c8254.png)
+
+</div>
+
+
+ ---
+
+
+
+
+
 <h2 align= center> Tech Stacks used ✨ </h2>
 
 <p align="center">
@@ -41,18 +82,9 @@ However some people tend to spam the repository with irrelevant pull requests an
 In case we find your PR not relevant or spam, we will mark it as invalid and it will not be counted towards SWoC 3.0.
 
 
-### This project is part of Social Winter of Code 3.0
-
-<a href="https://swoc.getsocialnow.co/" target="_blank">
-  <img alt="SWoC 3.0" width=100% src="https://raw.githubusercontent.com/TusharKesarwani/Front-End-Projects/main/img/9630b803-7d9b-4b19-ae68-cdbfc16c8254.png">
-</a>
-
-
-
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-of-tushar.netlify.app)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tushar104)
-
 
 
 <h2 align=center>⭐Stars Chart</h2>  
