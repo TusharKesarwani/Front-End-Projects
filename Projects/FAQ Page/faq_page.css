@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 700px;
+    margin: 2rem 0;
+}
+
+.container h1{
+    color: #555;
+}
+
+.container .stack{
+    background: white;
+    padding: 0 20px 20px;
+    border-radius: .3rem;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0.307);
+    position: relative;
+}
+
+.stack label{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stack label h2{
+    width: 35px;
+    height: 35px;
+    background: black;
+    color: white;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack label::after{
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+    color: rgb(118, 115, 115);
+}
+
+.stack:hover label::after{
+    color: rgb(37, 36, 36);
+    transition: .5s;
+}
+
+.stack input:checked ~ label::after{
+    transform: rotate(135deg);
+}
+
+.stack input{
+    appearance: none;
+}
+
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.stack input:checked ~ .content{
+    max-height: 100vh;
+}
