@@ -1,0 +1,216 @@
+ /* body selectors  */
+h1 {
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+/* title css code */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.container-fluid1 {
+  padding: 3% 15% 14%;
+}
+
+/* Navigation bar CSS code */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat-Light";
+  font-size: 1.2rem;
+}
+
+/* Download Buttons Code */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  margin-left: 40px;
+  position: absolute;
+}
+
+.z-index-changes {
+  position: relative;
+}
+
+/*##########################################################*/
+/* Features section css code */
+.features-text {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#features {
+  padding: 7% 15%;
+  /* margin:200px 200px 200px 200px; */
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.features-icon {
+  color: #ef8172;
+  font-size: 4rem;
+  padding: 0 0 5%;
+}
+
+.features-icon:hover {
+  color: #ff4c68;
+}
+
+.features-subtitle-text {
+  color: #8f8f8f;
+}
+
+.check {
+  padding-left: 90px;
+}
+
+.bullseye {
+  padding-left: 105px;
+}
+
+.heart {
+  padding-left: 100px;
+}
+
+.feat-text1 {
+  padding-left: 40px;
+}
+
+.feat-text2 {
+  padding-left: 40px;
+}
+
+/*##########################################################*/
+/* Testimonials CSS code */
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonials-text {
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.testimonials-img {
+  width: 10%;
+  border-radius: 100%;
+  /*to make the img convert into a circle */
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/*##########################################################*/
+/* Press */
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/*##########################################################*/
+/* pricing CSS code */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-button {
+  width: 100%;
+}
+
+.pricing-column {
+  padding: 3% 2%
+}
+
+.pricing-header-txt {
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.pricing-subtitle-txt {
+  color: #8f8f8f;
+}
+
+/*##########################################################*/
+/*social media icons*/
+.social-media{
+  cursor: pointer;
+}
+
+/*##########################################################*/
+@media (max-width:1020px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/*##########################################################*/
+/* call to action section CSS Code */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.cta-txt {
+  font-family: 'Montserrat';
+  color:#fff;
+  font-size: 3.5rem; /* increase or decrease to make the text to stay in the same line or move to next line */
+  font-weight: 700;
+  border-right-width: 50px;
+  padding: 50px 30px 20px 30px;
+  line-height: 1.5;
+}
+
+/*##########################################################*/
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding:7% 15%;
+}
+
+.social-media {
+  padding:1%;
+  padding-bottom: 3%;
+}
