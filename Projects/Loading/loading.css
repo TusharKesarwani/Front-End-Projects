@@ -1,0 +1,49 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(191, 163, 163), rgb(32, 18, 225));
+}
+.cart-btn{
+    background: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    color: blue;
+}
+.cart-btn .check{
+    height: 32px;
+    width: 32px;
+    background: blue;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+}
+.cart-btn .icon{
+    display: none;
+}
+.cart-btn.clicked .icon{
+    display: block;
+}
+.icon.rotate.spin{
+    animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
