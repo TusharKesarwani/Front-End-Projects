@@ -1,0 +1,67 @@
+body {
+    
+    background-color: palevioletred;
+    background-attachment: fixed;
+    
+}
+h1{
+    color: #fff;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+#converter{
+
+    background-color: #ffff;
+    margin: auto;
+    padding: 40px;
+    height: 100px;
+    width: 500px;
+    margin-top: 2.5%;
+    
+}
+.bo{
+    display: inline-block;
+    
+}
+
+
+#cel{
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 20%;
+    width: 120%;
+    
+    
+}
+
+#value{
+    padding:2%;
+    margin-left: 50%;
+    text-align: center;
+    font-weight: bolder;
+    width: 120%;
+    
+    
+
+}
+#yes{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 20%;
+
+
+
+}
+#no{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 70%;
+
+
+
+}
+
