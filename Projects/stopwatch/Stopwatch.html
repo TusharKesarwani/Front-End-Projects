@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Stopwatch Timer application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Stopwatch</h1>
+    </div>
+    <div class="wrapper">
+      <div class="time">
+        <span class="hour">00</span>
+        <span class="colon">:</span>
+        <span class="minute">00</span>
+        <span class="colon">:</span>
+        <span class="second">00</span>
+        <span class="colon ms-colon">:</span>
+        <span class="millisecond">00</span>
+      </div>
+      <div class="buttons">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+
+    <script>
+      let intervel;
+        let ms= document.querySelector(".millisecond").innerText;
+        let s= document.querySelector(".second").innerText;
+        let m= document.querySelector(".minute").innerText;
+        let h= document.querySelector(".hour").innerText;
+      document.querySelector(".start").addEventListener("click",()=>{
+        start();
+      })
+      document.querySelector(".stop").addEventListener("click",()=>{
+        stop();
+      })
+        document.querySelector(".reset").addEventListener("click",()=>{
+        ms=0;
+        document.querySelector(".millisecond").innerText=ms;
+        s=0;
+        document.querySelector(".second").innerText=s;
+        m=0;
+        document.querySelector(".minute").innerText=m;
+        h=0;
+        document.querySelector(".hour").innerText=h;
+      })
+      function start(){
+          intervel=setInterval(() => {
+           ms++;
+           document.querySelector(".millisecond").innerText=ms;
+           if(ms>999){
+            s++;
+            document.querySelector(".second").innerText=s;
+            ms=0;
+           } 
+           else if(s>59){
+            m++;
+            document.querySelector(".minute").innerText=m;
+            s=0;
+           }
+           else if(m>59){
+            h++;
+            document.querySelector(".hour").innerText=h;
+            m=0;
+           }
+           else if(h>12){
+            h=0;
+            m=0;
+            s=9;
+            ms=0;
+           }
+          },1);         
+        }
+        function stop(){
+          clearInterval(intervel);
+        }
+    </script>
+  </body>
+</html>
