@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    font-family: JetBrains Mono, monospace;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111111;
+    color: #fff;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-family: JetBrains Mono, monospace;
+    font-size: 16px;
+    line-height: 24px
+}
+
+.heading {
+    padding-bottom: 50px;
+    font-size: 80px;
+    line-height: 25vh;
+}
+
+.input-box{
+    position: relative;
+    width: 500px;
+    border-radius: 10px;
+    background: #fff;
+    z-index: 1000;
+}
+
+.input-box input{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 20px 0 20px;
+    padding: 0 20px;
+    border: none;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    outline: none;
+}
+
+#button{
+    position: relative;
+    margin-top: 50px;
+    padding: 15px;
+    background: #42433f;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#button:active{
+    background: #fff;
+    color: #000;
+}
