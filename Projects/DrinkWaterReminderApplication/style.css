@@ -1,0 +1,86 @@
+* {
+  /* border:1px solid black; */
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2980b9;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+.mainHead,
+.subHead,
+.indication {
+  text-align: center;
+  color: white;
+  margin: 10px 0px;
+  padding: 0px 40px;
+}
+.mainHead{
+    font-size: 35px;
+}
+.indication {
+  margin: 20px 0px;
+}
+.bigGlass {
+  background-color: white;
+  background-color: #2e86de;
+  height: 240px;
+  width: 110px;
+  margin: 15px auto;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid darkblue;
+  border-top: 0px;
+}
+.bigGlass div{
+    height: 30px;
+    width: 105px;
+    text-align: center;
+    font-style: italic;
+    background-color: white;
+}
+#bigGlassParts-8{
+  border-radius: 0px 0px 15px 15px;
+
+}
+.bigGlass p{
+    color: black;
+    font-size: 20px;
+}
+.smallGlassContainer {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+  padding: 0px 40px;
+}
+.smallGlass {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  border: 3px solid darkblue;
+  border-top: 0px;
+  background-color: #2e86de;
+  font-size: 14px;
+  color:white
+}
+.smallGlassFlip{
+    background-color: white;
+    color: black;
+}
+
+
+/* Priyanshu singh 
+reach me : https://github.com/CHEEMS-1206 */
