@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    color: white;
+}
+.card button{
+    background-color:rgb(233, 188, 74);
+    border: none;
+  }
+  h1{
+    font:"Apple Chancery, cursive";
+  }
+  .container2{
+    display: flex;
+    flex-wrap:wrap;
+    color:aliceblue;
+    justify-content:center;
+    }
+  .text{
+    padding:30px;
+    width:620px;
+    font-size:18px;
+    height: auto;
+    align-items:center;
+    background-color:#576956 ;
+    margin-left:10px;
+    }
+  .image img{
+    width:610px;
+    margin-left:5px;
+    height:356.59px;   
+    margin-right: 5px;
+    align-items:center;
+    } 
+  .foot {
+    background-color: black;
+  }
+  #d1{
+    color:cornflowerblue;
+  }
+
+.page-footer{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    font-size:10px;
+  }
+  .imaged{
+    max-width:fit-content;
+  }
+  .container3{
+    align-content: center;
+    color: black;
+    justify-content:center;
+    max-width: 100%;
+    padding: 10px;
+    margin: 2px;
+  }
+  .container4{
+    display:flex;
+    height:auto;
+  }
+  .container4 img{
+    padding:10px;
+    width:80px;
+  }
+  .container1{
+    align-content: center;
+    color: black;
+    justify-content:center;
+    padding: 20px;
+    margin: 15px;
+  }
+  .over {
+    position:relative;
+    margin-left: 5px;
+    bottom:310px;
+    background: rgba(188, 184, 184, 0.147);
+    color: white;
+    width:100%;
+    max-width: 100%;
+    transition: .5s ease;
+    opacity:-1;
+    color:black;
+    font-style: italic;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size:40px;
+    padding: 5px;
+    text-align:left;
+  }
+  .container1 .over{
+    opacity: 1;
+    }
