@@ -1,0 +1,40 @@
+#grad {
+    height: 100%;
+    background-image: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgb(0, 94, 120) 90.7% );
+  }
+
+
+body {
+    text-align: center;
+  }
+  h1{
+    color: #EDf5e1;
+  }
+  
+  textarea {
+    width: 32%;
+    min-height: 250px;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+    outline: none;
+    font-family: Courier, sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    
+    ;
+  }
+  textarea::placeholder {
+    color: rgb(255, 255, 255);
+  }
+  
+  iframe {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    height: 15em;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+  }
+
+  
