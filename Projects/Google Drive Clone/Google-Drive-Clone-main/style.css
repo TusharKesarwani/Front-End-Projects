@@ -1,56 +1,73 @@
-body{
-  background-color: #0f0f0f0;
+body {
+  background-color: #f0f0f0;
   font size: 13px;
 }
-.card, .card-panel {
-  padding: 15px,20px;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+
+.card,
+.card-panel {
+  padding: 15px, 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
+
 .container-fluid {
   padding: 1rem 2.5rem;
   margin: auto;
 }
+
 .row {
- margin: 0 -0.75rem;
+  margin: 0 -0.75rem;
 }
-.main{
+
+.main {
   position: absolute;
   width: calc(100% -250px);
   top: 125px;
   margin-left: 250px;
 }
-.subheader{
-  color: rgba(0,0,0,0.54);
+
+.subheader {
+  color: rgba(0, 0, 0, 0.54);
   font-weight: 500;
 }
+
 /* nav */
 nav {
-  box-shadow: 0 1px 8px rgba(0,0,0,0,3);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0, 3);
 }
-nav ul li{
+
+nav ul li {
   text-align: :center;
-}nav.ul.right {
-  padding-right: 12px ;
 }
-nav ul.right.li{
+
+nav.ul.right {
+  padding-right: 12px;
+}
+
+nav ul.right.li {
   max-width: 48px;
 }
-nav ul a{
-  padding-right: 0 12px;;
+
+nav ul a {
+  padding-right: 0 12px;
+  ;
 }
-nav ul a img{
+
+nav ul a img {
   height: 32px;
   width: 32px;
   vertical-align: middle;
   margin-left: -5px;
 }
-.nav-wrapper ul a:hover{
+
+.nav-wrapper ul a:hover {
   background-color: transparent;
 }
-.nav-wrapper .title{
+
+.nav-wrapper .title {
   font-size: 1.4rem;
 }
-.nav-wrapp .btn-flat{
+
+.nav-wrapp .btn-flat {
   background-color: #4285f4 !important;
   font-size: 13px;
   font-weight: 500;
@@ -58,27 +75,32 @@ nav ul a img{
   line-height: 30px;
   width: 94px
 }
-.nav-2, .nav-2 i{
+
+.nav-2,
+.nav-2 i {
   height: 56px !important;
   line-height: 56px !important;
   min-height: : 56px !important;
 }
-.search-wrapper{
+
+.search-wrapper {
   margin: 10px auto 0 170px;
   width: calc(100% -450px);
   max-width: 650px;
   height: 46px;
   position: fixed;
 }
-.search-wrapper i{
+
+.search-wrapper i {
   color: #757575;
   position: absolute;
   font-size: 24px;
   top: 5px;
-  left:24px;
+  left: 24px;
   line-height: 36px !important;
 }
-input[type=search]:not(.browser-default){
+
+input[type=search]:not(.browser-default) {
   display: block;
   padding: 11px 8px 11px 72px;
   width: 100%;
@@ -90,13 +112,16 @@ input[type=search]:not(.browser-default){
   border-radius: 2px;
   color: #757575;
 }
-input[type=search]:focus{
+
+input[type=search]:focus {
   border-bottom: : none !important;
   box-shadow: none !important;
 }
-input[type="search"]::placeholder{
+
+input[type="search"]::placeholder {
   color: #757575;
 }
+
 /*sidenav*/
 .side-nav.floating {
   width: 250px;
@@ -112,14 +137,17 @@ input[type="search"]::placeholder{
   background: transparent;
   box-shadow: none;
 }
-.side-nav .active{
-  background-color: rgba(0,0,0,0.05);
+
+.side-nav .active {
+  background-color: rgba(0, 0, 0, 0.05);
 }
-.side-nav .active a{
+
+.side-nav .active a {
   color: #212121;
   font-weight: 500;
 }
-.side-nav .subheader{
+
+.side-nav .subheader {
   line-height: 24px;
   height: 32px;
   margin: 0;
@@ -128,30 +156,37 @@ input[type="search"]::placeholder{
   font-size: 13px;
   font-weight: normal;
 }
-.size-nav li a, .side-nav li a i.material-icons {
+
+.size-nav li a,
+.side-nav li a i.material-icons {
   height: 40px;
   line-height: 40px;
 }
-.side-nav li a i.material-icons{
+
+.side-nav li a i.material-icons {
   margin-right: 24px;
 }
-.side-nav li a{
+
+.side-nav li a {
   padding: 0 16px;
   font-weight: normal;
   font-size: 13px;
   color: #616161;
 }
-side-nav li a:hover{
+
+side-nav li a:hover {
   border-radius: 2px;
 }
+
 /*folders*/
-.folder{
+.folder {
   width: 185px;
   display: inline-block;
   margin: 15px 20px 0;
   font-weight: 500;
 }
+
 .folder i {
-  color: rgba(0,0,0,0,54);
+  color: rgba(0, 0, 0, 0, 54);
   margin-top: -3px;
 }
