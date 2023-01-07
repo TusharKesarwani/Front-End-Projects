@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+
+.bg-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.3)),
+        url('https://images.pexels.com/photos/8853499/pexels-photo-8853499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
+}
+
+@tailwind utilities;
