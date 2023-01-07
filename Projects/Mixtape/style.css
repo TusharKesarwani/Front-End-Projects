@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:ital@1&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #222222;
+  color: azure;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  top: 0;
+  position: sticky;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  height: 50px;
+  background-color: black;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: cyan;
+}
+.active {
+  color: cyan;
+}
+.brand img {
+  width: 50px;
+  padding: 0 5px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.bottom {
+  position: sticky;
+  height: 150px;
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons i {
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.songInfo {
+  left: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#myProgressBar {
+  width: 50vw;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.container {
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("background.jpg");
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background: rgba(123, 238, 234, 0.6);
+  width: 100%;
+  color: rgb(18, 5, 31);
+  margin: 12px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.songItem:hover {
+  height: 50px;
+  display: flex;
+  background: rgba(115, 225, 247, 1);
+  width: 100%;
+  color: rgb(18, 5, 31);
+  margin: 12px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.songItem img {
+  width: 45px;
+  margin: 0 5px;
+  border-radius: 70px;
+}
+
+.timestamp {
+  margin-right: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin-top: 35px;
+}
+
+.songInfo img {
+  width: 150px;
+  height: 50px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.songName {
+  font-size: 16px;
+}
+.abt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+.card {
+  background-color: black;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 25vw;
+  height: 30rem;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 8px 0 rgba(115, 225, 247, 1);
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(115, 225, 247, 1);
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 200px;
+}
+.form-card {
+  background-color: black;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 25rem;
+  height: 30rem;
+  border-radius: 12px;
+  padding: 24px;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px 0 rgba(115, 225, 247, 1);
+}
+.form-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(115, 225, 247, 1);
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+.box {
+  padding: 10px;
+  margin: 1rem 0;
+  background: rgba(51, 51, 51, 0.4);
+  color: #fff;
+  text-transform: none;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+.btn {
+  padding: 0.7rem 1.5rem;
+  background: rgba(51, 51, 51, 0.4);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  border-radius: 5rem;
+}
+.btn:hover {
+  padding: 0.7rem 1.5rem;
+  background: rgba(122, 249, 232, 0.4);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  border-radius: 5rem;
+}
+@media (max-width: 925px) {
+  .bottom {
+    height: 200px;
+  }
+  .card {
+    min-height: 72vh;
+    width: 70%;
+  }
+  .form-card {
+    min-height: 72vh;
+    width: 70%;
+  }
+  .abt {
+    flex-direction: column;
+  }
+}

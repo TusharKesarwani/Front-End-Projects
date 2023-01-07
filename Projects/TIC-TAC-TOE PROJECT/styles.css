@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Indie Flower', 'Comic Sans', cursive;
+}
+
+html {
+  font-size: 10px;
+}
+
+#heading {
+  text-align: center;
+    margin-top: 15px;
+  color: white;
+  font-size: 8rem;
+}
+
+#game-area {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#matrix {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-rows: repeat(3, 12rem);
+  grid-template-columns: repeat(3, 12rem);
+}
+
+.box {
+  border: 2px white;
+  font-size: 6rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F4FFFF;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.2px);
+ -webkit-backdrop-filter: blur(15.2px);
+
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+#reset {
+  height: 5rem;
+  width: 10rem;
+  font-size: 3rem;
+  text-align: center;
+  border: none;
+  background: #ed4e6e;
+  color: #fff;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 2px;
+  border-radius: 12px;
+}
+
+#reset:hover {
+  background: #2c3e52;
+}
+
+#information {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 6rem;
+  color: white;
+}
+
+#player-turn {
+  font-size: 4.5rem;
+}
