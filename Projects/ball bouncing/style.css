@@ -1,0 +1,49 @@
+#ball{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 700px;
+}
+
+button{
+    height: 80px;
+    width: 150px;
+}
+
+@keyframes slide-top1{
+    0% {
+        transform: translateY(0);
+        
+    }
+    50% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-top2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-350px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-top3{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
