@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url("bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+    box-shadow: 0 8px 32px 0 rgba(147, 49, 169, 0.37);
+    border: 1px solid rgba(17, 198, 195, 0.3);
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 100px;
+    height: 650px;
+    width: 600px;
+}
+
+.heading {
+    margin: 10px;
+    text-align: center;
+}
+
+.heading2 {
+    margin: 10px;
+}
+
+.nfonts {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-family: "Crimson Pro&family", sans-serif;
+}
+
+.input {
+ 
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-overflow: ellipsis;
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 400px;
+    font-family: "Crimson Pro&family", sans-serif;
+    text-decoration-color: antiquewhite;
+}
+
+.alltasks {
+    margin-top: 10px;
+    position: relative;
+    margin-left: 30px;
+    width: 500px;
+    overflow-y: scroll;
+    height: 350px;
+    /* border: 1px solid rgb(2, 2, 2); */
+}
+
+.divl {
+    background-color: white;
+    color: #472183;
+    border-radius: 9990px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add {
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 5px;
+    width: 100px;
+    height: 32px;
+    transition: all 0.5s;
+    color: black;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.add:hover {
+    margin-left: 5px;
+    transform: scale(1.1);
+    color: white;
+    background-color: #4B56D2;
+}
+
+.addv {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px;
+    width: 100px;
+    height: 32px;
+    transition: all 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+.add-clear {
+    border: 0.5px solid black;
+    background-color: transparent;
+    margin-left: 260px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 32px;
+    transition: all 0.5s;
+    color: black;
+    border-radius: 40px;
+
+}
+
+.add-clear:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: #4B56D2;
+}
+
+.close-btn {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-image: url("close1.png");
+}
+
+.iop {
+    font-family: "Crimson Pro&family", sans-serif;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #472183;
+}
+
+.search-bar {
+    margin-left: 30px;
+    padding: 3px;
+    border: none;
+    width: 493px;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+.searchsec {
+    display: flex;
+    flex-direction: row;
+}
+
+::-webkit-input-placeholder { 
+    color:    black;
+}
