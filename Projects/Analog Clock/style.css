@@ -9,6 +9,7 @@ html {
 
   body {
     background: url('BeFunky-photo.jpg');
+    background-size: cover;
     margin: 0;
     font-size: 2rem;
     display: flex;
@@ -18,8 +19,8 @@ html {
   }
 
   .clock {
-    width: 30rem;
-    height: 30rem;
+    width: 60rem;
+    height: 60rem;
     border: 20px solid white;
     border-radius: 50%;
     margin: 50px auto;
