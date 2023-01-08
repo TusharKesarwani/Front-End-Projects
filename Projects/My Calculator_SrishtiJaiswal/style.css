@@ -1,0 +1,39 @@
+.button{
+    height: 60px ;
+    width: 80px;
+    background-color: lightseagreen;
+    border: 2px solid  black;
+    padding: 0;
+    margin: 8px 8px;
+    color: purple;
+    font-size: 1.5rem;
+    border-radius: 75px;
+}
+
+.button:hover{
+    color: blue;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.color{
+    color: black;
+}
+.bg-color{
+    background-color:orange;
+}
+.input{
+    margin: 20px;
+    height: 150px;
+        width: 350px;
+        border-radius: 9px;
+        padding: 2px 4px;
+        font-size: 3rem;
+       
+        
+}
+.input[type=text] {
+    word-wrap: break-word;
+    word-break: break-all;
+    /* height: 80px; */
+}
