@@ -2,6 +2,13 @@
 *{
     font-family: 'DynaPuff', cursive;
 }
+body{
+    background-image: url('images/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}
 .scoreBoard{
     font-size: 5vw;
 }
