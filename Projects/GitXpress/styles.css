@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+
+
+*{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+}
+
+@media (max-width:260px) {
+      html{
+            font-size: 14px;
+      }
+      #inputform{
+            flex-direction: column;
+      }
+
+}
+
+body{
+      width: 100%;
+      min-height: 100vh;
+}
+/* Heaader section */
+
+.main-header{
+      font-weight: 900;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      z-index: 1000;
+      display: flex;
+      width: 100%;
+      min-height: 40px;
+      justify-content: space-between;
+      align-items: center;
+      padding:0.5em;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.569);
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.483);
+      background-color: rgb(225, 223, 213);
+}
+.main-header img{
+      border-radius: 50%;
+}
+.main-header p{
+      margin:0.3em;
+      display: flex;
+      align-items: center;
+}
+.logo{
+      display: flex;
+}
+
+/* search section */
+.search-section{
+      font-family: 'Noto Sans', sans-serif;
+      background-color: rgba(205, 255, 212, 0.392);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+}
+#inputform{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+}
+#userid{
+      padding:0.7em;
+      border-radius: 10px;
+      outline: none;
+      border: 2px solid rgba(0, 0, 0, 0.332);
+      margin: 0.4em 0.4em;
+}
+#userid:hover{
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.483); 
+}
+::placeholder {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: bolder;
+}
+
+#submitbtn{
+      background-color: rgb(26, 207, 207);
+      padding:0.7em;
+      border-radius: 10px;
+      outline: none;
+      border: 2px solid rgba(0, 0, 0, 0.332);  
+
+}
+
+#submitbtn:hover{
+      background-color: rgba(26, 207, 207, 0.722);     
+}
+
+
+/* Loader */
+
+.loader{
+      text-align: center;
+      display:none;
+}
+h1 {
+      margin: 0;
+      padding: 0;
+      font-family: ‘Arial Narrow’, sans-serif;
+      font-weight: 100;
+      font-size: 1.1em;
+      color: #060606;
+    }
+    
+    span {
+      position: relative;
+      top: 0.63em;  
+      display: inline-block;
+      text-transform: uppercase;  
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    
+    .let1 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.2s;
+    }
+    
+    .let2 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.3s;
+    }
+    
+    .let3 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.4s;
+    }
+    
+    .let4 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.5s;
+    
+    }
+    
+    .let5 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.6s;
+    }
+    
+    .let6 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.7s;
+    }
+    
+    .let7 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.8s;
+    }
+    
+    @keyframes drop {
+        10% {
+            opacity: 0.5;
+        }
+        20% {
+            opacity: 1;
+            top: 3.78em;
+            transform: rotateX(-360deg);
+        }
+        80% {
+            opacity: 1;
+            top: 3.78em;
+            transform: rotateX(-360deg);
+        }
+        90% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+            top: 6.94em
+        }
+    }
+
+/* userinfo section */
+
+
+#userinfo{
+      font-family: 'Noto Sans', sans-serif;
+      text-align: center;
+      padding: 1em 0px;
+      display: none;
+      background-color: rgba(0, 255, 255, 0.101);
+      transition: all 3s;
+}
+
+#userinfo>*{
+      margin:0.7rem 0px;
+}
+
+#userinfo h1{
+      font-weight: bolder;
+      margin:0.2em 0px;
+}
+#userinfo h4{
+      font-weight:bold;
+}
+a{
+      text-decoration: none;
+}
+#userinfo img{
+      height: 100%;
+      border-radius: 50%;
+      width:150px;
+      height: 150px;
+
+}
+.go-to-profile{
+      padding: 0.5em;
+      background-color: chartreuse;
+      color: black;
+      font-weight: bold;
+      border-radius: 12px;
+}
+.go-to-profile:hover{
+      background-color: rgba(128, 255, 0, 0.492);
+}
+
+

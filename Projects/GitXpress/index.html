@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="GitXpress is used to search any Github user with the help of their usernames using Github API. It will Display the details of the user.">
+      <meta name="keywords" content="gitxpress,Gitxpress,GitXpress">
+      <title>GitXpress</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+     <!-- Header section -->
+     <header class="main-header">
+      <div class="logo">
+            <img src="images/logo.png" width="40px" height="40px">
+            <p>GitXpress</p>
+      </div>
+      <span class="material-icons">
+            dark_mode
+      </span>
+     </header>
+
+     <!-- Search Section -->
+     <section class="search-section">
+      <form action="" id="inputform">
+            <input type="text" name="username" id="userid" class="formstyle" placeholder="Enter username">
+            <button type="submit" class="formstyle" id="submitbtn">Search</button>
+      </form>
+     </section>
+     
+     <!-- Loader -->
+     <div class="loader">
+      <h1>
+            <span class="let1">l</span>  
+            <span class="let2">o</span>  
+            <span class="let3">a</span>  
+            <span class="let4">d</span>  
+            <span class="let5">i</span>  
+            <span class="let6">n</span>  
+            <span class="let7">g</span>  
+          </h1>
+     </div>
+
+
+     <!-- userdata section -->
+     
+     <section id="userinfo">
+        <div class="pfp">
+            <img src="" id="pfp">
+        </div>
+        <div class="name">
+            <h1 class="pname"></h1>
+            <p class="username"></p>
+        </div>
+        <div class="following">
+            <h4 id="following"></h4>
+            <h4 id="followers"></h4>
+        </div>
+        <div class="button">
+            <button class="go-to-profile">
+                  <a href="" target="_blank"></a>
+            </button>
+        </div>      
+     </section>
+     
+
+</body>
+<script src="js/main.js"></script>
+</html>
