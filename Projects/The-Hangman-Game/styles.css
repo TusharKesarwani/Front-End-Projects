@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,200");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --primaryColor: #00a8ff;
+  --primaryColorTr: #00aaff51;
+  --primaryPlus: #047a9d;
+  --primaryBg: #eee;
+  --primaryBgTr: rgba(238, 238, 238, 0.704);
+  --lite: #fff;
+}
+
+.outer {
+  /* padding: 20vh; */
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+  /* background-color: aqua; */
+  width: min-content;
+  /* border: solid var(--lite); */
+}
+.heading {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  color: var(--lite);
+}
+.inner {
+  background-color: var(--primaryBgTr);
+}
+/* menu Window */
+
+.categoryOption label {
+  width: 50%;
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+
+.subHead {
+  color: var(--primaryColor);
+}
+input[type="radio"]:checked + label {
+  background-color: var(--primaryColor);
+  color: #eee;
+  padding: 5px;
+  width: 50%;
+}
+
+/* game Window */
+.inputField {
+  width: 30px;
+  outline: none;
+  border-radius: 20%;
+}
+input[type="text"]:disabled {
+  background-color: white;
+  font-weight: bolder;
+}
+.chanceLeftSpan {
+  float: right;
+}
+#chanceLeftP {
+  background-color: #eee;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+}
+/* .scoreBoardDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  */
+#scoreBoard {
+  display: flex;
+  justify-content: center;
+}
+.won {
+  padding: 10px;
+  background-color: var(--primaryColorTr);
+  color: #fff;
+
+  /* border-right: 1px solid var(--primaryColor); */
+}
+
+/* menu window */
+.btn:focus {
+  box-shadow: none !important;
+}
+.btn:hover {
+  color: var(--lite);
+}
+.start,
+.home,
+.back,
+.newGame {
+  width: 120px;
+  background-color: #00a8ff;
+  border-radius: 0px;
+  color: #fff;
+}
+/* result css */
+.new-game-popup {
+  background-color: rgba(255, 255, 255, 0.768);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+/* .hide {
+  display: none;
+} */
+#result-text h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+#result-text p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+}
+#result-text span {
+  font-weight: 600;
+}
+/* #new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  border: none;
+  color: #fff;
+} */
+.win-msg {
+  color: #39d78d;
+}
+.lose-msg {
+  color: #fe5152;
+}
