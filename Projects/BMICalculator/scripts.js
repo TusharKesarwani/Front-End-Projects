@@ -18,16 +18,12 @@ document.getElementById('sub').addEventListener('click',function(){
         data='overweight';
         img=".assets/overweight.jpg";
     }
-    else if(bmi>30){
-        data='obese';
+    else{
+        data='Obese';
         img=".assets/obese.jpg";
     }
-    else{
-        data='No Data Entered';
-        
-    }
     document.getElementById('body').setAttribute("src",img);
-    document.getElementById('res').innerHTML=` ${data}.`;
+    document.getElementById('res').innerHTML=`You are ${data}.`;
     document.getElementById('result').innerHTML=`Your BMI is <strong>${bmi}</strong>.`;
     document.getElementById('info').setAttribute("class","card show");
 });
