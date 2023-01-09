@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+:root{
+--main-bg-color: rgb(194, 56, 140);
+}
+nav{
+    background-color: rgb(194, 56, 140);
+    height: 55px;
+    width: 100%;
+    color: rgb(88, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+   display: inline;
+   color: blue;
+   justify-content: center;
+   align-items: center;
+}
+#heed{
+    color: white;
+    font-size: 26px;
+    font-weight: 200;
+}
+.container img{
+    background-size: contain;
+}
