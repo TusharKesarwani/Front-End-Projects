@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="red">
+        <h1 class="header">Unique Password Generator</h1>
+        <div class="main">
+            <div class="model">
+                <label for="password">
+                    <span id="pass-word">Generating...</span>
+                </label>
+                <div class="row">
+                    <div class="left">
+                        Password length
+                    </div>
+                    <div class="right">
+                        <input type="number" id="number-char" max="23" min="2" value="10">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        Contain uppercase
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" name="" id="uppercase" checked>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        Contain lowercase
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" name="" id="lowercase">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        Contain symbol
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" name="" id="symbol">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        Contain number
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" name="" id="number">
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="generate">
+                        Generate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
