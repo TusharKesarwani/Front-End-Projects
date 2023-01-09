@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+*{
+    font-family: 'DynaPuff', cursive;
+}
+body{
+    background-image: url('images/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+.scoreBoard{
+    font-size: 5vw;
+}
+.hole{
+    height: 4vw;
+    width: 10vw;
+    border-radius: 50%;
+    border: 10px solid brown;
+}
+.mole{
+    position: relative;
+    top: -5vw;
+    height:10vw;
+    width:10vw;
+    display: none;
+    user-select: none;
+}
+
+.ground{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.head{
+    font-size: 10vw;
+}
+@media (max-width: 810px) {
+    .hole {
+        height: 10vw;
+        width: 25vw;
+    }
+    .mole{
+        height: 25vw;
+        width: 25vw;
+        top: -13vw;
+    }
+}
