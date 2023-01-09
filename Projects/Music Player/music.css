@@ -1,0 +1,38 @@
+body{
+   background: url("bg1.jpg");
+   width: 100%;
+   height: 100%;
+}
+
+#musicimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 10px;
+    margin: 123px;
+}
+
+#musicimg img{
+    border: 10px solid black;
+    border-radius: 1px 219px;
+}
+
+#player{
+    display: flex;
+    padding: 4px 5px;
+    position: absolute;
+    left: 718px;
+    top: 543px;
+}
+
+.main{
+    display: flex;
+    position: absolute;
+    width: 448px;
+    height: 61px;
+    left: 538px;
+    top: 68px;
+    font-size: 3.8rem;
+    color: #000000;
+    font-family: 'Brush Script MT', cursive;
+}
