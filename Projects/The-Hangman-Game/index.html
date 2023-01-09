@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vijay Kumar Yadav" />
+    <meta name="description" content="The Hangman Game guess word and play" />
+    <meta
+      name="keywords"
+      content="Hangman, Guess, game ,TheHangman, HTML,CSS,JAVASCRIPT"
+    />
+    <title>Hangman</title>
+    <link rel="icon" type="image/x-icon" href="./images/hangmanLogo.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./confirmationWindow.js"></script>
+  </head>
+  <body>
+    <!-- Confirmation Modal -->
+    <div
+      class="modal fade"
+      id="confimartionModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="confimartionModalLabel"
+      aria-hidden="false"
+    >
+      <div class="modal-dialog rounded-0">
+        <div class="modal-content rounded-0">
+          <div class="modal-header py-1">
+            <h5 class="modal-title" id="confimartionModalLabel"></h5>
+          </div>
+          <div class="modal-body rounded-0"></div>
+          <div class="modal-footer py-1 rounded-0">
+            <button
+              type="button"
+              class="btn btn-primary btn-sm rounded-0 confirm-btn"
+            >
+              Exit
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm rounded-0 closed-btn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- confirmational model end -->
+    <div class="outer">
+      <div class="middle head">
+        <h3 class="heading display-3">The Hangman</h3>
+        <div class="container inner">
+          <!-- Menu window -->
+          <div class="startWindow p-2">
+            <h5 class="subHead text-center mb-5">SELECT A CATEGORY</h5>
+            <div class="categoryOption text-center">
+              <input type="radio" name="category" id="input1" value="HTML" />
+              <label for="input1" class="text-left"> HTML </label>
+            </div>
+            <div class="categoryOption text-center">
+              <input type="radio" name="category" id="input2" value="CSS" />
+              <label for="input2" class="text-left"> CSS </label>
+            </div>
+            <div class="categoryOption text-center">
+              <input
+                type="radio"
+                name="category"
+                id="input3"
+                value="JAVASCRIPT"
+              />
+              <label for="input3" class="text-left"> JAVASCRIPT </label>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <button class="btn home bg-danger mr-1">Home</button>
+              <button class="btn start bg-primary ml-1">Start Game</button>
+            </div>
+          </div>
+          <!-- Game window -->
+          <div class="gameWindow">
+            <h5 class="text-center gameHead mb-4"></h5>
+
+            <span class="chanceLeftSpan"><p id="chanceLeftP"></p></span>
+            <div class="d-flex justify-content-center">
+              <img
+                src=""
+                alt="hangman"
+                id="hangmanImage"
+                style="height: 200px"
+              />
+            </div>
+            <div
+              class="p-2 text-center guessInp d-flex justify-content-center"
+            ></div>
+            <div class="alphabets"></div>
+            <!-- result  -->
+            <div id="new-game-container" class="new-game-popup hide">
+              <div id="result-text"></div>
+              <button id="new-game-button" class="btn bg-primary newGame">
+                New Game
+              </button>
+            </div>
+            <!-- result end -->
+            <div class="d-flex justify-content-center p-2">
+              <button class="btn bg-secondary mt-1 back">Back</button>
+            </div>
+          </div>
+        </div>
+        <div id="scoreBoard">
+          <div class="won">
+            <div>Won / Total : <span class="wonCount ml-3">0 / 0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
