@@ -1,6 +1,7 @@
 # Random Meme Generator
 
 This is a web application that generates random memes on demand. It uses HTML, CSS, JavaScript and Reddit API to create a dynamic and user-friendly interface.
+
 ![Screenshot](https://github.com/deep-poharkar/Front-End-Projects/blob/main/Projects/Meme%20Generator/Screenshot%202023-01-10%20at%208.24.15%20PM.png?raw=true)
 ## Features
 - Generates a new meme with the click of a button
