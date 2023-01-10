@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#fff">
+  <base target="_blank">
+  <title>Screen Recording Website </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    a#downloadLink {
+      display: block;
+      margin: 0 0 1em 0;
+      min-height: 1.2em;
+    }
+
+    p#data {
+      min-height: 6em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div style="text-align:center;">
+      <h1>Screen Recorder</h1>
+      <h2>Record the screen, mic and system sounds.</h2>
+      <video controls autoplay></video><br>
+      <button id="shareScreen" onclick="onShareScreen()">Share Screen</button>
+      <button id="rec" onclick="onBtnRecordClicked()" disabled>Record</button>
+      <button id="stop" onclick="onBtnStopClicked()" disabled>Stop</button>
+      <button id="stateButton" onclick="onStateClicked()">trace state</button>
+    </div>
+    <a id="downloadLink" download="mediarecorder.webm" name="mediarecorder.webm" href></a>
+    <p id="data"></p>
+    <h2>Works on:</h2>
+    <ul>
+      <li>Chrome 74 and up (incl. system sounds)</li>
+    </ul>
+    <span style="color:red">Limitations:</span>
+    <ul>
+      <li>On Chrome for macOS and Linux it is only possible to share your audio when choosing to capture a Chrome tab </li>
+      <li>Firefox does not yet capture system sounds</li>
+    </ul>
+  </div>
+  <script src="code.js"></script>
+</body>
+
+</html>
