@@ -1,0 +1,49 @@
+@media only screen  and(max-width:1000px){
+    nav{
+        height: 150px;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+    nav ul{
+        transform: translate(187px);
+    }
+    nav ul li{
+        margin: 0px 5px;
+        padding: 0px 0px;
+    }
+    .logo{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search input{
+        height: 2vh;
+        width: 25vw;
+        padding: 0px 10px;
+        position: relative;
+        top: 40px;
+    }
+    .search button{
+        position: relative;
+        top: 40px;
+    }
+    nav ul{
+        transform: translate(23px);
+    }
+    .card-items{
+        overflow: scroll;
+    }
+}
+
+
+@media only screen  and(max-width:720px){
+.logo{
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+.logo ul li{
+    overflow: scroll;
+}
+}
