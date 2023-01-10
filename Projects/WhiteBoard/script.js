@@ -69,11 +69,11 @@ canvas.addEventListener("mousedown", function (e) {
     lastX = e.offsetX;
     lastY = e.offsetY;
     lineStart = { x: e.offsetX, y: e.offsetY };
-    drawing = true;        
+    drawing = true;
 });
 canvas.addEventListener("mouseup", function (ev) {
     drawing = false;
-    if(currentTool == "line"){
+    if (currentTool == "line") {
         ctx.beginPath();
         ctx.moveTo(lineStart.x, lineStart.y);
         ctx.lineTo(ev.offsetX, ev.offsetY)
@@ -81,30 +81,33 @@ canvas.addEventListener("mouseup", function (ev) {
     }
 });
 canvas.addEventListener("mousemove", function (e) {
-    if (drawing) {
-        switch (currentTool) {
-            case "pen":
-                // Draw a line from the last coordinates to the current ones
-                ctx.beginPath();
-                ctx.moveTo(lastX, lastY);
-                ctx.lineTo(e.offsetX, e.offsetY);
-                ctx.stroke();
-                // Update last coordinates
-                lastX = e.offsetX;
-                lastY = e.offsetY;
-                break;
-            case "line":
-                break
-        }
+    if (drawing && currentTool == "pen") {
+
+
+        // Draw a line from the last coordinates to the current ones
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        // Update last coordinates
+        lastX = e.offsetX;
+        lastY = e.offsetY;
     }
 });
 canvas.addEventListener('touchstart', function (e) {
     lastX = e.touches[0].pageX;
     lastY = e.touches[0].pageY;
+    lineStart = { x: e.offsetX, y: e.offsetY };
     drawing = true;
 });
 canvas.addEventListener('touchend', function () {
     drawing = false;
+    if (currentTool == "line") {
+        ctx.beginPath();
+        ctx.moveTo(lineStart.x, lineStart.y);
+        ctx.lineTo(ev.offsetX, ev.offsetY)
+        ctx.stroke();
+    }
 });
 canvas.addEventListener('touchmove', function (e) {
     if (drawing) {

@@ -1,42 +1,34 @@
- 
-        /* Style the canvas element */
-        #canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-        }
+ /* Style the canvas element */
+ #canvas {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: white;
+ }
 
-        /* Style the color picker */
-        #color-picker {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-        }
 
-        /* Style the buttons */
-        #save-button {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-        }
+/* ToolBar  */
+#tool-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        #clear-button {
-            position: fixed;
-            bottom: 20px;
-            left: 100px;
-        }
-
-        #tool {
-            position: fixed;
-            bottom: 20px;
-            left: 180px;
-        }
-
-        #size {
-            position: fixed;
-            bottom: 20px;
-            right: 100px;
-        }
+#tool-bar > #items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
