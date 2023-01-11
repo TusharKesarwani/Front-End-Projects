@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+!
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>White Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Canvas element for drawing -->
+    <canvas id="canvas"></canvas>
+    <!-- Tool Bar -->
+    <div id="tool-bar">
+
+        <div id="items drawing-tools">
+            <!-- Color picker -->
+
+            <input type="color" id="color-picker" value="#000000">
+
+            <!-- Size  -->
+            <input type="range" id="size" min="1" max="100" value="5">
+
+            <!-- Tool selection -->
+            <select id="tool">
+                <option value="pen">Pen</option>
+                <option value="line">Line</option>
+            </select>
+
+        </div>
+
+        <div id="items options">
+            <!-- Save button -->
+            <button id="save-button">Save</button>
+
+            <!-- Clear Buggon -->
+            <button id="clear-button">Clear</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
