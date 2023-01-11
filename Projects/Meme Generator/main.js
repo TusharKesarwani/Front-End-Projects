@@ -12,7 +12,7 @@ const generateMemeBtn = document.querySelector(
   };
   
   const generateMeme = () => {
-    fetch("https://meme-api.herokuapp.com/gimme/wholesomememes")
+    fetch("https://meme-api.com/gimme/wholesomememes")
       .then((response) => response.json())
       .then((data) => {
         updateDetails(data.url, data.title, data.author);
