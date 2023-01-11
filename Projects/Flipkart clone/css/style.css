@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+ :root{
+    --main-bg-color: rgb(194, 56, 140);
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 55px;
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 20px;
+}
+.logo img{
+    height: 32px;
+    width: 108px; 
+}
+nav ul li{
+    list-style:none;
+    margin:0px 10px;
+    padding: 0px 2px;
+    font-family: 'Oswald', sans-serif;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration:none ;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+
+.search input{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 9px;
+    padding: 0 12px;
+}
+.search button{
+    border: 2px solid rgba(150, 34, 104, 0.93);
+    border-radius: 2px;
+    background-color: var(--main-bg-color);
+    color: white;
+    cursor: pointer;
+}
+.container{
+    min-height:calc(100vh - 55px - 70px) ;
+    background-color: #e3dede;
+}
+.slider{
+    overflow: hidden;
+}
+.slider img{
+    width: 80vw;
+    margin: 12px 144px;
+    float: center;
+}
+.cardbox{
+    background-color: white;
+    max-width: 90vw;
+    margin: 6px auto;
+    padding: 22px;
+    height: 240px;
+    box-sizing: content-box; 
+    overflow: hidden;
+}
+.cardbox h2{
+    font-family: 'Oswald', sans-serif;
+}
+.card-items{
+    margin: 12px 18px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 110px;
+    overflow: hidden;
+}
+.lines{
+    display: inline;
+    margin: 3px;
+    padding: 1px;
+}
+.card-items:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card-items img:hover{
+    opacity: 0.5;
+}
+footer{
+    background-color:var(--main-bg-color);
+    color: white;
+    height: 70px;
+    font-family: 'Oswald', sans-serif;
+}
+@media only screen and(max-width:1005px) {
+    
+    nav ul li{
+        overflow: hidden;
+    }
+}

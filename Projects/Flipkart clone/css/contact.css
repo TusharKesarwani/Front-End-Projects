@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+:root{
+--main-bg-color: rgb(194, 56, 140);
+}
+nav{
+    background-color: rgb(194, 56, 140);
+    height: 55px;
+    color: rgb(88, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+   display: inline;
+   color: blue;
+   justify-content: center;
+   align-items: center;
+}
+#heed{
+    color: white;
+    font-size: 26px;
+    font-weight: 200;
+}
+    
+.container{
+    background-color: #e3dede;
+    display: flex;
+    justify-content: center;
+}
+.box1{
+    width: 80vw;
+    height: 80vh;
+    background-color: #ecdcdc;
+    border: 2px dotted black;
+    margin: 28px 0px 0px 0px
+}
+.msg{
+    font-size: 27px;
+    padding: 12px;
+    margin: 15px;
+}
+.box2{
+    display: block-flex;
+    justify-content: center;
+    align-items: center;
+    padding:  0px 4px 0px 171px;
+    margin: 17px;
+    font-size: 24px;
+}
+.box3{
+    width: 710px;
+}
+#mail{
+    
+    height: 31px;
+    width: 270px;
+    margin: 0px 0px 11px 93px;
+    
+}
+#num{
+    height: 31px;
+    width: 270px;
+    margin: 0px 0px 11px 33px;
+}
+#issues{
+    height: 31px;
+    width: 270px;
+    margin: 0px 0px 11px 20px;
+}
+#det{
+    margin: 35px 0px 0px 18px;
+    position: absolute;
+    top: 400px;
+}
+#submitButton{
+    border: none;
+    background-color: none;
+}
+#buttonLink{
+    color:purple;
+    text-decoration: none;
+
+}
+footer h3{
+    float: right;
+    background-color:#e3dede ;
+}
