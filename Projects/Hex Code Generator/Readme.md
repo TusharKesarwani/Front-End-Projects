@@ -6,6 +6,6 @@ The purpose is to generate random colors and their respective CSS code for devel
 Tech Stack used: HTML, CSS, JavaScript
 
 
-Issue number - 124
+
 
 ![Screenshot(222)](https://github.com/TusharKesarwani/Front-End-Projects/blob/c69cf218f886b09f1034f2bd38468138062364f4/Projects/Hex%20Code%20Generator/Screenshot%20(222).png)
