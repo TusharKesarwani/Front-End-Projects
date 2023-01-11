@@ -7,6 +7,7 @@ This is a very simple "chatbot" for normal conversation using nothing but JavaSc
 HTML , CSS and JAVASCRIPT 
 
 # Snapshot of the website:
+![chat](https://user-images.githubusercontent.com/84632701/211819721-57748bba-30f8-458e-b7bb-215c988191d0.png)
 
 # Contributor:
  Alisha Bharti
