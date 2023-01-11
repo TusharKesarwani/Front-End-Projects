@@ -1,5 +1,5 @@
 Project name and introduction :
-Prime, Even adn Odd number checker
+Prime, Even and Odd number checker
 
 Requirements:
 This program requires the use of HTML , CSS and JAVASCRIPT .
