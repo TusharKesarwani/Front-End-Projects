@@ -7,6 +7,9 @@ Requirements:
 This program requires the use of  HTML , CSS and  JAVASCRIPT to build this simple number guessing game .
 
 Snapshot of the game:
-https://ibb.co/VqYPSrm
+![number game](https://user-images.githubusercontent.com/84632701/211774413-607fe664-5c76-477b-8907-d054ecfd7ace.png)
+
+project contributor:
+Alisha Bharti
 
 Hope you will enjoy playing this game !!!!
