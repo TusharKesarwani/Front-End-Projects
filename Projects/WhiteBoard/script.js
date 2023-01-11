@@ -15,8 +15,9 @@ const ctx = canvas.getContext("2d");
 // Write welcome message at the center of the canvas
 ctx.font = "5vw Arial";
 ctx.textAlign = "center";
-ctx.fillText(`Start drawing!`, canvas.width / 2, canvas.height / 2);
-
+ctx.fillText(`Whiteboard!`, canvas.width / 2, canvas.height / 2);
+ctx.imageSmoothingEnabled = true;
+ctx.imageSmoothQuality = "high";
 // Set line 
 ctx.lineWidth = size.value;
 
