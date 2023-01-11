@@ -2,7 +2,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,19 +39,19 @@ section {
   display: flex;
   gap: 1em;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.split > * {
+.split>* {
   -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  flex-basis: 30%;
   min-width: 15em;
 }
 
-.spacing > * + * {
+.spacing>*+* {
   margin-top: var(--spacer, 2rem);
 }
 
@@ -74,7 +74,7 @@ section {
 .btn:hover,
 .btn:focus {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   opacity: .9;
 }
 
@@ -118,7 +118,7 @@ section {
   display: block;
   position: relative;
   -webkit-transform: scale(0.85);
-          transform: scale(0.85);
+  transform: scale(0.85);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -129,12 +129,14 @@ section {
   line-height: 1.2;
 }
 
-.featured__item:hover, .featured__item:focus {
+.featured__item:hover,
+.featured__item:focus {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
-.featured__item:hover .featured__details, .featured__item:focus .featured__details {
+.featured__item:hover .featured__details,
+.featured__item:focus .featured__details {
   opacity: 1;
   text-shadow: 0 0 2em white;
 }
@@ -183,13 +185,16 @@ section {
 }
 
 @media (min-width: 45em) {
+
   .product {
     text-align: left;
     margin-bottom: 9em;
   }
+
   .product__title {
     margin: 0;
   }
+
   .product__image {
     float: right;
     width: 65%;
@@ -197,6 +202,7 @@ section {
     shape-margin: 1em;
     margin: 0 -5em 0 0;
   }
+
   .product.shoe-left .product__image {
     float: left;
     shape-outside: url(../img/shoe-2.png);
@@ -233,13 +239,15 @@ footer {
   background-color: #333;
   text-align: center;
   overflow: hidden;
- }
- footer span {
+}
+
+footer span {
   padding: 20px;
   float: left;
   text-align: center;
- }
- footer a {
-   text-decoration:none;
-   color: white;
- }
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
