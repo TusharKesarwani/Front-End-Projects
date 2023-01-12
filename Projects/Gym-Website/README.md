@@ -16,3 +16,5 @@ Fitness website with login - sign up functionality.It can also assist the user t
 * Contains HOME, ABOUT, SERVICES, CLASSES, SCHEDULE ,PRICE and many other sections.
 
 
+# WEB SCREEN SHOT
+![Gym Website (3)](https://user-images.githubusercontent.com/72097380/212111061-ddae3088-ba3b-4414-b808-5e9a2686ed64.png)
