@@ -1,0 +1,54 @@
+/* remove indentation of list items */
+
+ul {
+  padding-left: 0;
+}
+
+/* remove traditional bullet from front of list items */
+
+/* Step 3 below here */
+
+li {
+  list-style-type: none;
+  background-color: #eee;
+  border: 1px solid #c3c3c3;
+  padding: 10px 0px 10px 5px;
+}
+
+
+/* Step 5 below here */
+
+.done {
+  background-color:green;
+
+}
+.remove{
+  background-color:red;
+}
+/* mark task as finished */
+/* Step 6 below here */
+
+li.finished {
+  color:white;
+  background-color:grey;
+  text-decoration:line-through;
+
+}
+
+input[type="text"] {
+  font-size: 18px;
+  width: 94%;
+  padding: 10px;
+}
+
+input[type="button"] {
+  font-size: 1.2em;
+  margin: -6px 4px 0px 0px;
+}
+
+#addButton {
+  padding: 10px;
+}
+
+/* Step 10 below here */
+
