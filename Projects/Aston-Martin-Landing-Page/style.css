@@ -1,0 +1,248 @@
+:root {
+  --Optima: 'Optima', sans-serif;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  transition: 0.3s all ease-out;
+  color: #ffffff;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: var(--Optima);
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation Bar */
+.navbar__header {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1829774145986519) 70%, rgba(0, 0, 0, 0.35384576193758754) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1829774145986519) 70%, rgba(0, 0, 0, 0.35384576193758754) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1829774145986519) 70%, rgba(0, 0, 0, 0.35384576193758754) 100%);
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem 0.7rem 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 0 1rem 0 0;
+}
+
+header {
+  height: 35px;
+  margin: 0 1rem 0 0;
+}
+
+header a img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ============== */
+
+.left-slide>div:nth-child(1) {
+  background-color: #004042;
+}
+
+.left-slide>div:nth-child(2) {
+  background-color: #00716F;
+}
+
+.left-slide>div:nth-child(3) {
+  background-color: #334D49;
+}
+
+.left-slide>div:nth-child(4) {
+  background-color: #006F62;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease-out;
+  -webkit-transition: transform 1s ease-out;
+  -moz-transition: transform 1s ease-out;
+  -ms-transition: transform 1s ease-out;
+  -o-transition: transform 1s ease-out;
+}
+
+.left-slide>div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* to be in consideration */
+  justify-content: center;
+  color: #fff;
+}
+
+.tab__heading {
+  padding: 1rem;
+  margin: -30px 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.tab__heading h6 {
+  font-weight: 200;
+  margin: 0 0 0.8rem 0;
+  font-size: 0.8rem;
+}
+
+.tab__heading h2 {
+  font-weight: 200;
+}
+
+.news__box {
+  padding: 1rem;
+}
+
+.nb__heading1 {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.nb__heading2 {
+  margin: 1.3rem 0 0 0;
+  font-size: 1rem;
+}
+
+.nb__paragraph {
+  margin: 0.6rem 0 1.2rem 0;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.nb__button {
+  font-family: var(--Optima);
+  position: absolute;
+  right: 40px;
+  margin: 1rem 0;
+}
+
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 1s ease-out;
+  -webkit-transition: transform 1s ease-out;
+  -moz-transition: transform 1s ease-out;
+  -ms-transition: transform 1s ease-out;
+  -o-transition: transform 1s ease-out;
+}
+
+.right-slide>div:nth-child(1) {
+  /* background-image: url(/images/am-2022-concept-car.jpg); */
+  background-image: url(/images/amr21.jpg);
+}
+
+.right-slide>div:nth-child(2) {
+  background-image: url(/images/aston-martin-dbx.jpg);
+}
+
+.right-slide>div:nth-child(3) {
+  background-image: url(/images/am-valkyrie-spider.jpg);
+}
+
+.right-slide>div:nth-child(4) {
+  background-image: url(/images/am-valhalla.jpg);
+}
+
+.right-slide>div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-container button {
+  background: #059862;
+  border: 0;
+  color: #1B1A17;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.slider-container button:hover {
+  color: #252522;
+}
+
+.slider-container button:focus {
+  outline: none;
+}
+
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 25%;
+  z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
