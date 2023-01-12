@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+$backgroundColor: linear-gradient(45deg, #747be4, #9da3f5);
+$primaryColor: #747be4;
+$secondaryColor: #fff;
+$textColor: #5b5e67;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather", sans-serif;
+}
+
+#price-component {
+  h2 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+  }
+  .toggle {
+    font-size: 20px;
+    .form-check-input:checked {
+      border-color: $primaryColor;
+      background-color: $primaryColor;
+    }
+    .form-check-input:focus {
+      box-shadow: none;
+    }
+  }
+  .price-cards {
+    padding: 1rem 0 4rem 0;
+    .card {
+      margin: 1rem;
+      padding: 2rem;
+      border: none;
+      user-select: none;
+      filter: drop-shadow(0 0px 25px rgba(184, 184, 184, 0.35));
+      transition: transform 0.3s ease-in-out;
+      h6,
+      .price {
+        font-weight: bold;
+      }
+      small {
+        font-size: 20px;
+        padding: 0 5px;
+        transform: translateY(20px);
+      }
+      .price {
+        font-size: 46px;
+      }
+      hr {
+        transform: translateY(-10px);
+        opacity: 0.1;
+      }
+      .btn {
+        font-size: 14px;
+        border: none;
+        background: $backgroundColor;
+        padding: 0.7rem;
+        box-shadow: 0 10px 15px rgba(116, 123, 228, 0.35);
+      }
+      &:hover {
+        transform: scale(1.1);
+        background: $backgroundColor;
+        color: $secondaryColor;
+        .btn {
+          background: $secondaryColor;
+          color: $primaryColor;
+          &:active {
+            border: 1px solid $secondaryColor;
+            background: $primaryColor;
+            color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .price-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card {
+      width: 60vw;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .price-cards {
+    .card {
+      width: 80vw;
+    }
+  }
+}
