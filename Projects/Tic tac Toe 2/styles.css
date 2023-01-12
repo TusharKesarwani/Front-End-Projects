@@ -1,0 +1,101 @@
+   nav{
+    margin-top: 0px;
+    
+ }  
+ @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+ body{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    margin: 0px;
+ }
+ .gamecontainer{
+    display: flex;
+    margin-right: 15%;
+    margin-left: 5%;
+    margin-top: 3%;
+ }
+ .container{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-rows: repeat(3,12vw);
+    grid-template-columns: repeat(3,12vw);
+    width: 400px;
+ } 
+
+  .box{
+    border: 1px solid black;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ } 
+
+ .box:hover{
+    background-color: violet;
+ }
+
+ .imgbox img{
+   width: 0;
+   transition: width is ease-in-out;
+ }
+
+ .br-l{
+   border-left: 0;
+ }
+ .br-r{
+   border-right: 0;
+ }
+ .br-t{
+   border-top: 0;
+ }
+ .br-b{
+   border-bottom: 0;
+ }
+ /*.side2{
+
+  margin-top: 65%;
+   
+ }*/
+ .side1{
+  font-size: 35px;
+  font-family: cursive;
+  color: rgb(20, 213, 213);
+  margin-left: 3%;;
+  margin-top: 25%;
+ }
+
+ #btn{
+  background-color: bisque;
+  color: blue;
+  border-radius: 10px;
+  border: 2px solid rgb(226, 35, 99);
+  border: 15px;
+  margin: 15px;
+  size: 200px;
+ }
+
+ #btn :hover{
+  background-color: orangered;
+  color: black;
+  transition: 2ms;
+ }
+/*adding media query for responsiveness*/
+ @media screen and (max-width: 800px)
+{
+    .gamecontainer{
+      flex-wrap: wrap;
+    }
+    .side{
+      margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .gamecontainer{
+      flex-wrap: wrap;
+    }
+    .side{
+      margin-top: 10px;
+    }
+}
