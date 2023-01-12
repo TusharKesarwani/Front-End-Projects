@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+
+}
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 9rem;
+     background-color: #272b33;
+}
+.profile_card {
+    width: 310px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 40px;
+    border-radius: 20px;
+    position: relative;
+    background: #21242a;
+    box-shadow: 0px 0px 40px -8px #333843,0px 0px 40px -8px #1b1d23, ;
+}
+.user_image {
+    position: absolute;
+    top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.user_image::before{
+    content: "";
+    position: absolute;
+    height: calc(100%+10px);
+    width: calc(100%+10px);
+    border-radius: 50%;
+    border: 2px solid white;
+    background: linear-gradient(45deg, #0F98A6, #0B626F);
+    animation: animate 1s linear infinite;
+
+
+}
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.user_image img {
+    border-radius: 50%;
+    z-index: 1;
+}
+.user_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 14px;
+}
+.user_details span {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: gray;
+    font-size: 12px;
+}
+.user_details p {
+    margin: 8px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: gray;
+}
+.user_details a{
+    text-decoration: none;
+    background: linear-gradient(45deg,#0F98A6, #0B626F);
+    color: white;
+    padding: 10px 30px;
+    margin: 14px 0;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+     transition: 0.3s ease-in-out;
+}
+.user_details a:hover {
+    background: #0B626F;
+}
+hr {
+    width: 100%;
+    border: 1px solid darkgray;
+    background: darkgray;
+    margin-bottom: 20px;
+}
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media-icons li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 12px;
+}
+.social-media-icons li a  {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.social-media-icons p {
+    font-size: 20px;
+    margin: 11px 0;
+    font-weight: 700;
+}
+.twitter{
+    background-color: #0F98A6;
+}
+.instagram{
+    background-color: #B72F8E;
+}
+.linkedin{
+    background-color: blue;
+}
