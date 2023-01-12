@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f2ef;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2rem;
+}
+
+.logo{
+    position: absolute;
+    left: 7rem;
+    top: 1.5rem;
+    
+}
+
+.quote{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.4rem;
+    padding: 0.5rem;
+    font-size: 35px;
+    font-weight: 650;
+    word-spacing: 3.5px;
+}
+
+.task{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+table{
+     border-collapse: collapse;
+}
+
+table,
+ th,
+  td{
+   border: groove 1px #818181;
+   text-align: center;
+   padding: 1rem;
+}
+
+.card{
+    
+    background-color: white;
+    display: inline-block;
+    padding: 2rem;
+      
+}
+
+#email, #password{
+    height: 2rem;
+    width: 20rem;
+    padding: 0.5rem;
+    outline: none;
+    
+    
+}
+
+#email{
+    margin-bottom: 1rem;
+}
+
+.description{
+    display: inline-flexbox ;
+    position: relative;
+    left: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: smaller;
+}
+
+.description a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+}
+
+.submit-button{
+    position: relative;
+    left: 1.9rem;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+
+.divider{
+   
+   
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.google-connect{
+  padding-bottom: 0.6rem;
+  font-size: 16px;
+  font-weight: 100;
+  position: relative;
+  left: 2rem;
+  height: 3rem;
+  width: 18rem;
+  background-color: white;
+  outline: none;
+  border-radius: 30px;
+  border-style: groove;
+  border-color: #f3f2ef;
+}
+
+.google-connect img{
+    height: 1rem;
+    width: 1rem;
+   
+    padding-right: 1rem;
+}
+
+.sign-in{
+    text-align: center;
+    margin: 1rem;
+}
+a{
+    text-decoration: none;
+    color: grey;
+
+}
+p > a{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.help{
+    margin: 2rem;
+    position: relative;
+    left: 1rem;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+li{
+    
+    padding: 0.6rem;
+    font-size: small;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.language{
+    border: none;
+    color: inherit;
+    font-family: inherit;
+}
+.language:hover{
+    cursor: pointer;
+    color: #0a66c2;
+}
