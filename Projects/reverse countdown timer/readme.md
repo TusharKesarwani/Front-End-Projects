@@ -6,6 +6,7 @@ Our Countdown is ready finally! Hurrah! We can use this countdown in many places
 HTML , CSS and JAVASCRIPT
 
 # SNAPSHOT OF THE WEBSITE :
+![countdown timer](https://user-images.githubusercontent.com/84632701/212158947-525d534c-2b9e-40a6-a136-5b83f362f627.png)
 
 
 # CONTRIBUTOR :
