@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    color: #fff;
+    font-size: 10em;
+    text-shadow: 0 0 50px #0f0f,
+                0 0 100px #0f0f,
+                0 0 150px #0f0f,
+                0 0 200px #0f0f,
+                0 0 250px #0f0f;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
