@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="./assets/scripts/script.js" defer></script>
+    <title>Simple CRUD app</title>
+</head>
+<body style="background-color: lightblue;">
+    <template>
+        <tr>
+            <td class="align-middle name-td"></td>
+            <td class="align-middle age-td"></td>
+            <td class="button-td">
+                <button type="button" class="btn btn-outline-primary">Edit</button>
+                <button type="button" class="btn btn-outline-secondary">Delete</button>
+            </td>
+        </tr>
+    </template>
+    <template>
+        <button type="button" class="btn btn-outline-primary">Update user</button>
+        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+    </template>    
+    <template>
+        <button class="btn btn-outline-success">Add user</button>
+    </template>
+
+    <div class="container">
+        <h3 class="mt-4">CRUD app</h3>
+        <div class="row mt-4">
+            <div class="col-12 col-md-6 mb-xl-0 mb-4">
+                <div class="input-group w-100 mt-2 mb-2">
+                    <span class="input-group-text">Name</span>
+                    <input class="form-control" type="text" id="name" name="name" class="">
+                </div>
+                <div class="input-group w-100 mb-2">
+                    <span class="input-group-text">Age</span>
+                    <input class="form-control" type="number" name="age" id="age">
+                </div>
+                <div class="action-btns">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 ">
+                <table class="table table-striped table-hover table-bordered border-secondary">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</td>
+                            <th scope="col">Age</td>
+                            <th scope="col">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-content">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
