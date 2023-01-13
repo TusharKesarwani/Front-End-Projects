@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/a7ccad3506.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>VOM Energy</title>
+    <!-- <link rel="stylesheet" href="/assets/index-f7f95cad.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" onscroll="scrolledBg()">
+      <main
+        class="bg-1 bg-no-repeat bg-cover h-[50vh] text-white lg:h-[100vh] lg:bg-cover lg:text-xl overflow-hidden"
+      >
+        <div class="navbar fixed backdrop-blur-md top-0 w-full lg:px-36">
+          <nav class="flex z-10 items-center justify-between p-2">
+            <div class="flex z-10">
+              <div>
+                <div class="logo text-green-400 font-bold lg:mr-10">
+                  VOM Solar
+                </div>
+                <!-- <div class="absolute text-xs lg:left-12">आपकी अपनी बिजली</div> -->
+              </div>
+              <div class="hidden md:block">
+                <ul class="flex flex-row">
+                  <li class="px-4">
+                    <a href="" class="text-lg"> Home</a>
+                  </li>
+                  <li class="px-4">
+                    <a href="" class="text-lg"> About</a>
+                  </li>
+                  <li class="px-4">
+                    <a href="" class="text-lg"> Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mx-2 flex">
+              <button
+                class="free-electrcity mx-4 p-2 border text-green-400 border-white rounded-xl"
+              >
+                #आपकी अपनी बिजली
+              </button>
+              <div class="flex">
+                <div
+                  href=""
+                  class="m-2 cursor-pointer md:hidden"
+                  onclick="nav()"
+                >
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- Nav Bar Slider -->
+                <div
+                  id="bars"
+                  class="routes px-4 md:hidden right-0 absolute hidden flex-col h-screen bg-green-400 top-0"
+                >
+                  <div onclick="nav()" class="flex cross">
+                    <div
+                      class="m-2 mx-4 p-2 cursor-pointer md:hidden absolute top-0 right-0"
+                    >
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+                  <ul class="px-8 relative top-10">
+                    <li class="px-4 py-2 flex items-center justify-center">
+                      <a href="" class="text-lg"> Home</a>
+                    </li>
+                    <li class="px-4 py-2 flex items-center justify-center">
+                      <a href="" class="text-lg"> About</a>
+                    </li>
+                    <li class="px-4 py-2 flex items-center justify-center">
+                      <a href="" class="text-lg"> Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div
+          class="tag-line my-48 text-4xl px-3 font-semibold lg:my-96 lg:text-6xl lg:px-36"
+        >
+          <h2>
+            Generate your own <br /><span class="text-green-400"
+              >free electrcity !</span
+            >
+          </h2>
+        </div>
+      </main>
+      <section
+        class="bg-green-500 p-4 lg:flex lg:justify-center lg:gap-5 lg:px-36 lg:py-5"
+      >
+        <!-- 
+          ============================================================================================================================================
+                                                                  Enquiry Submission 
+          ============================================================================================================================================
+         -->
+        <div class="lg:flex lg:items-center lg:">
+          <div>
+            <h2
+              class="font-semibold text-white text-lg lg:font-bold lg:text-5xl"
+            >
+              Submit an Enquiry For Solar Project now !
+            </h2>
+            <p class="font-thin text-white lg:text-2xl">
+              We will Contact you for further discussion.
+            </p>
+          </div>
+        </div>
+        <!-- 
+          ============================================================================================================================================
+                                                                  Form Div
+          ============================================================================================================================================
+         -->
+        <div
+          class="form rounded-lg flex flex-col justify-center text-center items-center bg-white shadow shadow-gray-200 p-4 my-5 lg:py-12"
+        >
+          <form
+            class="form p-2 flex flex-col justify-center items-center"
+            action=""
+            method="post"
+          >
+            <div class="lg:flex lg:gap-5">
+              <input
+                class="border-green-300 border rounded-lg p-4 px-12 my-2"
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                required
+              />
+              <input
+                class="border-green-300 border rounded-lg p-4 px-12 my-2"
+                type="text"
+                name="lastName"
+                placeholder="Last name"
+                required
+              />
+            </div>
+            <div class="lg:flex lg:gap-5">
+              <input
+                class="border-green-300 border rounded-lg p-4 px-12 my-2"
+                type="email"
+                name="email"
+                placeholder="Youremail@gmail.com"
+              />
+              <input
+                class="border-green-300 border rounded-lg p-4 px-12 my-2"
+                type="number"
+                name="entry.1166974658"
+                placeholder="+91 9308976798"
+              />
+            </div>
+            <div class="lg:flex lg:gap-5">
+              <input
+                class="border-green-300 border flex justify-center items-center rounded-lg p-4 px-12 lg:px-[12.5rem] my-2"
+                type="text"
+                name="unit"
+                placeholder="Units per Month"
+              />
+            </div>
+            <button
+              type="submit"
+              class="bg-green-400 rounded-lg p-4 px-32 my-2"
+              id="sub"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
