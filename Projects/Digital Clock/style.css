@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #111111;
+    color: #FFF;
+    /* display: flex;  */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.heading{
+    margin-top: 100px;
+    font-size: 3em;
+    padding-bottom: 80px;
+    text-align: center;
+    display: block;
+}
+
+.clock{
+    position: relative;
+    margin: auto;
+    width: 470px;
+    height: 120px;
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+    z-index: 1000;
+}
+
+.clock .container{
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.clock .container h2{
+    font-size: 3.5rem;
+    color: #000;
+}
+
+.clock .container h2:nth-child(odd){
+    width: 110px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.dot{
+    margin: 5px;
+    top: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#ampm{
+    position: relative;
+    margin-left: 10px;
+    top: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* This project is built by Harshit Raj.
+This projects belongs to MedusaVerse.
+©Medusaverse */
