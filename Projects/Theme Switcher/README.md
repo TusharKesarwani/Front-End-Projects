@@ -11,4 +11,4 @@ The HyperText Markup Language or HTML is the standard markup language for docume
 It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
 </pre>
 <h2>Screensot</h2>
-<img src="screenshot" height="288" width="388"/> 
+<img src="screenshot"/> 
