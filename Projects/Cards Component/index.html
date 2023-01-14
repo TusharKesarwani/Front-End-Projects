@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Price Component</title>
+</head>
+
+<body>
+  <div class="container" id="price-component">
+    <h2 class="text-center">Select a Plan</h2>
+    <div class="toggle d-flex justify-content-center">
+      <p>
+        Annually &nbsp;
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="togglecheck" onclick="myFunction()">
+      </div>Monthly
+      </p>
+    </div>
+    <div class="row price-cards text-center">
+      <div class="card col-md">
+        <h6>Basic</h6>
+        <div class="price-tag d-flex justify-content-center">
+          <small>$</small>
+          <p class="price" id="basic">14.99</p>
+        </div>
+        <hr />
+        <p>500 GB Storage</p>
+        <hr />
+        <p>2 User Allowed</p>
+        <hr />
+        <p>Send Upto 3 GB</p>
+        <hr />
+        <a href="#" class="btn btn-primary">LEARN MORE</a>
+      </div>
+      <div class="card col-md">
+        <h6>Professional</h6>
+        <div class="price-tag d-flex justify-content-center">
+          <small>$</small>
+          <p class="price" id="professional">24.99</p>
+        </div>
+        <hr />
+        <p>1 TB Storage</p>
+        <hr />
+        <p>5 User Allowed</p>
+        <hr />
+        <p>Send Upto 10 GB</p>
+        <hr />
+        <a href="#" class="btn btn-primary">LEARN MORE</a>
+      </div>
+      <div class="card col-md">
+        <h6>Master</h6>
+        <div class="price-tag d-flex justify-content-center">
+          <small>$</small>
+          <p class="price" id="master">34.99</p>
+        </div>
+        <hr />
+        <p>2 TB Storage</p>
+        <hr />
+        <p>10 User Allowed</p>
+        <hr />
+        <p>Send Upto 20 GB</p>
+        <hr />
+        <a href="#" class="btn btn-primary">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
