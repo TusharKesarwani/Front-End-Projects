@@ -11,5 +11,5 @@ This is a beginner level non-responsive website's landing page built using html 
 
 ## Screenshots
 
-![App Screenshot](/images/website-screenshot.jpg)
+![App Screenshot](./images/website-screenshot.jpg)
 
