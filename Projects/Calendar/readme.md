@@ -3,7 +3,7 @@
 It uses HTML, CSS, JavaScript.
 
 <h2 align=center>Project Look:-</h2> 
-<img src="/img.png" width="100px" alt=""/><br />
+<img src="/img.png" alt=""/><br />
 
 ## Getting Started
 
