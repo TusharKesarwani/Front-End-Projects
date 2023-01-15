@@ -7,16 +7,15 @@ copyBtn = document.querySelector(".copy"),
 synth = speechSynthesis;
 
 // for fetching quotes
-function randomQuote(){
+function randomQuote() {
     quoteBtn.classList.add("loading");
     quoteBtn.innerText = "Loading Quote...";
     fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
         quoteText.innerText = result.content;
         authorName.innerText = result.author;
         quoteBtn.classList.remove("loading");
-        quoteBtn.innerText = "New Quote";
-    });
-}
+        quoteBtn.innerText = "New Quote";}
+    )};
 // for audio analysis
 speechBtn.addEventListener("click", ()=>{
     if(!quoteBtn.classList.contains("loading")){
