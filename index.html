@@ -22,6 +22,9 @@
 <body onload="myfunction()">
     <div id="load"></div>
     <!-- Navigation Section -->
+    <div class="loadbg">
+        <div id="loader"></div>
+    </div>
     <nav>
         <div>
             <a href="index.html"><img src="img/LOGO.png" alt="logo"></a>
@@ -232,13 +235,8 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        var preloader = document.getElementById('load');
-
-        function myfunction() {
-            preloader.style.display = 'none';
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
