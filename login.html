@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="form">
+        <h2>Login Form</h2>
+        <form action="">
+            <div class="error-text">Error</div>
+                <div class="input">
+                    <label>Email Id</label>
+                    <input type="email" placeholder="Enter your Email Id" name="email" required>
+                </div>
+                <div class="input">
+                    <label>Password</label>
+                    <input type="text" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="profile-img">
+                    <div class="file-upload">
+                        <input type="file" id="image-preview" name="image" class="file-input" required oninvalid="this.setCustomValidity('Select image of size less than 10kb')" oninput="this.setCustomVlidity('')">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Login" class="button">
+                </div>
+        </form>
+        <div class="link">Don't have an account yet? <a href="signup.html">Then Signup here</a></div>
+    </div>
+</body>
+</html>
