@@ -12,6 +12,7 @@ HTML , CSS and JAVASCRIPT
 - Our application will provide Tip Per Person, Total Per Person, Total bill amount(including tip)
 
 # SNAPSHOT OF THE WEBSITE :
+![bill](https://user-images.githubusercontent.com/84632701/212969976-5abc79e1-e1b0-4712-8a1e-6801b6232c4e.png)
 
 
 # CONTRIBUTOR :
