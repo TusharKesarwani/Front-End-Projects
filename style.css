@@ -107,17 +107,17 @@ main .left p {
 }
 
 .project-section {
-    margin: -2.5rem 8rem 4rem 8rem;
+    margin: -2.5rem 8rem 6rem 8rem;
 }
 
 .title {
     color: #0D4360;
     font-size: 3rem;
-    margin-top: -7rem;
+    margin-top: -6rem;
 }
 
 .bg-title {
-    font-size: 8rem;
+    font-size: 6rem;
     color: rgb(234, 233, 233);
     margin-left: -6rem;
 }
@@ -131,9 +131,8 @@ main .left p {
 
 .project {
     display: flex;
-    width: 26%;
+    width: 30%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 4rem;
     background-color: #0D4360;
@@ -164,12 +163,12 @@ main .left p {
 }
 
 .project-info h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 90%;
 }
 
 .project-info p {
-    font-size: .8rem;
+    font-size: .7rem;
     width: 90%;
 }
 
@@ -180,12 +179,20 @@ main .left p {
     gap: 1.3rem;
 }
 
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+    gap: 1.3rem;
+}
+
 .tech span {
     border: 1px solid #F2B705;
     color: #F2B705;
     padding: .2rem .5rem;
     border-radius: .2rem;
-    font-size: .7rem;
+    font-size: .5rem;
 }
 
 .links {
@@ -200,6 +207,32 @@ main .left p {
 
 .links a:hover {
     color: #F2B705;
+}
+
+.contributors {
+    margin: -2.5rem 8rem 4rem 8rem;
+}
+
+.contributors .list-section {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #0D4360;
+    border-radius: .5rem;
+}
+
+#contributors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#contributors-list img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #F2B705;
 }
 
 footer {
