@@ -67,7 +67,7 @@ main {
 }
 
 main .right img{
-    animation: imgUp 1.5s linear infinite alternate;
+    animation: imgUp 1s linear infinite alternate;
 }
 main .left {
     display: flex;
