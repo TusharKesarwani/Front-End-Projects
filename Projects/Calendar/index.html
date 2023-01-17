@@ -11,7 +11,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <header>
         <p class="current-date"></p>
         <div class="icons">
@@ -31,7 +31,30 @@
         </ul>
         <ul class="days"></ul>
       </div>
+    </div> -->
+
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button class="prev-month" onclick="previous()"><<</button>
+        <h2 id="monthAndYear"></h2>
+        <button class="next-month" onclick="next()">>></button>
+      </div>
+      <table id="calendar">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body"></tbody>
+      </table>
     </div>
+
     <div id="background-wrap">
       <div class="bubble x1"></div>
       <div class="bubble x2"></div>
