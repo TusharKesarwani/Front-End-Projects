@@ -66,6 +66,9 @@ main {
     margin: 0 8rem;
 }
 
+main .right img{
+    animation: imgUp 0.7s linear infinite alternate;
+}
 main .left {
     display: flex;
     flex-direction: column;
@@ -120,6 +123,12 @@ main .left p {
     font-size: 8rem;
     color: rgb(234, 233, 233);
     margin-left: -6rem;
+}
+
+@keyframes imgUp {
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 .projects {
