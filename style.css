@@ -140,7 +140,7 @@ main .left p {
     border-radius: .2rem;
 }
 
-.project:hover img {
+.project:hover{
     scale: 1.01;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
