@@ -67,7 +67,7 @@ main {
 }
 
 main .right img{
-    animation: imgUp 0.7s linear infinite alternate;
+    animation: imgUp 1.5s linear infinite alternate;
 }
 main .left {
     display: flex;
@@ -147,6 +147,7 @@ main .left p {
     margin-top: 4rem;
     background-color: #0D4360;
     border-radius: .2rem;
+    transition: all 0.5s ease;
 }
 
 .project:hover{
