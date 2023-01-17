@@ -202,6 +202,34 @@ main .left p {
     color: #F2B705;
 }
 
+.contributors {
+    margin: -2.5rem 8rem 4rem 8rem;
+}
+
+.contributors .list-section {
+    margin-top: 30px;
+    padding: 2rem;
+    background-color: #0D4360;
+    border-radius: 1rem;
+}
+
+#contributors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#contributors-list img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #F2B705;
+}
+
 footer {
     background-color: #0D4360;
     padding: 2rem 8rem;
