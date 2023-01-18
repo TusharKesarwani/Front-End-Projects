@@ -1,0 +1,82 @@
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 2px;
+    gap: 2px;
+    width: 100%;
+    padding: 20px 10px 0 20px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display:block;
+    position: center;
+    width:100%;
+    max-width: 768px;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.connect{
+    background: #01a39d;
+    color: white;
+    font-size: small;
+    border-radius: 20px;
+    padding-right: 0.9rem;
+    border: 1px #01a39d;
+}
+.contact{
+    background: white;
+    color: #01a39d;
+    font-size: small;
+    border-radius: 20px;
+    padding-right: 0.9rem;
+    border: 1px solid #01a39d;
+}
+.side{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    background-color: white;
+    line-height: 16px;
+    color: rgb(58, 55, 55);
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 5px solid #01a39d;
+}
+ul{
+    list-style: none;
+    line-height: 3;
+}
+.det{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 2px;
+    gap: 2px;
+    width: 100%;
+    padding:0px;
+}
+.agent{
+    color: #01a39d;
+    font-size: large;
+    font-weight: bold;
+}
+.shopdet{
+    font-size: 14px;
+}
+.shop{
+    font-weight: bold;
+}
+h1{
+    padding: 5px 0 5px 50px;
+    background: #17b6b1;
+    margin: 0;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+}
+.product{
+    display: flex;
+    box-shadow: 10px 10px 20px rgb(160, 157, 157);
+    flex-direction: row;
+    padding: 15px;
+    position: relative;
+    border-radius: 10px;
+    width:100%;
+    max-width: 768px;
+    margin: 20px auto;
+}
+.image{
+    border: 1px solid black;
+    padding:0 auto;
+}
+.name {
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.place{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 4px;
+}
+.date{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2px;
+}
+.weight {
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.time {
+    font-style: italic;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 400;
+    right: 0;
+    line-height: 10px;
+    font-size: 9px;
+    margin-right: 4px;
+}
+.products{
+    font-weight: bold;
+    background: rgb(239, 236, 236);
+    padding: 10px 6px;
+    text-align: center;
+}
