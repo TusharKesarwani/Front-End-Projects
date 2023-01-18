@@ -6,7 +6,7 @@ Its a basic Image Editor in JavaScript,users can apply different filters to thei
 I have used HTML , CSS and Vanilla Javascript to build this image editor .
 
 # SNAPSHOT OF THE WEBSITE:
-
+![img](https://user-images.githubusercontent.com/84632701/213198917-c172f4bf-146f-45d1-9553-bb93d3af9e99.png)
 
 # CONTRIBUTED BY:
 Alisha Bharti 
