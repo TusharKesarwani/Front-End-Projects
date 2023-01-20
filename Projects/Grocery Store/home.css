@@ -20,14 +20,14 @@
 .buttons{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
 }
 .connect{
     background: #01a39d;
     color: white;
     font-size: small;
     border-radius: 20px;
-    padding-right: 0.9rem;
+    padding: 5px 20px 5px 15px;
     border: 1px #01a39d;
 }
 .contact{
@@ -35,7 +35,7 @@
     color: #01a39d;
     font-size: small;
     border-radius: 20px;
-    padding-right: 0.9rem;
+    padding: 5px 20px 5px 15px;
     border: 1px solid #01a39d;
 }
 .side{
@@ -70,6 +70,7 @@ ul{
 }
 .shopdet{
     font-size: 14px;
+    margin-bottom: 5px;
 }
 .shop{
     font-weight: bold;
@@ -79,4 +80,16 @@ h1{
     background: #17b6b1;
     margin: 0;
     text-align: center;
+}
+.products{
+    padding: 8px 25px;
+    background: #01a39d;
+    border: 1px #01a39d;
+    color: white;
+    border-radius: 10px;
+    border-radius: 20px;
+    font-size: medium;
+}
+.head{
+    margin-bottom: 40px;
 }
