@@ -6,6 +6,7 @@ Connect4 is a board game and a classic strategy game in which 2 players go head-
 I have used HTML , CSS and JAVASCRIPT .
 
 # SNAPSHOT OF THE PROJECT :
+![connect](https://user-images.githubusercontent.com/84632701/213781501-4f3a95ea-b4ca-4f33-8f68-2e18fc3ff271.png)
 
 
 # CONTRIBUTOR :
