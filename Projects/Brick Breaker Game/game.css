@@ -1,0 +1,14 @@
+body{
+	background-color: black;
+}
+#canvas-container{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header-container{
+  text-align: center;
+  font: small;
+  font-size: 40px;
+	color: white;
+}
