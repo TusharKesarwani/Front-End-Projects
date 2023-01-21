@@ -42,3 +42,8 @@
 - pull out title, snippet, pageid
 - setup a card
 - set results with div.articles and list inside
+
+### screenshot
+
+![Screenshot 2023-01-20 15![Screenshot 2023-01-20 152958](https://user-images.githubusercontent.com/105864220/213847760-705ec3c6-a5ac-4203-a648-c5cd147c41c2.png)
+2537](https://user-images.githubusercontent.com/105864220/213847755-86d9aad1-cd87-400c-bbc3-289993f65a1a.png)
