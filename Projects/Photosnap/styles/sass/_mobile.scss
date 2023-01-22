@@ -1,0 +1,363 @@
+// MEDIA QUERIES FOR MOBILE
+
+@media screen and (max-width: 768px) {
+
+    // MOBILE NAVIGATION
+    .menu_toggle {
+        display: inline-block;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        width: 20px;
+        height: 20px;
+
+        .open {
+            @include menu-icons;
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+        }
+
+        .close {
+            @include menu-icons;
+            opacity: 0;
+            transform: translate(-50%, -50%) rotate(90deg);
+            transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+        }
+    }
+
+    .open.active {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .close.active {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    .logo {
+        position: relative;
+        z-index: 10;
+    }
+
+    .nav_list {
+        background-color: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        padding: 80px 40px 20px 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-40vh);
+        transition: transform .5s;
+
+        &-item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .nav_list.active {
+        transform: translateY(0);
+    }
+
+    .btn.btn-black {
+        display: none;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    // FOOTER
+    footer {
+
+        .footer-row {
+            flex-direction: column;
+            align-items: center;
+
+            .footer_logo-box {
+                padding-right: 0;
+                justify-content: flex-start;
+
+                .social {
+                    margin-top: 40px;
+                }
+            }
+
+            .footer_menu-box {
+                margin-bottom: 100px;
+            }
+
+            .footer_copyright {
+                margin-left: 0;
+                align-items: center;
+                justify-content: flex-start;
+                height: 100%;
+
+                a {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    // STORIES SECTION
+    .hero {
+        background-image: url("../../images/moon-of-appalacia-mobile.jpg");
+        height: 320px;
+
+        .container {
+            display: none;
+        }
+    }
+
+    .hero-mobile {
+        display: block;
+        background-color: $black;
+
+        .section_text {
+            height: 450px;
+            padding: 17px 0 25px;
+
+            p {
+                margin: 23px 0;
+            }
+        }
+    }
+
+    .image {
+        &-1 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/mountains-m.jpg");
+        }
+        &-2 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/cityscapes-m.jpg");
+        }
+        &-3 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/18-days-voyage-m.jpg");
+        }
+        &-4 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/architecturals-m.jpg");
+        }
+        &-5 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/world-tour-m.jpg");
+        }
+    
+        &-6 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/unforeseen-corners-m.jpg");
+        }
+        &-7 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/king-on-africa-m.jpg");
+        }
+        &-8 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/trip-to-nowhere-m.jpg");
+        }
+        &-9 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/rage-of-the-sea-m.jpg");
+        }
+        &-10 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/running-free-m.jpg");
+        }
+    
+        &-11 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/behind-the-waves-m.jpg");
+        }
+        &-12 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/calm-waters-m.jpg");
+        }
+        &-13 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/milky-way-m.jpg");
+        }
+        &-14 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/dark-forest-m.jpg");
+        }
+        &-15 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/somwarpet-m.jpg");
+        }
+    
+        &-16 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/land-of-dreams-m.jpg");
+        }
+    }
+
+    // PRICING SECTION
+    .pricing-tabs {
+        h4 {
+            text-align: center;
+        }
+
+        .price-box {
+            height: 350px;
+            padding: 40px;
+            text-align: center;
+            
+            p {
+                max-width: 100%;
+            }
+
+            .btn {
+                margin: auto;
+            }
+        }
+
+        .price-box.pro {
+            height: 350px;
+        }
+    }
+
+    // COMPARE SECTION
+
+    .compare {
+        .table {
+            .table_head {
+                .col-2 {
+                    display: none;
+                }
+            }
+    
+            &_row {
+                flex-direction: column;
+                padding-left: 10px;
+                padding-right: 10px;
+                
+                .col-1 {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+                .col-2 {
+
+                    span {
+                        margin-right: 50px;
+                    }
+                }
+
+                .mobile-flex-column {
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        display: block;
+                        width: 17px;
+                        margin-top: 8px;
+
+                    }
+
+                    .plan-name {
+                        display:block;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section_text {
+        &-box {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    
+    .section_text {
+        &-box {
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    .stories, .beta {
+        .row {@include flex-column;}
+    }
+
+    .everyone, .create, .features, .pricing {
+        .row {
+            @include column-reverse;
+        }
+    }
+
+    .section_text {
+        width: 100%;
+        height: 350px;
+    }
+
+    .section_image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .section-create-img {
+        background-image: url("../../images/create-and-share-mobile.jpg");
+    }
+
+    .section-stories-img {
+        background-image: url("../../images/beautiful-stories-mobile.jpg");
+    }
+    
+    .section-everyone-img {
+        background-image: url("../../images/designed-for-everyone-mobile.jpg");
+    }
+
+    .section-features-img {
+        background-image: url("../../images/features-bg-mobile.jpg");
+    }
+
+    .section-pricing-img {
+        background-image: url("../../images/pricing-bg-mobile.jpg");
+    }
+
+    .beta {
+        background-image: url("../../images/bg-beta-mobile.jpg");
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features,
+    .pricing {
+        .section_text {
+            height: 300px;
+        }
+    }
+
+    .beta a {
+        margin-top: 25px;
+    }
+
+    .price-box {
+        height: 400px !important;
+    }
+
+    .compare {
+        .table {
+            &_row {
+                .col-2 {
+                    span {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            &_head {
+                .col-1 {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
