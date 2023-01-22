@@ -6,5 +6,3 @@
 <li>CSS</li>
 <li>Javascript</li>
 </ul>
-<img src="C:\Users\Monishka jha\Desktop\Screenshot (259).png">
-<img src="C:\Users\Monishka jha\Desktop\Screenshot (260).png">
