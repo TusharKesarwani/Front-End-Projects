@@ -78,5 +78,3 @@ form.addEventListener('keyup', () => {
   - else filter based on company value
 - set search value ''
 - call displayProducts
-
-###Screenshots
