@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+  background-color: #fffbe9;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo,
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo .brand {
+  margin-left: 120px;
+}
+
+.logo .brand a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo .search {
+  margin-right: 120px;
+}
+
+.logo .search input {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid coral;
+  margin: 0 10px;
+  width: 400px;
+  background-color: transparent;
+  outline: none;
+}
+
+.logo .search i {
+  color: #fff;
+  padding: 10px;
+  background-color: coral;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .left-nav {
+  margin-left: 80px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul i {
+    cursor: pointer;
+}
+
+.nav-bar ul li {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.nav-bar .right-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 120px;
+}
+
+.nav-bar .right-nav img {
+  width: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.nav-bar .right-nav i {
+  margin: 0 15px;
+  color: coral;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.nav-bar .right-nav p {
+  margin: 0px 5px 0px 10px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img {
+  width: 85%;
+  margin: 10px 30px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.banner .nike {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 230px;
+    right: 250px;
+}
+
+.banner .shop {
+    position: absolute;
+    left: 160px;
+    bottom: 50px;
+    background-color: coral;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.banner .dots {
+    display: flex;
+    position: absolute;
+    left: 720px;
+    bottom: 40px;
+}
+
+.banner .dots .dot {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.banner .dots .colored {
+    background-color: coral;
+}
+
+.fa-circle-chevron-right,
+.fa-circle-chevron-left {
+  font-size: 40px;
+  color: coral;
+  cursor: pointer;
+}
+
+.discount {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+.discount .box img {
+  width: 100%;
+}
+
+.discount .box p {
+  background-color: #00acee;
+  display: inline;
+  padding: 3% 11%;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.discount .box .para {
+  transform: rotate(90deg);
+  position: relative;
+  left: 155px;
+  bottom: 6px;
+}
+
+.discount .box .sp {
+  left: 180px;
+}
+
+.new-arrivals {
+  display: flex;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  margin: 40px;
+}
+
+.new-arrivals .box2 {
+  border-radius: 10px;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #fff;
+  width: 20%;
+  height: 400px;
+}
+
+.new-arrivals .box2 p {
+  text-align: center;
+}
+
+.new-arrivals .box2 p .hide {
+  visibility: hidden;
+}
+
+.new-arrivals .box2 i {
+  color: red;
+  position: relative;
+  bottom: 320px;
+  left: 110px;
+  font-size: 1.3em;
+}
+
+.best-offers .box2 i {
+  color: red;
+  position: relative;
+  bottom: 335px;
+  left: 110px;
+  font-size: 1.3em;
+}
+
+.new-arrivals .first {
+  background-color: #eeeeee;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.new-arrivals .first h2 {
+  font-size: 40px;
+}
+
+.new-arrivals .first h2 span {
+  text-decoration: underline;
+}
+
+.new-arrivals .first p a {
+  color: coral;
+}
+
+.new-arrivals .box2 img {
+  width: 100%;
+}
+
+.new-arrivals .box2 .price {
+  text-align: center;
+  background-color: coral;
+  border-radius: 10px;
+  color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.new-arrivals .na {
+  position: relative;
+  top: 200px;
+  left: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.categories .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  font-weight: 600;
+}
+
+.categories .heading p {
+  color: coral;
+  margin-right: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.categories .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.categories .row .box3 {
+  width: 45vw;
+  height: 59vh;
+  cursor: pointer;
+}
+
+.categories .row .box3 p {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  top: 43vh;
+  left: 2vw;
+  font-weight: 600;
+}
+
+.categories .row .mobiles {
+  background-image: url(images/JY7z8NP.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.categories .row .fashion {
+  background-image: url(images/young-man-dressed-up.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.categories .row .sports {
+  background-image: url(images/Reshot-by-Shikhil-Sharma.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.categories .row .household {
+  background-image: url(images/for-you-shelf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.best-offers {
+  background-color: #fffbe9;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.heading {
+  margin-left: 8%;
+  margin-top: 70px;
+}
+
+footer {
+  background-color: #eeeeee;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .f ul,
+.s ul {
+  list-style: none;
+}
+
+footer .f ul li,
+.s ul li {
+  color: coral;
+  padding: 5px;
+  cursor: pointer;
+}
+
+footer .t img {
+  width: 20%;
+  cursor: pointer;
+}
+
+footer .t p {
+  color: coral;
+}
