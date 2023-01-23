@@ -7,6 +7,6 @@ function palindrome_check() {
         document.getElementById("prog").innerHTML = `<b>"${ishtra}"</b> is a palindrome!.`;
     }
     else {
-        document.getElementById("prog").innerHTML = `<b>"${ishtra}"</b> is not a palindrome!.`"IT IS NOT A PALINDROME. ";
+        document.getElementById("prog").innerHTML = `<b>"${ishtra}"</b> is not a palindrome!.`;
     }    
 }
