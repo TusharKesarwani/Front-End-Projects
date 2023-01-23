@@ -1,14 +1,34 @@
+var len = document.getElementById("length");
+
+
 //PASSWORD GENERATOR FUNCTION
 function getPassword() {
-    const chars = '0123456789/%?@$#';
+   const chars = '0123456789/%?@$#';
+    var lengthOfPassword = len.value;
+    flag=0;
+    if(lengthOfPassword==''){
+        window.alert('Please Enter the length');
+        flag=1;
+    }
+
+    if(lengthOfPassword<=4 && flag==0){
+        window.alert('Password length cannot be less than 4 characters');
+    }
+
+
+    //console.log(lengthOfPassword);
     const clength = chars.length;
     let password = '';
-    while (password.length < 20) {
+    let p=0;
+    console.log(randomWord(chars.length))
+    while (p<lengthOfPassword) {
         password = password.concat(randomWord(chars.length));
         password = password.concat(chars[randomNumber(clength)]);
+        p++;
     }
-    password = password.substring(0, 16);
+    password = password.substring(0, p);
     document.getElementById('password').value = password;
+    
 }
 
 function randomNumber(e) {
@@ -24,7 +44,7 @@ function randomWord() {
 //COPY BUTTON SCRIPT
 function Copy() {
     // Get the text field
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("password");
 
   // Select the text field
   copyText.select();
