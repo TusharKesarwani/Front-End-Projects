@@ -80,3 +80,7 @@ form.addEventListener('keyup', () => {
 - call displayProducts
 
 ###Screenshots
+![Screenshot 2023-01-21 125844](https://user-images.githubusercontent.com/105864220/214117121-f7de19e5-a4ee-4264-acd1-59f503f44eb7.png)
+![Screenshot 2023-01-21 125911](https://user-images.githubusercontent.com/105864220/214117143-95f14e4f-4235-45f3-930b-0d05eccd52ea.png)
+![Screenshot 2023-01-21 125932](https://user-images.githubusercontent.com/105864220/214117160-abf5fc3c-e8a7-4ab4-b92c-71bf88531208.png)
+
