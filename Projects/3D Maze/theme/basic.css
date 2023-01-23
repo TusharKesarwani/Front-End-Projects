@@ -1,0 +1,135 @@
+/* Base CSS */
+
+/*
+ * This CSS file contains (for me) logical style defaults that are easy to read.
+ * 
+ * This file is quite often used as a starting point for other projects.
+ * 
+ * Todo:
+	* <button>
+	* <inputs>
+	* <progress>
+	* <meter>
+ */
+
+ :root {
+	--bg-main: #f3f3f3;
+	--bg-bright: white;
+	
+	--text-main: #232323;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-main: #232323;
+		--bg-bright: black;
+		
+		--text-main: #f3f3f3;
+	}
+}
+
+/* rem is relative to the html element, and em is relative to the current element. */
+html { font-size: 100%; }
+
+body
+{
+	font-family: sans-serif; /* Serif is awful :( */
+	
+	background: var(--bg-main); /* Don't forget to update the @page one too for paged media */
+	color: var(--text-main);
+}
+
+title { string-set: page-title content(text); }
+
+/* Special tweaks for paged media (e.g. PDFs) */
+@page {
+	font-family: sans-serif;
+	background: var(--bg-main); /* Set the background colour to cover the whole page */
+	
+	@top-right {
+		content: "By Starbeamrainbowlabs";
+		opacity: 0.6;
+	}
+	@bottom-right {
+		content: "Page " counter(page) " of " counter(pages);
+		opacity: 0.6;
+	}
+}
+
+
+/* A small tweak to things more responsive */
+iframe, object, embed, img, table
+{
+	max-width: 100%;
+}
+
+/* Turn the user's cursor into a hand when over things they can click */
+button, summary
+{
+	cursor: pointer;
+}
+
+th, td
+{
+	margin: 4px 6px;
+	padding: 4px 6px;
+}
+
+pre { page-break-inside: avoid; break-inside: avoid; }
+pre, code {
+	white-space: pre-wrap;
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+
+/* todo add the rest of the textbox like inputs here */
+input[type=text], input[type=number], textarea
+{
+	margin: 3px 5px;
+	padding: 5px 8px;
+	
+	background: var(--bg-bright);
+	border: 0;
+	border-radius: 5px;
+}
+
+/* Utility / layout aids */
+.float.left		{ float: left;	}
+.float.right	{ float: right;	}
+
+.flex	{ display: flex; }
+.flex-1	{ flex: 1;	}
+.flex-2	{ flex: 2;	}
+.flex-3	{ flex: 3;	}
+.flex-4	{ flex: 4;	}
+.flex-5	{ flex: 5;	}
+.flex-6	{ flex: 6;	}
+
+.small-spacing	{ margin: 0.25em 0.35em;	padding: 0.25em 0.35em;	}
+.med-spacing	{ margin: 0.45em 0.65em;	padding: 0.45em 0.65em;	}
+.high-spacing	{ margin: 1em 1.25em;		padding: 1em 1.25em;	}
+
+.text-left		{ text-align: left;		}
+.text-centre	{ text-align: center;	}
+.text-right		{ text-align: right;	}
+
+.small-text		{ font-size: 0.8rem;	}
+.medium-text	{ font-size: 1rem;		}
+.large-text		{ font-size: 1.3rem;	}
+
+.bold-text		{ font-weight: bolder;	}
+
+.block			{ display: block;			}
+.inline			{ display: inline;			}
+.inline.block	{ display: inline-block;	}
+
+.invisilink		{ text-decoration: none; color: inherit;			}
+.invisilist		{ list-style-type: none; margin: 5px; padding: 5px; }
+
+.tiny-image		{ max-width: 5em; max-height: 5em; }
+.small-image	{ max-width: 10em; max-height: 10em; }
+.medium-image	{ max-width: 20em; max-height: 20em; }
+.large-image	{ max-width: 30em; max-height: 30emx; }
+
+.img-text-middle{ vertical-align: middle; }
