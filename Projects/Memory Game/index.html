@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/238cdae898.js" crossorigin="anonymous"></script>
+
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <title>Memory Game 🧩</title>
+</head>
+
+<body>
+  <h1 id="level-title">Press Any Key to Start</h1>
+  <div class="container">
+
+    <div class="row">
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
+    </div>
+
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
+    </div>
+
+  </div>
+
+  <!-- ------------------------------------------------------------------------------------------------------- 
+                                        Instructions Modal
+-------------------------------------------------------------------------------------------------------  -->
+
+  <div class="modal fade footer-modal" id="instructions" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="instrution-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="instruction-title"> Instructions To Play this Game
+          </h5>
+          <button type="button" class="btn-close shadow-none btn-close-white" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="instruction-content"><i class="fas fa-angle-double-right"></i>&nbsp;Step 1 <br>
+            To begin, you can press any Key or click anywhere other than tiles. (Don't click on any of the tiles)
+          </div>
+          <div class="instruction-content"><i class="fas fa-angle-double-right"></i>&nbsp;Step 2 <br>
+            Then any of the four tiles will blink, remember that tile color. Click that same tile.
+          </div>
+          <div class="instruction-content"><i class="fas fa-angle-double-right"></i>&nbsp;Step 2.1 <br>
+            The game would will end if you clicked the wrong tile. You'd have to start the game anew by pressing any
+            key.
+          </div>
+          <div class="instruction-content"><i class="fas fa-angle-double-right"></i>&nbsp;Step 3 <br>
+            If you clicked the correct tile, the level would rise & any tile would blink again: now you must click the previous tile, followed by the
+            current tile, to raise the level.
+          </div>
+          <div class="instruction-content"><i class="fas fa-angle-double-right"></i>&nbsp;Example<br>
+            Assume red blinks first, then blue blinks second:
+            <br>The first tile in every sequence would be red; the second tile in each sequence would be blue.
+            <br>As the level rises, so will the sequence.
+            <br> The sequence goes on until you click the wrong tile.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Made By Anmol Baranwal</footer>
+
+  <p class="modal-item text-center"> <a href="#" data-bs-toggle="modal" data-bs-target="#instructions" class="modal-link">Instructions <hr> </a> </p>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="game.js"></script>
+</body>
+
+</html>
