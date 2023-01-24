@@ -7,7 +7,7 @@ The Palindrome Checker is a tool that shows whether a given string or word is a 
 - CSS
 - JS
 
-## [Click here](https://raw.githack.com/muskan467/Front-End-Projects/main/Projects/palindrome/palindrome.html)😃
+## [Click here](https://raw.githack.com/muskan467/Front-End-Projects/palindrome/Projects/palindrome/palindrome.html)😃
 
 ## 📷 Demonstration
 
