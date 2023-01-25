@@ -57,5 +57,5 @@ We are working on some feautures and will be adding them shortly in future:
 
 ## Contributing
 
-We are open to reviews and improvements. Please reach us at simmithapad23@gmail.com for suggestions and feedback.
+We are open to reviews and improvements. Please reach us at sarasiddiquie1@gmail.com for suggestions and feedback.
 
