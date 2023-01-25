@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instant symbolic logic cheat sheet</title>
+    <script src="jquery.js"></script>
+    <script src="truth.js"></script>
+    <link rel="stylesheet" href="truth.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div id="guide">
+        <h1>Recognized operators</h1>
+        <p>In order of decreasing precedence.</p>
+        <ul>
+            <li>
+                <strong>&amp;</strong>
+                and
+            </li>
+            <li>
+                <strong>|</strong>
+                or
+            </li>
+            <li>
+                <strong>^</strong>
+                xor
+            </li>
+            <li>
+                <strong>~</strong>
+                not
+            </li>
+            <li>
+                <strong>!</strong>
+                not
+            </li>
+        </ul>
+    </div>
+    <div id="controls">
+        <h1>Enter a logic expression</h1>
+        <form id="theform">
+            <input type="text" id="expr">
+            <input type="submit" value="Apply">
+        </form>
+
+        <h1>Truth Table</h1>
+        <div id="output">
+            <div id="nothing">Nothing yet.</div>
+            <div id="combo"></div>
+            <div id="ast"></div>
+            <div id="sym"></div>
+        </div>
+    </div>
+    <script>
+        $(function() { truth.main(); });
+    </script>
+</body>
+</html>
