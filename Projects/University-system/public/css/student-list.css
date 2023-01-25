@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+body{
+    overflow: hidden;
+
+}
+
+.student_list{
+    margin-top: 120px;
+    width: 70%;
+    height:0vh;
+
+
+}
+
+
+.bars {
+    height: 40px;
+    width: 80%;
+    margin-top: 15px;
+    background-color: #82AAE3;
+    margin-left: -38rem;
+}
+
+
+.name {
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+  
+}

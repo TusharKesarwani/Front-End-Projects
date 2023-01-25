@@ -1,0 +1,55 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    overflow-x: none;
+    height: 100vh;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+/* body{
+  
+  justify-content: justify;
+  align-items: center;
+  background: #f2f2f2;
+  overflow-x: none;
+  height:100vh;
+} */
+
+.addresource{
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:10rem;
+    width: 940px;
+}
+#exampleInputEmail1{
+    height: 140px;
+    width: 600px;
+}
+
+#exampleInputPassword1{
+    width: 600px;
+}
+body{
+   
+  
+    overflow: hidden;
+}
+.form_nav{  margin-left:-8rem;
+
+}
+

@@ -1,0 +1,41 @@
+body{
+
+	background-color: #eee;
+    height: 9vh;
+}
+
+
+.badge{
+
+	font-size: 25px;
+	font-weight: 200;
+}
+
+.badge i {
+
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.about-rating{
+
+	font-size: 15px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+.total-ratings{
+
+	font-size: 12px;
+
+}
+
+.bg-custom{
+
+	background-color: #b7dd29 !important;
+}
+
+.progress{
+
+	margin-top:10px;
+}

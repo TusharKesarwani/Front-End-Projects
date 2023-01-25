@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); 
+
+
+body{
+  height: 9vh;
+  overflow-x:none;
+  
+
+}
+
+.addnote{
+    margin-top: 36rem;
+    margin-left: -85rem;
+    width: 80%;
+ 
+}
+#exampleInputEmail1{
+    height: 140px;
+    width: 600px;
+}
+
+#exampleInputPassword1{
+    width: 600px;
+}
