@@ -1,0 +1,34 @@
+ /* Style the canvas element */
+ #canvas {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: white;
+ }
+
+
+ /* ToolBar  */
+ #tool-bar {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 50px;
+     background-color: #f1f1f1;
+     border-top: 1px solid #d3d3d3;
+     border-bottom: 1px solid #d3d3d3;
+     z-index: 100;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ #tool-bar>#items {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: 20px;
+     margin-right: 20px;
+ }

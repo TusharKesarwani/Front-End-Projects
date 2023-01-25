@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+body{
+    position: relative;
+    background: rgb(152, 121, 220);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+::selection{
+    color: aliceblue;
+}
+.form{
+    position: relative;
+    background-color: rgb(232, 231, 242);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px -10px ;
+    padding: 30px 30px;
+}
+.form h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.form form .profile-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    margin: 10px 30px;
+    background: rgb(206, 205, 213);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 4px solid #006692;
+    background-image: url(https://www.pinclipart.com/picdir/big/157-1578186_user-profile-default-image-png-clipart.png);
+}
+.file-upload{
+    position: absolute;
+    top:0;
+    right:-15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: 2px solid rgb(225, 214, 214);
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(to bottom,#006692,#f2f3f7 50%);
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+form input[type="file"]{
+    position: relative;
+    height: 40px;
+    opacity: 0;
+    cursor: pointer;
+    padding: 20px;
+    width: 40px;
+}
+form i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+    color: #333;
+    z-index: 100;
+}
+.file-upload:hover{
+    background-position: 0 100%;
+}
+.file-upload:hover i{
+    color:#2938aa;
+}
+.form form{
+  margin: 8px 0;
+}
+.form form .error-text{
+    display: none;
+    color: rgb(71, 37, 37);
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #ffe3e5;
+    border: 1px solid rgb(221, 139, 139);
+    margin-bottom: 10px;
+}
+.form form .input input{
+    height: 35px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+.form form .input input:focus,.form form .input input:valid{
+    transition: 0.2s ease;
+    border: 2px solid rgb(152, 121, 220);
+    outline: none;
+}
+.form form input.button{
+    height: 45px;
+    border: none;
+    color: #f2f3f7;
+    width: 100%;
+    background: #006692;
+    font-size: larger;
+    margin: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form .link{
+    text-align: center;
+    font-size: 17px;
+}
+.form .link a{
+    color:#006692;
+    transition: 0.5s all;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
