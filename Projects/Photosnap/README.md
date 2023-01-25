@@ -1,7 +1,5 @@
 
 
-https://user-images.githubusercontent.com/84632701/213927830-327f1013-1b21-4a16-92cc-321c619324ed.mp4
-
 # NAME AND INTRODUCTION OF THE PROJECT
 ## Photosnap:
  Photosnap is a photography website template design .It can be used as a platform for sharing and uploading their captured moments with stories behind that moments.
