@@ -1,33 +1,8 @@
-<br/>
-<p align="center">
-  <a href="https://github.com/AasthaSinghal21/One_for_All">
+
     <img src="https://www.linkpicture.com/q/2940653.png" alt="Logo" width="80" height="80">
-  </a>
+ 
 
   <h3 align="center">Elconnect</h3>
-
-  <p align="center">
-    Linking pillars of Education
-    <br/>
-    <br/>
-    <a href="https://github.com/AasthaSinghal21/One_for_All"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-  </p>
-</p>
-
-![Downloads](https://img.shields.io/github/downloads/AasthaSinghal21/One_for_All/total) ![Contributors](https://img.shields.io/github/contributors/AasthaSinghal21/One_for_All?color=dark-green) ![Forks](https://img.shields.io/github/forks/AasthaSinghal21/One_for_All?style=social) ![Stargazers](https://img.shields.io/github/stars/AasthaSinghal21/One_for_All?style=social) ![Issues](https://img.shields.io/github/issues/AasthaSinghal21/One_for_All) ![License](https://img.shields.io/github/license/AasthaSinghal21/One_for_All) 
-
-## Table Of Contents
-
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-* [Prerequisites](#prerequisites)
-*  [Setting Up](#setting-up)
-* [Usage](#usage)
-* [Future Scope](#future-scope)
-* [Contributing](#contributing)
 
 
 ## About The Project
