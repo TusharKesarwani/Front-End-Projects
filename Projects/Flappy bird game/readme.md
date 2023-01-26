@@ -6,6 +6,7 @@ An Endless Game Called Flappy Bird Has A Bird That The User Can Manage. The Play
 HTML , CSS and JAVASCRIPT 
 
 # SNAPSHOT OF THE WEBSITE:
+![flappy bird](https://user-images.githubusercontent.com/84632701/214933288-5d2be60b-95c6-48cd-bc64-de93a4dfdc94.png)
 
 
 
