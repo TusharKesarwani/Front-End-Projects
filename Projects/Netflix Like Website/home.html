@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Home</title>
+    <link rel="icon" href="./netflix1.png">
+    <style>
+        .navbar {
+            background-color: black;
+            opacity: 0.9;
+            color: white;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .list {
+            align-items: center;
+            display: flex;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            width: 80px;
+        }
+
+        .lists {
+            margin-right: 100px;
+        }
+
+        #list-1,
+        #list-2,
+        #list-3 {
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        .appName {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .listt {
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .logo1 {
+            width: 150px;
+        }
+
+        .btn {
+            -webkit-border-radius: 10;
+            -moz-border-radius: 10;
+            border-radius: 10px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            background: #de1414;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        .btn1,
+        .btn2 {
+            -webkit-border-radius: 10;
+            -moz-border-radius: 10;
+            border-radius: 10px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 14px;
+            background: #de1414;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            text-decoration: none;
+            width: 80px;
+        }
+
+        .btn:hover {
+            background: #f53f3f;
+            text-decoration: none;
+        }
+
+        .btn1:hover,
+        .btn2:hover {
+            background: #f53f3f;
+            text-decoration: none;
+        }
+
+        .unlimited {
+            padding-bottom: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 55px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .watch {
+            font-size: xx-large;
+            color: white;
+            padding-bottom: 20px;
+        }
+
+        .buttons {
+            align-items: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body style="background: url('./bgcolor.png');display: flex;flex-direction: column;justify-items: center;">
+    <nav class="navbar">
+        <ul class="list" type="none">
+            <li class="lists">
+                <div class="logo1">
+                    <ul class="listt" type="none">
+                        <li><img class="logo" src="./images/logo.png" alt="netflix"></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="lists" id="list-1"><a href="./home.html" style="text-decoration: none;color: white;">Home</a></li>
+            <li class="lists" id="list-2"><a href="https://about.netflix.com/en" style="text-decoration: none;color: white;">About</a></li>
+        </ul>
+        <ul class="buttons" type="none">
+            <li id="list-3" style="margin-right: 15px"><button class="btn1"><a href="./signup.html" style="text-decoration: none;color: white;">Sign Up</a></button></li>
+            <li id="list-4" style="margin-right: 30px;"><button class="btn2"><a href="./signin.html" style="text-decoration: none;color: white;">Sign In</a></button></li>
+        </ul>
+    </nav>
+    <div class="mid" style="background-color: transparent;width: 700px;height: 400px;margin-top: 120px;align-items: center;text-align: center;display: flex;flex-direction: column;justify-content: center;margin-left: 26%;backdrop-filter: blur(15px);border: black 3.5px solid;border-radius: 12px;">
+        <div>
+            <p class="unlimited">Unlimited movies, TV shows and more.</p>
+        </div>
+        <div>
+            <p class="watch">Watch anywhere, Cancel anytime</p>
+        </div>
+        <div>
+            <button class="btn"><a href="./signup.html" style="text-decoration: none;color: white;">Sign Up</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

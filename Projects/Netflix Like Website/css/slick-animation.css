@@ -1,0 +1,53 @@
+.slide { position: relative; -webkit-transition: 1s; transition: 1s; }
+.slider [data-animation-in] { opacity: 0; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-transition: opacity 0.5s ease 0.3s; transition: opacity 0.5s ease 0.3s; -webkit-transition: 1s; transition: 1s; }
+.slick-nav { --active: #fff; --border: rgba(255, 255, 255, .12); width: 44px; height: 44px; position: absolute; cursor: pointer; top: calc(50% - 44px); }
+.slick-nav.prev-arrow { left: 2%; -webkit-transform: scaleX(-1); transform: scaleX(-1); z-index: 999; }
+.slick-nav.next-arrow { left: auto; right: 2%; }
+.slick-nav i { display: block; position: absolute; margin: -10px 0 0 -10px; width: 20px; height: 20px; left: 50%; top: 50%; }
+.slick-nav i:before, .slick-nav i:after { content: ''; width: 10px; height: 2px; border-radius: 1px; position: absolute; left: 50%; top: 50%; background: var(--active); margin: -1px 0 0 -5px; display: block; -webkit-transform-origin: 9px 50%; transform-origin: 9px 50%; }
+.slick-nav i:before { -webkit-transform: rotate(-40deg); transform: rotate(-40deg); }
+.slick-nav i:after { -webkit-transform: rotate(40deg); transform: rotate(40deg); }
+.slick-nav:before, .slick-nav:after { content: ''; display: block; position: absolute; left: 1px; right: 1px; top: 1px; bottom: 1px; border-radius: 50%; border: 2px solid var(--border); }
+.slick-nav svg { width: 44px; height: 44px; display: block; position: relative; z-index: 1; color: var(--active); stroke-width: 2px; stroke-dashoffset: 126; stroke-dasharray: 126 126 0; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+.slick-nav.animate svg { -webkit-animation: stroke 1s ease forwards .3s; animation: stroke 1s ease forwards .3s; }
+.slick-nav.animate i { -webkit-animation: arrow 1.6s ease forwards; animation: arrow 1.6s ease forwards; }
+.slick-nav.animate i:before { -webkit-animation: arrowUp 1.6s ease forwards; animation: arrowUp 1.6s ease forwards; }
+.slick-nav.animate i:after { -webkit-animation: arrowDown 1.6s ease forwards; animation: arrowDown 1.6s ease forwards; }
+@-webkit-keyframes stroke {
+	52% { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); stroke-dashoffset: 0; }
+	52.1% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); stroke-dashoffset: 0; }
+	100% { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); stroke-dashoffset: 126; }
+}
+@keyframes stroke {
+	52% { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); stroke-dashoffset: 0; }
+	52.1% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); stroke-dashoffset: 0; }
+	100% { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); stroke-dashoffset: 126; }
+}
+@-webkit-keyframes arrow {
+	0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1; }
+	23% { -webkit-transform: translateX(17px); transform: translateX(17px); opacity: 1; }
+	24%, 80% { -webkit-transform: translateX(-22px); transform: translateX(-22px); opacity: 0; }
+	81% { opacity: 1; -webkit-transform: translateX(-22px); transform: translateX(-22px); }
+}
+@keyframes arrow {
+	0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1; }
+	23% { -webkit-transform: translateX(17px); transform: translateX(17px); opacity: 1; }
+	24%, 80% { -webkit-transform: translateX(-22px); transform: translateX(-22px); opacity: 0; }
+	81% { opacity: 1; -webkit-transform: translateX(-22px); transform: translateX(-22px); }
+}
+@-webkit-keyframes arrowUp {
+	0%, 100% { -webkit-transform: rotate(-40deg) scaleX(1); transform: rotate(-40deg) scaleX(1); }
+	20%, 80% { -webkit-transform: rotate(0deg) scaleX(0.1); transform: rotate(0deg) scaleX(0.1); }
+}
+@keyframes arrowUp {
+	0%, 100% { -webkit-transform: rotate(-40deg) scaleX(1); transform: rotate(-40deg) scaleX(1); }
+	20%, 80% { -webkit-transform: rotate(0deg) scaleX(0.1); transform: rotate(0deg) scaleX(0.1); }
+}
+@-webkit-keyframes arrowDown {
+	0%, 100% { -webkit-transform: rotate(40deg) scaleX(1); transform: rotate(40deg) scaleX(1); }
+	20%, 80% { -webkit-transform: rotate(0deg) scaleX(0.1); transform: rotate(0deg) scaleX(0.1); }
+}
+@keyframes arrowDown {
+	0%, 100% { -webkit-transform: rotate(40deg) scaleX(1); transform: rotate(40deg) scaleX(1); }
+	20%, 80% { -webkit-transform: rotate(0deg) scaleX(0.1); transform: rotate(0deg) scaleX(0.1); }
+}

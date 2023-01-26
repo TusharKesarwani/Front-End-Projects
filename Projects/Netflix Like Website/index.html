@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="netflix1.png">
+    <style>
+        .head {
+            color: red;
+            font-size: 120px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: text 5s 1;
+        }
+
+        .btn {
+            background: #eb0505;
+            background-image: -webkit-linear-gradient(top, #eb0505, #eb0505);
+            background-image: -moz-linear-gradient(top, #eb0505, #eb0505);
+            background-image: -ms-linear-gradient(top, #eb0505, #eb0505);
+            background-image: -o-linear-gradient(top, #eb0505, #eb0505);
+            background-image: linear-gradient(to bottom, #eb0505, #eb0505);
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            width: 150px;
+            animation: btn 5s 1;
+        }
+
+        .btn:hover {
+            background: #3cb0fd;
+            background-image: -webkit-linear-gradient(top, #eb0505, #eb0505);
+            background-image: -moz-linear-gradient(top, #eb0505, #eb0505);
+            background-image: -ms-linear-gradient(top, #eb0505, #eb0505);
+            background-image: -o-linear-gradient(top, #eb0505, #eb0505);
+            background-image: linear-gradient(to bottom, #eb0505, #eb0505);
+            text-decoration: none;
+        }
+
+        /* .span{
+            animation: btn 5s 1;
+        } */
+        @keyframes text {
+            0% {
+                color: black;
+                margin-bottom: 0px;
+            }
+        }
+
+        @keyframes btn {
+            60% {
+                margin-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: black; display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+    <span style="width: 500px;height: 500px;text-align: center">
+        <p class="head" style="padding-top: 100px">NETFLIX</p>
+    </span>
+    <span class="span">
+        <button class="btn"><a href="./home.html" style="text-decoration: none;color: white;">Get started</a></button>
+    </span>
+</body>
+
+</html>
