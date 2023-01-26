@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+    <title>Solve Fraction</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <style>
+        @import url(./variable.css);
+
+        element.style {
+            height: 80vh;
+        }
+
+        .btn {
+            background-color: #d5f1f5;
+            color: hsl(229, 84%, 12%);
+            border: 2px solid hsl(229, 84%, 12%);
+            width: 28%;
+            height: 46px;
+            border-radius: 28px;
+            font-size: 21px;
+            font-family: "Jost", sans-serif;
+            color: hsl(229, 84%, 12%);
+        }
+
+        .btn:hover {
+            background-color: hsl(229, 84%, 12%);
+            color: white;
+        }
+
+        .form-control {
+            font-family: "Jost", sans-serif;
+        }
+
+        .col-12 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .form__field {
+            font-family: mainfont;
+            font-size: 1.2rem !important;
+            letter-spacing: 0.125rem;
+            width: 100%;
+            border: 0;
+            box-shadow: 0 0 10px black;
+            outline: 0;
+            color: black;
+            background-color: var(--appblack);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        body {
+            font-family: mainfont;
+            background-color: #d5f1f5;
+            color: hsl(229, 84%, 12%);
+            overflow-x: hidden;
+            font-family: "Jost", sans-serif;
+            font-size: 21px;
+            font-weight: var(--fw-8);
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-top: 6%;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 25%;
+        }
+
+        input {
+            margin-bottom: 5%;
+            text-decoration-color: black;
+        }
+
+        .Heading {
+            font-size: 28px;
+            padding: 20px;
+            font-weight: 800;
+            color: hsl(229, 84%, 12%);
+            text-align: center;
+        }
+
+        button {
+            width: 51%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="Heading">Solve Fraction</h1><br>
+    <div class="container">
+        <input type="number" id="num1solvefraction" class="form__field" placeholder="Numerator">
+        <input type="number" id="num2solvefraction" class="form__field" placeholder="Denominator">
+        <button type="button" class="btn" onclick="callSolveFraction();">Solve</button>
+
+        <p id="outputresult" style="text-align: center; color:black">
+
+        </p>
+        <p id="outputsteps" style="text-align: center;">
+
+        </p>
+    </div>
+    <script src="assets/js/solveFraction.js"></script>
+</body>
+
+</html>

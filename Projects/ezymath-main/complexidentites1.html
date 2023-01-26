@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Complex Identities</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+</head>
+<body>
+    <style>
+        .ro {
+            margin: -52px 930px 10px 10px;
+        }
+        
+        .go {
+            margin: -51px 875px 10px 10px;
+        }
+        
+        .ho {
+            margin: -51px 690px 10px 10px;
+        }
+        
+        .jo {
+            margin: -50px 780px 10px 10px;
+        }
+    </style>
+    <div class="stopwrap">
+        <div class="coll">
+            <div class="left">
+                <h4>Basic Definations</h4>
+                <ul style="font-size:21px;color:white">
+                    <li>Imaginary number :
+                        <ul>
+                            <li>
+                                i =
+                                <div class="ro">\[\sqrt{-1}\]</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Conjugate of a complex number :
+                        <ul>
+                            <li>
+                                If z = a+ib, for a,b∈R, then z'(conjugate) = a−ib
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Magnitude of a complex number :
+                        <ul>
+                            <li>
+                                ∥z∥ =
+                                <div class="go">\[\sqrt{zz'}\]</div>
+                            </li>
+                            OR
+                            <li>
+                                ∥z∥ =
+                                <div class="ho">\[\sqrt{(Re(z))² + (Im(z))²}\]</div>
+                            </li>
+                            OR
+                            <li>
+                                ∥a+ib∥ =
+                                <div class="jo">\[\sqrt{a² + b²}\]</div>, for a,b∈R
+                            </li>
+                            <br> OR
+                            <li>
+                                ∥(re)ᴵθ∥ = r, for r,θ∈R
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br><br><br>
+                <h4>Complex Number Operations</h4>
+                <ul style="font-size:21px;color:white">
+                    <li>Addition :
+                        <ul>
+                            <li>
+                                (a+ib) + (c+id) = (a+c) + i(b+d)
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Multiplication :
+                        <ul>
+                            <li>
+                                (a+ib)(c+id) = (ac−bd) + i(ad+bc)
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Multiplication in Polar form :
+                        <ul>
+                            <li>
+                                (r1(cosθ₁ + isinθ₁))(r2(cosθ₂ + isinθ₂)) = r1r2(cos(θ₁ + θ₂) + isin(θ₁ − θ₂))
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br><br><br>
+                <h4>Some Basic Properties</h4>
+                <ul style="font-size:21px;color:white">
+                    <li>Commutative law for Addition :
+                        <ul>
+                            <li>
+                                z₁ + z₂ = z₂ + z₁
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Commutative law for Multiplication :
+                        <ul>
+                            <li>
+                                z₁.z₂ = z₂.z₁
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Associative law for addition :
+                        <ul>
+                            <li>
+                                (z₁ + z₂) + z₃ = z₁ + (z₂ + z₃)
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Associative law for Multiplication :
+                        <ul>
+                            <li>
+                                (z₁.z₂).z₃ = z₁.(z₂.z₃)
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Distributive Law :
+                        <ul>
+                            <li>
+                                z₁.(z₁ + z₃) = z₁.z₂ + z₁.z₃
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br><br><br>
+                <h4>Some Basic Proofs</h4>
+                <ul style="font-size:21px;color:white">
+                    <li>The sum of two conjugate complex numbers is real :
+                        <ul>
+                            <li>
+                                Let, z = a + ib (a, b are real numbers) be a complex number. Then, conjugate of z is z' = a - ib. <br> Now, z + z' = a + ib + a - ib = 2a, which is real.
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>If z₁ and z₂ are two complex numbers, then always :
+                        <ul>
+                            <li>
+                                |z₁ + z₂| ≤ |z₁| + |z₂|
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>The product of two conjugate complex numbers is real :
+                        <ul>
+                            <li>
+                                Let, z = a + ib (a, b are real number) be a complex number. Then, conjugate of z is z' = a - ib.
+                                <br> z ∙ z' = (a + ib)(a - ib) = a² - i²b² = a² + b²,
+                                <br> (Since i² = -1), which is real.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br><br><br>
+                <h4>De Moivre's Theorem</h4>
+                <ul style="font-size:21px;color:white">
+                    <li>The formula for this theorem is as :
+                        <ul>
+                            <li>
+                                (cosx + isinx)ⁿ = cos(nx) + isin(nx)
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+</body>
+</html>
