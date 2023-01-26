@@ -3,7 +3,7 @@
 I created this Website as a project for my practice of working with HTML,CSS and JS. 
 It is not the entire website, but the homepage, a few inner pages with the CSS animations, mobile menu and the JavaScript countdown effect.
 
-Here is the Video of how it looks and works
+
 
 
 Here is the Sample ScreenShot of HomePage of Site
