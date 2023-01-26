@@ -1,0 +1,30 @@
+
+body {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5em;
+  background: linear-gradient(to right, red, yellow);
+  margin-top: 10%;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  letter-spacing: 0.5em;
+  width: 100%;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+input {
+  width: 100px;
+  height: 50px;
+  margin-right: 50px;
+}
