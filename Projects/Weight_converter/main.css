@@ -14,6 +14,9 @@ body{
     transform: translate(-50%,-50%);
     justify-items: center;
     text-align: center;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .card{
@@ -60,5 +63,3 @@ h1{
 label{
   font-size: 20px;
 }
-
-
