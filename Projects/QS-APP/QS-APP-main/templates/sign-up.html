@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quantified Self App - Sign-up</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="/static/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/libs/css/style.css">
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/static/assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="/static/assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/static/assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="/static/assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    </style>
+</head>
+<!-- ============================================================== -->
+<!-- signup form  -->
+<!-- ============================================================== -->
+
+<body>
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="/">CAL<i>MATE</i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== --> 
+        
+    <!-- ============================================================== -->
+    <!-- signup form  -->
+    <!-- ============================================================== -->
+    <form action="/signup" class="splash-container" method="POST">
+        <div class="card">
+            {% for message in get_flashed_messages() %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+            <div class="card-header">
+                <h3 class="mb-1">Registration Form</h3>
+                <p>Please enter your user information.</p>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <input class="form-control form-control-lg" type="text" name="uname" required="" placeholder="Username" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input class="form-control form-control-lg" type="text" name="fname" required="" placeholder="First Name" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input class="form-control form-control-lg" type="text" name="lname" required="" placeholder="Last Name" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input class="form-control form-control-lg" id="pass1" type="password" name="pass" required="" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input class="form-control form-control-lg" required="" type="password" name="cpass" placeholder="Confirm Password">
+                </div>
+                <div class="form-group pt-2">
+                    <button class="btn btn-block btn-primary" type="submit">Register My Account</button>
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <p>Already a User? <a href="/" class="text-secondary">Login Here.</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+
+ 
+</html>
