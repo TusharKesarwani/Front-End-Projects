@@ -1,0 +1,38 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin bg-cover {
+    background-size: cover;
+}
+
+@mixin bg-center {
+    background-position: center;
+}
+
+@mixin menu-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
+@mixin column-reverse {
+    flex-direction: column-reverse;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin sectionHeight {
+    height: 480px;
+}

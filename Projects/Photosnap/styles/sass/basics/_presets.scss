@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $ff-reg;
+    font-size: $font-size-body;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.row {
+    @include flex;
+}
+
+.grid {
+    @include grid;
+}
+
+.container,
+.container-lg,
+.container-small {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1150px;
+    padding: 0 25px;
+}
+
+.container-lg {
+    max-width: 3000px;
+}
+
+.container-small {
+    max-width: 900px;
+    padding: 0 20px;
+}

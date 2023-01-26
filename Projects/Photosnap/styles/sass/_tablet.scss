@@ -1,0 +1,110 @@
+// MEDIA QUERIES FOR TABLETS
+
+@media screen and (max-width: 1024px) {
+    .heading {
+        font-size: 36px;
+    }
+
+    .section_text {
+        width: 65%;
+    }
+
+    .stories {
+        .section_text-box {
+            max-width: 100%;
+        }
+    }
+
+    .everyone {
+        .section_text-box {
+            max-width: 100%;
+        }
+    }
+
+    .section_image {
+        width: 35%;
+    }
+
+    .section-create-img {
+        background-image: url("../../images/create-and-share-tablet.jpg");
+        @include bg-center;
+    }
+
+    .section-stories-img {
+        background-image: url("../../images/beautiful-stories-tablet.jpg");
+        @include bg-center;
+    }
+    
+    .section-everyone-img {
+        background-image: url("../../images/designed-for-everyone-tablet.jpg");
+        @include bg-center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-features {
+        .row {
+            flex-direction: column;
+        }
+
+        p {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+    .hero {
+        background-image: url("../../images/moon-of-appalacia-tablet.jpg");
+    }
+
+    .section-features-img {
+        background-image: url("../../images/features-bg-tablet.jpg");
+    }
+
+    .section-pricing-img {
+        background-image: url("../../images/pricing-bg-tablet.jpg");
+    }
+
+    .beta {
+        background-image: url("../../images/bg-beta-tablet.jpg");
+    }
+
+    .pricing-tabs {
+        .price-grid {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .price-box {
+            height: 410px;
+            padding: 30px 40px;
+            text-align: left;
+
+            p {margin-bottom: 35px;}
+
+            p, .btn {
+                max-width: 300px;
+            }
+        }
+
+        .price-box.pro {
+            transform: translateY(0);
+            height: 410px;
+            padding: 30px 40px;
+        }
+
+        h4 {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav_list-item {
+        margin-right: 25px;
+    }
+}

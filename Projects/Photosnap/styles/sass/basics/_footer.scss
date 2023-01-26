@@ -1,0 +1,113 @@
+footer {
+    background-color: $black;
+    padding: 60px 0 40px;
+
+    .footer-row {
+        @include flex;
+        align-items: flex-start;
+    }
+
+    .footer_logo-box {
+        padding-right: 100px;
+        height: 140px;
+        @include flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .social {
+            @include flex;
+
+            li:not(:last-child) {
+                margin-right: 13px;
+            }
+
+            a {
+                display: block;
+                width: 20px;
+                height: 20px;
+                transition: all .4s;
+            }
+
+            a.facebook {
+                background-image: url("../../../images/white-FB.svg");
+                @include bg-cover;
+
+                &:hover {
+                    background-image: url("../../../images/facebook.svg");
+                }
+            }
+
+            a.youtube {
+                background-image: url("../../../images/white-YT.svg");
+                @include bg-cover;
+
+                &:hover {
+                    background-image: url("../../../images/youtube.svg");
+                }
+            }
+
+            a.twitter {
+                background-image: url("../../../images/white-Tw.svg");
+                @include bg-cover;
+
+                &:hover {
+                    background-image: url("../../../images/twitter.svg");
+                }
+            }
+
+            a.pinterest {
+                background-image: url("../../../images/white-Pin.svg");
+                @include bg-cover;
+
+                &:hover {
+                    background-image: url("../../../images/pinterest.svg");
+                }
+            }
+
+            a.instagram {
+                background-image: url("../../../images/white-Insta.svg");
+                @include bg-cover;
+
+                &:hover {
+                    background-image: url("../../../images/instagram.svg");
+                }
+            }
+
+            img {
+                transition: transform .4s ease;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+
+    .footer_menu-box {
+        height: 140px;
+    }
+
+    .footer_menu {
+        @include flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 140px;
+    
+        &-link {
+            @extend %navlink-shared;
+            color: $white;
+    
+            &:hover {
+                color: $opaque-grey;
+            }
+        }
+    }
+
+    .footer_copyright {
+        margin-left: auto;
+        @include flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 140px;
+    }
+}

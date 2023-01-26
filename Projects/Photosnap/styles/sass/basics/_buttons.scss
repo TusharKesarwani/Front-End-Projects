@@ -1,0 +1,69 @@
+%btn-shared {
+    text-transform: uppercase;
+    font-size: $font-size-h4;
+    font-family: $ff-bold;
+    letter-spacing: $letter-spacing-S;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 11px 25px;
+    @extend %btn-shared;
+}
+
+.btn-black {
+    background-color: $black;
+    color: $white;
+    transition: all .4s;
+
+    &:hover {
+        background-color: $light-grey;
+        color: $black;
+    }
+}
+
+.invite-link {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    max-width: 165px;
+    position: relative;
+    @extend %btn-shared;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 42px;
+        height: 12px;
+        background-size: cover;
+        transition: transform .4s;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:hover::after {
+        transform: translateX(-10px);
+    }
+}
+
+.invite-link-white {
+    color: $white;
+
+    &::after {
+        background-image: url("../../../images/arrow-white.svg");
+    }
+}
+
+.invite-link-black {
+    color: $black;
+    max-width: 200px;
+
+    &::after {
+        background-image: url("../../../images/arrow-black.svg");  
+    }
+}
