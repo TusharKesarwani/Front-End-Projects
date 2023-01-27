@@ -26,7 +26,7 @@ Snapshot of Website
 
 
 ## Conclusion
-This game is a fun and simple way to test your luck and strategy against the computer. It can also be used as a tool to teach basic programming concepts such as conditionals and event listeners.
+This game is a fun and simple way to test your luck and strategy against the computer. It can also be used as a tool to teach basic programming concepts such as conditionals and event listeners for the newbies.
 
 
 
