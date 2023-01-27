@@ -146,7 +146,9 @@ main .left p {
 
 .project-header #searchForm {
     height: fit-content;
+    width: fit-content;
     padding: 1rem;
+    margin: 0.5rem;
     text-align: center;
     border: 2px solid #0D4360;
     border-radius: 1rem;
@@ -409,6 +411,12 @@ footer a {
     footer {
         flex-direction: column;
         padding: 2rem 2rem;
+    }
+    .project-header {
+        flex-direction: column;
+    }
+    .project-header button, .project-header #search {
+        font-size: 0.8rem;
     }
 }
 

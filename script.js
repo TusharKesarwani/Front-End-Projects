@@ -3,8 +3,6 @@ import projects from "./projects.js";
 const urlParams = new URLSearchParams(window.location.search);
 const searchQuery = urlParams.get('s');
 
-console.log(searchQuery);
-
 let filteredProjects = (searchQuery && searchQuery != "") ? projects.filter((project) => project.title.toLowerCase().includes(searchQuery.toLowerCase())) : projects;
 
 // displaying filtered projects
