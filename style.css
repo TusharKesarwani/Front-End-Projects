@@ -138,6 +138,40 @@ main .left p {
     margin-top: 2rem;
 }
 
+.project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-header #searchForm {
+    height: fit-content;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid #0D4360;
+    border-radius: 1rem;
+}
+
+.project-header #search {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
+.project-header #search:hover, .project-header #search:focus {
+    border: 0px;
+    outline: none;
+}
+
+.project-header button {
+    font-size: 1rem;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
 .project {
     display: flex;
     width: 30%;
