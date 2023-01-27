@@ -108,29 +108,6 @@
         function myfunction() {
             preloader.style.display = 'none';
         }
-
-        // For contributors list
-
-        fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contributors?per_page=50", {
-                headers: {
-                    'Authorization': ''
-                }
-            }).then(response => response.json())
-            .then(data => {
-                // Extract the data for each contributor
-                const contributors = data.map(contributor => ({
-                    username: contributor.login,
-                    avatarUrl: contributor.avatar_url
-                }));
-
-                // Create and append HTML elements to display the contributors
-                const contributorsList = document.querySelector("#contributors-list");
-                contributors.forEach(contributor => {
-                    const li = document.createElement("li");
-                    li.innerHTML = `<img src="${contributor.avatarUrl}" alt="${contributor.username}">`;
-                    contributorsList.appendChild(li);
-                });
-            });
     </script>
 </body>
 

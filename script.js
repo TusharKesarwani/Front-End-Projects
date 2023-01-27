@@ -7,8 +7,7 @@ console.log(searchQuery);
 
 let filteredProjects = (searchQuery && searchQuery != "") ? projects.filter((project) => project.title.toLowerCase().includes(searchQuery.toLowerCase())) : projects;
 
-console.log(projects);
-
+// displaying filtered projects
 const projects_div = document.getElementsByClassName("projects")[0]
 for (let project of filteredProjects) {
     const project_div = document.createElement("div");
@@ -64,6 +63,11 @@ for (let project of filteredProjects) {
     projects_div.appendChild(project_div);
 }
 
+// For search query form
+
+if (searchQuery && searchQuery != "")
+    document.getElementById("search").value = searchQuery
+
 const searchForm = document.getElementById("searchForm");
 searchForm.addEventListener("submit",(e) => {
     const searchQuery = document.getElementById("search");
@@ -75,3 +79,26 @@ searchForm.addEventListener("submit",(e) => {
 
     window.location = `/index.html?s=${searchQuery.value}`;
 })
+
+// For contributors list
+
+fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contributors?per_page=50", {
+        headers: {
+            'Authorization': ''
+        }
+    }).then(response => response.json())
+    .then(data => {
+        // Extract the data for each contributor
+        const contributors = data.map(contributor => ({
+            username: contributor.login,
+            avatarUrl: contributor.avatar_url
+        }));
+
+        // Create and append HTML elements to display the contributors
+        const contributorsList = document.querySelector("#contributors-list");
+        contributors.forEach(contributor => {
+            const li = document.createElement("li");
+            li.innerHTML = `<img src="${contributor.avatarUrl}" alt="${contributor.username}">`;
+            contributorsList.appendChild(li);
+        });
+    });
