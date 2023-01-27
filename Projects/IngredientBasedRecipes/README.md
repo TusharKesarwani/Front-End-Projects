@@ -1,6 +1,6 @@
 # NAME AND INTRODUCTION OF THE PROJECT :
 2
-## Recipe Finder :
+## Recipe Finder With Particular Ingredients :
 3
     Find your everyday cooking inspiration on this Recipe Website with The Hep of Ingredients you want to use Or have currently. 
 4
@@ -44,7 +44,7 @@ https://user-images.githubusercontent.com/84733088/215172645-1d3c5a66-56f3-49f2-
 
 # CONTRIBUTED BY :
 
-Yash Khandelwal
+## Yash Khandelwal
 29
 ​
 30
