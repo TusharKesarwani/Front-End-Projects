@@ -3,8 +3,7 @@
 ## Recipe Finder With Particular Ingredients :
 3
     Find your everyday cooking inspiration on this Recipe Website with The Hep of Ingredients you want to use Or have currently. 
-4
-​
+
 5
     * Discover recipes 🍙
 6
@@ -45,7 +44,5 @@ https://user-images.githubusercontent.com/84733088/215172645-1d3c5a66-56f3-49f2-
 # CONTRIBUTED BY :
 
 ## Yash Khandelwal
-29
-​
-30
+
 Hope This will Help You A Lot In Getting Recipes With The Help Of Ingredients !!
