@@ -70,14 +70,14 @@ if (searchQuery && searchQuery != "")
 
 const searchForm = document.getElementById("searchForm");
 searchForm.addEventListener("submit",(e) => {
-    const searchQuery = document.getElementById("search");
+    const searchText = document.getElementById("search");
     e.preventDefault();
     
-    if (!searchQuery.value || searchQuery.value =="") {
+    if (searchText.value == (searchQuery ? searchQuery : "")) {
         return;
     }
 
-    window.location = `/index.html?s=${searchQuery.value}`;
+    window.location = `/index.html?s=${searchText.value}`;
 })
 
 // For contributors list
