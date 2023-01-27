@@ -17,6 +17,11 @@ This is a simple game where the user plays against the computer by choosing betw
 ### How it works
 The game uses JavaScript to determine the winner of each round. The computer's choice is randomly generated using the built-in Math.random() function. The game compares the player's choice with the computer's choice to determine the winner, and updates the scores accordingly.
 
+
+Snapshot of Website
+![swg22](https://user-images.githubusercontent.com/97297724/215085586-20ea8552-e4d2-4d55-afaa-744e9aff4542.PNG)
+
+
 **Tech Stack Used :Html,Css and Vanilla Js**
 
 
