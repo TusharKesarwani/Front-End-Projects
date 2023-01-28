@@ -71,6 +71,7 @@ body {
     background: var(--color-background);
     color: var(--color-dark);
     font-family: 'secular one', sans-serif;
+    overflow-x: hidden; 
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
