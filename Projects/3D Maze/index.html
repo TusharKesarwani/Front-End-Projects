@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Maze</title>
+	</head>
+	<body>
+		<main>
+			<h1>Complete the maze to find secret key</h1>
+			<div id="two"></div>
+		</main>
+		<footer>
+			<strong>Hint:</strong> Use the key found twice.<br/>
+			<strong>Controls: </strong> Arrow keys to move, spacebar to jump.
+		</footer>
+		<link rel="stylesheet" href="theme/basic.css" />
+		<style>
+			html, body
+			{
+				overflow: hidden;
+				color: white;
+			}
+			
+			h1 { text-align: center; }
+			
+			#two
+			{
+				position: absolute; top: 0; left: 0;
+				z-index: -10;
+			}
+			
+			footer
+			{
+				position: absolute; bottom: 0;
+				
+				padding: 1rem;
+			}
+		</style>
+		<script>
+			var audio = document.createElement("AUDIO");
+			document.body.appendChild(audio);
+			audio.src = "scary.mp3";
+			document.body.addEventListener("keydown", function () {
+    		audio.play();})
+		</script>
+		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/kibo/1.1.0/kibo.min.js"></script>
+		
+		<script src="helvetiker_regular.typeface.js"></script>
+		<script src="maze.js"></script>
+		<script src="four.js"></script>
+	</body>
+</html>
