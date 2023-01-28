@@ -69,3 +69,63 @@ input {
     text-align: center;
     background-color: #151f30;
 }
+
+/* Media Queries for Small Devices (mobile phones) /
+@media only screen and (max-width: 600px) {
+/ Change the font size of the header /
+h3 {
+font-size: 1.2rem;
+}
+/ Change the width of the thumbnail image /
+.thumbnail {
+width: 200px;
+}
+/ Change the width of the card /
+.card {
+width: 90%;
+}
+/ Change the width of the search form */
+form {
+width: 200px;
+}
+}
+
+/* Media Queries for Medium Devices (tablets) /
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+/ Change the font size of the header /
+h3 {
+font-size: 1.5rem;
+}
+/ Change the width of the thumbnail image /
+.thumbnail {
+width: 250px;
+}
+/ Change the width of the card /
+.card {
+width: 80%;
+}
+/ Change the width of the search form */
+form {
+width: 250px;
+}
+}
+
+/* Media Queries for Large Devices (laptops, desktops) /
+@media only screen and (min-width: 1024px) {
+/ Change the font size of the header /
+h3 {
+font-size: 1.8rem;
+}
+/ Change the width of the thumbnail image /
+.thumbnail {
+width: 300px;
+}
+/ Change the width of the card /
+.card {
+width: 70%;
+}
+/ Change the width of the search form */
+form {
+width: 300px;
+}
+}
