@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "DM Sans Regular";
+    src: url("../../../textfont/DMSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DM Sans Bold";
+    src: url("../../../textfont/DMSans-Bold.ttf") format("truetype");
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+$ff-bold: "DM Sans Bold", sans-serif;
+$ff-reg: "DM Sans Regular", sans-serif;
+
+
+$font-size-body: 15px;
+$font-size-h1: 40px;
+$font-size-h2: 24px;
+$font-size-h3: 18px;
+$font-size-h4: 12px;
+$font-size-h5: 10px;
+
+$letter-spacing-L: 4.17px;
+$letter-spacing-S: 2px; 
+
+$line-height-L: 48px;
+$line-height-M: 25px;
+$line-height-S: 16px;
+
+h1 {
+    font-size: $font-size-h1;
+    @include uppercase;
+    letter-spacing: $letter-spacing-L;
+}
+
+.white {
+    color: $white;
+}
+
+h3 {
+    font-family: $ff-bold;
+    font-size: $font-size-h3;
+    line-height: $line-height-M;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: $line-height-M;
+    letter-spacing: .2px;
+    font-family: $ff-bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h5 {
+    font-family: $ff-bold;
+    font-size: $font-size-h4;
+    @include uppercase;
+    letter-spacing: $letter-spacing-S;
+}
+
+p.opaque-grey {
+    color: $opaque-grey;
+}
+
+p.opaque-black {
+    color: $opaque-black;
+}
+
+.heading {
+    font-size: $font-size-h1;
+    @include uppercase;
+    letter-spacing: $letter-spacing-L;
+}

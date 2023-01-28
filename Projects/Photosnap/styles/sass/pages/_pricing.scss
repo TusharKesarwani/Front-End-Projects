@@ -1,0 +1,203 @@
+// PRICING HERO SECTION
+.pricing {
+    .section_text {
+        @include sectionHeight;
+    }
+}
+
+.section-pricing-img {
+    background-image: url("../../../images/pricing-bg.jpg");
+    @include bg-cover;
+}
+
+// PRICING TABS
+
+.pricing-tabs {
+    padding: 100px 0 60px;
+
+    .toggle-container {
+        margin-bottom: 40px;
+        color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-family: $ff-bold;
+            font-size: $font-size-h3;
+        }
+
+        label {
+            background-color: #dfdfdf;
+            display: inline-block;
+            position: relative;
+            margin: 0 30px;
+            width: 60px;
+            height: 30px;
+            border-radius: 50px;
+            cursor: pointer;
+
+            .ball {
+                height: 25px;
+                width: 25px;
+                background-color: $black;
+                border-radius: 50%;
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                transition: transform 0.4s ease;
+            }
+        }
+
+        input {
+            position: absolute;
+            left: -9999px;
+
+            &:checked + label .ball {
+                transform: translateX(29px);
+            }
+        }
+    }
+
+    .price-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        padding: 35px 0 30px;
+    }
+
+    .price-box {
+        background-color: #f5f5f5;
+        padding: 50px 40px;
+        text-align: center;
+        height: 430px;
+    
+        p {
+            color: $opaque-black;
+            line-height: $line-height-M;
+            margin-bottom: 45px;
+        }
+
+        .yearly {
+            display: none;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    
+    }
+    
+    .price-box.pro {
+        background-color: $black;
+        height: 500px;
+        padding-top: 88px;
+        transform: translateY(-35px);
+        position: relative;
+
+        p {
+            color: $opaque-grey;
+        }
+
+        h2, h4 {
+            color: $white;
+        }
+
+        button {
+            background-color: $white;
+            color: $black;
+
+            &:hover {
+                background-color: $light-grey;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 6px;
+                width: 100%;
+                background-image: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+            }
+        }
+    }
+}
+
+.show-yearly .price-box .yearly {
+    display: block;
+}
+
+.show-yearly .price-box .monthly {
+    display: none;
+}
+
+// COMPARE SECTION
+%border-bottom {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .5px;
+    width: 90%;
+}
+
+.compare {
+    padding: 50px 0 130px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .table_row {
+        padding: 23px 30px;
+        display: flex;
+        position: relative;
+
+        &::after {
+            @extend %border-bottom;
+            background-color: $light-grey;
+        }
+
+        .col-1 {
+            margin-right: auto;
+        }
+
+        .col-2 {
+            display: flex;
+
+            span {
+                margin-right: 80px;
+            }
+
+            .plan-name {display: none;}
+        }
+
+        span {
+            font-family: $ff-bold;
+            font-size: $font-size-h4;
+            @include uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .table_head {
+        position: relative;
+
+        &::after {
+            @extend %border-bottom;
+            background-color: $black;
+        }
+    }
+
+    .table_body {
+        .col-2 {
+            span {
+                margin-right: 105px;
+            }
+        }
+    }
+}

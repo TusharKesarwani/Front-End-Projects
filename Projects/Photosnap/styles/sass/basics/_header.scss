@@ -1,0 +1,39 @@
+header {
+    height: 70px;
+}
+
+.navbar {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+%navlink-shared {
+    text-transform: uppercase;
+    font-family: $ff-bold;
+    font-size: $font-size-h4;
+    letter-spacing: 2px;
+    transition: color .5s ease;
+}
+
+.nav_list {
+    @include flex;
+
+    &-item {
+        margin-right: 45px;
+    }
+
+    &-link {
+        @extend %navlink-shared;
+        color: $black;
+
+        &:hover {
+            color: $light-grey;
+        }
+    }
+}
+
+.menu_toggle {
+    display: none;
+}

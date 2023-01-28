@@ -1,0 +1,215 @@
+// THE SECTIONS
+
+.section_text {
+    width: 43%;
+    height: 590px;
+    @include flex;
+    align-items: center;
+
+    &_black {
+        background-color: $black;
+    }
+
+    &_white {
+        background-color: $white;
+    }
+
+    &-box {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 55px;
+
+        p {
+            line-height: $line-height-M;
+            margin: 40px 0 55px;
+        }
+    }
+}
+
+.section_image {
+    width: 57%;
+}
+
+.section-create-img {
+    background-image: url("../../../images/create-and-share.jpg");
+    @include bg-cover;
+}
+
+.section-stories-img {
+    background-image: url("../../../images/beautiful-stories.jpg");
+    @include bg-cover;
+}
+
+.section-everyone-img {
+    background-image: url("../../../images/designed-for-everyone.jpg");
+    @include bg-cover;
+}
+
+// THE GALLERY SECTION
+
+.image-container {
+    display: block;
+    height: 500px;
+    position: relative;
+    transition: all .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-image: linear-gradient(27deg, #FFC593 0%, #BC7198 49%, #5A77FF 95%);
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &:hover {
+        transform: translateY(-25px);
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    @include flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 35px 0;
+
+    &-box {
+        color: $white;
+        width: 80%;
+        max-width: 100%;
+
+        p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+
+    &-textbox {
+        border-bottom: 1px solid rgba(255,255,255,.25);
+        padding: 10px 5px 18px;
+    }
+
+    &-link {
+        @include flex;
+        justify-content: space-between;
+        padding: 18px 5px 5px;
+
+        h6 {
+            text-transform: uppercase;
+            font-family: $ff-bold;
+            font-size: $font-size-h4;
+            letter-spacing: 2px;
+        }
+    }
+
+    &-1 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/mountains.jpg");
+        @include bg-cover;
+    }
+    &-2 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/cityscapes.jpg");
+        @include bg-cover;
+    }
+    &-3 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/18-days-voyage.jpg");
+        @include bg-cover;
+    }
+    &-4 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/architecturals.jpg");
+        @include bg-cover;
+    }
+    &-5 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/world-tour.jpg");
+        @include bg-cover;
+    }
+
+    &-6 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/unforeseen-corners.jpg");
+        @include bg-cover;
+    }
+    &-7 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/king-on-africa.jpg");
+        @include bg-cover;
+    }
+    &-8 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/trip-to-nowhere.jpg");
+        @include bg-cover;
+    }
+    &-9 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/rage-of-the-sea.jpg");
+        @include bg-cover;
+    }
+    &-10 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/running-free.jpg");
+        @include bg-cover;
+    }
+
+    &-11 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/behind-the-waves.jpg");
+        @include bg-cover;
+    }
+    &-12 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/calm-waters.jpg");
+        @include bg-cover;
+    }
+    &-13 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/milky-way.jpg");
+        @include bg-cover;
+    }
+    &-14 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/dark-forest.jpg");
+        @include bg-cover;
+    }
+    &-15 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/somwarpet.jpg");
+        @include bg-cover;
+    }
+
+    &-16 {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../../images/land-of-dreams.jpg");
+        @include bg-cover;
+    }
+}
+
+// FEATURES SECTION
+
+.our-features {
+    padding: 100px 0;
+
+    .feature {
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 30px;
+
+        &-image {
+            @include flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            margin-bottom: 40px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &-heading {
+            margin-bottom: 18px;
+        }
+
+        &-text {
+            line-height: $line-height-M;
+            color: $opaque-black;
+        }
+    }
+}
