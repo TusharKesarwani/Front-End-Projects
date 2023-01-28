@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Statistic Formula</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+
+
+    <style>
+        @import url(./variable.css);
+
+        * {
+            font-family: "Jost", sans-serif;
+            background-color: #d5f1f5;
+            text-align: center;
+        }
+
+        .form__field {
+            font-family: "Jost", sans-serif;
+            font-size: 1.2rem !important;
+            letter-spacing: 0.125rem;
+            width: 28%;
+            border: 0;
+            box-shadow: 0 0 10px black;
+            outline: 0;
+            margin-bottom: 1%;
+            color: black;
+            background-color: var(--appblack);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: #d5f1f5;
+            color: hsl(229, 84%, 12%);
+            border: 2px solid hsl(229, 84%, 12%);
+            width: 9%;
+            height: 46px;
+            border-radius: 28px;
+            font-size: 21px;
+            font-family: "Jost", sans-serif;
+            color: hsl(229, 84%, 12%);
+        }
+
+        .btn:hover {
+            background-color: hsl(229, 84%, 12%);
+            color: white;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 28px;
+            padding: 20px;
+            font-weight: 800;
+            color: hsl(229, 84%, 12%);
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li {
+            font-size: 21px;
+            font-weight: var(--fw-8);
+            color: var(--oxford-blue);
+            line-height: 1.3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="stats">
+        <br>
+        <div class="stopwrap">
+            <div class="coll">
+                <div class="left">
+                    <h4>Statistics Formula Sheet</h4>
+                    <table class="table table-bordered table-dark">
+                        <tbody>
+                            <tr>
+                                <th scope="row">\[Mean\]</th>
+                                <td>\[\bar{x}=\frac{\sum x}{n}\]</td>
+                                <td>
+                                    <p>\[x\,=\, Observations \,given\]</p>
+                                    <p>\[n\, =\, Total\, number\, of\]</p>
+                                    <p>\[observations\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Median\]</th>
+                                <td>
+                                    <p>\[If\, n\, is\, odd,\, then\]</p>
+                                    <p>\[M\,=(\frac{n+1}{2})\,term\]</p>
+                                    <p>\[If\, n\, is\, even,\, then\]</p>
+                                    <p>\[M
+                                        \,=\,\frac{(\frac{n}{2})^{th}term+(\frac{n}{2}+1)^{th}term}{2}\]</p>
+                                </td>
+                                <td>
+                                    <p>\[n \,= \,Total\, number \,of\]</p>
+                                    <p> \[observations\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Mode\]</th>
+                                <td>
+                                    <p></p>\[The\, value\, which\, occurs\]</p>
+                                    <p>\[most\,
+                                        frequently\]</p>
+                                </td>
+                                <td>\[-\]</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Variance\]</th>
+                                <td>\[\sigma ^{2}\,=\,\frac{\sum (x-\bar{x})^{2}}{n}\]</td>
+                                <td>
+                                    <p>\[x\, =\, Observations\, given\]</p>
+                                    <p>\[x¯\, =\, Mean\]</p>
+                                    <p>\[n \,= \,Total\, number \,of\]</p>
+                                    <p> \[observations\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Standard \,Deviation\]</th>
+                                <td>\[S = \sigma = \sqrt{\frac{\sum (x-\bar{x})^{2}}{n}}\]</td>
+                                <td>
+                                    <p>\[x\, =\, Observations\, given\]</p>
+                                    <p>\[x¯\, =\, Mean\]</p>
+                                    <p>\[n \,= \,Total\, number \,of\]</p>
+                                    <p> \[observations\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Range\]</th>
+                                <td>\[L-S\]</td>
+                                <td>
+                                    <p>\[L\, =\, Largest\, value\]</p>
+                                    <p>\[S\, =\, Smallest\, value\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Coeff.\,of\,Range\]</th>
+                                <td>\[\frac{L-S}{L+S}\]</td>
+                                <td>
+                                    <p>\[L\, =\, Largest\, value\]</p>
+                                    <p>\[S\, =\, Smallest\, value\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Coeff.\,of\,Variation\]</th>
+                                <td>\[\frac{\sigma}{\bar{x}}*100\]</td>
+                                <td>
+                                    <p>\[\sigma=Standard\, Deviation\]</p>
+                                    <p>\[x¯\, =\, Mean\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Combined \,Mean\]</th>
+                                <td>\[\frac{m\bar{x}\,+\,n\bar{y}}{m+n}\]</td>
+                                <td>
+                                    <p>\[x¯\,/y¯\, =\, Mean\, of\, two\]</p>
+                                    <p>\[distributions\]</p>
+                                    <p>\[m\,/n\,=no.\,of\,elements\,in\,\]</p>
+                                    <p>\[each\,distributions\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">\[Weighted\,Mean\]</th>
+                                <td>\[\frac{\sum Wi\,xi}{\sum Wi}\]</td>
+                                <td>
+                                    <p>\[Wi=Weight \,of\, each\]</p>
+                                    <p>\[distributions\]</p>
+                                    <p>\[xi=ith\,observation\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>\[Mean\,Deviation\]</p>
+                                    <p>\[about\,mean\]</p>
+                                    <p>\[\bar{X}\]
+                                </th>
+                                <td>\[\frac{\sum|xi-\bar{x}|}{n}\]</td>
+                                <td>
+                                    <p>\[n \,= \,Total\, number \,of\]</p>
+                                    <p> \[observations\]</p>
+                                    <p>\[x¯\, =\, Mean\]</p>
+                                    <p>\[xi=ith\,observation\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>\[Mean\,Deviation\]</p>
+                                    <p>\[about\,median\]</p>
+                                    <p>\[M\]
+                                </th>
+                                <td>\[\frac{\sum|xi-M|}{n}\]</td>
+                                <td>
+                                    <p>\[n \,= \,Total\, number \,of\]</p>
+                                    <p> \[observations\]</p>
+                                    <p>\[M\, =\, Median\]</p>
+                                    <p>\[xi=ith\,observation\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>\[Mean\,Deviation\]</p>
+                                    <p>\[about\,mode\]</p>
+                                    <p>\[Z\]</p>
+                                </th>
+                                <td>\[\frac{\sum|xi-Z|}{n}\]</td>
+                                <td>
+                                    <p>\[n \,= \,Total\, number \,of\]</p>
+                                    <p> \[observations\]</p>
+                                    <p>\[Z\, =\, Mode\]</p>
+                                    <p>\[xi=ith\,observation\]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>\[Mean\,Deviation\]</p>
+                                    <p>\[about\,any\,no.\,'a'\]</p>
+                                </th>
+                                <td>\[\frac{\sum|xi-a|}{n}\]</td>
+                                <td>
+                                    <p>\[n \,= \,Total\, number \,of\]</p>
+                                    <p> \[observations\]</p>
+                                    <p>\[xi=ith\,observation\]</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>\[For \,symmetrical \]</p>
+                                    <p>\[Distribution:\]</p>
+                                </th>
+                                <td>\[Mode\,=\,3Median\,-\,2Mean\]</td>
+                                <td>\[-\]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

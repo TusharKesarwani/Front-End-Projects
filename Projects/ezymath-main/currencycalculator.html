@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+
+        <style>
+            @import url(./variable.css);
+    
+            * {
+                font-family: "Jost", sans-serif;
+                background-color: #d5f1f5;
+            }
+    
+            .form__field {
+                font-family: "Jost", sans-serif;
+                font-size: 1.2rem !important;
+                letter-spacing: 0.125rem;
+                width: 28%;
+                border: 0;
+                box-shadow: 0 0 10px black;
+                outline: 0;
+                margin-bottom: 1%;
+                color: black;
+                background-color: var(--appblack);
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+            }
+
+            .form__field1 {
+                font-family: "Jost", sans-serif;
+                font-size: 1.2rem !important;
+                letter-spacing: 0.125rem;
+                width: 26.6%;
+                border: 0;
+                box-shadow: 0 0 10px black;
+                outline: 0;
+                margin-bottom: 1%;
+                color: black;
+                background-color: var(--appblack);
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+            }
+    
+            .btn {
+                background-color: #d5f1f5;
+                color: hsl(229, 84%, 12%);
+                border: 2px solid hsl(229, 84%, 12%);
+                width: 9%;
+                height: 46px;
+                border-radius: 28px;
+                font-size: 21px;
+                font-family: "Jost", sans-serif;
+                color: hsl(229, 84%, 12%);
+            }
+    
+            .btn:hover {
+                background-color: hsl(229, 84%, 12%);
+                color: white;
+            }
+    
+            form {
+                text-align: center;
+            }
+    
+            h5 {
+                font-size: 28px;
+                padding: 20px;
+                font-weight: 800;
+                color: hsl(229, 84%, 12%);
+            }
+        </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col-6">
+            <h5>From</h5>
+            <select id="curcon-1" class="form__field" onchange="curcon()">
+                <option value="USD" class="form_field" style="background-color:var(--appblack);">USD
+                </option>
+                <option value="AED" class="form_field" style="background-color:var(--appblack);">AED
+                </option>
+                <option value="ARS" class="form_field" style="background-color:var(--appblack);">ARS
+                </option>
+                <option value="AUD" class="form_field" style="background-color:var(--appblack);">AUD
+                </option>
+                <option value="BGN" class="form_field" style="background-color:var(--appblack);">BGN
+                </option>
+                <option value="BRL" class="form_field" style="background-color:var(--appblack);">BRL
+                </option>
+                <option value="BSD" class="form_field" style="background-color:var(--appblack);">BSD
+                </option>
+                <option value="CAD" class="form_field" style="background-color:var(--appblack);">CAD
+                </option>
+                <option value="CHF" class="form_field" style="background-color:var(--appblack);">CHF
+                </option>
+                <option value="CLP" class="form_field" style="background-color:var(--appblack);">CLP
+                </option>
+                <option value="CNY" class="form_field" style="background-color:var(--appblack);">CNY
+                </option>
+                <option value="COP" class="form_field" style="background-color:var(--appblack);">COP
+                </option>
+                <option value="CZK" class="form_field" style="background-color:var(--appblack);">CZK
+                </option>
+                <option value="DKK" class="form_field" style="background-color:var(--appblack);">DKK
+                </option>
+                <option value="DOP" class="form_field" style="background-color:var(--appblack);">DOP
+                </option>
+                <option value="EGP" class="form_field" style="background-color:var(--appblack);">EGP
+                </option>
+                <option value="EUR" class="form_field" style="background-color:var(--appblack);">EUR
+                </option>
+                <option value="FJD" class="form_field" style="background-color:var(--appblack);">FJD
+                </option>
+                <option value="GBP" class="form_field" style="background-color:var(--appblack);">GBP
+                </option>
+                <option value="GTQ" class="form_field" style="background-color:var(--appblack);">GTQ
+                </option>
+                <option value="HKD" class="form_field" style="background-color:var(--appblack);">HKD
+                </option>
+                <option value="HRK" class="form_field" style="background-color:var(--appblack);">HRK
+                </option>
+                <option value="HUF" class="form_field" style="background-color:var(--appblack);">HUF
+                </option>
+                <option value="IDR" class="form_field" style="background-color:var(--appblack);">IDR
+                </option>
+                <option value="ILS" class="form_field" style="background-color:var(--appblack);">ILS
+                </option>
+                <option value="INR" class="form_field" style="background-color:var(--appblack);">INR
+                </option>
+                <option value="ISK" class="form_field" style="background-color:var(--appblack);">ISK
+                </option>
+                <option value="JPY" class="form_field" style="background-color:var(--appblack);">JPY
+                </option>
+                <option value="KRW" class="form_field" style="background-color:var(--appblack);">KRW
+                </option>
+                <option value="KZT" class="form_field" style="background-color:var(--appblack);">KZT
+                </option>
+                <option value="MVR" class="form_field" style="background-color:var(--appblack);">MVR
+                </option>
+                <option value="MXN" class="form_field" style="background-color:var(--appblack);">MXN
+                </option>
+                <option value="MYR" class="form_field" style="background-color:var(--appblack);">MYR
+                </option>
+                <option value="NOK" class="form_field" style="background-color:var(--appblack);">NOK
+                </option>
+                <option value="NZD" class="form_field" style="background-color:var(--appblack);">NZD
+                </option>
+                <option value="PAB" class="form_field" style="background-color:var(--appblack);">PAB
+                </option>
+                <option value="PEN" class="form_field" style="background-color:var(--appblack);">PEN
+                </option>
+                <option value="PHP" class="form_field" style="background-color:var(--appblack);">PHP
+                </option>
+                <option value="PKR" class="form_field" style="background-color:var(--appblack);">PKR
+                </option>
+                <option value="PLN" class="form_field" style="background-color:var(--appblack);">PLN
+                </option>
+                <option value="PYG" class="form_field" style="background-color:var(--appblack);">PYG
+                </option>
+                <option value="RON" class="form_field" style="background-color:var(--appblack);">RON
+                </option>
+                <option value="RUB" class="form_field" style="background-color:var(--appblack);">RUB
+                </option>
+                <option value="SAR" class="form_field" style="background-color:var(--appblack);">SAR
+                </option>
+                <option value="SEK" class="form_field" style="background-color:var(--appblack);">SEK
+                </option>
+                <option value="SGD" class="form_field" style="background-color:var(--appblack);">SGD
+                </option>
+                <option value="THB" class="form_field" style="background-color:var(--appblack);">THB
+                </option>
+                <option value="TRY" class="form_field" style="background-color:var(--appblack);">TRY
+                </option>
+                <option value="TWD" class="form_field" style="background-color:var(--appblack);">TWD
+                </option>
+                <option value="UAH" class="form_field" style="background-color:var(--appblack);">UAH
+                </option>
+                <option value="UYU" class="form_field" style="background-color:var(--appblack);">UYU
+                </option>
+                <option value="ZAR" class="form_field" style="background-color:var(--appblack);">ZAR
+                </option>
+            </select>
+            <input type="number" id="curconin" class="form__field1" placeholder="Enter Side" value="0" ; oninput="curcon();">
+            <h5>To</h5>
+            <select id="curcon-2" class="form__field1" onchange="curcon()">
+                <option value="USD" class="form_field" style="background-color:var(--appblack);">USD
+                </option>
+                <option value="AED" class="form_field" style="background-color:var(--appblack);">AED
+                </option>
+                <option value="ARS" class="form_field" style="background-color:var(--appblack);">ARS
+                </option>
+                <option value="AUD" class="form_field" style="background-color:var(--appblack);">AUD
+                </option>
+                <option value="BGN" class="form_field" style="background-color:var(--appblack);">BGN
+                </option>
+                <option value="BRL" class="form_field" style="background-color:var(--appblack);">BRL
+                </option>
+                <option value="BSD" class="form_field" style="background-color:var(--appblack);">BSD
+                </option>
+                <option value="CAD" class="form_field" style="background-color:var(--appblack);">CAD
+                </option>
+                <option value="CHF" class="form_field" style="background-color:var(--appblack);">CHF
+                </option>
+                <option value="CLP" class="form_field" style="background-color:var(--appblack);">CLP
+                </option>
+                <option value="CNY" class="form_field" style="background-color:var(--appblack);">CNY
+                </option>
+                <option value="COP" class="form_field" style="background-color:var(--appblack);">COP
+                </option>
+                <option value="CZK" class="form_field" style="background-color:var(--appblack);">CZK
+                </option>
+                <option value="DKK" class="form_field" style="background-color:var(--appblack);">DKK
+                </option>
+                <option value="DOP" class="form_field" style="background-color:var(--appblack);">DOP
+                </option>
+                <option value="EGP" class="form_field" style="background-color:var(--appblack);">EGP
+                </option>
+                <option value="EUR" class="form_field" style="background-color:var(--appblack);">EUR
+                </option>
+                <option value="FJD" class="form_field" style="background-color:var(--appblack);">FJD
+                </option>
+                <option value="GBP" class="form_field" style="background-color:var(--appblack);">GBP
+                </option>
+                <option value="GTQ" class="form_field" style="background-color:var(--appblack);">GTQ
+                </option>
+                <option value="HKD" class="form_field" style="background-color:var(--appblack);">HKD
+                </option>
+                <option value="HRK" class="form_field" style="background-color:var(--appblack);">HRK
+                </option>
+                <option value="HUF" class="form_field" style="background-color:var(--appblack);">HUF
+                </option>
+                <option value="IDR" class="form_field" style="background-color:var(--appblack);">IDR
+                </option>
+                <option value="ILS" class="form_field" style="background-color:var(--appblack);">ILS
+                </option>
+                <option value="INR" class="form_field" style="background-color:var(--appblack);">INR
+                </option>
+                <option value="ISK" class="form_field" style="background-color:var(--appblack);">ISK
+                </option>
+                <option value="JPY" class="form_field" style="background-color:var(--appblack);">JPY
+                </option>
+                <option value="KRW" class="form_field" style="background-color:var(--appblack);">KRW
+                </option>
+                <option value="KZT" class="form_field" style="background-color:var(--appblack);">KZT
+                </option>
+                <option value="MVR" class="form_field" style="background-color:var(--appblack);">MVR
+                </option>
+                <option value="MXN" class="form_field" style="background-color:var(--appblack);">MXN
+                </option>
+                <option value="MYR" class="form_field" style="background-color:var(--appblack);">MYR
+                </option>
+                <option value="NOK" class="form_field" style="background-color:var(--appblack);">NOK
+                </option>
+                <option value="NZD" class="form_field" style="background-color:var(--appblack);">NZD
+                </option>
+                <option value="PAB" class="form_field" style="background-color:var(--appblack);">PAB
+                </option>
+                <option value="PEN" class="form_field" style="background-color:var(--appblack);">PEN
+                </option>
+                <option value="PHP" class="form_field" style="background-color:var(--appblack);">PHP
+                </option>
+                <option value="PKR" class="form_field" style="background-color:var(--appblack);">PKR
+                </option>
+                <option value="PLN" class="form_field" style="background-color:var(--appblack);">PLN
+                </option>
+                <option value="PYG" class="form_field" style="background-color:var(--appblack);">PYG
+                </option>
+                <option value="RON" class="form_field" style="background-color:var(--appblack);">RON
+                </option>
+                <option value="RUB" class="form_field" style="background-color:var(--appblack);">RUB
+                </option>
+                <option value="SAR" class="form_field" style="background-color:var(--appblack);">SAR
+                </option>
+                <option value="SEK" class="form_field" style="background-color:var(--appblack);">SEK
+                </option>
+                <option value="SGD" class="form_field" style="background-color:var(--appblack);">SGD
+                </option>
+                <option value="THB" class="form_field" style="background-color:var(--appblack);">THB
+                </option>
+                <option value="TRY" class="form_field" style="background-color:var(--appblack);">TRY
+                </option>
+                <option value="TWD" class="form_field" style="background-color:var(--appblack);">TWD
+                </option>
+                <option value="UAH" class="form_field" style="background-color:var(--appblack);">UAH
+                </option>
+                <option value="UYU" class="form_field" style="background-color:var(--appblack);">UYU
+                </option>
+                <option value="ZAR" class="form_field" style="background-color:var(--appblack);">ZAR
+                </option>
+            </select>
+            <label>
+                <p id="curconou">0</p>
+            </label>
+        </div>
+    </div>
+
+    <script src="assets/js/LogicJavascript.js"></script>
+</body>
+</html>

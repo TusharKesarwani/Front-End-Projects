@@ -1,0 +1,40 @@
+.menu .option img {
+    height: 1.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-right: 0.2rem;
+}
+
+.menu {
+    text-align: center;
+    border-radius: 30px;    
+    padding: 2rem;
+    background-color: var(--appwhite);
+}
+
+.option {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 20px !important;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--appblack);
+}
+
+.caltext {
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.back img {
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block !important;
+    height: 30px;
+    box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+}

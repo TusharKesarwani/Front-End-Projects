@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Root of Equation</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+
+
+<style>
+    @import url(./variable.css);
+
+    * {
+        font-family: "Jost", sans-serif;
+        background-color: #d5f1f5;
+    }
+
+    .form__field {
+        font-family: "Jost", sans-serif;
+        font-size: 1.2rem !important;
+        letter-spacing: 0.125rem;
+        width: 28%;
+        border: 0;
+        box-shadow: 0 0 10px black;
+        outline: 0;
+        margin-bottom: 1%;
+        color: black;
+        background-color: var(--appblack);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .btn {
+        background-color: #d5f1f5;
+        color: hsl(229, 84%, 12%);
+        border: 2px solid hsl(229, 84%, 12%);
+        width: 9%;
+        height: 46px;
+        border-radius: 28px;
+        font-size: 21px;
+        font-family: "Jost", sans-serif;
+        color: hsl(229, 84%, 12%);
+    }
+
+    .btn:hover {
+        background-color: hsl(229, 84%, 12%);
+        color: white;
+    }
+
+    form {
+        text-align: center;
+    }
+    p{
+        color: hsl(229, 84%, 12%);
+    }
+    h4 {
+        font-size: 28px;
+        padding: 20px;
+        font-weight: 800;
+        color: hsl(229, 84%, 12%);
+        text-align: left;
+    }
+
+</style>
+</head>
+<body>
+        <h4>Nature of the roots of the Quadratic Equation ax<sup>2</sup> + bx + c, a ≠ 0, a, b, c ∈ R</h4>
+        <p>To find out the nature of the roots of a quadratic equation, we find the value of the discriminant D \[D=b^2-4ac\]</p>
+        <ol>
+            <li>If D < 0, we
+                    immediately say that equation has no solution in R.</li>
+                    <br>
+            <li>If D > 0, then we examine whether it is a perfect
+                square of a rational number or not.
+                <ol type="i">
+                    <li>If D > 0 and D is not a perfect square, then
+                        roots are real and distinct.</li>
+                    <li>If D > 0 and it is a perfect square of a
+                        rational number and a, b, c ∈ Q,
+                        then the roots are real and rational. Roots are also distinct.</li>
+                </ol>
+            </li>
+            <br>
+            <li>If D = 0 then the roots are real and equal and if a,
+                b, c ∈ Q the roots are equal rational numbers.</li>
+            <br>
+        </ol>
+    </div>
+</body>
+</html>
