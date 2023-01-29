@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+        <style>
+            @import url(assets/css/variable.css);
+    
+            * {
+                font-family: "Jost", sans-serif;
+                background-color: #d5f1f5;
+            }
+    
+            .form__field {
+                font-family: "Jost", sans-serif;
+                font-size: 1.2rem !important;
+                letter-spacing: 0.125rem;
+                width: 28%;
+                border: 0;
+                box-shadow: 0 0 10px black;
+                outline: 0;
+                margin-bottom: 1%;
+                color: black;
+                background-color: var(--appblack);
+                padding: 10px;
+                border-radius: 10px;
+            }
+    
+            .btn {
+                background-color: #d5f1f5;
+                color: hsl(229, 84%, 12%);
+                border: 2px solid hsl(229, 84%, 12%);
+                width: 9%;
+                height: 46px;
+                border-radius: 28px;
+                font-size: 21px;
+                font-family: "Jost", sans-serif;
+                color: hsl(229, 84%, 12%);
+            }
+    
+            .btn:hover {
+                background-color: hsl(229, 84%, 12%);
+                color: white;
+            }
+    
+            form {
+                text-align: center;
+            }
+    
+            h2,h3,h4 {
+                font-size: 28px;
+                padding: 20px;
+                font-weight: 800;
+                color: hsl(229, 84%, 12%);
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+                font-size: 21px;
+                /* font-weight: var(--fw-8); */
+                color: var(--oxford-blue);
+                line-height: 1.3;
+            }
+        </style>
+</head>
+<body>
+    <div id="centcal">
+        <h2 style="text-align: center;">Different Centers of Triangle</h2><br>
+
+    
+        <h3 style="text-align: center;">Using Vertex</h3>
+        <h4 style="text-align: center;">Centroid Calculator</h4>
+        <form action="">
+            <div class="coll">
+                <p>
+                    Coordinate 1 = (<input type="text" id="x1st" size=5 value='' placeholder="x1"> ,
+                    <input type="text" id="y1st" size=5 value='' placeholder="y1">)
+                    <br>
+                    Coordinate 2 = (<input type="text" id="x2nd" size=5 value='' placeholder="x2"> ,
+                    <input type="text" id="y2nd" size=5 value='' placeholder="y2">)
+                    <br>
+                    Coordinate 3 = (<input type="text" id="x3rd" size=5 value='' placeholder="x3"> ,
+                    <input type="text" id="y3rd" size=5 value='' placeholder="y3">)
+                    <br><br>
+                    <button type="button" class="btn btn-light" style="width: 12%;" onclick=centsolve()>
+                        Find Centroid
+                    </button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button><br>
+                </p>
+            </div>
+        </form>
+    
+        <h4 id="apk" style="color: hsl(229, 84%, 12%);"></h4>
+        <h4 class="text-center" id="line2"> </h4> <br>
+    
+        <h3 style="text-align: center;">Circumcentre Calculator </h3><br>
+        <form action="">
+            <div class="coll">
+                <p>
+                    Coordinate 1 = (<input type="text" id="X1st" size=5 value='' placeholder="x1"> ,
+                    <input type="text" id="Y1st" size=5 value='' placeholder="y1">)
+                    <br><br>
+                    Coordinate 2 = (<input type="text" id="X2st" size=5 value='' placeholder="x2"> ,
+                    <input type="text" id="Y2st" size=5 value='' placeholder="y2">)
+                    <br><br>
+                    Coordinate 3 = (<input type="text" id="X3st" size=5 value='' placeholder="x3"> ,
+                    <input type="text" id="Y3st" size=5 value='' placeholder="y3">)
+                    <br><br>
+                    A = <input type="text" id="angleA" size=7 value='' placeholder="Angle A (in &deg;) "> B =
+                    <input type="text" id="angleB" size=7 value='' placeholder="Angle B (in &deg;)"> C= <input
+                        type="text" id="angleC" size=7 value='' placeholder="Angle C (in &deg;)">
+                    <br><br>
+                    <button type="button" class="btn btn-light" onclick=circumsolve()>
+                        Calculate
+                    </button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button><br>
+                </p>
+            </div>
+        </form>
+    
+        <h4 id="cir_output" style="color:hsl(229, 84%, 12%);"></h4>
+        <br>
+        <h3 style="text-align: center;">Orthocentre Calculator </h3><br>
+        <form action="">
+            <div class="coll">
+                <p>
+                    Coordinate 1 = (<input type="text" id="orthox11" size=5 value='' placeholder="x1"> ,
+                    <input type="text" id="orthoy1" size=5 value='' placeholder="y1">)
+                    <br><br>
+                    Coordinate 2 = (<input type="text" id="orthox21" size=5 value='' placeholder="x2"> ,
+                    <input type="text" id="orthoy2" size=5 value='' placeholder="y2">)
+                    <br><br>
+                    Coordinate 3 = (<input type="text" id="orthox31" size=5 value='' placeholder="x3"> ,
+                    <input type="text" id="orthoy3" size=5 value='' placeholder="y3">)
+                    <br><br>
+                    <button type="button" class="btn btn-light" onclick=orthosolve()>
+                        Calculate
+                    </button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button><br>
+                </p>
+            </div>
+        </form>
+    
+        <h4 style="text-align: center;" id="ortho_output" style="color:hsl(229, 84%, 12%);"></h4>
+        <br>
+        <h3 style="text-align: center;">Incentre Calculator </h3><br>
+        <form action="">
+            <div class="coll">
+                <p>
+                    Coordinate 1 = (<input type="text" id="X1" size=5 value='' placeholder="x1"> ,
+                    <input type="text" id="Y1" size=5 value='' placeholder="y1">)
+                    <br><br>
+                    Coordinate 2 = (<input type="text" id="X2" size=5 value='' placeholder="x2"> ,
+                    <input type="text" id="Y2" size=5 value='' placeholder="y2">)
+                    <br><br>
+                    Coordinate 3 = (<input type="text" id="X3" size=5 value='' placeholder="x3"> ,
+                    <input type="text" id="Y3" size=5 value='' placeholder="y3">)
+                    <br><br>
+                    a = <input type="text" id="ina" size=5 value='' placeholder="Side a"> b =
+                    <input type="text" id="inb" size=5 value='' placeholder="Side b"> c= <input type="text" id="inc"
+                        size=5 value='' placeholder="Side c">
+                    <br><br>
+                    <button type="button" class="btn btn-light" onclick=incentersolve()>
+    
+                        Calculate
+                    </button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button><br>
+                </p>
+            </div>
+        </form>
+    
+        <h4 id="in_output" style="color:hsl(229, 84%, 12%);"></h4>
+        <h4 id="informula" style="color:hsl(229, 84%, 12%);"></h4>
+    
+        <br><br>
+        <h3 style="text-align: center;">Excentre Calculator </h3><br>
+        <form action="">
+            <div class="coll">
+                <p>
+                    Coordinate 1 = (<input type="text" id="Xn1" size=5 value='' placeholder="x1"> ,
+                    <input type="text" id="Yn1" size=5 value='' placeholder="y1">)
+                    <br><br>
+                    Coordinate 2 = (<input type="text" id="Xn2" size=5 value='' placeholder="x2"> ,
+                    <input type="text" id="Yn2" size=5 value='' placeholder="y2">)
+                    <br><br>
+                    Coordinate 3 = (<input type="text" id="Xn3" size=5 value='' placeholder="x3"> ,
+                    <input type="text" id="Yn3" size=5 value='' placeholder="y3">)
+                    <br><br>
+                    a = <input type="text" id="ena" size=5 value='' placeholder="Side a"> b =
+                    <input type="text" id="enb" size=5 value='' placeholder="Side b"> c= <input type="text" id="enc"
+                        size=5 value='' placeholder="Side c">
+                    <br><br>
+                    <button type="button" class="btn btn-light" onclick=excentersolve()>
+    
+                        Calculate
+                    </button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button><br>
+                </p>
+            </div>
+        </form>
+    
+        <h4 id="ex_output1" style="color:hsl(229, 84%, 12%);"></h4>
+        <br><br>
+    
+        <h2 style="text-align:center;">Area of Triangle</h2><br>
+        <form action="">
+            <div class="coll">
+                <p>
+                    Coordinate 1 = (<input type="text" id="x1s" size=5 value='' placeholder="x1"> ,
+                    <input type="text" id="y1s" size=5 value='' placeholder="y1">)
+                    <br><br>
+                    Coordinate 2 = (<input type="text" id="x2s" size=5 value='' placeholder="x2"> ,
+                    <input type="text" id="y2s" size=5 value='' placeholder="y2">)
+                    <br><br>
+                    Coordinate 3 = (<input type="text" id="x3s" size=5 value='' placeholder="x3"> ,
+                    <input type="text" id="y3s" size=5 value='' placeholder="y3">)
+                    <br><br>
+                    <button type="button" class="btn btn-light" onclick=coordinatearea()>
+    
+                        Calculate
+                    </button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button><br>
+                </p>
+    
+            </div>
+        </form>
+    
+        <h4 id="areaoutput" style="color:hsl(229, 84%, 12%);"></h4>
+        <h4 id="formula1" style="color:hsl(229, 84%, 12%);"></h4>
+        <br>
+        <h2 style="text-align:center;">Area of Circumcircle of an Equilateral Triangle </h3><br>
+            <div class="coll">
+                <p>
+                    Median of an Equilateral Triangle (M) = <input type="text" id="inmed1" size=12 value=''
+                        placeholder="Enter Median (M)">
+                    <br><br>
+                    <button type="button" class="btn btn-light" onclick=inmed()>
+                        Check
+                    </button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button><br>
+                </p>
+    
+            </div><br>
+            <p id="inmedans" class="text-center" style="color:hsl(229, 84%, 12%);"></p>
+            <br>
+            <h2 style="text-align:center;">To check whether given Point (P) lies inside a Triangle</h2><br>
+            <form action="">
+                <div class="coll">
+                    <p>
+                        Coordinate 1 (A) = (<input type="text" id="q1w" size=5 value='' placeholder="x1"> ,
+                        <input type="text" id="q5w" size=5 value='' placeholder="y1">)
+                        <br><br>
+                        Coordinate 2 (B) = (<input type="text" id="q2w" size=5 value='' placeholder="x2"> ,
+                        <input type="text" id="q6w" size=5 value='' placeholder="y2">)
+                        <br><br>
+                        Coordinate 3 (C) = (<input type="text" id="q3w" size=5 value='' placeholder="x3"> ,
+                        <input type="text" id="q7w" size=5 value='' placeholder="y3">)
+                        <br><br>
+                        Point (P) = (<input type="text" id="q4w" size=5 value='' placeholder="p1"> ,
+                        <input type="text" id="q8w" size=5 value='' placeholder="p2">)
+                        <br><br>
+                        <button type="button" class="btn btn-light" onclick=pointri()>
+    
+                            Calculate
+                        </button>
+                        <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                            Reset
+                        </button><br>
+                    </p>
+    
+                </div>
+            </form>
+    
+            <br>
+            <h4 id="pointoutput" style="text-align: center; color:hsl(229, 84%, 12%);"></h4>
+            <br>
+            <h2 style="text-align:center;">Oblique Triangle Calculator</h2><br>
+            <form action="">
+                <div class="coll">
+                    <p>
+                        Side 1 (AB) = <input type="text" id="inputsideoba" size=7 value=''
+                            placeholder="Enter side AB">
+                        <br><br>
+                        Side 2 (BC) = <input type="text" id="inputsideobb" size=7 value=''
+                            placeholder="Enter side BC">
+                        <br><br>
+                        Side 3 (CA) = <input type="text" id="inputsideobc" size=7 value=''
+                            placeholder="Enter side CA">
+                        <br><br>
+                        <button type="button" class="btn btn-light" onclick=obliquetri()>
+                            Check
+                        </button>
+                        <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                            Reset
+                        </button><br>
+                    </p>
+    
+                </div>
+            </form>
+            <br>
+            <p id="obliop" class="text-center" style="color:hsl(229, 84%, 12%);"></p>
+            <br>
+            <h2 style="text-align:center;">Radius of Escribed Circles of a Triangle Calculator</h2><br>
+            <form action="">
+                <div class="coll">
+                    <p>
+                        Enter angle (A) = <input type="text" id="inputabc" size=7 value=''
+                            placeholder="Enter angle A">
+                        <br><br>
+                        Enter angle (B) = <input type="text" id="inputabc1" size=7 value=''
+                            placeholder="Enter angle B">
+                        <br><br>
+                        Enter angle (C) = <input type="text" id="inputabc2" size=7 value=''
+                            placeholder="Enter angle C">
+                        <br><br>
+                        Enter External Radius (R) = <input type="text" id="inputabc5" size=7 value=''
+                            placeholder="Enter External Radius R">
+                        <br><br>
+                        <button type="button" class="btn btn-light" onclick=escbrad()>
+                            Check
+                        </button>
+                        <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                            Reset
+                        </button><br>
+                    </p>
+    
+                </div>
+            </form>
+            <br>
+            <p id="inexans" class="text-center" style="color:hsl(229, 84%, 12%);"></p>
+            <br>
+            <h2 style="text-align:center;">Median of Triangle Calculator</h3><br>
+                <form action="">
+                    <div class="coll">
+                        <p>
+                            Side 1 (a) = <input type="text" id="inputsidea1" size=7 value='' placeholder="side a">
+                            <br><br>
+                            Side 2 (b) = <input type="text" id="inputsideb1" size=7 value='' placeholder="side b">
+                            <br><br>
+                            Side 3 (c) = <input type="text" id="inputsidec1" size=7 value='' placeholder="side c">
+                            <br><br>
+                            <button type="button" class="btn btn-light" onclick=medtri()>
+                                Check
+                            </button>
+                            <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                                Reset
+                            </button><br>
+                        </p>
+    
+                    </div>
+                </form>
+                <br>
+                <p id="medtri1" class="text-center" style="color:hsl(229, 84%, 12%);"></p>
+                <br>
+                <h2 style="text-align:center;">Circumradius of Triangle Calculator</h3><br>
+                    <form action="">
+                        <div class="coll">
+                            <p>
+                                Side 1 (a) = <input type="text" id="inputsidea2" size=7 value=''
+                                    placeholder="side a">
+                                <br><br>
+                                Side 2 (b) = <input type="text" id="inputsideb2" size=7 value=''
+                                    placeholder="side b">
+                                <br><br>
+                                Side 3 (c) = <input type="text" id="inputsidec2" size=7 value=''
+                                    placeholder="side c">
+                                <br><br>
+                                <button type="button" class="btn btn-light" onclick=circumtri()>
+                                    Check
+                                </button>
+                                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                                    Reset
+                                </button><br>
+                            </p>
+    
+                        </div>
+                    </form>
+                    <br>
+                    <p id="circumtri1" class="text-center" style="color:hsl(229, 84%, 12%);"></p>
+    
+                    <br>
+                    <h2 style="text-align:center;">Inradius of Triangle Calculator</h3><br>
+                        <form action="">
+                            <div class="coll">
+                                <p>
+                                    Side 1 (a) = <input type="text" id="inputsidea5" size=7 value=''
+                                        placeholder="side a">
+                                    <br><br>
+                                    Side 2 (b) = <input type="text" id="inputsideb6" size=7 value=''
+                                        placeholder="side b">
+                                    <br><br>
+                                    Side 3 (c) = <input type="text" id="inputsidec7" size=7 value=''
+                                        placeholder="side c">
+                                    <br><br>
+                                    <button type="button" class="btn btn-light" onclick=intri()>
+                                        Check
+                                    </button>
+                                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                                        Reset
+                                    </button><br>
+                                </p>
+    
+                            </div>
+                        </form>
+                        <br>
+                        <p id="intri1" class="text-center" style="color:hsl(229, 84%, 12%);"></p>
+    
+                        <br>
+                        <h2 style="text-align:center;">Distance between Incenter and Circumcenter of a Triangle
+                            Calculator</h3><br>
+                            <div class="coll">
+                                <p>
+                                    Radius (r) = <input type="text" id="incircum1" size=12 value=''
+                                        placeholder="Enter Radius (r)">
+                                    <br><br>
+                                    CircumRadius (R) = <input type="text" id="incircum2" size=12 value=''
+                                        placeholder="Enter CircumRadius (R)">
+                                    <br><br>
+                                    <button type="button" class="btn btn-light" onclick=incircum()>
+                                        Check
+                                    </button>
+                                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                                        Reset
+                                    </button><br>
+                                </p>
+    
+                            </div><br>
+                            <p id="incircumans" class="text-center" style="color:hsl(229, 84%, 12%);"></p>
+    
+    </div>
+
+    <script src="assets/js/LogicJavascript.js"></script>
+</body>
+</html>

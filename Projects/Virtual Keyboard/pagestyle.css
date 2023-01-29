@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+h1 {
+    padding: 1rem;
+    background-color: aqua;
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgb(0, 42, 150);
+}
+
+label {
+    margin: 1rem auto;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin: 3rem auto;
+}

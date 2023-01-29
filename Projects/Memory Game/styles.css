@@ -1,0 +1,119 @@
+body {
+  background-color: #011F3F;
+  background-size: cover;
+  min-height: 740px;
+  overflow-x: hidden;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+#level-title {
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  60px auto 40px;
+  text-align: center;
+}
+
+.container {
+  margin-left: 32%;
+}
+
+.btn {
+  border: 10px solid black;
+  border-radius: 20%;
+  display: inline-block;
+  height: 200px;
+  margin: 25px;
+  width: 200px;
+}
+
+.game-over {
+  background-color: #ff0000;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.pressed {
+  background-color: #808080;
+  box-shadow: 0 0 20px #ffffff;
+}
+
+footer {
+  color: #c0b7b7;
+  font-family: 'Balsamiq Sans', cursive;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------- 
+                                       Modal Styling
+-------------------------------------------------------------------------------------------------------   */
+
+p .modal-link{
+  color: #25c0b6;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  padding-bottom: 50px;
+  text-decoration: none;
+}
+
+hr {
+  background-image: linear-gradient(to right, rgba(27, 160, 152, 0.4), rgba(27,160,152,0.8), rgba(27, 160, 152, 0.4));
+  height: 1px;
+  margin: -20px auto -20px;
+  width: 120px;
+}
+
+.footer-modal .modal-content{
+  background-color: rgb(8,52,69);
+}
+
+.footer-modal .modal-header{
+  border-color: rgb(5, 22, 34);
+}
+
+.footer-modal .modal-title{
+  color: rgb(55, 202, 192);
+  font-size: 22px;
+
+}
+
+.footer-modal .modal-body p{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 0.7px;
+  margin-bottom: 10px;
+}
+
+.footer-modal .instruction-content{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 0.6px;
+  margin-bottom: 17px;
+}
+
+.footer-modal .instruction-content i{
+  margin-left: 5px;
+}

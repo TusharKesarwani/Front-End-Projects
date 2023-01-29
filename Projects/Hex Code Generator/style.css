@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+input{
+    width: 100px;
+    height: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5%;
+    padding: 5%;
+    background: linear-gradient(to bottom right, #fff, #808080);
+    border-radius: 20px;
+    border: none;
+    border: 1px solid pink;
+}
+
+h1, h3, button, span{
+    margin: 4%;
+}
+
+button{
+    width: 10rem;
+    height: 3rem;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(to bottom right, #2C74B3, #0A2647);
+    color: white;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Ninja Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="g-heading">
+        <p>Fruit Ninja Game</p>
+    </div>
+
+    <canvas id="canva"></canvas>
+
+
+    <div class="start" id="start">
+        <div class="home">
+            <h1>Fruit Ninja Game</h1>
+            <button id="startBtn">Play</button>
+            <p>Your Score: <span id="high-Score"></span></p>
+        </div>
+        <p> Have a Wonderful Time </p>
+    </div>
+
+
+
+    <!--Game Logic-->
+
+    <div id="gameContainer">
+        <div class="Divscore">
+            <p>Score: <span id="score"></span></p>
+            <p>Highest Score: <span id="highscore"></span></p>
+        </div>
+        <div class="gameCountTime">
+            <h1 id="gameMinSec">00:00</h1>
+        </div>
+        <div id="strikeCountDiv">
+            <h1 class="strikeCount">1x</h1>
+        </div>
+    </div>
+    <div class="countDown" id="countDown">
+        <h1></h1>
+    </div>
+
+    <div id="gameEnd">
+        <div class="gameEndContainer">
+            <p>Your Score: <span id="endScore"></span></p>
+            <button id="returnHome">Return Home <i class="fa-sharp fa-solid fa-right-to-bracket"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

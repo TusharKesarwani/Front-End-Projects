@@ -19,7 +19,7 @@ body{
 }
 
 button {
-    background: transparent;
+    background: white;
     border: 0;
     cursor: pointer;
     outline: none;
@@ -34,6 +34,11 @@ button {
     line-height: 25vh;
 }
 
+#length{
+
+    height: 300px;
+    width: 100px;
+}
 .input-box{
     position: relative;
     width: 500px;
@@ -68,4 +73,8 @@ button {
 #button:active{
     background: #fff;
     color: #000;
+}
+
+h6{
+    color: white;
 }
