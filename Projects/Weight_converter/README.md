@@ -1,6 +1,5 @@
 # Weight Converter
-A simple weight converter project in which the user enters the weight in kilograms and it gets converted to 
-grams, pounds and ounces.
+A simple weight converter project including four units - kilograms, grams, pounds and ounces. User can input value in any of these units and get converted output in other three.
 
 # Author
 - [@palaksinghania05](https://github.com/palaksinghania05)
@@ -8,14 +7,9 @@ grams, pounds and ounces.
 # Stack Used
 - HTML, CSS, JavaScript
 
-# Screenshots
+# Screenshot
 
-a. When we don't enter any value or the value is less than or equal to zero then an alert appears.
+![demo](https://user-images.githubusercontent.com/67850145/215351020-411b4792-1cbe-4c21-aca3-d257d21caa40.png)
 
-![](./screenshots/when_no_value_passed.png)
-
-b. When we enter a valid value then it gets converted on clicking convert button.
-
-![](./screenshots/smooth_functioning.png)
-
-c. On clicking Reset button, the fields will get cleared.
+# Deployemnt Link
+https://weight-convertor-responsive.netlify.app/
