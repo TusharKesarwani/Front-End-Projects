@@ -15,6 +15,7 @@ const draw = (event) => {
     Tri(event);
   }
 };
+//Triangle Tool
 const Tri = (e) => {
   context.beginPath();
   context.moveTo(prevX, prevY);
@@ -27,6 +28,7 @@ const Tri = (e) => {
     context.fill();
   }
 };
+//Circle Tool
 const Circ = (e) => {
   context.beginPath();
   let radius = Math.sqrt(
@@ -39,6 +41,7 @@ const Circ = (e) => {
     context.fill();
   }
 };
+//Rectangle Tool
 const Rect = (e) => {
   if (!fill.checked) {
     context.strokeRect(
@@ -57,6 +60,7 @@ const Rect = (e) => {
   }
 };
 let prevX, prevY;
+//Setting up width and height of Canvas
 const wid_height = () => {
   canvas.width = canvas.offsetWidth;
   canvas.height = canvas.offsetHeight;
@@ -67,7 +71,7 @@ canvas.addEventListener("mousemove", draw);
 window.addEventListener("load", wid_height);
 
 let isMove = false;
-
+//brush tool
 const draww = (e) => {
   isMove = true;
   context.strokeStyle = choseColor;
@@ -83,7 +87,7 @@ canvas.addEventListener("mousedown", draww);
 canvas.addEventListener("mouseup", () => (isMove = false));
 
 let drawingWidth = 5;
-
+//showing clicked option as selected
 const tools = document.querySelectorAll(".option");
 tools.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -97,8 +101,9 @@ let selected = "brush";
 
 const fill = document.querySelector("#fill-color");
 const slider = document.querySelector("#size-slider");
+//size slider
 slider.addEventListener("change", () => (drawingWidth = slider.value));
-
+//working on colors
 colorSelect = document.querySelectorAll(".color-box .opt");
 colorSelect.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -112,19 +117,20 @@ colorSelect.forEach((btn) => {
 });
 
 choseColor = "#000";
-
+//color picker
 pickColor = document.querySelector("#color-picker");
 
 pickColor.addEventListener("change", () => {
   pickColor.parentElement.style.background = pickColor.value;
   pickColor.parentElement.click();
 });
+//clear canvas
 const clearAll = document.querySelector("#clear");
 clearAll.addEventListener("click", () => {
   context.clearRect(0, 0, canvas.width, canvas.height);
   setBackground();
 });
-
+//save image
 const saveImg = document.querySelector("#save");
 saveImg.addEventListener("click", () => {
   const link = document.createElement("a");
@@ -132,7 +138,7 @@ saveImg.addEventListener("click", () => {
   link.href = canvas.toDataURL();
   link.click();
 });
-
+//saved image
 const setBackground = () => {
   context.fillStyle = "#fff";
   context.fillRect(0, 0, canvas.width, canvas.height);
