@@ -1,0 +1,204 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	font-size: calc(16px + (20 - 16) * (100vw - 320px)/(1024 - 320));
+}
+body, button {
+	color: #fff;
+	font: 1em Muli, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 1.5;
+}
+body {
+	overflow: hidden;
+}
+button, canvas {
+	-webkit-tap-highlight-color: transparent;
+}
+button, .difficulty-select, .tutorial {
+	opacity: 0;
+}
+button {
+	background: #2762f3;
+	border-radius: 0.375em;
+	box-shadow: 0 0 0 0.25em inset, 0 -0.5em 0 #0003 inset;
+	cursor: pointer;
+	display: block;
+	font-weight: 700;
+	margin: 0 auto 0.75em auto;
+	padding: 0.75em 1.5em;
+	transition: background 0.15s linear;
+	transform: translateY(50%);
+	width: 100%;
+	max-width: 16em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+button:hover {
+	background: #5785f6;
+}
+button:active {
+	background: #0c48db;
+}
+button:disabled {
+	cursor: default;
+}
+header, .difficulty-select, .tutorial, .replay {
+	position: absolute;
+	z-index: 1;
+}
+header, .difficulty-select {
+	left: 0;
+	width: 100%;
+}
+header, h1 {
+	line-height: 1;
+}
+header {
+	font-size: 4em;
+	font-weight: 900;
+	top: 0;
+	padding: 0.75rem;
+	-webkit-text-stroke: 4px #171717;
+	text-shadow: 0 4px 0 #171717;
+	transform: translateY(-100%);
+	transition: all 0.25s linear;
+}
+h1 {
+	font-size: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+	transform: translateX(100%);
+}
+kbd {
+	background: #242424;
+	border-radius: 0.25em;
+	display: inline-block;
+	font-family: Helvetica, sans-serif;
+	height: 1.5em;
+	min-width: 1.5em;
+	padding: 0 0.25em;
+	text-align: center;
+	vertical-align: middle;
+}
+p {
+	margin-bottom: 1.5em;
+}
+
+/* UI */
+.difficulty-select, .tutorial, .replay {
+	top: 50%;
+}
+.difficulty-select, .tutorial {
+	background: #0000007f;
+}
+.difficulty-select {
+	padding: 1.5em 0;
+	transform: translateY(-50%);
+}
+.menu-active, .tutorial-active, .replay-active {
+	z-index: 9;
+}
+.menu-active {
+	animation: fadeIn 0.5s linear forwards;
+}
+.menu-active h1 {
+	animation: slideIn 0.5s 0.5s linear forwards;
+}
+.menu-active button:nth-of-type(1) {
+	animation: fadeSlide 0.15s 1s linear forwards;
+}
+.menu-active button:nth-of-type(2) {
+	animation: fadeSlide 0.15s 1.15s linear forwards;
+}
+.menu-active button:nth-of-type(3) {
+	animation: fadeSlide 0.15s 1.3s linear forwards;
+}
+.menu-active button:nth-of-type(4) {
+	animation: fadeSlide 0.15s 1.45s linear forwards;
+}
+.menu-inactive {
+	animation: fadeIn 0.5s 1.1s linear reverse forwards;
+	opacity: 1;
+}
+.menu-inactive h1 {
+	animation: slideOut 0.5s 0.6s linear forwards;
+	transform: translateX(0);
+}
+.menu-inactive button {
+	opacity: 1;
+	transform: translateY(0);
+}
+.menu-inactive button:nth-of-type(1) {
+	animation: fadeSlide 0.15s linear reverse forwards;
+}
+.menu-inactive button:nth-of-type(2) {
+	animation: fadeSlide 0.15s 0.15s linear reverse forwards;
+}
+.menu-inactive button:nth-of-type(3) {
+	animation: fadeSlide 0.15s 0.3s linear reverse forwards;
+}
+.menu-inactive button:nth-of-type(4) {
+	animation: fadeSlide 0.15s 0.45s linear reverse forwards;
+}
+.tutorial {
+	border-radius: 0.75em;
+	padding: 1.5em 1.5em 0 1.5em;
+	left: 50%;
+	text-align: center;
+	width: 12em;
+	transform: translate(-50%,-50%);
+	transition: opacity 0.25s linear;
+}
+.replay {
+	margin: 0;
+	padding: 1.5em;
+	left: 50%;
+	transform: translate(-50%,0);
+	transition: all 0.15s linear;
+	width: 6em;
+	height: 6em;
+}
+.btn-icon {
+	fill: #fff;
+	width: 3em;
+	height: 3em;
+}
+.score-active {
+	transform: translateY(0);
+}
+.tutorial-active, .replay-active {
+	opacity: 1;
+}
+.replay-active {
+	transform: translate(-50%,-50%);
+}
+
+/* Animations */
+@keyframes fadeIn {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+@keyframes slideIn {
+	from { transform: translateX(100%) }
+	to { transform: translateX(0) }
+}
+@keyframes slideOut {
+	from { transform: translateX(0) }
+	to { transform: translateX(-100%) }
+}
+@keyframes fadeSlide {
+	from {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
