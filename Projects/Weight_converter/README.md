@@ -11,5 +11,5 @@ A simple weight converter project including four units - kilograms, grams, pound
 
 ![demo](https://user-images.githubusercontent.com/67850145/215351020-411b4792-1cbe-4c21-aca3-d257d21caa40.png)
 
-# Deployemnt Link
+# Deployment Link
 https://weight-convertor-responsive.netlify.app/
