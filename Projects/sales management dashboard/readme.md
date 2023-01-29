@@ -6,6 +6,8 @@ I have designed a simple yet attractive UI for dashboard template of sales manag
 HTML , CSS and JAVASCRIPT 
 
 # SNAPSHOT OF THE WEBSITE:
+![dashboard](https://user-images.githubusercontent.com/84632701/215347629-cabd3a68-e392-4c44-9804-35642570deed.png)
+
 
 
 
