@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(/images/img1.png);
+  background: url(./images/img1.png);
   text-align: center;
 }
 .heading{
