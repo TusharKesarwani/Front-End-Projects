@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trigonometry</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/trigo_icon.ico">
+    <link rel="manifest" href="./manifest.json">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+    <style>
+        @import url(./variable.css);
+
+        * {
+            font-family: "Jost", sans-serif;
+            background-color: #d5f1f5;
+            text-align: center;
+        }
+
+        .form__field {
+            font-family: "Jost", sans-serif;
+            font-size: 1.2rem !important;
+            letter-spacing: 0.125rem;
+            width: 28%;
+            border: 0;
+            box-shadow: 0 0 10px black;
+            outline: 0;
+            margin-bottom: 1%;
+            color: black;
+            background-color: var(--appblack);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: #d5f1f5;
+            color: hsl(229, 84%, 12%);
+            border: 2px solid hsl(229, 84%, 12%);
+            width: 9%;
+            height: 46px;
+            border-radius: 28px;
+            font-size: 21px;
+            font-family: "Jost", sans-serif;
+            color: hsl(229, 84%, 12%);
+        }
+
+        .btn:hover {
+            background-color: hsl(229, 84%, 12%);
+            color: white;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 28px;
+            padding: 20px;
+            font-weight: 800;
+            color: hsl(229, 84%, 12%);
+            text-align: center;
+        }
+        h1{
+            font-size: 45px;
+            color: hsl(229, 84%, 12%);
+        }
+
+        li {
+            font-size: 21px;
+            font-weight: var(--fw-8);
+            color: var(--oxford-blue);
+            line-height: 1.3;
+        }
+    </style>
+</head>
+
+
+<h1 align="center"><b><u>TRIGONOMETRY</u></b></h1>
+<p><u>Trigonometry</u> is the relationship between the sides and angles of a
+    right-angled triangle.</p>
+<h4> Following are the size basic trigonometric function :</h4>
+<img src="assets/images/triangle_image.webp">
+<ul style="font-size:30px;color:gray">
+    <li>sin = Opposite side/ Hypotenuse</li>
+    <li>cos = Adjacent side / Hypotenuse</li>
+    <li>tan = Opposite side / Adjacent side</li>
+    <li>cosec = Hypotenuse / Opposite side</li>
+    <li>sec = Hypotenuse / Adjacent side</li>
+    <li>cot = Adjacent side / Opposite side</li>
+</ul>
+
+<h4> Graphs of Basic Trigonometry function :</h4>
+<p style="font-size:30px;color:black"> Following are the domain and range of each function :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin : R → [– 1, 1]</li>
+    <li>cos : R → [– 1, 1]</li>
+    <li>tan : R – { x : x = (2n + 1) π/2, n ∈ Z} →R</li>
+    <li>cot : R – { x : x = nπ, n ∈ Z} →R</li>
+    <li>sec : R – { x : x = (2n + 1) π/2, n ∈ Z} →R – (– 1, 1)</li>
+    <li>csc : R – { x : x = nπ, n ∈ Z} →R – (– 1, 1)</li>
+</ul>
+<p style="font-size:30px;color:black"> 1.) sin function:</p>
+<img src="assets/images/sin_image.webp">
+<p style="font-size:30px;color:black"> 2.) cos function:</p>
+<img src="assets/images/cos_image.webp">
+<p style="font-size:30px;color:black"> 3.) tan function:</p>
+<img src="assets/images/tan_image.webp">
+
+
+<h4> Trigonometry Angles :</h4>
+<p style="font-size:35px;color:black">The trigonometry angles commonly used in trigonometry problems are 0°, 30°, 45°,
+    60° and 90°.</p>
+<img src="assets/images/angle_image.jpg">
+
+<h4> Basic Trigonometric indenties :</h4>
+<ul style="font-size:30px;color:gray">
+    <li>sin²θ + cos²θ = 1</li>
+    <li>tan²θ + 1 = sec²θ</li>
+    <li>cot²θ + 1 = cosec²θ</li>
+    <li>sin 2θ = 2 sin θ cos θ</li>
+    <li>cos 2θ = cos²θ – sin²θ</li>
+    <li>tan 2θ = 2 tan θ / (1 – tan²θ)</li>
+    <li>cot 2θ = (cot²θ – 1) / 2 cot θ</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Reciprocal Identities :</h1>
+<ul style="font-size:30px;color:gray">
+    <li>cosec θ = 1/sin θ</li>
+    <li>sec θ = 1/cos θ</li>
+    <li>cot θ = 1/tan θ</li>
+    <li>sin θ = 1/cosec θ</li>
+    <li>cos θ = 1/sec θ</li>
+    <li>tan θ = 1/cot θ</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Sine and Cosine Laws :</h1>
+<p style="font-size:30px;color:black">If A, B and C are angles and a, b and c are the sides of a triangle, then,</p>
+<ul style="font-size:30px;color:gray">
+    <li>a/sinA = b/sinB = c/sinC</li>
+    <li>c² = a² + b² – 2ab • cos C</li>
+    <li>a² = b² + c² – 2bc • cos A</li>
+    <li>b² = a² + c² – 2ac • cos B</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Basic Trigonometric sum and difference indenties :</h1>
+<p style="font-size:30px;color:black"> For angles u and v, we have the following relationships :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin(u + v) = sin(u) • cos(v) + cos(u) • sin(v)</li>
+    <li>cos(u + v) = cos(u) • cos(v) – sin(u) • sin(v)</li>
+    <li>tan(u+v) = (tan(u) + tan(v))/(1−tan(u)) • tan(v)</li>
+    <li>sin(u – v) = sin(u) • cos(v) – cos(u) • sin(v)</li>
+    <li>cos(u – v) = cos(u) • cos(v) + sin(u) • sin(v)</li>
+    <li>tan(u-v) = (tan(u) − tan(v))/(1+tan(u)) • tan(v)</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Periodicity Identities (in Radians) :</h1>
+<p style="font-size:30px;color:black"> These formulas are used to shift the angles by π/2, π, 2π, etc. :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin (π/2 – A) = cos A , cos (π/2 – A) = sin A)</li>
+    <li>sin (π/2 + A) = cos A , cos (π/2 + A) = – sin A</li>
+    <li>sin (3π/2 – A) = – cos A , cos (3π/2 – A) = – sin A</li>
+    <li>sin (3π/2 + A) = – cos A , cos (3π/2 + A) = sin A</li>
+    <li>sin (π – A) = sin A , cos (π – A) = – cos A</li>
+    <li>sin (π + A) = – sin A , cos (π + A) = – cos A</li>
+    <li>sin (2π – A) = – sin A , cos (2π – A) = cos A</li>
+    <li>sin (2π + A) = sin A , cos (2π + A) = cos A</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Periodicity Identities (in Degrees) :</h1>
+<ul style="font-size:30px;color:gray">
+    <li>sin(90°−x) = cos x</li>
+    <li>cos(90°−x) = sin x</li>
+    <li>tan(90°−x) = cot x</li>
+    <li>cot(90°−x) = tan x</li>
+    <li>sec(90°−x) = csc x</li>
+    <li>csc(90°−x) = sec x</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Sign of Trigonometric Functions :</h1>
+<img src="assets/images/sign_image.webp">
+<ul style="font-size:30px;color:gray">
+    <li>sin(-θ) = -sin θ</li>
+    <li>cos(-θ) = cos θ</li>
+    <li>tan(-θ) = -tan θ</li>
+    <li>cot(-θ) = -cot θ</li>
+    <li>sec(-θ) = sec θ</li>
+    <li>cosec(-θ) = -cosec θ</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Double Angle Identities :</h1>
+<ul style="font-size:30px;color:gray">
+    <li>sin(2x) = 2sin(x) • cos(x) = [2tan x/(1+tan² x)]</li>
+    <li>cos(2x) = cos2(x)–sin2(x) = [(1-tan2 x)/(1+tan² x)]</li>
+    <li>cos(2x) = 2cos2(x)−1 = 1–2sin²(x)</li>
+    <li>tan(2x) = [2tan(x)]/ [1−tan²(x)]</li>
+    <li>sec (2x) = sec2 x/(2-sec2 x)</li>
+    <li>csc (2x) = (sec x. csc x)/2</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Triple Angle Identities :</h1>
+<ul style="font-size:30px;color:gray">
+    <li>sin 3x = 3sin x – 4sin3x</li>
+    <li>cos 3x = 4cos3x-3cos x</li>
+    <li>tan 3x = [3tanx-tan^3x]/[1-3tan²x]</li>
+    <li>cot 3x = [cot^3x-3cotx]/[3cot²x-1]</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Half Angle Identities :</h1>
+<img src="assets/images/halfangle_image.webp">
+
+<h1 style="font-size:35px;color:black"> Product identities :</h1>
+<ul style="font-size:30px;color:gray">
+    <li>sinx • cosy = (sin(x+y)+sin(x−y))/2</li>
+    <li>cosx • cosy = (cos(x+y)+cos(x−y))/2</li>
+    <li>sinx • siny = (cos(x-y)-cos(x+y))/2</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Sum to Product identities :</h1>
+<ul style="font-size:30px;color:gray">
+    <li>sinx + siny = 2sin((x+y)/2) • cos((x-y)/2)</li>
+    <li>sinx - siny = 2cos((x+y)/2) • sin((x-y)/2)</li>
+    <li>cosx + cosy = 2cos((x+y)/2) • cos((x-y)/2)</li>
+    <li>cosx - cosy = -2sin((x+y)/2) • sin((x-y)/2)</li>
+</ul>
+
+<h1 style="font-size:35px;color:black"> Inverse Trigonometry Formulas :</h1>
+<ul style="font-size:30px;color:gray">
+    <li>sin^-1 (1/a) = cosec^-1(a) , a ≥ 1 or a ≤ – 1</li>
+    <li>cos^-1(1/a) = sec^-1(a) , a ≥ 1 or a ≤ – 1</li>
+    <li>tan^-1(1/a) = cot^-1(a) , a>0</li>
+    <li>sin^-1(–a) = – sin^-1(a) , a ∈ [– 1, 1]</li>
+    <li>tan^-1(–a) = – tan^-1(a) , a ∈ R</li>
+    <li>cosec^-1(–a) = –cosec^-1(a) , | a | ≥ 1</li>
+    <li>cos^-1(–a) = π – cos^-1(a) , a ∈ [– 1, 1]</li>
+    <li>sec^-1(–a) = π – sec^-1(a) , | a | ≥ 1</li>
+    <li>cot^-1(–a) = π – cot^-1(a) , a ∈ R</li>
+</ul>
+<p style="font-size:30px;color:black"> Addition Properties :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin^-1a + cos^-1a = π/2 , a ∈ [– 1, 1]</li>
+    <li>tan^-1a + cot^-1a = π/2 , a ∈ R</li>
+    <li>cosec^-1a + sec^-1a = π/2 , | a | ≥ 1</li>
+    <li>tan^-1a + tan^1 b = tan^-1 [(a+b)/1-ab] , ab<1< /li>
+    <li>tan^-1a – tan^-1 b = tan^-1 [(a-b)/1+ab] , ab>-1</li>
+    <li>tan^-1a – tan^-1 b = π + tan^-1[(a+b)/1-ab] , ab > 1 ; a,b > 0</li>
+</ul>
+<p style="font-size:30px;color:black"> Twice of Inverse of tan Function :</p>
+<ul style="font-size:30px;color:gray">
+    <li>2tan^-1a = sin^-1 [2a/(1+a²)] , |a| ≤ 1</li>
+    <li>2tan^-1a = cos^-1[(1-a²)/(1+a²)] , a ≥ 0</li>
+    <li>2tan^-1a = tan^-1[2a/(1+a²)] , – 1 < a < 1</li>
+</ul>
+<p style="font-size:30px;color:black"> Inverse Trigonometry Substitution :</p>
+<img src="assets/images/inversetrigo_image.webp">
+
+<h1 style="font-size:35px;color:black"> Complementary Ratios :</h1>
+<img src="assets/images/circle_image.webp">
+<p style="font-size:30px;color:black"> Quadrant I :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin(π/2−θ) = cos θ</li>
+    <li>cos(π/2−θ) = sin θ</li>
+    <li>tan(π/2−θ) = cot θ</li>
+    <li>cot(π/2−θ) = tan θ</li>
+    <li>sec(π/2−θ) = cosec θ</li>
+    <li>cosec(π/2−θ) = sec θ</li>
+</ul>
+<p style="font-size:30px;color:black"> Quadrant II :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin(π−θ) = cos θ</li>
+    <li>cos(π−θ) = -cos θ</li>
+    <li>tan(π−θ) = -tan θ</li>
+    <li>cot(π−θ) = – cot θ</li>
+    <li>ec(π−θ) = -sec θ</li>
+    <li>cosec(π−θ) = cosec θ</li>
+</ul>
+<p style="font-size:30px;color:black"> Quadrant III :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin(π+ θ) = – sin θ</li>
+    <li>cos(π+ θ) = – cos θ</li>
+    <li>tan(π+ θ) = tan θ</li>
+    <li>cot(π+ θ) = cot θ</li>
+    <li>sec(π+ θ) = -sec θ</li>
+    <li>cosec(π+ θ) = -cosec θ</li>
+</ul>
+<p style="font-size:30px;color:black"> Quadrant IV :</p>
+<ul style="font-size:30px;color:gray">
+    <li>sin(2π− θ) = – sin θ</li>
+    <li>cos(2π− θ) = cos θ</li>
+    <li>tan(2π− θ) = – tan θ</li>
+    <li>cot(2π− θ) = – cot θ</li>
+    <li>sec(2π− θ) = sec θ</li>
+    <li>cosec(2π− θ) = -cosec θ</li>
+</ul>
+
+</body>
+
+</html>

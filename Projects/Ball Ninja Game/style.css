@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Raleway:ital,wght@1,200&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+
+
+.start{
+    z-index: 1;
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins';
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(153, 234, 157);
+    color: rgb(11, 10, 10);
+}
+
+
+
+
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h1{
+    text-align: center;
+    margin: 0;
+    line-height: 40px;
+}
+
+.home h1 span{
+    font-size: 1.1rem;
+}
+
+#startBtn{
+    margin: 12px 0;
+    padding: 8px 16px;
+    color: rgb(19, 13, 13);
+    width: 40%;
+    background-color: rgb(221, 232, 25);
+    outline: none;
+    font-size: 22px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    transition: .2s;
+}
+
+#startBtn:hover{
+    background-color: rgb(255, 35, 35);
+}
+
+.countDown{
+    color: rgb(32, 24, 24);
+    font-family: 'Poppins';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 13;
+}
+
+.countDown h1{
+    animation: count 8s linear ease-in;
+}
+
+@keyframes count{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2.2);
+    }
+}
+
+#gameContainer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    pointer-events: none;
+    display: none;
+    padding: 10px 20px;
+}
+
+#gameContainer .gameCountTime{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.gameCountTime h1{
+    width: 120px;
+}
+
+#strikeCountDiv{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+.strikeCount{
+    animation: strikecount .2s linear;
+    width: 45px;
+    height: 45px;
+}
+
+@keyframes strikecount{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2.5);
+    }
+}
+
+.g-heading{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 12;
+    font-family: 'Playfair';
+    transform: translate(-50%);
+    background-color: rgb(255, 49, 84);
+    color: white;
+    padding: 4px 14px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.g-heading p{
+    margin: 0;
+}
+
+
+#gameEnd{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(212, 217, 220, 0.5);
+    z-index: 15;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    display: none;
+}
+
+.gameEndContainer{
+    background-color: rgb(255, 49, 84);
+    border-radius: 6px;
+    pointer-events: all;
+    color: white;
+    padding: 25px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.697);
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.gameEndContainer h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.gameEndContainer p{
+    font-size: 22px;
+}
+
+.returnHome{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+

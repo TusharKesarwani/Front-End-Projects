@@ -1,0 +1,92 @@
+/*-----------------------------------*\
+  #variable.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #VARIABLE
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors 
+   */
+
+  --red-orange-color-wheel: hsl(15, 100%, 55%);
+  --ultramarine-blue: hsl(217, 100%, 50%);
+  --lavender-blue: hsl(229, 96%, 91%);
+  --oxford-blue: hsl(229, 84%, 12%);
+  --light-gray: hsl(0, 0%, 80%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --blue-crayola: hsl(216, 98%, 52%);
+  --cultured: hsl(228, 26%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /**
+   * typography 
+   */
+
+  --fs-1: 38px;
+  --fs-2: 35px;
+  --fs-3: 30px;
+  --fs-4: 22px;
+  --fs-5: 20px;
+  --fs-6: 15px;
+
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+  --fw-8: 800;
+  --fw-9: 900;
+
+  /**
+   * spacing 
+   */
+
+  --px: 15px;
+  --py: 80px;
+
+  /**
+   * others 
+   */
+
+  --default-transition: 0.25s ease;
+
+  --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+}

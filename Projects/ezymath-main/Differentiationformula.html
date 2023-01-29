@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Differentiation Formula</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+
+
+    <style>
+        @import url(assets/css/variable.css);
+
+        * {
+            font-family: "Jost", sans-serif;
+            background-color: #d5f1f5;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            font-weight: 800;
+            color: hsl(229, 84%, 12%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="coll">
+        <div class="left">
+            <h4>Basic Derivative Rules</h4>
+            <p>\[1)Constant \space Rule:\frac{d}{dx}(c)=0\]</p>
+            <p>\[2)Constant \space Multiple\space Rule:\frac{d}{dx}(cf(x))=cf'(x)\]</p>
+            <p>\[3)Power \space Rule:\frac{d}{dx}(x^n)=nx^{n-1}\]</p>
+            <p>\[4)Sum \space Rule:\frac{d}{dx}[f(x)+g(x)]=f'(x)+g'(x)\]</p>
+            <p>\[5)Difference \space Rule:\frac{d}{dx}[f(x)-g(x)]=f'(x)-g'(x)\]</p>
+            <p>\[6)Product \space Rule:\frac{d}{dx}[f(x)g(x)]=f(x)g'(x)+g(x)f'(x)\]</p>
+            <p>\[7)Quotient \space Rule:\frac{d}{dx}[\frac{f(x)}{g(x)}]=\frac{g(x)f'(x)-f(x)g'(x)}{[g(x)]^2}\]</p>
+            <p>\[8)Chain \space Rule:\frac{d}{dx}[f(g(x)]=f'(g(x))g'(x)\]</p>
+        </div>
+    </div>
+    <div class="coll">
+        <div class="left">
+            <h4>Exponential Functions</h4>
+            <p>\[\frac{d}{dx}(e^x)=e^x\]</p>
+            <p>\[\frac{d}{dx}(a^x)=a^xln \space a\]</p>
+            <p>\[\frac{d}{dx}(e^{g(x)})=e^{g(x)}g'(x)\]</p>
+            <p>\[\frac{d}{dx}(a^{g(x)})=ln(a)a^{g(x)}g'(x)\]</p>
+
+        </div>
+        <div class="right">
+            <h4>Logarithmic Functions</h4>
+            <p>\[\frac{d}{dx}(ln \space x)=\frac{1}{x}\]</p>
+            <p>\[\frac{d}{dx}(ln(g(x)))=\frac{g'(x)}{g(x)}\]</p>
+            <p>\[\frac{d}{dx}(log_{a}x)=\frac{1}{xlna}, \space x>0 \]</p>
+            <p>\[\frac{d}{dx}(log_{a}g(x))=\frac{g'(x)}{g(x)lna}\]</p>
+        </div>
+    </div>
+    <div class="coll">
+        <div class="left">
+            <h4>Trignometric Functions</h4>
+            <p>\[\frac{d}{dx}(sinx)=cosx\]</p>
+            <p>\[\frac{d}{dx}(cosx)=-sinx\]</p>
+            <p>\[\frac{d}{dx}(tanx)=sec^2x\]</p>
+            <p>\[\frac{d}{dx}(cosecx)=-cosecx \space cotx\]</p>
+            <p>\[\frac{d}{dx}(secx)=secx \space tanx\]
+            <p>\[\frac{d}{dx}(cotx)=-cosec^2x\]
+
+        </div>
+        <div class="right">
+            <h4>Inverse Trignometric Functions</h4>
+            <p>\[\frac{d}{dx}(sin^{-1}x)=\frac{1}{\sqrt{1+x^2}}\]</p>
+            <p>\[\frac{d}{dx}(cos^{-1}x)=\frac{-1}{\sqrt{1-x^2}}\]</p>
+            <p>\[\frac{d}{dx}(tan^{-1}x)=\frac{1}{\sqrt{1+x^2}}\]</p>
+            <p>\[\frac{d}{dx}(cot^{-1}x)=\frac{-1}{\sqrt{1+x^2}}\]</p>
+            <p>\[\frac{d}{dx}(sec^{-1}x)=\frac{1}{x\sqrt{x^2-1}}, \space x !=±1,0\]</p>
+            <p>\[\frac{d}{dx}(cosec^{-1}x)=\frac{-1}{x\sqrt{x^2-1}},\space x !=±1,0\]</p>
+        </div>
+    </div>
+</body>
+
+</html>
