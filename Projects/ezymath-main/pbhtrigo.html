@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+    <title>PBH trigo</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <style>
+        @import url(./variable.css);
+
+        * {
+            font-family: "Jost", sans-serif;
+            background-color: #d5f1f5;
+        }
+
+        .form__field {
+            font-family: "Jost", sans-serif;
+            font-size: 1.2rem !important;
+            letter-spacing: 0.125rem;
+            width: 24%;
+            margin-right: 1%;
+            border: 0;
+            box-shadow: 0 0 10px black;
+            outline: 0;
+            margin-bottom: 1%;
+            color: black;
+            background-color: var(--appblack);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: #d5f1f5;
+            color: hsl(229, 84%, 12%);
+            border: 2px solid hsl(229, 84%, 12%);
+            width: 15%;
+            margin-right: 1%;
+            height: 46px;
+            border-radius: 28px;
+            font-size: 21px;
+            font-family: "Jost", sans-serif;
+            color: hsl(229, 84%, 12%);
+        }
+
+        .btn:hover {
+            background-color: hsl(229, 84%, 12%);
+            color: white;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            padding: 20px;
+            font-weight: 800;
+            color: hsl(229, 84%, 12%);
+        }
+
+        h4,
+        h5 {
+            text-align: center;
+            font-size: 21px;
+            font-weight: var(--fw-8);
+            color: var(--oxford-blue);
+            line-height: 1.3;
+        }
+
+        .input-value {
+            text-align: center;
+        }
+
+        .input-button {
+            text-align: center;
+        }
+
+        .text-center {
+            margin-top: 5%;
+            font-size: 25px;
+        }
+    </style>
+    <script>
+        function calcexsolvesimpletrigo() {
+            var pp = document.getElementById("p").value = 3;
+            var base = document.getElementById("base").value;
+            var hyp = document.getElementById("h").value = 5;
+
+            solvesimpletrigo();
+        }
+
+        function solvesimpletrigo() {
+            var pp = document.getElementById("p").value;
+            var base = document.getElementById("base").value;
+            var hyp = document.getElementById("h").value;
+            if ((pp == "" && base == "") || (base == "" && hyp == "") || (hyp == "" && pp == "")) {
+                document.getElementById("soltri").innerHTML =
+                    "Kindly fill Atleast 2 fields";
+            }
+            else if (pp < 0 || base < 0 || hyp < 0) {
+                document.getElementById("soltri").innerHTML = "The sides cannot be negative"
+            }
+            else {
+                if (parseInt(hyp) < parseInt(pp) || parseInt(hyp) < parseInt(base)) {
+                    document.getElementById("h").style.color = "red";
+                    document.getElementById("soltri").innerHTML =
+                        "Hypotenuse Should be Greater";
+                } else if (pp != "" && base != "" && hyp != "" && parseInt(hyp) ^ 2 != parseInt(pp) ^ 2 + parseInt(base) ^ 2 && parseInt(hyp) ^ 2 != parseInt(base) ^ 2 + parseInt(pp) ^ 2) {
+                    document.getElementById("soltri").innerHTML =
+                        "Right angled triangle with such dimensions is not possible";
+                } else if (pp == "") {
+                    document.getElementById("h").style.color = "white";
+                    var pp = eval(hyp * hyp - base * base);
+                    var kl = String(pp);
+                    pp = Math.sqrt(String(pp));
+                    if (pp.toString() != "NaN") {
+                        pp = pp.toFixed(2);
+                        var tempp =
+                            "\\[Value\\space of\\space  Perpendicular= \\sqrt{" +
+                            kl +
+                            "}=" +
+                            pp +
+                            "\\]";
+                        tempp +=
+                            String(
+                                "\\[sin\\theta =\\frac{p}{h} =\\frac{" +
+                                pp +
+                                "}{" +
+                                hyp +
+                                "} = " +
+                                eval(String(pp + "/" + hyp)).toFixed(2)
+                            ) + "\\]";
+                        tempp +=
+                            "\\[cos\\theta =\\frac{b}{h} =\\frac{" +
+                            base +
+                            "}{" +
+                            hyp +
+                            "}= " +
+                            eval(String(base + "/" + hyp)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[tan\\theta=\\frac{p}{b} =\\frac{" +
+                            pp +
+                            "}{" +
+                            base +
+                            "}= " +
+                            eval(String(pp + "/" + base)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[cosec\\theta=\\frac{h}{p} =\\frac{" +
+                            hyp +
+                            "}{" +
+                            pp +
+                            "}= " +
+                            eval(String(hyp + "/" + pp)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[sec\\theta=\\frac{h}{b} =\\frac{" +
+                            hyp +
+                            "}{" +
+                            base +
+                            "}= " +
+                            eval(String(hyp + "/" + base)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[cot\\theta=\\frac{b}{p} =\\frac{" +
+                            base +
+                            "}{" +
+                            pp +
+                            "}= " +
+                            eval(String(base + "/" + pp)).toFixed(2) +
+                            "\\]";
+                        document.getElementById("soltri").innerHTML = tempp;
+                        renderMathInElement(document.getElementById("soltri"));
+                    } else {
+                        document.getElementById("soltri").innerHTML =
+                            "Cannot Compute for -ve Square Root";
+                    }
+                } else if (base == "") {
+                    document.getElementById("h").style.color = "white";
+                    var base = eval(hyp * hyp - pp * pp);
+                    var kll = String(base);
+                    base = Math.sqrt(String(base));
+                    if (base.toString() != "NaN") {
+                        base = base.toFixed(2);
+                        var tempp =
+                            "\\[Value\\space of\\space Base= \\sqrt{" + kll + "}=" + base + "\\]";
+                        tempp +=
+                            String(
+                                "\\[sin\\theta =\\frac{p}{h} =\\frac{" +
+                                pp +
+                                "}{" +
+                                hyp +
+                                "} = " +
+                                eval(String(pp + "/" + hyp)).toFixed(2)
+                            ) + "\\]";
+                        tempp +=
+                            "\\[cos\\theta=\\frac{b}{h} =\\frac{" +
+                            base +
+                            "}{" +
+                            hyp +
+                            "} = " +
+                            eval(String(base + "/" + hyp)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[tan\\theta=\\frac{p}{b} =\\frac{" +
+                            pp +
+                            "}{" +
+                            base +
+                            "}= " +
+                            eval(String(pp + "/" + base)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[cosec\\theta=\\frac{h}{p} =\\frac{" +
+                            hyp +
+                            "}{" +
+                            pp +
+                            "}= " +
+                            eval(String(hyp + "/" + pp)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[sec\\theta=\\frac{h}{b} =\\frac{" +
+                            hyp +
+                            "}{" +
+                            base +
+                            "} = " +
+                            eval(String(hyp + "/" + base)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[cot\\theta=\\frac{b}{p} =\\frac{" +
+                            base +
+                            "}{" +
+                            pp +
+                            "} = " +
+                            eval(String(base + "/" + pp)).toFixed(2) +
+                            "\\]";
+                        document.getElementById("soltri").innerHTML = tempp;
+                        renderMathInElement(document.getElementById("soltri"));
+                    } else {
+                        document.getElementById("soltri").innerHTML =
+                            "Cannot Compute for -ve Square Root";
+                    }
+                } else if (hyp == "") {
+                    document.getElementById("h").style.color = "white";
+                    var hyp = eval(base * base + pp * pp);
+                    var klll = String(hyp);
+                    hyp = Math.sqrt(String(hyp));
+                    if (hyp.toString() != "NaN") {
+                        hyp = hyp.toFixed(2);
+                        var tempp =
+                            "\\[Value\\space of\\space Hypotenuse=\\sqrt{" +
+                            klll +
+                            "}=" +
+                            hyp +
+                            "\\]";
+                        tempp +=
+                            String(
+                                "\\[sin\\theta =\\frac{p}{h} =\\frac{" +
+                                pp +
+                                "}{" +
+                                hyp +
+                                "}= " +
+                                eval(String(pp + "/" + hyp)).toFixed(2)
+                            ) + "\\]";
+                        tempp +=
+                            "\\[cos\\theta=\\frac{b}{h} =\\frac{" +
+                            base +
+                            "}{" +
+                            hyp +
+                            "}= " +
+                            eval(String(base + "/" + hyp)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[tan\\theta=\\frac{p}{b} =\\frac{" +
+                            pp +
+                            "}{" +
+                            base +
+                            "}= " +
+                            eval(String(pp + "/" + base)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[cosec\\theta=\\frac{h}{p} =\\frac{" +
+                            hyp +
+                            "}{" +
+                            pp +
+                            "}= " +
+                            eval(String(hyp + "/" + pp)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[sec\\theta=\\frac{h}{b} =\\frac{" +
+                            hyp +
+                            "}{" +
+                            base +
+                            "}= " +
+                            eval(String(hyp + "/" + base)).toFixed(2) +
+                            "\\]";
+                        tempp +=
+                            "\\[cot\\theta=\\frac{b}{p} =\\frac{" +
+                            base +
+                            "}{" +
+                            pp +
+                            "} = " +
+                            eval(String(base + "/" + pp)).toFixed(2) +
+                            "\\]";
+
+                        document.getElementById("soltri").innerHTML = tempp;
+                        renderMathInElement(document.getElementById("soltri"));
+                    } else {
+                        document.getElementById("soltri").innerHTML =
+                            "Cannot Compute for -ve Square Root";
+                    }
+                } else {
+                    document.getElementById("h").style.color = "white";
+                    var tempp =
+                        String(
+                            "\\[sin\\theta =\\frac{p}{h} =\\frac{" +
+                            pp +
+                            "}{" +
+                            hyp +
+                            "} = " +
+                            eval(String(pp + "/" + hyp)).toFixed(2)
+                        ) + "\\]";
+                    tempp +=
+                        "\\[cos\\theta=\\frac{b}{h} =\\frac{" +
+                        base +
+                        "}{" +
+                        hyp +
+                        "}=" +
+                        eval(String(base + "/" + hyp)).toFixed(2) +
+                        "\\]";
+                    tempp +=
+                        "\\[tan\\theta=\\frac{p}{b} =\\frac{" +
+                        pp +
+                        "}{" +
+                        base +
+                        "}= " +
+                        eval(String(pp + "/" + base)).toFixed(2) +
+                        "\\]";
+                    tempp +=
+                        "\\[cosec\\theta=\\frac{h}{p} =\\frac{" +
+                        hyp +
+                        "}{" +
+                        pp +
+                        "} = " +
+                        eval(String(hyp + "/" + pp)).toFixed(2) +
+                        "\\]";
+                    tempp +=
+                        "\\[sec\\theta=\\frac{h}{b} =\\frac{" +
+                        hyp +
+                        "}{" +
+                        base +
+                        "} = " +
+                        eval(String(hyp + "/" + base)).toFixed(2) +
+                        "\\]";
+                    tempp +=
+                        "\\[cot\\theta=\\frac{b}{p} =\\frac{" +
+                        base +
+                        "}{" +
+                        pp +
+                        "}= " +
+                        eval(String(base + "/" + pp)).toFixed(2) +
+                        "\\]";
+                    document.getElementById("soltri").innerHTML = tempp;
+                    renderMathInElement(document.getElementById("soltri"));
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="simpletrignocollapse">
+        <div class="row">
+            <form action="">
+                <div class="input-value col-4">
+                    <p class="text-center">Fill atleast any Two</p>
+                    <br>
+                    <input type="number" id="p" class="form__field" placeholder="Perpendicular">
+                    <input type="number" id="base" class="form__field" placeholder="Base">
+                    <input type="number" id="h" class="form__field" placeholder="Hypotenuse">
+                </div>
+            </form>
+
+            <div class="input-button col-4">
+                <button type="button" class="btn btn-light" onclick="solvesimpletrigo();checkforusetrigovalue();">
+                    Solve
+                </button>
+                <button type="button" class="btn btn-light" type="button" onclick="this.form.reset();">
+                    Reset
+                </button>
+                <button type="button" class="btn btn-light" onclick=calcexsolvesimpletrigo()>
+                    Example
+                </button>
+            </div>
+        </div>
+        <div class="form-group">
+            <p style="font-family:mathfont" class="stopwrap" id="soltri"></p>
+        </div>
+    </div>
+</body>
+
+</html>

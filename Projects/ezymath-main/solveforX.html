@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solve for X</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background: #d5f1f5;
+            font-family: "Jost", sans-serif;
+        }
+
+        .btn {
+            background-color: #d5f1f5;
+            color: hsl(229, 84%, 12%);
+            border: 2px solid hsl(229, 84%, 12%);
+            width: 15%;
+            margin-right: 1%;
+            height: 46px;
+            border-radius: 28px;
+            font-size: 21px;
+            font-family: "Jost", sans-serif;
+            color: hsl(229, 84%, 12%);
+        }
+
+        .btn:hover {
+            background-color: hsl(229, 84%, 12%);
+            color: white;
+        }
+
+        .form-control {
+            border-radius: 3.125rem;
+            margin: 0.125rem;
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-family:Jost, sans-serif; text-align:center;  font-size: 28px;
+    padding: 20px;
+    font-weight: 800;
+    color: hsl(229, 84%, 12%);">SOLVE FOR X</h1><br><br>
+    <div class="coll" style="margin-left:14.375rem"></div>
+    <p>
+    <form action="" class="">
+        <div class="form-group d-flex justify-content-center" style="    display: flex;
+        text-align: center;
+        justify-content: center;
+        border-bottom: 125%;
+        margin-bottom: 1%;">
+            <input type="text" class="form-control" id="solvex" size=5 value='' placeholder="a"
+                style="width: 100%; max-width: 200px;">
+            <label for="#solvey" style="margin-top: 0.6rem;">X+</label>
+            <input type="text" class="form-control" id="solvey" size=5 value='' placeholder="b"
+                style="width: 100%; max-width: 200px;">
+            <label for="#solvez" style="margin-top: 0.6rem;">=</label>
+            <input type="text" class="form-control" id="solvez" size=5 value='' placeholder="c"
+                style="width: 100%; max-width: 200px;">
+        </div>
+        <div class="form-group d-flex justify-content-center ml-2" style=" display: flex;  
+        justify-content: center;">
+            <button type="button" class="btn btn-light mb-5" style="width:8em; border-radius: 27px;" onclick=slvcal()>
+                Solve </button><br><br>
+            <button type="button" class="btn btn-light mb-5" style="width:8em; border-radius: 27px;"
+                onclick=calcexslvcal()>
+                Example
+            </button><br><br>
+            <button type="button" class="btn btn-light mb-5" style="width:8em; border-radius: 27px;"
+                onclick="this.form.reset();">
+                Reset
+            </button>
+        </div>
+
+    </form>
+
+    <p>&nbsp;</p>
+    <div id="slvans" style="color: hsl(229, 84%, 12%); text-align: center; font-size: 1.3em; font-family:mathfont">
+    </div>
+    </p>
+
+    <script src="assets/js/LogicJavascript.js"></script>
+</body>
+
+</html>
