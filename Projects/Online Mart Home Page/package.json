@@ -1,0 +1,13 @@
+{
+  "name": "tailwind-tutorial",
+  "version": "1.0.0",
+  "description": "All the course files for the Tailwind CSS tutorial on the Net Ninja YouTube channel.",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  
+  "scripts": {
+    "start":"tailwindcss build -i src/input.css -o dist/output.css"
+  }
+}
