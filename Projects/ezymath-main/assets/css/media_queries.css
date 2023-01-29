@@ -1,0 +1,467 @@
+/*-----------------------------------*\
+  #media_queries.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @codewithsadee 
+ */
+
+
+
+
+
+@media (min-width: 375px) {
+
+  /**
+   * VARIABLE 
+   */
+
+  :root {
+
+    --fs-1: 50px;
+    --fs-2: 45px;
+    --fs-7: 18px;
+
+    --px: 30px;
+
+  }
+
+
+
+  .section-subtitle { font-size: var(--fs-7); }
+
+
+
+  /**
+   * HOME 
+   */
+
+  .home-right .icon-1 { top: 250px; }
+
+  .home-right .icon-2 {
+    display: block;
+    top:  370px;
+    right: 50px;
+  }
+
+  .home-right .icon-3 {
+    display: block;
+    top: 450px;
+    left:  0;
+  }
+
+  .home-right .icon-4 {
+    width: 60px;
+    top:  150px;
+    right: 50px;
+  }
+
+
+
+  /**
+   * ABOUT 
+   */
+
+  .about-left .icon-1 { top: 150px; }
+
+  .about-left .icon-2 {
+    display: block;
+    top: 270px;
+    right: 0;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 575px) {
+
+  /**
+   * VARIABLE 
+   */
+
+  :root { --px: 40px; }
+
+
+
+  /**
+   * HOME 
+   */
+
+  .home .shape-1 img { width: 100px; }
+
+  .home .shape-3 img { width: 250px; }
+
+
+
+  /**
+   * ABOUT 
+   */
+
+  .about-left .icon-1 { top: 200px; }
+
+  .about-left .icon-2 { top: 350px; }
+
+
+
+  /**
+   * EVENT 
+   */
+
+  .event .play { right: -20px; }
+
+  .event-card {
+    display:     flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .event-card .content-left {
+    width: 100px;
+    padding-bottom: 0;
+    margin-bottom:  0;
+    padding-right: 15px;
+    margin-right:  25px;
+    box-shadow: 1px 0 0 0 var(--light-gray);
+  }
+
+  .event .schedule {
+    justify-content: start;
+    margin-bottom: 5px;
+  }
+
+  .event-card .event-name { text-align: left; }
+
+
+
+  /**
+   * CONTACT 
+   */
+
+  .contact h2 { font-size: 37px; }
+
+}
+
+
+
+
+
+@media (min-width: 767px) {
+
+  /**
+   * VARIABLE 
+   */
+
+  :root {
+
+    --fs-1: 60px;
+    --fs-2: 50px;
+    --fs-7: 20px;
+
+    --px: 60px;
+
+  }
+
+
+
+  /**
+   * #CATEGORY, COURSE, INSTRUCTOR, BLOG, FOOTER
+   */
+
+  .category .course-item-group,
+  .course-grid,
+  .instructor-grid,
+  .blog-grid,
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+
+
+
+  /**
+   * #EVENT 
+   */
+
+  .event .play { right: -100px; }
+
+
+
+  /**
+   * #CONTACT 
+   */
+
+  .contact-card { padding: 40px 60px; }
+
+}
+
+
+
+
+
+@media (min-width: 850px) {
+
+  /**
+   * #VARIABLE 
+   */
+
+  :root { --px: 140px; }
+
+}
+
+
+
+
+
+@media (min-width: 992px) {
+
+  /**
+   * #VARIABLE 
+   */
+
+  :root {
+
+    --fs-5: 16px;
+    
+    --px: 30px;
+    --py: 120px;
+
+  }
+
+
+
+  /**
+   * #HEADER 
+   */
+
+  .navbar { padding: 20px var(--px); }
+
+  .navbar-nav {
+    background: transparent;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+    display:     flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-item:not(:last-child) a { border-bottom: none; }
+
+  .nav-toggle-btn { display: none; }
+
+  .navbar .btn { display: block; }
+
+
+
+  /**
+   * #HOME 
+   */
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .home::before {
+    top:  -100px;
+    left: -300px;
+  }
+
+  .home::after { top: 0; }
+
+  .home-left { margin-bottom: 0; }
+
+  .home .section-subtitle,
+  .main-heading,
+  .home .section-text { text-align: left; }
+
+  .home .section-text { margin: 0 0 30px; }
+
+  .home-btn-group { justify-content: start; }
+
+
+
+  /**
+   * #ABOUT 
+   */
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 40px;
+  }
+
+  .about-left { margin-left: -70px; }
+
+  .about-left img { max-width: unset; }
+
+  .about-right { padding-top: 0; }
+
+
+
+  /**
+   * #COURSE 
+   */
+
+  .course { position: relative; }
+
+  .course .section-subtitle,
+  .course .section-title { max-width: 600px; }
+
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+  }
+
+  .course .btn-primary {
+    position: absolute;
+    top: 130px;
+    right: var(--px);
+  }
+
+
+
+  /**
+   * #EVENT 
+   */
+
+  .event {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .event-left { margin-bottom: 0; }
+
+  .event .play { right: -10px; }
+
+
+
+  /**
+   * #FEATURES 
+   */
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features-right { height: auto; }
+
+
+
+  /**
+   * #TESTIMONIALS 
+   */
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+
+
+  /**
+   * #BLOG 
+   */
+
+  .blog-grid { grid-template-columns: repeat(3, 1fr); }
+
+
+
+  /**
+   * #CONTACT 
+   */
+
+  .contact-card { grid-template-columns: 1fr 1fr; }
+
+  .contact-card h2 { text-align: left; }
+
+  .contact .btn-primary {
+    justify-self: end;
+    align-self: center;
+  }
+
+
+
+  /**
+   * #FOOTER 
+   */
+
+  .footer-grid { grid-template-columns: 2fr 1fr 1fr 2fr; }
+
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+
+  /**
+   * #VARIABLE 
+   */
+
+  :root {
+
+    --fs-1: 70px;
+    --fs-2: 55px;
+    --fs-3: 40px;
+    --fs-4: 25px;
+    --fs-7: 22px;
+
+    --px: 120px;
+
+  }
+
+
+
+  /**
+   * #HOME 
+   */
+
+  .home-left { padding-bottom: var(--py); }
+
+  .home .section-text { font-size: 18px; }
+
+
+
+  /**
+   * #CATEGORY 
+   */
+
+  .category .course-item-group { grid-template-columns: repeat(3, 1fr); }
+
+
+
+  /**
+   * #EVENT 
+   */
+
+  .event { grid-template-columns: 1fr 1fr; }
+
+
+
+  /**
+   * #INSTRUCTOR 
+   */
+
+  .instructor-grid { grid-template-columns: repeat(4, 1fr); }
+
+
+
+  /**
+   * #CONTACT 
+   */
+
+  .contact-card h2 { font-size: 45px; }
+
+}
