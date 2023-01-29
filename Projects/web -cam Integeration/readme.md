@@ -1,0 +1,1 @@
+This project basically based on web cam you can easily navigate / control the web cam with your own need and requirement   . This project is made up with  CSS, HTML & JAVASCRIPT. no need to buy a new web cam
