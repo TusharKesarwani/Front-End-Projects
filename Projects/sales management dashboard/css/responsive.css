@@ -1,0 +1,139 @@
+/*     MEDIA QUERY  ????  SIDEBAR  ????    */
+@media screen and (max-width: 1200px){
+    .container {
+        width: 95%;
+        grid-template-columns:7rem auto 23rem ;
+    }
+    aside .logo h2 {
+        display: none;
+    }
+    aside .sidebar h3 {
+        display: none;
+    }
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+    aside .sidebar a:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .container {
+        width: 100%;
+        grid-template-columns:1fr;
+    }
+    aside {
+        position: fixed;
+        left: -100%;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 0 0rem 1rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showmenu 400ms ease forwards;
+    }
+    @keyframes showmenu {
+        to{
+            left: 0;
+        }
+    }
+    aside .logo {
+        margin-left: 1rem;
+    }
+    aside .logo h2 {
+        display: inline;
+    }
+    aside .sidebar h3 {
+        display: inline;
+    }
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+    aside .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+
+/*     MEDIA QUERY  ????  MAIN  ????    */
+@media screen and (max-width: 1200px){
+
+    main .insights {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    main .recent-orders {
+        width: 100%;
+        position: absolute;
+        left: 30%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 23.8rem;
+    }
+    main .recent-orders table {
+        width: 83vw;
+    }
+    main table thead tr th:last-child,
+    main table thead tr th:first-child{
+       display: none;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    main {
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+    main .recent-orders {
+        position: relative;
+        margin: 3rem 0 0 0 ;
+        width: 100%;
+    }
+    main .recent-orders table {
+        width: 100%;
+        margin: 0;
+        position: relative;
+        left: 20%;
+    }
+}
+
+/*     MEDIA QUERY  ????  RIGHT  ????    */
+@media screen and (max-width: 768px){
+    .right {
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+    .right .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem 0 0.8rem;        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 0rem 1rem var(--color-light);
+    }
+    .right .top .theme-toggler {
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+    .right .profile .info {
+        display: none;
+    }
+    .right .top button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+    }
+}
+
+
