@@ -1,0 +1,173 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Operations on set</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <style>
+        @import url(./variable.css);
+
+        body {
+            background: #d5f1f5;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content h2 {
+            text-align: center;
+            color: hsl(229, 84%, 12%);
+            font-family: "Roboto", sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        .content h5 {
+            color: hsl(229, 84%, 12%);
+            font-family: "Roboto", sans-serif;
+            font-size: 21px;
+            font-weight: 800;
+        }
+
+        p {
+            color: hsl(229, 84%, 12%);
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+           
+        }
+
+        img {
+            display: float;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>Operations on Sets</h2>
+        <h5>1. Union</h5>
+        <p>The union of two sets is a set containing all elements that are in A or in B
+            (possibly both). For example,</p>
+        <p>{1,2} &cup; {2,3} = {1,2,3}</p>
+        <div class="img1">
+            <img src="./assets/images/union.webp" style=" height: 12.5rem;" alt="">
+            <br><br>
+        </div>
+        <h5>2. Intersection</h5>
+        <p>The intersection of two sets A and B, denoted by A∩B, consists of all
+            elements that are both in A and B. For example,</p>
+        <p>{1,2} &cap; {2,3} = {2}</p>
+        <div class="d-flex justify-content-center">
+            <img src="./assets/images/intersection.webp"
+                style="width: 36%; height: 12.5rem;" alt="">
+            <br>
+        </div>
+        <br>
+        <p><i>The intersection of A and B is the middle
+                part</i></p>
+        <br>
+        <div class="d-flex justify-content-center">
+            <img src="./assets/images/intersection3b.webp" style=" height: 12.5rem;"
+                alt="">
+            <br><br>
+        </div>
+        <h5>3. Disjoint</h5>
+        <p>Set A and set B are called disjoint sets if no element is common to A and B.
+            i.e. A and B are disjoint sets then</p>
+        <p style="color:black !important; text-align: center !important;">(A &cap; B = ∅)</p>
+        <p style="color:black !important;">For example, A = {1,3,5}, B = {2,4,6} and C = {a,b,c}
+            <br> A &cap; B &cap; C = ∅
+        </p>
+        <div class="d-flex justify-content-center">
+            <img src="./assets/images/disjoint.webp" style=" height: 12.5rem;"
+                alt="">
+            <br><br>
+        </div>
+        <h5>4. Complement</h5>
+        <p>The complement of a set A, denoted by A<sup>c</sup> is elements in Universal
+            Set which are not in A</p>
+        <br>
+        <div class="d-flex justify-content-center">
+            <img src="./assets/images/disjoint.webp" style=" height: 12.5rem;"
+                alt="">
+            <br><br>
+        </div>
+        <h5>5. Difference</h5>
+        <p>The set A − B consists of elements that are in A but not in B. For example
+            if</p>
+        <p style="color:black !important;">A = {1,2,3} and B = {3,5} then,
+            <br> A - B = {1,2}
+        </p>
+        <div class="d-flex justify-content-center">
+            <img src="./assets/images/difference.webp" style=" height: 12.5rem;"
+                alt=""><br><br>
+        </div>
+        <br>
+    </div>
+    <h2 style="text-align: center;">Some conclusions from set operations</h2>
+    <p>Let S be the universal set, and A,B,C,D are subsets of S. Then,</p>
+    <ol>
+        <li>A ∪ ∅ = A <p>Hence ∅ i.e. empty set is identity set for 'union operation'. </p>
+        </li>
+        <br>
+        <li>A ∩ S = A <p>S i.e. universal set is identity set for 'intersection operation'. </p>
+        </li>
+        <br>
+        <li>A ∪ S = S <p>A ⊂ S and A ∪ S = S</p>
+            <p>⇒ if B ⊂ A then A ∪ B = A i.e. union of super set and subset is super set.</p>
+        </li>
+        <br>
+        <li>A ∩ ∅ = ∅ <p>∅ ⊂ A and A ∩ ∅ = ∅</p>
+            <p>⇒ if B ⊂ A then A ∩ B = B i.e. intersection of super set and subset is subset.</p>
+        </li>
+        <br>
+        <li>If B ⊂ A, then A ∩ B = B and A ∪ B = A</li>
+        <br>
+        <li>A ⊂ A ∪ B also B ⊂ A ∪ B</li>
+        <br>
+        <li>A ∩ B ⊂ A also A ∩ B ⊂ B</li>
+        <br>
+        <li>A ∩ B ⊂ A ⊂ A ∪ B and A ∩ B ⊂ B ⊂ A ∪ B i.e, A and B sets. A ∩ B is the smallest set and A ∪ B is largest
+            set.
+            <p>A contains A ∩ B and A is contained in A ∪ B.</p>
+            <p>Similarly B contains A ∩ B and B is contained in A ∪ B.</p>
+        </li>
+        <br>
+        <li>As A ∩ B ⊂ A<p>⇒ (A ∩ B) ∪ A = A [super set]</p>
+            <p>and (A ∩ B) ∩ A = (A ∩ B) [subset]</p>
+        </li>
+        <br>
+        <li>As A ⊂ A ∪ B<p>⇒ A ∩ (A ∪ B) = A [subset]</p>
+            <p>and A ∪ (A ∪ B) = (A ∪ B) [super set]</p>
+        </li>
+        <br>
+        <li>(A - B) ∪ (A ∩ B) ∪ (B - A) = A ∪ B and (A - B), (A ∩ B), (B - A) are pairwise disjoint. i.e.
+            <p>(A - B) ∩ (A ∩ B) = ∅ </p>
+            <p>(A - B) ∩ (B - A) = ∅ </p>
+            <p>(A ∩ B) ∩ (B - A) = ∅ </p>
+            <p>Hence (A - B), (A ∩ B) and (B - A) are partitions of A ∪ B.</p>
+        </li>
+        <br>
+        <li>A ∪ A' = S <p>i.e. Union of A and its complement gives identity set for intersection operation.</p>
+        </li>
+        <br>
+        <li>A ∩ A' = ∅ <p>i.e. Intersection of A and its complement gives identity set for union operation.</p>
+        </li>
+        <br>
+    </ol>
+    <h4 style="text-align: center;">Remark:</h4>
+    <ul>
+        <li style="color:black !important; font-size: 1.25rem;">Property 11 and 12 are very useful for Boolean algebra
+            as in Boolean algebra these properties are formed in a way: a + a' = 1
+            i.e. sum of element and its complement gives multiplicative identity element and a. a' = 0 </li>
+        <br>
+        <li style="color: black !important; font-size: 1.25rem;">Multiplication of element and its complement gives
+            additive identity element.</li>
+    </ul>
+
+</body>
+
+</html>

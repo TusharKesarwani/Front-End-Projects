@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    font-size: x-large;
+}
+ul{
+    list-style: none;
+}
+#header{
+    display: flex;
+    background: #ddd;
+    padding: 20px;
+    justify-content: space-between;
+}
+#header a.logo h1{
+    text-transform: uppercase;
+}
+button.logout_btn{
+    padding: 7px 15px;
+    background-color: #006692;
+    border-radius: 6px;
+    border: 2px solid rgb(96, 131, 178);
+    cursor: pointer;
+    color: #ddd;
+    font-size: large;
+    transition: all 0.3s ease ;
+}
+button.logout_btn:hover{
+    background-color: #ddd;
+    color: #006692;
+}
+section{
+    margin: 40px;
+}
+span{
+    text-decoration: underline;
+    color: #006692;
+}
