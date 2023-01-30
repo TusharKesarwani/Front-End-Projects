@@ -212,20 +212,6 @@
         </div>
     </section>
 
-    <!-- Contributors list -->
-
-    <section class="contributors">
-        <div class="head">
-            <h1 class="bg-title">CONTRIBUTORS</h1>
-            <h1 class="title">Contributors</h1>
-        </div>
-        <ul class="list-section">
-            <li id="contributors-list"></li>
-        </ul>
-
-    </section>
-
-
     <footer id="footer">
         <div>
             &copy; Copyright
@@ -252,29 +238,6 @@
         function myfunction() {
             preloader.style.display = 'none';
         }
-
-        // For contributors list
-
-        fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contributors", {
-                headers: {
-                    'Authorization': ''
-                }
-            }).then(response => response.json())
-            .then(data => {
-                // Extract the data for each contributor
-                const contributors = data.map(contributor => ({
-                    username: contributor.login,
-                    avatarUrl: contributor.avatar_url
-                }));
-
-                // Create and append HTML elements to display the contributors
-                const contributorsList = document.querySelector("#contributors-list");
-                contributors.forEach(contributor => {
-                    const li = document.createElement("li");
-                    li.innerHTML = `<img src="${contributor.avatarUrl}" alt="${contributor.username}">`;
-                    contributorsList.appendChild(li);
-                });
-            });
     </script>
 
 </body>
