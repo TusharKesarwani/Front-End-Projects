@@ -1,49 +1,38 @@
-:root {
-  /* -------------------VARIABLES WHICH DECIDES SIZE OF CURSOR AND Background and we can use them by variable name in future / */
-  --cursor-size: 30px;
-  --bg: #FAF7EE;
-}
-
 .page-wrap {
-  background: var(--bg);
+  background: #edb4e7;
   min-height: 100vh;
 }
 
 #cursor {
   position: fixed;
-  /* ---------------DECIDES POSITION FO CURSOR------------LIKE FROM TOP ADN LEFT IT WILL BE 0.5 IN DISTANCE */
-  top: calc(var(--cursor-size) * -0.5);
-  left: calc(var(--cursor-size) * -0.5);
+  /* ---------------DECIDES POSITION FO CURSOR------------ */
+  /* LIKE FROM TOP ADN LEFT IT WILL BE 0.5 IN DISTANCE */
+  top: calc(30px * -0.5);
+  left: calc(30px * -0.5);
   pointer-events: none;
   mix-blend-mode: difference;
-  /* filter: url(#goo); */
 }
 
 .cursor-circle {
   position: absolute;
   top: 0;
   left: 0;
-  width: var(--cursor-size);
-  height: var(--cursor-size);
-  border-radius: var(--cursor-size);
-  background: var(--bg);
-  /* transform-origin: right left; */
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #edb4e7;
 }
 
 body {
   overflow-x: hidden;
-    /* cursor: none; */
+  overflow-y: hidden;
+  margin: 0%;
 }
 
 h1 {
-  margin: 0;
-  font-size: 148px;
-  line-height: 1;
+  font-size: 110px;
   font-family: sans-serif;
-  text-transform: uppercase;
-  user-select: none;
 }
-
-.goo {
-  display: none;
+p{
+    font-size: large;
 }

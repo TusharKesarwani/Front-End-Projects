@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans";
+}
+
+
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b9ecff;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    color: rgb(9, 6, 6);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+img{
+    size:48px;
+    margin-right: 1.2rem;
+}
+
+label{
+    position: relative;
+}
+
+label input{
+    font-size: 1.5rem;
+    padding: 1rem ;
+    border-radius: 0.2rem;
+    height: 60px;
+    width: 350px;
+}
+
+
+input[type='button']:hover{
+    cursor: pointer;
+}

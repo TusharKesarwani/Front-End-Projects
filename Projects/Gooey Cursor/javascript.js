@@ -1,14 +1,14 @@
 console.clear();
 
-const TAIL_LENGTH = 20;
+const curlen = 20;
 
 const cursor = document.getElementById('cursor');
 
 let mouseX = 0;
 let mouseY = 0;
 
-let cursorCircles;
-let cursorHistory = Array(TAIL_LENGTH).fill({x: 0, y: 0});
+let circles;
+let history = Array(curlen).fill({x: 0, y: 0});
 
 function onMouseMove(event) {
   mouseX = event.clientX;
@@ -16,28 +16,28 @@ function onMouseMove(event) {
 }
 
 function initCursor() {
-  for (let i = 0; i < TAIL_LENGTH; i++) {
+  for (let i = 0; i < curlen; i++) {
     let div = document.createElement('div');
     div.classList.add('cursor-circle') ;
     cursor.append(div);
   }
-  cursorCircles = Array.from(document.querySelectorAll('.cursor-circle'));
+  circles = Array.from(document.querySelectorAll('.cursor-circle'));
 }
 
 function updateCursor() {  
-  cursorHistory.shift();
-  cursorHistory.push({ x: mouseX, y: mouseY });
+  history.shift();
+  history.push({ x: mouseX, y: mouseY });
     
-  for (let i = 0; i < TAIL_LENGTH; i++) {
-    let current = cursorHistory[i];
-    let next = cursorHistory[i + 1] || cursorHistory[TAIL_LENGTH - 1];
+  for (let i = 0; i < curlen; i++) {
+    let current = history[i];
+    let next = history[i + 1] || history[curlen - 1];
     
-    let xDiff = next.x - current.x;
-    let yDiff = next.y - current.y;
+    let diffx = next.x - current.x;
+    let diffy = next.y - current.y;
     
-    current.x += xDiff * 0.35;
-    current.y += yDiff * 0.35;
-    cursorCircles[i].style.transform = `translate(${current.x}px, ${current.y}px) scale(${i/TAIL_LENGTH})`;  
+    current.x += diffx * 0.35;
+    current.y += diffy * 0.35;
+    circles[i].style.transform = `translate(${current.x}px, ${current.y}px) scale(${i/curlen})`;  
   }
   requestAnimationFrame(updateCursor)
 }
