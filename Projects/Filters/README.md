@@ -78,3 +78,9 @@ form.addEventListener('keyup', () => {
   - else filter based on company value
 - set search value ''
 - call displayProducts
+
+
+####scrennshots
+![Uploading Screenshot 2023-01-21 125844.png…]()
+![Screenshot 2023-01-21 125911](https://user-images.githubusercontent.com/105864220/215316384-2a321489-e81b-42b0-afb2-ab4844694184.png)
+![Uploading Screenshot 2023-01-21 125932.png…]()
