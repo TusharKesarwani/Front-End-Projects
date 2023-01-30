@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Love Calculator</title>
+        <h1 class="text-center bg-danger breadth-10">Love Calculator</h1>
+        
+
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+         
+        <style>
+            body{
+                max-width: max-content;
+               background-color:beige;
+               background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=OnkACPW6&id=54394ED9070DFA14598C9D7819DC0C7C69092DE5&thid=OIP.OnkACPW6Si-KiU3xTau0pAHaFj&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.3a790008f5ba4a2f8a894df14dabb4a4%3frik%3d5S0JaXwM3Bl4nQ%26riu%3dhttp%253a%252f%252fwww.pptgrounds.com%252fwp-content%252fuploads%252f2015%252f02%252fGrunge-Valentine-PPT-Backgrounds.jpg%26ehk%3d7JllBgMaEV%252bBM8tVnZNn2ZPazloy6AcNPNsDku4d9j0%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1600&q=Background+Love&simid=608038529121939803&FORM=IRPRST&ck=27FD86816F8FE0B3C30683A3EE2F3BE9&selectedIndex=195');
+            }
+            header{
+                width: 100%;
+                height: 20%;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+
+            }
+           
+              
+        </style>
+    </head>
+    <body>
+        <p class="w-75 m-auto h-25 text-center"> 
+           
+            Find your relationship chances with our love test calculator! This calculator may also provide the answer to the question 'Does he really like me'? 
+            Some people use the result of this calculator to see what are the changes of relationships between two people with the given names.
+        
+            When you meet a new person in your life, you quickly start thinking that how compatible you two are. One way to make a guess is to use our name compatibility calculator to see how well these two names match together.
+            Whether you're a single person or in a relationship, it can be invaluable to have someone to test your hypotheses about deep affection. Whether you're testing the idea that you and your partner are compatible or trying to figure out if you truly have a romance towards each other, the love calculator can help. The calculator walks you through five different tests, each of which evaluates a different aspect of your relationship. After taking the tests, you'll be able to see where your relationship stands and whether there are any areas that need more attention. So if you're looking for a way to deepen your understanding of love, download the love tester and get started today!
+        </p>
+        <header>
+            <div class="card w-50 m-auto text-center">
+                <div class="card-header h-25 bg-danger text-white"   >Test your Love</div>
+                <div class="card-body text-center">
+                  <form class="form-inline w-55 height-20 m-auto text-center ">
+                    <div class="form-group h-20 m-auto text-center">
+                        <input class="text-center m-auto h-30" type="text" name="" placeholder="Your Name">
+                    </div>
+                    <div> <span class='pl-4 pr-4'> + </span></div>
+                    <div class="form-group h-20 m-auto text-center">
+                        <input class="text-center m-auto h-30" type="text" name="" placeholder="Their Name">
+                    </div>
+                  </form>  
+                  <div> <span class='pl-4 pr-4'>  </span></div>
+                  <div class="w-75 m-auto">
+                    <button class="btn btn-success w-50" onclick="checklove()">
+                     Calculate
+                    </button>
+                  </div>
+                  <br>
+                  <div>
+                    <input type="text" name="" id="lovevalue" class="form-control text-center text-black w-25 m-auto" placeholder="Percentage">
+                    
+                  </div>
+                </div>
+                <div class="card-footer bg-danger text-white">Love is in the air</div>
+              </div>
+        </header>
+      <script>
+            function checklove(){
+                var lovedata = Math.random()*100;
+                lovedata = Math.floor(lovedata);
+                document.getElementById('lovevalue').value=lovedata;
+
+            }
+           
+        </script>
+    </body>
+</html>
