@@ -20,6 +20,7 @@ Work can also be saved into your machine.
 
 Image gets saved with the application name.
 
+Responsive
 # Tech stack
 
 HTML
