@@ -80,3 +80,66 @@ body {
   color: skyblue;
   border: 2px solid aliceblue;
 }
+/*Responsive*/
+@media screen and (min-width: 470px) and (max-width: 650px) {
+  .body {
+    height: 100%;
+  }
+  #content-id {
+    font-size: 3rem;
+  }
+  #btn-id {
+    width: 200px;
+    height: 80px;
+    font-size: 1.5rem;
+    margin: 30px auto;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 470px) {
+  #content-id {
+    font-size: 2.5rem;
+  }
+  #btn-id {
+    width: 200px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  .btn-text {
+    position: relative;
+    top: -35%;
+  }
+  .content {
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  #content-id {
+    font-size: 1.5rem;
+  }
+  #btn-id {
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .btn-text {
+    position: relative;
+    top: -115%;
+  }
+  .content {
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .content {
+    margin-top: -5%;
+  }
+  #content-id {
+    font-size: 3.5rem;
+  }
+  #btn-id {
+    width: 300px;
+    height: 80px;
+    font-size: 2rem;
+  }
+}
+
