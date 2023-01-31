@@ -78,6 +78,12 @@ const draww = (e) => {
   context.fillStyle = choseColor;
   prevX = e.offsetX;
   prevY = e.offsetY;
+  /* for mobile application */
+  // if (e.type === "touchmove") {
+  //   context.lineTo(e.touches[0].prevX, e.touches[0].prevY);
+  // } else if (e.type === "mousemove") {
+  //   context.lineTo(e.prevX, e.prevY);
+  // }
   stable = context.getImageData(0, 0, canvas.width, canvas.height);
   context.beginPath();
   context.lineWidth = drawingWidth;
