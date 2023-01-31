@@ -8,6 +8,10 @@ HTML , CSS , JAVASCRIPT and charts are built using ApexCharts 3.
 # SNAPSHOT OF THE WEBSITE:
 
 
+https://user-images.githubusercontent.com/84632701/215781363-223b96cc-bb53-4e20-b3fa-c6e7c67971fe.mp4
+
+
+
 # CONTRIBUTED BY:
 ALISHA BHARTI
 
