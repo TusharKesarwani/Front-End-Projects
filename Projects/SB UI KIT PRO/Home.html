@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="color-switcher ">
+        <div class="switcher-btn shadow py-3  ps-3 d-flex ">
+          <i class="fas fa-cog " ></i>
+        </div>
+        <div class="shadow"><h3 class="theme-customiser py-4 px-4">
+          THEME CUSTOMISER 
+        </h3>
+    </div>
+    
+    <div class="header-text px-4 pt-3"><p>Try a pre-built swatch!</p></div>
+
+        <div class="theme-buttons-container my-1 px-4 ">
+
+       <button class="theme-button btn shadow w-100 mb-2 " data-color="#6900c7" data-color-primary="#0061f2" data-color-success="#005f3b" data-color-warning="#f4a100" style="background-color: #0061f2; background-image: linear-gradient(45deg,#0061f2,#6900c7);"><span class="text1">Default </span></button>
+      
+
+        <button class="theme-button btn  shadow w-100 mb-2" data-color="#8039da" data-color-primary="#1da1f5" data-color-success="#12ac70" data-color-warning="#ffc147" style="background-color: #1da1f5; background-image: linear-gradient(45deg,#1da1f5,#8039da);"><span  class="text1" >Flat</span></button>
+
+
+        <button class="theme-button btn  w-100 mb-2" data-color="#ff793f" data-color-primary="#f53b57" data-color-success="#05c46b" data-color-warning="#ffa801"style="background-color: #f53b57; background-image: linear-gradient(45deg,#f53b57,#ff793f);"><span  class="text1">Sunset </span></button>
+
+
+        <button class="theme-button btn w-100 mb-2" data-color="#506c6a" data-color-primary="#6eabc2" data-color-success="#799f78" data-color-warning="#d5c357" style="background-color: #6eabc2; background-image: linear-gradient(45deg,#6eabc2,#506c6a);"> Subtle </button>
+
+
+        <button class="theme-button btn  w-100 mb-2" data-color="#0fa28b" data-color-primary="#06794f" data-color-success="#3ac97c" data-color-warning="#ebb20c"style="background-color: #06794f; background-image: linear-gradient(45deg,#06794f,#0fa28b);"><span>Seafoam </span></button>
+        </div>
+
+        <div class="header-text px-4 pt-3"><p>Or choose your own colors...</p></div>
+    
+<div  style="text-align: center;" class="d-flex align-items-center first px-4 mb-2">
+<input type="color" id="color"  value="#6400b5"  style="border:none;" > 
+<button class="btn prim w-100 ms-1 " id="hex">Primary</button>
+</button>
+</div>
+    
+       
+<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
+  <input type="color" id="seco" name="chng" value="#0061f2" style="border:none;" > 
+  <button class="btn seco w-100 ms-1 " id="swatch">Secondary</button>
+  </button>
+  </div>
+         
+<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
+  <input type="color" id="succ" value="#005f3b" style="border:none;" > 
+  <button class="btn succ w-100 ms-1 " id="swatch2">Success</button>
+  </button>
+  </div>
+           
+<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
+  <input type="color" id="warn" value="#f4a100" style="border:none;" > 
+  <button class="btn warn w-100 ms-1 " id="swatch3">Warning</button>
+  </button>
+  </div>
+      
+
+
+</div>
+
+
+
+
+<!--------------------------------   navbar ------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container px-3 py-3">
+     <h2 class=" he "> <a class="navbar-brand" href="#">SB UI Kit Pro</a> </h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-lg-3">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+        
+          <li class="nav-item dropdown ms-lg-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Landings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="row">
+             <div class="col-lg-4  py-2 ms-lg-3 ">
+               <h6 class="dropdown-header ">APPLICATIONS</h6>
+                <li><a class="dropdown-item " href="#">Mobile App</a></li>
+               <li> <a class="dropdown-item " href="#">Desktop App</a></li>
+
+                <h6 class="dropdown-header  mt-2">BUSINESS</h6>
+                <a class="dropdown-item" href="#">Multipurpose</a>
+                <a class="dropdown-item " href="#">Agency</a>
+                <a class="dropdown-item " href="#">Press</a>
+                <a class="dropdown-item " href="#">Directory</a>
+                <a class="dropdown-item " href="#">Rental</a>
+                <a class="dropdown-item " href="#">Real Estate</a>
+
+                <h6 class="dropdown-header mt-2">LEAD GENERATION</h6>
+                <a class="dropdown-item " href="#">Lead Captures</a>
+              
+             </div>
+             <div class="col-lg-4 ms-lg-4 py-2 ">
+              <h6 class="dropdown-header ">PERSONAL</h6>
+               <li><a class="dropdown-item " href="#">Resume</a></li>
+              <li> <a class="dropdown-item " href="#">Portfolio</a></li>
+
+               <h6 class="dropdown-header  mt-2">HEADER STYLES</h6>
+               <a class="dropdown-item " href="#">Basic</a>
+               <a class="dropdown-item " href="#">Basic(Signup)</a>
+               <a class="dropdown-item " href="#">Graphic</a>
+               <a class="dropdown-item " href="#">Graphic(Signup)</a>
+               <a class="dropdown-item " href="#">Inner Page</a>
+               <a class="dropdown-item " href="#">Nav Only</a>
+            </div>
+              </div>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-lg-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="row">
+             <div class="col-lg-4  py-2 ms-lg-3 ">
+               <h6 class="dropdown-header ">APPLICATIONS</h6>
+                <li><a class="dropdown-item " href="#">Mobile App</a></li>
+               <li> <a class="dropdown-item " href="#">Desktop App</a></li>
+
+                <h6 class="dropdown-header  mt-2">BUSINESS</h6>
+                <a class="dropdown-item" href="#">Multipurpose</a>
+                <a class="dropdown-item " href="#">Agency</a>
+                <a class="dropdown-item " href="#">Press</a>
+                <a class="dropdown-item " href="#">Directory</a>
+                <a class="dropdown-item " href="#">Rental</a>
+                <a class="dropdown-item " href="#">Real Estate</a>
+
+                <h6 class="dropdown-header mt-2">LEAD GENERATION</h6>
+                <a class="dropdown-item " href="#">Lead Captures</a>
+              
+             </div>
+             <div class="col-lg-4 ms-lg-4 py-2 ">
+              <h6 class="dropdown-header ">PERSONAL</h6>
+               <li><a class="dropdown-item " href="#">Resume</a></li>
+              <li> <a class="dropdown-item " href="#">Portfolio</a></li>
+
+               <h6 class="dropdown-header  mt-2">HEADER STYLES</h6>
+               <a class="dropdown-item " href="#">Basic</a>
+               <a class="dropdown-item " href="#">Basic(Signup)</a>
+               <a class="dropdown-item " href="#">Graphic</a>
+               <a class="dropdown-item " href="#">Graphic(Signup)</a>
+               <a class="dropdown-item " href="#">Inner Page</a>
+               <a class="dropdown-item " href="#">Nav Only</a>
+            </div>
+              </div>
+              
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-lg-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item one" href="#">
+                <i class="fas fa-book-open fa-1x p-3 " style="background-color: rgb(136, 223, 238); color: blue;border-radius: 50%;"></i>
+              Create landing page
+              </a>
+              <li><hr class="dropdown-divider"></li>
+              <a class="dropdown-item one" href="#">
+                <i class="fas fa-file fa-1x p-3 text-center" style="background-color: rgb(136, 223, 238); color: blue;border-radius: 50%; width: 48px;"></i>
+              Usage instructions and references
+              </a>
+            
+            </ul>
+          </li>
+
+        </ul>
+        <div class="ms-lg-5" >
+            <button type="button py-2 px-3" class="btn navbut ">Buy Now<i class="fas fa-angle-right ms-2"></i> </button>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+<!--------------------------header---------------------------------->
+   <header class="head" >
+     <div class="container py-5 px-4 mx-auto ">
+      <div class="row  py-5 ">
+        <div class="col-lg-6 col-11 my-auto">
+          <span class="p-2 px-3 star mt-5 " style="background-color: #e4ddf7;">Start Today! </span>
+          <h1 class="my-2" style="font-size: 38px; color: white; ">Get more leads, more customers, and more revenue</h1>
+          <p class="pl" style="color: #ffffff80;">Stop losing leads because of a non-optimized landing page. Start converting your users to paying customers and winning more sales today with a new landing page!</p>
+        </div>
+       <div class="col-lg-6 col-12">
+        <div class="card rounded" >
+          <div class="card-header p-4">
+            Sign up and get our free e-book!
+          </div>
+          <form class="row g-3 p-4">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">First Name</label>
+              <input type="text" class="form-control py-2" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Last Name</label>
+              <input type="text" class="form-control py-2" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email Address</label>
+              <input type="email" class="form-control py-2" id="inputAddress" >
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Company or Organisation</label>
+              <input type="text" class="form-control py-2" id="inputAddress2">
+            </div>
+            <div class="col-12 pt-2">
+              <button type="submit" class="btn  navbut pt-2 px-5">Download Now!</button>
+            </div>
+            </div>
+          </form> 
+         
+        </div>
+       </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1627195218">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+           <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+      </div>
+  </header>
+
+  <!--------------------------find us----------------------------------------->
+   <section class=" bg-white">
+     <div class="container py-5 px-4 mx-auto">
+      <div class="row justify-content-end">
+        <div class="col-10  px-4">
+          <div class=" text-uppercase-expanded text-end mb-5 " style="color: #d4dae3;  ">
+            <h5>HERE'S WHERE YOU CAN FIND US </h5>             
+           </div>
+        </div>
+      </div>
+       <div class="row gx-4 align-items-ms-center mx-auto">
+          <div class="col-lg-3 col-6 mb-5 mx-auto">
+             <figure><img src="Images/google.png" alt="" style="width: 90%; "></figure>
+          </div>
+           <div class="col-lg-3 col-6  mb-5 mx-auto">
+          <figure><img src="Images/mail_chimp.svg" alt="" style="width: 90%; "></figure>
+       </div>
+       <div class="col-lg-3 col-6  mb-5 mx-auto">
+        <figure><img src="Images/instagram.svg" alt="" style="width: 90%; "></figure>
+     </div>
+      <div class="col-lg-3 col-6  mb-5 mx-auto">
+    <figure><img src="Images/dribble1.png" alt="" style="width:90%; "></figure>
+ </div>
+       </div>
+     </div>
+    </section>
+    <div class="custom-shape-divider-bottom-blue">
+     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+     </svg>
+   </div>
+
+   <!-----------------------services----------------------------->
+ 
+ <section class="serv ">
+   <div class="container pt-5  px-4">
+    <div class="row mx-auto ">
+      <div class=" col-md-8 col-11 mt-4  ">
+        <span class="p-2 px-3 star mt-5 star " style="background-color: #eeeeee; ">Marketing </span>
+        <h3 class="mt-4" style=" color: black; ">A better way to capture leads</h3>
+        <p  style="color: #69707a; font-size: 17.6px;">Design can go a long way when capturing leads on your website. This lead caputre landing page example can help you get started!</p>
+      </div>
+      </div>
+      <div class="row mx-auto ">
+        <div class="col-md-6 col-12 mb-4 ">
+          <div class="card shadow h-100 px-5 py-4">
+            <div ><i class="fas fa-users fa-2x p-3 my-3 icon" style="background-color: #e4ddf7; color: var(--color); "></i></div>
+            <h4 class="card-title">Cultivate better customers</h4>
+            <p class="card-text  mb-2" style="font-size: 18px; color:#69707a ;">Learn how lead generation fits into your inbound marketing strategy and easy ways that you can start generating leads for your company</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12 mb-4">
+          <div class="card shadow h-100 px-5 py-4">
+            <div ><i class="fas fa-chart-line fa-2x p-3 my-3 icon" style="background-color: #daefed; color: var(--success); "></i></div>
+            <h4 class="card-title">Reach sales goals</h4>
+            <p class="card-text mb-2" style="font-size: 18px; color:#69707a ;">Attract and convert prospects into paying customers on your website by implementing a new design into your lead generation strategy</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12 mb-4 ">
+          <div class="card shadow px-5 py-4 h-100">
+            <div ><i class="fas fa-wrench fa-2x p-3 my-3 icon" style="background-color: #dae7fb; color: var(--primary-color); "></i></div>
+            <h4 class="card-title">Use the right tools</h4>
+            <p class="card-text  mb-2" style="font-size: 18px; color:#69707a ;">By adding forms, call to action buttons, and information boxes, this template has the right tools to capture new leads</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12 mb-4  ">
+          <div class="card shadow px-5 py-4 h-100">
+            <div ><i class="fas fa-columns  fa-2x p-3 my-3 icon" style="background-color: #f2eee3; color: var(--warning); "></i></div>
+            <h4 class="card-title">Easy to customimze</h4>
+            <p class="card-text  mb-2" style="font-size: 18px; color:#69707a ;">Take sections and components from this UI Kit to build multiple variations of a lead caputre page to test which one performs better!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   <div class="custom-shape-divider-bottom-tilt">
+     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+     </svg>
+   </div>
+ </section>  
+ <!----------------contact--------------->
+ <section style="background-color: white;" class="contact " >
+  <div class="container py-5 px-4 mx-auto">
+    <div class="row px-4">
+      <div class="col-md-6 col-10 text-ms-start ">
+        <h5 style="color: var(--primary-color);">Ready to get started?</h5>
+        <p style="font-size: 20px; color: #69707a;">Create your account now!  </p>
+      </div>
+      <div class="col-lg-6 text-lg-end ">
+       <span><a href="#"> <button type="button" class="btn navbut  me-3" >Start Now</button></a></span> 
+       <span><a href="#"> <button type="button" class="btn ho">Contact Us</button></a></span>
+      </div>
+    </div>
+  </div>
+ </section>
+<hr>
+<!----------------------footer-------------------------------------->
+<footer class="pt-5 foot">
+  <div class="container pt-5 px-4 ">
+    <div class="row gx-4 ps-4">
+       <div class="col-md-3 ms-lg-2 hey">
+         <div class="footer-brand">SB UI KIT PRO</div>
+         <p class="mb-3 build">Build better websites</p>
+         <div class="mb-4">
+          <a class="me-2" href="#"><i class="fab fa-instagram fa-1x" style="color: #a7aeb8;" ></i></a>
+          <a class="me-2" href="#"><i class="fab fa-facebook fa-1x" style="color: #a7aeb8;"></i></a>
+          <a class="me-2" href="#"><i class="fab fa-github fa-1x" style="color: #a7aeb8;" ></i></a>
+          <a class="me-2" href="#"><i class="fab fa-twitter fa-1x" style="color: #a7aeb8;"></i></a>
+         </div>
+       </div>
+      
+          <div class="col-md-2 hey ms-lg-5">
+            <div class="pro mb-4">
+              <h6 class="text-uppercase-expanded mb-3">Products</h6>
+             
+             <li class="mb-1 "> <a href="#" class="anchor ">Landings</a></li>
+             <li class="mb-1"> <a href="#" class="anchor ">Pages</a></li>
+              <li class="mb-1"><a href="#" class="anchor ">Sections</a></li>
+              <li class="mb-1"><a href="#" class="anchor ">Documentation</a></li>
+              <li class="mb-1"> <a href="#" class="anchor ">Changelog</a></li>
+            </div>
+          </div>
+          
+          <div class="col-md-2 hey">
+            <div class="pro mb-4">
+              <h6 class="text-uppercase-expanded mb-3">Technical</h6>
+             
+              <li class="mb-1"><a href="#" class="anchor ">Documentation</a></li>
+              <li class="mb-1"> <a href="#" class="anchor ">Changelog</a></li>
+              <li class="mb-1"> <a href="#" class="anchor ">Theme Customizer</a></li>
+              <li class="mb-1"> <a href="#" class="anchor ">UI Kit</a></li>
+            </div>
+          </div>
+
+
+          <div class="col-md-2 hey">
+            <div class="pro mb-4">
+              <h6 class="text-uppercase-expanded mb-3">includes</h6>
+             
+             <li class="mb-1"> <a href="#" class="anchor ">Utilities</a></li>
+             <li class="mb-1"> <a href="#" class="anchor ">Components</a></li>
+             <li class="mb-1"><a href="#" class="anchor ">Layouts</a></li>
+             <li class="mb-1"><a href="#" class="anchor ">Code Samples</a></li>
+             <li class="mb-1"> <a href="#" class="anchor ">Products</a></li>
+             <li class="mb-1"> <a href="#" class="anchor ">Affiliates</a></li>
+             <li class="mb-1"> <a href="#" class="anchor ">Updates</a></li>
+            </div>
+          </div>
+
+          
+          <div class="col-md-2 hey">
+            <div class="pro mb-4">
+              <h6 class="text-uppercase-expanded mb-3">legal</h6>
+             <li class="mb-1"> <a href="#" class="anchor ">Privacy Policy</a></li>
+             <li class="mb-1"> <a href="#" class="anchor ">Terms and Conditions</a></li>
+             <li class="mb-1"><a href="#" class="anchor ">License</a></li>
+            
+            </div>
+          </div>
+          
+ </div>
+ <hr class="mb-3">
+ <div class="row pt-3 pb-4 px-4">
+   <div class="col-lg-6 cop text-lg-start ">
+    Copyright © Your Website 2021
+   </div>
+   <div class="col-lg-6  cop text-lg-end">
+   <div class="ms-lg-5"> Privacy Policy · Terms & Conditions</div>
+   </div>
+ </div>
+
+ </div>
+</footer>
+
+<!---------------------------------------->
+<script>
+    document.querySelector('.switcher-btn').onclick=() =>{
+        document.querySelector('.color-switcher').classList.toggle('active');
+    };
+
+   
+
+ /*let themeButtons = document.querySelectorAll('.theme-button') ;
+ themeButtons.forEach(color =>{
+     color.addEventListener('click',() =>{
+     let dataColor=color.getAttribute('data-color');
+     document.querySelector(':root').style.setProperty('--main-color',datacolor);
+     });
+ });*/
+</script>
+<script src="JS/SB_UI.js"></script>
+
+
+<!---------------------------------------->
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>
