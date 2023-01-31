@@ -2,3 +2,4 @@
 Tech stack used - HTML, CSS, Javascript.
 
 ![photo](image.png)
+Link to the website: (https://deepshikha2708.github.io/Love-calculator/)
