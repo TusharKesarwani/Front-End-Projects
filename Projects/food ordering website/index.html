@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Hupiee</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="cart.js" defer></script>
+    
+    <!--bootstrap-->
+    <!--css only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <!-- Name -->
+  <center><h1>Hungry Hupiee</h1></center>
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <img src="mini\logo.png" alt="logo" width="50" height="50">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Food
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#South Indian">South Indian</a></li>
+                <li><a class="dropdown-item" href="#Maharashtrian">Maharashtrian</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#Gujrathi">Gujrathi</a></li>
+                <li><a class="dropdown-item" href="#Marwadi">Marwadi</a></li>
+                <li><a class="dropdown-item" href="#Chat">Chat</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.google.com/maps">Track Order</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="feedbackforms.html">Feedback</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contactform.html">Contact us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="loginform.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--carousel-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="mini/c1.png" class="d-block w-100" alt="carousel img1">
+          </div>
+
+          <div class="carousel-item">
+            <img src="mini/c2.png" class="d-block w-100" alt="carousel img2">
+          </div>
+
+          <div class="carousel-item">
+            <img src="mini/c3.png" class="d-block w-100" alt="carousel img3">
+          </div>
+
+          <div class="carousel-item">
+            <img src="mini/c4.png" class="d-block w-100" alt="carousel img4">
+          </div>
+
+          
+        </div>
+      </div>
+
+    <!--flex cards-->
+      <h2 id="South Indian"><b>South Indian</b></h2>
+      <div class="d-flex flex-row bd-highlight mb-3 flex-wrap">
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/s1.png" class="d-block">
+          <p>Masala Dosa<br> price:₹ 100 </p>
+          <button onclick="AddToCart(1);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/s2.jpg" class="d-block">
+          <p>Idli<br> price:₹ 120 </p>
+          <button onclick="AddToCart(2);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/s3.jpeg" class="d-block">
+          <p>Medu Vada<br> price:₹ 90 </p>
+          <button onclick="AddToCart(3);">Add To Cart</button>
+        </div>
+      
+      </div> 
+
+      <h2 id="Maharashtrian"><b>Maharashtrian</b></h2>
+      <div class="d-flex flex-row bd-highlight mb-3 flex-wrap">
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/m1.jpg" class="d-block">
+          <p>Vada Pav<br> price:₹ 30 </p>
+          <button onclick="AddToCart(4);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/m2.jpg" class="d-block">
+          <p>Puran Poli<br> price:₹ 250 </p>
+          <button onclick="AddToCart(5);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/m3.jpg" class="d-block">
+          <p>Misal Pav<br> price:₹ 150 </p>
+          <button onclick="AddToCart(6);">Add To Cart</button>
+        </div>
+      
+      </div> 
+
+      <h2 id="Gujrathi"><b>Gujrathi</b></h2>
+       <div class="d-flex flex-row bd-highlight mb-3 flex-wrap">
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/g1.jpg" class="d-block">
+          <p>Khaman - The Sponge Snack<br> price:₹ 300 </p>
+          <button onclick="AddToCart(7);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini\g2.jpg" class="d-block">
+          <p>Khandvi <br> price:₹ 100 </p>
+          <button onclick="AddToCart(8);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/g3.jpg" class="d-block">
+          <p>Muthiya<br> price:₹ 120 </p>
+          <button onclick="AddToCart(9);">Add To Cart</button>
+        </div>
+      
+      </div>  
+
+      <h2 id="Marwadi"><b>Marwadi</b></h2>
+      <div class="d-flex flex-row bd-highlight mb-3 flex-wrap">
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/m11.jpg" class="d-block">
+          <p>Dal Bati Churma<br> price:₹ 250 </p>
+          <button onclick="AddToCart(10);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/m12.jpg" class="d-block">
+          <p>Mohan Thaal<br> price:₹ 200 </p>
+          <button onclick="AddToCart(11);">Add To Cart</button>
+        </div>
+
+        <div class="p-2 bd-highlight">
+          <img src="mini/m13.jpg" class="d-block">
+          <p>Mirchi Bada<br> price:₹ 180 </p>
+          <button onclick="AddToCart(12);">Add To Cart</button>
+        </div>
+      
+      </div>
+
+    <h2 id="Chat"><b>Chat</b></h2>
+    <div class="d-flex flex-row bd-highlight mb-3 flex-wrap"> 
+
+      <div class="p-2 bd-highlight">
+        <img src="mini/c11.png" class="d-block">
+        <p>Paapri Chaat<br> price:₹ 100 </p>
+        <button onclick="AddToCart(13);">Add To Cart</button>
+      </div>
+
+      <div class="p-2 bd-highlight">
+        <img src="mini/c12.jpg" class="d-block">
+        <p>Shahi Aloo Tokri Chaat<br> price:₹ 150 </p>
+        <button onclick="AddToCart(14);">Add To Cart</button>
+      </div>
+
+      <div class="p-2 bd-highlight">
+        <img src="mini/c13.jpg" class="d-block">
+        <p>Bhel<br> price:₹ 120 </p>
+        <button onclick="AddToCart(15);">Add To Cart</button>
+      </div>
+    </div>
+
+    <!--cart-->
+      <div class="container">
+        <div class="row">
+          <div class="cart">
+
+             <table class="table table=hover">
+               <thead>
+                 <tr>
+                     <th>#</th>
+                     <th>Item</th>
+                     <th>Qty</th>
+                     <th>Rate</th>
+                     <th>Price</th>
+                 </tr>
+                </thead>
+                <tbody id="carttable">
+                 
+              </tbody>
+              <tfoot id="cartTotal">
+              </tfoot> 
+            </table>
+          </div>
+        </div> 
+          
+      </div>
+          
+      
+    <!-- footer section starts  -->
+<section class="footer">
+  <div class="box-container">
+      <div class="box">
+          <h3>Hungry Hupiee</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+          <div class="share">
+              <a href="#" class="bi bi-instagram"></a>
+              <a href="#" class="bi bi-twitter"></a>
+              <a href="#" class="bi bi-facebook"></a>
+              <a href="#" class="bi bi-whatsapp"></a>
+          </div>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links"> <i class="bi bi-phone"></i> +123-456-7890 </a>
+          <a href="#" class="links"> <i class="bi bi-envelope"></i> architabhattad1234@gmail.com </a>
+          <a href="#" class="links"> <i class="bi bi-geo"></i> Pune, india</a>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#carouselExampleSlidesOnly" class="links"> <i class="bi bi-arrow-right"></i> home </a>
+          <a href="#South Indian" class="links"> <i class="bi bi-arrow-right"></i> Food </a>
+          <a href="#South Indian" class="links"> <i class="bi bi-arrow-right"></i> categories </a>
+      </div>
+
+  </div>
+</section>
+<!-- footer section ends -->
+    
+    <!--bootstrap-->
+    <!--javascript bundle with popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
