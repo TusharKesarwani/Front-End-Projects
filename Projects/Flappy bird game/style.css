@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+* {
+    font-family: helvetica, sans-serif;
+     user-select: none;
+     user-select: none;
+}
+body {
+    background-color: rgba(0,0,0, .95);
+    height: 100vh;
+    margin: 0;
+}
+
+/********************
+* video game screen *
+********************/
+.game-title h1 {
+/***** Flappy Bird *****/
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    color: rgb(251, 176, 37);
+    font-size: 3em;
+    line-height: 150%;
+    letter-spacing: 4px;
+    text-shadow: 2px 4px rgba(250,250,250, 1);
+    margin: 0;
+    position: relative;
+    top: 10px;
+}
+.game-screen {
+    /* background-color: rgb(69, 184, 194); */
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+    canvas {
+        background-color: 
+        black
+        /* #00bbc4 */
+        /* #d2ce89 */
+        ;
+        display: block;
+        width: 300px;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .game-description {
+        color: #f0f0f0;
+        line-height: 2em;
+        text-align: center;
+    }

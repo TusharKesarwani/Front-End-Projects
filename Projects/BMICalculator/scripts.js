@@ -7,23 +7,26 @@ document.getElementById('sub').addEventListener('click',function(){
     let img;
     let data='';
     if(bmi<19){
-        data='underweight';
+        data='You Are Underweight';
         img=".assets/underweight.jpg";
     }
     else if(bmi>=19 && bmi<=25){
-        data='Healthy';
+        data='You Are Healthy';
         img=".assets/healthy.jpg";
     }
     else if(bmi>25&&bmi<=30){
-        data='overweight';
+        data='You Are Overweight';
         img=".assets/overweight.jpg";
     }
-    else{
-        data='Obese';
+    else if (bmi>30){
+        data='You Are Obese';
         img=".assets/obese.jpg";
     }
+    else{
+        data='Please Enter a Valid Input'
+    }
     document.getElementById('body').setAttribute("src",img);
-    document.getElementById('res').innerHTML=`You are ${data}.`;
+    document.getElementById('res').innerHTML=` ${data}.`;
     document.getElementById('result').innerHTML=`Your BMI is <strong>${bmi}</strong>.`;
     document.getElementById('info').setAttribute("class","card show");
 });

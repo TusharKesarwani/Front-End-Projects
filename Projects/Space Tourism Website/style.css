@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Unbounded:wght@200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes imgUp {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes imgSide {
+    to {
+        transform: translateX(-10px);
+    }
+}
+
+body {
+    background: url("img/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(80px);
+    width: 30%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav a .bold {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav a:hover {
+    color: rgb(255, 99, 255);
+}
+
+main {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+main .left {
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+main .left .headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+main .left h1 {
+    font-size: 50px;
+    font-family: 'Unbounded', cursive;
+    color: #ff63ff;
+}
+
+main .left .subhead {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+main .left p {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 160%;
+}
+
+main .right {
+    position: relative;
+}
+
+main .right .back-img {
+    position: absolute;
+    top: -40px;
+    left: -5px;
+    animation: rocket 2s infinite;
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+main .right .front-img {
+    width: 500px;
+    animation: imgSide 2s linear infinite alternate;
+}
+
+main .right .back-img {
+    animation: imgUp 3s linear infinite alternate;
+}
