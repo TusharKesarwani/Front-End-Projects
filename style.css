@@ -2,9 +2,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Monsterrat";
     scroll-behavior: smooth;
     box-sizing: border-box;
+    
 }
 
 a {
@@ -12,14 +13,14 @@ a {
 }
 
 body {
-    background-color: white;
+    background-color:aliceblue;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0D4360;
+    background-color: linear-gradient(green,yellow,orange);
     padding: 0 2rem;
     margin: 0 auto;
 }
@@ -36,7 +37,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color:aliceblue;
     font-size: .8rem;
     transition: all ease-in-out 0.2s;
 }
@@ -95,7 +96,7 @@ main .left p {
 }
 
 .github-btn-cta {
-    background-color: #0D4360;
+    background-color: linear-gradient(green,yellow,orange);
     color: white;
     padding: .6rem 1rem;
     border-radius: 3rem;
@@ -180,7 +181,7 @@ main .left p {
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
-    background-color: #0D4360;
+    background-color: linear-gradient(green,yellow,orange);
     border-radius: .2rem;
     transition: all 0.5s ease;
 }
@@ -262,7 +263,7 @@ main .left p {
 .contributors .list-section {
     margin-top: 4rem;
     padding: 2rem;
-    background-color: #0D4360;
+    background-color: linear-gradient(green,yellow,orange);
     border-radius: .5rem;
 }
 
@@ -282,7 +283,7 @@ main .left p {
 }
 
 footer {
-    background-color: #0D4360;
+    background-color: linear-gradient(green,yellow,orange);
     padding: 2rem 8rem;
     display: flex;
     justify-content: space-between;
