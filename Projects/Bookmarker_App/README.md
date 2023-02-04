@@ -1,4 +1,4 @@
-# Bookmarker App
+# <img src="logo.svg" height="33px">Bookmarker App
 
 <img align="right" width="50%" src="https://user-images.githubusercontent.com/65494453/216777371-8597bd93-5103-4848-bd66-cb690210be7f.png">
 
