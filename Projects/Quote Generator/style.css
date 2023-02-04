@@ -49,3 +49,10 @@ button {
 button:active {
      transform: scale(0.98);
 }
+.btns{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     gap: 20px;
+    
+}
