@@ -24,6 +24,7 @@ function savebookmark(e) {
 
     //console.log(sitename);
     //console.log(siteurl);
+    // creating object to put in local storage
     var bookmark = {
         name: sitename,
         url: siteurl
@@ -60,11 +61,12 @@ function savebookmark(e) {
 function deletebookmark(url) {
     //console.log(url);
     var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
-    for (var i = 0; i < bookmarks.length; i++) {
-        if (bookmarks[i].url == url) {
-            bookmarks.splice(i, 1);
-        }
-    }
+//     for (var i = 0; i < bookmarks.length; i++) {
+//         if (bookmarks[i].url == url) {
+//             bookmarks.splice(i, 1);
+//         }
+//     }
+    bookmarks.splice(i, 1);
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     fetchbookmarks();
 }
@@ -83,12 +85,18 @@ function fetchbookmarks() {
         var name = bookmarks[i].name;
         var url = bookmarks[i].url;
 
-        bookmarkresults.innerHTML += '<div class="well">' +
-            '<h3>' + name +
-            ' <a class="btn btn-sm btn-success" target="_blank" href="' + url + '">Visit</a>' +
-            ' <a onclick="deletebookmark(\'' + url + '\')" class="btn btn-danger btn-sm" href="#">Delete</a>' +
-            '</h3>' +
-            '</div>';
+        bookmarkresults.innerHTML += `<div class="well"> +
+            <div class="row">
+            <div class="col-9">
+                <h5>${bookmarks[i].name}</h5>    
+            </div>
+            <div class="col-3">
+                <a class="btn btn-sm btn-success" href="https://${bookmarks[i].url}" target="_blank">Visit</a>
+                <a onclick="deletebookmark(${i});" class="btn btn-danger text-light btn-sm" >Delete</a> 
+            </div>
+        </div>   
+        <small>Created at : ${Date().slice(4, 15)}</small>                    
+        </div>`;
     }
 }
 function validateform(sitename, siteurl) {
