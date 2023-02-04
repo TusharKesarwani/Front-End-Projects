@@ -1,6 +1,19 @@
-This is the application which is been made using HTML , CSS and JavaScript. For the styling purpose I have also included the Bootstrap which is the CSS framework.
-In this any user who runs the app just he need to execute the code and you will see the output on browser.Their just enter the website name that you wanted to bookmark
-and make sure to enter the url of that website.Once you will submit these info the output will be displayed on the screen itself.
+# Bookmarker App
 
-Sample output
-![_usr_bin_bash --login -i 1_20_2023 2_31_36 PM](https://user-images.githubusercontent.com/59620280/213712561-bd84306b-7bae-4d8f-a940-c6197fe00a54.png)
+<img align="right" width="50%" src="https://user-images.githubusercontent.com/65494453/216777371-8597bd93-5103-4848-bd66-cb690210be7f.png">
+
+### After executing the code in your editor, you will see the output on the browser. Enter the website name with its url that you wanted to save in the bookmark list. Once you will submit, these info the output will be displayed on the screen itself.
+
+<br><br><br><br><br>
+
+##  💻 Tech stack
+- HTML
+- CSS
+- JS
+- Bootstrap
+
+## [Click here](https://raw.githack.com/muskan467/Front-End-Projects/bookmark-app/Projects/Bookmarker_App/index.html)😃
+
+## 📷 Demonstration
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/65494453/216777115-e9ba6245-c963-457d-b89e-0b6c5e6ae389.gif)
