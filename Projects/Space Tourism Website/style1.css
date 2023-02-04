@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Unbounded:wght@200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes imgUp {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+nav {
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(80px);
+    width: 30%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: rgb(255, 99, 255);
+}
+
+body {
+    background: url("img/bg-2.jpg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+main .left {
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+main .left p {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+main .left img {
+    animation: imgUp 1s ease-in-out infinite alternate;
+}
+
+main .right {
+    width: 40%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.small-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    border: 1px solid #fff;
+    padding: 0 20px;
+}
+
+.tab button {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background-color: inherit;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 14px 0;
+    transition: 0.3s;
+}
+
+.tab button:hover,
+.tab button:focus,
+.tab button.active {
+    color: #ff00b7;
+}
+
+.tabcontent {
+    flex-direction: column;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.active {
+    display: flex;
+    gap: 30px;
+}
+
+.tabcontent .heading {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 60px;
+    color: #ff00b7;
+}
+
+.tabcontent .desc {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+}
+
+.tabcontent .infos {
+    display: flex;
+    gap: 60px;
+}
+
+.tabcontent .infos .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+.tabcontent .infos .info h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 30px;
+}
+
+.tabcontent .infos .info p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+/* Style the tab */
+
+
+/* .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+} */
+
+
+/* Style the buttons that are used to open the tab content */
+
+
+/* .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+} */
+
+
+/* Change background color of buttons on hover */
+
+
+/* .tab button:hover {
+    background-color: #ddd;
+} */
+
+
+/* Create an active/current tablink class */
+
+
+/* .tab button.active {
+    background-color: #ccc;
+} */
+
+
+/* Style the tab content */
+
+
+/* 
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} */

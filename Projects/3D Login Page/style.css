@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  html {
+    font-size: 72.5%;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(31, 7, 7, 0.7), rgba(0, 0, 0, 0.7)),
+      url(images/bg.png) center no-repeat;
+    background-size: cover;
+    perspective: 100rem;
+  }
+  
+  .forms-wrapper {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: calc(50% - 17.5rem);
+    left: calc(50% - 25rem);
+    transform: rotateY(10deg);
+    transition: transform 0.5s, left 0.5s;
+  }
+  
+  .forms-wrapper.change {
+    transform: rotateY(70deg);
+    left: calc(50% + 25rem);
+  }
+  
+  .forms-wrapper form {
+    width: 50rem;
+    height: 35rem;
+    background-color: rgba(40, 114, 108, 0.925);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
+    position: absolute;
+  }
+  
+  .signup-form {
+    transform: rotateY(270deg) translateZ(25rem) translateX(-25rem);
+  }
+  
+  form a {
+    position: absolute;
+    top: 2rem;
+    background-color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(40, 114, 108);
+    letter-spacing: 0.2rem;
+  }
+  
+  .signup-btn {
+    left: 2rem;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border-radius: 100% 0.5rem 0.5rem 100%;
+  }
+  
+  .signin-btn {
+    right: 2rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    border-radius: 0.5rem 100% 100% 0.5rem;
+  }
+  
+  form h2 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+  }
+  
+  .inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputs-wrapper input {
+    width: 25rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    border-radius: 5rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    outline: none;
+  }
+  
+  .inputs-wrapper input::placeholder {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .inputs-wrapper input[type="submit"] {
+    background-color: #fff;
+    color: rgba(40, 114, 108);
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  

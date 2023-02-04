@@ -1,0 +1,38 @@
+.page-wrap {
+  background: #edb4e7;
+  min-height: 100vh;
+}
+
+#cursor {
+  position: fixed;
+  /* ---------------DECIDES POSITION FO CURSOR------------ */
+  /* LIKE FROM TOP ADN LEFT IT WILL BE 0.5 IN DISTANCE */
+  top: calc(30px * -0.5);
+  left: calc(30px * -0.5);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.cursor-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #edb4e7;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0%;
+}
+
+h1 {
+  font-size: 110px;
+  font-family: sans-serif;
+}
+p{
+    font-size: large;
+}

@@ -1,0 +1,280 @@
+.sidenav .collapsible,
+.sidenav.fixed .collapsible {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+.sidenav .collapsible li,
+.sidenav.fixed .collapsible li {
+	padding: 0
+}
+
+.sidenav .collapsible-header,
+.sidenav.fixed .collapsible-header {
+	background-color: transparent;
+	border: none;
+	line-height: inherit;
+	height: inherit;
+	padding: 0 16px
+}
+
+.sidenav .collapsible-header:hover,
+.sidenav.fixed .collapsible-header:hover {
+	background-color: rgba(0, 0, 0, 0.05)
+}
+
+.sidenav .collapsible-header i,
+.sidenav.fixed .collapsible-header i {
+	line-height: inherit
+}
+
+.sidenav .collapsible-body,
+.sidenav.fixed .collapsible-body {
+	border: 0;
+	background-color: #fff
+}
+
+.sidenav .collapsible-body li a,
+.sidenav.fixed .collapsible-body li a {
+	padding: 0 23.5px 0 31px;
+}
+
+.sidenav {
+	position: fixed;
+	width: 350px;
+	left: 0;
+	top: 0;
+	margin: 0;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	height: 100%;
+	height: calc(100% + 60px);
+	height: -moz-calc(100%);
+	padding-bottom: 60px;
+	background-color: #fff;
+	z-index: 1005;
+	overflow-y: auto;
+	will-change: transform;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-105%);
+	transform: translateX(-105%)
+}
+
+.sidenav.right-aligned {
+	right:0;
+	-webkit-transform: translateX(105%);
+	transform: translateX(105%);
+	left: auto;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%)
+}
+
+.sidenav .collapsible {
+	margin: 0
+}
+
+.sidenav li {
+	float: none;
+	line-height: 48px
+}
+
+.sidenav li.active {
+	background-color: rgba(0, 0, 0, 0.05)
+}
+
+.sidenav li>a {
+	color: rgba(0, 0, 0, 0.87);
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 32px
+}
+
+.sidenav li>a:hover {
+	background-color: rgba(0, 0, 0, 0.05)
+}
+
+.sidenav li>a.btn,
+.sidenav li>a.btn-large,
+.sidenav li>a.btn-small,
+.sidenav li>a.btn-large,
+.sidenav li>a.btn-flat,
+.sidenav li>a.btn-floating {
+	margin: 10px 15px
+}
+
+.sidenav li>a.btn,
+.sidenav li>a.btn-large,
+.sidenav li>a.btn-small,
+.sidenav li>a.btn-large,
+.sidenav li>a.btn-floating {
+	color: #fff
+}
+
+.sidenav li>a.btn-flat {
+	color: #343434
+}
+
+.sidenav li>a.btn:hover,
+.sidenav li>a.btn-large:hover,
+.sidenav li>a.btn-small:hover,
+.sidenav li>a.btn-large:hover {
+	background-color: #2bbbad
+}
+
+.sidenav li>a.btn-floating:hover {
+	background-color: #26a69a
+}
+
+.sidenav li>a>i,
+.sidenav li>a>[class^="mdi-"],
+.sidenav li>a li>a>[class*="mdi-"],
+.sidenav li>a>i.material-icons {
+	float: left;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 32px 0 0;
+	width: 24px;
+	color: rgba(0, 0, 0, 0.54)
+}
+
+.sidenav .divider {
+	margin: 8px 0 0 0
+}
+
+.sidenav .subheader {
+	cursor: initial;
+	pointer-events: none;
+	color: rgba(0, 0, 0, 0.54);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 48px
+}
+
+.sidenav .subheader:hover {
+	background-color: transparent
+}
+
+.sidenav .user-view {
+	position: relative;
+	padding: 32px 32px 0;
+	margin-bottom: 8px
+}
+
+.sidenav .user-view>a {
+	height: auto;
+	padding: 0
+}
+
+.sidenav .user-view>a:hover {
+	background-color: transparent
+}
+
+.sidenav .user-view .background {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1
+}
+
+.sidenav .user-view .circle,
+.sidenav .user-view .name,
+.sidenav .user-view .email {
+	display: block
+}
+
+.sidenav .user-view .circle {
+	height: 64px;
+	width: 64px
+}
+
+.sidenav .user-view .name,
+.sidenav .user-view .email {
+	font-size: 14px;
+	line-height: 24px
+}
+
+.sidenav .user-view .name {
+	margin-top: 16px;
+	font-weight: 500
+}
+
+.sidenav .user-view .email {
+	padding-bottom: 16px;
+	font-weight: 400
+}
+
+.drag-target {
+	height: 100%;
+	width: 10px;
+	position: fixed;
+	top: 0;
+	z-index: 1004
+}
+
+.drag-target.right-aligned {
+	right: 0
+}
+
+.sidenav.sidenav-fixed {
+	left: 0;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	position: fixed
+}
+
+.sidenav.sidenav-fixed.right-aligned {
+	right: 0;
+	left: auto
+}
+
+@media only screen and (max-width: 992px) {
+	.sidenav.sidenav-fixed {
+		-webkit-transform: translateX(-105%);
+		transform: translateX(-105%)
+	}
+	.sidenav.sidenav-fixed.right-aligned {
+		-webkit-transform: translateX(105%);
+		transform: translateX(105%)
+	}
+	.sidenav>a {
+		padding: 0 16px
+	}
+	.sidenav .user-view {
+		padding: 16px 16px 0
+	}
+}
+
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active {
+	background-color: #ee6e73
+}
+
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active a,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active a {
+	color: #fff
+}
+
+.sidenav .collapsible-body {
+	padding: 0
+}
+
+.sidenav-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	height: 120vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1003;
+	display: none
+}
+

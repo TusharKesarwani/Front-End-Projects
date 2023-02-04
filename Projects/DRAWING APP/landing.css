@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background-image: url("https://wallpapercave.com/wp/wp3016800.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* .top {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+
+  top: 0px;
+}
+#head {
+  font-size: 2rem;
+  text-align: center;
+  margin: 12px auto;
+  font-family: "Open Sans", sans-serif;
+} */
+.content {
+  text-align: center;
+  margin-top: 5%;
+}
+#content-id {
+  font-size: 4rem;
+  font-family: "Finger Paint", cursive;
+  margin-bottom: 2%;
+  color: skyblue;
+}
+.one {
+  color: rgb(195, 149, 237);
+}
+.two {
+  color: rgb(144, 222, 226);
+}
+.three {
+  color: rgb(94, 219, 142);
+}
+.four {
+  color: rgb(222, 210, 108);
+}
+.five {
+  color: rgb(232, 114, 216);
+}
+.six {
+  color: rgb(218, 126, 60);
+}
+#btn-id {
+  position: relative;
+  display: block;
+  border: 2px solid skyblue;
+  background-color: skyblue;
+  width: 250px;
+  height: 80px;
+  line-height: 80px;
+  margin: 40px auto;
+  font-family: "Pacifico", cursive;
+  box-sizing: border-box;
+  font-size: 2rem;
+  clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
+  cursor: pointer;
+}
+#btn-id:hover {
+  background-color: aliceblue;
+  color: skyblue;
+  border: 2px solid aliceblue;
+}
+
+@media screen and (min-width: 470px) and (max-width: 650px) {
+  .body {
+    height: 100%;
+  }
+  #content-id {
+    font-size: 3rem;
+  }
+  #btn-id {
+    width: 200px;
+    height: 80px;
+    font-size: 1.5rem;
+    margin: 30px auto;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 470px) {
+  #content-id {
+    font-size: 2.5rem;
+  }
+  #btn-id {
+    width: 200px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  .btn-text {
+    position: relative;
+    top: -35%;
+  }
+  .content {
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  #content-id {
+    font-size: 1.5rem;
+  }
+  #btn-id {
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .btn-text {
+    position: relative;
+    top: -115%;
+  }
+  .content {
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .content {
+    margin-top: -5%;
+  }
+  #content-id {
+    font-size: 3.5rem;
+  }
+  #btn-id {
+    width: 300px;
+    height: 80px;
+    font-size: 2rem;
+  }
+}
