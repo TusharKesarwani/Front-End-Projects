@@ -24,7 +24,7 @@
 
 .quote h1 {
      padding: 2rem;
-     font-size: 4rem;
+     font-size: 3rem;
      color: aliceblue;
 }
 
@@ -55,4 +55,32 @@ button:active {
      text-align: center;
      gap: 20px;
     
+}
+
+@media (max-width:400px) {
+ 
+     .quote h1 {
+         
+          font-size: 0rem;
+         
+     }
+}
+
+@media (max-width:600px) {
+ 
+     .quote h1 {
+         
+          font-size: 1rem;
+         
+     }
+     
+}
+
+@media (max-width:1024px) {
+ 
+     .quote h1 {
+         
+          font-size: 2rem;
+         
+     }
 }
