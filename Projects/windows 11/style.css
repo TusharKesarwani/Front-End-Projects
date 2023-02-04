@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(circle,rgba(4,189,228,.1) -25%, rgba(2,83,185,.5));
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+.weather {
+    position: absolute;
+    left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 15px;
+}
+
+.weather:hover {
+    transition: all 0.1s ease-in;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.weather .info {
+    padding-top: 3px;
+}
+
+.weather .info p {
+    font-size: 12px;
+}
+
+.taskbar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    z-index: 110;
+    align-items: center;
+    height: 50px;
+}
+
+.taskbar img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.taskbar img:hover {
+    transition: all 0.2s ease-in;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.taskbar img:active {
+    background-color: #fff;
+    transform: scale(0.9, 0.9);
+}
+
+.rightTaskbar {
+    position: absolute;
+    right: 30px;
+    margin: 6px 0;
+    height: 85%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.icons img {
+    width: 74px;
+}
+
+.icons {
+    width: 8%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* START MENU BAR NOW */
+.startmenu {
+    bottom: -655px;
+    transition: all 0.5s ease-in;
+
+    height: 500px;
+    width: 530.63px;
+    margin-left: calc(50% - 265.315px);
+    position: absolute;
+    bottom: 50px;
+    z-index: 90;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(240, 243, 250, .8);
+    margin-bottom: 4px;
+    border-radius: 7px;
+    transform: translateY(660px);
+
+}
+
+.start-top-elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 15px 40px 0;
+}
+
+.start-top-elements span {
+    font-size: smaller;
+    font-weight: 700;
+}
+
+.start figure:focus,
+.start-icons figure:active {
+    transform: scale(1.1);
+}
+
+.start-icons figure:hover {
+    background-color: rgba(255, 255, 255);
+    border-radius: 5px;
+}
+
+.openAll {
+    background-color: #fff;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+.smallRight {
+    width: 15px;
+}
+
+.pinned .start-icons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    padding: 20px 30px 0px 30px;
+    align-items: end;
+    grid-gap: 5px;
+}
+
+figure {
+    text-align: center;
+    font: status-bar;
+    width: 72.9px;
+    cursor: pointer;
+    margin: 0px 0px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center img,
+.start-icons img {
+    display: inline-block;
+    width: 25px;
+    cursor: pointer; 
+    margin: 4px;
+    padding: 3px;
+}
+
+
+.profile {
+    position: absolute;
+    padding: 9px 41px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(227, 239, 255, .8);
+    backdrop-filter: blur(20px);
+    border-top: 1.5px solid rgb(227, 239, 255, .8);
+}
+
+.user {
+    display: flex;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.user span {
+    padding: 8.5px;
+    font-size: small;
+}
+
+.profile #shutdown {
+    width: 25px;
+}
+
+/* END OF START MENU */
+/* SEARCH MENU */
+.SearchIcon {
+    background: url(img/icons/search.svg) no-repeat;
+    content: "";
+    position: absolute;
+    left: 48px;
+    top: 35px;
+    opacity: 0.7;
+    bottom: 0;
+    width: 19px;
+}
+
+.search {
+    text-align: center;
+    padding: 27px 0px 0;
+}
+
+.SearchInput {
+    padding: 10px 0 10px 40px;
+    border: 0;
+    border-radius: 3px;
+    border-bottom: 2.5px solid #2184e2;
+    width: 450px;
+    outline: 0;
+}
+
+
+.searchmenu {
+    bottom: -655px;
+    transition: all 0.5s ease-in;
+
+    height: 500px;
+    width: 530.63px;
+    margin-left: calc(50% - 265.315px);
+    position: absolute;
+    bottom: 50px;
+    z-index: 90;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(240, 243, 250, .8);
+    margin-bottom: 4px;
+    border-radius: 7px;
+    transform: translateY(660px);
+}
+
+.search-top-elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin: 15px 40px 0;
+}
+
+.search-top-elements span {
+    font-size: smaller;
+    padding: 0px 14px;
+}
+
+.moreSearch {
+    width: 11px;
+}
+
+.topApps span {
+    display: flex;
+    margin: 17px 33px 0;
+    font-weight: 700;
+}
+
+.pinned .Search-Apps-Icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    justify-items: center;
+    padding: 10px 10px 0px 10px;
+    align-items: end;
+    grid-gap: 5px;
+}
+
+.Search-Apps-Icons img {
+    display: inline-block;
+    width: 35px;
+    margin: 4px;
+    padding: 3px;
+}
+
+
+.start figure:focus,
+.Search-Apps-Icons figure:active {
+    transform: scale(1.1);
+}
+
+.Search-Apps-Icons figure {
+    display: none;
+}
+
+#DefaultDisplaySearch,
+#SearchedTemp {
+    display: block;
+    background-color: white;
+    width: 91px;
+    height: 83px;
+    border-radius: 6px
+}
+
+#DefaultDisplaySearch:hover,
+#SearchedTemp:hover {
+    background-color: #ececec;
+
+}
+
+.Recent-Apps-Icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.recentSearches span {
+
+    display: flex;
+    margin: 2px 33px 0;
+    font-weight: 700;
+}
+
+.Recent-Apps-Icons img {
+    display: inline-block;
+    width: 20px;
+    margin: 4px;
+    padding: 3px;
+}
+
+
+#Recent-Searches {
+    /* background-color: white; */
+    width: 106px;
+    height: 83px;
+    border-radius: 6px;
+    flex-direction: row;
+    height: 30px;
+    justify-content: flex-start;
+    margin: 6px 23px;
+}
+
+#Recent-Searches:hover {
+    background-color: #ececec;
+}
+
+/* END */
+
+.action-center-button:hover {
+    transition: all 0.1s ease-in;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.action-center-button:active {
+    background-color: #b8b8b8;
+    border-radius: 8px;
+}
+
+/* Setting Timings */
+
+#timedate {
+    padding: 5px;
+    text-align: right;
+}
+
+/* End */
+/* Video */
+#myVideo {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: -50%;
+    transform: translateX(-60%);
+    bottom: -100px;
+    min-width: 90%;
+    min-height: 100%;
+}
+
+/* Widgets */
+.widgetMenu {
+    left: -50%;
+    transition: all 0.5s ease-in;
+    height: calc(100% - 90px);
+    width: 45%;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 90;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(240, 243, 250, .8);
+    margin-bottom: 4px;
+    border-radius: 7px;
+    backdrop-filter: blur(4px);
+}
+
+.timedate_Of_Widgets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.AllWidget {
+    height: max-content;
+    /* width: calc(95% - 20px); */
+    background-color: red;
+    /* margin-left: 8px; */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.WidgetsPlace {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 34px;
+    grid-gap: 0 15px;
+}
+
+.topMenuWidget {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.topMenuWidget img,
+.topMenuWidget div img {
+    width: 13px;
+    margin-left: 8px;
+}
+
+.AllWidget .topMenuWidget .moreInfo {
+    margin: 7px;
+    margin-top: 1px;
+}
+
+.Wheather {
+    background: linear-gradient(135deg, #f1e6e6, #d6d62a);
+}
+
+.topMenuWidget {
+    color: black;
+    margin-top: 0.4rem;
+}
+
+.Wheather .MainContentWindow img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.7rem;
+}
+
+.Wheather .MainContentWindow {
+    display: flex;
+    justify-content: center;
+    /* width: 80%;
+    margin-left: 10%; */
+}
+
+
+.Wheather .leftPart .Part1,
+.Wheather .leftPart .Part2 {
+    display: flex;
+    margin-top: 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Wheather .leftPart .Part1 img {
+    width: 0.8rem;
+    margin: 0;
+    height: 0.8rem;
+}
+
+.Wheather .leftPart .Part1 p,
+.Wheather .leftPart .Part2 span,
+.Wheather .leftPart .Part2 p {
+    font-weight: 500;
+    margin-left: 0.2rem;
+
+}
+
+.Wheather .leftPart .Part2 span {
+    font-size: 25px;
+}
+
+.Wheather .leftPart .Part2 p {
+    margin-left: 1rem;
+}
+
+.Wheather .leftPart .Part3 {
+    margin: 1rem;
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+}
+
+.MicrosoftEdge {
+    background: url("./img/icons/WallpaperForEdgeWidget.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.MicrosoftEdge .MainApp {
+    /* margin-left: -8rem; */
+    color: black;
+}
+
+.MicrosoftEdge .SearchInput {
+    width: auto;
+}
+
+.MicrosoftEdge .SearchIcon {
+    /* left: calc(98% - 249px);
+    top: calc(44% - 249px); */
+
+    position: relative;
+    height: 16px;
+    top: 0;
+    width: 15px;
+    left: 31px;
+}
+
+.MicrosoftEdge .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MicrosoftEdge .MainContentWindow p {
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 1.5rem;
+}
+
+.MicrosoftEdge .MainContentWindow p img {
+    width: 1rem;
+    filter: invert(1);
+}
+
+.MicrosoftOneDrive {
+    background-color: #eae9e9;
+    margin-top: calc(5% - 25px);
+}
+
+.MicrosoftOneDrive .MainApp {
+    /* margin-left: -11rem; */
+    color: black;
+}
+
+.MicrosoftOneDrive .heading {
+    font-size: 20px;
+    margin: 7px;
+    margin-top: 13px;
+}
+
+.MicrosoftOneDrive .subHeading {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+.MicrosoftOneDrive .subHeading p {
+    color: blue;
+    font-weight: 600;
+}
+
+.MicrosoftOneDrive .Images img {
+    width: 49%;
+}
+
+.MicrosoftOneDrive .Images {
+    display: flex;
+}
+
+.MicrosoftOneDrive .Images div span img {
+    width: 99%;
+}
+
+.MicrosoftOneDrive .Images div {
+    display: contents;
+}
+
+.MicrosoftOneDrive .Images div span {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Date Time and Notifications Menu from here */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#DateTime {
+    cursor: context-menu;
+    font-size: 12px;
+}
+
+#DateTime:hover {
+    transition: all 0.1s ease-in;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.container-date-time {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    margin: 10px;
+    z-index: 1;
+    position: fixed;
+    z-index: 1;
+    bottom: 50px;
+    right: -500px;
+    overflow-x: hidden;
+    transition: all 0.5s ease-in;
+    cursor: context-menu;
+}
+
+.notification {
+    width: 258px;
+    border-radius: 8px;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.notification h1 {
+    font-size: 13px;
+    padding: 15px 10px;
+    background-color: rgb(227, 239, 255, .8);
+    backdrop-filter: blur(20px);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.week-month-date {
+    width: 258px;
+    border-radius: 8px 8px 0px 0px;
+    font-size: 12px;
+    background-color: rgb(227, 239, 255, .8);
+    backdrop-filter: blur(20px);
+    padding: 15px 10px;
+    font-weight: 600;
+}
+
+.calendar {
+    width: 258px;
+    border-radius: 0px 0px 8px 8px;
+    padding: 5px;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+}
+
+.month {
+    width: 100%;
+    padding: 7px 3px;
+    margin: 2px;
+}
+
+.month .prev-next {
+    display: inline-block;
+    width: 25%;
+    font-size: 14px;
+    text-align: right;
+}
+
+.month .prev-next i {
+    padding: 0px 5px;
+    background-color: rgb(227, 239, 255, .8);
+}
+
+.month h1 {
+    display: inline-block;
+    width: 70%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.weekdays,
+.days {
+    width: 100%;
+    display: flex;
+}
+
+.weekdays {
+    align-items: center;
+}
+
+.days {
+    flex-wrap: wrap;
+}
+
+.weekdays div,
+.days div {
+    font-size: 12px;
+    width: calc(220px / 7);
+    display: flex;
+    justify-content: center;
+    padding: 9px 3px;
+    margin: 2px;
+}
+
+.weekdays div {
+    font-weight: bold;
+}
+
+.days div:hover:not(.today) {
+    background-color: rgba(192, 192, 192, .6);
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: rgb(0, 122, 255);
+    border-radius: 50%;
+    color: #fff;
+}
