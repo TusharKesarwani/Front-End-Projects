@@ -5,24 +5,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <title>Website-Bookmarker</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
-
 </head>
 
 <body onload="fetchbookmarks()">
 
     <div class="container">
         <div class="header clearfix">
-            <nav>
-
-            </nav>
+            <nav></nav>
+            
             <h1>
                 <img src="logo.svg" height="30px">
                 <b>Bookmarker</b>
@@ -31,22 +26,22 @@
         </div>
 
         <div class="jumbotron">
-<!--             <hr>
-            <h3>"Bookmark Your Favourite Websites"</h3>
-            <hr> -->
+            <!-- <hr> -->
+            <!-- <h3>"Bookmark Your Favourite Websites"</h3> -->
+            <!-- <hr> -->
             <form id="myform">
                 <div class="form-group">
                     <h5>Site Name:</h5>
                     <input type="text" class="form-control" id="sitename" placeholder="site name">
                 </div>
-                <br>
+                <br />
                 <div class="form-group">
                     <h5>Site URL:</h5>
                     <input type="text" class="form-control" id="siteurl" placeholder="www.example.com">
                 </div>
                 <br>
                 <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-                
+
             </form>
             <br>
         </div>
@@ -57,8 +52,6 @@
             </div>
 
         </div>
-
-        
 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
