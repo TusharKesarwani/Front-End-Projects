@@ -5,10 +5,11 @@
     position: sticky; 
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 100%;
     background-color: white;
     box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
     z-index:1 ;
+    max-width:100%;
 }
 .nav.item{
     padding-right: 15%;
@@ -32,7 +33,7 @@
 
 /* carousel */
 .carousel{
-    width: 100%;
+    max-width: 100%;
 }
 .carousel img{
     width:100;
@@ -84,6 +85,7 @@ h2{
 .footer{
     background: ghostwhite;
     color: black;
+    max-width:100%;
 }
 
 .footer .box-container{
@@ -96,6 +98,7 @@ h2{
     font-size: 2rem;
     color:var(--black);
     padding:1rem 0;
+    margin:20px;
 }
 
 .footer .box-container .box .links{
@@ -118,7 +121,8 @@ h2{
     line-height: 1.8;
     font-size: 1.0rem;
     color:var(--light-color);
-    padding:1rem 0;
+    padding:2rem 0;
+    margin:20px;
 }
 
 .footer .box-container .box .share a{
@@ -131,7 +135,30 @@ h2{
     margin-right: .2rem;
     background: #eee;
     text-align: center;
+    margin:20px;
 }
+
+@media (max-width:450px){
+    .footer{
+        text-align: center;
+    }
+
+}
+@media (max-width:702px){
+    .footer{
+        text-align: center;
+    }
+}
+@media (max-width:360px){
+    .footer{
+        text-align: center;
+
+    }
+}
+
+
+
+    
 
 
 
