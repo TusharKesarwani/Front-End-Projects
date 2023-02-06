@@ -16,7 +16,6 @@ Ankush Roy - https://github.com/ankushroy25
 
 <h2>Acknowledgement </h2>
 <ul>
-    <li>Coursera - HTML, CSS, and Javascript for Web Developers by Yaakov Chaikin</li>
     <li>Youtube - Traversy Media</li>
     <li>Documentations - https://www.w3schools.com/</li>
 </ul>
