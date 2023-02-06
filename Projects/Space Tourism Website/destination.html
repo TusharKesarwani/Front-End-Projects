@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <title>Space Tourism</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><span class="bold">00</span> HOME</a><br>
+        <a href="destination.html"><span class="bold">01</span> DESTINATION</a><br>
+    </nav>
+    <main>
+        <div class="left">
+            <p><span class="bold">01</span> PICK YOUR DESTINATION</p>
+            <img src="img/moon.webp" alt="moon" width="500px" id="change">
+        </div>
+        <div class="right">
+
+
+            <section class="small-menu">
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks active" onclick="openContent(event, 'Moon')">Moon</button>
+                    <button class="tablinks" onclick="openContent(event, 'Mars')">Mars</button>
+                    <button class="tablinks" onclick="openContent(event, 'Europa')">Europa</button>
+                    <button class="tablinks" onclick="openContent(event, 'Titan')">Titan</button>
+                </div>
+
+                <!-- Tab content -->
+                <div id="Moon" class="tabcontent active">
+                    <h1 class="heading ">MOON</h1>
+                    <p class="desc ">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    <hr>
+                    <div class="infos ">
+                        <div class="info ">
+                            <p>Distance from Earth</p>
+                            <h2>384,400 km</h2>
+                        </div>
+                        <div class="info ">
+                            <p>Est. Travel Time</p>
+                            <h2>3 Days</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Mars" class="tabcontent">
+                    <h1 class="heading ">MARS</h1>
+                    <p class="desc ">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+                    <hr>
+                    <div class="infos ">
+                        <div class="info ">
+                            <p>Distance from Earth</p>
+                            <h2>225 mil. km</h2>
+                        </div>
+                        <div class="info ">
+                            <p>Est. Travel Time</p>
+                            <h2>9 Months</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Europa" class="tabcontent">
+                    <h1 class="heading ">EUROPA</h1>
+                    <p class="desc ">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                    <hr>
+                    <div class="infos ">
+                        <div class="info ">
+                            <p>Distance from Earth</p>
+                            <h2>628 mil. km</h2>
+                        </div>
+                        <div class="info ">
+                            <p>Est. Travel Time</p>
+                            <h2>3 Years</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Titan" class="tabcontent">
+                    <h1 class="heading ">TITAN</h1>
+                    <p class="desc ">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+                    <hr>
+                    <div class="infos ">
+                        <div class="info ">
+                            <p>Distance from Earth</p>
+                            <h2>1.6 bil. km</h2>
+                        </div>
+                        <div class="info ">
+                            <p>Est. Travel Time</p>
+                            <h2>7 Years</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
