@@ -11,7 +11,7 @@ Blog , and it is responsive as well.
 HTML , CSS and Javascript.
 
 # SNAPSHOT OF THE WEBSITE 
-
+https://user-images.githubusercontent.com/84632701/217181360-9181b657-577d-4ead-a3f5-13fa360daddf.mp4
 
 # CONTRIBUTED BY
 Alisha Bharti
