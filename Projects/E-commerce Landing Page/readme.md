@@ -1,7 +1,19 @@
-# E-COMMERCE LANDING PAGE
+# NAME AND INTRODUCTION OF THE PROJECT
+## E-COMMERCE LANDING PAGE
+In this Project I have created the landing page of an e-commerce website. In this website there are 5 sections -
+Home
+Collection
+Shop
+Offer
+Blog , and it is responsive as well.
 
-In this Project I have created the landing page of a e-commerce website. In this website any user can buy cloths, shoes as well household things. Tech stacks used are HTML CSS and Bootstrap.
+# TECH STACK
+HTML , CSS and Javascript.
 
-- Scrrenshot:-
+# SNAPSHOT OF THE WEBSITE 
 
-![Screenshot (542)](https://user-images.githubusercontent.com/100675296/212536271-c0281517-7009-4dab-926b-a2e6bc399011.png)
+
+# CONTRIBUTED BY
+Alisha Bharti
+
+Hope , it would be useful.
