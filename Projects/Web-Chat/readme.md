@@ -6,7 +6,7 @@ I have designed web app like whatsapp which has its own interface in which we ca
 HTML , CSS and Javascript 
 
 # SNAPSHOT OF THE WEBSITE 
-
+![web chat pic](https://user-images.githubusercontent.com/84632701/217636398-7f4434a9-cd70-49c2-bd05-938ba253a41d.png)
 
 # CONTRIBUTED BY
 Alisha Bharti
