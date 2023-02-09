@@ -1,0 +1,86 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+.quote-container {
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(to right, rgb(70, 198, 70), rgb(107, 107, 209));
+}
+
+.quote {
+     width: auto;
+     max-width: 70%;
+     background: linear-gradient(to left, rgb(70, 198, 70), rgb(107, 107, 209));
+     padding: 1rem 3rem;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+.quote h1 {
+     padding: 2rem;
+     font-size: 3rem;
+     color: aliceblue;
+}
+
+.quote h4 {
+     padding-bottom: 2rem;
+     font-size: 2rem;
+     text-align: right;
+     color: aliceblue;
+}
+
+button {
+     width: 8rem;
+     padding: 13px;
+     border-radius: 10px;
+     outline: none;
+     border: none;
+     font-weight: 600;
+     background-color: rgb(66, 66, 229);
+     color: white;
+}
+
+button:active {
+     transform: scale(0.98);
+}
+.btns{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     gap: 20px;
+    
+}
+
+@media (max-width:400px) {
+ 
+     .quote h1 {
+         
+          font-size: 0rem;
+         
+     }
+}
+
+@media (max-width:600px) {
+ 
+     .quote h1 {
+         
+          font-size: 1rem;
+         
+     }
+     
+}
+
+@media (max-width:1024px) {
+ 
+     .quote h1 {
+         
+          font-size: 2rem;
+         
+     }
+}
