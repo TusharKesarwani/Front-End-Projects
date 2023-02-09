@@ -1,0 +1,59 @@
+body {
+  background-image: url(/images/Done.jpg);
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#color {
+  color: #f5a425;
+  font-family: "Acme", sans-serif;
+  transition-duration: 2s;
+  transition-property: all;
+}
+a {
+  color: #fffbf5;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: square;
+  color: #f5a425;
+  font-size: 25px;
+}
+
+
+#image img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 20px;
+  top: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 890px) {
+  #image img{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: 0px;
+    top: 35%;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 610px) {
+  #image img{
+display: none;
+  }
+}
+a:hover {
+  color: #f5a425;
+}
+#color:hover {
+  color: #fffefd;
+  margin-left: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
