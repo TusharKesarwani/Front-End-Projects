@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f3f6;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c73eb;
+  color: #fff;
+  height: 8vh;
+  margin: auto;
+  font-family: Roboto, Arial, sans-serif;
+  position: fixed;
+  z-index: 2;
+}
+
+.com {
+  display: flex;
+  flex-direction: row;
+}
+
+header .com .logo {
+  padding: 15px 15px 0 0;
+}
+
+header .com .logo img {
+  height: 20px;
+  width: 70px;
+  cursor: pointer;
+}
+
+header .com .logo p {
+  font-size: 12px;
+}
+
+#logo2 {
+  height: 10px;
+  width: 10px;
+}
+
+header .com .search {
+  display: flex;
+  align-items: center;
+}
+
+header .com .search input {
+  padding: 18px;
+  display: flex;
+  height: 15px;
+  width: 550px;
+  font-family: Roboto, Arial, sans-serif;
+  border: none;
+  outline: none;
+}
+
+header .com .search img {
+  margin-left: -30px;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+header .cust-nav {
+  padding-top: 15px;
+}
+
+header .cust-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .cust-nav ul li {
+  list-style: none;
+  padding: 0px 25px;
+  cursor: pointer;
+}
+
+header .cust-nav ul li:hover {
+  font-weight: 600;
+}
+
+header .cust-nav ul img {
+  display: flex;
+  position: relative;
+  top: 0px;
+  right: -20px;
+  cursor: pointer;
+}
+
+.slider img {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0 10px 0;
+  margin: auto;
+  width: 98vw;
+  cursor: pointer;
+}
+
+.type {
+  background-color: white;
+  padding: 20px;
+  margin: 0px 10px;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #eaeaea;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 10px 15px 10px;
+  padding: 20px 0px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+}
+
+.row .picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.row .picture:hover img {
+  transform: scale(1.05);
+}
+
+.row .lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.row .lines .name {
+  font-weight: bolder;
+}
+
+footer .row {
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  background-color: #152336;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: small;
+}
+
+footer .box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+footer .line {
+  border-left: 1px solid grey;
+}
+
+footer .box .heading {
+  color: #878787;
+}
+
+footer .box p {
+  font-size: small;
+  cursor: pointer;
+}
+
+div.copyright {
+  display: flex;
+  margin: 1px 0px;
+  display: flex;
+  background-color: #152336;
+  color: white;
+}
+
+div.copyright p {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.copyright p img {
+  margin-right: 5px;
+}
+
+@media (max-width: 1150px) {
+  header .com .search input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 980px) {
+  header .com .search input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 880px) {
+  header .com .search input {
+    width: 250px;
+  }
+  header .cust-nav ul li {
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 880px) {
+  header .com .search input {
+    width: 250px;
+  }
+  header .cust-nav ul li {
+    padding: 0px 15px;
+  }
+  header .cust-nav ul img {
+    right: -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .line {
+    border-left: none;
+  }
+}
+
+@media (max-width: 750px) {
+  header .com .search input {
+    width: 200px;
+  }
+  header .cust-nav ul li {
+    padding: 0px 10px;
+  }
+  header .cust-nav ul img {
+    right: -5px;
+  }
+}
+
+@media (max-width: 660px) {
+  header .com .search input {
+    width: 400px;
+  }
+  header .cust-nav ul li {
+    display: none;
+  }
+  header .cust-nav ul img {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  header .com .search input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  header .com .search input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 300px) {
+  header .com .search input {
+    width: 150px;
+  }
+}
