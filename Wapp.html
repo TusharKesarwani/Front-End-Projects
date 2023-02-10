@@ -1,0 +1,23 @@
+<!DOCTYPE Html>
+<Html Lang="En">
+
+<Head>
+    <Meta Charset="UTF-8">
+    <Meta Http-Equiv="X-UA-Compatible" Content="IE=Edge">
+    <Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0">
+    <Title>Weather</Title>
+    <Link Rel="Stylesheet" Href="Style.Css">
+</Head>
+
+<Body>
+    <Form Id="Form">
+        <Input Type="Text" Id="Search" Placeholder="Search By Loaction" Autocomplete="Off">
+    </Form>
+    <Main Id="Main">
+
+    </Main>
+
+    <Script Src="App.Js"></Script>
+</Body>
+
+</Html>
