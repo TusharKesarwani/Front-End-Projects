@@ -1,0 +1,36 @@
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Poppins:wght@200;400;600&Display=Swap");
+* {
+    Box-Sizing: Border-Box;
+}
+Body {
+    Margin: 0;
+    Font-Family: "Poppins", Sans-Serif;
+    Background-Color: Linear-Gradiet(300deg, #757b87, #909d9d);
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Min-Height: 100vh;
+    Flex-Direction: Column;
+}
+Input {
+    Padding: 1rem;
+    Border-Radius: 25px;
+    Border: None;
+    Background-Color: #Fff;
+    Font-Family: Inherit;
+    Box-Shadow: 0 4px 10px Rgba(0, 0, 0, 0.2);
+    Min-Width: 300px;
+    Font-Size: 1rem;
+}
+Input:focus {
+    Outline: None;
+}
+.Weather {
+    Text-Align: Center;
+    Font-Size: 2rem;
+}
+.Weather H2 {
+    Margin-Bottom: 0;
+    Display: Flex;
+    Align-Items: Center;
+} /* .Weather Img{ Transform: Scale(2); } */
