@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bakery</title>
+    <script src="js/app.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">Bakery</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About Us</a>
+                    </li>
+                    <li class=" nav-item">
+                        <a href="about.html#reservation" class="nav-link">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bakers.html" class="nav-link">Bakers</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero small-size-hero" id="hero">
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            Read
+                        </h2>
+                        <h3 class="headline headline-dark">Our Story</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis harum, deserunt repellendus culpa
+                        animi minus similique
+                        blanditiis repudiandae nisi, explicabo</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic veritatis perferendis molestias
+                        eius velit repellendus</p>
+                </div>
+                <div class="image animate-right">
+                    <img class="animate-top" src="images/about-img-2.jpeg" alt="bread">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="image padding-right margin-bottom animate-left">
+                    <img src="images/about-img-1.jpeg" alt="bread">
+                </div>
+                <div class="description animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            Bread
+                        </h2>
+                        <h3 class="headline headline-dark">So Good</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum dolor earum
+                        accusamus suscipit. Officia atque vitae excepturi deserunt nihil?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation__container">
+                <h4>Book Your Table</h4>
+                <form action="#" class="reservation__form">
+                    <select name="persons">
+                        <option>1 Person</option>
+                        <option>2 Person</option>
+                        <option>3 Person</option>
+                        <option>4 Person</option>
+                        <option>5 Person</option>
+                        <option>6 Person</option>
+                        <option>7 Person</option>
+                    </select>
+                    <input type="date" class="reservation__date">
+                    <input type="time" class="reservation__time">
+                    <button class="btn btn-primary submit__reservation">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content-about animate-top">
+                    <h4>About Bakery</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde accusantium sit repudiandae
+                        incidunt quod eius recusandae blanditiis voluptates consectetur?</p>
+                </div>
+                <div class="footer__content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <div class="newsletter-form-box">
+                                <input type="text" class="newsletter-input" placeholder="Your email address...">
+                                <button class="newsletter-btn" type="submit">
+                                    <i class="fas fa-envelope"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
