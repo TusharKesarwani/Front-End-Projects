@@ -9,7 +9,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #17A2BB;
+    background: #a6eb75;
     min-height: 100vh;
 }
 
@@ -62,7 +62,7 @@ body{
     color: #fff;
     margin-top: 20px;
     padding: 16px 0;
-    background: #17A2BB;
+    background: #a6eb75;
     cursor: pointer;
     opacity: 0.5;
     pointer-events: none;
