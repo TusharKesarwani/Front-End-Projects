@@ -1,0 +1,573 @@
+/*
+z-index:
+- 100 -> board fruit
+- 150 -> board bottom border
+- 190 -> gun arrow
+- 200 -> gun fruit
+- 249 -> modal backdrop
+- 250 -> modal
+- 299 -> spinner backdrop
+- 300 -> spinner
+*/
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+
+    /* scrollbar styling for firefox */
+    scrollbar-color: #df779499 transparent;
+    scrollbar-width: thin;
+}
+
+#board {
+    display: block;
+    width: 320px;
+    height: 500px;
+    /* WARNING: backdrop-filter is not support in firefox */
+    background: url(gfx/board.jpg);
+    border: 20px solid black;
+    position: relative;
+    overflow: hidden;
+    border-bottom: none;
+    padding-bottom: 20px;
+}
+
+#board:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: black;
+    position: absolute;
+    bottom: 0;left:0;
+    z-index:150;
+}
+
+.fruit {
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: white;
+    background-image: url('gfx/fruits.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 30px;
+    border-radius:100%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+.fruit-kiwi {
+    background-position-x: 0%;
+    border-color: #116c62;
+}
+.fruit-strawberry {
+    background-position-x: 12.5%;
+    border-color: #cb1602;
+}
+
+.fruit-cocoa {
+    background-position-x: 25%;
+    border-color: #4a2a03;
+}
+
+.fruit-watermelon {
+    background-position-x: 37.5%;
+    border-color: #e55e79;
+}
+
+.fruit-apple {
+    background-position-x: 50%;
+    border-color: #7db579;
+}
+
+.fruit-orange {
+    background-position: 62.5%;
+    border-color: #f7a62c;
+}
+
+.fruit-bannana {
+    background-position: 75%;
+    border-color: #d8ce80;
+}
+
+.fruit-lemon {
+    background-position: 87.55%;
+    border-color: #f7ca2c;
+}
+
+.fruit-cherry {
+    background-position-x: 100%;
+    border-color: #7a334f;
+}
+
+.fruit-frozen {
+    background-image: url('gfx/snowflake.png');
+    border-color: black;
+    background-color: black;
+}
+
+.rotating {
+    animation-name: rotating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotating {
+    from {transform: translate(-50%, -50%) rotate(0deg);}
+    to {transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+.falling {
+    animation-name: falling;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes falling {
+    from {transform: translate(-50%, -50%);}
+    to {transform: translate(-50%, 600px);}
+}
+
+.resting {
+    z-index: 200;
+}
+
+.gun {
+    z-index: 190;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(90deg);
+    transform-origin: 50% 100%;
+    
+    width: 20px;
+    height: 120px; /* 60 */
+    background: url('gfx/arrow.png') center center no-repeat;;
+    background-size: 100% 100%;
+}
+
+.gun.killed {
+    background: url('gfx/skull.png') center center no-repeat;
+    transform-origin: 0 0;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    transform: translate(-50%, -50%);
+
+}
+
+
+main {
+    width: 360px;
+    display: inline-block;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-size: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 10px solid white;
+    background: white;
+    border-radius: 5px;
+
+    height: 620px;
+    overflow: hidden;
+}
+
+nav {
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+nav > div {
+    flex: 1 0;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;;
+    font-size: 18pt;
+    line-height: 150%;
+}
+
+#hud_level {
+    display: block;
+    background: white;
+    color: #999;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table a {
+    text-decoration: none;
+    color: black;
+}
+
+.table td {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 8px;
+}
+
+.table:empty::after {
+    content: "There are not levels!";
+}
+
+.table tr {
+    position: relative;
+    transform: translate(0,0);
+}
+
+.table tr:hover {
+    background: #df779499;
+}
+
+.table tr.completed {
+    background: #117e5022;
+}
+
+.table tr td:nth-child(1) {
+    width:100%
+}
+.table tr td:nth-child(1) span {
+    letter-spacing: -4px;
+    background: red;
+}
+
+.table tr td:nth-child(2) {
+    text-align: right;
+}
+
+.table tr td:nth-child(2):empty::before {
+    content: '-----';
+    white-space: nowrap;
+    opacity: 0.2;
+}
+
+h2 {
+    margin-bottom: 0.25em;
+}
+
+.clickable::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; height: 60px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+a {
+    color: rgba(100, 100, 255, 0.8);
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.players-1::after, a.players-2::after, a.players-3::after, a.players-4::after {
+    letter-spacing: -0.3em;
+    font-size: 1.25em;
+    margin-left: 0.25em;
+    white-space: nowrap;
+}
+
+a.players-1::after {content: "☺";}
+a.players-2::after {content: "☺☺";}
+a.players-3::after {content: "☺☺☺";}
+a.players-4::after {content: "☺☺☺☺";}
+
+a.stretched::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    /* background: green; */
+}
+
+#view-levels {
+    background: white;
+    max-height: 620px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #df779499;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #df7794dd;
+}
+
+
+#view-modal {
+    position: absolute;
+    top: 50%;
+    width: 320px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000b;
+    color: white;
+    text-align: center;
+    z-index: 250;
+    padding: 20px 10px;
+    display: none;
+    cursor: pointer;
+}
+
+body.modal #view-modal {
+    display: block;
+}
+
+body.modal::before {
+    content: "";
+    background: #ddd6;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top:0; left: 0;
+    z-index: 249;
+    position: absolute;
+}
+
+.wrapper {
+    width: 100%; height: 100%;
+}
+
+body.modal .wrapper {
+    filter: blur(5px);
+}
+
+.bg-wrapper {
+    width: 100%; height: 100%;
+    background:url(gfx/bg.jpg);
+    background-size: cover;
+    object-fit: contain;
+}
+
+.spinner::before {
+    content: "";
+    display: block;
+    background: white;
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    z-index: 299;
+}
+
+.spinner::after {
+    content: "";
+    display: block;
+    
+    position: absolute;
+    top: calc(50% - 64px); left: calc(50% - 64px);
+
+    width: 128px; height: 128px;
+    background: url(gfx/fruits.png);
+
+    animation-name: spinner;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    z-index: 300;
+}
+
+@keyframes spinner {
+    0.01% {transform: rotate(0deg); opacity: 0; background-position-x: 0.00%}
+    6.25% {transform: rotate(360deg); opacity: 1;}
+    12.50% {transform: rotate(0deg); opacity: 0; background-position-x: 0.00%;}
+    
+    12.51% {transform: rotate(0deg); opacity: 0; background-position-x: 12.50%}
+    18.75% {transform: rotate(360deg); opacity: 1;}
+    25.00% {transform: rotate(0deg); opacity: 0; background-position-x: 12.50%;}
+    
+    25.01% {transform: rotate(0deg); opacity: 0; background-position-x: 25.00%}
+    31.25% {transform: rotate(360deg); opacity: 1;}
+    37.50% {transform: rotate(0deg); opacity: 0; background-position-x: 25.00%;}
+    
+    37.51% {transform: rotate(0deg); opacity: 0; background-position-x: 37.50%}
+    43.75% {transform: rotate(360deg); opacity: 1;}
+    50.00% {transform: rotate(0deg); opacity: 0; background-position-x: 37.50%;}
+    
+    50.01% {transform: rotate(0deg); opacity: 0; background-position-x: 50.00%}
+    56.25% {transform: rotate(360deg); opacity: 1;}
+    62.50% {transform: rotate(0deg); opacity: 0; background-position-x: 50.00%;}
+    
+    62.51% {transform: rotate(0deg); opacity: 0; background-position-x: 62.50%}
+    68.75% {transform: rotate(360deg); opacity: 1;}
+    75.00% {transform: rotate(0deg); opacity: 0; background-position-x: 62.50%;}
+    
+    75.01% {transform: rotate(0deg); opacity: 0; background-position-x: 87.50%}
+    81.25% {transform: rotate(360deg); opacity: 1;}
+    87.50% {transform: rotate(0deg); opacity: 0; background-position-x: 87.50%;}
+    
+    87.51% {transform: rotate(0deg); opacity: 0; background-position-x: 100.00%}
+    93.75% {transform: rotate(360deg); opacity: 1;}
+    100.00% {transform: rotate(0deg); opacity: 0; background-position-x: 100.00%;}
+}
+
+
+#logo {
+    background: #fff9;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#logo h1 {
+    background: url(gfx/fruits.png);
+    text-align: center;;
+    background-size: auto 32px;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    padding-bottom: 32px;
+    font-size:40px;
+    margin: 0;
+}
+
+.hr-fruit {
+    height: 32px;
+    
+}
+
+/* From bootstrap */
+.btn {
+    /* display: inline-block; */
+    padding: .5rem 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    background-color: #3072b3;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(#599bdc, #3072b3);
+    border: 1px solid #2967a4;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    transition: none;
+
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16pt;
+    margin: 20px auto;
+    padding: 0.75rem 0.5rem;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-position: 0 -15px;
+}
+
+.btn.disabled {
+    /* opacity: 0.8; */
+    background-color: #737373; 
+    background-image: linear-gradient(#9c9c9c, #737373);
+    border-color: #666666;
+    pointer-events: none;
+}
+
+#view-menu {
+    /* background: #fff8; */
+    margin-top: 100px;
+    padding: 20px 0;
+}
+
+#view-menu canvas {
+    position: absolute;
+    left:0; top: 0;
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 4px;
+}
+
+body.spinner #warning {
+    z-index: 1000;
+    position: absolute;
+    width: 360px;
+    text-align: center;
+
+    top: calc(50% + 64px); left: calc(50% - 180px);
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+    display: block !important;
+
+    animation-name: delayedShow;
+    animation-delay: 10s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes delayedShow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#warning a {
+    color: blueviolet;
+}
+
+.btn-link {
+    color: #666;
+    text-decoration: none;
+    opacity: 0.75;
+}
+.btn-link:hover {
+    opacity: 1;
+}
+
+.pop-left {
+    position: absolute;
+    left: 0;
+}
+
+.icon-back::before {
+    content: "⬅️";
+    padding: 0 4px;
+}

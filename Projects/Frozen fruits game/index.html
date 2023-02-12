@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Frozen Fruits - Delicious Fruits Salad</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://browser.sentry-cdn.com/5.15.2/bundle.min.js" integrity="sha384-HA4Glk4hAwUFBIu+OfNR4bvn6vGCxT134gRiQce9rwp2YfxcuHHG8nG7qkooJwFt" crossorigin="anonymous"></script>
+    <script>Sentry.init({ dsn: 'https://ced793258b704718b325b65dcc0f1787@sentry.io/5179608' });</script>
+    <link rel="preload" href="src/gfx/fruits.png" as="image" />
+</head>
+
+<body onload="javascript:init()" class="spinner">
+
+<div class="wrapper">
+    <div class="bg-wrapper">
+        <main>
+            <div class="hidden" id="view-board">
+                <a href="#" onclick="switchView('levels')" class="btn-link pop-left icon-back"></a>
+
+                <span id="hud_level">level name (easy)</span>
+                <div id="board"></div>
+                <nav>
+                    <div>Score: <span id="hud_score">00000</span></div>
+                    <div>Time: <span id="hud_time">00:00</span></div>
+                </nav>
+            </div>
+
+            <div class="hidden" id="view-levels">
+                <a href="#" onclick="switchView('menu')" class="btn-link icon-back">go back</a>
+                <h2 style="text-align: center">Select level</h2>
+                <div id="levels_list"></div>
+            </div>
+
+            <div class="hidden" id="view-menu">
+                <div id="logo"><h1 >Frozen Fruits</h1></div>
+
+                <a href="#" onclick="switchView('levels')" class="btn">Start Game</a>
+                <a href="#" onclick="" class="btn disabled">Highscores</a>
+                <a href="#" onclick="ViewModal.show('credits')" class="btn">Credits</a>
+                <a href="#" onclick="ViewModal.show('help')" class="btn" style="margin-top: 40px;">Help</a>
+
+                <canvas width="360" height="620"></canvas>
+            </div>
+        </main>
+    </div>
+</div>
+
+<div id="view-modal"></div>
+
+<div id="warning" style="display: none">
+    <h2>Oops, something went wrong./</h2>
+</div>
+
+<!-- lazy loading -->
+<script src="src/levels.js"></script>
+<script src="src/main.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</body>
+<footer><center>@Frozen_fruits&copy;</center></footer>
+</html>
