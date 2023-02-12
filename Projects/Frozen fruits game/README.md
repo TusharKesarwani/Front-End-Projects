@@ -7,7 +7,7 @@
 HTML , CSS and JAVASCRIPT 
 
 # SNAPSHOT OF THE WEBSITE:
-
+![Screenshot 2023-02-12 183222](https://user-images.githubusercontent.com/84632701/218313804-7fe03d3b-70d6-4903-811c-e481a345a3ae.png)
 
 
 
