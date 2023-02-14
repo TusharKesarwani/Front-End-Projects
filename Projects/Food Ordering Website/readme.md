@@ -3,9 +3,12 @@ Wanted to add some new files and make the site responsive.
 https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Food%20Ordering%20website
 
 Changes :
-1.Improving the UI
-2.Adding a JS file for better functionality
-3.Adding a readme.md file
+
+1.Improving the UI.
+
+2.Adding a JS file for better functionality.
+
+3.Adding a readme.md file.
 
 ## Screenshots
 ![Screenshot 2023-02-01 225208](https://user-images.githubusercontent.com/87604491/218715196-22dbf34a-f159-47f6-b7ea-e1a47a2c9c66.jpg)
