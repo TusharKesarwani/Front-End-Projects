@@ -1,0 +1,161 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky; 
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
+    z-index:1 ;
+    max-width:100%;
+}
+.nav.item{
+    padding-right: 15%;
+}
+.nav-item:hover{
+    text-decoration: none;
+    color: white;
+}
+.nav.item a{
+    height: 40px ;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 30px;
+  display: flex;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: black !important; ;
+  }
+
+/* carousel */
+.carousel{
+    max-width: 100%;
+}
+.carousel img{
+    width:100;
+    height: 600px;
+    z-index: 1;
+}
+
+/* Categories */
+
+/* flex cards*/
+
+h2{
+    text-align: center;
+    color: cadetblue;
+    font-family: inherit;
+    margin-top: 25px !important;
+}
+.d-flex{
+    margin-left:10%;
+}
+.d-flex img{
+    padding: 10%;
+    width: 300px;
+    height: 300px;
+}
+.p-2:hover{
+    border:solid cadetblue ;
+    margin: 15px;
+}
+.p-2 button {
+        width: 190px;
+        height:44px ;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        color: white;
+        background-color: cadetblue;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.2);
+}
+
+.p-2 button {
+    background-color:cadetblue ;
+    transition: all ease 0.2s;
+}
+
+
+/* footer*/
+.footer{
+    background: ghostwhite;
+    color: black;
+    max-width:100%;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding:1rem 0;
+    margin:20px;
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1rem;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+
+.footer .box-container .box .links i{
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.0rem;
+    color:var(--light-color);
+    padding:2rem 0;
+    margin:20px;
+}
+
+.footer .box-container .box .share a{
+    height:4rem;
+    width:4rem;
+    line-height:4rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color:var(--black);
+    margin-right: .2rem;
+    background: #eee;
+    text-align: center;
+    margin:20px;
+}
+
+@media (max-width:450px){
+    .footer{
+        text-align: center;
+    }
+
+}
+@media (max-width:702px){
+    .footer{
+        text-align: center;
+    }
+}
+@media (max-width:360px){
+    .footer{
+        text-align: center;
+
+    }
+}
+
+
+
+    
