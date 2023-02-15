@@ -7,10 +7,6 @@ Styling Using CSS, Giving The Piano Effect On Buttons, And Did The Same Color Of
 Lastly, We Use JavaScript For Piano Keyboard Sound Play Functionality.
 
 
-SCREENSHOT
-
-
-<img src="![](Screenshot%20(214).png" width="600" height= "400" )
 
 
 
