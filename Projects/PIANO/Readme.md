@@ -10,7 +10,7 @@ Lastly, We Use JavaScript For Piano Keyboard Sound Play Functionality.
 SCREENSHOT
 
 
-![](Screenshot%20(214).png)
+<img src="![](Screenshot%20(214).png" width="600" height= "400" )
 
 
 
