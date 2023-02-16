@@ -6,7 +6,8 @@ Styling Using CSS, Giving The Piano Effect On Buttons, And Did The Same Color Of
 
 Lastly, We Use JavaScript For Piano Keyboard Sound Play Functionality.
 
-https://github.com/Bishal011/Front-End-Projects/blob/643c5a282ddb5dfa129c62f74a10931d57bb12f9/Projects/PIANO/Screenshot(214).png
+![Screenshot (214)](https://user-images.githubusercontent.com/105370000/219430352-d3d32ce6-a1cb-4ed2-a35e-9cc59458a285.png)
+
 
 Contributed by--
 
