@@ -1,0 +1,94 @@
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: #bbf5ef;
+}
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  /* margin: auto; */
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 50px;
+  color: rgb(29, 51, 246);
+  margin-bottom: 50px;
+}
+.game-area div {
+  background: chocolate;
+  width: 5%;
+  color: chocolate;
+  margin: 0 auto;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 40px;
+  display: inline-block;
+  margin: 2.5px 5px 2.5px 0px;
+}
+.game-area {
+  margin-top: 5%;
+}
+.baloon {
+  padding-bottom: 10%;
+  padding-right: 1%;
+  padding-top: 9%;
+  padding-left: 12%;
+}
+
+.game-area div:nth-child(2n) {
+  background: #ff84ff;
+  color: #ff84ff;
+}
+.game-area div:nth-child(6n-3) {
+  background: #f96318;
+  color: #f96318;
+}
+.game-area div:nth-child(1) {
+  background: #0f5fdf;
+  color: #0f5fdf;
+}
+.game-area div:nth-child(7) {
+  background: #0f5fdf;
+  color: #0f5fdf;
+}
+.game-area div:nth-child(15) {
+  background: #0f5fdf;
+  color: #0f5fdf;
+}
+.game-area div:nth-child(23) {
+  background: #0f5fdf;
+  color: #0f5fdf;
+}
+.game-area div:nth-child(5) {
+  background: #e8ff38;
+  color: #e8ff38;
+}
+.game-area div:nth-child(11) {
+  background: #e8ff38;
+  color: #e8ff38;
+}
+.game-area div:nth-child(13) {
+  background: #e8ff38;
+  color: #e8ff38;
+}
+.game-area div:nth-child(17) {
+  background: #e8ff38;
+  color: #e8ff38;
+}
+.game-area div:nth-child(19) {
+  background: #e8ff38;
+  color: #e8ff38;
+}
+.game-area div:nth-child(25) {
+  background: #e8ff38;
+  color: #e8ff38;
+}
+.game-area div:nth-child(4n) {
+  clear: right;
+}
+#message {
+  display: none;
+  color: #ff3300;
+  font-size: 100px;
+}
