@@ -18,7 +18,7 @@ async function swapbars(n)
     for (let m = 0; m < al - 1; m++) {
     for (let n = 0; n < al - 1; n++) {
         if ((heightarray[n])>=heightarray[n+1]) {
-          await waitforme(v)//wait for 2 miliseconds
+          await waitforme(v)//wait for  miliseconds
           swapbars(n)
         }
       }
