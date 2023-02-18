@@ -1,0 +1,22 @@
+/* styles for screen width less than or equalto 900px */
+html{
+    font-size: 6px;
+}
+
+#sort,#set{
+    width: 30rem;
+    height: 5rem;
+    font-weight: bolder;
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+#number_of_elements{
+    width: 30rem;
+    border-radius:3rem;
+    border: 2px solid white;
+    background-color: white;
+    font-size: 2rem;
+}
+
