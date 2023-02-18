@@ -13,7 +13,7 @@ async function partition(heightarray,l,r)
     let i=l-1;
 
     for(let j=l;j<r;j++)
-    {   await waitforme(v)   //wait for 2 miliseconds 
+    {   await waitforme(v)   //wait for  miliseconds 
         if(heightarray[j]<pivot)
         {
         await waitforme(v)    
@@ -21,7 +21,7 @@ async function partition(heightarray,l,r)
         swap(heightarray,i,j)
         }
     }
-    await waitforme(v)    //wait for 2 miliseconds
+    await waitforme(v)    //wait for  miliseconds
     swap(heightarray,i+1,r)
     return (i+1)
 }
