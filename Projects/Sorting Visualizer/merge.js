@@ -7,12 +7,12 @@ async function merge(heightarray, l, m, r) {
   var R = new Array(n2);
 
   for (var i = 0; i < n1; i++)
-  {  await waitforme(v)//wait for 2 miliseconds
+  {  await waitforme(v)//wait for miliseconds
      L[i] = heightarray[l + i];
   }
   for (var j = 0; j < n2; j++)
    {
-   await waitforme(v)//wait for 2 miliseconds
+   await waitforme(v)//wait for miliseconds
    R[j] = heightarray[m + 1 + j];
   }
   // Merging the arrays back into arr[l..r]
@@ -20,10 +20,10 @@ async function merge(heightarray, l, m, r) {
   var j = 0;
   // Initial index of merged subarray
   var k = l;
-  await waitforme(v)//wait for 2 miliseconds
+  await waitforme(v)//wait for  miliseconds
 
     while (i < n1 && j < n2) {
-        await waitforme(v)//wait for 2 miliseconds
+        await waitforme(v)//wait for  miliseconds
       if (L[i] <= R[j]) {
         heightarray[k] = L[i];
         document.getElementById(array_of_bars[k].id).style.height = `${L[i]}px`;
@@ -41,7 +41,7 @@ async function merge(heightarray, l, m, r) {
   // Copy the remaining elements of L[]
 
     while (i < n1) {
-        await waitforme(v)//wait for 2 miliseconds
+        await waitforme(v)//wait for miliseconds
       heightarray[k] = L[i];
       document.getElementById(array_of_bars[k].id).style.height = `${L[i]}px`;
       document.getElementById(array_of_bars[k].id).style.borderLeft=`2px solid green`
@@ -51,7 +51,7 @@ async function merge(heightarray, l, m, r) {
 
   // Copy the remaining elements of R[]
     while (j < n2) {
-        await waitforme(v)//wait for 2 miliseconds
+        await waitforme(v)//wait for  miliseconds
       heightarray[k] = R[j];
       document.getElementById(array_of_bars[k].id).style.height = `${R[j]}px`;
       document.getElementById(array_of_bars[k].id).style.borderLeft=`2px solid green`
