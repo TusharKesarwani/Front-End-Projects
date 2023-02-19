@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: rgb(106, 37, 8);
+  font-size: 16px;
+}
+
+.navbar-brand img {
+  margin: 0 5px;
+  height: 90px;
+}
+#header-nav {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(254, 155, 90),
+    rgb(250, 207, 99),
+    rgb(255, 211, 161)
+  );
+}
+.navbar-brand h1 {
+  margin-top: 0.5em;
+  margin-left: 0.2em;
+  vertical-align: middle;
+  text-shadow: 0.5px 1.5px 2px rgb(230, 13, 13);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  float: right;
+}
+
+.navbar-nav {
+  color: rgb(0, 0, 0);
+}
+#nav-items-each {
+  padding-top: 0px;
+  margin: auto;
+}
+#nav-items-each a:hover {
+  color: rgb(13, 74, 6);
+}
+.navbar-items-tog {
+  margin: auto;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.bn632-hover {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  /* moz-transition: all 0.4s ease-in-out; */
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  /* moz-transition: all 0.4s ease-in-out; */
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn21 {
+  background-image: linear-gradient(
+    to right,
+    #fc6076,
+    #ff9a44,
+    #ef9d43,
+    #e75516
+  );
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+#main-content {
+  margin: 0%;
+  padding: 0%;
+}
+
+#bg-img {
+  height: 45vw;
+  margin-bottom: 5px;
+  border-top: 1px solid rgb(94, 45, 11);
+}
+.mask1 {
+  -webkit-mask-image: linear-gradient(white, transparent);
+  mask-image: linear-gradient(white, transparent);
+}
+.jumbo-caption {
+  padding-top: 15%;
+  text-align: center;
+  color: rgb(255, 236, 212);
+  font-size: 9vw;
+  font-weight: 700;
+}
+
+#menu-tile,
+#special-tile,
+#map-tile,
+#awd-tile {
+  text-align: center;
+  margin: 20px auto;
+  height: 200px;
+  width: 85%;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: transform 0.2s;
+}
+#menu-tile {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROy5IdvJ1aYVTyyXkwP7eNBPUZrAoEYIeOlg&usqp=CAU);
+}
+#special-tile {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvyN3ZF-ErouNs6B_cLjB_RKovPMsyu2EVLw&usqp=CAU);
+}
+#awd-tile {
+  background-image: url(http://www.tomatos.co.in/images/Tomatos-Award.png);
+}
+/* #map-tile{   
+  } */
+#menu-tile:hover,
+#special-tile:hover,
+#map-tile:hover,
+#awd-tile:hover {
+  box-shadow: 0 1px 5px 1px #ffc583;
+  transform: scale(1.1);
+}
+#menu-tile span,
+#special-tile span,
+#map-tile span,
+#awd-tile span {
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(52, 50, 50);
+  opacity: 0.7;
+  font-size: 1.5em;
+  width: 100%;
+}
+.app-btn {
+  margin: 20px;
+  width: 200px;
+  height: 70px;
+}
+
+@media (max-width: 592px) {
+  .navbar-brand img {
+    height: 70px;
+  }
+  .navbar-brand h1 {
+    font-size: 7vw;
+  }
+  .panel-footer {
+    text-align: center;
+  }
+  #item-icons {
+    width: 200px;
+  }
+}
+
+@media (min-width: 592px) and (max-width: 989px) {
+  .navbar-brand img {
+    height: 75px;
+  }
+}
+@media (max-width: 768px) {
+  #abt-img {
+    width: 100%;
+  }
+  .jumbo-caption {
+    padding-top: 5%;
+  }
+}
+@media (min-width: 989px) and (max-width: 1194px) {
+  .navbar-brand img {
+    height: 75px;
+  }
+  /* .navbar-items-tog {
+      margin-right: 0px;
+    } */
+  .navbar-brand h1 {
+    font-size: 2.8vw;
+  }
+}
+
+@media (min-width: 1194px) and (max-width: 1300px) {
+  /* .navbar-brand h1 {
+      font-size: 2.8vw;
+    } */
+  .navbar-brand img {
+    height: 80px;
+  }
+  /* .navbar-items-tog {
+      margin-right: 0px;
+    } */
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #menu-tile,
+  #special-tile,
+  #map-tile,
+  #awd-tile {
+    height: 180px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #menu-tile,
+  #special-tile,
+  #map-tile,
+  #awd-tile {
+    height: 150px;
+  }
+}
+
+#highlights {
+  color: beige;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#typing {
+  color: #ffff;
+  font-style: italic;
+  margin: 20px auto;
+  font-size: 200%;
+  border-right: #fff;
+  overflow: hidden;
+}
+.panel-footer {
+  font-size: 20px;
+  color: white;
+  background-color: rgb(41, 46, 50);
+  margin: 20px 0px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.panel-footer span {
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+.contact {
+  background-color: #000000;
+}
+
+/* menu page styling */
+.container h2 {
+  color: rgb(185, 255, 80);
+  margin: 20px auto;
+  text-align: center;
+  font-size: 3rem;
+  -webkit-text-stroke: 1px #1100ff;
+}
+
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5,
+#menu6,
+#menu7,
+#menu8,
+#menu9,
+#menu10,
+#menu11,
+#menu12 {
+  margin: 10px auto;
+  border: 2px solid black;
+  height: 200px;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  opacity: 0.75;
+}
+#menu1 span,
+#menu2 span,
+#menu3 span,
+#menu4 span,
+#menu5 span,
+#menu6 span,
+#menu7 span,
+#menu8 span,
+#menu9 span,
+#menu10 span,
+#menu11 span,
+#menu12 span {
+  margin-bottom: -1px;
+  line-height: 50px;
+  width: 100%;
+  color: white;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.6;
+  text-align: center;
+}
+#menu1 {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/23/14/49/alcohol-1853327__340.jpg);
+}
+#menu2 {
+  background-image: url(https://cdn.pixabay.com/photo/2013/02/21/19/12/barbecue-84671__340.jpg);
+}
+#menu3 {
+  background-image: url(https://cdn.pixabay.com/photo/2018/10/25/19/15/goulash-3773134__340.jpg);
+}
+#menu4 {
+  background-image: url(https://media.istockphoto.com/photos/bread-tandoori-indian-cuisine-picture-id1150376593?k=20&m=1150376593&s=612x612&w=0&h=EXNsRb56A-ePSZTWSOsjt1UEOfjTQATKjXUqCcJ0K3M=);
+}
+#menu5 {
+  background-image: url(https://media.istockphoto.com/photos/queen-elizabeth-platinum-jubilee-pudding-jubilee-trifle-picture-id1397359917?b=1&k=20&m=1397359917&s=170667a&w=0&h=1PzHB4lrQeFlrC44hGrn8nOk1-ffpZhofGqXbuPDkrk=);
+}
+#menu6 {
+  background-image: url(https://media.istockphoto.com/photos/dish-meat-based-picture-id1396092287?b=1&k=20&m=1396092287&s=170667a&w=0&h=IfhoPMVQgYK9UNXKpteYbvc7W88ZkX2zeIetQFbVS0U=);
+}
+#menu7 {
+  background-image: url(https://cdn.pixabay.com/photo/2016/02/22/17/05/food-1216048__340.jpg);
+}
+#menu8 {
+  background-image: url(https://cdn.pixabay.com/photo/2016/02/13/16/54/food-1198204__340.jpg);
+}
+#menu9 {
+  background-image: url(https://cdn.pixabay.com/photo/2022/05/20/08/55/pasta-7209002__340.jpg);
+}
+#menu10 {
+  background-image: url(https://cdn.pixabay.com/photo/2016/06/28/17/32/salmon-1485014__340.jpg);
+}
+#menu11 {
+  background-image: url(https://media.istockphoto.com/photos/italian-food-collage-picture-id530957855?b=1&k=20&m=530957855&s=170667a&w=0&h=PpjO4JAksV6yofNpQB5a_BiLT1UYlJSKCiPJ67Zf7Cs=);
+}
+#menu12 {
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552__340.jpg);
+}
+#menu1:hover,
+#menu2:hover,
+#menu3:hover,
+#menu4:hover,
+#menu5:hover,
+#menu6:hover,
+#menu7:hover,
+#menu8:hover,
+#menu9:hover,
+#menu10:hover,
+#menu11:hover,
+#menu12:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+  opacity: 1;
+  /* transition:opacity 0.5s */
+}
+
+/* info page */
+#aboutline {
+  border: 1px solid white;
+  margin: 20px auto;
+}
+#about {
+  font-size: larger;
+  color: white;
+  margin: 20px;
+}
+#abt-img {
+  background-color: aliceblue;
+  padding: 10px;
+  box-shadow: 0 0 4px 2.5px black;
+  /* margin-top: -1.5px;
+    margin-right: -1.5px; */
+  margin: 0%;
+  float: right;
+}
