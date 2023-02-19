@@ -13,6 +13,7 @@
 }
 .nav.item{
     padding-right: 15%;
+    max-width: 100%;
 }
 .nav-item:hover{
     text-decoration: none;
@@ -36,7 +37,7 @@
     max-width: 100%;
 }
 .carousel img{
-    width:100;
+    max-width:100%;
     height: 600px;
     z-index: 1;
 }
@@ -139,22 +140,77 @@ h2{
 }
 
 @media (max-width:450px){
+    .nav{
+        max-width: 100%;
+        align-items: center;
+    }
     .footer{
         text-align: center;
+    }
+    .carousel img{
+        max-width: 100%;
+    }
+    .d-flex{
+        align-items: center;
+        max-width: 100%;
     }
 
 }
 @media (max-width:702px){
+    .carousel{
+        max-width: 100%;
+    }
     .footer{
         text-align: center;
     }
 }
 @media (max-width:360px){
+    .carousel{
+        max-width: 100%;
+    }
     .footer{
         text-align: center;
 
     }
 }
+@media (max-width:900px){
+    .carousel{
+        max-width: 100%;
+    }
+    .nav{
+        max-width: 100%;
+    }
+    .footer{
+        text-align: center;
+    }
+    .carousel img{
+        max-width: 100%;
+    }
+    .d-flex{
+        max-width: 100%;
+    }
+    .d-flex img{
+        max-width: 100%;
+    }
+}
+@media (max-width:1978px){
+    .carousel{
+        max-width: 100%;
+    }
+    .footer{
+        text-align: center;
+    }
+    .d-flex {
+        margin-left: 10%;
+        align-items: center;
+    }
+    .d-flex img {
+        width: 360px;
+        height: 350px;
+    }
+}
+
+
 
 
 
