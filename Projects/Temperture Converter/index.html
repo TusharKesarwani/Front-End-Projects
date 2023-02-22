@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        user-select: none;
+        background-image: url("https://raw.githubusercontent.com/Sengar123/Temperature_convertor/main/temp%20convertor%20oasis/bg.png");
+        background-repeat: no-repeat;
+        background-position: centre;
+        background-size: cover;
+    }
+    
+    .display {
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-top: 150px;
+    }
+    
+    .form {
+        padding: 15px;
+    }
+    
+    .calculator_input {
+        float: left;
+    }
+    
+    .label {
+        font-size: 20px;
+    }
+    
+    .display h1 {
+        font-size: 35px;
+        color: #000;
+    }
+    
+    .input {
+        width: 100%;
+        font-size: 20px;
+        border-radius: 78px;
+        border: none;
+        outline: none;
+        background: rgb(225, 225, 255);
+        padding: 8px;
+        box-shadow: inset 5px 5px 5px #cbcecb, inset -5px -5px 5px #ffffff;
+    }
+    
+    .temp {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 5px 6px 15px #3d3d3d, -2px -3px 8px #ffffff;
+        background: color #89a089;
+    }
+    
+    .result_area label {
+        width: 18%;
+        float: left;
+    }
+    
+    .result_area input {
+        width: 82%;
+    }
+    
+    .calculator_value label {
+        width: 36%;
+        float: left;
+    }
+    
+    .calculator_value {
+        margin-bottom: 30px;
+    }
+    
+    .calculator_input {
+        padding: 0px 23px;
+        margin-bottom: 30px;
+    }
+    
+    .result_area {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    button.cal-btn {
+        width: 45%;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        background: #0977aa;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .button convert {
+        float: right;
+    }
+</style>
+
+<body>
+
+    <div class="temp">
+        <h4 class="title"> CONVERT TEMPERATURE </h4>
+        <form action="" name="form">
+            <div class="temp_calculator_inputs">
+                <div class="calculator_value">
+                    <label for=""> VALUE TO CONVERT </label>
+                    <input type="text" placeholder="0" name="value" id="input_value">
+                </div>
+                <div class="calculator_input">
+                    <label for=""> FROM:</label>
+                    <select name="input" id="input">
+                        <option value="celcius"> Celcius (°C)</option>
+                        <option value="fahrenheit"> fahrenheit(°F)</option>
+                        <option value="kelvin"> Kelvin(°K)</option>
+                    </select>
+                </div>
+                <div class="calculator_input">
+                    <label for=""> To: </label>
+                    <select name="output" id="output">
+                        <option value="celcius"> Celcius (°C)</option>
+                        <option value="fahrenheit"> fahrenheit(°F)</option>
+                        <option value="kelvin"> Kelvin(°K)</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="clear" class="cal-btn" onclick="reset()"> Clear </button>
+            <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()"> Convert</button>
+            <div class="result_area">
+                <label for=""> Answer: </label>
+                <input type="text" id="result">
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function convertTemperature() {
+        let val = document.getElementById("input_value");
+        let result = document.getElementById("result");
+        let input = document.getElementById("input");
+        let output = document.getElementById("output");
+
+        console.log("val", val.value);
+        console.log("reslut", result);
+        console.log("inut", input.value);
+        console.log("outut", output.value);
+
+        val.addEventListener("keyup", convertTemperature);
+        input.addEventListener("change", convertTemperature);
+        output.addEventListener("change", convertTemperature);
+
+        let inputValue = input.value;
+        let outputValue = output.value;
+        if (inputValue === "celcius" && outputValue === "fahrenheit") {
+            result.value = Number((val.value) * 9 / 5) + 32;
+
+        } else if (inputValue === "celcius" && outputValue === "kelvin") {
+            result.value = Number(val.value) + 273.15;
+
+
+        } else if (inputValue === "celcius" && outputValue === "celcius") {
+            result.value = val.value;
+
+
+        }
+        //fahrenheit
+        if (inputValue === "fahrenheit" && outputValue === "celcius") {
+            result.value = Number((val.value - 32) * 5) / 9;
+            // console.log("cel to far", result.value);
+
+        } else if (inputValue === "fahrenheit" && outputValue === "kelvin") {
+            result.value = Number((val.value - 32) * 5 / 9) + 273.15;
+            // console.log("cel to far", result.value);
+
+        } else if (inputValue === "fahrenheit" && outputValue === "fahrenheit") {
+            result.value = val.value;
+            // console.log("cel to far", result.value);
+
+        }
+        //kelvin
+        else if (inputValue === "kelvin" && outputValue === "celcius") {
+            result.value = Number(val.value) - 273.15;
+            // console.log("cel to far", result.value);
+
+        } else if (inputValue === "kelvin" && outputValue === "fahrenheit") {
+            result.value = Number((val.value - 273.15) * 9 / 5) + 32;
+            // console.log("cel to far", result.value);
+
+        } else if (inputValue === "kelvin" && outputValue === "kelvin") {
+            result.value = val.value;
+            // console.log("cel to far", result.value);
+
+        } else {
+            // console.log("cel to far else", result.value);
+
+        }
+
+
+    }
+
+    function reset() {
+        convertTemperature();
+    }
+</script>
+</body>
+
+</html>
