@@ -12,7 +12,7 @@ Make appointment and it is responsive as well .
 HTML , CSS and JAVASCRIPT 
 
 # SNAPSHOT OF THE WEBSITE:
-
+![doclab website](https://user-images.githubusercontent.com/84632701/218160252-34e44be2-1758-4dcf-be73-d360ffa69e95.png)
 
 
 
