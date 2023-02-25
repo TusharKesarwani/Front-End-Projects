@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Excel </title>
+    <script src="https://kit.fontawesome.com/ce63ad5eab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menu Bar -->
+    <div class="menu_bar">
+        <!-- New Open Save -->
+        <div class="new_open_save_container">
+            <div class="icon_container">
+                <i class="fas fa-plus-square"></i>
+            </div>
+            <div class="icon_container">
+                <i class="fas fa-external-link-square-alt"></i>
+                <input type="file" class="open_input" style="display: none;">
+            </div>
+            <div class="icon_container">
+                <i class="fas fa-save"></i>
+            </div>
+        </div>
+        <!-- Font Family and size -->
+        <div class="formating_container">
+            <select class="font_family_input">
+                <option value="Arial" style="font-family:arial;">Arial</option>
+                <option value="Brush Script MT" style="font-family:Brush Script MT;">Brush Script MT</option>
+                <option value="Garamond" style="font-family:Garamond;">Garamond</option>
+                <option value="Helvetica" style="font-family:Helvetica;">Helvetica</option>
+                <option value="Papyrus" style="font-family:Papyrus;">Papyrus</option>
+                <option value="Tahoma" style="font-family:Tahoma;">Tahoma</option>
+                <option value="veranda" style="font-family:veranda;">Veranda</option>
+            </select>
+            <select class="font_size_input">
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+        <!-- alignment -->
+        <div class="alignment_container">
+            <i class="fas fa-align-left left" value="left"></i>
+            <i class="fas fa-align-center center" value="center"></i>
+            <i class="fas fa-align-right right" value="right"></i>
+            <i class="fas fa-align-justify justify" value="justify"></i>
+        </div>
+        <!-- Bold Italic Underline -->
+        <div class="bui_container">
+            <i class="fas fa-bold" value = "b"></i>
+            <i class="fas fa-italic" value = "b"></i>
+            <i class="fas fa-underline" value = "b"></i>
+        </div>
+        <!-- Color -->
+        <div class="color_container">
+            <i class="fas fa-fill-drip"></i>
+            <input type="color" class="background_color">
+            <i class="fas fa-font"></i>
+            <input type="color" class="text_color">
+        </div>
+    </div>
+
+
+    <!-- Formula Bar -->
+    <div class="formula_bar">
+        <input type="text" class="address_input" placeholder="A1">
+        <img src="fx.png">
+        <input type="text" class="formula_input" placeholder="Formula">
+    </div>
+
+
+
+    <!-- grid -->
+    <div class="grid_container">
+        <div class="top_left_cell"></div>
+        <div class="top_row">
+        </div>
+        <div class="left_col">
+        </div>
+        <div class="grid"></div>
+    </div>
+
+
+    <!-- Sheets Container -->
+    <div class="sheet_container">
+        <div class="add-sheet_container">
+            <i class="far fa-plus-square newSheet"></i>
+        </div>
+        <div class="sheets-list">
+            <div class="sheet active-sheet" sheetIdx="1">Sheet 1</div>
+        </div>
+    </div>
+
+
+    <script src="init.js"></script>
+    <script src="menu.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.1/xlsx.full.min.js"></script> 
+    <script src="nos.js"></script>
+    <script src="formula.js"></script>
+    <script src="sheets.js"></script>
+</body>
+
+</html>
