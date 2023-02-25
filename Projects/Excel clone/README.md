@@ -50,5 +50,9 @@
 # TECH STACK:
 HTML , CSS and Javascript
 
+# SNAPSHOT OF THE PROJECT:
+![excel](https://user-images.githubusercontent.com/84632701/221338292-ccf680da-1c03-4acf-88ac-e2d16a69226a.png)
+
+
 # CONTRIBUTED BY:
 Alisha Bharti
