@@ -1,0 +1,60 @@
+.logo-icon {
+  width: 6%;
+  margin-top: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.bg-img {
+  background: url(../images/wallpapersden.com_wednesday-season-1_2798x1574.jpg);
+  min-height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  /* position: relative; */
+}
+.text {
+  color: white;
+}
+.text:hover {
+  color: grey;
+}
+.info {
+  font-size: 0.9rem;
+}
+.wednesday-logo {
+  margin-top: 100px;
+  margin-left: 60px;
+  width: 30%;
+}
+.title-button1 {
+  margin-left: 100px;
+  margin-right: 10px;
+}
+.tb1 {
+  color: black;
+  text-decoration: none;
+}
+.description {
+  color: white;
+  width: 40%;
+  text-align: center;
+}
+.dropdown-text {
+  color: black;
+}
+.right-part1 {
+  position: absolute;
+  right: 110px;
+}
+.right-part2 {
+  position: absolute;
+  right: 70px;
+}
+.right-part3 {
+  position: absolute;
+  right: 25px;
+}
