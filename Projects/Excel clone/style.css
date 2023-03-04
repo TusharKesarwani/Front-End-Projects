@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    font-family: sans-serif;
+}
+
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    background: #EEEEEE;
+}
+::-webkit-scrollbar-thumb {
+    background: #6A9A8B;
+    border-radius: 2px;
+}
+  
+
+
+
+/* Menu Bar Starts Here */
+.menu_bar{
+    height: 5rem;
+    width: 100vw;
+    background-color:#00754B;
+    display: flex;
+}
+
+.font_family_input{
+    margin-top: 1.4rem;
+    margin-left:2rem;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    text-align: center;
+}
+.font_size_input{
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px ;
+    width: 4.375rem;
+}
+.new_open_save_container{
+    display: flex;
+    height: 60%;
+    width: 8rem;
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+    background-color: #ffffff;
+    border-radius: 50px;
+    justify-content: space-evenly;
+}
+.icon_container>.fas{
+    margin-top: 0.4rem;
+    font-size: 2rem;
+    color: #00754B;
+}
+.icon_container>.fas:hover{
+    color: #01492f;
+}
+.alignment_container{
+    display: flex;
+    height: 22%;
+    width: 7.5rem;
+    margin-top: 3.2rem;
+    margin-left: -12.1rem;
+    background-color: #ffffff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    justify-content: space-evenly;
+    padding-top: 0.075rem;
+    font-size: 13px;
+}
+.bui_container{
+    display: flex;
+    height: 22%;
+    width: 4.375rem;
+    margin-top: 3.2rem;
+    margin-left: 0.25rem;
+    background-color: #ffffff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    justify-content: space-evenly;
+    padding-top: 1.2px;
+    font-size: 13px;
+}
+.color_container{
+    display: flex;
+    height: 34%;
+    width: 5rem;
+    margin-top:2rem;
+    margin-left: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+.color_container>i{
+    padding-top: 5px;
+}
+.color_container>input{
+    visibility: hidden;
+    width: 0;
+    border: none;
+}
+.selected{
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    background-color: #108d5f;
+    border-radius: 2px;
+}
+
+
+
+
+
+/* Formula Bar Starts Here */
+.formula_bar{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00754B;
+}
+.formula_bar>img{
+    padding: 0.1rem;
+    background-color: #6A9A8B;
+    height: 65%;
+}
+.formula_bar>div{
+    margin-left:0.5rem;
+    margin-right: 0.5rem;
+}
+.formula_bar>*{
+    height: 70%;
+}
+.address_input{
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px ;
+    width: 4rem;
+    text-align: center;
+    outline: none;
+    color: #8e8e8e;
+}
+.formula_input{
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px ;
+    width: calc(100vh - 8rem);
+    outline: none;
+}
+
+
+
+/* Grid Container Starts Here */
+.grid_container{
+    background-color: white;
+    height: calc( 100vh - 9.5rem );
+    overflow: scroll;
+}
+.top_row{
+    display: flex;
+    position: relative;
+    top: -1.5rem;
+    left: 2.1rem;
+}
+.top_row .cell{
+    background-color: #EEEEEE;
+    text-align: center;
+    min-width: 5rem;
+    padding-top: 1.7px;
+}
+.left_col{
+    background-color: #EEEEEE;
+    width: 2rem;
+    text-align: center;
+    position: relative;
+    top: -1.5rem;
+}
+.cell{
+    border: 0.1px solid rgb(53, 53, 53);
+    border-radius: 3px;
+    height: 1.5rem;
+    text-align: center;
+    outline-color: #00754B;
+}
+.top_left_cell{
+    height:1.5rem;
+    width: 2rem;
+    background-color: #EEEEEE;
+    border-right: 3px solid #015536;
+    border-bottom: 2px solid #015536;
+    border-radius: 3px;
+}
+.row{
+    display: flex;
+}
+.grid .cell{
+    min-width: 5rem;
+    border-left: 0px;
+    border-top: 0px;
+}
+.grid_container{
+    position: relative;
+}
+.grid{
+    position: absolute;
+    left: 2.1rem;
+    top: 1.5rem;
+}
+
+
+
+
+/* Sheets Container Starts Here */
+.sheet_container{
+    background-color: #00754B;
+    height: 2.5rem;
+    display: flex;
+    color :white;
+    font-size: 10px;
+}
+.add-sheet_container{
+    height: 100%;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newSheet{
+    font-size: 1.3rem;
+}
+.newSheet:hover{
+    font-size: 1.5rem;
+}
+.sheets-list{
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+}
+.sheets-list{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.sheet{
+    min-width: 60px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00754B;
+    border: 1px solid #EEEEEE;
+    margin: 2px;
+    border-radius: 5px;
+}
+.active-sheet{
+    border: none;
+    background-color: #01492f;
+}
+
+@media only screen and (max-width: 500px) {
+    .new_open_save_container{
+        width: 5rem;
+        height: 40%;
+        margin-left: 0.1rem;
+    }
+    .icon_container>.fas{
+        margin-top: 0.3rem;
+        font-size: 1.4rem;
+    }
+    .font_family_input{
+        margin-top: 1.1rem;
+        margin-left:0.5rem;
+        width: 5rem;
+    }
+    .font_size_input{
+        width: 4rem;
+    }
+    .alignment_container{
+        width: 5rem;
+        margin-left:-9.3rem;
+        margin-top: 2.8rem;
+    }
+    .bui_container{
+        width: 4rem;
+        margin-top: 2.8rem;
+    }
+    .color_container{
+        margin-top: 1.8rem;
+        width: 4.5rem;
+        height: 30%;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .new_open_save_container{
+        width: 4rem;
+        height: 35%;
+        margin-left: 0.1rem;
+    }
+    .icon_container>.fas{
+        margin-top: 0.3rem;
+        font-size: 1.2rem;
+    }
+    .font_family_input{
+        margin-top: 0.3rem;
+        margin-left:0.5rem;
+        width: 3.5rem;
+    }
+    .font_size_input{
+        width: 3.5rem;
+    }
+    .alignment_container{
+        width: 3.5rem;
+        margin-left:-7.3rem;
+        margin-top: 2rem;
+        font-size: 0.7rem;
+    }
+    .bui_container{
+        width: 3.5rem;
+        margin-top: 2rem;
+    }
+    .color_container{
+        margin-top: 3.8rem;
+        margin-left: -5.5rem;
+        width: 4.5rem;
+        height: 25%;
+        font-size: 1rem;
+    }
+    .color_container>i{
+        padding-top: 2px;
+    }
+    
+  }
+
+  
