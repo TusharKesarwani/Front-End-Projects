@@ -18,12 +18,12 @@
 
 <h2 align="left" > Description</h2>
 
-The Mangalavya is an **RFID Based Restaurant Food Ordering System** ,initially made for 24 hour hackathon at  SRM University 
+The Mangalavya is an **RFID Based Restaurant Food Ordering System** ,inspired by Elon Musk Mars theme by MLH 
 - It is a web-based system that generates a token using RFID technology.
 - The token is transferred to the user, and a 3D model-based ordering system is shown to them.
 - The project is based on a Utopian theme inspired by Elon Musk's vision of life on Mars in 2050.- 
 - The system eliminates the need for waiters in the restaurant.
-- The aim is to provide an innovative and futuristic dining experience to customers.
+- The aim is to provide an innovative and futuristic dining experience to customers by displaying the menu items in 3d MODELS.
 
 <h2 align="left" > Configuration</h2>
 
