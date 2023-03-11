@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mangalavya - The Mars Restro | Logout</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href=" {% static 'images/favicon.png' %} ">
+    
+    <link href=" {% static 'css/style.css' %} " rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-119386393-1');
+	</script>
+    <script>
+        var seconds= 10;
+        function displayseconds()
+        {
+        seconds-=1;
+        document.getElementById("seconddisplay").innerHTML="You are being redirected to login page in "+seconds+" seconds ....";
+        }
+        setInterval(displayseconds,1000);
+
+        function redirectpage()
+        {
+        window.location="/login";
+        }
+        setTimeout('redirectpage()',10000)
+</script>
+<script type="text/javascript">
+history.pushState(null, null, location.href);
+history.back();
+history.forward();
+window.onpopstate = function () { history.go(1); };
+</script>
+</head>
+
+<body class="h-100">
+    
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+
+
+
+    <div class="login-form-bg h-100">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100">
+                <div class="col-xl-6">
+                    <div class="form-input-content">
+                        <div class="card login-form mb-0">
+                            <div class="card-body pt-5">
+                                <a class="text-center" href="/login"> <h4>Mangalavya</h4></a>
+        
+                                    
+                                    <button onclick="location.href = '/login';" class="btn login-form__btn submit w-100">Log Out</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src=" {% static 'plugins/common/common.min.js' %} "></script>
+    <script src=" {% static 'js/custom.min.js' %} "></script>
+    <script src=" {% static 'js/settings.js' %} "></script>
+    <script src=" {% static 'js/gleek.js' %} "></script>
+    <script src=" {% static 'js/styleSwitcher.js' %} "></script>
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Mangalavya - The Restro </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href=" {% static 'images_user/favicon.ico' %} " type="image/x-icon">
+    <link rel="apple-touch-icon" href=" {% static 'images_user/apple-touch-icon.png' %} ">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %} "> -->
+    <!-- Site CSS -->
+    <link rel="stylesheet" href=" {% static 'css_user/style.css' %} ">
+    <!-- Responsive CSS -->
+
+    <!-- <link rel="stylesheet" href=" {% static 'css/responsive.css' %} "> -->
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href=" {% static 'css/custom.css' %} "> -->
+    <link rel="stylesheet" href=" {% static 'css_user/holo.css' %} ">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Main Container -->
+
+    <div class="main-top">
+        <div class="container-fluid">
+
+            <div class="center">
+                <a class="center" href=" {% url 'index.html' %} " style="text-align: center;"><img src=" {% static 'images_user/logo2.png' %} " alt=""></a>
+                <h1 style="color:white; text-align: center;">Mangalavya</h1>
+            </div>
+            <div class="our-link">
+                <div style="text-align:center">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="login-box">
+
+            </div>
+
+        </div>
+
+    </div>
+    <center>
+
+    <div id="container">
+        <div id="aSide">
+            <model-viewer src=" {% static '/holograms/spaggeti/scene.gltf' %} " alt="VR Headset" auto-rotate camera-controls ar ios-src="/holograms/spaggeti/scene.gltf">
+            </model-viewer>
+        </div>
+    </div>
+    </center>
+</body>
+
+</html>

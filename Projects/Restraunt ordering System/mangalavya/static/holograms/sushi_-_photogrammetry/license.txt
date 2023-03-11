@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sushi - Photogrammetry
+* source:	https://sketchfab.com/3d-models/sushi-photogrammetry-7e1e9932083141348797b4d8fbdcb403
+* author:	quadremy (https://sketchfab.com/grafikerdigital3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sushi - Photogrammetry" (https://sketchfab.com/3d-models/sushi-photogrammetry-7e1e9932083141348797b4d8fbdcb403) by quadremy (https://sketchfab.com/grafikerdigital3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

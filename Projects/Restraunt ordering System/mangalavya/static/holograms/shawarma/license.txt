@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shawarma
+* source:	https://sketchfab.com/3d-models/shawarma-02e78713983d40859ae8a0c0a90781f8
+* author:	MaxNeru (https://sketchfab.com/MaxNeru)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shawarma" (https://sketchfab.com/3d-models/shawarma-02e78713983d40859ae8a0c0a90781f8) by MaxNeru (https://sketchfab.com/MaxNeru) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

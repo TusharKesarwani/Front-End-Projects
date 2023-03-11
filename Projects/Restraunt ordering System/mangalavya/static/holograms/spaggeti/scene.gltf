@@ -1,0 +1,376 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 303,
+      "max": [
+        0.49882805347442627,
+        2.7945055961608887,
+        0.49882805347442627
+      ],
+      "min": [
+        -0.4988279342651367,
+        -2.0327868461608887,
+        -0.49882805347442627
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3636,
+      "componentType": 5126,
+      "count": 303,
+      "max": [
+        1.0,
+        0.999579668045044,
+        1.0
+      ],
+      "min": [
+        -0.9999995827674866,
+        -0.9962397813796997,
+        -0.9999996423721313
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 303,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.125,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 1188,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7272,
+      "componentType": 5126,
+      "count": 35518,
+      "max": [
+        0.5303991436958313,
+        1.039554238319397,
+        1.0126875638961792
+      ],
+      "min": [
+        -1.2808022499084473,
+        -0.7987346053123474,
+        -0.08562666177749634
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 433488,
+      "componentType": 5126,
+      "count": 35518,
+      "max": [
+        0.999769926071167,
+        0.9999657869338989,
+        0.9999861717224121
+      ],
+      "min": [
+        -0.9999344348907471,
+        -0.999976396560669,
+        -0.9991004467010498
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2424,
+      "componentType": 5126,
+      "count": 35518,
+      "max": [
+        0.9974117875099182,
+        0.9997685551643372
+      ],
+      "min": [
+        0.00019102066289633512,
+        0.0003717492218129337
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 4752,
+      "componentType": 5125,
+      "count": 178122,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "BrandXR (https://sketchfab.com/brandxr)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/the-grove-of-hobe-sound-main-pasta-plate-59dd03bd03484b248dff1961de2ef625",
+      "title": "The Grove of Hobe Sound - Main - Pasta Plate"
+    },
+    "generator": "Sketchfab-13.7.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 717240,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 286568,
+      "byteOffset": 717240,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 859704,
+      "byteOffset": 1003808,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1863512,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/material0_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "blinn1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.75,
+          0.75,
+          0.75,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8670157843666633
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "material0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plate_blinn1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Model_material0_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.13333334028720856,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.9605948867407985e-17,
+        -0.13333334028720856,
+        0.0,
+        0.0,
+        0.13333334028720856,
+        2.9605948867407985e-17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "f4fd85e111ce4cca801ec76e5e1318b8.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        6
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -84.98462677001953,
+        0.0,
+        1.0
+      ],
+      "name": "group1"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        237.80299377441406,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        5.728227615356445,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        237.80299377441406,
+        0.0,
+        -1.4435770511627197,
+        85.71229553222656,
+        1.7378618717193604,
+        1.0
+      ],
+      "name": "Plate"
+    },
+    {
+      "mesh": 0,
+      "name": "Plate_blinn1_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        99.99881642813249,
+        0.4418559807928532,
+        -0.20365722402680295,
+        0.0,
+        -0.1243694169982838,
+        -17.253359495062593,
+        -98.50028486447262,
+        0.0,
+        -0.4703671127706789,
+        98.49937233011374,
+        -17.252605755446115,
+        0.0,
+        35.53668212890625,
+        83.75294494628906,
+        23.154537200927734,
+        1.0
+      ],
+      "name": "Model"
+    },
+    {
+      "mesh": 1,
+      "name": "Model_material0_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}

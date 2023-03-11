@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pastry
+* source:	https://sketchfab.com/3d-models/pastry-6f6af0d390734e5abd9fe633adf264ca
+* author:	zivanoxo (https://sketchfab.com/zivanoxo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pastry" (https://sketchfab.com/3d-models/pastry-6f6af0d390734e5abd9fe633adf264ca) by zivanoxo (https://sketchfab.com/zivanoxo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
