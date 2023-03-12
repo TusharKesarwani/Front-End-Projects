@@ -1,0 +1,43 @@
+[debug] [2023-03-11T14:24:17.760Z] ----------------------------------------------------------------------
+[debug] [2023-03-11T14:24:17.762Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-11T14:24:17.763Z] CLI Version:   11.24.1
+[debug] [2023-03-11T14:24:17.763Z] Platform:      win32
+[debug] [2023-03-11T14:24:17.763Z] Node Version:  v16.18.0
+[debug] [2023-03-11T14:24:17.764Z] Time:          Sat Mar 11 2023 19:54:17 GMT+0530 (India Standard Time)
+[debug] [2023-03-11T14:24:17.765Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-11T14:24:17.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-11T14:24:17.833Z] > authorizing via signed-in user (yash.khandelwal456@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Dell\OneDrive\Desktop\reels\Instagram-Reels-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-11T14:24:26.880Z] Using project from CLI flag: ig-reels-ea107
+[debug] [2023-03-11T14:24:26.883Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ig-reels-ea107 [none]
+[debug] [2023-03-11T14:24:28.218Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ig-reels-ea107 403
+[debug] [2023-03-11T14:24:28.219Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ig-reels-ea107 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-03-11T14:24:28.219Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-03-11T14:24:29.143Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project ig-reels-ea107. Please make sure the project exists and your account has permission to access it.
