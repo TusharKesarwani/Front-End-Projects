@@ -14,6 +14,7 @@ Dependencies :
     "react-ticker": "^1.2.2"
   },
 
+Screenshots
 
 ![image](https://user-images.githubusercontent.com/84733088/224541976-ce8e5557-a1dd-49c2-8561-8a35b9df6bea.png)
 ![image](https://user-images.githubusercontent.com/84733088/224541985-957dc8a1-bff8-4a8b-8964-16c97c41510c.png)
