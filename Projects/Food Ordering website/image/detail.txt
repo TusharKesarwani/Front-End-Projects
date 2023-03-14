@@ -1,2 +1,0 @@
-This is a front-end made in HTML and CSS using bootstarp. 
-Hungry Hupiee is a food orgering website.

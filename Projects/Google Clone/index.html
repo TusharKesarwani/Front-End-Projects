@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="./icon.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <nav class="bars">
+            <ul>
+                <li>
+                    <a class="link" href="">Gmail</a>
+                </li>
+                <li>
+                    <a class="link" href="">Images</a>
+                </li>
+                <li>
+                    <div class="circle-shadow">
+                        <a class="menu-icon" href=""><i class="fas fa-bars"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle-shadow">
+                        <a class="user-icon" href=""><span>N</span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <div class="content-wrapper">
+            <img class="logo-img" src="./img1.jpg" alt="Google Logo Image">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input id="search-input" class="search-input" type="text">
+                <i class="fas fa-keyboard"></i>
+                <i class="fas fa-microphone"></i>
+            </div>
+            <div class="search-btns">
+                <button class="google-search-btn">Google Search</button>
+                <button class="lucky-search-btn">Hello Developer!! <button>
+            </div>
+            
+    </section>
+    <footer>
+        <div class="footer-content upper-footer">
+            <p>India</p>
+        </div>
+        <div class="footer-content lower-footer">
+            <ul class="lower-left-footer">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Adverisement</a>
+                </li>
+                <li>
+                    <a href="">Business</a>
+                </li>
+                <li>
+                    <a href="">How Search Works</a>
+                </li>
+            </ul>
+            <ul class="lower-right-footer">
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+                <li>
+                    <a href="">Terms</a>
+                </li>
+                <li>
+                    <a href="">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!---Javascript code-->
+
+    <script defer>
+        const searchInput = document.querySelector("#search-input");
+
+searchInput.addEventListener("keydown", function(event) {
+    if(event.code === "Enter") {
+        search();
+    }
+});
+
+function search() {
+    const input = searchInput.value;
+
+    window.location.href = "https://www.google.com/search?q=" + input + "&rlz=1C5CHFA_enNZ948NZ948&oq=" + input + "&aqs=chrome.0.69i59l2j46i175i199i433j46i199i291i433j46j0i433j0j69i60.875j0j9&sourceid=chrome&ie=UTF-8"
+}
+    </script>
+</body>
+</html>
