@@ -1,0 +1,71 @@
+/*-----------------------------------*\
+  #animation.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @codewithsadee 
+ */
+
+
+
+
+
+.drop-anim { animation: drop 2.5s infinite; }
+
+@keyframes drop {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% { transform: translateY(0); }
+  40%  { transform: translateY(-30px); }
+  60%  { transform: translateY(-15px); }
+
+}
+
+.smooth-zigzag-anim-1 { animation: smooth-zigzag-1 5s linear infinite; }
+
+@keyframes smooth-zigzag-1 {
+
+  0%,
+  100% { transform: translate(0); }
+  25%  { transform: translate(10px, 10px); }
+  50%  { transform: translate( 5px,  5px); }
+  75%  { transform: translate(10px, -5px); }
+
+}
+
+.smooth-zigzag-anim-2 { animation: smooth-zigzag-2 5s linear infinite; }
+
+@keyframes smooth-zigzag-2 {
+
+  0%,
+  100% { transform: translate(0); }
+  25%  { transform: translate(-10px, -10px); }
+  50%  { transform: translate( -5px,  -5px); }
+  75%  { transform: translate(-10px,   5px); }
+
+}
+
+.smooth-zigzag-anim-3 { animation: smooth-zigzag-3 5s linear infinite; }
+
+@keyframes smooth-zigzag-3 {
+
+  0%,
+  100% { transform: translate(0); }
+  25%  { transform: translate( -7px,  -7px); }
+  50%  { transform: translate(-14px, -14px); }
+  75%  { transform: translate( -7px,  -7px); }
+
+}
+
+.pulse-anim { animation: pulse 3s linear infinite; }
+
+@keyframes pulse {
+
+  0%,
+  70%  { box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 1); }
+  100% { box-shadow: 0 0 0 15px transparent; }
+
+}

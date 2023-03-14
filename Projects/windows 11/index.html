@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.png" sizes="152x152">
+</head>
+
+<body>
+
+    <video autoplay muted id="myVideo">
+        <source src="img/video.webm" type="video/webm">
+    </video>
+
+
+    <div class="icons">
+        <img src="img/icons/chromeicon.png" alt="">
+        <div>Google Chrome</div>
+    </div>
+
+    <div class="icons">
+        <img src="img/icons/edgeicon.png" alt="" style="width: 44px;">
+        <div>Microsoft Edge</div>
+    </div>
+
+    <div class="icons">
+        <img src="img/icons/recyclebinicon.png" alt="" style="width: 44px;">
+        <div>Recycle Bin</div>
+    </div>
+
+    
+    <div class="icons">
+        <img src="img/icons/Computer.png" alt="" style="width: 44px;">
+        <div>This PC</div>
+    </div>
+
+    <div class="icons">
+        <img src="img/icons/vscode.png" alt="" style="width: 44px;">
+        <div>Visual Studio Code</div>
+    </div>
+    
+    <div class="icons">
+        <img src="img/icons/calender.png" alt="" style="width: 44px;">
+        <div>Calender</div>
+    </div>
+
+    <div class="icons">
+        <img src="img/icons/yourPhone.png" alt="" style="width: 44px;">
+        <div>My Phone</div>
+    </div>
+
+    <div class="icons">
+        <img src="img/icons/firefox-png.png" alt="" style="width: 44px;">
+        <div>Firefox</div>
+    </div>
+
+
+    <div class="taskbar">
+        <div class="weather">
+            <img src="img/icons/cloudyDay.svg" alt="" class="icon">
+            <div class="info">
+                <p>20°C</p>
+                <p>Haze</p>
+            </div>
+        </div>
+
+        <img id="Menu" src="img/icons/startButton.png" alt="Start Menu">
+        <img id="SearchIcon" src="img/icons/search-icon.svg" alt="Search">
+        <img id="TaskView" src="img\icons\taskView.svg" alt="TaskView">
+        <img id="Widgets" src="img\icons\widgets.svg" alt="Widgets">
+
+        <div class="rightTaskbar">
+            <img src="img\icons\up.svg" alt="" onclick="Fullscreen()" title="CLICK HERE FOR FULL SCREEN">
+            <img src="img\icons\keyboard.svg" alt="">
+
+            <div class="action-center-button" onclick="document.getElementById('acCheck').click()">
+                <img src="img\icons\wifi.svg" alt="">
+                <img src="img\icons\speaker.svg" alt="">
+                <img src="img\icons\batteryFull.svg" alt="">
+            </div>
+
+            <div class="time" id="DateTime">
+                <div id="timedate">
+                    <a id="h">12</a>:<a id="m">00</a>
+                    <!-- <a id="s">00</a>: -->
+                    <a id="mi">000</a>
+                    <br />
+                    <a id="d">01</a>/<a id="mon">1</a>/<a id="y">0</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="startMenuPlace">
+        <!-- <div class="startmenu" style="bottom: 50px; transform: translateX(0px);"> -->
+        <div class="startmenu">
+            <div class="search">
+                <div class="SearchIcon"></div>
+                <input type="text" class="SearchInput" id="myInput" onkeyup="myFunction()"
+                    placeholder="Search for names.." title="Search for your Favorite Application">
+            </div>
+            <div class="pinned">
+
+                <div class="start-top-elements">
+                    <span>Pinned</span>
+                    <button class="openAll" id="allapps">All apps <img src="img/icons/right.svg" alt="open all apps"
+                            class="smallRight"></button>
+                </div>
+
+                <div class="start-icons" id="myICONS">
+
+                    <figure id="startWord">
+                        <img src="img/icons/word.svg" alt="MS Word icon">
+                        <figcaption>Word</figcaption>
+                    </figure>
+                    <figure id="startEdge">
+                        <img src="img/icons/edge.svg" alt="Windows 11 Edge icon">
+                        <figcaption>Edge</figcaption>
+                    </figure>
+                    <figure id="startPowerPoint">
+                        <img src="img/icons/powerPoint.svg" alt="PowerPoint icon">
+                        <figcaption>PowerPoint</figcaption>
+                    </figure>
+                    <figure id="startExcel" onclick="executeProgram('excel')">
+                        <img src="img/icons/excel.svg" alt="MS Excel icon">
+                        <figcaption>Excel</figcaption>
+                    </figure>
+                    <figure id="startMail">
+                        <img src="img/icons/mail.svg" alt="Windows Mail icon">
+                        <figcaption>Mail</figcaption>
+                    </figure>
+                    <figure id="startStore">
+                        <img src="img/icons/store.png" alt="Windows 11 Microsoft Store icon">
+                        <figcaption>MS Store</figcaption>
+                    </figure>
+                    <figure id="startPhotos">
+                        <img src="img/icons/photos.svg" alt="Windows Photos icon">
+                        <figcaption>Photos</figcaption>
+                    </figure>
+                    <figure id="startCalendar">
+                        <img src="img/icons/calender.svg" alt="Windows Calender icon">
+                        <figcaption>Calender</figcaption>
+                    </figure>
+                    <figure id="startOneNote">
+                        <img src="img/icons/oneNote.svg" alt="OneNote icon">
+                        <figcaption>OneNote</figcaption>
+                    </figure>
+                    <figure id="startYourPhone">
+                        <img src="img/icons/yourPhone.svg" alt="Windows Your Phone icon">
+                        <figcaption>Your Phone</figcaption>
+                    </figure>
+                    <figure id="startClock">
+                        <img src="img/icons/clock.svg" alt="Windows Clock icon">
+                        <figcaption>Clock</figcaption>
+                    </figure>
+                    <figure id="startLinkedIn">
+                        <img src="img/icons/linkedIn.svg" alt="LinkedIn icon">
+                        <figcaption>LinkedIn</figcaption>
+                    </figure>
+                    <figure id="startToDo">
+                        <img src="img/icons/toDo.svg" alt="Microsoft To DO icon">
+                        <figcaption>To Do</figcaption>
+                    </figure>
+                    <figure id="startSettings" onclick="executeProgram('settings')">
+                        <img src="img/icons/settings.svg" alt="Windows 11 Settings icon">
+                        <figcaption>Settings</figcaption>
+                    </figure>
+                    <figure id="startCalci">
+                        <img src="img/icons/calculator.svg" alt="Windows Calculator icon">
+                        <figcaption>Calculator</figcaption>
+                    </figure>
+                    <figure id="startWhiteboard">
+                        <img src="img/icons/whiteboard.png" alt="Windows Whiteboard icon">
+                        <figcaption>Whiteboard</figcaption>
+                    </figure>
+                    <figure id="startSnip">
+                        <img src="img/icons/snipSketch.svg" alt="Windows Snipping Tool icon">
+                        <figcaption>Snipping Tool</figcaption>
+                    </figure>
+                    <figure id="startMovies">
+                        <img src="img/icons/movies.svg" alt="Windows Movies &amp; TV icon">
+                        <figcaption>Movies &amp; TV</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="recommended">
+                <div class="start-top-elements">
+                    <span>Recommended</span>
+                    <button class="openAll" id="allapps">More <img src="img/icons/right.svg" alt="open all apps"
+                            class="smallRight"></button>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="user">
+                    <img src="img/icons/user.png" alt="Windows 11 User icon">
+                    <span>Alisha Bharti</span>
+                </div>
+                <img src="img/icons/shutdown.svg" alt="Windows 11 Shutdown icon" id="shutdown">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="searchmenu">
+        <div class="search">
+            <div class="SearchIcon"></div>
+            <input type="text" class="SearchInput" id="myInput1" onkeyup="myFunction1()"
+                placeholder="Search for names.." title="Search for your Favorite Application">
+        </div>
+        <div class="pinned">
+
+            <div class="search-top-elements">
+                <span style="font-weight: 700;">All</span>
+                <span>Apps</span>
+                <span>Documents</span>
+                <span>Web</span>
+                <span>More<img src="img\icons\down.svg" alt="open all apps" class="moreSearch"></span></button>
+            </div>
+            <div class="topApps">
+                <span>Top Apps</span>
+                <div class="Search-Apps-Icons" id="myICONS1">
+                    <figure id="DefaultDisplaySearch">
+                        <img src="img/icons/edge.svg" alt="Windows 11 Edge icon">
+                        <figcaption>Edge</figcaption>
+                    </figure>
+
+                    <figure id="DefaultDisplaySearch">
+                        <img src="img/icons/calculator.svg" alt="Windows Calculator icon">
+                        <figcaption>Calculator</figcaption>
+                    </figure>
+
+                    <figure id="DefaultDisplaySearch">
+                        <img src="img/icons/word.svg" alt="MS Word icon">
+                        <figcaption>Word</figcaption>
+                    </figure>
+
+                    <figure id="DefaultDisplaySearch" onclick="executeProgram('settings')">
+                        <img src="img/icons/settings.svg" alt="Windows 11 Settings icon">
+                        <figcaption>Settings</figcaption>
+                    </figure>
+
+                    <figure id="DefaultDisplaySearch">
+                        <img src="img/icons/powerPoint.svg" alt="PowerPoint icon">
+                        <figcaption>PowerPoint</figcaption>
+                    </figure>
+
+                    <figure id="startExcel" onclick="executeProgram('excel')">
+                        <img src="img/icons/excel.svg" alt="MS Excel icon">
+                        <figcaption>Excel</figcaption>
+                    </figure>
+                    <figure id="startMail">
+                        <img src="img/icons/mail.svg" alt="Windows Mail icon">
+                        <figcaption>Mail</figcaption>
+                    </figure>
+                    <figure id="startStore">
+                        <img src="img/icons/store.png" alt="Windows 11 Microsoft Store icon">
+                        <figcaption>MS Store</figcaption>
+                    </figure>
+                    <figure id="startPhotos">
+                        <img src="img/icons/photos.svg" alt="Windows Photos icon">
+                        <figcaption>Photos</figcaption>
+                    </figure>
+                    <figure id="startCalendar">
+                        <img src="img/icons/calender.svg" alt="Windows Calender icon">
+                        <figcaption>Calender</figcaption>
+                    </figure>
+                    <figure id="startOneNote">
+                        <img src="img/icons/oneNote.svg" alt="OneNote icon">
+                        <figcaption>OneNote</figcaption>
+                    </figure>
+                    <figure id="startYourPhone">
+                        <img src="img/icons/yourPhone.svg" alt="Windows Your Phone icon">
+                        <figcaption>Your Phone</figcaption>
+                    </figure>
+                    <figure id="startClock">
+                        <img src="img/icons/clock.svg" alt="Windows Clock icon">
+                        <figcaption>Clock</figcaption>
+                    </figure>
+                    <figure id="startLinkedIn">
+                        <img src="img/icons/linkedIn.svg" alt="LinkedIn icon">
+                        <figcaption>LinkedIn</figcaption>
+                    </figure>
+                    <figure id="startToDo">
+                        <img src="img/icons/toDo.svg" alt="Microsoft To DO icon">
+                        <figcaption>To Do</figcaption>
+                    </figure>
+                    <figure id="startWhiteboard">
+                        <img src="img/icons/whiteboard.png" alt="Windows Whiteboard icon">
+                        <figcaption>Whiteboard</figcaption>
+                    </figure>
+                    <figure id="startSnip">
+                        <img src="img/icons/snipSketch.svg" alt="Windows Snipping Tool icon">
+                        <figcaption>Snipping Tool</figcaption>
+                    </figure>
+                    <figure id="startMovies">
+                        <img src="img/icons/movies.svg" alt="Windows Movies &amp; TV icon">
+                        <figcaption>Movies &amp; TV</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="recentSearches">
+                <span>Recent</span>
+                <div class="Recent-Apps-Icons">
+                    <figure id="Recent-Searches">
+                        <img src="img\icons\clock.svg" alt="Clock icon">
+                        <figcaption>Clock</figcaption>
+                    </figure>
+                    <figure id="Recent-Searches" onclick="executeProgram('settings')">
+                        <img src="img/icons/settings.svg" alt="Windows 11 Settings icon">
+                        <figcaption>Settings</figcaption>
+                    </figure>
+                    <figure id="Recent-Searches">
+                        <img src="img\icons\yourPhone.svg" alt="Your Phone icon">
+                        <figcaption>Your Phone</figcaption>
+                    </figure>
+
+                    <figure id="Recent-Searches">
+                        <img src="img\icons\vscode.svg" alt="VS Code icon">
+                        <figcaption>VS Code</figcaption>
+                    </figure>
+
+
+
+                    <figure id="Recent-Searches">
+                        <img src="img\icons\terminal.svg" alt="Terminal icon">
+                        <figcaption>Terminal</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="widgetMenu" style="left: 0px;"> -->
+    <div class="widgetMenu">
+        <div class="time">
+            <div class="timedate_Of_Widgets">
+                <a class="hours">00</a>:
+                <a class="minutes">00 </a>&nbsp;
+                <a class="am_pm">AM </a>
+            </div>
+        </div>
+
+        <div class="WidgetsPlace">
+
+            <div class="AllWidget Wheather">
+                <div class="topMenuWidget">
+                    <div>
+                        <img src="img/icons/cloudyDay.svg" alt="">
+                        <span class="MainApp">Wheather</span>
+                    </div>
+
+                    <img src="img\icons\more-info.png" class="moreInfo"></img>
+                </div>
+
+                <div class="MainContentWindow">
+                    <img src="img\icons\sun-icon.png" alt="">
+
+                    <div class="leftPart">
+                        <div class="Part1">
+                            <img src="img\icons\home.png" alt="">
+                            <p>Chandigarh,India</p>
+
+                        </div>
+                        <div class="Part2">
+                            <span>20°C</span>
+                            <p>Strong Haze Today</p>
+                        </div>
+                        <div class="Part3">
+                            See Full Forecast
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="AllWidget MicrosoftEdge">
+                <div class="topMenuWidget">
+                    <div>
+                        <img src="img\icons\edge.svg" alt="">
+                        <span class="MainApp">Microsoft Edge</span>
+                    </div>
+
+                    <img src="img\icons\more-info.png" class="moreInfo"></img>
+                </div>
+
+                <div class="MainContentWindow">
+                    <div class="search">
+                        <div class="SearchIcon"></div>
+                        <input type="text" class="SearchInput" id="myInput1" onkeyup="" placeholder="Search on Web.."
+                            title="Search on Web">
+                    </div>
+                    <p>
+                        <img src="img\icons\location-pin.png" alt=""> Chandigarh,India
+                    </p>
+                </div>
+            </div>
+            <div class="AllWidget MicrosoftOneDrive">
+                <div class="topMenuWidget">
+                    <div>
+                        <img src="img\icons\icons8-microsoft-onedrive-2019.svg" alt="">
+                        <span class="MainApp">Photos</span>
+                    </div>
+                    <img src="img\icons\more-info.png" class="moreInfo"></img>
+                </div>
+
+                <div class="heading">On this Day</div>
+                <div class="subHeading">
+                    <span>Feb 01</span>
+                    <p>See all</p>
+                </div>
+
+                <div class="Images">
+                    <img src="https://308286-943399-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2022/03/stylish-standard-whatsapp-dp-for-boys.png"
+                        alt="" style="border-radius: 0 0 0 8px;">
+
+
+                    <div>
+                        <span>
+                            <img src="https://c4.wallpaperflare.com/wallpaper/757/370/472/heavy-bike-harley-davidson-harley-davidson-modified-wallpaper-preview.jpg"
+                                alt="">
+                            <img src="https://wallpaperaccess.com/full/124378.jpg" alt=""
+                                style="border-radius: 0 0 8px 0;">
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="AllWidget MicrosoftToDo"></div>
+        </div>
+    </div>
+
+    <!-- Date Time Menu -->
+    <div class="container-date-time" id="DateTimeMenu">
+        <div class="notification">
+            <h1>Notifications</h1>
+        </div>
+        <div class="week-month-date"></div>
+        <div class="calendar">
+            <div class="month">
+                <div class="date">
+                    <h1></h1>
+                    <div class="prev-next">
+                        <i class="fas fa-angle-left prev"><b>&#60;</b></i>
+                        <i class="fas fa-angle-right next"><b>&#62;</b></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="weekdays">
+                <div>Su</div>
+                <div>Mo</div>
+                <div>Tue</div>
+                <div>We</div>
+                <div>Th</div>
+                <div>Fr</div>
+                <div>Sa</div>
+            </div>
+            <div class="days"></div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,197 +9,106 @@
     <meta name="author" content="Tushar Kesarwani" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-End Projects | Home Page</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Main CSS-->
     <link rel="stylesheet" href="style.css">
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-    <!--google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!--Animate.css--->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/png" />
 </head>
+
 <body onload="myfunction()">
     <div id="load"></div>
-    <nav class="navbar navbar-expand-lg position-fixed w-100 d-flexbox" style="z-index: 1000">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                <a href="index.html"><img src="img/LOGO.png" class="logo" alt="app-logo" style="width:3vw; height:5vh;" /></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
-                    <li class="nav-item me-2">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item me-2">
-                        <a class="nav-link text-white" aria-current="page" href="#footer">Connect with Author</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Navigation Section -->
+    <nav>
+        <div>
+            <a href="index.html"><img src="img/LOGO.png" alt="logo"></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/TusharKesarwani/Front-End-Projects" class="github-btn"><i class="fa-brands fa-github"></i> &nbsp; Goto GitHub Repository</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section id="projects" class="team">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="heading"><h1 class="head text-center" style="color:black;">Front-End Projects</h1></div>
-        <div class="text-center d-flex justify-content-center">
-            <hr class="bg-dark" style="width:40vh;">
-        </div>
+    <!-- Body Section -->
+    <main>
 
-        <div class="container" id="team">
-            <div class="row justify-content-center" class="team-grp">
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/projects/product launching website.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>First Project</h4>
-                            <span>Product Launching Website</span>
-                            <div class="social">
-                                <a href="https://frontendprojects.netlify.app/projects/product%20launching%20website/" target="_blank">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                <a href="https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Product%20Launching%20Website" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/projects/calculator.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Second Project</h4>
-                            <span>Calculator</span>
-                            <div class="social">
-                                <a href="https://frontendprojects.netlify.app/projects/calculator/" target="_blank">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                <a href="https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Calculator" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/projects/tindog_website1.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Third Project</h4>
-                            <span>Tindog website</span>
-                            <div class="social">
-                                <a href="#" target="_blank">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/coming_soon.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Fourth Project</h4>
-                            <span>Sample Name</span>
-                            <div class="social">
-                                <a href="#" target="_blank">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/coming_soon.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Fifth Project</h4>
-                            <span>Sample Name</span>
-                            <div class="social">
-                                <a href="#" target="_blank">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/coming_soon.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Sixth Project</h4>
-                            <span>Sample Name</span>
-                            <div class="social">
-                                <a href="#" target="_blank">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+        <!-- Hero -->
+        <div class="left">
+            <div class="headings">
+                <h1>Front End<br>Projects</h1>
+                <p>A Repository where different types of Front - End Projects are present. If you have any front end project then you can contribute to this open source repository.</p>
             </div>
+            <a href="https://github.com/TusharKesarwani/Front-End-Projects" class="github-btn-cta"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;Contribute Now&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
         </div>
+        <div class="right">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-4788760-3988051.png" alt="front-end coder">
+        </div>
+    </main>
+
+    <!-- Projects Section -->
+
+    <section class="project-section" id="projects">
+        <div class="project-header">
+            <div class="head">
+                <h1 class="bg-title">PROJECTS</h1>
+                <h1 class="title">Projects</h1>
+            </div>
+            <form id="searchForm">
+                <input id ="search" type="text" placeholder="Enter projects to search" />
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="projects"></div>
+    </section>
+
+    <!-- Contributors list -->
+
+    <section class="contributors">
+        <div class="head">
+            <h1 class="bg-title">CONTRIBUTORS</h1>
+            <h1 class="title">Contributors</h1>
+        </div>
+        <ul class="list-section">
+            <li id="contributors-list"></li>
+        </ul>
 
     </section>
 
+
     <footer id="footer">
-        <div class="text-center mt-2">&copy; Copyright 
-            <a href="#" target="_blank" class="text-decoration-none">
-                <strong class="text-dark">Front-End Projects</strong>
+        <div>
+            &copy; Copyright
+            <a href="#" target="_blank">
+                <strong>Front-End Projects</strong>
             </a>. All rights reserved.
         </div>
-        <div class="text-center mb-2">Designed with 
-            <i class="fa-solid fa-heart"></i>
-            by 
-            <a href="https://linktr.ee/tushar_104/" target="_blank" class="text-decoration-none">
-                <strong class="text-dark">Tushar Kesarwani</strong>
-            </a>
+        <div>Designed with
+            <i class="fa-solid fa-heart"></i> by
+            <strong class="text-dark"><a href="https://linktr.ee/tushar_104/" target="_blank">Tushar</a></strong>
         </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/d6de929348.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d6de929348.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="script.js"></script>
     <script>
         var preloader = document.getElementById('load');
-        function myfunction(){
-            preloader.style.display='none';
+
+        function myfunction() {
+            preloader.style.display = 'none';
         }
     </script>
-
 </body>
+
 </html>

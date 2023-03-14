@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html {
+  font-family: "Nunito";
+  font-size: 12px;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: rgb(26, 26, 27);
+}
+
+.container {
+  width: 100%;
+  height: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .brand {
+  font-family: 'Potta One', cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  display: flex;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: rgb(223, 223, 223);
+  display: inline-block;
+}
+
+.search-result {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(61, 61, 61, 0.479);
+  padding: 15px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-result .title {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(248, 54, 174);
+  margin: 20px 10px 20px 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.view-btn {
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+  padding: 10px 5px;
+  background-color: #464646cb;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 4px;
+  align-self: flex-start;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-btn:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.295);
+}
+
+.item-data {
+  color: whitesmoke;
+  display: block;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+
+.container.initial .brand {
+  font-size: 7rem;
+}
+
+.container.initial form {
+  max-width: 800px;
+}
+
+.container.initial form input {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .search-result {
+    grid-gap: 20px;
+  }
+  .container.initial .brand {
+    font-size: 4rem;
+  }
+  .container.initial form {
+    max-width: 500px;
+  }
+  .container.initial form input {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: url(./images/img1.png);
+  text-align: center;
+}
+.heading{
+    color: #fff;
+    text-shadow: 2px 3px 23px;
+    margin-top: 5%;
+}
+
+h3{
+color: white;
+}
+#game {
+  display: inline-block;
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 25px;
+  margin-top: 5%;
+  background-color: rgb(10, 59, 35);
+  opacity: 0.8;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color:green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #129c4c;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+#result-text {
+  color: white;
+  text-shadow: 2px 3px 23px;
+}
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="./manifest.json">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+    <title>Laplace</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <style>
+        @import url(./variable.css);
+
+        * {
+            font-family: "Jost", sans-serif;
+            background-color: #d5f1f5;
+        }
+        
+        .form__field {
+            font-family: "Jost", sans-serif;
+            font-size: 1.2rem !important;
+            letter-spacing: 0.125rem;
+            width: 62%;
+            border: 0;
+            box-shadow: 0 0 10px black;
+            outline: 0;
+            color: black;
+            background-color: var(--appblack);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: #d5f1f5;
+            color: hsl(229, 84%, 12%);
+            border: 2px solid hsl(229, 84%, 12%);
+            width: 9%;
+            height: 6%;
+            border-radius: 28px;
+            font-size: 21px;
+            font-family: "Jost", sans-serif;
+            color: hsl(229, 84%, 12%);
+        }
+
+        .btn:hover {
+            background-color: hsl(229, 84%, 12%);
+            color: white;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        h4,
+        h5 {
+            text-align: center;
+            font-size: 21px;
+            font-weight: var(--fw-8);
+            color: var(--oxford-blue);
+            line-height: 1.3;
+        }
+        .text-center{
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            font-weight: 800;
+            color: hsl(229, 84%, 12%);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="laplacecollapse">
+        <div class="form-group">
+            <div class="text-center"><label>Laplace Transform</label></div>
+            <p class="text-center">
+                \[F(s)=\mathcal{L}\{f(t)\}=\int_{0}^{\infty}e^{-st} f(t).dt\]
+            </p>
+    
+            <div style="display: inline-block;" class="form-group">
+                <label for="inputlaplace">\[f(t)=\]</label>
+            </div>
+            <div style="display: inline-block;" class="form-group">
+                <input type="text" id="inputlaplace" placeholder="Enter Function" class="form__field"
+                    oninput="dlap()">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-light"
+                    onclick="plotit('inputlaplace','laplaceplot',slap())">
+                    Solve
+                </button>
+                <button type="button" class="btn btn-light" onclick="calcexsolvelaplace()">
+                    Example
+                </button>
+                <button type="button" id="solvelaplaceid" class="btn btn-outline-light"
+                    onclick="solvelaplace()">
+                    Show Steps
+                </button>
+            </div>
+            <div class="form-group">
+                <p id="resultlaplace"></p>
+            </div>
+            <div class="form-group">
+                <p id="laplaceplot"></p>
+            </div>
+        </div>
+    
+        <div class="dropdown-divider"></div>
+        <div class="form-group">
+            <div class="text-center"><label>Inverse Laplace Transform</label></div>
+            <p class="text-center">\[\mathcal{L}^{−1}(F(s))\]</p>
+    
+            <div style="display: inline-block;" class="form-group">
+                <label for="inputinverselaplace">\[F(s)=\]</label>
+            </div>
+            <div style="display: inline-block;" class="form-group">
+                <input type="text" id="inputinverselaplace" placeholder="Enter Function" class="form__field"
+                    oninput="dinvlap()">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-light"
+                    onclick="plotit('inputinverselaplace','inverselaplaceplot',sinvlap());">
+                    Solve
+                </button>
+                <button type="button" class="btn btn-light" onclick="calcexsolveinverselaplace()">
+                    Example
+                </button>
+                <button type="button" id="solveinverselaplaceid" class="btn btn-outline-light"
+                    onclick="solveinverselaplace()">Show Steps
+                </button>
+            </div>
+            <div class="form-group">
+                <p id="resultinverselaplace"></p>
+            </div>
+            <div class="form-group">
+                <p id="inverselaplaceplot"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/LogicJavascript.js"></script>
+</body>
+</html>

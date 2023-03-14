@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <p id="logo"><i class="fa fa-music"></i>Music</p>
+        <!--- left part --->
+        <div class="left">
+           <!--- song img --->
+           <img id="track_image">
+           <div class="volume">
+              <!-- <p id="show_no">90</p> -->
+              <i class="fa-solid fa-volume-high " id="vol_icon" onclick="mute_sound()" id="vol_icon"></i>
+              <input type="range" min="0" max="100" value="90" onchange="vol_change()" id="volume">
+           </div>
+        </div>
+        <!--- right part --->
+        <div class="right">
+           <div class="show_song_no">
+              <p id="present">1</p>
+              <p>/</p>
+              <p id="total">5</p>
+           </div>
+           <!--- song title & artist name --->
+           <p id="title">title.mp3</p>
+           <p id="artist">Artist name</p>
+           <!--- middle part --->
+           <div class="middle">
+              <button onclick="previous_song()" id="pre"><i class="fa-solid fa-backward-step"></i></button>
+              <button onclick="justplay()" id="play"><i class="fa-regular fa-circle-play"></i></button>
+              <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+           </div>
+           <!--- song duration part --->
+           <div class="duration">
+              <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+           </div>
+           <!-- <div class="progress" id="prog">
+            <div class="progress-meter">
+                <div id="current-time">0:00</div>
+                <div id="duration">2:44</div>
+            </div>
+            <div class="progress_div" id="progress_div">
+                <div class="progress1"></div>
+            </div>
+           </div> -->
+
+           <button id="auto" onclick="autoplay_btn()">Auto play  <i class="fa-solid fa-circle-notch"></i></button>
+        </div>
+     </div>
+     <!--- Add javascript file --->
+     <script src="script.js"></script>
+</body>
+
+</html>

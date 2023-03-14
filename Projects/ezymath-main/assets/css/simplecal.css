@@ -1,0 +1,116 @@
+:root {
+    --bl: rgb(58, 57, 56);
+}
+
+.calbody {
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bl);
+}
+
+.calinput {
+    width: 100%;
+    background-color: var(--bl);
+    color: whitesmoke;
+    outline: none;
+    padding-right: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align: right;
+    font-size: 2rem;
+    height: 5.2rem;
+    border: none;
+}
+
+.calsol {
+    background-color: var(--bl);
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-right: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align: right;
+    font-size: 1.5rem;
+    height: 4rem;
+}
+
+.calbtn {          
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .calbtn{
+        line-height: 70px;
+    }
+}
+.calbtn:active {
+    font-size: 1.3rem;
+}
+
+.caloptions {
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bl);
+}
+
+.calupper {
+    border-bottom-left-radius: 30px;
+    color:var(--bl) !important;
+    background-color: pink;
+    border-bottom: 1px solid var(--bl);
+}
+
+.calbottom {
+    border-bottom-left-radius: 30px;
+    color:var(--bl) !important;
+    background-color: pink;
+    border-bottom: 1px solid var(--bl);
+}
+
+.color-common {
+    color:var(--bl) !important;
+    background-color: pink;
+}
+
+.calnum {
+    color:whitesmoke;
+    background-color: var(--bl);
+}
+
+.topbarparent {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.topbar {
+    color: whitesmoke;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.readonlybody {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    touch-action: auto;    
+}
