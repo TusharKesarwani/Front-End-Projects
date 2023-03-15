@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pizza "BigBoss" Pancho
+* source:	https://sketchfab.com/3d-models/pizza-bigboss-pancho-29832125251a44939fae1a21a3288f88
+* author:	ponomarovmax (https://sketchfab.com/ponomarovmax)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pizza "BigBoss" Pancho" (https://sketchfab.com/3d-models/pizza-bigboss-pancho-29832125251a44939fae1a21a3288f88) by ponomarovmax (https://sketchfab.com/ponomarovmax) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
