@@ -1,0 +1,146 @@
+/*General Properties*/
+.font-25{
+    font-size: 25px;
+}
+.blue-color{
+    color: rgb(10,35,72);
+}
+.blue-background{
+    background-color: rgb(10,35,72);
+}
+.green-background{
+    background-color: rgb(204,225,106);
+}
+.border-radius{
+    border-radius : 30px ;
+}
+.white-background{
+    background-color: white;
+}
+
+
+
+
+/*Body*/
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+    max-width : 100vw ;
+    height : 100vh ;
+    overflow-x: hidden;
+}
+.outer-container{
+    height : 100% ; 
+    width: 100% ;
+}
+.hamburger-icon{
+    position: absolute;
+    top : 20px ; 
+    right : 10px ;
+    z-index: 2;
+}
+
+/*Nav section*/
+.fa-location-dot{
+    font-size: 30px;
+}
+.search-box-container{
+    width : 250px ;
+}
+
+input{
+    height : 50px ;
+    width : 250px ;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+    text-decoration: none;
+}
+.search-icon{
+    font-size: 25px;
+    position: absolute;
+    top : 10px ;
+    right : 10px
+}
+
+/*Current Temperature Section*/
+.current-temperature , .current-other-details{
+    background-image: linear-gradient(to bottom right , rgba(165, 229, 230,0.5) , rgba(204,225,106 ,0.5));
+}
+
+.weather-icon{
+    font-size: 40px;
+}
+
+.temperature-celcius{
+    font-size : 40px ;
+}
+
+.celcius{
+    position: absolute;
+    top : 10px ;
+}
+
+/*Full Day Update Section*/
+.full-day-scroll{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to top right , rgba(98, 205, 255,0.8) ,rgba(151, 222, 255 ,0.8));
+}
+.full-day-scroll::-webkit-scrollbar { 
+    display: none;
+}
+
+
+/*Aside section*/
+aside{
+    background-color: rgba(220, 220, 220 , 0.3);
+    position: fixed;
+    top: 0; 
+    right: 0;
+}
+
+.aside-inner{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+.aside-inner::-webkit-scrollbar { 
+    display: none;
+}
+
+/*Responsiveness*/
+@media screen and (max-width : 770px) {
+    aside{
+        position: absolute;
+        display: none;
+    }    
+    .aside-inner{
+        height: auto;
+    }
+    .landscape-image{
+        height : 200px ;
+        width: auto;
+    }
+}
+@media screen and (min-width : 771px) {
+    .hamburger-icon{
+        display: none;
+    }
+    main , aside{
+        display: block !important;
+    }
+    
+}
+@media screen and (max-width : 400px) {
+    input , .search-box-container{
+        width : 200px ;
+    }   
+     
+}

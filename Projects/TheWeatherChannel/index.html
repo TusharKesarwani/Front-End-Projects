@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+    <script src="https://kit.fontawesome.com/f2a02c59db.js" crossorigin="anonymous"></script>
+    
+ 
+    <title>Weather Channel</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class = "container-fluid d-lg-flex  flex-lg-row outer-container">
+
+        <img src = "assets/hamburger.png" height = "50px" class = "hamburger-icon">
+
+        <main class = "col-12 col-md-8 col-lg-9  p-4 ">
+
+            <nav class = "d-flex flex-column-reverse flex-lg-row justify-content-between position-relative gap-3">
+
+                <div>
+                    <span class = "city font-25 blue-color"></span> <br>
+                    <i class="fa-solid fa-location-dot blue-color"></i>
+                    <span class = "country font-25 blue-color"></span>
+                </div>
+
+                <div class = "position-relative search-box-container" width = "300px">
+                    <input type = "text" placeholder="Search a city name....." class = "search-box bg-light px-2  justify-content-center"> 
+                    <i class="fa-solid fa-magnifying-glass search-icon position-absolute"></i>
+                </div>
+
+            </nav>
+          
+            <section class = "col-12 current-weather-updates py-4  d-flex flex-column flex-xl-row justify-content-around gap-4 ">
+
+                <div class = "col-xs-12 col-xl-6 current-temperature p-4  border-radius">
+
+                    <i class="fa-solid fa-cloud-sun weather-icon blue-color"></i>
+                    <div class = " d-inline-block">
+                        <span class = "fs-4 h1 blue-color">weather</span>
+                        <div class = "fs-5 blue-color">What's the weather ?</div>
+                    </div>
+                    <br><br>
+                    <div class = "position-relative ">
+
+                        <span class = "temperature-celcius blue-color"></span>
+                        <img src = "assets/celsius.png" height = "40px" class = "celcius">
+                        <div>
+                            <span class = "fs-4 temperature-condition blue-color"></span>
+                            <img src = "" class = "temperature-image" height = "60px">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class = "d-flex justify-content-between gap-1">
+
+                        <div class = "d-flex flex-column justify-content-center align-items-center fs-6 other-temperature-properties text-light blue-background col-4  border-radius p-2">
+                            Pressure
+                            <span class = "fs-6 h1 pressure-value text-center"></span>
+                        </div>
+                        <div  class = "d-flex flex-column justify-content-center align-items-center fs-6 other-temperature-properties blue-color green-background col-4  border-radius p-2">
+                            Visibility
+                            <span class = "fs-6 h1 visibility-value text-center"></span>
+                        </div >
+                        <div  class = "d-flex flex-column justify-content-center align-items-center  other-temperature-properties blue-color bg-light col-4  border-radius p-2 text-center fs-6">
+                            Humidity
+                            <span class = "fs-6 h1 humidity-value"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class = "col-xs-12 col-xl-6 current-other-details p-4 d-flex flex-column gap-4  border-radius">
+
+                    <div class = "sunrise-sunset d-flex flex-column  px-4 blue-background  border-radius">
+                        <span class = "fs-4 text-light">Sunrise & Sunset</span><br>
+                        <div class = "d-flex justify-content-between">
+                            
+                            <div class = "col-5 d-flex">
+                                <img src = "assets/sunrise.png" height = "50px">
+                                <div class = " fs-6 text-light">
+                                    Sunrise<br>
+                                    <span class = "sunrise-time fs-6 h1"></span>
+                                </div>
+                            </div>
+                            <div  class =  "col-5 d-flex gap-2">
+                                <img src = "assets/sunset.png" height = "30px" width = "30px" >
+                                <div class = " fs-6 text-light">
+                                    Sunset<br>
+                                    <span class = "sunset-time fs-6 h1"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "uv-details py-2 px-4 blue-background  border-radius">
+                        <img src = "assets/sun.png" height = "80px">
+
+                        <div class = "d-inline-block fs-5 h1 text-light">
+                            <span class = "uvi-value"></span>
+                            <span>UVI</span>
+                        </div>
+                        <div class = "uvi-description fs-6 h1 text-light py-2">High risk from UV rays</div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class = "full-day-details py-5">
+                <div class = "fs-2 h1 blue-color">
+                    <span>How's the </span><br>
+                    <span>temperature today at ?</span>
+                </div>
+
+                <div class = "col-12 full-day-scroll d-flex flex-column py-3 px-2 gap-2  border-radius">
+                    <div class = "scroll-row1 d-flex gap-4 blue-color"></div>
+                    <div class = "scroll-row2 d-flex gap-4 blue-color"></div>
+                </div>         
+            </section>
+
+        </main>
+
+        <aside class = "col-12 col-md-4 col-lg-3 ">
+
+            <div class = "aside-inner p-3 d-flex flex-column gap-5">
+
+                <div>
+                    <div class = "clock fs-1 h1 blue-color"></div>
+                    <div class = "date fs-6 blue-color"></div>
+                </div>
+
+                <div class = "text-center">
+                    <img class = "col-12 border-radius landscape-image" src = "assets/landscape.jfif">
+                </div>
+
+                <div class = "h1 text-center blue-color"><span class = "fs-3 ">Get ready for the weather ahead!<br/></span></div>
+
+                <div class = "d-flex flex-column  gap-2 forecast-each-day">                
+
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src = "script.js"></script>
+    
+</body>
+</html>
