@@ -281,6 +281,23 @@ main .left p {
     border: 2px solid #F2B705;
 }
 
+.aboutus {
+    margin: -2.5rem 8rem 4rem 8rem;
+}
+.aboutus-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.aboutus-content  {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #0D4360;
+    border-radius: .5rem;
+    color: #fff;
+}
+
+
 footer {
     background-color: #0D4360;
     padding: 2rem 8rem;
