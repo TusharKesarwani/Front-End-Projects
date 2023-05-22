@@ -38,6 +38,12 @@
 
 <div align="center">
 
+![SSOC 2.0](https://raw.githubusercontent.com/TusharKesarwani/Front-End-Projects/main/img/SSOC.png)
+
+</div>
+
+<div align="center">
+
 ![SWOC 3.0](https://raw.githubusercontent.com/TusharKesarwani/Front-End-Projects/main/img/9630b803-7d9b-4b19-ae68-cdbfc16c8254.png)
 
 </div>
