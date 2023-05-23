@@ -43,7 +43,7 @@ for (item of buttons) {
             break;
 
             case 'x':
-                inputValue += '*';
+                inputValue = eval(inputValue) + '*';
                 result.innerHTML += '*';
             break;
                 
