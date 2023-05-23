@@ -93,6 +93,25 @@ for (item of buttons) {
                 inputValue = result.innerHTML;
             break;
             
+            case '+':
+                inputValue = eval(inputValue) + '+';
+                result.innerHTML += '+';
+            
+            break;
+            
+            case '-':
+                inputValue = eval(inputValue) + '-';
+                result.innerHTML += '-';
+
+            break;
+
+
+            case '/':
+                inputValue = eval(inputValue) + '/';
+                result.innerHTML += '/';
+            
+            break;
+            
             default :
             inputValue += buttonInput;
             result.innerHTML += buttonInput;
