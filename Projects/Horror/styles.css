@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Mynerve&family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Shantell Sans', cursive;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+     }
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}     
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+     
+}
+.navigation a:hover,  .navigatiion a.active{
+    color: #333;
+}
+.navigation a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    z-index: -1;
+    transform: scale(0) ;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navigation a:hover span,.navigatiion a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.png') no-repeat;
+    background-size:cover ;
+    background-position: center;
+    background-attachment: fixed;
+}
+#text{
+    position:relative;
+    bottom: 100px;
+    font-size: 5em;
+    color: #1b283a;
+    text-shadow: 2px 4px 5px #f9f9f9;
+    font-family: 'Creepster', cursive;
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.parallax img#gate-left{
+    position:fixed;
+    transform: translateX(-290px);   
+}
+.parallax img#gate-right{
+    position:fixed;
+    transform: translateX(290px);   
+}
+.parallax img#grass{
+    transform: translateY(-110px);
+    
+}
+
+.sec
+{
+    position: relative;
+    background-color:#020912;
+    padding:30px 100px ;
+}
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+    word-spacing: 20px;
+
+}
+.sec p{
+        font-size: 1em;
+        color: #fff;
+        font-weight: 300;
+        text-align: justify;
+        line-height: 27px;
+}
