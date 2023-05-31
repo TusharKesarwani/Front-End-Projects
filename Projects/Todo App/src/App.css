@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  padding: 1%;
+}
+
+input {
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+table {
+  margin: 15px 30px;
+  border-collapse: collapse;
+  width: 98%;
+}
+
+td, th {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  font-size: 20px;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+.btn {
+  padding: 1% 2%;
+  margin: 0 2%;
+}
