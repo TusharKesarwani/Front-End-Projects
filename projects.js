@@ -34,10 +34,10 @@ const projects = [
     {
         "title":"Realtime Currency Converter",
         "tags":["HTML","CSS","JavaScript"],
-        "img":"img/CurrencyConverter.png",
+        "img":"img/projects/CurrencyConverter.png",
         "description":"This is a currency converter web application that fetches real-time data for currency conversion rates using HTML, CSS, and JavaScript. The application allows users to convert currencies by selecting the source currency and the target currency, and it provides an interface to easily switch between the two selected values.",
         "github-link":"https://github.com/Alkaison/Currency-Converter/",
-        "project-link":"Projects/Realtime Currency Converter/index.html"
+        "project-link":"Projects/Realtime%20Currency%20Converter/index.html"
     },
     {
         "title":"Coming Soon",
