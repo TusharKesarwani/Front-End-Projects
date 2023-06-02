@@ -1,127 +1,87 @@
-let input;
-let inputValue = '';
-let result;
-let buttons;
-let buttonInput;
-let memory = 0;
-let mainButtons;
-let digit = '';
-let ind;
-let subResult;
+let input = document.getElementById('input');
+let result = document.getElementById('result');
+let buttons = document.querySelectorAll('button');
+let inputValues = [];
 
-input = document.getElementById('input');
-result = document.getElementById('result');
-
-function getIndexOfSubStr(str, subStr, preIndex, output) {
-    let temp = str.match(subStr);
-    if(temp) {
-        output.push(temp.index + preIndex);
-        preIndex += temp.index + subStr.length;
-        str = str.substring(temp.index + subStr.length);
-        getIndexOfSubStr(str, subStr, preIndex, output);
-    }
-    return output;
-}
-
-buttons = document.querySelectorAll('button');
-for (item of buttons) {
+for (let item of buttons) {
     item.addEventListener('click', function(event) {
-        buttonInput = event.target.innerHTML;
+        let buttonInput = event.target.innerHTML;
         input.innerHTML = '';
         document.getElementById('memory').innerHTML = '';
-        console.log(buttonInput);
-        if(result.innerHTML == "Error") {
+
+        if (result.innerHTML == "Error") {
             result.innerHTML = '';
         }
-        
-        switch(buttonInput) {
 
+        switch (buttonInput) {
             case 'C':
-                inputValue = '';
+                inputValues = [];
                 input.innerHTML = '';
                 result.innerHTML = '';
-            break;
+                break;
 
-            case 'x':
-                inputValue += '*';
-                result.innerHTML += '*';
-            break;
-                
             case '=':
-                if(inputValue != '') {
-                    inputValue = eval(inputValue) + '';
-                    if(result.innerHTML != inputValue) {
-                        input.innerHTML = result.innerHTML + "=";
-                        result.innerHTML = eval(result.innerHTML) + '';
-                        inputValue = result.innerHTML;
-                    }
+                if (inputValues.length > 0) {
+                    let expression = inputValues.join('');
+                    let res = evaluateExpression(expression);
+                    input.innerHTML = expression + "=";
+                    result.innerHTML = res;
+                    inputValues = [res];
                 }
-            break;
+                break;
 
             case '\u232B':
-                inputValue = inputValue.substring(0, inputValue.length - 1);
-                result.innerHTML = result.innerHTML.substring(0, result.innerHTML.length - 1);
-            break;
+                if (inputValues.length > 0) {
+                    inputValues.pop();
+                    result.innerHTML = inputValues.join('');
+                }
+                break;
 
             case 'mc':
                 memory = 0;
-            break;
+                break;
 
             case 'm+':
-                memory += Number(eval(inputValue));
+                memory += Number(eval(inputValues.join('')));
                 document.getElementById('memory').innerHTML = 'm+';
-            break;
+                break;
 
             case 'm-':
-                memory -= Number(eval(inputValue));
+                memory -= Number(eval(inputValues.join('')));
                 document.getElementById('memory').innerHTML = 'm-';
-            break;
+                break;
 
             case 'mr':
                 result.innerHTML = memory;
                 document.getElementById('memory').innerHTML = 'mr';
-            break;
+                break;
 
-            case '%':
-                inputValue += '/(100)';
-                result.innerHTML += '/(100)';
-            break;
-
-            case '1/x':
-                input.innerHTML = '1/(' + result.innerHTML + ')=';
-                result.innerHTML = eval(1/eval(result.innerHTML));
-                inputValue = result.innerHTML;
-            break;
-            
-            default :
-            inputValue += buttonInput;
-            result.innerHTML += buttonInput;
+            default:
+                inputValues.push(getOperationSymbol(buttonInput));
+                result.innerHTML += buttonInput;
         }
 
-        if(result.innerHTML == "NaN") {
+        if (result.innerHTML == "NaN") {
             result.innerHTML = "Error";
         }
     });
 }
 
-mainScreen.addEventListener('click', function() {
-    mainScreen.style.color = "blue";
-    sideScreen.style.color = "black";
-    mainScreen.style.backgroundColor = "#d9d9d9c4";
-    sideScreen.style.backgroundColor = "#ffffff";
-    mainButtons = document.getElementsByClassName('main-buttons');
-    for (item of mainButtons) {
-        item.style.display = "table-cell";
+function evaluateExpression(expression) {
+    try {
+        return eval(expression);
+    } catch (error) {
+        return "Error";
     }
-});
+}
 
-sideScreen.addEventListener('click', function() {
-    mainScreen.style.color = "black";
-    sideScreen.style.color = "blue";
-    mainScreen.style.backgroundColor = "#ffffff";
-    sideScreen.style.backgroundColor = "#d9d9d9c4";
-    mainButtons = document.getElementsByClassName('main-buttons');
-    for (item of mainButtons) {
-        item.style.display = "none";
+function getOperationSymbol(buttonInput) {
+    switch (buttonInput) {
+        case 'x':
+            return '*';
+        case '÷':
+            return '/';
+        default:
+            return buttonInput;
     }
-});
+}
