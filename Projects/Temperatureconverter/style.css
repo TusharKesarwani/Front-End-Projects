@@ -29,11 +29,20 @@ h1{
 
 
 #cel{
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     font-weight: bold;
-    margin-right: 20%;
-    width: 120%;
+    margin-right: 30%;
+    width: 90%;
+    
+    
+}
+#fah{
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 30%;
+    width: 90%;
     
     
 }
