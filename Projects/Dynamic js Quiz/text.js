@@ -30,9 +30,13 @@
   var questionCounter = 0; // Tracks question number
   var selections = []; // Array containing user choices
   var quiz = $("#quiz"); // Quiz div object
+  var navigationPanel = $("#navigation-panel"); // Navigation panel div object
 
   // Display initial question
   displayNext();
+
+  // Generate navigation buttons
+  generateNavigationButtons();
 
   // Click handler for the 'next' button
   $('#next').on('click', function (e) {
@@ -46,6 +50,7 @@
 
   questionCounter++;
   displayNext();
+  updateNavigationPanel();
 });
 
   // Click handler for the 'prev' button
@@ -58,6 +63,7 @@
     choose();
     questionCounter--;
     displayNext();
+    updateNavigationPanel();
   });
 
   // Click handler for the 'Start Over' button
@@ -70,7 +76,22 @@
     questionCounter = 0;
     selections = [];
     displayNext();
+    updateNavigationPanel();
     $("#start").hide();
+    navigationPanel.show(); // Show the navigation panel when starting over
+  });
+
+  // Click handler for the navigation buttons
+  navigationPanel.on("click", ".navigation-button", function(e) {
+    e.preventDefault();
+
+    if (quiz.is(":animated")) {
+      return false;
+    }
+
+    questionCounter = parseInt($(this).attr("data-question"));
+    displayNext();
+    updateNavigationPanel();
   });
 
   // Animates buttons on hover
@@ -173,6 +194,7 @@ function displayNext() {
       $("#next").hide();
       $("#prev").hide();
       $("#start").show();
+      navigationPanel.hide(); // Hide the navigation panel on result screen
       // Clear selections when displaying final results
       selections = [];
       questionCounter = 0; // Reset question counter
@@ -203,11 +225,32 @@ function displayNext() {
 
     score.append('You got ' + numCorrect + ' questions out of ' +
       questions.length + ' right!');
-    
+
     if (numUnselected > 0) {
       score.append('<br>' + numUnselected + ' question(s) were left unanswered.');
     }
+    // Hide the navigation panel on the result screen
+    navigationPanel.hide();
 
     return score;
+}
+// Generates navigation buttons based on the number of questions
+function generateNavigationButtons() {
+  for (var i = 0; i < questions.length; i++) {
+    var button = $(
+      '<div class="navigation-button" data-question="' +
+        i +
+        '">' +
+        (i + 1) +
+        "</div>"
+    );
+    navigationPanel.append(button);
+  }
+}
+
+// Updates the active state of the navigation buttons
+function updateNavigationPanel() {
+  navigationPanel.find(".navigation-button").removeClass("active");
+  navigationPanel.find('.navigation-button[data-question="' + questionCounter + '"]').addClass("active");
 }
 })();

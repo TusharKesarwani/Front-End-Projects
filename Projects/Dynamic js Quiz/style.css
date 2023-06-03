@@ -32,7 +32,7 @@ main{
     display:none;
 }
 .controls{
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -49,6 +49,34 @@ main{
     background-color: #cac6c6;
 }
 
+/* Existing CSS styles... */
+
+#navigation-panel {
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation-button {
+    display: inline-block;
+    padding: 8px 13px;
+    /* width: 30px; */
+    /* height: 30px; */
+    margin: 0 5px;
+    background-color: rgb(214, 211, 211);
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .navigation-button.active {
+    background-color: rgb(57, 207, 57);
+    color: white;
+  }
+
+  /* Existing CSS styles... */
 
 
 #container {
@@ -91,7 +119,7 @@ ul {
 input[type="radio"] {
     display: none;
   }
-  
+
 label {
     border: 2px solid black;
     padding: 12px 8px;
@@ -108,7 +136,7 @@ input[type="radio"]:checked + label {
 .right {
     float: right;
   }
-  
+
 
   @media screen and (max-width: 750px) {
     #container{
