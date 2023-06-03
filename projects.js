@@ -32,11 +32,11 @@ const projects = [
         "project-link":"Projects/The-Hangman-Game/index.html"
     },
     {
-        "title":"Coming Soon",
+        "title":"Banking Website",
         "tags":["HTML","CSS","JavaScript"],
-        "img":"img/coming_soon.png",
-        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat provident incidunt fuga, nihil ex aperiam, debitis minus a recusandae quia, blanditiis ad eius modi! Minima sunt dolor ut minus totam.",
-        "github-link":"#",
+        "img":"img/projects/Banker.jpg",
+        "description":"A landing page for a banking website where you can create your account, have your own debit card, with 100% digital banking",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Banking_Website",
         "project-link":"#"
     },
     {
