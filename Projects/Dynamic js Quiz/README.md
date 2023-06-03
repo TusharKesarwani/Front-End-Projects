@@ -15,11 +15,11 @@ Start Over: The "Start Over" button resets the quiz and allows the user to attem
 
 ## Screenshots
 
-<img width="1440" alt="image" src="https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/71261845-f60e-442e-b4a4-876d71684073">
+![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/71261845-f60e-442e-b4a4-876d71684073)
 
-<img width="1440" alt="image" src="https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/3751321b-27e2-4856-9ae4-5ff35a567c26">
+![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/3751321b-27e2-4856-9ae4-5ff35a567c26)
 
-<img width="1440" alt="image" src="https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/ce07a727-98b0-4c49-8fa2-72aec055f81d">
+![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/ce07a727-98b0-4c49-8fa2-72aec055f81d)
 
 
 ## Getting Started
