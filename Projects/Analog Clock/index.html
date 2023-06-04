@@ -6,16 +6,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="bg"></div>
-
+<div class="bg">
     <div class="clock">
-      <div class="clock-face">
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"  ></div>
+        <div class="clock-face">
+            <div class="circle" id="sc" style="--clr:#04fc43"><i></i></div>
+            <div class="circle circle2" id="mn" style="--clr:#fee800"><i></i></div>
+            <div class="circle circle3" id="hr" style="--clr:#e71313"><i></i></div>
+
+
+            <span style="--i:1;"><b>1</b></span>
+            <span style="--i:2;"><b>2</b></span>
+            <span style="--i:3;"><b>3</b></span>
+            <span style="--i:4;"><b>4</b></span>
+            <span style="--i:5;"><b>5</b></span>
+            <span style="--i:6;"><b>6</b></span>
+            <span style="--i:7;"><b>7</b></span>
+            <span style="--i:8;"><b>8</b></span>
+            <span style="--i:9;"><b>9</b></span>
+            <span style="--i:10;"><b>10</b></span>
+            <span style="--i:11;"><b>11</b></span>
+            <span style="--i:12;"><b>12</b></span>
+            
+        </div>
+        <!-- digital clock-face   -->
+        <div id="time">
+          <div id="hour" style="--clr:#e71313">00</div>
+          <div id="minutes" style="--clr:#fee800">00</div>
+          <div id="seconds" style="--clr:#04fc43">00</div>
+          <div id="ampm">AM</div>
       </div>
-    </div>
+</div>
+
 <script src="script.js"></script>
 
 </body>
-</html>
+</html> 
+
+
+
+
