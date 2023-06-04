@@ -1,4 +1,4 @@
-# Front-End-Projects
+<h1 align="center">Front-End-Projects</h1>
 
 ![Front-End-Projects](https://socialify.git.ci/TusharKesarwani/Front-End-Projects/image?description=1&descriptionEditable=A%20place%20for%20Developers&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
@@ -30,10 +30,8 @@
  </p>
 </div>
  
- ## 📌 Open Source Program
-
- ### This project is a part of following Open Source Programs
-
+<h2 align="center">📌 Open Source Program</h2>
+<h3 align="center">This project is a part of following Open Source Programs</h3>
  ---
 
 <div align="center">
