@@ -1,145 +1,156 @@
 *{
-    margin:0px;
-    padding:0px;
-    scroll-behavior: smooth;
-    text-align: center;
-    font-size: 18px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    transition: all 0.5s ease;
 }
-header{
+
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
     color: azure;
 }
-.header_title{
-    text-align: center;
-    font-size:xxx-large;
-}
+
 body{
-    display:block;
-    background-image: url("https://media.istockphoto.com/vectors/abstract-vector-background-for-use-in-design-vector-id183954960?k=20&m=183954960&s=612x612&w=0&h=n_Z933ml0u6ZKZJ3KOxKl2tSqNv_N9L1vheVVdBX_5Q=") ;
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-image: linear-gradient(to bottom right,rgba(79,51,176,1),rgba(210,53,165));
 }
-.img1{
-    height:100vh;
+
+.container{
+    height: 100vh;
     width: 100vw;
+    display: grid;
+    place-items: center;
 }
-.img_logo{
-    max-height: 40px;
-    max-width: 40px;
-    margin-top: 20px;
-}
-.container {
-    background-color:none;
-    margin: 0 auto;
-    max-width: 400px;
+
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
     border-radius: 10px;
-    margin-top: 80px;
-}
-#screen {
-    margin: 4px auto;
-    width: 100%;
-    max-width: 400px;
-    height: 4rem;
-    text-align: center;
-    padding: 5px;
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 10px;
-    overflow-x: scroll;
-    overflow-y: visible;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-#screen::-webkit-scrollbar {
-    display: none;
+    box-shadow: 0 0 30px black;
 }
 
-#input, #result {
-    margin: auto;
-    width: 100%;
-    height: 3rem;
-    max-width: 768px;
-    text-align: left;
-    border: none;
-}
-
-#input {
-    font-size: 20px;
-    padding-top: 16px;
-    margin-top: -13px;
-    word-spacing: 0.07em;
-}
-
-#result {
-    font-size: 25px;
-}
-
-#memory {
+.theme{
     position: absolute;
-    font-size: 18px;
-    top: 12px;
-    right: 14px;
-}
-
-button, .bottom-buttons {
-    width: 100%;
-    height: 3rem;
-    border: none;
-    border-radius: 10px;
-}
-
-button:hover, .bottom-buttons {
-    cursor: pointer;
-    background-color: #a87861a9;
-}
-
-.table {
-    margin: auto;
-    width: 99%;
-    max-width: 768px;
-}
-
-td {
-    width: 100rem;
-    margin:100px;
-}
-
-#equals {
-    height: 6rem;
-    background-color: #3b62e3;
+    top: 30px;
+    right: 30px;
     color: white;
-    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.white {
-    font-weight: bold;
-    background-color: white;
+.theme.active{
+    color: rgb(46, 46, 46);
 }
 
-.white:hover {
-    background-color: #f0f0f0;
+.theme.active::before{
+    background-color: rgb(255, 255, 255);
 }
 
-.more {
-    background-color: #c7c7c7;
+.theme::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: rgb(51, 51, 51);
+    z-index: -1;
 }
 
-.more:hover {
-    background-color: #bdbbbb;
+#display{
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
 }
 
-.light {
-    background-color: #d9d9d9;
+#display::-webkit-scrollbar{
+    display: block;
+    height: 3px;
 }
 
-.light:hover {
-    background-color: #d2d2d2;
+button{
+    height: 50px;
+    width: 60px;
+    border: 0;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    
 }
 
-#equals:hover {
-    background-color: #3b4ce3;
+button:hover{
+    transform: scale(1.2);
+    background-color: rgb(206, 255, 127);
 }
 
-#topside, #downside {
-    height: 5px;
+
+.calculator{
+    background-color: white ;
+}
+
+#display{
+    color: rgb(10, 30, 35);
+}
+
+#clear{
+    background-color: rgb(255, 213, 216);
+    color: rgb(252, 69, 82);
+}
+
+.btn-n{
+    background-color: hsl(201, 100%, 88%);
+    color: black;
+}
+
+.btn-o{
+    background-color: rgb(255, 208, 253);
+    color: rgb(153, 5, 148);
+}
+
+.btn-equal{
+    background-color: rgb(173, 249, 231);
+    color: rgb(3, 138, 93);
+}
+
+.calculator.dark{
+    background-color: black;
+}
+
+.calculator.dark #display{
+    color: white;
+}
+
+.calculator.dark button#clear{
+    background-color: rgb(24, 24, 24);
+    color: red;
+}
+
+.calculator.dark button.btn-n{
+    background-color: rgb(61, 59, 59);
+    color: antiquewhite;
+}
+
+.calculator.dark button.btn-o{
+    background-color: rgb(9, 29, 40);
+    color: chocolate;
+}
+
+.calculator.dark button.btn-equal{
+    background-color: rgb(21, 23, 21);
+    color: beige;
 }
