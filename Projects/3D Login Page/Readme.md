@@ -1,5 +1,5 @@
 <h1>3D Login Page</h1>
-<p>Here I have created a 3D login page where new user can sign-up themselves and existing user can sing-in to their respective account.</p>
+<p>Here I have created a 3D login page where new users can sign-up themselves and existing users can sign-in to their respective account.</p>
 <h3>Tech Stacks</h3>
 <ul>
 <li>HTML</li>
