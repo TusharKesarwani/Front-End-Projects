@@ -6,8 +6,13 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
 
+}
+.background{
+    background: linear-gradient(to bottom, #ffffff,aqua
+    );
+  
+}
 /* navbar start */
 .topnav {
   background-color: black;
@@ -97,6 +102,9 @@ body {
 .ycv-image {
   width: 100%;
   height: auto;
+}
+.ycv-image,.slider,.rw-img{
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
 }
 
 .ycv {
@@ -211,5 +219,14 @@ img {
   .review {
     flex-direction: column;
   }
+}
+h4{
+  color: blueviolet;
+}
+h3{
+  color: blue;
+}
+h1{
+  color: blueviolet;
 }
 /*reviews end*/

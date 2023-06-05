@@ -14,7 +14,31 @@ body {
   overflow: hidden;
   width: 100%;
 }
+.background{
+  background: linear-gradient(to bottom, #ffffff,aqua);
+  
+}
+.gallery{
+  background: linear-gradient(to top, #ffffff,rgb(198, 197, 197));
+  width: 95vw;
+  margin-left: 5vw;
+}
+.background1{
+    background-color: blueviolet;
+    height: 25vh;
+    margin-bottom: 0vh;
+}
+.hotelDis{
+  color: bisque;
+}
+.hotelDish3{
+  color: rgb(255, 255, 255);
 
+}
+.lead-img .gallery-item{
+  box-shadow: 8px 16px 32px rgb(0, 0, 0);
+
+}
 .topnav a {
   float: left;
   display: block;
