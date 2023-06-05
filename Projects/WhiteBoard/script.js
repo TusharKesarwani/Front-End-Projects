@@ -110,16 +110,12 @@ canvas.addEventListener('touchend', function () {
         ctx.stroke();
     }
 });
-canvas.addEventListener('touchmove', function (e) {
-    if (drawing) {
-        // Draw a line from the last coordinates to the current ones
+canvas.addEventListener('touchend', function (e) {
+    drawing = false;
+    if (currentTool == "line") {
         ctx.beginPath();
-        ctx.moveTo(lastX, lastY);
-        ctx.lineTo(e.touches[0].pageX, e.touches[0].pageY);
+        ctx.moveTo(lineStart.x, lineStart.y);
+        ctx.lineTo(e.touches[0].pageX - canvas.offsetLeft, e.touches[0].pageY - canvas.offsetTop);
         ctx.stroke();
-
-        // Update last coordinates
-        lastX = e.touches[0].pageX;
-        lastY = e.touches[0].pageY;
     }
 });
