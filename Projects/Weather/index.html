@@ -8,10 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<!-- 
-<img src="https://png.pngtree.com/png-vector/20220607/ourmid/pngtree-cloudy-thunder-cloud-bolt-climate-png-image_4812793.png"
-    alt="cloud-image" width="50" height="60">
- -->
 
 <body>
 
@@ -34,7 +30,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-
+                            Select City
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Delhi</a></li>
@@ -46,7 +42,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Usage Guide</a>
+                        <a class="nav-link" href="#">Usage Guide</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -60,15 +56,28 @@
     <div class="container">
         <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
         <main>
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="row">
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Temperatures</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title"><span id="temp2"> </span><small
-                                    class="text-muted fw-light"><span>&#8451;</span></small></h1>
+                            <h1 class="card-title pricing-card-title">
+                                <span id="temp2"> </span>
+                                <small class="text-muted fw-light">
+                                    <span>&#8451;</span>
+                                </small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature is <span id="temp"> </span>
+                                    </li>
+                            </ul>
+
+       
+                        <img id="weatherIcon" src="https://tse4.mm.bing.net/th?id=OIP.XxuPiKx-k0i4EOGwbJwh0wHaEK&pid=Api&P=0&h=180" alt="Weather Icon">
+                  
+            
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Temperature is <span id="temp"> </span></li>
                                 <li>Min Temperature is <span id="min_temp"> </span></li>
@@ -84,9 +93,15 @@
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Humidity Related Information</h4>
                         </div>
+                        
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title"><span id="humidity2"> </span></li><small
                                     class="text-muted fw-light"> %</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>Humidity is <span id="temp"> </span>
+                                            </li>
+                                    </ul>
+                                    <img id="weatherIcon"  src="https://tse2.mm.bing.net/th?id=OIP.Q18bYMQt5a9tF_FNwAlV5AHaEL&pid=Api&P=0&h=180"  alt="Weather Icon">
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Cloud PCT is <span id="cloud_pct"> </span></li>
                                 <li>Feels Like <span id="feels_like"> </span></li>
@@ -105,6 +120,11 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title"><span id="wind_speed2"> </span><small
                                     class="text-muted fw-light"> km/hr</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>Wind Speed is <span id="temp1"> </span>
+                                            </li>
+                                    </ul>
+                                    <img id="weatherIcon"  src="https://tse1.mm.bing.net/th?id=OIP.SNVufrueJQq4QJCxcgDBhQHaDn&pid=Api&P=0&h=180"  alt="Weather Icon">
                             <ul class="list-unstyled mt-3 mb-4">
                                 <!--   <li>Wind Degree is <span id="wind_degrees"> </span></li>   -->
                                 <li>Wind Speed is <span id="wind_speed"> </span></li>
