@@ -20,22 +20,32 @@ function textfxn() {
     }
 }
 
-function check() {
-    let text = document.getElementById("text").value;
-    let newtext = text.replace(/[^0-9]/g, '');
-    const numberOfDigits = newtext.length;
-    let temp = newtext;
-    let sum = 0;
+function checkArmstrong() {
+    var input = document.getElementById("text").value;
+    var result = document.getElementById("result");
+
+    // Check if the input is a positive number
+    if (input === "" || isNaN(input) || parseInt(input) <= 0) {
+        result.innerHTML = "Please enter a positive number.";
+        return;
+    }
+
+    var number = parseInt(input);
+    var numberOfDigits = input.length;
+    var sum = 0;
+    var temp = number;
+
+    // Calculate the sum of digits raised to the power of the number of digits
     while (temp > 0) {
-        let remainder = temp % 10;
-        sum += remainder ** numberOfDigits;
-        temp = parseInt(temp / 10);
+        var digit = temp % 10;
+        sum += Math.pow(digit, numberOfDigits);
+        temp = Math.floor(temp / 10);
     }
-    if (sum == newtext) {
-        res.innerHTML = (`${newtext} is an Armstrong number`);
-    }
-    else {
-        res.innerHTML = (`${newtext} is not an Armstrong number.`);
+
+    // Check if it is an Armstrong number
+    if (sum === number) {
+        result.innerHTML = number + " is an Armstrong number.";
+    } else {
+        result.innerHTML = number + " is not an Armstrong number.";
     }
 }
-// });value;
