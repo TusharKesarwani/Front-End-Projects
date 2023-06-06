@@ -16,7 +16,7 @@ html{
 h1{
     font-size: 2.5rem;
     font-family: cursive;
-    color: rgba(0, 119, 40, 0.452);
+    color: seagreen;
     margin-bottom: 20px;
 }
 
@@ -37,8 +37,6 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-text-stroke: 1px rgb(11, 12, 12);
-
 }
 
 #input {
@@ -46,11 +44,20 @@ p{
     width: 450px;
     font-size: 0.8rem;
 }
-
+.button{
+  top: 50%;
+  left: 50%;
+  width:75px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 button:hover {
-    cursor: pointer;
-    background-color: white;
-    font-weight: medium;
-    box-shadow: 0 0 10px rgb(169, 205, 235);
-    color: #137570;
+    background-color: black;
+    color: white;
 }
