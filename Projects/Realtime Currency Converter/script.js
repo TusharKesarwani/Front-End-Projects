@@ -8,10 +8,13 @@ const btn = document.querySelector("#btn");
 const status = document.querySelector("#status");
 
 // append the curreny codes list to the list and select defaults 
-currency_list.forEach((code) => {
+currency_list.forEach((currency) => {
+    const code = currency[0];
+    const countryName = currency[1];
+
     const newElement = document.createElement("option");
     newElement.value = code;
-    newElement.textContent = code;
+    newElement.textContent = `${code} - ${countryName}`;
 
     if (code === "USD")
         newElement.selected = true;

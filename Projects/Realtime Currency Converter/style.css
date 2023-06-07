@@ -47,6 +47,7 @@ body {
 .selecterContainer select {
     padding: 2px;
     border-radius: 4px;
+    max-width:40%;
     outline: transparent;
 }
 #switchCurrency {
