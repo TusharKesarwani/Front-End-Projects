@@ -31,10 +31,13 @@ This website aims to solve RSA encryption problems.
 ## Screenshots
 
 - ### Key genration
-![image](https://github.com/dhruvmillu/Dev-Geeks/assets/75222710/bed099d6-4bf4-499e-b5c1-db5053590599)
+![image](https://github.com/dhruvmillu/Front-End-Projects/assets/75222710/ec82809a-411d-49dd-9373-a880a8937382)
+
 
 - ### Encryption
-![image](https://github.com/dhruvmillu/Dev-Geeks/assets/75222710/0d6fe5fd-1e51-45fa-8e0a-38674eeafabb)
+![image](https://github.com/dhruvmillu/Front-End-Projects/assets/75222710/4039b347-18f5-4153-824e-2bbe47371ad9)
+
 
 - ### Decryption
-![image](https://github.com/dhruvmillu/Dev-Geeks/assets/75222710/1b3fec4c-e656-4432-aba3-7dd6258e9164)
+![image](https://github.com/dhruvmillu/Front-End-Projects/assets/75222710/33fc25e9-b92b-48d0-9db6-26a65b45486e)
+
