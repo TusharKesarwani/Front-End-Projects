@@ -32,6 +32,14 @@ const projects = [
         "project-link":"Projects/The-Hangman-Game/index.html"
     },
     {
+        "title":"Resume Creator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Resume_Creator.png",
+        "description":"This project uses Basic HTML, CSS, JavaScript to create a basic Resume Creator, where you can create your resume and most important download the created Resume.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Resume%20Creator",
+        "project-link":"Projects/Resume Creator/index.html"
+    },
+    {
         "title":"Coming Soon",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/coming_soon.png",
