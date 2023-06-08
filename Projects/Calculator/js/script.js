@@ -43,7 +43,7 @@ for (item of buttons) {
             break;
 
             case 'x':
-                inputValue += '*';
+                inputValue = eval(inputValue) + '*';
                 result.innerHTML += '*';
             break;
                 
@@ -91,6 +91,25 @@ for (item of buttons) {
                 input.innerHTML = '1/(' + result.innerHTML + ')=';
                 result.innerHTML = eval(1/eval(result.innerHTML));
                 inputValue = result.innerHTML;
+            break;
+            
+            case '+':
+                inputValue = eval(inputValue) + '+';
+                result.innerHTML += '+';
+            
+            break;
+            
+            case '-':
+                inputValue = eval(inputValue) + '-';
+                result.innerHTML += '-';
+
+            break;
+
+
+            case '/':
+                inputValue = eval(inputValue) + '/';
+                result.innerHTML += '/';
+            
             break;
             
             default :
