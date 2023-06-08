@@ -83,7 +83,7 @@ You can refer to the following articles on **_basics of Git and Github and also 
 
 <h2>
 	<a href="https://github.com/TusharKesarwani/Front-End-Projects/blob/main/CONTRIBUTING.md">
-		Contruibuting Guidelines
+		Contributing Guidelines
 	</a>
 </h2>
 
