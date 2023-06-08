@@ -81,12 +81,9 @@ You can refer to the following articles on **_basics of Git and Github and also 
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
 
-# Contruibuting Guidelines
-
-While on one hand our repository is a good place for beginners to contribute something useful to open source, on the other hand it is also a good place for experienced people to contribute something useful to open source. We welcome contributions from everyone.
-However some people tend to spam the repository with irrelevant pull requests and get one PR for SWoC 3.0 and other such open source events. We do not want that to happen. So we have a few guidelines that we would like you to follow.
-In case we find your PR not relevant or spam, we will mark it as invalid and it will not be counted towards SWoC 3.0.
-
+<b>
+[![Contruibuting Guidelines]](https://github.com/TusharKesarwani/Front-End-Projects/blob/main/CONTRIBUTING.md)
+</b>
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-of-tushar.netlify.app)
