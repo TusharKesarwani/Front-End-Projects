@@ -81,9 +81,9 @@ You can refer to the following articles on **_basics of Git and Github and also 
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
 
-<b>
-[![Contruibuting Guidelines]](https://github.com/TusharKesarwani/Front-End-Projects/blob/main/CONTRIBUTING.md)
-</b>
+
+[![Contruibuting Guidelines](https://github.com/TusharKesarwani/Front-End-Projects/blob/main/CONTRIBUTING.md)
+
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-of-tushar.netlify.app)
