@@ -4,115 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7qLE6v7zgvlwN9SlFr1STuhyFG-jAdl4ubA&usqp=CAU" type="image/x-icon">
+    <title>Title</title>
 </head>
 <body>
-    <section>
-        <header>
-            <nav>
-                <img src="https://as2.ftcdn.net/v2/jpg/01/29/23/31/1000_F_129233141_VEb6yy0GHZFxnwXSSNpaD2TYnaLfhd43.jpg" alt="This is logo" class="img_logo">
-                <span class="header_title">
-                    Calculator
-                </span>
-            </nav>
-        </header>
-        <div class="container">
-            <div id="topside"></div>
-            <div id="screen">
-                <div id="input"></div>
-                <div id="result"></div>
-                <div id="memory"></div>
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
             </div>
-            <table>
-                <tbody>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
                     <tr>
-                        <td class="main-buttons">
-                            <button type="button" class="light">mc</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">m+</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">m-</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">mr</button>
-                        </td>
+                        <td><button class="btn-operator" id="clear">C</button></td>
+                        <td><button class="btn-operator" id="/">&divide;</button></td>
+                        <td><button class="btn-operator" id="*">&times;</button></td>
+                        <td><button class="btn-operator" id="backspace">&#8592;</button></td>
                     </tr>
                     <tr>
-                        <td class="main-buttons">
-                            <button type="button" class="light">C</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">/</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">x</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">⌫</button>
-                        </td>
+                        <td><button class="btn-number" id="7">7</button></td>
+                        <td><button class="btn-number" id="8">8</button></td>
+                        <td><button class="btn-number" id="9">9</button></td>
+                        <td><button class="btn-operator" id="-">-</button></td>
                     </tr>
                     <tr>
-                        <td class="main-buttons">
-                            <button type="button" class="white">7</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">8</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">9</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">-</button>
-                        </td>
+                        <td><button class="btn-number" id="4">4</button></td>
+                        <td><button class="btn-number" id="5">5</button></td>
+                        <td><button class="btn-number" id="6">6</button></td>
+                        <td><button class="btn-operator" id="+">+</button></td>
                     </tr>
                     <tr>
-                        <td class="main-buttons">
-                            <button type="button" class="white">4</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">5</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">6</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="light">+</button>
-                        </td>
+                        <td><button class="btn-number" id="1">1</button></td>
+                        <td><button class="btn-number" id="2">2</button></td>
+                        <td><button class="btn-number" id="3">3</button></td>
+                        <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
                     </tr>
                     <tr>
-                        <td class="main-buttons">
-                            <button type="button" class="white">1</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">2</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">3</button>
-                        </td>
-                        <td class="main-buttons" rowspan="2">
-                            <button type="button" class="light" id="equals">=</button>
-                        </td>
+                        <td><button class="btn-operator" id="(">(</button></td>
+                        <td><button class="btn-number" id="0">0</button></td>
+                        <td><button class="btn-operator" id=")">)</button></td>
                     </tr>
-                    <tr>
-                        <td class="main-buttons">
-                            <button type="button" class="white">%</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">0</button>
-                        </td>
-                        <td class="main-buttons">
-                            <button type="button" class="white">.</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                </table>
+            </div>
         </div>
-    </section>
-    
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
