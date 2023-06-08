@@ -89,14 +89,15 @@ fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contribut
         // Extract the data for each contributor
         const contributors = data.map(contributor => ({
             username: contributor.login,
-            avatarUrl: contributor.avatar_url
+            avatarUrl: contributor.avatar_url,
+            profileUrl: contributor.html_url
         }));
 
         // Create and append HTML elements to display the contributors
         const contributorsList = document.querySelector("#contributors-list");
         contributors.forEach(contributor => {
             const li = document.createElement("li");
-            li.innerHTML = `<img src="${contributor.avatarUrl}" alt="${contributor.username}">`;
+            li.innerHTML = `<a href="${contributor.profileUrl}"><img src="${contributor.avatarUrl}" alt="${contributor.username}"></a>`;
             contributorsList.appendChild(li);
         });
     });
