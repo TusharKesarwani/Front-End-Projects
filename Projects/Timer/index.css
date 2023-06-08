@@ -19,6 +19,9 @@ body{
 .container h1{
     transform: scale(1.6) translateY(-25px);
 }
+.counter h1{
+    transform: scale(1.6) translateY(-25px);
+}
 
 .container p{
     margin-bottom: 30px;
@@ -41,11 +44,15 @@ body{
     transform: translateY(-5px);
     
 }
- .active{
+.counter button:active{
+    transform: translateY(-5px);
+    
+}
+ /* .active{
     background-color: red;
     color: #fff;
    
-}
+} */
 
 button i{
     color: rgb(39, 82, 131);
@@ -58,4 +65,41 @@ button i:hover{
 
 button i:active{
     color: rgb(8, 8, 247);
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 50px;
+}
+#timer {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
 }

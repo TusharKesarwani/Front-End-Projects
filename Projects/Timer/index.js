@@ -55,3 +55,45 @@ function startTime(){
       OutputSeconds.innerHTML=seconds
   }
 }
+
+var timer;
+var hours = 0;
+var minutes = 0;
+
+
+function startTimer() {
+    timer = setInterval(updateTimer, 1000);
+}
+
+function stopTimer() {
+    clearInterval(timer);
+}
+
+function resetTimer() {
+    clearInterval(timer);
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    document.getElementById("timer").textContent = formatTime(hours, minutes, seconds);
+}
+
+function updateTimer() {
+    seconds++;
+    if (seconds === 60) {
+        seconds = 0;
+        minutes++;
+    }
+    if (minutes === 60) {
+        minutes = 0;
+        hours++;
+    }
+    document.getElementById("timer").textContent = formatTime(hours, minutes, seconds);
+}
+
+function formatTime(hours, minutes, seconds) {
+    return pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+}
+
+function pad(value) {
+    return value < 10 ? "0" + value : value;
+}
