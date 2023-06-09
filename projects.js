@@ -934,6 +934,14 @@ const projects = [
         "description":"Zomato Landing Page is a clone of the zomato website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Zomato-Landing-Page",
         "project-link":"Projects/Zomato-Landing-Page/index.html"
+    },
+    {
+        "title":"Pepsi Landing Page",
+        "tags":["HTML","CSS"],
+        "img":"img/projects/Pepsi-Landing-Page.png",
+        "description":"Pepsi Landing Page is a very beginner friendly front-end project. It is built using HTML and CSS.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Pepsi-Landing-Page",
+        "project-link":"Projects/Pepsi-Landing-Page/index.html"
     }
     
 ]

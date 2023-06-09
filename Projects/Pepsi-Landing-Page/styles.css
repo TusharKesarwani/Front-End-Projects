@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin-top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/bg.png);
+    /*    background-position: center;    */
+    background-size: cover;
+    position: relative;
+
+}
+
+.header {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+    border-bottom: #cbd6e4 solid 0.25px;
+}
+
+.logo {
+    width: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    transition: 0.7s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: 0.35s ease-in-out;
+}
+
+nav {
+    padding-left: 400px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(251, 246, 246);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.35s;
+}
+
+nav ul li a:hover {
+    color: #d62828;
+    font-size: 22px;
+}
+
+.btn-div {
+    position: absolute;
+    margin-left: 75%;
+
+}
+
+#Login-btn {
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #378de5 3%, #48789b 100%);
+    border: 1px solid #5e97d1;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 5px 4px 5px rgba(94, 28, 68, .15);
+    text-shadow: 0px 1px 0px #528ecc;
+    transition: 0.35s;
+}
+
+#Signup-btn {
+    background-color: #f7ede2;
+    text-transform: uppercase;
+    border-radius: 30px;
+    /* background: linear-gradient(to bottom, #fefae0 2%, #fff 100%); */
+    border: 1px solid #f5cac3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #d62828;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 5px 4px 5px rgba(94, 28, 68, .15);
+    text-shadow: 0px 1px 0px #cbcbcb;
+    transition: 0.35s;
+}
+
+#Login-btn:hover {
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, .15);
+    transform: scale(1.1);
+    transition: .25s ease-in-out;
+}
+
+
+#Signup-btn:hover {
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, .15);
+    transform: scale(1.1);
+    transition: .25s ease-in-out;
+    cursor: pointer;
+}
+
+.content {
+    padding-top: 20px;
+    position: relative;
+    max-width: 600px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.content .text h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+.content .text p {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .1e;
+    margin-top: 40px;
+    color: white;
+}
+
+.content .text h1 span {
+    font-size: 50px;
+}
+
+#Buynow-btn {
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #fff0f3 2%, #fff 100%);
+    margin-top: 60px;
+    margin-left: 140px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #370617;
+    box-shadow: 1px 4px 12px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+#Buynow-btn:hover {
+    transform: scale(1.1);
+    transition: .25s ease-in-out;
+    color: #c1121f;
+    background-color: #f2e9e4;
+
+}
+
+.pepsi {
+    position: absolute;
+    margin-left: 830px;
+    margin-top: -250px;
+    transition: 0.35s;
+}
+
+.pepsi:hover {
+    transform: scale(1.12);
+    transition: .31s ease-in-out;
+    cursor: pointer;
+}
+
+.container .header #heading1:hover {
+    color: #f72585;
+}
