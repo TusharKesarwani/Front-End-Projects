@@ -11,6 +11,6 @@ Snapshot of the game:
 ![Screenshot from 2023-06-10 01-22-29](https://github.com/NaveenChandraAdhikari/Front-End-Projects/assets/44281971/9f6ffc0d-989e-4175-8504-346c23ecd033)
 
 project contributor:
-Alisha Bharti
+Alisha Bharti ,Naveen Adhikari
 
 Hope you will enjoy playing this game !!!!
