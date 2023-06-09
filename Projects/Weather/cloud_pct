@@ -1,0 +1,23 @@
+Cloud_pct = response.Cloud_pct
+temp = response.temp
+Feels_like = response.Feels_like
+Humidity = response.Humidity
+Min_temp = response.Min_temp
+Max_temp = response.Max_temp
+Wind_speed = response.Wind_speed
+Wind_degSunrise = response.Wind_degSunrise
+Temprees = response.Temprees
+Sunset = response.Sunset
+
+
+
+cloud_pct.innerHTML = response.cloud_pct
+temp.innerHTML = response.temp
+feels_like.innerHTML = response.feels_like
+humidity.innerHTML = response.humidity
+min_temp.innerHTML = response.min_temp
+max_temp.innerHTML = response.max_temp
+wind_speed.innerHTML = response.wind_speed
+wind_degrees.innerHTML = response.wind_degrees
+sunrise.innerHTML = response.sunrise
+sunset.innerHTML = response.sunset
