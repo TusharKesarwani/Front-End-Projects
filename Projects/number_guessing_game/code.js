@@ -32,6 +32,7 @@ function play() {
       msg3.textContent = " You guessd it in " + no_of_guesses + " " + "Guesses";
       // disable the guess button if won
       document.getElementById("my_btn").disabled = true;
+      
     }
   }
 }
