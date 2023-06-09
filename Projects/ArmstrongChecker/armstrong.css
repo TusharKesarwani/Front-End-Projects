@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: rgba(82, 190, 163, 0.507);
+    background-color: rgba(83, 215, 71, 0.65);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,21 +15,23 @@ h1 {
 
 .info {
     /* margin-top: 7%; */
-    /* margin-left: 32%; */
-    /* margin-right: 32%; */
-    width: 40%;
-    max-height: 100%;
+    margin-left: 20%;
+    margin-right: 36%;
+    width: 50%;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border: 1px black;
     flex-direction: column;
-    background-color: rgb(215, 128, 142);
+    background-color: rgb(178, 17, 44);
     border-radius: 15px;
     /* box-shadow: #888888 7% 8%; */
 }
-
+.go:hover{
+    background-color: rgba(233, 18, 18, 0.656);
+}
 input {
     font-size: large;
     border: 0px solid;
@@ -43,6 +45,7 @@ input {
     outline: none;
     color: white;
 }
+
 
 ::placeholder {
     color: white;
@@ -61,7 +64,6 @@ button {
     opacity: 0.35;
     background-color: black;
     color: white;
-    /* visibility: hidden; */
 }
 
 .buttonjs:active {
@@ -87,18 +89,7 @@ p {
     text-align: center;
 }
 
-/* .block
-{
-    position: relative;
-    display: inline-block;
-    width: 15em;
-    height: 8em;
-    margin-top: -16%;
-    margin-right: -39%;
-    z-index: -1;
-    border-radius: 6%;
-    background-color: rgba(128, 128, 128, 0.199); 
-} */
+
 
 @media (max-width: 850px){
     html{
@@ -115,3 +106,68 @@ p {
         font-size: 50%;;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+   */

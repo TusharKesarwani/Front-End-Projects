@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armstrong Number</title>
-    <link href="armstrong.css" rel="stylesheet">
+  <title>Armstrong Number Checker</title>
+  <link rel="stylesheet" type="text/css" href="armstrong.css">
 </head>
 <body>
-    <h1>Armstrong Checker</h1>
+  <div class="container">
+    <h1>Armstrong Number Checker</h1>
     <div class="info">
-        <input type="text" onkeyup="textfxn()" id="text" placeholder="Enter a positive Number">
-        <!-- <input type="text" placeholder="reverse string"> -->
-        <button id="btn">Check</button>
-        <p id="demo"></p>
+
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <button class="go" onclick="checkArmstrong()">Check</button>
+        <p id="result"></p>
     </div>
-    <script src="armstrong.js"></script>
+  </div>
+
+  <script src="armstrong.js"></script>
 </body>
-</html> 
+</html>
