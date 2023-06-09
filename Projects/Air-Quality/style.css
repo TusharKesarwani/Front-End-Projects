@@ -7,39 +7,36 @@
   font-family: 'Poppins', sans-serif;
 }
 
-main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-  rgba(0, 0, 0, 0.5)), url("bgImage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+body {
+  background-image: url("bgImage.png");
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   gap: 20%;
 }
 
 .header {
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 4px 1px rgb(57, 56, 56);
   margin-top: 30px;
 }
 
 .card {
   width: 50%;
-  max-width: 400px;
+  max-width: 420px;
+  max-height: 420px;
   padding: 30px;
-  background-color: #f2f2f2;
+  margin-top: 119px;
+  background-color: #ffffff;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 2px 4px 1px rgb(59, 58, 58);
 }
 
 .card h2 {
@@ -62,7 +59,7 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 14px;
-  -moz-appearance: textfield; /* Firefox */
+  /* -moz-appearance: textfield; Firefox */
 }
 
 input:focus {
@@ -82,14 +79,16 @@ button {
   font-size: 18px;
   background-color: #4CAF50;
   color: white;
-  border: none;
+  border: 2px solid #4CAF50;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
 }
 
 .modal {
