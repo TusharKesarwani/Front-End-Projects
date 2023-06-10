@@ -8,7 +8,6 @@
    </a>
 </p>
 
-
 <div align="center">
  <p>
 
@@ -19,7 +18,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/TusharKesarwani/Front-End-Projects)
 ![GitHub contributors](https://img.shields.io/github/contributors/TusharKesarwani/Front-End-Projects)
 ![GitHub last commit](https://img.shields.io/github/last-commit/TusharKesarwani/Front-End-Projects)
-  
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/TusharKesarwani/Front-End-Projects)
 
 ![Github](https://img.shields.io/github/license/TusharKesarwani/Front-End-Projects)
@@ -27,14 +26,15 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/TusharKesarwani/Front-End-Projects)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/TusharKesarwani/Front-End-Projects)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TusharKesarwani/Front-End-Projects)
+
  </p>
 </div>
  
  ## 📌 Open Source Program
 
- ### This project is a part of following Open Source Programs
+### This project is a part of following Open Source Programs
 
- ---
+---
 
 <div align="center">
 
@@ -48,12 +48,7 @@
 
 </div>
 
-
- ---
-
-
-
-
+---
 
 <h2 align= center> Tech Stacks used ✨ </h2>
 
@@ -63,7 +58,7 @@
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://cdn.cdnlogo.com/logos/j/69/javascript.svg" alt="JS" width="80" height="80"/></a>
 </p>
 
-<h2 align=center> 👨🏻‍💻 How to get started? </h2> 
+<h2 align=center> 👨🏻‍💻 How to get started? </h2>
 
 You can refer to the following articles on **_basics of Git and Github and also contact the Project Mentors, in case you are stuck_**:
 
@@ -72,8 +67,7 @@ You can refer to the following articles on **_basics of Git and Github and also 
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
-
-<h2 align=center> 📝 How to Contribute? </h2>  
+<h2 align=center> 📝 How to Contribute? </h2>
 
 - Take a look at the Existing Issues or create your own Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
@@ -88,11 +82,11 @@ You can refer to the following articles on **_basics of Git and Github and also 
 </h2>
 
 ## 🔗 Links
+
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-of-tushar.netlify.app)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tushar104)
 
-
-<h2 align=center>⭐Stars Chart</h2>  
+<h2 align=center>⭐Stars Chart</h2>
 
 ## Stargazers over time
 

@@ -21,95 +21,122 @@ var micNumber = 0;
 
 function onShareScreen() {
   if (!navigator.mediaDevices.getDisplayMedia) {
-    alert("navigator.mediaDevices.getDisplayMedia not supported on your browser, use the latest version of Chrome");
+    alert(
+      "navigator.mediaDevices.getDisplayMedia not supported on your browser, use the latest version of Chrome"
+    );
   } else {
     if (window.MediaRecorder == undefined) {
-      alert("MediaRecorder not supported on your browser, use the latest version of Firefox or Chrome");
+      alert(
+        "MediaRecorder not supported on your browser, use the latest version of Firefox or Chrome"
+      );
     } else {
-      navigator.mediaDevices.getDisplayMedia(screenConstraints).then(function(screenStream) {
-        //check if there's a microphone
-        navigator.mediaDevices.enumerateDevices().then(function(devices) {
-          devices.forEach(function(device) {
-            if (device.kind == "audioinput") {
-              micNumber++;
-            }
-          });
-
-          if (micNumber == 0) {
-            //no audio inputs present on device/pc
-            onCombinedStreamAvailable(screenStream);
-          } else {
-            //audio inputs present, let's get access
-            navigator.mediaDevices.getUserMedia(micConstraints).then(function(micStream) {
-
-              //create a new stream in which to pack everything together
-              var composedStream = new MediaStream();
-
-              //add the screen video stream
-              screenStream.getVideoTracks().forEach(function(videoTrack) {
-                composedStream.addTrack(videoTrack);
+      navigator.mediaDevices
+        .getDisplayMedia(screenConstraints)
+        .then(function (screenStream) {
+          //check if there's a microphone
+          navigator.mediaDevices
+            .enumerateDevices()
+            .then(function (devices) {
+              devices.forEach(function (device) {
+                if (device.kind == "audioinput") {
+                  micNumber++;
+                }
               });
 
-              //if system audio has been shared
-              if (screenStream.getAudioTracks().length > 0) {
-                //merge the system audio with the mic audio
-                var context = new AudioContext();
-                var audioDestination = context.createMediaStreamDestination();
-
-                const systemSource = context.createMediaStreamSource(screenStream);
-                const systemGain = context.createGain();
-                systemGain.gain.value = 1.0;
-                systemSource.connect(systemGain).connect(audioDestination);
-                console.log("added system audio");
-
-                if (micStream && micStream.getAudioTracks().length > 0) {
-                  const micSource = context.createMediaStreamSource(micStream);
-                  const micGain = context.createGain();
-                  micGain.gain.value = 1.0;
-                  micSource.connect(micGain).connect(audioDestination);
-                  console.log(" added mic audio");
-                }
-
-                audioDestination.stream.getAudioTracks().forEach(function(audioTrack) {
-                  composedStream.addTrack(audioTrack);
-                });
+              if (micNumber == 0) {
+                //no audio inputs present on device/pc
+                onCombinedStreamAvailable(screenStream);
               } else {
-                //add just the mic audio
-                micStream.getAudioTracks().forEach(function(micTrack) {
-                  composedStream.addTrack(micTrack);
-                });
+                //audio inputs present, let's get access
+                navigator.mediaDevices
+                  .getUserMedia(micConstraints)
+                  .then(function (micStream) {
+                    //create a new stream in which to pack everything together
+                    var composedStream = new MediaStream();
+
+                    //add the screen video stream
+                    screenStream
+                      .getVideoTracks()
+                      .forEach(function (videoTrack) {
+                        composedStream.addTrack(videoTrack);
+                      });
+
+                    //if system audio has been shared
+                    if (screenStream.getAudioTracks().length > 0) {
+                      //merge the system audio with the mic audio
+                      var context = new AudioContext();
+                      var audioDestination =
+                        context.createMediaStreamDestination();
+
+                      const systemSource =
+                        context.createMediaStreamSource(screenStream);
+                      const systemGain = context.createGain();
+                      systemGain.gain.value = 1.0;
+                      systemSource
+                        .connect(systemGain)
+                        .connect(audioDestination);
+                      console.log("added system audio");
+
+                      if (micStream && micStream.getAudioTracks().length > 0) {
+                        const micSource =
+                          context.createMediaStreamSource(micStream);
+                        const micGain = context.createGain();
+                        micGain.gain.value = 1.0;
+                        micSource.connect(micGain).connect(audioDestination);
+                        console.log(" added mic audio");
+                      }
+
+                      audioDestination.stream
+                        .getAudioTracks()
+                        .forEach(function (audioTrack) {
+                          composedStream.addTrack(audioTrack);
+                        });
+                    } else {
+                      //add just the mic audio
+                      micStream.getAudioTracks().forEach(function (micTrack) {
+                        composedStream.addTrack(micTrack);
+                      });
+                    }
+
+                    onCombinedStreamAvailable(composedStream);
+                  })
+                  .catch(function (err) {
+                    log("navigator.getUserMedia error: " + err);
+                  });
               }
-
-              onCombinedStreamAvailable(composedStream);
-
             })
-              .catch(function(err) {
-              log("navigator.getUserMedia error: " + err);
+            .catch(function (err) {
+              log(err.name + ": " + err.message);
             });
-          }
         })
-          .catch(function(err) {
-          log(err.name + ": " + err.message);
+        .catch(function (err) {
+          log("navigator.getDisplayMedia error: " + err);
         });
-      })
-        .catch(function(err) {
-        log("navigator.getDisplayMedia error: " + err);
-      });
     }
   }
 }
 
 function onCombinedStreamAvailable(stream) {
   localStream = stream;
-  localStream.getTracks().forEach(function(track) {
+  localStream.getTracks().forEach(function (track) {
     if (track.kind == "audio") {
-      track.onended = function(event) {
-        log("audio track.onended Audio track.readyState=" + track.readyState + ", track.muted=" + track.muted);
+      track.onended = function (event) {
+        log(
+          "audio track.onended Audio track.readyState=" +
+            track.readyState +
+            ", track.muted=" +
+            track.muted
+        );
       };
     }
     if (track.kind == "video") {
-      track.onended = function(event) {
-        log("video track.onended Audio track.readyState=" + track.readyState + ", track.muted=" + track.muted);
+      track.onended = function (event) {
+        log(
+          "video track.onended Audio track.readyState=" +
+            track.readyState +
+            ", track.muted=" +
+            track.muted
+        );
       };
     }
   });
@@ -135,7 +162,6 @@ function onBtnRecordClicked() {
     recBtn.disabled = true;
     stopBtn.disabled = false;
 
-    
     log("Start recording...");
     if (typeof MediaRecorder.isTypeSupported == "function") {
       if (MediaRecorder.isTypeSupported("video/webm;codecs=vp9")) {
@@ -152,28 +178,40 @@ function onBtnRecordClicked() {
       mediaRecorder = new MediaRecorder(localStream);
     }
 
-    mediaRecorder.ondataavailable = function(e) {
+    mediaRecorder.ondataavailable = function (e) {
       chunks.push(e.data);
     };
 
-    mediaRecorder.onerror = function(e) {
+    mediaRecorder.onerror = function (e) {
       log("mediaRecorder.onerror: " + e);
     };
 
-    mediaRecorder.onstart = function() {
-      log("mediaRecorder.onstart, mediaRecorder.state = " + mediaRecorder.state);
+    mediaRecorder.onstart = function () {
+      log(
+        "mediaRecorder.onstart, mediaRecorder.state = " + mediaRecorder.state
+      );
 
-      localStream.getTracks().forEach(function(track) {
+      localStream.getTracks().forEach(function (track) {
         if (track.kind == "audio") {
-          log("onstart - Audio track.readyState=" + track.readyState + ", track.muted=" + track.muted);
+          log(
+            "onstart - Audio track.readyState=" +
+              track.readyState +
+              ", track.muted=" +
+              track.muted
+          );
         }
         if (track.kind == "video") {
-          log("onstart - Video track.readyState=" + track.readyState + ", track.muted=" + track.muted);
+          log(
+            "onstart - Video track.readyState=" +
+              track.readyState +
+              ", track.muted=" +
+              track.muted
+          );
         }
       });
     };
 
-    mediaRecorder.onstop = function() {
+    mediaRecorder.onstop = function () {
       log("mediaRecorder.onstop, mediaRecorder.state = " + mediaRecorder.state);
 
       var blob = new Blob(chunks, { type: "video/webm" });
@@ -192,13 +230,13 @@ function onBtnRecordClicked() {
       downloadLink.setAttribute("name", name);
     };
 
-    mediaRecorder.onwarning = function(e) {
+    mediaRecorder.onwarning = function (e) {
       log("mediaRecorder.onwarning: " + e);
     };
 
     mediaRecorder.start(10);
 
-    localStream.getTracks().forEach(function(track) {
+    localStream.getTracks().forEach(function (track) {
       log(track.kind + ":" + JSON.stringify(track.getSettings()));
       console.log(track.getSettings());
     });
@@ -219,12 +257,22 @@ function onStateClicked() {
     log("mediaRecorder.videoBitsPerSecond=" + mediaRecorder.videoBitsPerSecond);
     log("mediaRecorder.audioBitsPerSecond=" + mediaRecorder.audioBitsPerSecond);
 
-    localStream.getTracks().forEach(function(track) {
+    localStream.getTracks().forEach(function (track) {
       if (track.kind == "audio") {
-        log("Audio: track.readyState=" + track.readyState + ", track.muted=" + track.muted);
+        log(
+          "Audio: track.readyState=" +
+            track.readyState +
+            ", track.muted=" +
+            track.muted
+        );
       }
       if (track.kind == "video") {
-        log("Video: track.readyState=" + track.readyState + ", track.muted=" + track.muted);
+        log(
+          "Video: track.readyState=" +
+            track.readyState +
+            ", track.muted=" +
+            track.muted
+        );
       }
     });
   }

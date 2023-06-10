@@ -1,37 +1,37 @@
-import React, {useState} from "react" ;
+import React, { useState } from "react";
 
 export default function () {
-    const [myStyle,setmystyle] = useState(
-    {
-        color: 'white' ,
-        backgroundColor : 'black',
-    })
+  const [myStyle, setmystyle] = useState({
+    color: "white",
+    backgroundColor: "black",
+  });
 
-    const [btntext,setBtn] = useState('Enable Dark Mode')
+  const [btntext, setBtn] = useState("Enable Dark Mode");
 
-
-    const toggleStyle = () =>{
-        if(myStyle.color === 'white'){
-            setmystyle({
-                color:'black' ,
-                backgroundColor : 'white '
-            })
-            setBtn("Enable Dark mode")
-        }
-        else{
-            setmystyle({
-                color : 'white' ,
-                backgroundColor : 'black'
-            })
-            setBtn("Enable Light Mode")
-        }
+  const toggleStyle = () => {
+    if (myStyle.color === "white") {
+      setmystyle({
+        color: "black",
+        backgroundColor: "white ",
+      });
+      setBtn("Enable Dark mode");
+    } else {
+      setmystyle({
+        color: "white",
+        backgroundColor: "black",
+      });
+      setBtn("Enable Light Mode");
     }
+  };
 
   return (
-
-    <div className="container" style= {myStyle} >
-        <h2 className="my-3">About Us</h2>
-      <div className="accordion accordion-flush" id="accordionFlushExample" style = {myStyle}>
+    <div className="container" style={myStyle}>
+      <h2 className="my-3">About Us</h2>
+      <div
+        className="accordion accordion-flush"
+        id="accordionFlushExample"
+        style={myStyle}
+      >
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingOne">
             <button
@@ -41,7 +41,7 @@ export default function () {
               data-bs-target="#flush-collapseOne"
               aria-expanded="false"
               aria-controls="flush-collapseOne"
-              style= {myStyle}
+              style={myStyle}
             >
               Accordion Item #1
             </button>
@@ -51,7 +51,7 @@ export default function () {
             className="accordion-collapse collapse"
             aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExample"
-            style= {myStyle}
+            style={myStyle}
           >
             <div className="accordion-body">
               Placeholder content for this accordion, which is intended to
@@ -69,7 +69,7 @@ export default function () {
               data-bs-target="#flush-collapseTwo"
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
-              style= {myStyle}
+              style={myStyle}
             >
               Accordion Item #2
             </button>
@@ -79,7 +79,7 @@ export default function () {
             className="accordion-collapse collapse"
             aria-labelledby="flush-headingTwo"
             data-bs-parent="#accordionFlushExample"
-            style= {myStyle}
+            style={myStyle}
           >
             <div className="accordion-body">
               Placeholder content for this accordion, which is intended to
@@ -98,7 +98,7 @@ export default function () {
               data-bs-target="#flush-collapseThree"
               aria-expanded="false"
               aria-controls="flush-collapseThree"
-              style= {myStyle}
+              style={myStyle}
             >
               Accordion Item #3
             </button>
@@ -108,7 +108,7 @@ export default function () {
             className="accordion-collapse collapse"
             aria-labelledby="flush-headingThree"
             data-bs-parent="#accordionFlushExample"
-            style= {myStyle}
+            style={myStyle}
           >
             <div className="accordion-body">
               Placeholder content for this accordion, which is intended to
@@ -122,9 +122,10 @@ export default function () {
         </div>
       </div>
       <div className="constainer my-2">
-      <button onClick = {toggleStyle} type="button" className="btn btn-primary">{btntext}</button>
+        <button onClick={toggleStyle} type="button" className="btn btn-primary">
+          {btntext}
+        </button>
       </div>
     </div>
   );
 }
-

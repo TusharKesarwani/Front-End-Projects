@@ -43,7 +43,7 @@
     border-radius: $border-radius 0 0 $border-radius;
   }
 
-  .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child{
+  .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
     border-radius: $border-radius 0 0 $border-radius;
   }
 
@@ -54,24 +54,33 @@
   }
 
   .custom-select {
-    padding: $custom-select-padding-y $custom-select-padding-x $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding);
-    background: $custom-select-bg $custom-select-indicator no-repeat left $custom-select-padding-x center;
+    padding: $custom-select-padding-y $custom-select-padding-x
+      $custom-select-padding-y
+      ($custom-select-padding-x + $custom-select-indicator-padding);
+    background: $custom-select-bg $custom-select-indicator no-repeat left
+      $custom-select-padding-x center;
     background-size: $custom-select-bg-size;
   }
 
-  .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-  .input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+  .input-group
+    > .input-group-append:last-child
+    > .btn:not(:last-child):not(.dropdown-toggle),
+  .input-group
+    > .input-group-append:last-child
+    > .input-group-text:not(:last-child),
   .input-group > .input-group-append:not(:last-child) > .btn,
   .input-group > .input-group-append:not(:last-child) > .input-group-text,
   .input-group > .input-group-prepend > .btn,
-  .input-group > .input-group-prepend > .input-group-text{
+  .input-group > .input-group-prepend > .input-group-text {
     border-radius: 0 $border-radius $border-radius 0;
   }
 
   .input-group > .input-group-append > .btn,
   .input-group > .input-group-append > .input-group-text,
   .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
-  .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+  .input-group
+    > .input-group-prepend:first-child
+    > .input-group-text:not(:first-child),
   .input-group > .input-group-prepend:not(:first-child) > .btn,
   .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
     border-radius: $border-radius 0 0 $border-radius;
@@ -106,7 +115,7 @@
   .custom-file-label::after {
     right: initial;
     left: -1px;
-    border-radius: .25rem 0 0 .25rem;
+    border-radius: 0.25rem 0 0 0.25rem;
   }
 
   .radio input,
@@ -131,7 +140,7 @@
   }
 
   .modal-footer > :not(:first-child) {
-    margin-right: .25rem;
+    margin-right: 0.25rem;
   }
 
   .alert-dismissible .close {
@@ -140,7 +149,7 @@
   }
 
   .dropdown-toggle::after {
-    margin-right: .255em;
+    margin-right: 0.255em;
     margin-left: 0;
   }
 
@@ -160,12 +169,16 @@
     margin-left: 0;
   }
 
-  @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  @mixin make-grid-columns(
+    $columns: $grid-columns,
+    $gutter: $grid-gutter-width,
+    $breakpoints: $grid-breakpoints
+  ) {
     @each $breakpoint in map-keys($breakpoints) {
       $infix: breakpoint-infix($breakpoint, $breakpoints);
       @include media-breakpoint-up($breakpoint, $breakpoints) {
         @for $i from 0 through ($columns - 1) {
-          @if not ($infix == "" and $i == 0) {
+          @if not($infix == "" and $i == 0) {
             .offset#{$infix}-#{$i} {
               @include make-col-offset($i, $columns);
             }
@@ -185,7 +198,6 @@
 
       @each $prop, $abbrev in (margin: m, padding: p) {
         @each $size, $length in $spacers {
-
           .#{$abbrev}r#{$infix}-#{$size},
           .#{$abbrev}x#{$infix}-#{$size} {
             #{$prop}-right: 0 !important;

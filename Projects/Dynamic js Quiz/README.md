@@ -1,4 +1,4 @@
-# Dynamic  Quiz JS
+# Dynamic Quiz JS
 
 Dynamic Quiz Js is a basic quiz application built using HTML, CSS, and JavaScript. It provides a user-friendly and visually appealing Google-like interface. The application is fully responsive, ensuring a seamless experience across different devices.
 
@@ -9,7 +9,7 @@ Dynamic Quiz Js is a basic quiz application built using HTML, CSS, and JavaScrip
 2. Next Button: The "Next" button allows the user to move to the next question.
 
 3. **Previous Button**: The "Previous" button enables the user to navigate to the previous question.
-Start Over: The "Start Over" button resets the quiz and allows the user to attempt it again.
+   Start Over: The "Start Over" button resets the quiz and allows the user to attempt it again.
 
 4. **Question Navigation**: The question navigation panel displays the numbers of all questions. Clicking on a question number redirects the user to that specific question, allowing for easy navigation and review.
 
@@ -20,7 +20,6 @@ Start Over: The "Start Over" button resets the quiz and allows the user to attem
 ![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/3751321b-27e2-4856-9ae4-5ff35a567c26)
 
 ![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/ce07a727-98b0-4c49-8fa2-72aec055f81d)
-
 
 ## Getting Started
 
@@ -38,6 +37,7 @@ git clone https://github.com/TusharKesarwani/Front-End-Projects.git
 cd Projects
 cd Dynamic js Quiz
 ```
+
 3. Open the **index.html** file in your preferred web browser or in VS Code click on **Go Live** to open with live server.
 
 ## Contributing

@@ -39,19 +39,19 @@
   generateNavigationButtons();
 
   // Click handler for the 'next' button
-  $('#next').on('click', function (e) {
-  e.preventDefault();
+  $("#next").on("click", function (e) {
+    e.preventDefault();
 
-  // Suspend click listener during fade animation
-  if (quiz.is(':animated')) {
-    return false;
-  }
-  choose();
+    // Suspend click listener during fade animation
+    if (quiz.is(":animated")) {
+      return false;
+    }
+    choose();
 
-  questionCounter++;
-  displayNext();
-  updateNavigationPanel();
-});
+    questionCounter++;
+    displayNext();
+    updateNavigationPanel();
+  });
 
   // Click handler for the 'prev' button
   $("#prev").on("click", function (e) {
@@ -82,7 +82,7 @@
   });
 
   // Click handler for the navigation buttons
-  navigationPanel.on("click", ".navigation-button", function(e) {
+  navigationPanel.on("click", ".navigation-button", function (e) {
     e.preventDefault();
 
     if (quiz.is(":animated")) {
@@ -162,54 +162,53 @@
       selections[questionCounter] = parseInt(selectedOption);
     } else {
       selections[questionCounter] = -1; // indicate unselected option
-  }
-}
-
-  // Displays next requested element
-  // Displays next requested element
-function displayNext() {
-  quiz.fadeOut(function () {
-    $("#question-box").remove();
-
-    if (questionCounter < questions.length) {
-      var nextQuestion = createQuestionElement(questionCounter);
-      quiz.append(nextQuestion).fadeIn();
-      if (!(isNaN(selections[questionCounter]))) {
-        $('input[value="' + selections[questionCounter] + '"]').prop(
-          "checked",
-          true
-        );
-      }
-
-      // Controls display of 'prev' button
-      if (questionCounter === 1) {
-        $("#prev").show();
-      } else if (questionCounter === 0) {
-        $("#prev").hide();
-        $("#next").show();
-      }
-    } else {
-      var scoreElem = displayScore();
-      quiz.append(scoreElem).fadeIn();
-      $("#next").hide();
-      $("#prev").hide();
-      $("#start").show();
-      navigationPanel.hide(); // Hide the navigation panel on result screen
-      // Clear selections when displaying final results
-      selections = [];
-      questionCounter = 0; // Reset question counter
-
-      // Clear previous result
-      $("#result").remove();
     }
-  });
-}
+  }
 
+  // Displays next requested element
+  // Displays next requested element
+  function displayNext() {
+    quiz.fadeOut(function () {
+      $("#question-box").remove();
+
+      if (questionCounter < questions.length) {
+        var nextQuestion = createQuestionElement(questionCounter);
+        quiz.append(nextQuestion).fadeIn();
+        if (!isNaN(selections[questionCounter])) {
+          $('input[value="' + selections[questionCounter] + '"]').prop(
+            "checked",
+            true
+          );
+        }
+
+        // Controls display of 'prev' button
+        if (questionCounter === 1) {
+          $("#prev").show();
+        } else if (questionCounter === 0) {
+          $("#prev").hide();
+          $("#next").show();
+        }
+      } else {
+        var scoreElem = displayScore();
+        quiz.append(scoreElem).fadeIn();
+        $("#next").hide();
+        $("#prev").hide();
+        $("#start").show();
+        navigationPanel.hide(); // Hide the navigation panel on result screen
+        // Clear selections when displaying final results
+        selections = [];
+        questionCounter = 0; // Reset question counter
+
+        // Clear previous result
+        $("#result").remove();
+      }
+    });
+  }
 
   // Computes score and returns a paragraph element to be displayed
   function displayScore() {
-    var score = $('<p>', {
-      id: 'question-box'
+    var score = $("<p>", {
+      id: "question-box",
     });
 
     var numCorrect = 0;
@@ -223,34 +222,43 @@ function displayNext() {
       }
     }
 
-    score.append('You got ' + numCorrect + ' questions out of ' +
-      questions.length + ' right!');
+    score.append(
+      "You got " +
+        numCorrect +
+        " questions out of " +
+        questions.length +
+        " right!"
+    );
 
     if (numUnselected > 0) {
-      score.append('<br>' + numUnselected + ' question(s) were left unanswered.');
+      score.append(
+        "<br>" + numUnselected + " question(s) were left unanswered."
+      );
     }
     // Hide the navigation panel on the result screen
     navigationPanel.hide();
 
     return score;
-}
-// Generates navigation buttons based on the number of questions
-function generateNavigationButtons() {
-  for (var i = 0; i < questions.length; i++) {
-    var button = $(
-      '<div class="navigation-button" data-question="' +
-        i +
-        '">' +
-        (i + 1) +
-        "</div>"
-    );
-    navigationPanel.append(button);
   }
-}
+  // Generates navigation buttons based on the number of questions
+  function generateNavigationButtons() {
+    for (var i = 0; i < questions.length; i++) {
+      var button = $(
+        '<div class="navigation-button" data-question="' +
+          i +
+          '">' +
+          (i + 1) +
+          "</div>"
+      );
+      navigationPanel.append(button);
+    }
+  }
 
-// Updates the active state of the navigation buttons
-function updateNavigationPanel() {
-  navigationPanel.find(".navigation-button").removeClass("active");
-  navigationPanel.find('.navigation-button[data-question="' + questionCounter + '"]').addClass("active");
-}
+  // Updates the active state of the navigation buttons
+  function updateNavigationPanel() {
+    navigationPanel.find(".navigation-button").removeClass("active");
+    navigationPanel
+      .find('.navigation-button[data-question="' + questionCounter + '"]')
+      .addClass("active");
+  }
 })();

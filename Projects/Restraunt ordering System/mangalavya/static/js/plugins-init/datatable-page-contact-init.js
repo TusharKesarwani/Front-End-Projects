@@ -1,11 +1,7 @@
-(function($) {
-    "use strict"
+(function ($) {
+  "use strict";
 
-    $(".default-ordering").DataTable({
-        order: [
-            [3, "desc"]
-        ]
-    })
-
-
+  $(".default-ordering").DataTable({
+    order: [[3, "desc"]],
+  });
 })(jQuery);

@@ -2,7 +2,13 @@
 @font-face {
   font-family: "Material Design Icons";
   src: url("../fonts/materialdesignicons-webfont.eot?v=2.4.85");
-  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=2.4.85") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=2.4.85") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=2.4.85") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=2.4.85") format("truetype"), url("../fonts/materialdesignicons-webfont.svg?v=2.4.85#materialdesigniconsregular") format("svg");
+  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=2.4.85")
+      format("embedded-opentype"),
+    url("../fonts/materialdesignicons-webfont.woff2?v=2.4.85") format("woff2"),
+    url("../fonts/materialdesignicons-webfont.woff?v=2.4.85") format("woff"),
+    url("../fonts/materialdesignicons-webfont.ttf?v=2.4.85") format("truetype"),
+    url("../fonts/materialdesignicons-webfont.svg?v=2.4.85#materialdesigniconsregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -9962,19 +9968,23 @@
   visibility: hidden;
 }
 
-.mdi-18px.mdi-set, .mdi-18px.mdi:before {
+.mdi-18px.mdi-set,
+.mdi-18px.mdi:before {
   font-size: 18px;
 }
 
-.mdi-24px.mdi-set, .mdi-24px.mdi:before {
+.mdi-24px.mdi-set,
+.mdi-24px.mdi:before {
   font-size: 24px;
 }
 
-.mdi-36px.mdi-set, .mdi-36px.mdi:before {
+.mdi-36px.mdi-set,
+.mdi-36px.mdi:before {
   font-size: 36px;
 }
 
-.mdi-48px.mdi-set, .mdi-48px.mdi:before {
+.mdi-48px.mdi-set,
+.mdi-48px.mdi:before {
   font-size: 48px;
 }
 

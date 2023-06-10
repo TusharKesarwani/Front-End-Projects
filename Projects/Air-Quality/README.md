@@ -23,35 +23,35 @@ Air-Quality is a web application that allows users to input coordinates and fetc
 
 ![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/9e012867-f46d-4269-94d7-89bfa581d001)
 
-
 ## Getting Started
 
 To run the Air-Quality application locally, follow these steps:
 
 1. **Clone the repository**:
 
- ```bash
- git clone https://github.com/TusharKesarwani/Front-End-Projects.git
- ```
+```bash
+git clone https://github.com/TusharKesarwani/Front-End-Projects.git
+```
 
- 2. **Navigate to the project directory**:
+2.  **Navigate to the project directory**:
 
- ```bash
- cd Projects
- cd Air-Quality
- ```
- 3. Open the **index.html** file in your preferred web browser or in VS Code click on **Go Live** to open with live server.
+```bash
+cd Projects
+cd Air-Quality
+```
 
- 4. Start exploring the **Air-Quality** application by entering the desired coordinates or allowing location services to fetch air pollution details.
+3.  Open the **index.html** file in your preferred web browser or in VS Code click on **Go Live** to open with live server.
 
- ## Contributing
+4.  Start exploring the **Air-Quality** application by entering the desired coordinates or allowing location services to fetch air pollution details.
+
+## Contributing
 
 Contributions to the Air-Quality project are welcome and encouraged! If you encounter any issues or have suggestions for improvement, please raise an issue.
 
 If you would like to contribute code to the project, please follow these steps:
 
- 1. Fork the repository.
- 2. Create a new branch for your feature or bug fix.
- 3. Make your changes and commit them.
- 4. Push your changes to your forked repository.
- 5. Submit a pull request to the main repository.
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them.
+4.  Push your changes to your forked repository.
+5.  Submit a pull request to the main repository.

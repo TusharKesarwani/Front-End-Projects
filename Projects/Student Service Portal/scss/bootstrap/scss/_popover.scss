@@ -66,13 +66,15 @@
 
     &::before {
       left: 0;
-      border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
+      border-width: ($popover-arrow-width / 2) $popover-arrow-height
+        ($popover-arrow-width / 2) 0;
       border-right-color: $popover-arrow-outer-color;
     }
 
     &::after {
       left: $popover-border-width;
-      border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
+      border-width: ($popover-arrow-width / 2) $popover-arrow-height
+        ($popover-arrow-width / 2) 0;
       border-right-color: $popover-arrow-color;
     }
   }
@@ -86,13 +88,15 @@
 
     &::before {
       top: 0;
-      border-width: 0 ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2);
+      border-width: 0 ($popover-arrow-width / 2) $popover-arrow-height
+        ($popover-arrow-width / 2);
       border-bottom-color: $popover-arrow-outer-color;
     }
 
     &::after {
       top: $popover-border-width;
-      border-width: 0 ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2);
+      border-width: 0 ($popover-arrow-width / 2) $popover-arrow-height
+        ($popover-arrow-width / 2);
       border-bottom-color: $popover-arrow-color;
     }
   }
@@ -121,13 +125,15 @@
 
     &::before {
       right: 0;
-      border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
+      border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2)
+        $popover-arrow-height;
       border-left-color: $popover-arrow-outer-color;
     }
 
     &::after {
       right: $popover-border-width;
-      border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
+      border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2)
+        $popover-arrow-height;
       border-left-color: $popover-arrow-color;
     }
   }
@@ -147,7 +153,6 @@
     @extend .bs-popover-left;
   }
 }
-
 
 // Offset the popover to account for the popover arrow
 .popover-header {

@@ -1,390 +1,391 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Montserrat:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Montserrat:wght@500;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding: 80px;
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
 }
 
 body {
-    font-family: "monserrat", sans-serif;
+  font-family: "monserrat", sans-serif;
 }
 
 /* navigation bar  */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{    
-    background:#7BB4EB;
-    
+header {
+  background: #7bb4eb;
 }
 
-li{
-    list-style:none;
+li {
+  list-style: none;
 }
 
-.nav-logo{
-    color: #ffff;
-    text-decoration:none; 
-    font-size:2rem;  
-    padding:0 1rem;
+.nav-logo {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0 1rem;
 }
 
-.nav-link{
-    color: #ffff;
-    text-decoration:none;
-    text-transform: uppercase;
-    margin: 0 0.5rem;
-    transition: 0.7s ease;
+.nav-link {
+  color: #ffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  transition: 0.7s ease;
 }
 
-.nav-link:hover{
-    color:#212b0a;
-    border-bottom:2px solid #fff;
+.nav-link:hover {
+  color: #212b0a;
+  border-bottom: 2px solid #fff;
 }
 
-.navbar{
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #7bb4eb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  background-color: #fff;
+  width: 27px;
+  height: 3px;
+  margin: 0.4rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  /* turning the hamburger icon to closing icon (easiest way) */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .nav-menu {
     position: fixed;
-    top:0;
-    z-index:99;
-    background:#7BB4EB;
-   width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    min-height:70px;
-    padding: 0 2rem;
-}
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    flex-direction: column;
+    background: #7bb4eb;
+    text-align: center;
+    transition: 0.4s ease-in;
+  }
 
-.nav-menu{
-    display: flex;
-    justify-content:space-between;
+  .nav-item {
+    margin: 1rem 0;
+  }
 
-}
-
-.hamburger{
-    display: none;
-    cursor: pointer;
-} 
-
-.bar{
- display: block;
- background-color: #fff;
- width: 27px;
- height: 3px;
- margin: 0.4rem;
- -webkit-transition: all 0.3s ease-in-out;
- transition: all 0.3s ease-in-out;
-}
-
-@media only screen and (max-width:768px) {
-
-    .hamburger{
-        display: block;
-    }
- /* turning the hamburger icon to closing icon (easiest way) */
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform:translateY(10px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform:translateY(-9px) rotate(-45deg);
-    }
-
- .nav-menu{
- position:fixed;
- left:-100%;
- top:70px; 
- width: 100%; 
- flex-direction: column;
-background:#7BB4EB;
- text-align: center;
- transition:0.4s ease-in; 
- }
-
- .nav-item{
-    margin:1rem 0;
- }
-
-.nav-menu.active{
-    left:0;
-}
-
-
+  .nav-menu.active {
+    left: 0;
+  }
 }
 /*Styling big header*/
 header .jumbotron {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-    background: linear-gradient(180deg, #659999, #f4791f), url('../assets/bookbg.jpg');
-    background-blend-mode: screen;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  background: linear-gradient(180deg, #659999, #f4791f),
+    url("../assets/bookbg.jpg");
+  background-blend-mode: screen;
 }
 
 .jumbotron .content {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 .jumbotron .content h1 {
-    font-size: 3em;
-    color: #111;
+  font-size: 3em;
+  color: #111;
 }
 
 .jumbotron .content h2 {
-    color: #111;
+  color: #111;
 }
 
 .jumbotron .img {
-    position: relative;
-    max-width:  360px;
+  position: relative;
+  max-width: 360px;
 }
 
 .wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-
 
 /*styling main bookcase*/
 .title h2 {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 40px;
-    padding-bottom: 10px;
-    margin-top: 20px;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  margin-top: 20px;
 }
 
 .title h2::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 300px;
-    height: 3px;
-    background: #99C270;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 300px;
+  height: 3px;
+  background: #99c270;
+  transform: translateX(-50%);
 }
 
-input[type=text], input[type=number], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-input[type=submit] {
-    width: 100%;
-    background-color:  #81B622;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="submit"] {
+  width: 100%;
+  background-color: #81b622;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-input[type=checkbox] {
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="checkbox"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-input[type=submit]:hover {
-    background-color: #99C270;
-
+input[type="submit"]:hover {
+  background-color: #99c270;
 }
 
 .inputBookcase {
-    float: left;
-    padding: 20px 20px 20px 75px;
-    width: 65%;
+  float: left;
+  padding: 20px 20px 20px 75px;
+  width: 65%;
 }
 
-#u-bookcase{
-margin-bottom:2rem;
+#u-bookcase {
+  margin-bottom: 2rem;
 }
-#f-bookcase{
-margin-bottom:4rem;
+#f-bookcase {
+  margin-bottom: 4rem;
 }
 .inputBookcase .bookcase {
-    padding: 20px;
+  padding: 20px;
 }
 
 .searchBookcase {
-
-    padding: 20px 21px 20px 20px;
-    width: 35%;
+  padding: 20px 21px 20px 20px;
+  width: 35%;
 }
 
-.searchBookcase input[type=text] {
-    width: 100%;
-    background-color: white;
-    background-image: url('../assets/searchimg.png');
-    background-size: 5%;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
+.searchBookcase input[type="text"] {
+  width: 100%;
+  background-color: white;
+  background-image: url("../assets/searchimg.png");
+  background-size: 5%;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
 }
 
 .item {
-    border-radius: 16px;
-    margin-top: 16px;
-    padding: 12px 24px 12px 24px;
-    background: white;
-    display: flex;
-    align-items: center;
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
 }
 
 .item button {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .item > .inner h2 {
-    margin-bottom: unset;
+  margin-bottom: unset;
 }
 
 .item > .inner p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .shadow {
-    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .check-button {
-    background: url('../assets/check-outline.svg');
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    cursor: pointer;
-    border: none;
+  background: url("../assets/check-outline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
 }
 
 .check-button:hover {
-    background: url('../assets/check-solid.svg');
-    background-size: contain;
+  background: url("../assets/check-solid.svg");
+  background-size: contain;
 }
 
-.trash-button{
-    background: url('../assets/trash-outline.svg');
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
-    cursor: pointer;
-    border: none;
+.trash-button {
+  background: url("../assets/trash-outline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
 }
-input[type=submit] {
-    width: 
-    35%;
+input[type="submit"] {
+  width: 35%;
 }
-.searchBookcase input{
-    margin: 1rem 2rem;
+.searchBookcase input {
+  margin: 1rem 2rem;
 }
 
-.searchBookcase input[type=text] {
-    width:84%;
+.searchBookcase input[type="text"] {
+  width: 84%;
 }
 .trash-button:hover {
-    background: url('../assets/trash-fill.svg');
-    background-size: contain;
+  background: url("../assets/trash-fill.svg");
+  background-size: contain;
 }
 
-.undo-button{
-    background: url('../assets/undo-ouline.svg');
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    cursor: pointer;
-    border: none;
+.undo-button {
+  background: url("../assets/undo-ouline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
 }
 
 .undo-button:hover {
-    background: url('../assets/undo-ouline.svg');
-    background-size: contain;
+  background: url("../assets/undo-ouline.svg");
+  background-size: contain;
 }
 
-.check-button:focus, .trash-button {
-    outline: none;
+.check-button:focus,
+.trash-button {
+  outline: none;
 }
-
 
 /*footer styling*/
 footer {
-    text-align: center;
-    background:#7BB4EB;
-    padding: 20px 23px;
-    color: #fff;
-    width:100%;
-    height:60px;
-    clear: both;
+  text-align: center;
+  background: #7bb4eb;
+  padding: 20px 23px;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  clear: both;
 }
-
 
 /*Media query*/
 @media only screen and (max-width: 1024px) {
-    header .jumbotron img, header .jumbotron .content {
-        width: 100%;
-    }
+  header .jumbotron img,
+  header .jumbotron .content {
+    width: 100%;
+  }
 
-    main .inputBookcase, main .searchBookcase {
-        width: 90%;
-    }
+  main .inputBookcase,
+  main .searchBookcase {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 720px) {
-    header .jumbotron img,  header .jumbotron .content {
-        width: 100%;
-        max-width: 180px;
-    }
-    img{
-        width:100%;
-    }
+  header .jumbotron img,
+  header .jumbotron .content {
+    width: 100%;
+    max-width: 180px;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    header .jumbotron img,  header .jumbotron .content {
-        width: 100%;
-        max-width: 120px;
-    }
+  header .jumbotron img,
+  header .jumbotron .content {
+    width: 100%;
+    max-width: 120px;
+  }
 
-    main .inputBookcase, main .searchBookcase {
-        width: 100%;
-    }
+  main .inputBookcase,
+  main .searchBookcase {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 360px) {
-    header .jumbotron img,  header .jumbotron .content {
-        width: 100%;
-        max-width: 90px;
-    }
+  header .jumbotron img,
+  header .jumbotron .content {
+    width: 100%;
+    max-width: 90px;
+  }
 
-    main .inputBookcase, main .searchBookcase {
-        width: 150%;
-    }
+  main .inputBookcase,
+  main .searchBookcase {
+    width: 150%;
+  }
 }

@@ -2,7 +2,6 @@
 // Released under MIT and copyright 2014 Waybury.
 // https://useiconic.com/open
 
-
 // Checkboxes and radios
 //
 // Base class takes care of all the key behavioral aspects.
@@ -90,7 +89,6 @@
   }
 }
 
-
 // Checkboxes
 //
 // Tweak just a few things for checkboxes.
@@ -154,7 +152,6 @@
   }
 }
 
-
 // Select
 //
 // Replaces the browser default select with a custom one, mostly pulled from
@@ -165,11 +162,14 @@
   display: inline-block;
   width: 100%;
   height: $custom-select-height;
-  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+  padding: $custom-select-padding-y
+    ($custom-select-padding-x + $custom-select-indicator-padding)
+    $custom-select-padding-y $custom-select-padding-x;
   line-height: $custom-select-line-height;
   color: $custom-select-color;
   vertical-align: middle;
-  background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
+  background: $custom-select-bg $custom-select-indicator no-repeat right
+    $custom-select-padding-x center;
   background-size: $custom-select-bg-size;
   border: $custom-select-border-width solid $custom-select-border-color;
   @if $enable-rounded {
@@ -226,7 +226,6 @@
   padding-bottom: $custom-select-padding-y;
   font-size: $custom-select-font-size-lg;
 }
-
 
 // File
 //
@@ -293,7 +292,9 @@
     content: "Browse";
     @include gradient-bg($custom-file-button-bg);
     border-left: $custom-file-border-width solid $custom-file-border-color;
-    @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
+    @include border-radius(
+      0 $custom-file-border-radius $custom-file-border-radius 0
+    );
   }
 }
 
@@ -320,7 +321,7 @@
   &::-webkit-slider-thumb {
     width: $custom-range-thumb-width;
     height: $custom-range-thumb-height;
-    margin-top: -($custom-range-thumb-width * .25); // Webkit specific?
+    margin-top: -($custom-range-thumb-width * 0.25); // Webkit specific?
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
@@ -404,7 +405,7 @@
     cursor: $custom-range-track-cursor;
     background-color: transparent;
     border-color: transparent;
-    border-width: ($custom-range-thumb-height * .5);
+    border-width: ($custom-range-thumb-height * 0.5);
     @include box-shadow($custom-range-track-box-shadow);
   }
 

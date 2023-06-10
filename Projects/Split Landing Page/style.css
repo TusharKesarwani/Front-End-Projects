@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
   --left-bg-color: rgba(87, 84, 236, 0.7);
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -75,13 +75,13 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('ps.jpg');
+  background: url("ps.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .split.left::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -90,13 +90,13 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('xbox.jpg');
+  background: url("xbox.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .split.right::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;

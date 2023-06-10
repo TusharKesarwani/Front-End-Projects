@@ -1,4 +1,4 @@
-# Step  Progress  Bar
+# Step Progress Bar
 
 This project is used to track the progress of work done.
 

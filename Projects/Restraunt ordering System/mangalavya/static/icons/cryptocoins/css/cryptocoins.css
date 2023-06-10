@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: "cryptocoins";
-  src: url('../fonts/cryptocoins.woff2') format('woff2'),
-    url('../fonts/cryptocoins.woff') format('woff'),
-    url('../fonts/cryptocoins.ttf') format('truetype');
+  src: url("../fonts/cryptocoins.woff2") format("woff2"),
+    url("../fonts/cryptocoins.woff") format("woff"),
+    url("../fonts/cryptocoins.ttf") format("truetype");
 }
 
 /* .cc:before { */
 .cc::before {
   font-family: "cryptocoins";
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -19,7 +19,6 @@
   text-decoration: none;
   text-transform: none;
 }
-
 
 .cc.ADA-alt::before {
   content: "\E001";

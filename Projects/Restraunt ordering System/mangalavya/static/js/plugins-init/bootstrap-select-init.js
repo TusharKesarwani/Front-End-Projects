@@ -1,16 +1,4 @@
-(function($){
-    "use strict"
-    // Standard select boxes
-    
-
-
-
-
-
-
-
-
-
-
-
+(function ($) {
+  "use strict";
+  // Standard select boxes
 })(jQuery);

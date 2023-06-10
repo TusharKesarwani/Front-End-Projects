@@ -1,19 +1,18 @@
-
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Mukta:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Mukta:wght@300&display=swap");
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px black; 
+  box-shadow: inset 0 0 5px black;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0); 
+  background: rgb(0, 0, 0);
   border-radius: 10px;
 }
 
@@ -21,7 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Mukta', sans-serif;
+  font-family: "Mukta", sans-serif;
 }
 
 body {
@@ -54,8 +53,8 @@ body {
 }
 
 .search-container {
-    margin-top: 5%;
-    margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background: #fff;
   height: 30px;
   border-radius: 30px;
@@ -65,7 +64,7 @@ body {
   align-items: center;
   cursor: pointer;
   transition: 0.8s;
- 
+
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
@@ -91,7 +90,7 @@ body {
 }
 
 #search-btn {
-    font-size: 15px;
+  font-size: 15px;
   font-family: Arial;
   width: 140px;
   height: 50px;
@@ -107,18 +106,16 @@ body {
   text-shadow: 1px 1px 0px rgba(15, 15, 15, 1);
   background-color: transparent;
 }
-.card{
-  
-  
+.card {
   padding: 10%;
   padding-top: 3%;
 }
-#profileInfo{
+#profileInfo {
   visibility: hidden;
   display: flex;
   flex-direction: row;
 }
-.cardBody{
+.cardBody {
   margin: 5%;
   display: flex;
   flex-direction: column;
@@ -131,43 +128,40 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-#cardImage
-{
+#cardImage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.round{
-  
+.round {
   align-items: center;
-  border: 1px solid #03BFCB;
-	border-radius: 50%;
-	padding: 7px;
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
 }
-#cardDetail{
+#cardDetail {
   align-items: center;
   margin: 3%;
 }
-.name{
+.name {
   margin: 5%;
   margin-bottom: 10%;
 }
-.bio{
+.bio {
   margin: 5%;
 }
-.btn{
+.btn {
   margin: 5%;
   background-color: transparent;
-	border: 1px solid #03BFCB;
-	border-radius: 3px;
-	color: #231E39;
-	font-family: Montserrat, sans-serif;
-	font-weight: 500;
-	padding: 10px 25px;
-  
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
 }
-.link{
+.link {
   color: aliceblue;
   text-decoration: none;
   font-size: large;

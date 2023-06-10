@@ -1,4 +1,4 @@
-import katex from '../katex.mjs';
+import katex from "../katex.mjs";
 
 /* eslint no-constant-condition:0 */
 const findEndOfMath = function findEndOfMath(delimiter, text, startIndex) {
@@ -11,7 +11,10 @@ const findEndOfMath = function findEndOfMath(delimiter, text, startIndex) {
   while (index < text.length) {
     const character = text[index];
 
-    if (braceLevel <= 0 && text.slice(index, index + delimLength) === delimiter) {
+    if (
+      braceLevel <= 0 &&
+      text.slice(index, index + delimLength) === delimiter
+    ) {
       return index;
     } else if (character === "\\") {
       index++;
@@ -27,7 +30,12 @@ const findEndOfMath = function findEndOfMath(delimiter, text, startIndex) {
   return -1;
 };
 
-const splitAtDelimiters = function splitAtDelimiters(startData, leftDelim, rightDelim, display) {
+const splitAtDelimiters = function splitAtDelimiters(
+  startData,
+  leftDelim,
+  rightDelim,
+  display
+) {
   const finalData = [];
 
   for (let i = 0; i < startData.length; i++) {
@@ -42,7 +50,7 @@ const splitAtDelimiters = function splitAtDelimiters(startData, leftDelim, right
         currIndex = nextIndex;
         finalData.push({
           type: "text",
-          data: text.slice(0, currIndex)
+          data: text.slice(0, currIndex),
         });
         lookingForLeft = false;
       }
@@ -57,11 +65,15 @@ const splitAtDelimiters = function splitAtDelimiters(startData, leftDelim, right
 
           finalData.push({
             type: "text",
-            data: text.slice(currIndex, nextIndex)
+            data: text.slice(currIndex, nextIndex),
           });
           currIndex = nextIndex;
         } else {
-          nextIndex = findEndOfMath(rightDelim, text, currIndex + leftDelim.length);
+          nextIndex = findEndOfMath(
+            rightDelim,
+            text,
+            currIndex + leftDelim.length
+          );
 
           if (nextIndex === -1) {
             break;
@@ -71,7 +83,7 @@ const splitAtDelimiters = function splitAtDelimiters(startData, leftDelim, right
             type: "math",
             data: text.slice(currIndex + leftDelim.length, nextIndex),
             rawData: text.slice(currIndex, nextIndex + rightDelim.length),
-            display: display
+            display: display,
           });
           currIndex = nextIndex + rightDelim.length;
         }
@@ -81,7 +93,7 @@ const splitAtDelimiters = function splitAtDelimiters(startData, leftDelim, right
 
       finalData.push({
         type: "text",
-        data: text.slice(currIndex)
+        data: text.slice(currIndex),
       });
     } else {
       finalData.push(startData[i]);
@@ -94,14 +106,21 @@ const splitAtDelimiters = function splitAtDelimiters(startData, leftDelim, right
 /* eslint no-console:0 */
 
 const splitWithDelimiters = function splitWithDelimiters(text, delimiters) {
-  let data = [{
-    type: "text",
-    data: text
-  }];
+  let data = [
+    {
+      type: "text",
+      data: text,
+    },
+  ];
 
   for (let i = 0; i < delimiters.length; i++) {
     const delimiter = delimiters[i];
-    data = splitAtDelimiters(data, delimiter.left, delimiter.right, delimiter.display || false);
+    data = splitAtDelimiters(
+      data,
+      delimiter.left,
+      delimiter.right,
+      delimiter.display || false
+    );
   }
 
   return data;
@@ -110,11 +129,10 @@ const splitWithDelimiters = function splitWithDelimiters(text, delimiters) {
  * API, we should copy it before mutating.
  */
 
-
 const renderMathInText = function renderMathInText(text, optionsCopy) {
   const data = splitWithDelimiters(text, optionsCopy.delimiters);
 
-  if (data.length === 1 && data[0].type === 'text') {
+  if (data.length === 1 && data[0].type === "text") {
     // There is no formula in the text.
     // Let's return null which means there is no need to replace
     // the current text node with a new one.
@@ -144,7 +162,10 @@ const renderMathInText = function renderMathInText(text, optionsCopy) {
           throw e;
         }
 
-        optionsCopy.errorCallback("KaTeX auto-render: Failed to parse `" + data[i].data + "` with ", e);
+        optionsCopy.errorCallback(
+          "KaTeX auto-render: Failed to parse `" + data[i].data + "` with ",
+          e
+        );
         fragment.appendChild(document.createTextNode(data[i].rawData));
         continue;
       }
@@ -170,14 +191,18 @@ const renderElem = function renderElem(elem, optionsCopy) {
       }
     } else if (childNode.nodeType === 1) {
       // Element node
-      const className = ' ' + childNode.className + ' ';
-      const shouldRender = optionsCopy.ignoredTags.indexOf(childNode.nodeName.toLowerCase()) === -1 && optionsCopy.ignoredClasses.every(x => className.indexOf(' ' + x + ' ') === -1);
+      const className = " " + childNode.className + " ";
+      const shouldRender =
+        optionsCopy.ignoredTags.indexOf(childNode.nodeName.toLowerCase()) ===
+          -1 &&
+        optionsCopy.ignoredClasses.every(
+          (x) => className.indexOf(" " + x + " ") === -1
+        );
 
       if (shouldRender) {
         renderElem(childNode, optionsCopy);
       }
     } // Otherwise, it's something else, and ignore it.
-
   }
 };
 
@@ -194,27 +219,37 @@ const renderMathInElement = function renderMathInElement(elem, options) {
     }
   } // default options
 
-
-  optionsCopy.delimiters = optionsCopy.delimiters || [{
-    left: "$$",
-    right: "$$",
-    display: true
-  }, {
-    left: "\\(",
-    right: "\\)",
-    display: false
-  }, // LaTeX uses $…$, but it ruins the display of normal `$` in text:
-  // {left: "$", right: "$", display: false},
-  //  \[…\] must come last in this array. Otherwise, renderMathInElement
-  //  will search for \[ before it searches for $$ or  \(
-  // That makes it susceptible to finding a \\[0.3em] row delimiter and
-  // treating it as if it were the start of a KaTeX math zone.
-  {
-    left: "\\[",
-    right: "\\]",
-    display: true
-  }];
-  optionsCopy.ignoredTags = optionsCopy.ignoredTags || ["script", "noscript", "style", "textarea", "pre", "code", "option"];
+  optionsCopy.delimiters = optionsCopy.delimiters || [
+    {
+      left: "$$",
+      right: "$$",
+      display: true,
+    },
+    {
+      left: "\\(",
+      right: "\\)",
+      display: false,
+    }, // LaTeX uses $…$, but it ruins the display of normal `$` in text:
+    // {left: "$", right: "$", display: false},
+    //  \[…\] must come last in this array. Otherwise, renderMathInElement
+    //  will search for \[ before it searches for $$ or  \(
+    // That makes it susceptible to finding a \\[0.3em] row delimiter and
+    // treating it as if it were the start of a KaTeX math zone.
+    {
+      left: "\\[",
+      right: "\\]",
+      display: true,
+    },
+  ];
+  optionsCopy.ignoredTags = optionsCopy.ignoredTags || [
+    "script",
+    "noscript",
+    "style",
+    "textarea",
+    "pre",
+    "code",
+    "option",
+  ];
   optionsCopy.ignoredClasses = optionsCopy.ignoredClasses || [];
   optionsCopy.errorCallback = optionsCopy.errorCallback || console.error; // Enable sharing of global macros defined via `\gdef` between different
   // math elements within a single call to `renderMathInElement`.

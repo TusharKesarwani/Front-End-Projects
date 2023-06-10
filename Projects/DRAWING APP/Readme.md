@@ -21,6 +21,7 @@ Work can also be saved into your machine.
 Image gets saved with the application name.
 
 Responsive
+
 # Tech stack
 
 HTML
@@ -29,7 +30,7 @@ CSS
 
 Javascript
 
-# Screenshots 
+# Screenshots
 
 ## Landing Page
 
@@ -50,6 +51,3 @@ Javascript
 ## Saved Image from application
 
 ![1675012499654_SketchIt](https://user-images.githubusercontent.com/85746815/215483888-ae47bf92-a9f5-4009-9b46-4fe8356f0662.jpg)
-
-
-

@@ -32,14 +32,7 @@
       "2012/03/29",
       "$433,060"
     ],
-    [
-      "Airi Satou",
-      "Accountant",
-      "Tokyo",
-      "5407",
-      "2008/11/28",
-      "$162,700"
-    ],
+    ["Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700"],
     [
       "Brielle Williamson",
       "Integration Specialist",
@@ -200,14 +193,7 @@
       "2009/10/09",
       "$1,200,000"
     ],
-    [
-      "Gavin Joyce",
-      "Developer",
-      "Edinburgh",
-      "8822",
-      "2010/12/22",
-      "$92,575"
-    ],
+    ["Gavin Joyce", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575"],
     [
       "Jennifer Chang",
       "Regional Director",
@@ -248,14 +234,7 @@
       "2011/06/02",
       "$95,400"
     ],
-    [
-      "Suki Burks",
-      "Developer",
-      "London",
-      "6832",
-      "2009/10/22",
-      "$114,500"
-    ],
+    ["Suki Burks", "Developer", "London", "6832", "2009/10/22", "$114,500"],
     [
       "Prescott Bartlett",
       "Technical Author",
@@ -352,14 +331,7 @@
       "2009/08/19",
       "$139,575"
     ],
-    [
-      "Thor Walton",
-      "Developer",
-      "New York",
-      "8327",
-      "2013/08/11",
-      "$98,540"
-    ],
+    ["Thor Walton", "Developer", "New York", "8327", "2013/08/11", "$98,540"],
     [
       "Finn Camacho",
       "Support Engineer",

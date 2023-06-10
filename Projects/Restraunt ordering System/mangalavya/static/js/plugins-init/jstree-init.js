@@ -1,18 +1,5 @@
-(function($) {
-    'use strict'
+(function ($) {
+  "use strict";
 
-    $('#jstree_basic').jstree();
-
-
-
-
-
-
-
-
-
-
-
-
-
+  $("#jstree_basic").jstree();
 })(jQuery);

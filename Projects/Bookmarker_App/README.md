@@ -6,7 +6,8 @@
 
 <br><br><br><br><br>
 
-##  💻 Tech stack
+## 💻 Tech stack
+
 - HTML
 - CSS
 - JS

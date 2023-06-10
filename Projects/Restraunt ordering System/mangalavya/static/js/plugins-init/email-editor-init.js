@@ -1,9 +1,7 @@
-(function($) {
-    "use strict"
+(function ($) {
+  "use strict";
 
-    tinymce.init({
-        selector: '#email-compose-editor'
-    });
-
-
+  tinymce.init({
+    selector: "#email-compose-editor",
+  });
 })(jQuery);

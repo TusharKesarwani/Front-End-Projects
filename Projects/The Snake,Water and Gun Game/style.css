@@ -1,21 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: url(./images/img1.png);
   text-align: center;
 }
-.heading{
-    color: #fff;
-    text-shadow: 2px 3px 23px;
-    margin-top: 5%;
+.heading {
+  color: #fff;
+  text-shadow: 2px 3px 23px;
+  margin-top: 5%;
 }
 
-h3{
-color: white;
+h3 {
+  color: white;
 }
 #game {
   display: inline-block;
@@ -32,7 +32,7 @@ button {
   margin: 10px;
   border-radius: 5px;
   font-size: 20px;
-  background-color:green;
+  background-color: green;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -51,5 +51,3 @@ button:hover {
   color: white;
   text-shadow: 2px 3px 23px;
 }
-
-

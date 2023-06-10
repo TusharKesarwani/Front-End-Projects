@@ -56,9 +56,9 @@
 }
 
 .pe-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eeeeee;
-  border-radius: .1em;
+  border-radius: 0.1em;
 }
 
 .pull-right {
@@ -70,11 +70,11 @@
 }
 
 .pe.pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 
 .pe.pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
 .pe-spin {
@@ -92,11 +92,11 @@
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 .pe-rotate-90 {

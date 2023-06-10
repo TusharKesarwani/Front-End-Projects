@@ -2,9 +2,9 @@ const searchForm = document.querySelector("form");
 const searchResultDiv = document.querySelector(".search-result");
 const container = document.querySelector(".container");
 let searchQuery = "";
-const APP_ID = '33b1a0ef';
-const APP_key = '5e12645236de1c7eb43b725fd06a49ee';
- //console.log(container);
+const APP_ID = "33b1a0ef";
+const APP_key = "5e12645236de1c7eb43b725fd06a49ee";
+//console.log(container);
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -46,4 +46,3 @@ function generateHTML(results) {
   });
   searchResultDiv.innerHTML = generatedHTML;
 }
-

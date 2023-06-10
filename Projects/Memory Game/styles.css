@@ -1,5 +1,5 @@
 body {
-  background-color: #011F3F;
+  background-color: #011f3f;
   background-size: cover;
   min-height: 740px;
   overflow-x: hidden;
@@ -8,10 +8,10 @@ body {
 }
 
 #level-title {
-  color: #FEF2BF;
-  font-family: 'Press Start 2P', cursive;
+  color: #fef2bf;
+  font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin:  60px auto 40px;
+  margin: 60px auto 40px;
   text-align: center;
 }
 
@@ -56,7 +56,7 @@ body {
 
 footer {
   color: #c0b7b7;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   letter-spacing: 1.4px;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -67,9 +67,9 @@ footer {
                                        Modal Styling
 -------------------------------------------------------------------------------------------------------   */
 
-p .modal-link{
+p .modal-link {
   color: #25c0b6;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1.6px;
@@ -78,27 +78,31 @@ p .modal-link{
 }
 
 hr {
-  background-image: linear-gradient(to right, rgba(27, 160, 152, 0.4), rgba(27,160,152,0.8), rgba(27, 160, 152, 0.4));
+  background-image: linear-gradient(
+    to right,
+    rgba(27, 160, 152, 0.4),
+    rgba(27, 160, 152, 0.8),
+    rgba(27, 160, 152, 0.4)
+  );
   height: 1px;
   margin: -20px auto -20px;
   width: 120px;
 }
 
-.footer-modal .modal-content{
-  background-color: rgb(8,52,69);
+.footer-modal .modal-content {
+  background-color: rgb(8, 52, 69);
 }
 
-.footer-modal .modal-header{
+.footer-modal .modal-header {
   border-color: rgb(5, 22, 34);
 }
 
-.footer-modal .modal-title{
+.footer-modal .modal-title {
   color: rgb(55, 202, 192);
   font-size: 22px;
-
 }
 
-.footer-modal .modal-body p{
+.footer-modal .modal-body p {
   color: #fff;
   font-size: 15px;
   font-weight: 100;
@@ -106,7 +110,7 @@ hr {
   margin-bottom: 10px;
 }
 
-.footer-modal .instruction-content{
+.footer-modal .instruction-content {
   color: #fff;
   font-size: 18px;
   font-weight: 200;
@@ -114,6 +118,6 @@ hr {
   margin-bottom: 17px;
 }
 
-.footer-modal .instruction-content i{
+.footer-modal .instruction-content i {
   margin-left: 5px;
 }

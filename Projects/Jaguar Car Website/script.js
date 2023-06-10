@@ -1,12 +1,18 @@
-var words = ['DESCRIPTION TO OUR NEW FAMILIES', 'I also like css', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
+var words = [
+    "DESCRIPTION TO OUR NEW FAMILIES",
+    "I also like css",
+    "Lorem ipsum dolor sit amet",
+    " consectetur adipiscing elit",
+    "sed do eiusmod tempor incididunt",
+  ],
+  part,
+  i = 0,
+  offset = 0,
+  len = words.length,
+  forwards = true,
+  skip_count = 0,
+  skip_delay = 15,
+  speed = 70;
 var wordflick = function () {
   setInterval(function () {
     if (forwards) {
@@ -17,8 +23,7 @@ var wordflick = function () {
           skip_count = 0;
         }
       }
-    }
-    else {
+    } else {
       if (offset == 0) {
         forwards = true;
         i++;
@@ -32,13 +37,12 @@ var wordflick = function () {
     if (skip_count == 0) {
       if (forwards) {
         offset++;
-      }
-      else {
+      } else {
         offset--;
       }
     }
-    $('.word').text(part);
-  },speed);
+    $(".word").text(part);
+  }, speed);
 };
 
 $(document).ready(function () {

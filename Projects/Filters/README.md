@@ -40,10 +40,10 @@
 ```js
 // Text Filter
 
-const form = document.querySelector('.input-form');
-const searchInput = document.querySelector('.search-input');
+const form = document.querySelector(".input-form");
+const searchInput = document.querySelector(".search-input");
 
-form.addEventListener('keyup', () => {
+form.addEventListener("keyup", () => {
   // keyup - fired when key released
   const inputValue = searchInput.value;
   filteredProducts = products.filter((product) => {
@@ -78,7 +78,6 @@ form.addEventListener('keyup', () => {
   - else filter based on company value
 - set search value ''
 - call displayProducts
-
 
 ####scrennshots
 ![Uploading Screenshot 2023-01-21 125844.png…]()

@@ -2,7 +2,8 @@
 
 The Palindrome Checker is a tool that shows whether a given string or word is a Palindrome or not.
 
-##  💻 Tech stack
+## 💻 Tech stack
+
 - HTML
 - CSS
 - JS

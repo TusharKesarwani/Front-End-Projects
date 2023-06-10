@@ -1,11 +1,17 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
 }
-h1, h2, h3, h4, h5, h6, .title {
-  font-family: 'Ubuntu', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: "Ubuntu", sans-serif;
   margin-bottom: 0;
 }
 
@@ -51,7 +57,7 @@ main {
   grid-column: 1 / span 2;
   text-align: end;
   margin-right: 15%;
-  color: #ACACAC;
+  color: #acacac;
   margin-bottom: 0;
   align-self: flex-end;
   position: relative;
@@ -78,18 +84,19 @@ main {
   border: 1px solid #aaaaaa;
 }
 .present {
-  background-color: #E9EEFF;
-  border: 1px solid #587EFB;
+  background-color: #e9eeff;
+  border: 1px solid #587efb;
 }
 .future {
-  background-color: #CEFFD1;
-  border: 1px solid #51FF5C;
+  background-color: #ceffd1;
+  border: 1px solid #51ff5c;
 }
 .empty {
   background-color: #fff;
   border-width: 2px;
 }
-.title, .description {
+.title,
+.description {
   margin: 0 25px 8px 25px;
 }
 .title {
@@ -99,7 +106,7 @@ main {
 #current-time {
   position: relative;
   z-index: 1;
-} 
+}
 #current-line {
   position: absolute;
   top: 16px;
@@ -107,7 +114,7 @@ main {
   width: 100%;
   height: 2px;
   border: none;
-  border-top: 1px solid #587EFB;
+  border-top: 1px solid #587efb;
   margin: 0;
   grid-column: 2 / span 11;
 }
@@ -117,7 +124,7 @@ main {
   right: 0;
   border-top: 16px solid transparent;
   border-bottom: 16px solid transparent;
-  border-right: 27px solid #587EFB;
+  border-right: 27px solid #587efb;
 }
 /* timeblock input */
 button {
@@ -157,17 +164,22 @@ input:focus {
   padding: 5px 10px;
   border-radius: 2px;
   border: none;
-  background-color: #587EFB;
+  background-color: #587efb;
   color: #fff;
 }
 #save:hover {
   box-shadow: 0 1px 2px 2px #d1d1d1;
 }
-#save:focus, #save:active, #save:onfocus {
+#save:focus,
+#save:active,
+#save:onfocus {
   outline: none;
   border: none;
 }
-#close:hover,  #close:focus, #close:active, #close {
+#close:hover,
+#close:focus,
+#close:active,
+#close {
   background-color: transparent;
   outline: none;
   border: none;
@@ -176,19 +188,19 @@ input:focus {
   font-size: larger;
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
   #text-form {
-  max-width: 960px;
-}
+    max-width: 960px;
+  }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   #text-form {
     max-width: 720px;
   }
 }
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 576px) {
   #text-form {
-  max-width: 540px;
-}
+    max-width: 540px;
+  }
 }

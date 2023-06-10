@@ -11,7 +11,7 @@ const prompts = [
     "your name",
     "may i know your name",
     "what is your name",
-    "what call yourself"
+    "what call yourself",
   ],
   ["i love you"],
   ["happy", "good", "fun", "wonderful", "fantastic", "cool"],
@@ -22,25 +22,25 @@ const prompts = [
   ["what should i eat today"],
   ["bro"],
   ["what", "why", "how", "where", "when"],
-  ["no","not sure","maybe","no thanks"],
+  ["no", "not sure", "maybe", "no thanks"],
   [""],
-  ["haha","ha","lol","hehe","funny","joke"]
-]
+  ["haha", "ha", "lol", "hehe", "funny", "joke"],
+];
 
 // Possible responses, in corresponding order
 
 const replies = [
-  ["Hello!", "Hi!", "Hey!", "Hi there!","Howdy"],
+  ["Hello!", "Hi!", "Hey!", "Hi there!", "Howdy"],
   [
     "Fine... how are you?",
     "Pretty well, how are you?",
-    "Fantastic, how are you?"
+    "Fantastic, how are you?",
   ],
   [
     "Nothing much",
     "About to go to sleep",
     "Can you guess?",
-    "I don't know actually"
+    "I don't know actually",
   ],
   ["I am infinite"],
   ["I am just a bot", "I am a bot. What are you?"],
@@ -55,10 +55,10 @@ const replies = [
   ["Sushi", "Pizza"],
   ["Bro!"],
   ["Great question"],
-  ["That's ok","I understand","What do you want to talk about?"],
+  ["That's ok", "I understand", "What do you want to talk about?"],
   ["Please say something :("],
-  ["Haha!","Good one!"]
-]
+  ["Haha!", "Good one!"],
+];
 
 // Random for any other user input
 
@@ -68,9 +68,14 @@ const alternative = [
   "Bro...",
   "Try again",
   "I'm listening...",
-  "I don't understand :/"
-]
+  "I don't understand :/",
+];
 
 // Whatever else you want :)
 
-const coronavirus = ["Please stay home", "Wear a mask", "Fortunately, I don't have COVID", "These are uncertain times"]
+const coronavirus = [
+  "Please stay home",
+  "Wear a mask",
+  "Fortunately, I don't have COVID",
+  "These are uncertain times",
+];

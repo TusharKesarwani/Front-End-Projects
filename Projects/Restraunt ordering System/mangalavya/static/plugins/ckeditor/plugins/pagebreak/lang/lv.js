@@ -1,1 +1,4 @@
-CKEDITOR.plugins.setLang("pagebreak","lv",{alt:"Lapas pārnesums",toolbar:"Ievietot lapas pārtraukumu drukai"});
+CKEDITOR.plugins.setLang("pagebreak", "lv", {
+  alt: "Lapas pārnesums",
+  toolbar: "Ievietot lapas pārtraukumu drukai",
+});

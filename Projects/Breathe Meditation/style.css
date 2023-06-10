@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
   background: #111111;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   min-height: 90vh;
   overflow: hidden;
   display: flex;
@@ -27,7 +27,7 @@ body {
   transform: scale(1);
 }
 
-h1{
+h1 {
   margin-top: 50px;
   font-size: 40px;
 }

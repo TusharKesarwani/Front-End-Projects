@@ -3,7 +3,7 @@ var SpeechRecognition = window.webkitSpeechRecognition;
 // var myLang = mySpeechRecognition.lang;
 
 var recognition = new SpeechRecognition();
-recognition.lang = 'hi-IN';
+recognition.lang = "hi-IN";
 
 var Textbox = $("#textarea");
 var instructions = $("#instructions");
@@ -28,7 +28,9 @@ $("#start").on("click", function (e) {
     recognition.stop();
   } else {
     $(this).html("Click here to Stop Recording");
-    $("#instructions").html("Try Speaking, Voice Recognition is On, Contents will be displayed below");
+    $("#instructions").html(
+      "Try Speaking, Voice Recognition is On, Contents will be displayed below"
+    );
     if (Content.length) {
       Content += " ";
     }

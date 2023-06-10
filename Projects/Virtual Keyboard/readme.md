@@ -1,4 +1,4 @@
-#Description 
+#Description
 Virtual keyboard is a simple touch keyboard, used with the help of mouse to type things
 
 #Teach stack used

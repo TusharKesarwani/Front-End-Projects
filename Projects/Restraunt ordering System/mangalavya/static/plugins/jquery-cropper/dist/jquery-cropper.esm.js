@@ -8,15 +8,21 @@
  * Date: 2018-04-01T06:20:13.168Z
  */
 
-import $ from 'jquery';
-import Cropper from 'cropperjs';
+import $ from "jquery";
+import Cropper from "cropperjs";
 
 if ($.fn) {
   var AnotherCropper = $.fn.cropper;
-  var NAMESPACE = 'cropper';
+  var NAMESPACE = "cropper";
 
   $.fn.cropper = function jQueryCropper(option) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    for (
+      var _len = arguments.length,
+        args = Array(_len > 1 ? _len - 1 : 0),
+        _key = 1;
+      _key < _len;
+      _key++
+    ) {
       args[_key - 1] = arguments[_key];
     }
 
@@ -24,7 +30,7 @@ if ($.fn) {
 
     this.each(function (i, element) {
       var $element = $(element);
-      var isDestroy = option === 'destroy';
+      var isDestroy = option === "destroy";
       var cropper = $element.data(NAMESPACE);
 
       if (!cropper) {
@@ -32,13 +38,17 @@ if ($.fn) {
           return;
         }
 
-        var options = $.extend({}, $element.data(), $.isPlainObject(option) && option);
+        var options = $.extend(
+          {},
+          $element.data(),
+          $.isPlainObject(option) && option
+        );
 
         cropper = new Cropper(element, options);
         $element.data(NAMESPACE, cropper);
       }
 
-      if (typeof option === 'string') {
+      if (typeof option === "string") {
         var fn = cropper[option];
 
         if ($.isFunction(fn)) {

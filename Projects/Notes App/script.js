@@ -1,34 +1,48 @@
 const addBox = document.querySelector(".add-box"),
-    popupBox = document.querySelector(".popup-box"),
-    search = document.getElementById('searchTxt'),
-    popupTitle = popupBox.querySelector("header p"),
-    titleTag = popupBox.querySelector("input"),
-    closeIcon = popupBox.querySelector("header i"),
-    descTag = popupBox.querySelector("textarea"),
-    addBtn = popupBox.querySelectorAll("button");
+  popupBox = document.querySelector(".popup-box"),
+  search = document.getElementById("searchTxt"),
+  popupTitle = popupBox.querySelector("header p"),
+  titleTag = popupBox.querySelector("input"),
+  closeIcon = popupBox.querySelector("header i"),
+  descTag = popupBox.querySelector("textarea"),
+  addBtn = popupBox.querySelectorAll("button");
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
-let isUpdate = false, updateId;
+let isUpdate = false,
+  updateId;
 
 addBox.addEventListener("click", () => {
-    titleTag.focus();
-    popupBox.classList.add("show");
-})
+  titleTag.focus();
+  popupBox.classList.add("show");
+});
 closeIcon.addEventListener("click", () => {
-    isUpdate=false;
-    titleTag.value="";
-    descTag.value="";
-    addBtn[0].innerText="Add Note";
-   popupTitle.innerText="Add a New Note";
-    popupBox.classList.remove("show");
-})
+  isUpdate = false;
+  titleTag.value = "";
+  descTag.value = "";
+  addBtn[0].innerText = "Add Note";
+  popupTitle.innerText = "Add a New Note";
+  popupBox.classList.remove("show");
+});
 
 function showNote() {
-    document.querySelectorAll(".note").forEach(note =>note.remove());
-    notes.forEach((note, index) => {
-        liTag = `<li class="note">
+  document.querySelectorAll(".note").forEach((note) => note.remove());
+  notes.forEach((note, index) => {
+    liTag = `<li class="note">
         <div class="details">
             <p>${note.title}</p>
             <span>${note.description}</span>
@@ -43,85 +57,81 @@ function showNote() {
                 </ul>
             </div>
         </div>
-    </li>`
+    </li>`;
     addBox.insertAdjacentHTML("afterend", liTag);
-    });
+  });
 }
 showNote();
 
-function showMenu(elem){
-    elem.parentElement.classList.add("show");
-    document.addEventListener("click",e =>{
-
-        if(e.target.tagName != "I" || e.target != elem){
-            elem.parentElement.classList.remove("show");
-        }
-    })
-}
-function deleteNote(noteId){
-    let confirmDel= confirm("Are you sure you want to delete this note?");
-    if(!confirmDel) return;
-    notes.splice(noteId,1); //deletes one note of given id
-    localStorage.setItem("notes", JSON.stringify(notes));//saving updated notes to local storage
-    showNote();
-}
-
-function updateNote(noteId,title,desc){
-    isUpdate=true;
-    updateId = noteId;
-    addBox.click();
-    titleTag.value=title;
-    descTag.value=desc;
-    addBtn[0].innerText="Update Note";
-   popupTitle.innerText="Update a Note";
-    console.log(noteId,title,desc);
-}
-
- for (var i = 0; i < addBtn.length; i++) {
-    addBtn[i].addEventListener("click", e => {
-        e.preventDefault();
+function showMenu(elem) {
+  elem.parentElement.classList.add("show");
+  document.addEventListener("click", (e) => {
+    if (e.target.tagName != "I" || e.target != elem) {
+      elem.parentElement.classList.remove("show");
     }
- )}
-    addBtn[0].addEventListener("click", e => {
-        let noteTitle = titleTag.value.toUpperCase(),
-            noteDesc = descTag.value;
+  });
+}
+function deleteNote(noteId) {
+  let confirmDel = confirm("Are you sure you want to delete this note?");
+  if (!confirmDel) return;
+  notes.splice(noteId, 1); //deletes one note of given id
+  localStorage.setItem("notes", JSON.stringify(notes)); //saving updated notes to local storage
+  showNote();
+}
 
-        if (noteTitle || noteDesc) {
-            let dateObj = new Date(),
-                day = dateObj.getDate(),
-                month = months[dateObj.getMonth()],
-                year = dateObj.getFullYear();
+function updateNote(noteId, title, desc) {
+  isUpdate = true;
+  updateId = noteId;
+  addBox.click();
+  titleTag.value = title;
+  descTag.value = desc;
+  addBtn[0].innerText = "Update Note";
+  popupTitle.innerText = "Update a Note";
+  console.log(noteId, title, desc);
+}
 
-            let noteInfo = {
-                title: noteTitle, description: noteDesc,
-                date: `${month} ${day}, ${year}`
-            }
-            if(! isUpdate){
-                notes.push(noteInfo); //adding new notes
-            }
-            else{
-                isUpdate=false;
-                notes[updateId]=noteInfo;
-            }
-            localStorage.setItem("notes", JSON.stringify(notes));//saving notes to local storage
-            closeIcon.click();
-            showNote();
-        }
-    })
+for (var i = 0; i < addBtn.length; i++) {
+  addBtn[i].addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+}
+addBtn[0].addEventListener("click", (e) => {
+  let noteTitle = titleTag.value.toUpperCase(),
+    noteDesc = descTag.value;
 
-    search.addEventListener("input",function(){
+  if (noteTitle || noteDesc) {
+    let dateObj = new Date(),
+      day = dateObj.getDate(),
+      month = months[dateObj.getMonth()],
+      year = dateObj.getFullYear();
 
-        let inputVal = search.value.toUpperCase();
-        let noteCard = document.getElementsByClassName('note');
-        Array.from(noteCard).forEach(function(element){
-            let cardTxt = element.getElementsByTagName("p")[0].innerText; //searching by title
-            if(cardTxt.includes(inputVal)){
-                element.style.display = "block";
-            }
-            else{
-                element.style.display = "none";
-            }
-            //console.log(cardTxt);
+    let noteInfo = {
+      title: noteTitle,
+      description: noteDesc,
+      date: `${month} ${day}, ${year}`,
+    };
+    if (!isUpdate) {
+      notes.push(noteInfo); //adding new notes
+    } else {
+      isUpdate = false;
+      notes[updateId] = noteInfo;
+    }
+    localStorage.setItem("notes", JSON.stringify(notes)); //saving notes to local storage
+    closeIcon.click();
+    showNote();
+  }
+});
 
-        })
-    })
+search.addEventListener("input", function () {
+  let inputVal = search.value.toUpperCase();
+  let noteCard = document.getElementsByClassName("note");
+  Array.from(noteCard).forEach(function (element) {
+    let cardTxt = element.getElementsByTagName("p")[0].innerText; //searching by title
+    if (cardTxt.includes(inputVal)) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+    //console.log(cardTxt);
+  });
+});

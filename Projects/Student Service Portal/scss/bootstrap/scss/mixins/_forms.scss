@@ -23,7 +23,12 @@
       box-shadow: $input-focus-box-shadow;
     }
   }
-  @include deprecate("The `form-control-focus()` mixin", "v4.4.0", "v5", $ignore-warning);
+  @include deprecate(
+    "The `form-control-focus()` mixin",
+    "v4.4.0",
+    "v5",
+    $ignore-warning
+  );
 }
 
 // This mixin uses an `if()` technique to be compatible with Dart Sass
@@ -58,7 +63,7 @@
     display: none;
     max-width: 100%; // Contain to parent when possible
     padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
-    margin-top: .1rem;
+    margin-top: 0.1rem;
     @include font-size($form-feedback-tooltip-font-size);
     line-height: $form-feedback-tooltip-line-height;
     color: color-yiq($color);
@@ -87,7 +92,7 @@
 
       &:focus {
         border-color: $color;
-        box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
+        box-shadow: 0 0 0 $input-focus-width rgba($color, 0.25);
       }
     }
   }
@@ -97,7 +102,10 @@
     @include form-validation-state-selector($state) {
       @if $enable-validation-icons {
         padding-right: $input-height-inner;
-        background-position: top $input-height-inner-quarter right $input-height-inner-quarter;
+        background-position: top
+          $input-height-inner-quarter
+          right
+          $input-height-inner-quarter;
       }
     }
   }
@@ -108,12 +116,17 @@
 
       @if $enable-validation-icons {
         padding-right: $custom-select-feedback-icon-padding-right;
-        background: $custom-select-background, escape-svg($icon) $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
+        background: $custom-select-background,
+          escape-svg($icon)
+            $custom-select-bg
+            no-repeat
+            $custom-select-feedback-icon-position /
+            $custom-select-feedback-icon-size;
       }
 
       &:focus {
         border-color: $color;
-        box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
+        box-shadow: 0 0 0 $input-focus-width rgba($color, 0.25);
       }
     }
   }
@@ -150,7 +163,7 @@
 
       &:focus {
         ~ .custom-control-label::before {
-          box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
+          box-shadow: 0 0 0 $input-focus-width rgba($color, 0.25);
         }
 
         &:not(:checked) ~ .custom-control-label::before {
@@ -170,7 +183,7 @@
       &:focus {
         ~ .custom-file-label {
           border-color: $color;
-          box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
+          box-shadow: 0 0 0 $input-focus-width rgba($color, 0.25);
         }
       }
     }

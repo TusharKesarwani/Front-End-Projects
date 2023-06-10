@@ -1,1 +1,1 @@
-CKEDITOR.plugins.setLang("showblocks","fi",{toolbar:"Näytä elementit"});
+CKEDITOR.plugins.setLang("showblocks", "fi", { toolbar: "Näytä elementit" });

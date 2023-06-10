@@ -6,7 +6,7 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   text-align: center;
-  font: 18px / 1.4 'Helvetica', 'Arial', sans-serif;
+  font: 18px / 1.4 "Helvetica", "Arial", sans-serif;
   padding-top: 60px;
 }
 ul {
@@ -45,7 +45,7 @@ li a.active {
   color: #ffffff;
 }
 li a.active:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
@@ -74,9 +74,9 @@ li a.active:after {
   z-index: 2;
 }
 .percent:after {
-  content: '%';
+  content: "%";
   margin-left: 0.1em;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 .angular {
   margin-top: 100px;

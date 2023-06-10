@@ -38,7 +38,9 @@
   background-color: $toast-header-background-color;
   background-clip: padding-box;
   border-bottom: $toast-border-width solid $toast-header-border-color;
-  @include border-top-radius(subtract($toast-border-radius, $toast-border-width));
+  @include border-top-radius(
+    subtract($toast-border-radius, $toast-border-width)
+  );
 }
 
 .toast-body {

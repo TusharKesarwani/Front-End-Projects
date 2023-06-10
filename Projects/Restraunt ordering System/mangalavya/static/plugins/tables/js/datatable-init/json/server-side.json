@@ -3,14 +3,7 @@
   "recordsTotal": 57,
   "recordsFiltered": 57,
   "data": [
-    [
-      "Airi",
-      "Satou",
-      "Accountant",
-      "Tokyo",
-      "28th Nov 08",
-      "$162,700"
-    ],
+    ["Airi", "Satou", "Accountant", "Tokyo", "28th Nov 08", "$162,700"],
     [
       "Angelica",
       "Ramos",
@@ -51,14 +44,7 @@
       "2nd Dec 12",
       "$372,000"
     ],
-    [
-      "Bruno",
-      "Nash",
-      "Software Engineer",
-      "London",
-      "3rd May 11",
-      "$163,500"
-    ],
+    ["Bruno", "Nash", "Software Engineer", "London", "3rd May 11", "$163,500"],
     [
       "Caesar",
       "Vance",

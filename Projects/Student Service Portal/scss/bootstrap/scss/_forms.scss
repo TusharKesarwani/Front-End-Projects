@@ -87,7 +87,6 @@ select.form-control {
   width: 100%;
 }
 
-
 //
 // Labels
 //
@@ -116,7 +115,6 @@ select.form-control {
   line-height: $input-line-height-sm;
 }
 
-
 // Readonly controls as plain text
 //
 // Apply class to a readonly input to make it appear like regular plain
@@ -140,7 +138,6 @@ select.form-control {
     padding-left: 0;
   }
 }
-
 
 // Form control sizing
 //
@@ -191,7 +188,6 @@ textarea.form-control {
   margin-top: $form-text-margin-top;
 }
 
-
 // Form grid
 //
 // Special replacement for our grid system's `.row` for tighter form layouts.
@@ -208,7 +204,6 @@ textarea.form-control {
     padding-left: $form-grid-gutter-width / 2;
   }
 }
-
 
 // Checkboxes and radios
 //
@@ -251,7 +246,6 @@ textarea.form-control {
   }
 }
 
-
 // Form validation
 //
 // Provide feedback to users when form field values are valid or invalid. Works
@@ -260,7 +254,11 @@ textarea.form-control {
 // server side validation.
 
 @each $state, $data in $form-validation-states {
-  @include form-validation-state($state, map-get($data, color), map-get($data, icon));
+  @include form-validation-state(
+    $state,
+    map-get($data, color),
+    map-get($data, icon)
+  );
 }
 
 // Inline forms

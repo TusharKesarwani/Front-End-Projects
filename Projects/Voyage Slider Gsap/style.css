@@ -80,7 +80,8 @@ button:focus {
   opacity: 1;
   --image-translate-offset: 0;
 }
-.app__bg__image.previous--image, .app__bg__image.next--image {
+.app__bg__image.previous--image,
+.app__bg__image.next--image {
   opacity: 0;
 }
 .app__bg__image.previous--image {
@@ -130,11 +131,14 @@ button:focus {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
+  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
+    translateY(var(--card-translateY-offset))
+    rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
   display: inline-block;
   width: var(--card-width);
   height: var(--card-height);
-  transition: transform var(--card-transition-duration) var(--card-transition-easing);
+  transition: transform var(--card-transition-duration)
+    var(--card-transition-easing);
   user-select: none;
 }
 .card::before {
@@ -146,7 +150,8 @@ button:focus {
   height: 100%;
   background: #000;
   z-index: 1;
-  transition: opacity var(--card-transition-duration) var(--card-transition-easing);
+  transition: opacity var(--card-transition-duration)
+    var(--card-transition-easing);
   opacity: calc(1 - var(--opacity));
 }
 .card__image {
@@ -177,7 +182,8 @@ button:focus {
   --card-translateX-offset: calc(var(--card-width) * 1.1);
   --card-rotation-offset: -25deg;
 }
-.card.previous--card, .card.next--card {
+.card.previous--card,
+.card.next--card {
   --card-scale-offset: 0.9;
   --opacity: 0.4;
 }
@@ -203,7 +209,8 @@ button:focus {
   margin-bottom: calc(var(--card-height) / 8);
   margin-left: calc(var(--card-width) / 1.5);
   transform: translateZ(2rem);
-  transition: transform var(--card-transition-duration) var(--card-transition-easing);
+  transition: transform var(--card-transition-duration)
+    var(--card-transition-easing);
 }
 .info .text {
   position: relative;
@@ -228,7 +235,8 @@ button:focus {
   margin-bottom: calc(var(--mg-left) / 2);
   padding-bottom: 0.8rem;
 }
-.info .location::before, .info .location::after {
+.info .location::before,
+.info .location::after {
   content: "";
   position: absolute;
   background: #fff;
@@ -253,7 +261,8 @@ button:focus {
   opacity: 1;
   display: block;
 }
-.info.previous--info, .info.next--info {
+.info.previous--info,
+.info.next--info {
   opacity: 0;
   display: none;
 }

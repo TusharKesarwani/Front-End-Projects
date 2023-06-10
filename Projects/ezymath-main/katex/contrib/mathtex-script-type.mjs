@@ -1,4 +1,4 @@
-import katex from '../katex.mjs';
+import katex from "../katex.mjs";
 
 let scripts = document.body.getElementsByTagName("script");
 scripts = Array.prototype.slice.call(scripts);
@@ -13,7 +13,7 @@ scripts.forEach(function (script) {
 
   try {
     katex.render(script.text, katexElement, {
-      displayMode: display
+      displayMode: display,
     });
   } catch (err) {
     //console.error(err); linter doesn't like this

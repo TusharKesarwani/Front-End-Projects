@@ -2,7 +2,7 @@
 .glyphs.character-mapping {
   margin: 0 0 20px 0;
   padding: 20px 0 20px 30px;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   border: 1px solid #d8e0e5;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -44,7 +44,10 @@
 @font-face {
   font-family: "linea-arrows-10";
   src: url("fonts/linea-arrows-10.eot");
-  src: url("fonts/linea-arrows-10d41d.eot?#iefix") format("embedded-opentype"), url("fonts/linea-arrows-10.woff") format("woff"), url("fonts/linea-arrows-10.ttf") format("truetype"), url("fonts/linea-arrows-10.svg#linea-arrows-10") format("svg");
+  src: url("fonts/linea-arrows-10d41d.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-arrows-10.woff") format("woff"),
+    url("fonts/linea-arrows-10.ttf") format("truetype"),
+    url("fonts/linea-arrows-10.svg#linea-arrows-10") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -483,7 +486,10 @@
 @font-face {
   font-family: "linea-basic-10";
   src: url("fonts/linea-basic-10.eot");
-  src: url("fonts/linea-basic-10d41d.eot?#iefix") format("embedded-opentype"), url("fonts/linea-basic-10.woff") format("woff"), url("fonts/linea-basic-10.ttf") format("truetype"), url("fonts/linea-basic-10.svg#linea-basic-10") format("svg");
+  src: url("fonts/linea-basic-10d41d.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-basic-10.woff") format("woff"),
+    url("fonts/linea-basic-10.ttf") format("truetype"),
+    url("fonts/linea-basic-10.svg#linea-basic-10") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -701,7 +707,7 @@
   content: "!";
 }
 .icon-basic-magic-mouse:before {
-  content: "\"";
+  content: '"';
 }
 .icon-basic-magnifier:before {
   content: "#";
@@ -919,7 +925,12 @@
 @font-face {
   font-family: "linea-basic-elaboration-10";
   src: url("fonts/linea-basic-elaboration-10.eot");
-  src: url("fonts/linea-basic-elaboration-10d41d.eot?#iefix") format("embedded-opentype"), url("fonts/linea-basic-elaboration-10.woff") format("woff"), url("fonts/linea-basic-elaboration-10.ttf") format("truetype"), url("fonts/linea-basic-elaboration-10.svg#linea-basic-elaboration-10") format("svg");
+  src: url("fonts/linea-basic-elaboration-10d41d.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/linea-basic-elaboration-10.woff") format("woff"),
+    url("fonts/linea-basic-elaboration-10.ttf") format("truetype"),
+    url("fonts/linea-basic-elaboration-10.svg#linea-basic-elaboration-10")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1137,7 +1148,7 @@
   content: "!";
 }
 .icon-basic-elaboration-document-refresh:before {
-  content: "\"";
+  content: '"';
 }
 .icon-basic-elaboration-document-remove:before {
   content: "#";
@@ -1385,7 +1396,11 @@
 @font-face {
   font-family: "linea-ecommerce-10";
   src: url("fonts/linea-ecommerce-10.eot");
-  src: url("fonts/linea-ecommerce-10d41d.eot?#iefix") format("embedded-opentype"), url("fonts/linea-ecommerce-10.woff") format("woff"), url("fonts/linea-ecommerce-10.ttf") format("truetype"), url("fonts/linea-ecommerce-10.svg#linea-ecommerce-10") format("svg");
+  src: url("fonts/linea-ecommerce-10d41d.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/linea-ecommerce-10.woff") format("woff"),
+    url("fonts/linea-ecommerce-10.ttf") format("truetype"),
+    url("fonts/linea-ecommerce-10.svg#linea-ecommerce-10") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1603,7 +1618,7 @@
   content: "!";
 }
 .icon-ecommerce-receipt-lira:before {
-  content: "\"";
+  content: '"';
 }
 .icon-ecommerce-receipt-naira:before {
   content: "#";
@@ -1671,7 +1686,10 @@
 @font-face {
   font-family: "linea-music-10";
   src: url("fonts/linea-music-10.eot");
-  src: url("fonts/linea-music-10d41d.eot?#iefix") format("embedded-opentype"), url("fonts/linea-music-10.woff") format("woff"), url("fonts/linea-music-10.ttf") format("truetype"), url("fonts/linea-music-10.svg#linea-music-10") format("svg");
+  src: url("fonts/linea-music-10d41d.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-music-10.woff") format("woff"),
+    url("fonts/linea-music-10.ttf") format("truetype"),
+    url("fonts/linea-music-10.svg#linea-music-10") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1792,7 +1810,10 @@
 @font-face {
   font-family: "linea-software-10";
   src: url("fonts/linea-software-10.eot");
-  src: url("fonts/linea-software-10d41d.eot?#iefix") format("embedded-opentype"), url("fonts/linea-software-10.woff") format("woff"), url("fonts/linea-software-10.ttf") format("truetype"), url("fonts/linea-software-10.svg#linea-software-10") format("svg");
+  src: url("fonts/linea-software-10d41d.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-software-10.woff") format("woff"),
+    url("fonts/linea-software-10.ttf") format("truetype"),
+    url("fonts/linea-software-10.svg#linea-software-10") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2010,7 +2031,7 @@
   content: "!";
 }
 .icon-software-paragraph-justify-left:before {
-  content: "\"";
+  content: '"';
 }
 .icon-software-paragraph-justify-right:before {
   content: "#";
@@ -2123,7 +2144,10 @@
 @font-face {
   font-family: "linea-weather-10";
   src: url("fonts/linea-weather-10.eot");
-  src: url("fonts/linea-weather-10d41d.eot?#iefix") format("embedded-opentype"), url("fonts/linea-weather-10.woff") format("woff"), url("fonts/linea-weather-10.ttf") format("truetype"), url("fonts/linea-weather-10.svg#linea-weather-10") format("svg");
+  src: url("fonts/linea-weather-10d41d.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-weather-10.woff") format("woff"),
+    url("fonts/linea-weather-10.ttf") format("truetype"),
+    url("fonts/linea-weather-10.svg#linea-weather-10") format("svg");
   font-weight: normal;
   font-style: normal;
 }

@@ -4,4 +4,4 @@
 //     require('tinymce/themes/inlite')
 //   ES2015:
 //     import 'tinymce/themes/inlite'
-require('./theme.js');
+require("./theme.js");

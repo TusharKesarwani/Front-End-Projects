@@ -1,13 +1,13 @@
 $("#bootgrid-basic").bootgrid();
 
 $("#bootgrid-data").bootgrid({
-    icon: "icon glyphicon",
+  icon: "icon glyphicon",
 
-iconColumns: "glyphicon-list",
+  iconColumns: "glyphicon-list",
 
-iconDown: "glyphicon-triangle-bottom",
+  iconDown: "glyphicon-triangle-bottom",
 
-iconRefresh: "glyphicon-repeat",
+  iconRefresh: "glyphicon-repeat",
 
-iconSearch: "glyphicon-search"
+  iconSearch: "glyphicon-search",
 });

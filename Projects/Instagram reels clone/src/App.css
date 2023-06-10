@@ -1,8 +1,8 @@
-html{
+html {
   scroll-snap-type: y mandatory;
 }
 
-.app{
+.app {
   display: grid;
   place-items: center;
   height: 100vh;
@@ -14,11 +14,11 @@ html{
   text-align: center;
   color: white;
 }
-.app__logo{
+.app__logo {
   height: 12vh;
 }
- 
-.app__videos{
+
+.app__videos {
   position: relative;
   height: 65vh;
   background-color: white;
@@ -26,15 +26,15 @@ html{
   border-radius: 20px;
   max-width: 450px;
   max-height: 1200px;
-  overflow:scroll;
+  overflow: scroll;
   scroll-snap-type: y mandatory;
 }
 
-.app__videos::-webkit-scrollbar{
+.app__videos::-webkit-scrollbar {
   display: none;
 }
 
-.app__videos{
+.app__videos {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }

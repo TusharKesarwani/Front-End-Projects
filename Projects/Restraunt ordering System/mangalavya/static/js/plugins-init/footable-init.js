@@ -1,3 +1,3 @@
-jQuery(function($){
-	$('#table').footable();
+jQuery(function ($) {
+  $("#table").footable();
 });

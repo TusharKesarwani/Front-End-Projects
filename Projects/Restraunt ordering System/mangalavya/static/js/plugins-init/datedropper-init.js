@@ -1,15 +1,5 @@
-(function($) {
-    'use strict'
+(function ($) {
+  "use strict";
 
-    $('#dropper1').dateDropper();
-
-
-
-
-
-
-
-
-
-
+  $("#dropper1").dateDropper();
 })(jQuery);

@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .navigation {
@@ -93,7 +93,7 @@
 }
 
 .year-box {
-  position: absolute;  
+  position: absolute;
   right: 0px;
   top: 100px;
   width: 234px;

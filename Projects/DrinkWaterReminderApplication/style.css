@@ -19,8 +19,8 @@ body {
   margin: 10px 0px;
   padding: 0px 40px;
 }
-.mainHead{
-    font-size: 35px;
+.mainHead {
+  font-size: 35px;
 }
 .indication {
   margin: 20px 0px;
@@ -39,20 +39,19 @@ body {
   border: 5px solid darkblue;
   border-top: 0px;
 }
-.bigGlass div{
-    height: 30px;
-    width: 105px;
-    text-align: center;
-    font-style: italic;
-    background-color: white;
+.bigGlass div {
+  height: 30px;
+  width: 105px;
+  text-align: center;
+  font-style: italic;
+  background-color: white;
 }
-#bigGlassParts-8{
+#bigGlassParts-8 {
   border-radius: 0px 0px 15px 15px;
-
 }
-.bigGlass p{
-    color: black;
-    font-size: 20px;
+.bigGlass p {
+  color: black;
+  font-size: 20px;
 }
 .smallGlassContainer {
   display: grid;
@@ -74,13 +73,12 @@ body {
   border-top: 0px;
   background-color: #2e86de;
   font-size: 14px;
-  color:white
+  color: white;
 }
-.smallGlassFlip{
-    background-color: white;
-    color: black;
+.smallGlassFlip {
+  background-color: white;
+  color: black;
 }
-
 
 /* Priyanshu singh 
 reach me : https://github.com/CHEEMS-1206 */

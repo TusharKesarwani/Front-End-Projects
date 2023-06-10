@@ -1,11 +1,7 @@
-(function($) {
-    "use strict"
+(function ($) {
+  "use strict";
 
-    tinymce.init({
-        selector: '#tinymice_editor'
-    });
-
-
-
-
+  tinymce.init({
+    selector: "#tinymice_editor",
+  });
 })(jQuery);

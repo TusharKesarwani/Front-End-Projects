@@ -1,5 +1,4 @@
-'use strict';
-
+"use strict";
 
 /**
  * toggle active class on header
@@ -13,8 +12,6 @@ navToggleBtn.addEventListener("click", function () {
   header.classList.toggle("active");
 });
 
-
-
 /**
  * toggle ctx-menu when click on card-menu-btn
  */
@@ -26,8 +23,6 @@ for (let i = 0; i < menuBtn.length; i++) {
     this.nextElementSibling.classList.toggle("active");
   });
 }
-
-
 
 /**
  * load more btn loading spin toggle

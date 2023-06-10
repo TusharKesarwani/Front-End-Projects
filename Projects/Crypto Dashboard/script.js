@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 /**
  * add event on element
@@ -14,9 +12,7 @@ const addEventOnElem = function (elem, type, callback) {
   } else {
     elem.addEventListener(type, callback);
   }
-}
-
-
+};
 
 /**
  * navbar toggle
@@ -30,7 +26,7 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active");
   navToggler.classList.toggle("active");
   document.body.classList.toggle("active");
-}
+};
 
 addEventOnElem(navToggler, "click", toggleNavbar);
 
@@ -38,11 +34,9 @@ const closeNavbar = function () {
   navbar.classList.remove("active");
   navToggler.classList.remove("active");
   document.body.classList.remove("active");
-}
+};
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
-
-
 
 /**
  * header active
@@ -56,11 +50,9 @@ const activeHeader = function () {
   } else {
     header.classList.remove("active");
   }
-}
+};
 
 addEventOnElem(window, "scroll", activeHeader);
-
-
 
 /**
  * toggle active on add to fav
@@ -70,11 +62,9 @@ const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
 
 const toggleActive = function () {
   this.classList.toggle("active");
-}
+};
 
 addEventOnElem(addToFavBtns, "click", toggleActive);
-
-
 
 /**
  * scroll revreal effect
@@ -90,7 +80,7 @@ const scrollReveal = function () {
       sections[i].classList.remove("active");
     }
   }
-}
+};
 
 scrollReveal();
 

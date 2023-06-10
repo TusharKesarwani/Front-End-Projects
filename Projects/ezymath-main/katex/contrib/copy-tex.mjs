@@ -1,21 +1,23 @@
 // Set these to how you want inline and display math to be delimited.
 const defaultCopyDelimiters = {
-  inline: ['$', '$'],
+  inline: ["$", "$"],
   // alternative: ['\(', '\)']
-  display: ['$$', '$$'] // alternative: ['\[', '\]']
-
+  display: ["$$", "$$"], // alternative: ['\[', '\]']
 }; // Replace .katex elements with their TeX source (<annotation> element).
 // Modifies fragment in-place.  Useful for writing your own 'copy' handler,
 // as in copy-tex.js.
 
-const katexReplaceWithTex = function katexReplaceWithTex(fragment, copyDelimiters) {
+const katexReplaceWithTex = function katexReplaceWithTex(
+  fragment,
+  copyDelimiters
+) {
   if (copyDelimiters === void 0) {
     copyDelimiters = defaultCopyDelimiters;
   }
 
   // Remove .katex-html blocks that are preceded by .katex-mathml blocks
   // (which will get replaced below).
-  const katexHtml = fragment.querySelectorAll('.katex-mathml + .katex-html');
+  const katexHtml = fragment.querySelectorAll(".katex-mathml + .katex-html");
 
   for (let i = 0; i < katexHtml.length; i++) {
     const element = katexHtml[i];
@@ -28,12 +30,11 @@ const katexReplaceWithTex = function katexReplaceWithTex(fragment, copyDelimiter
   } // Replace .katex-mathml elements with their annotation (TeX source)
   // descendant, with inline delimiters.
 
-
-  const katexMathml = fragment.querySelectorAll('.katex-mathml');
+  const katexMathml = fragment.querySelectorAll(".katex-mathml");
 
   for (let i = 0; i < katexMathml.length; i++) {
     const element = katexMathml[i];
-    const texSource = element.querySelector('annotation');
+    const texSource = element.querySelector("annotation");
 
     if (texSource) {
       if (element.replaceWith) {
@@ -42,22 +43,32 @@ const katexReplaceWithTex = function katexReplaceWithTex(fragment, copyDelimiter
         element.parentNode.replaceChild(texSource, element);
       }
 
-      texSource.innerHTML = copyDelimiters.inline[0] + texSource.innerHTML + copyDelimiters.inline[1];
+      texSource.innerHTML =
+        copyDelimiters.inline[0] +
+        texSource.innerHTML +
+        copyDelimiters.inline[1];
     }
   } // Switch display math to display delimiters.
 
-
-  const displays = fragment.querySelectorAll('.katex-display annotation');
+  const displays = fragment.querySelectorAll(".katex-display annotation");
 
   for (let i = 0; i < displays.length; i++) {
     const element = displays[i];
-    element.innerHTML = copyDelimiters.display[0] + element.innerHTML.substr(copyDelimiters.inline[0].length, element.innerHTML.length - copyDelimiters.inline[0].length - copyDelimiters.inline[1].length) + copyDelimiters.display[1];
+    element.innerHTML =
+      copyDelimiters.display[0] +
+      element.innerHTML.substr(
+        copyDelimiters.inline[0].length,
+        element.innerHTML.length -
+          copyDelimiters.inline[0].length -
+          copyDelimiters.inline[1].length
+      ) +
+      copyDelimiters.display[1];
   }
 
   return fragment;
 };
 
-document.addEventListener('copy', function (event) {
+document.addEventListener("copy", function (event) {
   const selection = window.getSelection();
 
   if (selection.isCollapsed) {
@@ -66,10 +77,9 @@ document.addEventListener('copy', function (event) {
 
   const fragment = selection.getRangeAt(0).cloneContents();
 
-  if (!fragment.querySelector('.katex-mathml')) {
+  if (!fragment.querySelector(".katex-mathml")) {
     return; // default action OK if no .katex-mathml elements
   } // Preserve usual HTML copy/paste behavior.
-
 
   const html = [];
 
@@ -77,9 +87,12 @@ document.addEventListener('copy', function (event) {
     html.push(fragment.childNodes[i].outerHTML);
   }
 
-  event.clipboardData.setData('text/html', html.join('')); // Rewrite plain-text version.
+  event.clipboardData.setData("text/html", html.join("")); // Rewrite plain-text version.
 
-  event.clipboardData.setData('text/plain', katexReplaceWithTex(fragment).textContent); // Prevent normal copy handling.
+  event.clipboardData.setData(
+    "text/plain",
+    katexReplaceWithTex(fragment).textContent
+  ); // Prevent normal copy handling.
 
   event.preventDefault();
 });

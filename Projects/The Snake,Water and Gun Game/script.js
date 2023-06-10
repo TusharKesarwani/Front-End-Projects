@@ -8,15 +8,15 @@ const gunButton = document.getElementById("gun-button");
 const computerChoiceText = document.getElementById("computer-choice-text");
 const resultText = document.getElementById("result-text");
 
-snakeButton.addEventListener("click", function() {
+snakeButton.addEventListener("click", function () {
   playGame("snake");
 });
 
-waterButton.addEventListener("click", function() {
+waterButton.addEventListener("click", function () {
   playGame("water");
 });
 
-gunButton.addEventListener("click", function() {
+gunButton.addEventListener("click", function () {
   playGame("gun");
 });
 

@@ -1,10 +1,10 @@
 ## Objective of my project
 
-- Spotify Clone 
+- Spotify Clone
 
 ## What task does it do? How did I implement that?
 
-- Its a static website which can play , pause , forward , backward and visualize the songs  
+- Its a static website which can play , pause , forward , backward and visualize the songs
 
 ## My learnings from the project
 
@@ -14,9 +14,8 @@
 
 - I used JAVASCRIPT , CSS and HTML .
 
-
 ## Run Locally
 
-- install live server extension 
+- install live server extension
 - Open index.html
-- click on live server 
+- click on live server

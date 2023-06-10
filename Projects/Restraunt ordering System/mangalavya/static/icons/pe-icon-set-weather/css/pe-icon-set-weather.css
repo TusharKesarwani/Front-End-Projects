@@ -1,13 +1,19 @@
 @font-face {
-  font-family: 'pe-icon-set-weather';
+  font-family: "pe-icon-set-weather";
   src: url("../fonts/pe-icon-set-weather.eot?nlruav");
-  src: url("../fonts/pe-icon-set-weather.eot?nlruav#iefix") format("embedded-opentype"), url("../fonts/pe-icon-set-weather.ttf?nlruav") format("truetype"), url("../fonts/pe-icon-set-weather.woff?nlruav") format("woff"), url("../fonts/pe-icon-set-weather.svg?nlruav#pe-icon-set-weather") format("svg");
+  src: url("../fonts/pe-icon-set-weather.eot?nlruav#iefix")
+      format("embedded-opentype"),
+    url("../fonts/pe-icon-set-weather.ttf?nlruav") format("truetype"),
+    url("../fonts/pe-icon-set-weather.woff?nlruav") format("woff"),
+    url("../fonts/pe-icon-set-weather.svg?nlruav#pe-icon-set-weather")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
-[class^="pe-is-w-"], [class*=" pe-is-w-"] {
+[class^="pe-is-w-"],
+[class*=" pe-is-w-"] {
   display: inline-block;
-  font-family: 'pe-icon-set-weather';
+  font-family: "pe-icon-set-weather";
   speak: none;
   font-style: normal;
   font-weight: normal;

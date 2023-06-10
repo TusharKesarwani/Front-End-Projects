@@ -1,17 +1,17 @@
 class UI {
   constructor() {
-    this.prof=document.getElementById('profileInfo');
+    this.prof = document.getElementById("profileInfo");
   }
-  
-   display({
+
+  display({
     // Receive object destructuring data as parameter
     profile_pic,
     profile_url,
     name,
     message,
     bio,
-}){
-    const template=`<div id="cardImage">
+  }) {
+    const template = `<div id="cardImage">
     <img class="round" src=${profile_pic} alt="Profile pic not found">
     </div>
     <div class="cardBody">
@@ -32,19 +32,13 @@ class UI {
 
     </div>
 </div>`;
-console.log(profile_url);
-if(message=='Not Found')
-{
-    
-    this.prof.innerHTML="Profile Not Found";
-}
-else
-{
-    var v=document.getElementById('profileInfo');
-    v.style.visibility = 'visible';
-    this.prof.innerHTML=template;
-}
-
-}
-  
+    console.log(profile_url);
+    if (message == "Not Found") {
+      this.prof.innerHTML = "Profile Not Found";
+    } else {
+      var v = document.getElementById("profileInfo");
+      v.style.visibility = "visible";
+      this.prof.innerHTML = template;
+    }
+  }
 }

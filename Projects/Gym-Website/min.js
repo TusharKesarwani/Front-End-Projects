@@ -1,5 +1,4 @@
-
- (function (a, b) {
+(function (a, b) {
   if ("function" == typeof define && define.amd)
     define(["module", "exports"], b);
   else if ("undefined" != typeof exports) b(module, exports);

@@ -8,8 +8,7 @@ document.getElementById("search-btn").addEventListener("click", async () => {
     const data = await res.json();
     console.log(data);
     getProfileDetails(data);
-  } 
-  else {
+  } else {
   }
 });
 
@@ -20,8 +19,8 @@ function getProfileDetails(profileData) {
     user_name: profileData.login,
     name: profileData.name,
     profile_url: profileData.html_url,
-    message:profileData.message,
-    bio:profileData.bio,
+    message: profileData.message,
+    bio: profileData.bio,
   };
   ui.display(profileDetails);
 }

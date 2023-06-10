@@ -11,20 +11,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function output(input) {
   let product;
-  let text = input.toLowerCase().replace(/[^\w\s]/gi, "").replace(/[\d]/gi, "").trim();
+  let text = input
+    .toLowerCase()
+    .replace(/[^\w\s]/gi, "")
+    .replace(/[\d]/gi, "")
+    .trim();
   text = text
-    .replace(/ a /g, " ")   
+    .replace(/ a /g, " ")
     .replace(/i feel /g, "")
     .replace(/whats/g, "what is")
     .replace(/please /g, "")
     .replace(/ please/g, "")
     .replace(/r u/g, "are you");
 
-  if (compare(prompts, replies, text)) { 
+  if (compare(prompts, replies, text)) {
     // Search for exact match in `prompts`
     product = compare(prompts, replies, text);
   } else if (text.match(/thank/gi)) {
-    product = "You're welcome!"
+    product = "You're welcome!";
   } else if (text.match(/(corona|covid|virus)/gi)) {
     // If no match, check if message contains `coronavirus`
     product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
@@ -74,11 +78,10 @@ function addChat(input, product) {
   botDiv.appendChild(botText);
   botDiv.appendChild(botImg);
   messagesContainer.appendChild(botDiv);
-  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+  messagesContainer.scrollTop =
+    messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
     botText.innerText = `${product}`;
-    textToSpeech(product)
-  }, 2000
-  )
-
+    textToSpeech(product);
+  }, 2000);
 }

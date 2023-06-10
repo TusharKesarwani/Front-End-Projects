@@ -22,8 +22,8 @@ body {
 }
 
 .logo .brand a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .logo .search {
@@ -64,7 +64,7 @@ body {
 }
 
 .nav-bar ul i {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav-bar ul li {
@@ -109,43 +109,43 @@ body {
 }
 
 .banner .nike {
-    color: #fff;
-    font-size: 40px;
-    font-weight: bolder;
-    position: absolute;
-    top: 230px;
-    right: 250px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+  position: absolute;
+  top: 230px;
+  right: 250px;
 }
 
 .banner .shop {
-    position: absolute;
-    left: 160px;
-    bottom: 50px;
-    background-color: coral;
-    padding: 15px 30px;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: bolder;
-    cursor: pointer;
+  position: absolute;
+  left: 160px;
+  bottom: 50px;
+  background-color: coral;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 .banner .dots {
-    display: flex;
-    position: absolute;
-    left: 720px;
-    bottom: 40px;
+  display: flex;
+  position: absolute;
+  left: 720px;
+  bottom: 40px;
 }
 
 .banner .dots .dot {
-    height: 15px;
-    width: 15px;
-    background-color: #fff;
-    border-radius: 100%;
-    margin: 5px;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 5px;
 }
 
 .banner .dots .colored {
-    background-color: coral;
+  background-color: coral;
 }
 
 .fa-circle-chevron-right,

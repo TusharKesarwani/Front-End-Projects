@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -50,7 +50,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-
 input[type="number"] {
   width: 100%;
   padding: 10px;
@@ -66,7 +65,7 @@ input:focus {
   outline: 2px solid black;
 }
 
-label[for='error-msg'] {
+label[for="error-msg"] {
   display: block;
   text-align: center;
   /* margin-bottom: 10px; */
@@ -77,20 +76,65 @@ button {
   width: 100%;
   padding: 10px;
   font-size: 18px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
   border-radius: 3px;
   cursor: pointer;
+  margin-top: 10px;
   transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: white;
-  color: #4CAF50;
-  border: 2px solid #4CAF50;
+  color: #4caf50;
+  border: 2px solid #4caf50;
 }
 
+.tips-card {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 30px;
+  animation: tipSlideIn 0.3s ease-out forwards;
+}
+
+@keyframes tipSlideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tip-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 2px 4px 1px rgb(59, 58, 58);
+}
+
+.tip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tip-container .tip-content {
+  margin: 0;
+}
 .modal {
   display: none;
   position: fixed;
@@ -114,7 +158,6 @@ button:hover {
   }
 }
 
-
 .modal-content {
   background-color: #fff;
   margin: 10% auto;
@@ -122,6 +165,9 @@ button:hover {
   border-radius: 5px;
   max-width: 600px;
   position: relative;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 2px 4px 1px rgb(59, 58, 58);
 }
 
 .close {
@@ -147,7 +193,7 @@ button:hover {
 .modal-container .modal-content {
   margin: 0;
 }
-.sub-heading{
+.sub-heading {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -160,7 +206,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.component-container div{
+.component-container div {
   display: flex;
   justify-content: flex-start;
   gap: 5px;
@@ -185,7 +231,7 @@ button:hover {
     width: 80%;
   }
 
-  .sub-heading{
+  .sub-heading {
     font-size: 20x;
   }
 }

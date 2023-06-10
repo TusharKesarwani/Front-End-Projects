@@ -4,4 +4,3 @@ Once you will record the audio you will see your speech will converted into Hind
 
 Sample output
 ![Speech to Text Converter (हिंदी) - Google Chrome 1_20_2023 3_42_40 PM](https://user-images.githubusercontent.com/59620280/213712831-39488783-5548-4a3d-b85b-709ac89f5075.png)
-

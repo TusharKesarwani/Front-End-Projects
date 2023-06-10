@@ -12,11 +12,11 @@ let convertFromKg = () => {
 };
 
 let convertFromGm = () => {
-    let gm = gmRef.value;
-    kgRef.value = (gm / 1000).toFixed(2);
-    lbRef.value = (gm / 453.6).toFixed(2);
-    ozRef.value = (gm / 28.35).toFixed(2);
-  };
+  let gm = gmRef.value;
+  kgRef.value = (gm / 1000).toFixed(2);
+  lbRef.value = (gm / 453.6).toFixed(2);
+  ozRef.value = (gm / 28.35).toFixed(2);
+};
 
 let convertFromLb = () => {
   let lb = lbRef.value;
