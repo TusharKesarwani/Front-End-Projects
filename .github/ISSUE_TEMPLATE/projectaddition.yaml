@@ -1,0 +1,22 @@
+name: "🌱 Project Addition"
+description: "Add a new project to the list"
+title: "Data: project addition by "
+labels: [Feat, Needs Triage]
+body:
+ 
+  - type: textarea
+    attributes:
+      label: "Add a new project to the list"
+      description: 
+    validations:
+      required: true
+  
+ 
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true
+        - label: "I'm a SSOC part2 contributor"
+        - label: "I want to work on this issue"
