@@ -34,7 +34,7 @@ const projects = [
     {
         "title":"Logistic Comapny",
         "tags":["HTML","CSS","Bootstrap4"],
-        "img":"img/projects/logiC.jpg",
+        "img":"img/projects/logiC.png",
         "description":"It is a Logistic Company landing Page with essential features for a logistic company",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Logistic Company",
         "project-link":"Projects/Logistic Company/index.html"
