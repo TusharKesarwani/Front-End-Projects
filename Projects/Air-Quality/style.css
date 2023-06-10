@@ -65,7 +65,7 @@ input[type="number"] {
 }
 
 input:focus {
-  outline: 2px solid black;
+  outline: 2px solid #4caf50;
 }
 
 label[for="error-msg"] {
