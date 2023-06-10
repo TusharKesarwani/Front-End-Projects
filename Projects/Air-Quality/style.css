@@ -7,8 +7,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-image: url("bgImage.png");
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.5)), url("bgImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .container {
@@ -30,7 +34,6 @@ body {
 .card {
   width: 50%;
   max-width: 420px;
-  max-height: 420px;
   padding: 30px;
   margin-top: 119px;
   background-color: #ffffff;
