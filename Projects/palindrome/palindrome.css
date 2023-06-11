@@ -1,0 +1,56 @@
+html{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.image {
+    background-image: url('./header_bg.jpg');
+    background-position: bottom;
+    filter: blur(5px);
+    background-repeat: no-repeat;
+    height: 97vh;
+    background-color: rgba(237, 237, 237, 255);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: cursive;
+    color: rgba(0, 119, 40, 0.452);
+    margin-bottom: 20px;
+}
+
+form{
+    margin-bottom:20px;
+}
+
+p{
+    font-size: 1.5rem;
+    min-height: 30px;
+    width: 100%;
+    -webkit-text-stroke: 1px black ;
+}
+
+.text{
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 1px rgb(11, 12, 12);
+
+}
+
+#input {
+    padding: 10px;
+    width: 450px;
+    font-size: 0.8rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    font-weight: medium;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+    color: #137570;
+}

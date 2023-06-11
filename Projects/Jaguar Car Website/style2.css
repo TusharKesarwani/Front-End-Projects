@@ -1,0 +1,32 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    content:"";
+    height:auto;
+    width:100%;
+    position: relative;
+    background: url('./images/wp2803080-jaguar-cars-wallpaper-desktop.jpg')no-repeat center center/cover;
+    z-index: -1;
+    /* border-radius: 50px; */
+}
+.box1{
+    height:auto;
+    width:70%;
+    margin-top:35%;
+    margin-left: 15%;
+    text-align: center;
+    font-family: cursive;
+    padding:20px;
+}
+.box1 h2{
+    font-size: 50px;
+    color: #ffffff;
+}
+.box1 p{
+    font-size: 28px;
+    font-weight: bold;
+    color:whitesmoke;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d40c21de34.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="villa">
+      <img src="images/villa.jpg" />
+      <div class="centered">
+        <hl style="text-align: center"
+          ><b><i>villa</i></b></hl
+        >
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div>
+      <h1 style="text-align: center">You can visit</h1>
+    </div>
+
+    <div class="ycv">
+      <div class="ycv-item">
+        <div>
+          <img class="ycv-image" src="images/fw.jpg" />
+        </div>
+        <h3>Food & Wines</h3>
+        <div>
+          <img class="ycv-image" src="images/fw-star.png" />
+        </div>
+      </div>
+      <div class="ycv-item">
+        <div>
+          <img class="ycv-image" src="images/rs.jpg" />
+        </div>
+        <h3>Resort & Spa</h3>
+        <div>
+          <img class="ycv-image" src="images/rs-star.png" />
+        </div>
+      </div>
+      <div class="ycv-item">
+        <div>
+          <img class="ycv-image" src="images/hr.jpg" />
+        </div>
+        <h3>Hotel Rooms</h3>
+        <div>
+          <img class="ycv-image" src="images/fw-star.png" />
+        </div>
+      </div>
+      <div class="ycv-item">
+        <div>
+          <img class="ycv-image" src="images/yc.jpg" />
+        </div>
+        <h3>Yacht Club</h3>
+        <div>
+          <img class="ycv-image" src="images/yc-star.png" />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 style="text-align: center">
+        <i>
+          A gorgeous place to enjoy your life.<br />
+          Get the lobby right, and it will be the favourite spot of your guests
+          to meet and greet!!!
+        </i>
+      </h2>
+    </div>
+
+    <div id="slider">
+      <div class="slide" style="background: dodgerBlue">
+        <img src="images/slider1.jpeg" />
+      </div>
+
+      <div class="slide" style="background: coral">
+        <img src="images/slider2.png" />
+      </div>
+
+      <div class="slide" style="background: crimson">
+        <img src="images/slider3.jpg" />
+      </div>
+
+      <div class="slide" style="background: #6edf10">
+        <img src="images/slider4.jpg" />
+      </div>
+
+      <!--Controlling arrows-->
+      <span class="controls" onclick="prevSlide(-1)" id="left-arrow">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </span>
+      <span class="controls" id="right-arrow" onclick="nextSlide(1)">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+    </div>
+
+    <div>
+      <h1 style="text-align: center">Reviews</h1>
+    </div>
+    <div class="review">
+      <div class="rw">
+        <div class="rw-img">
+          <img src="images/review1.jpg" />
+        </div>
+        <div>
+          <p style="text-align: center; padding: 5px">
+            I was impressed by all of the staff within the hotel, even when I
+            asked if they could organise hiring a tuxedo for the evening they
+            were able to arrange everything...
+          </p>
+          <h4 style="text-align: center">--Jane Swift</h4>
+        </div>
+      </div>
+      <div class="rw">
+        <div class="rw-img">
+          <img src="images/review2.jpg" />
+        </div>
+        <div>
+          <p style="text-align: center">
+            The indoor pool was true to the photographs upon the hotel's
+            website,large,clean and warm too,it was the great way to start the
+            morning!!
+          </p>
+          <h4 style="text-align: center">--John Doe</h4>
+        </div>
+      </div>
+      <div class="rw">
+        <div class="rw-img">
+          <img src="images/review3.jpg" />
+        </div>
+        <div>
+          <p style="text-align: center">
+            The maids ensured my room was immaculate on a daily basis and the
+            receptionist was friendly and also extreamly helpful...
+          </p>
+          <h4 style="text-align: center">--Harry Geller</h4>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

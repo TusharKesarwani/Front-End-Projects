@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PDF TOOLS</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+</head>
+
+<body style="
+background-color: rgba(255, 255, 127, 0.586);">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">PDFTools</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=#pdf>About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pdf">Features</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1 style="
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'Bungee Spice', cursive;
+  background-color: rgba(255, 255, 255, 0.756);
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
+  padding: 5px 0px;">PDF TOOLKIT || PDF-T</h1>
+
+  <h3 style="
+  text-align: center;
+  margin-top: 1%;
+  font-family: 'Nabla', cursive;
+  background-color: rgba(255, 255, 255, 0.756);
+  width: 44%;
+  margin-left: 28%;
+  border-radius: 10px;
+  padding: 5px 0px;">Solution For Any Type of Pdf Editting Tools</h3>
+
+  <div class="container"  id="pdf"  style="
+        BACKGROUND-COLOR: rgba(128, 128, 128, 0.31);
+    border-radius: 10px;
+    margin-top: 3%;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    ">
+    <!-- <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+          </div> -->
+          <h3 style="
+          font-family: 'Labrada', serif; 
+          font-size: 36px ;
+          color: white;" >Choose 2  Pdfs To Be Merged</h3>
+
+    <form method="post" action="/merge" enctype="multipart/form-data">
+      <div class="form-group">
+       <label for="exampleFormControlFile1"></label>
+
+        <input type="file" name="pdfs"  class="form-control-file" id="exampleFormControlFile1" multiple accept=".pdf"
+          style="
+        width: 21%;
+        margin-left: 40%;
+        border: 2px solid black;
+        border-radius: 10px;">
+        <!-- <input type="number" class="form-control-file" name="n" id="exampleFormControlFile1"> -->
+        <input class="btn btn-primary my-3 mx-1" style="
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background-color: red;
+        " type="submit" value="submit" id="submit">
+
+
+      </div>
+    </form>
+
+
+
+    <!-- <form method="post" action="/merge" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="exampleFormControlFile2"></label>
+              <input type="file" name="pdfs" class="form-control-file" id="exampleFormControlFile2" multiple accept=".pdf">
+              <input type="number" class="form-control-file" name="n" id="exampleFormControlFile2">
+              <input class="btn btn-primary my-3 mx-1" type="submit" value="submit" id="submit" >
+          
+              
+            </div>
+          </form> -->
+    <!--<div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+            <input class="form-control" type="file" id="formFileDisabled" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="formFileSm" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+          </div>
+          <div>
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+          </div> -->
+  </div>
+
+
+  <div class="container" style="
+        BACKGROUND-COLOR: rgba(128, 128, 128, 0.31);
+    border-radius: 10px;
+    margin-top: 3%;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+    ">
+    <!-- <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+          </div> -->
+          <h3 style="
+          font-family: 'Labrada', serif; 
+          font-size: 36px ;
+          color: white;" >Choose Pdfs To Be Uploaded</h3>
+
+    <form method="post" action="/uploadfile" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="file1">Upload File1 : </label>
+        <input type="file" required name="file1" class="form-control" style="
+        width: 21%;
+        margin-left: 40%;
+        border: 2px solid black;
+        border-radius: 10px;">
+        <input type="submit" value="UploadFile" style="
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background-color: red; 
+        margin-top: 2% ; ">
+      </div>
+      <!-- <div class="form-group">
+        <label for="file1">Upload File1 : </label>
+        <input type="file" required name="file1" class="form-control">
+       
+      </div> -->
+
+      <!-- <div class="form-group">
+        <button class="btn btn-danger btn-block">
+          Upload File
+        </button>
+      </div> -->
+
+      
+
+    </form>
+
+
+
+    <!-- <form method="post" action="/merge" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="exampleFormControlFile2"></label>
+              <input type="file" name="pdfs" class="form-control-file" id="exampleFormControlFile2" multiple accept=".pdf">
+              <input type="number" class="form-control-file" name="n" id="exampleFormControlFile2">
+              <input class="btn btn-primary my-3 mx-1" type="submit" value="submit" id="submit" >
+          
+              
+            </div>
+          </form> -->
+    <!--<div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+            <input class="form-control" type="file" id="formFileDisabled" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="formFileSm" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+          </div>
+          <div>
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+          </div> -->
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

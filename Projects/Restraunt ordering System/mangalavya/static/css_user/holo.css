@@ -1,0 +1,197 @@
+/* The webpage overall styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: grey;
+}
+
+
+/*  This is for styling the main container that holds everything */
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #f7f7f7;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* This styles the navbar and its contents */
+
+#navbar {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+
+/* This styles the logo in the navbar */
+
+#navbar #logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 3%;
+    top: -5px;
+}
+
+
+/* This styles the logo image to be used in the navbar */
+
+#navbar #logo img {
+    height: 60px;
+    width: 60px;
+}
+
+
+/* This styles the unlisted links in the navbar */
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+
+/* This changes the appearance of the listed links in the navbar */
+
+#navbar ul li {
+    height: 60px;
+    width: 80px;
+    margin: 0 30px;
+    display: grid;
+    place-items: center;
+    color: grey;
+}
+
+
+/* This sets the hover action of the navbar links */
+
+#navbar ul:hover .active {
+    background: none;
+    border: none;
+}
+
+
+/* This styles the descriptions of the 3D object */
+
+#content {
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 12%;
+    top: calc(50% - 250px);
+}
+
+
+/* This styles the heading in the 3D description */
+
+#content h2 {
+    font-size: 140px;
+    color: grey;
+}
+
+
+/* This styles the paragraph in the 3D description*/
+
+#content p {
+    font-size: 20px;
+    color: rgb(189, 189, 189);
+}
+
+
+/* This styles the button in the 3D description*/
+
+#content button {
+    width: 35%;
+    height: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 5vh;
+    margin-left: center;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: dodgerblue;
+    color: white;
+}
+
+
+/* This adds some hover effects over the button */
+
+#content button:hover {
+    background: navy;
+}
+
+
+/* This styles the social media icons*/
+
+#icons {
+    height: 500px;
+    width: 140px;
+    background: none;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 250px);
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+
+
+/* This styles the social media icons logos*/
+
+#icons #iconsLogo {
+    height: 300px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* This styles the social media icons logos images*/
+
+#icons #iconsLogo i {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin: 10px;
+    color: grey;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+
+/* This styles the aside container */
+
+#aSide {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    /* top: calc(50% - 250px); */
+    right: 7%;
+    left: 25%;
+}
+
+
+/* This styles the 3D object inserted in the aside container */
+
+#aSide model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}

@@ -1,0 +1,215 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar start */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 0;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+}
+
+.topnav a:hover {
+  color: cyan;
+}
+
+.topnav a.active {
+  color: cyan;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 380px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+.active {
+  color: cyan;
+}
+@media screen and (max-width: 380px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    padding: 10 10px;
+    text-align: center;
+  }
+}
+
+/* navbar end */
+
+/*villa-start*/
+.villa {
+  text-align: center;
+  position: relative;
+}
+
+.villa img {
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20vw;
+}
+
+/*Villa-end*/
+
+/*you can visit start*/
+.ycv-image {
+  width: 100%;
+  height: auto;
+}
+
+.ycv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  padding: 12px;
+}
+
+.ycv-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+}
+
+/*you can visit end*/
+
+/*slider start*/
+#slider {
+  width: 100%;
+  margin: 0px auto;
+  max-width: 848px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+img {
+  width: 100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.controls:hover {
+  background: white;
+  transition: 0.3s;
+}
+
+.controls:active {
+  color: grey;
+}
+
+#left-arrow {
+  left: 10px;
+}
+
+#right-arrow {
+  right: 10px;
+}
+
+@media (max-width: 576px) {
+  #slider {
+    width: 100%;
+  }
+
+  .controls {
+    font-size: 1em;
+  }
+}
+
+/*slider end*/
+
+/*reviews start*/
+.review {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.rw {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rw-img img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1000px) {
+  .review {
+    flex-direction: column;
+  }
+}
+/*reviews end*/

@@ -1,0 +1,68 @@
+/* width */
+::-webkit-scrollbar {
+    width: 0.70rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3125rem grey;
+    border-radius: 0.625rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-button:single-button {
+    display: block;
+    background-color: pink;
+    height: 1.25rem;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+
+    background-position: center 0.125rem;
+
+    background-position: center 0.25rem;
+
+    background-size: 0.5rem 0.5rem;
+    background-image: url(./images/uparrow.png);
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+
+    background-position: center 0.125rem;
+
+    background-position: center 0.25rem;
+
+    background-size: 0.5rem 0.5rem;
+    background-image: url(images/downarrow.png);
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    background-position: center 0.25rem;
+    background-size: 0.5rem 0.5rem;
+    background-image: url(images/leftarrow.png);
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+    background-position: center 0.25rem;
+    background-size: 0.5rem 0.5rem;
+    background-image: url(./images/rightarrow.png);
+    background-repeat: no-repeat;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: pink;
+    ;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}

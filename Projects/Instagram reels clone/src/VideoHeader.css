@@ -1,0 +1,14 @@
+.videoHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width:100%;
+    color:white;
+    /*  always use with  position absolute,
+    width 100% so that the content is properly aligned*/
+}
+
+.videoHeader > * {
+    padding : 20px;
+}

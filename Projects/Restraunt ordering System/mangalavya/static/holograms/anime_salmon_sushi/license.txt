@@ -1,0 +1,11 @@
+Model Information:
+* title:	Anime Salmon Sushi
+* source:	https://sketchfab.com/3d-models/anime-salmon-sushi-25bf6b172f934c03b12c63ad054cb542
+* author:	capstankai (https://sketchfab.com/capstankai)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Anime Salmon Sushi" (https://sketchfab.com/3d-models/anime-salmon-sushi-25bf6b172f934c03b12c63ad054cb542) by capstankai (https://sketchfab.com/capstankai) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

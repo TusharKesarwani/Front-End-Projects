@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans;
+    background-color: rgb(119, 199, 241);
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+}
+
+#project-name{
+    border: 2px solid black;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 20px 60px;
+    text-align: center;
+    background-color: white;
+    font-size: 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    /* margin-bottom: 30px; */
+}
+
+#quiz {
+    /* text-indent: 10px; */
+    display:none;
+}
+.controls{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    border-radius:8px;
+    text-align: center;
+    width: 120px;
+    padding: 12px; 
+    background-color: rgb(214, 211, 211);
+    border: 2px solid black;
+}
+
+.button.active {
+    background-color: #cac6c6;
+}
+
+/* Existing CSS styles... */
+
+#navigation-panel {
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation-button {
+    display: inline-block;
+    padding: 8px 13px;
+    /* width: 30px; */
+    /* height: 30px; */
+    margin: 0 5px;
+    background-color: rgb(214, 211, 211);
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .navigation-button.active {
+    background-color: rgb(57, 207, 57);
+    color: white;
+  }
+
+  /* Existing CSS styles... */
+
+
+#container {
+    width:50%;
+    padding: 30px;
+    background-color: white;
+    border:2px solid black;
+    border-radius:8px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.question{
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.question p{
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#prev {
+    display:none;
+    /* visibility: hidden; */
+}
+
+#start {
+    display:none;
+    width: 120px;
+}
+
+input[type="radio"] {
+    display: none;
+  }
+
+label {
+    border: 2px solid black;
+    padding: 12px 8px;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: rgb(119, 199, 241);
+    color: white;
+}
+
+.right {
+    float: right;
+  }
+
+
+  @media screen and (max-width: 750px) {
+    #container{
+        width: 80%;
+    }
+  }

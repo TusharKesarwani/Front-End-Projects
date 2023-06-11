@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: #f5f2ea;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    filter: drop-shadow(10px, 10px, 20px, #000);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-title {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.form-desc {
+    font-weight: 500;
+    font-size: 15px;
+    margin: .75rem 0 2rem 0;
+}
+
+.form-control-plaintext {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: .75rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.form-control-plaintext::placeholder {
+    color: gray;
+}
+
+.helper-link {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.helper-para {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.login-button {
+    margin: 1.5rem 0;
+    border: 1px solid #fdc886;
+    background: #fdc886;
+    color: black;
+    border-radius: 10px;
+    padding: .5rem;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+
+.login-button:hover,
+.login-button:focus {
+    border-radius: 0;
+    background-color: #fdc886;
+    border-color: #fdc886;
+    color: rgba(0, 0, 0, 0.75);
+    letter-spacing: 2px;
+}
+
+.option-signin {
+    position: relative;
+    font-size: 15px;
+}
+
+.option-signin::before,
+.option-signin::after {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 1px;
+    width: 10%;
+    position: absolute;
+    top: 50%;
+}
+
+.option-signin::before {
+    left: -20%;
+}
+
+.option-signin::after {
+    right: -20%;
+}
+
+.social-sign {
+    border-radius: 0;
+    border: 1px solid gainsboro;
+    color: #000;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    margin: 5px;
+    transition: all .3s ease-in;
+}
+
+.social-sign:hover,
+.social-sign:focus {
+    border-radius: 10px;
+    border: 1px solid #fdc886;
+    color: #fdc886;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    margin: 5px;
+}
+
+.social-sign i {
+    margin-right: 5px;
+}
+
+.helper-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -80%);
+}
+
+.input-box i:hover {
+    cursor: pointer;
+}
+
+@keyframes error {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 1deg;
+    }
+
+    50% {
+        rotate: -1deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+#error-box {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    z-index: 100;
+    filter: drop-shadow(10px, 10px, 20px, #000);
+    font-size: 14px;
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+.bi-exclamation-circle{
+    margin-right: 10px;
+}
+.bi-check2-circle{
+    margin-right: 10px;
+}
+
+.loginform {
+    z-index: -1;
+}

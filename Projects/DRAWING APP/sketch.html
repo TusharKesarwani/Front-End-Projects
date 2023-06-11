@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch It</title>
+    <link rel="stylesheet" href="sketch.css" />
+    <script src="sketch.js" defer></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="head">SKETCH IT</h1>
+    </div>
+    <div class="wrapper">
+      <div class="small-box">
+        <div class="shape-box">
+          <label class="title">Shapes</label>
+          <ul class="allops">
+            <li class="option" id="triangle">
+              <img class="image" src="icons/triangle.svg" alt="" />
+              <span> Triangle</span>
+            </li>
+            <li class="option" id="rectangle">
+              <img class="image" src="icons/rectangle.svg" alt="" />
+              <span> Rectangle</span>
+            </li>
+            <li class="option" id="circle">
+              <img class="image" src="icons/circle.svg" alt="" />
+              <span> Circle</span>
+            </li>
+            <li class="che-box">
+              <input type="checkbox" id="fill-color" />
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="tool-box">
+          <label class="title">Tools</label>
+          <ul class="allops">
+            <li class="option active" id="brush">
+              <img class="image" src="icons/brush.svg" alt="" />
+              <span> Brush</span>
+            </li>
+            <li class="option" id="eraser">
+              <img class="image" src="icons/eraser.svg" alt="" />
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5" />
+            </li>
+          </ul>
+        </div>
+        <div class="color-box">
+          <label class="title">Colors</label>
+          <ul class="clrs">
+            <li class="opt"></li>
+            <li class="opt selected"></li>
+            <li class="opt"></li>
+            <li class="opt"></li>
+            <li class="opt">
+              <input type="color" id="color-picker" value="#4A98F7" />
+            </li>
+          </ul>
+        </div>
+        <div class="btn-box">
+          <button class="btnn" id="clear">All Clear</button>
+          <button class="btnn" id="save">Save Image</button>
+        </div>
+      </div>
+      <div class="big-box">
+        <canvas></canvas>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mangalavya - The Mars Restro | Profile</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href=" {% static 'images/favicon.png' %} ">
+
+    <link href=" {% static 'css/style.css' %} " rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href=" {% url 'index.html' %} ">
+                    <b class="logo-abbr"><img src=" {% static 'images/logo.png' %} " alt=""> </b>
+                    <span class="logo-compact"><img src=" {% static 'images/logo-compact.png' %} " alt=""></span>
+                    <span class="brand-title">
+                        <img src=" {% static 'images/logo-text.png' %} " alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src=" {% static 'images/user/1.png' %} " height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile   dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href=" {% url 'app-profile.html' %} "><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+
+                                      
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href=" {% url 'page-lock.html' %} "><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                        </li>
+                                        <li><a href=" {% url 'page-logout.html' %} "><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li>
+                        <a class="has-arrow"  aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href=" {% url 'index.html' %} ">Home</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href=" {% static 'javascript:void()' %} " aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Apps</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href=" {% url 'app-profile.html' %} ">Profile</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-label">Forms</li>
+                    <li>
+                        <a class="has-arrow" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Forms</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href=" {% url 'form-validation.html' %} ">Form Validation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Table</li>
+                    <li>
+                        <a class="has-arrow"  aria-expanded="false">
+                            <i class="icon-menu menu-icon"></i><span class="nav-text">Table</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href=" {% url 'table-datatable.html' %} " aria-expanded="false">Data Table</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a>Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href=" {% url 'index.html' %} ">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="media align-items-center mb-4">
+                                    <img class="mr-3" src=" {% static 'images/avatar/11.png' %} " width="80" height="80" alt="">
+                                    <div class="media-body">
+                                        <h3 class="mb-0">{{ request.session.log_user_fname }} {{ request.session.log_user_lname }}</h3>
+                                        <p class="text-muted mb-0">{{  request.session.log_user_address  }}</p>
+                                    </div>
+                                </div>
+                                
+
+                                <h4>About Me</h4>
+                                <p class="text-muted">Hi, I'm Pikamy, has been the industry standard dummy text ever since the 1500s.</p>
+                                <ul class="card-profile__info">
+                                    <li class="mb-1"><strong class="text-dark mr-4">Mobile</strong> <span>{{ request.session.phone }}</span></li>
+                                    <li><strong class="text-dark mr-4">Email</strong> <span>{{ request.session.log_user_email }}</span></li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by Mangalavya 2023</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src=" {% static 'plugins/common/common.min.js' %} "></script>
+    <script src=" {% static 'js/custom.min.js' %} "></script>
+    <script src=" {% static 'js/settings.js' %} "></script>
+    <script src=" {% static 'js/gleek.js' %} "></script>
+    <script src=" {% static 'js/styleSwitcher.js' %} "></script>
+
+</body>
+
+</html>

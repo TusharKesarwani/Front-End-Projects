@@ -1,0 +1,114 @@
+body{
+    background-color: #18172F;
+    color: white;
+}
+
+#message{
+
+    margin-left: 28%;
+    height: 200px;
+    width: 750px;
+    border-radius: 4px;
+    background-color: #dacce6;
+    border: 3px solid white;
+}
+
+#key{
+
+    margin-left: 38%;
+}
+
+#num{
+    background-color: #dacce6;
+    width: 175px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+button{
+    background-color: #BB87FD;;
+    width: 85px;
+    height: 50px;
+    border-radius: 10px;  
+    cursor: pointer;
+}
+
+#btn1{
+    margin-left: 45%;
+}
+
+#para{
+    margin-left: 28%;
+    background-color: #dacce6;
+    border: 3px solid white;
+    height: 100px;
+    width: 750px;
+    margin-right: 15%;
+    color: black;
+}
+
+u{
+
+    margin-left: 28%;
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    #message{
+
+        margin-left: 14%;
+        height: 200px;
+        width: 350px;
+        border-radius: 4px;
+        background-color: #dacce6;
+        border: 3px solid white;
+    }
+    
+    #key{
+    
+        margin-left: 20%;
+    }
+    #para{
+        margin-left: 15%;
+        background-color: #dacce6;
+        border: 3px solid white;
+        height: 150px;
+        width: 350px;
+        margin-right: 15%;
+        color: black;
+    }
+    
+}
+
+@media screen and (max-width: 479px) {
+    #message{
+
+        margin-left: 4%;
+        height: 200px;
+        width: 350px;
+        border-radius: 4px;
+        background-color: #dacce6;
+        border: 3px solid white;
+    }
+    
+    #key{
+    
+        margin-left: 10%;
+    }
+    #btn1{
+        margin-left: 28%;
+    }
+    
+    #para{
+        margin-left: 4%;
+        background-color: #dacce6;
+        border: 3px solid white;
+        height: 150px;
+        width: 350px;
+        margin-right: 15%;
+        color: black;
+    }
+    
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo-Visualizer</title>
+  <link rel="stylesheet" href="my-style.css">
+  <link rel="stylesheet" media="screen and (max-width:900px)" href="./styles_900px.css">
+</head>
+
+<body>
+  <!-- heading and navbar section begins -->
+  <h1>Sorting Visualizer</h1>
+  <div class="navbar">
+    <button id="Bubble">Bubble Sort</button>
+    <button id="Quick">Quick Sort</button>
+    <button id="Merge">Merge Sort</button>
+    <button id="Count">Count Sort</button>
+    <button id="Insertion">Insertion Sort</button>
+  </div>
+  <!-- heading and navbar section ends -->
+  <!-- size of array end set array section begins -->
+  <div id="elements">
+    <input id="number_of_elements" placeholder="Enter size of array(<=600)" type="number"></input>
+    <button id="set">Set the array</button>
+    <div id="slidecontainer">
+      <h5>Speed</h5>
+       <input type="range" min="1" max="100" value="50" class="slider">
+    </div>
+  </div>
+  <!-- size of array end set array section begins -->
+  <!-- //display bars section -->
+  <div id="container">
+  </div>
+  <!-- about the alogorithms -->
+  <div id="about">
+    <div id="bubble-sort">
+      <h1>Bubble Sort</h1>
+      <p>Bubble sort works on the repeatedly swapping of adjacent elements until they are not in the intended order. It
+        is called bubble sort because the movement of array elements is just like the movement of air bubbles in the
+        water. Bubbles in water rise up to the surface; similarly, the array elements in bubble sort move to the end in
+        each iteration.Although it is simple to use, it is primarily used as an educational tool because the performance
+        of bubble sort is poor in the real world. It is not suitable for large data sets. The average and worst-case
+        complexity of Bubble sort is O(n<sup>2</sup>), where n is a number of items.
+      </p>
+      <h2>Working of Bubble Sort</h2>
+      <p>Suppose we are trying to sort the elements in ascending order.</p>
+      1. First Iteration (Compare and Swap)
+      <ol>
+        <li>1)Starting from the first index, compare the first and the second elements.</li>
+        <li>2)If the first element is greater than the second element, they are swapped.</li>
+        <li>3)Now, compare the second and the third elements. Swap them if they are not in order.</li>
+        <li>4)The above process goes on until the last element.</li>
+      </ol>
+      2. Remaining Iteration
+      <ol>
+        <li>1)The same process goes on for the remaining iterations.</li>
+        <li>2)After each iteration, the largest element among the unsorted elements is placed at the end.</li>
+      </ol>
+    </div>
+    <div id="merge-sort">
+      <h1>Merge Sort</h1>
+      <p>Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer
+        Algorithm.
+        Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally,
+        sub-problems are combined to form the final solution.Time complexity of merge sort is O(nlogn)</p>
+      <h3>Merge sort algorithm</h3>
+      <p>The MergeSort function repeatedly divides the array into two halves until we reach a stage where we try to
+        perform MergeSort on a subarray of size 1.
+        After that, the merge function comes into play and combines the sorted arrays into larger arrays until the whole
+        array is merged.</p>
+      <h3>Merge function</h3>
+      <p>Every recursive algorithm is dependent on a base case and the ability to combine the results from base cases.
+        Merge sort is no different. The most important part of the merge sort algorithm is, you guessed it, merge step.
+
+        The merge step is the solution to the simple problem of merging two sorted lists(arrays) to build one large
+        sorted list(array).
+
+        The algorithm maintains three pointers, one for each of the two arrays and one for maintaining the current index
+        of the final sorted array.</p>
+    </div>
+    <div id="quick-sort">
+      <h1>Quick Sort</h1>
+      <p>
+        Quicksort is a sorting algorithm based on the divide and conquer approach where
+
+        An array is divided into subarrays by selecting a pivot element (element selected from the array).
+
+        While dividing the array, the pivot element should be positioned in such a way that elements less than pivot are
+        kept on the left side and elements greater than pivot are on the right side of the pivot.
+        The left and right subarrays are also divided using the same approach. This process continues until each
+        subarray contains a single element.
+        At this point, elements are already sorted. Finally, elements are combined to form a sorted array.
+        Time complexity of quick sort id O(nlogn)
+      </p>
+      <h3>Working of Quicksort Algorithm</h3>
+      <ol>
+        <li>
+          <h4>1. Select the Pivot Element</h4>
+          There are different variations of quicksort where the pivot element is selected from different positions.
+          Here, we will be selecting the rightmost element of the array as the pivot element.
+        </li>
+        <li>
+          <h4>2. Rearrange the Array</h4>
+          Now the elements of the array are rearranged so that elements that are smaller than the pivot are put on the
+          left and the elements greater than the pivot are put on the right.
+        </li>
+        <li>
+          <h4>Here is how we rearrange the array</h4>
+          1)A pointer is fixed at the pivot element. The pivot element is compared with the elements beginning from the
+          first index
+        </li>
+        <li>
+          2)If the element is greater than the pivot element, a second pointer is set for that element.
+        </li>
+        <li>
+          3)Now, pivot is compared with other elements. If an element smaller than the pivot element is reached, the
+          smaller element is swapped with the greater element found earlier.
+        </li>
+        <li>
+          4)Again, the process is repeated to set the next greater element as the second pointer. And, swap it with
+          another smaller element.
+        </li>
+        <li>5)The process goes on until the second last element is reached.</li>
+        <li>6)Finally, the pivot element is swapped with the second pointer</li>
+        <li>
+          <h4>3. Divide Subarrays</h4>
+          Pivot elements are again chosen for the left and the right sub-parts separately. And, step 2 is repeated.
+        </li>
+      </ol>
+    </div>
+    <div id="count-sort">
+      <h1>Count Sort</h1>
+      <p>
+        Counting sort is a sorting algorithm that sorts the elements of an array by counting the number of occurrences
+        of each unique element in the array. The count is stored in an auxiliary array and the sorting is done by
+        mapping the count as an index of the auxiliary array.Time complexity of count sort is O(n+k).
+      </p>
+      <h2>Working of Counting Sort</h2>
+      <ol>
+        <li>1)Find out the maximum element (let it be max) from the given array.</li>
+        <li>2)Initialize an array of length max+1 with all elements 0. This array is used for storing the count of the
+          elements in the array.</li>
+        <li>3)Store the count of each element at their respective index in count array
+          For example: if the count of element 3 is 2 then, 2 is stored in the 3rd position of count array. If element
+          "5" is not present in the array, then 0 is stored in 5th position.</li>
+        <li>4)Store cumulative sum of the elements of the count array. It helps in placing the elements into the correct
+          index of the sorted array.</li>
+        <li>5)Find the index of each element of the original array in the count array. This gives the cumulative count.
+          Place the element at the index calculated as shown in figure below.</li>
+        <li>6)After placing each element at its correct position, decrease its count by one.</li>
+      </ol>
+    </div>
+    <div id="insertion-sort">
+      <h1>Insertion Sort</h1>
+      <p>Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.
+
+        Insertion sort works similarly as we sort cards in our hand in a card game.
+
+        We assume that the first card is already sorted then, we select an unsorted card. If the unsorted card is
+        greater than the card in hand, it is placed on the right otherwise, to the left. In the same way, other unsorted
+        cards are taken and put in their right place.Time complexity of insertion sort is O(n<sup>2</sup>)</p>
+      <h2>Working of Insertion Sort</h2>
+      <ol>
+        <li>1)The first element in the array is assumed to be sorted. Take the second element and store it separately in
+          key.
+
+          Compare key with the first element. If the first element is greater than key, then key is placed in front of
+          the first element.</li>
+        <li>2)Now, the first two elements are sorted.
+
+          Take the third element and compare it with the elements on the left of it. Placed it just behind the element
+          smaller than it. If there is no element smaller than it, then place it at the beginning of the array.</li>
+          <li>3)Similarly, place every unsorted element at its correct position.</li>
+      </ol>
+    </div>
+  </div>
+  <script src="./home.js"></script>
+  <script src="./bubble.js"></script>
+  <script src="./merge.js"></script>
+  <script src="./quick.js"></script>
+  <script src="./count.js"></script>
+  <script src="./insertion.js"></script>
+</body>
+
+</html>
