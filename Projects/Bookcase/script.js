@@ -242,6 +242,67 @@ function refreshDataFromBooks() {
   }
 }
 
+// Search book
+document.getElementById("search").addEventListener("submit", function (event) {
+  event.preventDefault();
+  const searchInput = document.getElementById("cari").value.toLowerCase();
+  const searchResults = books.filter(function (book) {
+    const title = book.title.toLowerCase();
+    const author = book.author.toLowerCase();
+    return title.includes(searchInput) || author.includes(searchInput);
+  });
+  showSearchResults(searchResults);
+});
+
+// Show search results
+function showSearchResults(results) {
+  const modal = document.querySelector(".modal");
+  const bookDetails = document.querySelector(".book-details");
+  bookDetails.innerHTML = "";
+
+  if (results.length === 0) {
+    bookDetails.innerHTML = "<p>No matching books found.</p>";
+  } else {
+    results.forEach(function (book) {
+      const title = book.title;
+      const author = book.author;
+      const year = book.year;
+      const status = book.bookCheck ? "Finished" : "Unfinished";
+
+      const bookElement = document.createElement("div");
+      bookElement.classList.add("book");
+
+      const titleElement = document.createElement("h3");
+      titleElement.textContent = `Book Title: ${title}`;
+
+      const authorElement = document.createElement("p");
+      authorElement.textContent = `Author: ${author}`;
+
+      const yearElement = document.createElement("p");
+      yearElement.textContent = `Year: ${year}`;
+
+      const statusElement = document.createElement("p");
+      statusElement.textContent = `Status: ${status}`;
+
+      if (status === 'Unfinished') {
+        statusElement.style.color = "red";
+      } else {
+        statusElement.style.color = "green";
+      }
+
+      bookElement.append(titleElement, authorElement, yearElement, statusElement);
+      bookDetails.appendChild(bookElement);
+    });
+  }
+
+  modal.style.display = "block";
+}
+
+// Close modal
+document.querySelector(".close").addEventListener("click", function () {
+  const modal = document.querySelector(".modal");
+  modal.style.display = "none";
+});
 
 // Event listeners
 document.addEventListener("DOMContentLoaded", function () {
