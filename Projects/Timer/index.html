@@ -4,34 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-
-    <link rel="icon" href="https://media.istockphoto.com/photos/yellow-clock-ringing-picture-id1303039266?b=1&k=20&m=1303039266&s=170667a&w=0&h=dKjUazFf7TPjstiIJKecLV7jk1zIKJwNwa3S0PApBrc=">
-
-    <script src="https://kit.fontawesome.com/9c9b6c13f7.js" crossorigin="anonymous"></script>
-
-    <title>Timer</title>
+    <title>Time Count</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+
+    <div class="stopwatch">
+        <h1 class="bol">stopwatch</h1>
+        <h1 id="timer">00:00:00</h1>
+        <button  id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+      </div>
     
-    <div class="container">
-        <h1>Stop Watch</h1>
-        <p><span id="second">00</span>:<span id="ten">00</span></p>
-        <button id="btn-start">Start </button>
-        <button title="reset" id="btn-reset"><i title="reset" class="fa-solid fa-stopwatch"></i> </button>
-    </div>
-    <div class="counter">
-        <h1 class="ff">Time Counter</h1>
-        <h2 id="timer">00:00:00</h2>
-        <div class="buttons">
-            <button onclick="startTimer()">Start</button>
-            <button onclick="stopTimer()">Stop</button>
-            <button onclick="resetTimer()">Reset</button>
+      <script src="script.js"></script>
+
+    <div class="main">
+        <div class="overlay">
+            <h1 class="bol">Time Counter</h1>
+            <div class="title">We are coming soon</div>
+            <div class="title" id="end-date">20 March 2022 10:00 PM</div>
+            <div class="col">
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label for="">Days</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label for="">Hours</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label for="">Minutes</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label for="">Seconds</label>
+                </div>
+            </div>
+            <!-- <div class="wish">
+                <h1>Wish you very very happy birthday supreme</h1>
+            </div> -->
+            <!-- <div class="gif">
+                <img src="download.jpg" alt="">
+                <img src="birthday.gif" alt="">
+            </div> -->
+            <!-- <div class="annu">
+                <img src="supreme3.jpg" alt="">
+            </div> -->
         </div>
     </div>
-    
-    <script src="index.js"> </script>
+    <script src="app.js"></script>
 </body>
 </html>
-
-
