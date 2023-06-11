@@ -1,0 +1,163 @@
+body{
+    margin:0 auto; 
+    padding: 0;
+    color:#F0997D;
+    text-align: center;
+    
+}
+
+h1,h2{
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+
+
+h3{
+    font-family:'Noto Sans',sans-serif;
+    font-size: smaller;
+
+}
+
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .main-head{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size:5rem;
+    margin-top:54vh;
+    color:white;
+  }
+
+  .sub-head{
+    font-family: 'Noto Sans', sans-serif;
+    font-size:3rem;
+    color:white;
+  }
+
+  .hero-section{
+    background-color: #EAAC7F;
+    font-size: 2rem;
+    margin-top: 50vh;
+    padding: 50px;
+    position: relative;
+
+}
+.white-section{
+  background-color: #EAAC7F;
+  font-size: 2rem;
+    margin-top:50vh;
+    padding: 100px;
+    
+   
+}
+
+.big-heading{
+  font-family: "Noto Sans",sans-serif;
+  font-size:1.5rem;
+  line-height: 1.5;
+  
+}
+
+
+/* download buttons */
+.download-button{
+  margin:0 0 0 50px;
+  text-decoration: none;
+}
+
+/* title section */
+
+#title.container-fluid{
+  padding:3% 15% 7%;
+}
+
+
+
+.navbar{
+  padding:0 0 4.5rem;
+}
+  
+.navbar-brand{
+ 
+  font-family: 'Fredericka the Great', cursive;
+  font-size:2.5rem;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.label{
+  font-family: 'Noto Sans', sans-serif;
+  color:white;
+  font-weight: bold;
+}
+
+.line{
+  font-family: 'Noto Sans', sans-serif;
+  color: black;
+  font-weight: 800;
+
+}
+
+
+
+  
+@media (max-width: 990px) {
+    #background-video { display: none; }
+    body {
+      background: url(img/woman-poster.jpg) no-repeat;
+      background-size:auto;
+      margin: 0 auto;
+      display: flexbox;
+      position:static;
+      transform:rotate(0);
+    }
+
+    .container-fluid{
+        background:#EAAC7F;
+    }
+}
+
+
+.carousel-inner > .carousel-item >  img{
+  width:720px; /* Yeap you can change the width and height*/
+  height:940px;
+  
+}
+
+#press{
+  background-color:#EAAC7F;
+  padding-bottom:3%;
+}
+
+.press-logo{
+  width:15%;
+  margin:20px 20px 50px;
+}
+
+#footer{
+  padding:4rem 6rem;
+  background-color: #fff; 
+}
+
+.footer-link{
+  color:#000;
+  text-decoration: none;
+  margin:20px 10px;
+}
+
+.copyright{
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  padding:10px;
+}
