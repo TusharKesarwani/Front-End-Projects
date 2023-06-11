@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Air Quality",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "img/projects/Air_Quality.png",
+    img: "img/projects/Air-Quality.png",
     description:
       "It is atmospheric Air Quality checker built using HTML, CSS and JavaScript. Based on Latitude and Longitude, it shows the Air Quality Index(concentration of pollutants) of that particular location.",
     "github-link":
