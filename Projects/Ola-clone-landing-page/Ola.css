@@ -1,0 +1,307 @@
+.ola {
+    width: 120px;
+    margin-left: 100px;
+    height: 65px;
+  }
+  .list,
+  .list1 {
+    margin-right: 100px;
+  }
+  .nav2 {
+    height: 65px;
+    display: flex;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 2px 7px rgb(201, 201, 201);
+  }
+  .nav1 {
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .diffnav {
+    font-size: 15px;
+    color: black;
+  }
+  .diffnav:hover {
+    color: rgb(139, 194, 37);
+  }
+  button:hover {
+    background-color: #c4d80e;
+  }
+  .book {
+    background-color: #cee500;
+    width: 114px;
+    border: none;
+    border-radius: 2%;
+  }
+  .bcolor,
+  .bcolor:visited {
+    color: rgb(204, 204, 204);
+    font-size: 13px;
+  }
+  .bcolor:hover,
+  .form:hover,
+  .lists:hover {
+    color: rgb(139, 194, 37);
+  }
+  .top-main {
+    height: 675px;
+    background-image: url(https://cms-web.olacabs.com/00000000383.jpg);
+  }
+  h1 {
+    font-family: "Dosis", sans-serif;
+  }
+  h6 {
+    font-size: 14.5px;
+    color: grey;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .c1 {
+    text-align: center;
+    height: 100px;
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 1px 7px rgb(173, 173, 173);
+    position: relative;
+    top: 230px;
+    right: -500px;
+  }
+  .vc {
+    width: 375px;
+    height: 550px;
+    margin-top: 50px;
+    border: none;
+    box-shadow: 0px 1px 7px rgb(173, 173, 173);
+  }
+  .logobox {
+    background-color: #cee500;
+    height: 70px;
+    border-radius: 50px;
+    width: 70px;
+    position: relative;
+    left: 270px;
+    bottom: 50px;
+  }
+  .logo,
+  .logo1 {
+    width: 60px;
+    border-radius: 50px;
+    position: relative;
+    top: 20px;
+    right: -5px;
+  }
+  .logo1 {
+    top: 5px;
+  }
+  .cardimg {
+    width: 164px;
+    height: 107px;
+    border-radius: 3%;
+  }
+  .hc {
+    margin-top: 30px;
+    padding: 15px;
+    width: 550px;
+    margin-right: 20px;
+  }
+  .hc:hover,
+  .c1:hover {
+    background-color: rgb(247, 247, 247);
+    color: rgb(139, 194, 37);
+  }
+  .form {
+    background-color: white;
+    width: 300px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    align-items: center;
+  }
+  #carousel2 {
+    margin-top: 50px;
+    background-color: rgba(230, 230, 230, 0.849);
+    height: 500px;
+  }
+  .carouselimg {
+    width: 500px;
+    position: relative;
+    left: 500px;
+  }
+  .carouselimg2 {
+    margin-top: 80px;
+    width: 300px;
+    position: relative;
+    left: 500px;
+  }
+  .carousel-caption {
+    margin-top: 10px;
+    width: 500px;
+    position: relative;
+    left: 500px;
+    top: -50px;
+  }
+  .androidimg {
+    height: 370px;
+  }
+  .apps {
+    position: relative;
+    left: 500px;
+    bottom: 300px;
+    width: 300px;
+  }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 7px rgb(173, 173, 173);
+    justify-content: space-evenly;
+  }
+  .feature {
+    width: 300px;
+    padding-bottom: 20px;
+  }
+  .footer {
+    background-color: #393939;
+  }
+  .foot {
+    font-weight: 600;
+    position: absolute;
+    right: 80px;
+    display: flex;
+    gap: 30px;
+  }
+  #copyr {
+    font-size: 12px;
+    color: rgba(238, 238, 238, 0.952);
+  }
+  .footul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 300;
+    font-size: small;
+    margin-bottom: 0px;
+    justify-content: end;
+  }
+  .imp {
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  .android {
+    margin-left: 100px;
+    margin-top: 70px;
+    height: 483px;
+  }
+  .footerlist {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 300;
+    font-size: small;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  .stores {
+    height: 50px;
+    width: 170px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 1189px) {
+    .list,
+    .list1 {
+      margin-right: 0px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .ola {
+      margin-left: 0px;
+      position: relative;
+    }
+  }
+  @media (max-width: 767px) {
+    .ola {
+      margin-left: 0px;
+      position: relative;
+      top: -15px;
+    }
+    .icon {
+      position: relative;
+      top: -15px;
+      padding: 0px;
+    }
+    .nav2 {
+      position: sticky;
+    }
+    .nav1 {
+      display: none;
+    }
+    .top-main {
+      background-image: none;
+      height: 400px;
+    }
+    .big {
+      display: none;
+    }
+    .form {
+      left: 40px;
+    }
+    .c1 {
+      left: 0px;
+      top: 80px;
+    }
+    .container {
+      margin-left: 0px;
+    }
+    .vc {
+      width: 360px;
+    }
+    .android {
+      margin-left: 20px;
+    }
+    .androidimg {
+      height: 300px;
+    }
+    .apps {
+      left: 0px;
+      top: 10px;
+    }
+    .downloadapp {
+      display: flex;
+      gap: 15px;
+      padding-left: 10px;
+      padding-top: 15px;
+      margin-bottom: 10px;
+    }
+    .stores {
+      width: 100px;
+      height: 40px;
+    }
+    .footul {
+      margin-top: 10px;
+      justify-content: left;
+    }
+    .footerlist {
+      display: block;
+      text-align: center;
+    }
+    .foot {
+      margin-top: 60px;
+    }
+    .footheader {
+      text-align: center;
+    }
+    .carouselimg {
+      left: 0px;
+      width: 400px;
+    }
+    .carouselimg2 {
+      left: 10px;
+    }
+    .carousel-caption {
+      left: 0px;
+      width: 400px;
+    }
+  }
+  
