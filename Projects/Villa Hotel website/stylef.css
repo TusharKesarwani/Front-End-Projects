@@ -1,0 +1,6 @@
+footer1{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: aqua;
+}
