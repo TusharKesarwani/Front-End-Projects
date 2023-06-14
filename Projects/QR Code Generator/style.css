@@ -141,7 +141,7 @@ button) {
         padding: 16px 20px;
     }
     .generator.active {
-        height: 510px;
+        height: 600px;
     }
     header p {
         color: #696969;
@@ -152,5 +152,9 @@ button) {
     }
     .qr-code img {
         width: 160px;
+    }
+    .btnpng
+    {
+    height: 52px;
     }
 }
