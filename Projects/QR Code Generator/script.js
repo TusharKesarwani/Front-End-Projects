@@ -36,12 +36,12 @@ downloadBtn.addEventListener('click',async()=>{
  link.click();
  URL.revokeObjectURL(url);
 })
-sharebtn.addEventListener('click',(qrCodeUrl)=>
+sharebtn.addEventListener('click',()=>
 {
     if (navigator.share) {
         navigator.share({
             title: "QR Code",
-            url: qrCodeUrl
+            url: qrImg.src
         })
     .then(function() 
     {
@@ -49,7 +49,7 @@ sharebtn.addEventListener('click',(qrCodeUrl)=>
     })
     .catch(function(error) {
     console.error("Error sharing QR code:", error);
-    });
+            });
     } 
     else {
         console.log("Sharing not supported in this browser.");
