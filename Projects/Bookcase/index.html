@@ -10,11 +10,7 @@
 </head>
 
 <body>
-
-
-
     <header>
-
         <nav class="navbar">
             <a href="#" class="nav-logo">Bookcase</a>
             <ul class="nav-menu">
@@ -43,6 +39,15 @@
     <main>
         <div class="home__search">
             <div class="searchBookcase">
+                <div class="modal">
+                    <div class="modal-container">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Book Details</h2>
+                            <div class="book-details"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="content">
                     <h1>Bookcase</h1>
                     <h2>A website where you can keep track on your finished and unfinished books!</h2>
@@ -50,7 +55,7 @@
                 <section id="search-bar">
                     <form id="search" action="#" class="search">
                         <input type="text" name="search" placeholder="Search your book..." id="cari">
-                        <input type="submit" value="Search" name="cari">
+                        <input type="submit" id="searchButton" value="Search" name="cari">
                     </form>
                 </section>
             </div>
