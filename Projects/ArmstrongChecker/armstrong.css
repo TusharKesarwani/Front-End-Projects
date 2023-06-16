@@ -27,7 +27,7 @@ h1 {
     flex-direction: column;
     background-color: rgb(215, 128, 142);
     border-radius: 15px;
-    /* box-shadow: #888888 7% 8%; */
+    box-shadow: #020002 17% 8%; 
 }
 
 input {
@@ -58,7 +58,7 @@ button {
     height: 20%;
     padding: 2%;
     margin-top: 5%;
-    opacity: 0.35;
+    opacity: 1;
     background-color: black;
     color: white;
     transition:all 1s;
@@ -69,6 +69,7 @@ button {
     opacity: 1;
     background-color: #d1ced1;
     box-shadow: 0px 8px 9px #888888 inset;
+    animation: ease-in-out 0.5s;
 }
 
 .buttonjs:hover {
