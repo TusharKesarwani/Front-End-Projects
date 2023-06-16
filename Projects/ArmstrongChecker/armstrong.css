@@ -20,6 +20,7 @@ h1 {
     /* margin-right: 32%; */
     width: 40%;
     max-height: 100%;
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +31,7 @@ h1 {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
+    border-radius: 4px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     opacity: 80%;
     /* box-shadow: #888888 7% 8%; */
