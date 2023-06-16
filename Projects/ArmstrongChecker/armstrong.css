@@ -1,6 +1,7 @@
 body {
     text-align: center;
-    background-color: rgba(82, 190, 163, 0.507);
+    background-color: #0093E9;
+    background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,8 +26,14 @@ h1 {
     text-align: center;
     border: 1px black;
     flex-direction: column;
-    background-color: rgb(215, 128, 142);
-    border-radius: 15px;
+    background-color: #fff;
+    
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    opacity: 80%;
     /* box-shadow: #888888 7% 8%; */
 }
 
