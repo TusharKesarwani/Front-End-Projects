@@ -61,6 +61,7 @@ button {
     opacity: 0.35;
     background-color: black;
     color: white;
+    transition:all 1s;
     /* visibility: hidden; */
 }
 
@@ -71,6 +72,9 @@ button {
 }
 
 .buttonjs:hover {
+    background-color: rgb(215, 128, 142);
+    border: solid white 2px;
+    color: black;
     transform: scale(1.1, 1.1);
     opacity: 0.9;
     /* box-shadow: inset; */
