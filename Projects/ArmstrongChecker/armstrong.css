@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     text-align: center;
     background-color: #0093E9;
@@ -6,12 +8,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins';
     font-size: 100%;
 }
 
 h1 {
     margin:3rem 0rem;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .info {
@@ -25,7 +29,6 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px black;
     flex-direction: column;
     background-color: #fff;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -40,18 +43,19 @@ h1 {
 input {
     font-size: large;
     border: 0px solid;
-    background-color: black;
+    padding: 0 10px;
+    background-color: #e0dee0;
     border-radius: 10px;
     height: 20%;
     width: 80%;
     padding: 2%;
     box-shadow: none;
     outline: none;
-    color: white;
+    color: rgb(72, 72, 72);
 }
 
 ::placeholder {
-    color: white;
+    color: rgb(72,72,72);
 }
 
 button {
