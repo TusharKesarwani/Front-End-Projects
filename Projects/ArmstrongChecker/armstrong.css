@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
 
 body {
     text-align: center;
@@ -15,7 +15,12 @@ body {
 h1 {
     margin:3rem 0rem;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 800;
+    background: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .info {
@@ -71,6 +76,7 @@ button {
     opacity: 0.35;
     background-color: black;
     color: white;
+    transition: ease 0.2s;
     /* visibility: hidden; */
 }
 
@@ -83,6 +89,8 @@ button {
 .buttonjs:hover {
     transform: scale(1.1);
     opacity: 0.9;
+    background-color: #0093E9;
+    background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
     /* box-shadow: inset; */
 }
 
