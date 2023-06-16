@@ -71,7 +71,7 @@ button {
 }
 
 .buttonjs:hover {
-    transform: scale(1.1);
+    transform: scale(1.1, 1.1);
     opacity: 0.9;
     /* box-shadow: inset; */
 }
