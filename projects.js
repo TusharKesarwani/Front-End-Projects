@@ -32,7 +32,7 @@ const projects = [
         "project-link":"Projects/Analog Clock/index.html"
     },
     {
-        "title":"Logistic-Comapny",
+        "title":"Logistic-Company",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/logiC.png",
         "description":"It is a Logistic Company landing Page with essential features for a logistic company",
