@@ -27,14 +27,13 @@ Example :
  
  http://www.google.com/s2/favicons?domain=www.github.com
  
- As I have specified the domain to be github Favicon og github will be fetched.
+ As I have specified the domain to be google Favicon of google will be fetched.
  
  ## SCREENSHOTS
  
- ![Screenshot (299)](https://user-images.githubusercontent.com/80022302/212536821-411dc6b6-f305-4ccb-bec3-185fee32f4dd.png)
- 
+![Screenshot_20230613_230426](https://github.com/harshit-sharmaaa/Front-End-Projects/assets/121124691/55dc31ac-25e2-4958-8285-9a78f3669a4b)
+
  <br/>
  
- ![Screenshot (300)](https://user-images.githubusercontent.com/80022302/212536835-1d61a93d-3c29-4761-ae2a-6492547402e7.png)
-
+![image](https://github.com/harshit-sharmaaa/Front-End-Projects/assets/121124691/550022af-c6c7-4836-8349-7aef994bff34)
 
