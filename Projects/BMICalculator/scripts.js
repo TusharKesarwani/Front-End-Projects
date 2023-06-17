@@ -1,46 +1,40 @@
-// Attach an event listener to the 'sub' element when clicked
 document.getElementById('sub').addEventListener('click', function() {
-    // Get the height and weight values from the input fields
-    let h = document.getElementById('height').value;
-    let w = document.getElementById('weight').value;
-  
-    // Convert height to meters
-    h /= 100.0;
-  
-    // Calculate BMI
-    let bmi = w / (h * h);
-    
-    // Round BMI to two decimal places
-    bmi = parseFloat(bmi).toFixed(2);
-  
-    let img;
-    let data = '';
-  
-    // Determine the BMI category and corresponding image
+  let h = document.getElementById('height').value;
+  let w = document.getElementById('weight').value;
+
+  if (!h || !w || isNaN(h) || isNaN(w)) {
+    document.getElementById('res').innerHTML = 'Please enter valid height and weight values.';
+    document.getElementById('info').setAttribute('class', 'card show');
+    return;
+  }
+
+  h /= 100.0;
+  let bmi = w / (h * h);
+  bmi = parseFloat(bmi.toFixed(2));
+
+  let imgPath = '';
+  let bmiCategory = '';
+
+  function determineCategoryAndImage() {
     if (bmi < 19) {
-      data = 'You Are Underweight';
-      img = "./assets/underweight.jpg";
+      bmiCategory = 'Underweight';
+      imgPath = './assets/underweight.jpg';
     } else if (bmi >= 19 && bmi <= 25) {
-      data = 'You Are Healthy';
-      img = "./assets/healthy.jpg";
+      bmiCategory = 'Healthy';
+      imgPath = './assets/healthy.jpg';
     } else if (bmi > 25 && bmi <= 30) {
-      data = 'You Are Overweight';
-      img = "./assets/overweight.jpg";
-    } else if (bmi > 30) {
-      data = 'You Are Obese';
-      img = "./assets/obese.jpg";
+      bmiCategory = 'Overweight';
+      imgPath = './assets/overweight.jpg';
     } else {
-      data = 'Please Enter a Valid Input';
+      bmiCategory = 'Obese';
+      imgPath = './assets/obese.jpg';
     }
-  
-    // Set the source attribute of the 'body' element to display the appropriate image
-    document.getElementById('body').setAttribute("src", img);
-  
-    // Display the result and BMI information
-    document.getElementById('res').innerHTML = ` ${data}.`;
-    document.getElementById('result').innerHTML = `Your BMI is <strong>${bmi}</strong>.`;
-  
-    // Show the 'info' card
-    document.getElementById('info').setAttribute("class", "card show");
-  });
-  
+  }
+
+  determineCategoryAndImage();
+
+  document.getElementById('body').setAttribute('src', imgPath);
+  document.getElementById('res').innerHTML = `You Are ${bmiCategory}.`;
+  document.getElementById('result').innerHTML = `Your BMI is <strong>${bmi}</strong>.`;
+  document.getElementById('info').setAttribute('class', 'card show');
+});
