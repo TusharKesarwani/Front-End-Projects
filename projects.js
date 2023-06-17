@@ -928,6 +928,22 @@ const projects = [
         "project-link":"Projects/windows 11/index.html"
     },
     {
+        "title":"Resume Creator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Resume_Creator.png",
+        "description":"This project uses Basic HTML, CSS, JavaScript to create a basic Resume Creator, where you can create your resume and most important download the created Resume.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Resume%20Creator",
+        "project-link":"Projects/Resume Creator/index.html"
+    },
+    {
+        "title":"Realtime Currency Converter",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/CurrencyConverter.png",
+        "description":"This is a currency converter web application that fetches real-time data for currency conversion rates using HTML, CSS, and JavaScript. The application allows users to convert currencies by selecting the source currency and the target currency, and it provides an interface to easily switch between the two selected values.",
+        "github-link":"https://github.com/Alkaison/Currency-Converter/",
+        "project-link":"Projects/Realtime%20Currency%20Converter/index.html"
+    },
+    {
         "title":"World Info Website",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/World_Info.png",
