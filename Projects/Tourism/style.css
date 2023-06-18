@@ -311,7 +311,7 @@ iframe {
 
 
 .service-review {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 80px
@@ -325,6 +325,7 @@ iframe {
 
 .service-review h2 {
     font-size: 20px;
+    color:green;
 
 
 }
@@ -806,8 +807,7 @@ a:hover {
     text-align: center;
 }
 
-.footer .heading p,
-h2 {
+.footer .heading p{
     color: whitesmoke;
 }
 
