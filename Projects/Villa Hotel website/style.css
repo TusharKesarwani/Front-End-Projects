@@ -193,16 +193,19 @@ img {
 /*slider end*/
 
 /*Footer*/
+
 #footerinfo{
   background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-evenly;
   color: white;
 }
+.footercontainer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 130px;
+}
 
-/* .contact{
-  margin-top: 50px;
-} */
 .lastfoot ul{
   margin-top: 25px;
 }
@@ -263,6 +266,13 @@ img {
   height: 15px;
   width: 15px;
   margin: 50px 50px;
+}
+
+.copy{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
 @media screen and (max-width: 767px){
