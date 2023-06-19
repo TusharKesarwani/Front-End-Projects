@@ -958,8 +958,15 @@ const projects = [
         "description":"Zomato Landing Page is a clone of the zomato website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Zomato-Landing-Page",
         "project-link":"Projects/Zomato-Landing-Page/index.html"
+    },
+    {
+        "title":"MESSI MANIA",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/MESSI MANIA.png",
+        "description":"A simple fan made webpage of LIONEL MESSI",
+        "github-link":"https://github.com/Soumyajit2825/MESSI_MANIA",
+        "project-link":"Projects/MESSI MANIA/index.html"
     }
-    
 ]
 
 export default projects;
