@@ -32,6 +32,14 @@ const projects = [
         "project-link":"Projects/Analog Clock/index.html"
     },
     {
+        "title":"Logistic-Company",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/logiC.png",
+        "description":"It is a Logistic Company landing Page with essential features for a logistic company",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Logistic Company",
+        "project-link":"Projects/Logistic Company/index.html"
+    },
+    {
         "title":"Animated Card",
         "tags":["HTML","CSS"],
         "img":"img/projects/Animated_Card.png",

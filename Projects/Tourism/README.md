@@ -1,6 +1,6 @@
 # VlogBook(A site for Tours and Travels)
 
-This is a web site for tours and travels where people can view and book their favourite place to spent their holidays at a affordable price.
+This is a web site for tours and travels where people can view and book their favourite place to spend their holidays at an affordable price.
 
 ## Tech Stacks used
 
