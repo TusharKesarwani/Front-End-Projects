@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shovik Gym</title>
+</head>
+
+<link rel="stylesheet" href="stylegym.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(225, 218, 218);
+        margin: 0px;
+        padding: 0px;
+        background-image: url('WhatsApp Image 2023-06-17 at 8.52.21 PM.jpeg');
+        
+        
+        /* background-repeat: no-repeat; */
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        background-color:brown;
+        border: 2px solid brown;
+        border-radius: 2px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .centre {
+        display: block;
+        width: 50%;
+        margin: 29px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(219, 201, 201);
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0px 9px;
+        background-color: rgb(22, 12, 12);
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(90, 87, 87);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 500px;
+        border-radius: 40px;
+        margin-left: 450px;
+    }
+
+    .form-group input {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        display: block;
+        width: 510px;
+        padding: 1.5px;
+        border: 2.5px solid black;
+        margin: 15px auto;
+        font-size: 27px;
+        border-radius: 10px;
+    }
+
+    .container h1 {
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .container button {
+        background-color:rgb(27, 118, 71);
+        display: block;
+        width: 100px;
+        margin: 20px auto;
+        border:2px solid brown;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://www.vecteezy.com/vector-art/8214499-vector-logo-training-fitness-gym-logo-illustration-vector-template" alt="">
+            <div>SHOVIK GYM</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="button">Call Us Now</button>
+            <button class="button">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM of KOLKATA Now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
