@@ -12,7 +12,8 @@ const noTransactionMessage = document.getElementById("noTransactionMessage");
 let transactions = [];
 let incomes=0;
 let expenses=0;
-
+let totalIncome = 0;
+let totalExpense = 0;
 // Check if transactions data exists in Local Storage
 if (localStorage.getItem("transactions")) {
     transactions = JSON.parse(localStorage.getItem("transactions"));
