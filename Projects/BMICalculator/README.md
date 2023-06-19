@@ -5,8 +5,7 @@ This BMI(Body Mass Index) calculator is a simple tool that helps individuals to 
 This project is built using:-  
  ●HTML5 (Structuring)  
  ●CSS3 (Styling)  
- ●Javascript (Server side scripting)  
- ●Open Library (API)  
+ ●Javascript (Server side scripting)    
  ●Git/GitHub (Version control)  
  ●Netlify (Hosting)  
  
