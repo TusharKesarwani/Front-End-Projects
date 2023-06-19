@@ -154,11 +154,11 @@ a:hover i{
 }
 
 /*Attendance List serction  */
-.attendance{
+.Problem{
   margin-top: 20px;
   text-transform: capitalize;
 }
-.attendance-list{
+.Problem-list{
   width: 100%;
   padding: 10px;
   margin-top: 10px;
