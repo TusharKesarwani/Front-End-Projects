@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+
+    height:100%;
+    /* background-color: rgb(34, 34,34); */
+    background: linear-gradient(100deg, #153677, #4e085f)
+
+}
+
+h1{
+
+    font-size: 3rem;
+    font-weight: 50;
+    margin:  1rem 0 3rem;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.heading{
+
+    font-weight: 800;
+    color: #007ced;
+}
+
+.input_div{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.input_div .input {
+
+    padding: 0.5rem 1rem;
+    height:50px;
+    outline:none;
+    background-color:#ffff;
+    width:450px;
+    font-size:1.15rem;
+    margin:0.25rem;
+    border-radius: 25px;
+    border: 2px solid #007ced;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+
+.addButton{
+
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    outline:none;
+    border:none;
+    background-color:white;
+    color:#fff;
+    margin:0.25rem;
+    background: linear-gradient(90deg,#5d0cff,#9b00fa);
+    cursor:pointer;
+    
+}
+
+.addButton:hover{
+
+    opacity: 0.7;
+    
+}
+
+.container{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 2rem;
+
+}
+
+.item{
+
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom:4px solid #fff;
+
+}
+
+.item_input {
+
+    background:none;
+    outline:none;
+    color:rgb(255, 255, 255);
+    border:none;
+    width: 350px;
+    font-size: 1.4rem; 
+
+}
+
+.editButton{
+
+    font-size: 1.4rem;
+    margin: 0 0.5rem;
+    font-family: 'Bebas Neue', cursive;
+    background: none;
+    outline:none;
+    color:#007ced;
+    border:none;
+    cursor: pointer;
+
+
+}
+
+.removeButton{
+
+    font-size: 1.4rem;
+    margin: 0 0.5rem;
+    font-family: 'Bebas Neue', cursive;
+    background: none;
+    outline:none;
+    color:rgb(243, 57, 57);
+    border:none;
+    cursor: pointer;
+    
+}
+
+.plus{
+    font-weight: 800;
+}
