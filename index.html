@@ -79,7 +79,9 @@
         </ul>
 
     </section>
-
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class='fas fa-arrow-circle-up'></i></button>
 
     <footer id="footer">
         <div>
@@ -108,6 +110,29 @@
         function myfunction() {
             preloader.style.display = 'none';
         }
+    </script>
+    
+    <!-- Scroll to Top button -->
+    <script>    
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
     </script>
 </body>
 
