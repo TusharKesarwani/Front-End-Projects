@@ -11,21 +11,31 @@
 </head>
 
 <body>
-    <!-- score container -->
-    <div class="score">
-        <div id="player-score">0</div>
-        <div id="computer-score">0</div>
-    </div>
-    <!-- container to display timer,start and reset button -->
-    <div id="timer-start">
+
+
+    <!-- header section  -->
+    <section id="header">
+    <div class="left" id="info-player1">You</div>
+    <div class="middle">
         <input id="set-time" placeholder="enter duration in seconds"></input>
         <div id="clock">0</div>
         <button id="start">Start</button>
         <button id="refresh">Refresh</button>
     </div>
-    <div class="ball" id="ball"></div>
-    <div class="paddle-left" id="player-paddle"></div>
-    <div class="paddle-right" id="computer-paddle"></div>
+    <div class="right" id="info-player1">Computer</div>
+    </section>
+    <!-- playing area section  -->
+    <section id="playing-area">
+        <div class="paddle-left paddle" id="player-paddle"></div>
+        <div class="paddle-right paddle" id="computer-paddle"></div>
+        <div class="ball" id="ball"></div>
+        <div id="player-score" class="score">0</div>
+        <div id="computer-score" class="score">0</div>
+    </section>
+    <div id="result-box">
+        <button>x</button>
+        <h1 id="result">Result</h1>
+    </div>
     <script src="./app.js" type="module"></script>
 </body>
 
