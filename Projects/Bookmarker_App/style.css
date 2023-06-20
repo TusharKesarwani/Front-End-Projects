@@ -1,83 +1,224 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  background: linear-gradient(45deg, #ea4f4c 0%, #6d0019 100%);
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #d53369 0%, #daae51 100%);
 }
 
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.header {
-  padding-bottom: 20px;
+header {
   text-align: center;
-  /* border-bottom: 1px solid #e5e5e5; */
-}
-
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
-
-.clearfix {
-  /* background-color: #80bdff; */
+  padding: 20px 0;
   background-color: #222;
-  border-radius: 0.25rem;
-  padding: 1.3em;
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+  line-height: 1.5;
+  animation: fadeIn 1s ease;
+}
+
+.bookmarker {
+  font-weight: bold;
   color: #ea4f4c;
-
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-
-.container-narrow>hr {
-  margin: 30px 0;
-}
-
-.jumbotron {
-  text-align: center;
-  /* border-bottom: 1px solid #e5e5e5; */
-  background-color: #222;
-  /* background-color: #957bbe; */
-  border-radius: 0.25rem;
+.application {
   color: white;
 }
 
-.marketing p+h4 {
-  margin-top: 28px;
+.bookmark-form {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px 0;
+  animation: slideIn 1s ease;
+}
+
+.form-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ea4f4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  animation: scaleIn 0.5s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c43c3a;
+}
+
+.bookmark-list {
+  padding: 40px 0;
+}
+
+.list-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .well {
-  border: 1px solid #ccc;
-  padding: 20px 0 0 10px;
-  border-radius: 15px 0 15px 0;
-  margin-top: 30px;
-  background-color: #f1ecec;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
+.well h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  transition: color 0.3s ease;
+}
 
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+.well small {
+  display: block;
+  font-size: 14px;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.btn-success {
+  background-color: #34c635;
+}
+
+.btn-danger {
+  background-color: #ea4f4c;
+}
+
+.btn:hover {
+  background-color: #999;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
   }
 
-  .header {
-    margin-bottom: 30px;
+  .form-title {
+    font-size: 24px;
   }
 
-  .jumbotron {
-    border-bottom: 0;
-    padding: 1.3em;
+  label {
+    font-size: 16px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  .btn-primary,
+  .btn {
+    font-size: 14px;
+  }
+
+  .list-title {
+    font-size: 24px;
+  }
+
+  .well h5 {
+    font-size: 16px;
+  }
+
+  .well small {
+    font-size: 12px;
+  }
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
