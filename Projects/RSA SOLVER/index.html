@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <div>
+            <h1 class="title">RSA SOLVER</h1>
+        </div>
+        <div class="container">
+            <h2 class="title">Enter your values</h2>
+            <div class="innerContainer">
+                <div style="margin-bottom:100px;margin-top:40px;">
+                <p class='label-text'>enter 2 prime numbers</p>
+                <p class='label-text'>p = </p>
+                <input type="number" id="p" name="p" placeholder="p"/>
+                <p class='label-text'>q = </p>
+                <input type="number" id="q" name="q" placeholder="q"/>
+                
+                <button id="genBtn">Generate Keys</button>
+            </div>
+            <div>
+                <p class='label-text'>public key = </p>
+                <input type="text" id="e" name="e" placeholder="e" disabled/>
+                <p class='label-text'>private key = </p>
+                <input type="text" id="d" name="d" placeholder="d" disabled/>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>
+                Choose your operation
+            </h3>
+            <div>
+                <select id="op" name="op" placeholder="Operation">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select>
+
+
+        </div>
+        <div class="container">
+            <h2 class="title" id="opTitle">Encrypt</h2>
+            <div class="innerContainer">
+                <div>
+                <p class='label-text'>enter message</p>
+                <input type="number" name="plain-text" id="input"/>
+                <button type="button" id="opBtn">Encrypt</button>
+            </div><div>
+                <p class='label-text' id="result">Cipher text = </p>
+                <input type="number" name="cipher-text" id="output" disabled/>
+            </div>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

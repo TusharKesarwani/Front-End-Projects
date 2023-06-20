@@ -384,6 +384,14 @@ main .left p {
     border: 2px solid #F2B705;
 }
 
+
+#contributors-list img:hover 
+{
+    transform: scale(1.14);
+    cursor: pointer;
+}
+
+
 footer {
     background-color: #0D4360;
 }
