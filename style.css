@@ -15,14 +15,37 @@ body {
     background-color: white;
 }
 
+.container {
+    max-width: 1280px;
+    /* border: 1px solid red; */
+}
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+
 nav {
+    background-color: #0D4360;
+    padding: 5px;
+}
+
+nav .container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #0D4360;
     padding: 0 2rem;
     margin: 0 auto;
-}
+} */
 
 nav img {
     width: 50px;
@@ -37,7 +60,7 @@ nav ul {
 
 nav ul li a {
     color: white;
-    font-size: .8rem;
+    font-size: 0.9rem;
     transition: all ease-in-out 0.2s;
 }
 
@@ -58,22 +81,45 @@ nav ul li a:hover {
 }
 
 main {
+    padding: 15px;
+}
+
+main .container {
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 0;
+
+    margin: 0 auto;
+
+}
+
+/* main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     gap: 4rem;
     margin: 0 8rem;
+} */
+
+main .right {
+    width: 40%;
+    border: 1p;
 }
 
 main .right img{
     animation: imgUp 1s linear infinite alternate;
+    width: 100%;
+
+
 }
 main .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 4rem;
+    width: 50%;
 }
 
 main .left .headings {
@@ -89,8 +135,7 @@ main .left h1 {
 }
 
 main .left p {
-    font-size: .8rem;
-    width: 90%;
+    font-size: 1.1rem;
     color: #3d3d3d;
 }
 
@@ -109,21 +154,35 @@ main .left p {
     color: #0D4360;
 }
 
-.project-section {
-    margin: -2.5rem 8rem 6rem 8rem;
-}
+
 
 .title {
     color: #0D4360;
     font-size: 3rem;
-    margin-top: -6rem;
+    position: relative;
+
+   
+    /* margin-top: -6rem; */
 }
 
-.bg-title {
+.title::before {
+    content: attr(bg-val);
+    color: rgb(234, 233, 233);
+
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 1.6em;
+}
+
+/* .bg-title {
     font-size: 6rem;
     color: rgb(234, 233, 233);
-    margin-left: -6rem;
-}
+} */
 
 @keyframes imgUp {
   to {
@@ -131,17 +190,25 @@ main .left p {
   }
 }
 
+.project-section .container {
+    margin: 0 auto;
+
+    padding: 15px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-between;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .project-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .project-header #searchForm {
@@ -176,13 +243,15 @@ main .left p {
 
 .project {
     display: flex;
-    width: 30%;
+    width: 32%;
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
     background-color: #0D4360;
     border-radius: .2rem;
     transition: all 0.5s ease;
+
+    gap: 10px;
 }
 
 .project:hover{
@@ -204,7 +273,7 @@ main .left p {
     align-items: center;
     gap: 1rem;
     color: white;
-    width: 100%;
+    /* width: 100%; */
     padding: 1rem;
 }
 
@@ -229,6 +298,7 @@ main .left p {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 1rem;
     gap: 1.3rem;
 }
@@ -256,11 +326,44 @@ main .left p {
 }
 
 .contributors {
-    margin: -2.5rem 8rem 4rem 8rem;
+    margin-top: 30px;
+}
+
+.contributors .container {
+    margin: 0 auto;
+
+    padding: 15px;
+
+    
+}
+
+
+.contri-title {
+    color: #0D4360;
+    font-size: 3rem;
+    position: absolute;
+    /* border: 1px solid red; */
+   
+    /* margin-top: -6rem; */
+}
+
+.contri-title::after {
+    content: 'CONTRIBUTORS';
+    color: rgb(234, 233, 233);
+
+    z-index: -1;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    
+    font-size: 1.3em;
 }
 
 .contributors .list-section {
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding: 2rem;
     background-color: #0D4360;
     border-radius: .5rem;
@@ -283,71 +386,118 @@ main .left p {
 
 footer {
     background-color: #0D4360;
+}
+
+footer .container {
+    
     padding: 2rem 8rem;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     color: #fff;
+
+    margin: 0 auto;
 }
+
 
 footer a {
     color: #F2B705;
 }
 
-@media screen and (max-width: 1200px) {
-    main {
-        flex-direction: column-reverse;
-        margin: 0 4rem;
+@media screen and (max-width: 732px) {
+    nav {
+        padding-inline: 15px;
     }
-    main .left {
-        margin-top: 4rem;
-    }
-    main .left h1 {
-        font-size: 3rem;
-    }
-    main .left p {
-        font-size: .7rem;
-    }
-    .github-btn-cta {
-        width: 11rem;
-    }
-    .project-section {
-        margin: -2.5rem 4rem 4rem 4rem;
-    }
-    .title {
-        font-size: 2.5rem;
-        margin-top: -5rem;
-    }
-    .bg-title {
-        font-size: 6rem;
-        margin-left: -4rem;
-    }
-    .projects {
-        margin-top: 1rem;
+    .project-header {
+        flex-direction: column;
+        gap: 20px;
     }
     .project {
-        width: 45%;
-    }
-    .project-info h2 {
-        font-size: 1rem;
-    }
-    .project-info p {
-        font-size: .6rem;
-    }
-    .project-info .row {
-        padding: 0 .5rem;
-    }
-    .tech span {
-        font-size: .6rem;
-    }
-    .links {
-        font-size: .8rem;
-    }
-    footer {
-        padding: 2rem 4rem;
+        width: 49%;
     }
 }
 
+@media screen and (max-width: 690px) {
+    main .container {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    main .right {
+        order: 1;
+    }
+    main .left {
+        order: 2;
+    }
+    main .left {
+        width: 100%;
+        align-items: center;
+    }
+
+    main .left p, h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap:15px;
+    }
+    .project {
+        margin: 0;
+        width: 90%;
+    }
+    .project .project-info {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .project p {
+        font-size: 0.9rem;
+
+        padding: 10px;
+    }
+
+    .title, .contri-title {
+        font-size: 2rem;
+    }
+    footer .container {
+        border: 1px solid red;
+    }
+    .github-btn {
+        display: none;
+    }
+    /* .project {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+
+    
+        
+    }
+    .project img {
+        width: 30%;
+    }
+    .project-info {
+        width: 70%;
+    }
+    .links a {
+        color: black;
+    }
+    .project h2 {
+        color: black;
+    }
+    .project p {
+        color: black;
+
+    } */
+}
+
+/* 
 @media screen and (max-width: 768px) {
     nav ul li a {
         font-size: .7rem;
@@ -484,4 +634,4 @@ footer a {
         flex-direction: column;
         padding: 2rem 1rem;
     }
-}
+} */
