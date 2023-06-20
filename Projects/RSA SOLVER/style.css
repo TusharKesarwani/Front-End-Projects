@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  margin: 0 auto;
+  font-family: 'Orbitron';
+  padding:79px;
+  color:white;
+
+}
+
+body{
+    background-color: #1b1b1b;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size:39px;
+    line-height: 49px;
+    margin-bottom: 30px;
+}
+
+.innerContainer{
+    display:flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3b3b;
+    padding:1.75rem;
+    border-radius: 23px;
+    font-size: 28px;
+}
+
+input{
+    background-color: #1c1c1c;
+    max-width: 150px;
+    border: none;
+    padding: 1.25rem 0.75rem;
+    border-radius: 9px;
+    outline: none;
+    margin-right: 20px;
+    font-size: 28px;
+    color:white;
+
+}
+
+input[type="text"]{
+    max-width: 300px;
+    margin-right: 0px;
+}
+
+.label-text{
+    display: inline-block;
+    margin-left:30px;
+    margin-right:20px ;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color:white;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
