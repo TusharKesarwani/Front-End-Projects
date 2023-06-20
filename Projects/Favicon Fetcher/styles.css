@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "sans";
+    font-family: "roboto";
 }
 
 
@@ -15,16 +15,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #b9ecff;
+    background-image: url('images/background.avif');
 }
 
 h2 {
     position: absolute;
     top: 0;
     padding-top: 100px;
-    color: rgb(9, 6, 6);
-    font-size: 2rem;
+    color: rgba(9, 6, 6, 0.567);
+    font-size: 80px;
     text-align: center;
+    font-family: roboto;
+    
   }
 
 
@@ -48,4 +50,12 @@ label input{
 
 input[type='button']:hover{
     cursor: pointer;
+}
+
+#grab,#input{
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.368);
+    font-family: roboto;
+    margin-top: 100px;
 }
