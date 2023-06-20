@@ -15,6 +15,31 @@ body {
     background-color: white;
 }
 
+#progress{
+    cursor: pointer;
+    position:fixed;
+    right:10px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    z-index:111111;
+    display:none;
+    place-items: center;
+    border-radius:50%;
+    box-shadow:0 0 10px rgba(0, 0, 0,0.5);
+}
+#progress #progress-value{
+    display:block;
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    background-color:white;
+    border-radius:50%;
+    display:grid;
+    place-items: center;
+    font-size:25px;
+    color:#001a2e;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
