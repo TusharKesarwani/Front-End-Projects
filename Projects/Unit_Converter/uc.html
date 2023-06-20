@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit_converter</title>
+    <link rel="stylesheet" href="uc.css">    
+</head>
+<body>
+<div class="c_wrap">
+    <h1>UNIT CONVERTER</h1>
+    <form name="property_form">
+        <span>
+            <select class="select-property" name="the_menu" size=1  onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+            </select>
+        </span>
+    </form>
+
+    <div class="converter-a">
+        <form name="form_A" onsubmit="return false">
+            <input type="text" class="numbersonly" name="unit_input" value="0" maxlength="10" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+            <span>
+                <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+                </select>
+            </span>
+        </form>
+    </div>
+
+    <div class="converter-equals">
+    <p>=</p>
+    </div>
+
+    <div class="converter-b">
+        <form name="form_B" onsubmit="return false">
+            <input type="text" class="numbersonly" name="unit_input" value="0" maxlength="10" onKeyUp="CalculateUnit(document.form_B, document.form_A)">
+            <span>
+                <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+                </select>
+            </span>
+        </form>
+    </div>
+</div> 
+
+<script src="./uc.js"></script>
+</body>
+</html>

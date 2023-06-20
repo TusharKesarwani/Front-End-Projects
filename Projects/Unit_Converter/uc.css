@@ -1,0 +1,101 @@
+body{
+    background: url(https://i.ibb.co/pRPwfQT/520408-black-1920x1080-wallpaper.jpg) no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    background: rgb(6,0,0);
+background: linear-gradient(50deg, rgba(6,0,0,0.9921218487394958) 0%, rgba(111,112,111,1) 32%, rgba(203,205,204,1) 57%, rgba(6,0,0,1) 100%);
+}
+.c_wrap{
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    margin-top: 100px;
+}
+.c_wrap input{
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 40px;
+    margin-top: 30px; 
+    background-color: #cbcdcc; 
+}
+.c_wrap span{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.c_wrap span select{
+    background: rgb(251,248,248);
+    background: linear-gradient(50deg, rgba(251,248,248,0.9921218487394958) 0%, rgba(76,78,77,1) 57%, rgba(6,6,0,1) 100%);
+    color: black;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+.c_wrap span ::before,
+.c_wrap span ::after{
+    position: absolute;
+    content: "";
+    pointer-events: none;
+}
+.c_wrap span ::after{
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.5em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #131B24;
+}
+.c_wrap span ::before{
+    width: 2.5em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    background: rgb(251,248,248);
+    background: linear-gradient(50deg, rgba(251,248,248,0.9921218487394958) 0%, rgba(76,78,77,1) 57%, rgba(6,6,0,1) 100%);
+}
+.coverter-a ::before,
+.converter-b ::after{
+    float: left;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 45%;
+}
+.converter-equals{
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    color: rgb(253, 251, 249);
+    text-align: center;
+    line-height: 0;
+    font-size: 3.5rem;
+    padding-left: 47%;
+}
+.converter-a{
+    padding-right: 10px;
+}
+.converter-b{
+    padding-left: 10px;
+}
