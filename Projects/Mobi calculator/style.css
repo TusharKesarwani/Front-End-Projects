@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+* 
+{
+	margin: 0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+body
+{
+    background: #0b254e;
+}
+.volte {
+    font-size: 10px;
+    margin-top:-20px;
+    margin-left: 215px;
+}
+.myphone
+{
+    margin-top: 20px;
+}
+.myphone .screen
+{
+    width: 42%;
+    height: 625px;
+    margin: 0 auto;
+    border: 8px solid #e8eaec;
+    min-width: 310px;
+    max-width: 310px;
+    border-radius: 44px;
+    background: #e8eaec;
+    box-shadow: 
+    12px 12px 32px rgba(13,39,80,0.25),
+    -10px 10px 15px #fff
+}
+.screen .notch
+{
+    width: 159px;
+    height: 30px;
+    margin: 0px auto;
+    background: #e8eaece1;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius:15px ;
+}
+.sound
+{
+    top: 10px;
+    left: 54px;
+    width: 40px;
+    height: 6px;
+    position: relative;
+    background: #222;
+    border-radius: 10px;
+}
+.camera
+{
+    top: 2px;
+    left: 110px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background: #222;
+    border-radius: 100px;
+}
+.time
+{
+    color: #000;
+    width: 60px;
+    font-size: 11px;
+    margin-top: -20px;
+    background: transparent;
+    margin-left: 18px;
+}
+.battery
+{
+    margin-top:-20px;
+}
+.battery i
+{
+    color: rgba(0,0,0,0.548);
+    margin-left: 260px !important;
+}
+.wifi
+{
+    /* margin-top: -20px !important; */
+    margin-left: 230px;
+    margin-top: -27px;
+}
+.wifi i
+{
+    color: rgb(143, 139, 139);
+    /* margin-top: -20px; */
+}
+.top-nav
+{
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.area
+{
+    min-width: 50% !important;
+    width: 93% !important;
+    min-height: 120px !important;
+    margin-left: -5px;
+    margin-top: -5px;
+    font-size: 30px !important;
+    text-align: center;
+    text-align: right;
+    overflow: scroll;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #0b254e;
+    background: #e8eaec;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 
+    6px 6px 8px rgba(13, 39, 80, 0.25),
+    -6px -6px 10px #fff,
+    inset -8px -8px 12px rgba(255,255,255,0.7),
+    inset 5px 5px 8px rgba(13,39,80,0.2);
+
+}
+.calculator
+{
+    margin: 0;
+    box-sizing: content-box;
+}
+.key
+{
+    float:  left !important;
+    font-size: 15pt;
+    display: flex !important;
+    margin: -5%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.first-col,
+.second-col,
+.third-col,
+.fourth-col,
+.fifth-col
+{
+    padding: 10px;
+    white-space: wrap;
+    margin: -9.5px;
+    display: inline-block;
+    margin-top: 20px !important;
+    justify-content: space-between !important;
+}
+.button
+{
+    display: block;
+    padding-left: 40px;
+    min-height: 40px;
+    padding-right: 30px;
+    white-space: wrap;
+    word-wrap: break-word;
+    margin-top: 20px;
+    justify-content: space-between !important;
+}
+button
+{
+    position: relative;
+    margin-left: -54px !important;
+    min-width: 45px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    background: transparent;
+    color: #c2c3c3 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    height: 45px;
+    outline: none;
+    font-weight:  bold !important;
+    font-size: 14pt !important;
+    box-shadow: 
+    4px 4px 8px rgba(13, 39,80,0.25),
+    -4px 4px 8px #fff;
+}
+.btn-work
+{
+    color: #0b254e !important;
+}
+.btn-equal
+{
+    color: #0b254e !important;
+    height: 120px !important;
+}
+button:focus
+{
+    cursor: pointer;
+    outline: none !important;
+    border: none !important;
+
+}
+button:active
+{
+    box-shadow: 
+    -3px -3px 7px #a0a0a032,
+    3px 3px 5px rgba(94, 104, 121, 0.417);
+    outline: none !important;
+    border: none !important;
+}
+button:hover
+{
+    color: #696a6a !important;
+}
+.btn-work:hover,
+.btn-equal:hover
+{
+    color:#0b254e !important;
+}
+.home
+{
+    margin-top: 382px;
+    margin-left: 72px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #0b254e;
+}
+.menu
+{
+    margin-top: 392px;
+    margin-left: -275px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #0b254e;
+}
+.back
+{
+    margin-top: 392px;
+    margin-left: 75px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #0b254e;
+}
