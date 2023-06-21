@@ -1,0 +1,90 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dafffb;
+  }
+
+  .bus-seats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .seat {
+    width: 4rem;
+    height: 3rem;
+    margin: 1rem;
+    padding: 4px;
+    text-align: end;
+    background-color: bisque;
+    background-image: url("../svg/chair.svg");
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    font-weight: 900;
+  }
+
+  .seat:hover {
+    
+    cursor: pointer;
+  }
+
+  .box-container {
+
+    border: 3px solid;
+    border-radius: 5px;
+    
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .booked-info div {
+    padding: 10px;
+    font-weight: bolder;
+  }
+
+  .seat-desc {
+    background-color: bisque;
+    width: 4rem;
+    height: 3rem;
+    background-image: url("../svg/chair.svg");
+    background-repeat: no-repeat;
+    padding: 4px;
+    margin: 5px;
+  }
+
+  .booked-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px;
+    border: 2px solid;
+    flex-wrap: wrap;
+
+  }
+
+  .exclude-item {
+    flex-basis: 100%;
+  }
+
+  .user-booking {
+    background-color: lightgreen;
+   
+  }
+
+  .seat-booked {
+    background-color: lightcoral;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }

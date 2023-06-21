@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .dateSelector {
+        font-weight: bolder;
+        margin-right: 30px;
+        font-size: larger;
+      }
+
+      .dateInput {
+        font-weight: bolder;
+        width: 11.5rem;
+        text-align: center;
+        height: 60px;
+      }
+
+      select {
+        border: solid;
+        font-weight: bolder;
+        height: 60px;
+        width: 11.5rem;
+        margin: 5px;
+        text-align: center;
+      }
+      label {
+        font-size: larger;
+      }
+
+      .input-group-text {
+        font-weight: bolder;
+        margin-right: 30px;
+      }
+
+      .btn {
+        font-weight: bolder;
+        font-size: larger;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #0d6efd;
+        color: aliceblue;
+      }
+
+      .show {
+        display: none;
+      }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 50px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="styles/booking.css" />
+  </head>
+  <body>
+   <a href="./index.html">
+    <img src="./svg/back.svg" alt="">
+   </a>
+
+    <div style="text-align: center">
+      <h1>Book Ticket</h1>
+      <img src="./svg/" alt="" />
+    </div>
+    <div class="input-group">
+      <div class="input">
+        <label class="input-group-text" for="inputGroupSelect01">From</label>
+        <select
+          class="form-select"
+          id="inputGroupSelect01"
+          style="margin-right: 25px"
+        >
+          <option selected>Choose...</option>
+          <option value="1">bilaspur</option>
+          <option value="2">raipur</option>
+          <option value="3">bhilai</option>
+        </select>
+      </div>
+      <div class="input">
+        <label class="input-group-text" for="inputGroupSelect02">To</label>
+        <select class="form-select" id="inputGroupSelect02">
+          <option selected>Choose...</option>
+          <option value="1">raipur</option>
+          <option value="2">bilaspur</option>
+          <option value="3">bhilai</option>
+        </select>
+      </div>
+
+      <div class="input">
+        <span class="dateSelector">Date</span>
+        <input type="datetime-local" class="form-control dateInput" />
+      </div>
+
+      <div class="submit">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+
+    <!-- seating booking logic -->
+    <div class="show">
+      <h1 style="text-align: center; margin-top: 40px">
+        Book your seat by clicking on chair
+      </h1>
+      <div class="grid-container m-5" id="scroll">
+        <div class="box-container grid-item">
+          <div class="bus-seats">
+            <div class="row">
+              <div class="seat seat-booked">1</div>
+              <div class="seat">2</div>
+              <div class="seat">3</div>
+              <div class="seat">4</div>
+              <div class="seat">5</div>
+              <div class="seat">6</div>
+            </div>
+            <div class="row">
+              <div class="seat">7</div>
+              <div class="seat">8</div>
+              <div class="seat">9</div>
+              <div class="seat">10</div>
+              <div class="seat">11</div>
+              <div class="seat">12</div>
+            </div>
+            <div class="row">
+              <div class="seat">13</div>
+              <div class="seat">14</div>
+              <div class="seat">15</div>
+              <div class="seat">16</div>
+              <div class="seat">17</div>
+              <div class="seat">18</div>
+            </div>
+            <div class="row">
+              <div class="seat">19</div>
+              <div class="seat">20</div>
+              <div class="seat">21</div>
+              <div class="seat">22</div>
+              <div class="seat">23</div>
+              <div class="seat">24</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item booked-info">
+          <div>
+            seats empty
+            <div class="seat-desc"></div>
+          </div>
+          <div>
+            seats booked
+            <div class="seat-desc" style="background-color: lightcoral"></div>
+          </div>
+          <div>
+            seats selected
+            <div class="seat-desc" style="background-color: lightgreen"></div>
+          </div>
+
+          <div class="exclude-item">
+            <div>
+              Total seats selected:
+              <div class="count">0</div>
+            </div>
+
+            <button
+              style="
+                background-color: #0d6efd;
+                padding: 5px;
+                border-radius: 5px;
+                color: aliceblue;
+                font-weight: bolder;
+              "
+              onclick="alert('Your ticket has been booked')"
+            >
+              Proceed Further
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bookingScript.js"></script>
+  </body>
+</html>
