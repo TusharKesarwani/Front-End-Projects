@@ -14,4 +14,5 @@ This project is built using:-
  
  ## Sample Output
 
-![Screenshot (50)](https://github.com/krutika-ladani/Front-End-Projects/assets/119760273/6e15e8f5-374f-4a5e-b40e-da81947064ea)
+![Screenshot (59)](https://github.com/krutika-ladani/Front-End-Projects/assets/119760273/64374759-fb66-46b3-bee0-72524df070d6)
+
