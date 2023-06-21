@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,29 +16,30 @@ body {
     background-color: white;
 }
 
-#progress{
+#progress {
     cursor: pointer;
-    position:fixed;
-    right:10px;
-    bottom:20px;
-    width:60px;
-    height:60px;
-    z-index:111111;
-    display:none;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 111111;
+    display: none;
     place-items: center;
-    border-radius:50%;
-    box-shadow:0 0 10px rgba(0, 0, 0,0.5);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#progress #progress-value{
-    display:block;
-    width:calc(100% - 10px);
-    height:calc(100% - 10px);
-    background-color:white;
-    border-radius:50%;
-    display:grid;
+
+#progress #progress-value {
+    display: block;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
     place-items: center;
-    font-size:25px;
-    color:#001a2e;
+    font-size: 25px;
+    color: #001a2e;
 }
 
 nav {
@@ -91,9 +93,10 @@ main {
     margin: 0 8rem;
 }
 
-main .right img{
+main .right img {
     animation: imgUp 1s linear infinite alternate;
 }
+
 main .left {
     display: flex;
     flex-direction: column;
@@ -151,15 +154,17 @@ main .left p {
 }
 
 @keyframes imgUp {
-  to {
-    transform: translateY(-10px);
-  }
+    to {
+        transform: translateY(-10px);
+    }
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     margin-top: 2rem;
 }
 
@@ -167,16 +172,17 @@ main .left p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 2rem;
 }
 
 .project-header #searchForm {
     height: fit-content;
     width: fit-content;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: .5rem;
     text-align: center;
     border: 2px solid #0D4360;
     border-radius: 1rem;
+    margin-top: 37px;
 }
 
 .project-header #search {
@@ -186,7 +192,8 @@ main .left p {
     border: 0px;
 }
 
-.project-header #search:hover, .project-header #search:focus {
+.project-header #search:hover,
+.project-header #search:focus {
     border: 0px;
     outline: none;
 }
@@ -210,7 +217,7 @@ main .left p {
     transition: all 0.5s ease;
 }
 
-.project:hover{
+.project:hover {
     scale: 1.01;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -307,8 +314,7 @@ main .left p {
 }
 
 
-#contributors-list img:hover 
-{
+#contributors-list img:hover {
     transform: scale(1.14);
     cursor: pointer;
 }
@@ -332,50 +338,61 @@ footer a {
         flex-direction: column-reverse;
         margin: 0 4rem;
     }
+
     main .left {
         margin-top: 4rem;
     }
+
     main .left h1 {
         font-size: 3rem;
     }
+
     main .left p {
         font-size: .7rem;
     }
+
     .github-btn-cta {
-        width: 11rem;
+        width: 14rem;
     }
-    .project-section {
-        margin: -2.5rem 4rem 4rem 4rem;
-    }
+
     .title {
         font-size: 2.5rem;
         margin-top: -5rem;
     }
+
     .bg-title {
         font-size: 6rem;
         margin-left: -4rem;
     }
+
     .projects {
         margin-top: 1rem;
     }
+
     .project {
         width: 45%;
     }
+
     .project-info h2 {
         font-size: 1rem;
     }
+
     .project-info p {
         font-size: .6rem;
     }
+
     .project-info .row {
         padding: 0 .5rem;
     }
+
     .tech span {
         font-size: .6rem;
     }
+
     .links {
         font-size: .8rem;
     }
+
     footer {
         padding: 2rem 4rem;
     }
@@ -385,136 +402,348 @@ footer a {
     nav ul li a {
         font-size: .7rem;
     }
+
     .github-btn {
         margin-top: 1rem;
     }
+
     main {
         flex-direction: column-reverse;
-        margin: 0 2rem;
         gap: 0rem;
     }
+
     main .left {
         margin-top: 4rem;
     }
+
     main .left h1 {
         font-size: 3rem;
     }
+
     main .left p {
         font-size: 1rem;
     }
+
     main .right img {
-        height: 40vh;
+        height: 35vh;
     }
+
     .github-btn-cta {
-        width: 11rem;
+        width: 14rem;
         margin-bottom: 2rem;
     }
-    .project-section {
-        margin: -2.5rem 2rem 4rem 2rem;
-    }
+
     .title {
         font-size: 2rem;
         margin-top: -3rem;
+        text-align: center;
     }
+
     .bg-title {
         font-size: 4rem;
         margin-left: -2rem;
     }
+
     .projects {
         margin-top: 1rem;
     }
+
     .project {
         width: 90%;
     }
+
     .project-info h2 {
         font-size: 1.2rem;
     }
+
     .project-info p {
         font-size: 1rem;
     }
+
     .project-info .row {
         padding: 0 .5rem;
     }
+
     .tech span {
         font-size: .8rem;
     }
+
     .links {
         font-size: 1rem;
     }
+
     footer {
         flex-direction: column;
         padding: 2rem 2rem;
     }
+
     .project-header {
         flex-direction: column;
+        align-items: center;
     }
-    .project-header button, .project-header #search {
+
+    .project-header button,
+    .project-header #search {
         font-size: 0.8rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 598px) {
     nav ul li a {
-        font-size: .7rem;
+        font-size: 0.7rem;
     }
+
     .github-btn {
         display: none;
     }
+
     main {
         flex-direction: column-reverse;
         margin: 0 1rem;
         gap: 0rem;
     }
+
     main .left {
         margin-top: 4rem;
     }
+
     main .left h1 {
         font-size: 2rem;
     }
+
     main .left p {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
+
     main .right img {
-        height: 30vh;
+        height: 25vh;
     }
+
     .github-btn-cta {
-        width: 11rem;
         margin-bottom: 2rem;
     }
+
     .project-section {
         margin: -2.5rem 1rem 4rem 1rem;
     }
+
     .title {
         font-size: 1.5rem;
         margin-top: -2rem;
     }
+
     .bg-title {
         font-size: 3rem;
         margin-left: -1rem;
     }
+
     .projects {
         margin-top: 1rem;
     }
+
     .project {
         width: 90%;
     }
+
     .project-info h2 {
         font-size: 1rem;
     }
+
     .project-info p {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
+
     .project-info .row {
         padding: 0 .5rem;
     }
+
     .tech span {
-        font-size: .6rem;
+        font-size: 0.6rem;
     }
+
     .links {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
+
     footer {
         flex-direction: column;
         padding: 2rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 488px) {
+    body {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    .github-btn {
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin: 0 0.5rem;
+        gap: 0rem;
+    }
+
+    main .left {
+        margin-top: 4rem;
+    }
+
+    main .left h1 {
+        font-size: 1.8rem;
+    }
+
+    main .left p {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    main .right img {
+        height: 20vh;
+    }
+
+    .github-btn-cta {
+        margin-bottom: 2rem;
+    }
+
+    .project-section {
+        margin: -2.5rem 0.5rem 4rem 0.5rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin-top: -1.5rem;
+    }
+
+    .bg-title {
+        font-size: 2.5rem;
+        margin-left: -1rem;
+    }
+
+    .projects {
+        margin-top: 1rem;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project-info h2 {
+        font-size: 0.9rem;
+    }
+
+    .project-info p {
+        font-size: 0.7rem;
+    }
+
+    .project-info .row {
+        padding: 0 0.5rem;
+    }
+
+    .tech span {
+        font-size: 0.5rem;
+    }
+
+    .links {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 2rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    body {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    .github-btn {
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin: 0 0.5rem;
+        gap: 0rem;
+    }
+
+    main .left {
+        margin-top: 2rem;
+    }
+
+    main .left h1 {
+        font-size: 1.5rem;
+    }
+
+    main .left p {
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    main .right img {
+        height: 15vh;
+    }
+
+    .github-btn-cta {
+        margin-bottom: 2rem;
+    }
+
+    .project-section {
+        margin: -2.5rem 0.5rem 4rem 0.5rem;
+    }
+
+    .title {
+        font-size: 1rem;
+        margin-top: -1.5rem;
+    }
+
+    .bg-title {
+        font-size: 2rem;
+        margin-left: -1rem;
+    }
+
+    .projects {
+        margin-top: 1rem;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project-info h2 {
+        font-size: 0.8rem;
+    }
+
+    .project-info p {
+        font-size: 0.6rem;
+    }
+
+    .project-info .row {
+        padding: 0 0.5rem;
+    }
+
+    .tech span {
+        font-size: 0.4rem;
+    }
+
+    .links {
+        font-size: 0.6rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 2rem 0.5rem;
     }
 }
