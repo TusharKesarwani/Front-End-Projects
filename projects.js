@@ -952,6 +952,14 @@ const projects = [
         "project-link":"Projects/World Info Website/index.html"
     },
     {
+        "title":"Huffman Compressor",
+        "tags":["HTML","CSS","JavaScript","C++"],
+        "img":"img/projects/huffman.png",
+        "description":"Implemented the Huffman coding algorithm achieving efficient data compression without loss of information.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/HuffmanCompression",
+        "project-link":"Projects/HuffmanCompressor/index.html"
+    },
+    {
         "title":"Zomato Landing Page",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Zomato_Clone.png",
