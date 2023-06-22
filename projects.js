@@ -958,6 +958,14 @@ const projects = [
         "description":"Zomato Landing Page is a clone of the zomato website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Zomato-Landing-Page",
         "project-link":"Projects/Zomato-Landing-Page/index.html"
+    },
+    {
+        "title":"Number To Words Convertor",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Number_To_Words_Convertor.png",
+        "description":"This website can convert the entered number into the words instantly. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Number_To_Words_Convertor",
+        "project-link":"Projects/Number_To_Words_Convertor/index.html"
     }
     
 ]
