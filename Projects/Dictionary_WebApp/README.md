@@ -10,7 +10,8 @@ This is a web application that offers users a convenient way to search for word 
 This project is built using:- 
 - HTML5 (Structuring)
 - CSS3 (Styling) 
-- Javascript (Server side scripting) 
+- Javascript (Server side scripting)
+- DictionaryApi (API)
 - Git/GitHub (Version control) 
 - Netlify (Hosting)
 
