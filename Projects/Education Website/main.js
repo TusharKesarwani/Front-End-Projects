@@ -1,8 +1,8 @@
 // Change navbar styles on scroll
 
 window.addEventListener('scroll', () => {
-    document.querySelector('nav').classList.toggle
-    ('window-scroll', window.scrollY > 0)
+   const nav = document.querySelector('nav');
+  nav.classList.toggle('window-scroll', window.scrollY > 0);
 });
 
 
@@ -15,11 +15,9 @@ faqs.forEach(faq => {
         faq.classList.toggle("open");
 
         // change icon
-        const icon = faq.querySelector(".faq__icon i");
-        if(icon.className === "uil uil-plus") {
-            icon.className = "uil uil-minus"
-        } else {
-            icon.className = "uil uil-plus";
+     const icon = faq.querySelector('.faq__icon i');
+    icon.classList.toggle('uil-minus', faq.classList.contains('open'));
+    icon.classList.toggle('uil-plus', !faq.classList.contains('open'));
         }
     });
 });
