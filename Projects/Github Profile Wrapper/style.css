@@ -73,7 +73,8 @@ body {
 }
 
 .search-container:hover > #search-input {
-  width: 400px;
+  /* width: 400px; */
+  width: 100%;
 }
 
 .search-container #search-input {
@@ -93,7 +94,8 @@ body {
 #search-btn {
     font-size: 15px;
   font-family: Arial;
-  width: 140px;
+  /* width: 140px; */
+  width: 100;
   height: 50px;
   border-width: 1px;
   color: #fff;
@@ -171,4 +173,52 @@ body {
   color: aliceblue;
   text-decoration: none;
   font-size: large;
+}
+
+
+
+/* Media Query  */
+
+@media (max-width:1500px) {
+  .main{
+      width: 40%;
+      height: 40%;
+  }
+
+   .srch h1{
+    font-size: 1.5rem;
+    width: 100%;
+   }
+
+}
+
+
+/*  For Tablet or Large phone */
+
+@media (max-width:768px) {
+  .main{
+      width: 60%;
+      height: 60%;
+  }
+
+   .srch h1{
+    font-size: 1.5rem;
+    width: 100%;
+   }
+
+}
+
+
+/* For Mobile Phone */
+
+@media (max-width:426px) {
+  .main{
+      width: 90%;
+      height: 60%;
+  }
+
+   .srch h1{
+    font-size: 1.5rem;
+    width: 100%;
+   }
 }
