@@ -1,7 +1,6 @@
 html {
-      
     background-size: cover;
-    font-family: 'helvetica neue';
+    font-family: 'helvetica neue',sans-serif;
     text-align: center;
     font-size: 10px;
   }
@@ -16,11 +15,12 @@ html {
     flex: 1;
     min-height: 100vh;
     align-items: center;
+    justify-content: center;
   }
 
   .clock {
-    width: 60rem;
-    height: 60rem;
+    width: 45rem;
+    height: 45rem;
     border: 20px solid white;
     border-radius: 50%;
     margin: 50px auto;
@@ -37,20 +37,67 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px); /* account for the height of the clock hands */
+    transform: translateY(-3px); /*account for the height of the clock hands*/
   }
 
-  .hand {
-    width: 50%;
-    height: 6px;
-    background: black;
+  .clock-face::after {
+    content: '';
+    background-color: #000;
+    width: 25px;
+    height: 25px;
     position: absolute;
     top: 50%;
-    transform-origin: 100%;
-    transform: rotate(90deg);
-   
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 11;
   }
-  .second-hand {
+
+  .number {
+    --rotate: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotate));
+    color: #fff;
+  }
+
+  .number1 { --rotate: 30deg; }
+  .number2 { --rotate: 60deg; }
+  .number3 { --rotate: 90deg; }
+  .number4 { --rotate: 120deg; }
+  .number5 { --rotate: 150deg; }
+  .number6 { --rotate: 180deg; }
+  .number7 { --rotate: 210deg; }
+  .number8 { --rotate: 240deg; }
+  .number9 { --rotate: 270deg; }
+  .number10 { --rotate: 300deg; }
+  .number11 { --rotate: 330deg; }
+
+  .hand {
+    --rotation: 0;
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(0,0,0);
+    transform-origin: left;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  .hand.hour-hand {
+    width: 40%;
+    height: 10px;
+  }
+
+  .hand.min-hand {
+    width: 45%;
+    height: 7px;
+  }
+
+  .hand.second-hand {
     background: rgb(179, 16, 94);
-    
   }
+
