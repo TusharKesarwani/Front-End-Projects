@@ -17,16 +17,16 @@ document.getElementById('sub').addEventListener('click', function() {
     let data = '';
   
     // Determine the BMI category and corresponding image
-    if (bmi < 19) {
+    if (bmi < 18.5) {
       data = 'You Are Underweight';
       img = "./assets/underweight.jpg";
-    } else if (bmi >= 19 && bmi <= 25) {
+    } else if (bmi >= 18.5 && bmi < 25) {
       data = 'You Are Healthy';
       img = "./assets/healthy.jpg";
-    } else if (bmi > 25 && bmi <= 30) {
+    } else if (bmi >= 25 && bmi < 30) {
       data = 'You Are Overweight';
       img = "./assets/overweight.jpg";
-    } else if (bmi > 30) {
+    } else if (bmi >= 30) {
       data = 'You Are Obese';
       img = "./assets/obese.jpg";
     } else {
