@@ -9,7 +9,7 @@ This project is built using:-
 - Git/GitHub (Version control) 
 - Netlify (Hosting)
 
-   ## Sample Output 
+## Sample Output 
   
 ![Screenshot (53)](https://github.com/krutika-ladani/Front-End-Projects/assets/119760273/08854606-18c5-4872-9161-9767813c8e28)
 
