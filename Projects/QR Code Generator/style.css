@@ -26,7 +26,7 @@ body {
 }
 
 .generator.active {
-    height: 530px;
+    height: 600px;
 }
 
 header h1 {
@@ -85,6 +85,7 @@ button) {
     pointer-events: none;
     justify-content: center;
     border: 1px solid #ccc;
+    position: relative;
 }
 
 .generator.active .qr-code {
@@ -96,6 +97,43 @@ button) {
 .qr-code img {
     width: 170px;
 }
+.btnshare{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #05ae10;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+}
+
+.qr-code:hover .btnshare {
+    background-color: #04a30f;
+    cursor: pointer;
+}
+.btnpng
+{
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 19px;
+    background: #05ae10;
+    width:100%;
+    height:55px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.1s ease-in;
+    display: none;
+}
+
 
 @media (max-width: 430px) {
     .generator {
@@ -103,7 +141,7 @@ button) {
         padding: 16px 20px;
     }
     .generator.active {
-        height: 510px;
+        height: 600px;
     }
     header p {
         color: #696969;
@@ -114,5 +152,9 @@ button) {
     }
     .qr-code img {
         width: 160px;
+    }
+    .btnpng
+    {
+    height: 52px;
     }
 }
