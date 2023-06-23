@@ -119,7 +119,7 @@ a:hover i{
   border-radius: 50%;
 }
 .users .card h4{
-  text-transform: uppercase;
+  font-size: 10vm;
 }
 .users .card p{
   font-size: 12px;
