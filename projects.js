@@ -640,6 +640,14 @@ const projects = [
         "project-link":"Projects/Save Text as File/index.html"
     },
     {
+        "title":"Scientific Calculator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Scientific-calculator.png",
+        "description":"Scientific calculator is able to perform all the operations like sin, cos, tan, square root,log and other functions as well.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Scientific-calcuator",
+        "project-link":"Projects/Scientific-calcuator/index.html"
+    },
+    {
         "title":"Screen Recorder",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Screen_recorder.png",
