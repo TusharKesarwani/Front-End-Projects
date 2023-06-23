@@ -974,6 +974,14 @@ const projects = [
         "description":"This website can convert the morse code into the text and text into the morse code. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Morse%20Code%20Convertor",
         "project-link":"Projects/Morse%20Code%20Convertor/index.html"
+    },
+    {
+        "title":"Guess The Gender By Name",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Guess_The_Gender.png",
+        "description":"This website can guess the gender just by entering the name of the person. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Guess%20The%20Gender%20By%20Name",
+        "project-link":"Projects/Guess%20The%20Gender%20By%20Name/index.html"
     }
     
 ]
