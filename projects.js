@@ -952,12 +952,28 @@ const projects = [
         "project-link":"Projects/World Info Website/index.html"
     },
     {
+        "title":"Huffman Compressor",
+        "tags":["HTML","CSS","JavaScript","C++"],
+        "img":"img/projects/huffman.png",
+        "description":"Implemented the Huffman coding algorithm achieving efficient data compression without loss of information.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/HuffmanCompression",
+        "project-link":"Projects/HuffmanCompressor/index.html"
+    },
+    {
         "title":"Zomato Landing Page",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Zomato_Clone.png",
         "description":"Zomato Landing Page is a clone of the zomato website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Zomato-Landing-Page",
         "project-link":"Projects/Zomato-Landing-Page/index.html"
+    },
+    {
+        "title":"Morse Code Convertor",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Morse_Code_Convertor.png",
+        "description":"This website can convert the morse code into the text and text into the morse code. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Morse%20Code%20Convertor",
+        "project-link":"Projects/Morse%20Code%20Convertor/index.html"
     }
     
 ]
