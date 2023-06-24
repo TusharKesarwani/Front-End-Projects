@@ -240,6 +240,10 @@
   </div>
   </div>
 
+  <div class="scroll-top">
+    <a href="#" class="link-top"><i class="fa-solid fa-chevron-up"></i></a>
+  </div>
+
   <footer>
     <div class="foo row">
       <div class="col col-lg-2 col-md-4 col-sm-4">
@@ -294,7 +298,18 @@
       AOS.init({
         duration: 1000,
       });
+
       document.getElementById('date').innerHTML = new Date().getFullYear();
+
+      let btn = document.getElementsByClassName("scroll-top")[0];
+
+      window.onscroll = function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      }
     </script>
 </body>
 
