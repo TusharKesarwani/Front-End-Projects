@@ -7,15 +7,25 @@ body{
     background: #ccc;
 }
 
-#emoji{
+.emoji{
     font-size:10rem;
     filter: grayscale(1);
     transition-property: transfrom,filter;
     transition-duration: 200ms;
-    cursor: pointer;
 }
-
-#emoji:hover{
+.button{
+    font-size: 25px;
+    color:white;
+    display: inline-block;
+    background-color: #7b38d8;
+    cursor:pointer;
+}
+.button:active{
+    background-color:#002ead;
+    transition: 0.7s;
+}
+.new-style{
     transform: scale(1.3);
     filter: grayscale(0);
 }
+
