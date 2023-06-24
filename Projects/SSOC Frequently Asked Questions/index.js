@@ -1,5 +1,3 @@
-let question1 = document.getElementById("question1")
-
 let answer1 = document.getElementById("answer1")
 let answer2 = document.getElementById("answer2")
 let answer3 = document.getElementById("answer3")
