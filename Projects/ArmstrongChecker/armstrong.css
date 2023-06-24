@@ -5,7 +5,7 @@
 
 body {
     text-align: center;
-    background: #1B1A58;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ h1 {
     margin-top: 100px;
     font-size: 350%;
     font-family: Open-Sans;
-    color: #fff;
+    color: #0d0c0c;
     text-transform: uppercase;
 }
 
