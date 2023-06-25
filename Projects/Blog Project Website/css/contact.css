@@ -4,6 +4,9 @@
     padding: 9px;
     position: relative; 
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .contact-content::after {
