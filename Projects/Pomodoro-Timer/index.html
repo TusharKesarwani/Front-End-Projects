@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+  </head>
+
+<body>
+<div class="pomodoro-container">
+
+    
+    <div class="pomodoro-item">
+        <div id="labelSessionBreak" class="label">Session</div>
+        <div class="row-pomodoro">
+            <div id="timeLeft">25:00</div>
+        </div>
+    </div>
+
+    
+    <div class="pomodoro-item">
+        <div class="label">Duration</div>
+        <div class="row-pomodoro">
+            <button id="sessionDecrement" class="btn-updown">-</button>
+            <div id="sessionLength" class="row-pomodoro lengthTime">25</div>
+            <button id="sessionIncrement" class="btn-updown">+</button>
+        </div>
+    </div>
+
+ 
+    <div class="pomodoro-item">
+        <div class="label">Break Length</div>
+        <div class="row-pomodoro">
+            <button id="breakDecrement" class="btn-updown">-</button>
+            <div id="breakLength" class="row-pomodoro lengthTime">5</div>
+            <button id="breakIncrement" class="btn-updown">+</button>
+        </div>
+    </div>
+    
+   
+    <div class="pomodoro-item playerButton">
+        <div class="row-pomodoro buttonRow">
+            <button id="buttonPlay" class="btn-controller">
+                <i id="playIcon" class="fas fa-play" aria-hidden="true"></i>
+            </button>
+            <button id="buttonReset" class="btn-controller"> 
+                <i class="fas fa-sync" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+  
+</div>
+
+<!-- Sound -->
+<audio id="beep" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+<script src="scripts.js"></script>
+</body>
+</html>

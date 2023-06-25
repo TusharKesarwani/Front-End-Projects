@@ -112,4 +112,24 @@ body{
     color: white;
     cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    transition: 0.3s;
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .card .btns button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.23);
+  }
+  
+  .card .btns button:last-child {
+    background: transparent;
+    color: blue;
+    border: 2px solid blue;
+  }
+  
+  .card .btns button:last-child:hover {
+    background: blue;
+    color: white;
+  }
+  
