@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --twitter-colour:#50b7f5;
+    --twitter-background:#e6ecf0;
+    display: flex;
+    height:100vh;
+    max-width: 1300px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:0 10px;
+}
+#imgg{
+    width: 20px;
+    margin-left:0;
+}
+ .sidebaroption,.sidebaroption-active{
+    
+    display:flex;
+    align-items:center;
+    cursor: pointer;
+}
+.sidebaroption-active .material-icons,.sidebaroption .material-icons, .fa-twitter{
+    padding: 20px;
+    margin-right: 10px;
+}
+.sidebaroption h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.sidebaroption:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color: var(--twitter-colour);
+    transition: color 100ms ease-in;
+   
+}
+.sidebaroption-active{
+    color: var(--twitter-colour);
+    
+}
+.sidebar_tweet{
+    width: 100%;
+    background-color: var(--twitter-colour);
+    border:none;
+    color: #e6ecf0;
+    font-weight: 1000;
+    border-radius: 40px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.sidebar{
+    border-right: 1px var(--twitter-background) solid;
+    flex:0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-left:-50px;
+    padding-left: 0px;
+    padding-right: 20px;
+    
+}
+.feed{
+    flex:0.5;
+    border-right: 1px var(--twitter-background) solid;
+    overflow-y: scroll;
+
+
+}
+#tid{
+    border-radius: 50%;
+    height: 110px;
+    width:110px;
+    padding:20px;
+    margin-left: 0px;
+    
+}
+.tweetbox_button{
+    color:#e6ecf0;
+    background-color: #50b7f5;
+    border: none;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 30px;
+    width:10%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    
+}
+.feed_header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    border:1px solid var(--twitter-background);
+    padding: 15px 20px;
+    
+}
+.feed_header h2{
+    font-weight: 800;
+    font-size: 20px;
+}
+.feed::-webkit-scrollbar{
+    display: none;
+}
+.feed{
+   -ms-overflow-style:none;
+   
+    scrollbar-width:none;
+}
+.tweetbox form{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid var(--twitter-background);
+}
+.tweetbox_input{
+    display: flex;
+   padding:10px;
+   
+}
+.tweetbox_input input{
+    flex: 1;
+    margin-left: 0px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.tweetbox_button{
+    width:70px;
+    margin-bottom: 20px;
+}
+.post{
+    /* border-top: 1px solid #e6ecf0; */
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+
+}
+
+.post_body img{
+    width: 500px;
+    object-fit:contain;
+    border-radius: 30px;
+
+}
+.post_img img{
+    border-radius: 50%;
+    height: 40px;
+   
+}
+   
+.post_headerText{
+    text-align: left;
+}
+
+.post_footer{
+    display: flex;
+    justify-content:space-between ;
+    margin-top: 10px;
+
+}
+.post_badge{
+    font-size: 14px !important;
+    color: var(--twitter-colour);
+    margin-right: 5px;
+}
+.post_headerSpecial{
+    color: grey;
+    font-weight: 600;
+    font-size: 11px;
+}
+.post_headerText h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.post_headerDescription{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.post_body{
+    flex:1;
+    padding:10px;
+   
+}
+.widget{
+    flex:0.3;
+}
+
+.widget_input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    border-radius: 10px;
+           
+}
+.widget_input input{
+    border: none;
+    font-size: 12px;
+    background-color: #e6ecf0;
+    outline-style: none;
+}
+.widget_searchicon{
+    color: grey;
+}
+.widget_container{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+.widget_container h2{
+    font-size: 18px;
+    font-weight: 800;
+}
