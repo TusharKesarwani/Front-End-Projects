@@ -10,3 +10,5 @@ This project is built using:-
  - Git/GitHub (Version control)  
  - Netlify (Hosting)
 
+## Sample Output
+![Screenshot (63)](https://github.com/krutika-ladani/Front-End-Projects/assets/119760273/d17e0373-7e0b-4aa4-9c55-71de5c2ef478)
