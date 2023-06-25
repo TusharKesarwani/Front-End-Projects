@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Champagne';
+}
+
+.pink{
+    background-color: #FFA6C9 !important;
+}
+.red{
+    color: #e51065 !important;
+}
+.formred{
+    background-color: #e51065 !important;
+}
+.name{
+    color: #e51065 !important;
+    font-weight: bold
+}
+.bold{
+    font-weight: bold;
+    font-size:1.3rem ;
+}
+.heading{
+    font-weight: bold;
+    font-size:2rem;
+}
+.btn{
+    padding: 7px 16px;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #e51065;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    color: #FFA6C9;
+    background-color: #e51065 ;
+    font-style: italic;
+}
+.formbtn{
+    padding: 7px 16px;
+    border: 1px dotted #e51065 ;
+    border-radius: 50px;
+    color: #e51065;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #FFA6C9 ;
+    
+}
+.formbtn:hover{
+    font-style: italic;
+}
+.font{
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    font-size:50px;
+}
+.sale{
+    font-weight: lighter;
+    font-weight: italic;
+}
