@@ -80,6 +80,14 @@ const projects = [
         "project-link":"Projects/bill tip calculator/index.html"
     },
     {
+        "title":"Binary-Decimal Converter",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/converter.png",
+        "description":"Binary-Decimal converter is use to convert binary number to decimal number and decimal number to binary number, this is built using html, css and javascript .",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Binary-Decimal_Convertor",
+        "project-link":"Projects/Binary-Decimal_Convertor/index.html"
+    },
+    {
         "title":"Blog Project Website",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Blog_Website.png",
