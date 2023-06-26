@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 * {
     padding: 0;
@@ -12,54 +11,59 @@ html {
 }
 
 body {
-    background: url("bg.png");
-  background-position: center;
-  background-size: cover;
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
 }
 
 .container {
-    box-shadow: 0 8px 32px 0 rgba(147, 49, 169, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(208, 208, 208, 0.259);
     border: 1px solid rgba(17, 198, 195, 0.3);
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #dcc6ff;
     backdrop-filter: blur(10px);
 
     border-radius: 10%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     height: 650px;
     width: 600px;
 }
 
 .heading {
-    margin: 10px;
     text-align: center;
 }
 
 .heading2 {
-    margin: 10px;
+    margin: 15px 0px;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.nfonts {
-    margin-left: 20px;
-    margin-top: 20px;
+.task-title {
+    margin:15px 0px;
     color: rgb(0, 0, 0);
-    letter-spacing: 2px;
-    font-family: "Crimson Pro&family", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
 .input {
  
     padding: 5px;
     background-color: transparent;
-    color: rgb(255, 255, 255);
+    color: black(255, 255, 255);
     text-overflow: ellipsis;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-left: 30px;
+    margin-right:20px;
     width: 400px;
-    font-family: "Crimson Pro&family", sans-serif;
-    text-decoration-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    height: 25px;
 }
+
 
 .alltasks {
     margin-top: 10px;
@@ -97,10 +101,9 @@ body {
 }
 
 .add:hover {
-    margin-left: 5px;
-    transform: scale(1.1);
     color: white;
-    background-color: #4B56D2;
+    background-color: #472183;
+    border: none;
 }
 
 .addv {
@@ -120,17 +123,19 @@ body {
     margin-top: 10px;
     padding: 5px;
     width: 100px;
-    height: 32px;
+    height: 40px;
     transition: all 0.5s;
+    font-size: 15px;
     color: black;
-    border-radius: 40px;
+    border-radius: 30px;
 
 }
 
 .add-clear:hover{
-    transform: scale(1.1);
     color: white;
-    background-color: #4B56D2;
+    background-color: red;
+    cursor: pointer;
+    border: none;
 }
 
 .close-btn {
@@ -142,8 +147,12 @@ body {
     background-image: url("close1.png");
 }
 
+.pointer {
+    cursor: pointer;
+  }
+
 .iop {
-    font-family: "Crimson Pro&family", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     white-space: nowrap;
     width: 50%;
@@ -156,22 +165,27 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #472183;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #472183;
 }
 
-.search-bar {
+.search-img{
+    height: 15px;
+    width: 15px;
     margin-left: 30px;
-    padding: 3px;
+}
+
+.search-bar {
+    padding-left: 10px;
     border: none;
-    width: 493px;
-    border-bottom: 1px solid white;
+    width: 50%;
     outline: none;
-    color: white;
+    color: black;
     background-color: transparent;
+    font-size: 15px;
 }
 
 .searchsec {
@@ -179,6 +193,45 @@ body {
     flex-direction: row;
 }
 
+.n-fonts{
+    font-size: 55px;
+}
+
 ::-webkit-input-placeholder { 
-    color:    black;
+    color: black;
+}
+
+@media screen and (max-width:780px) {    
+    .container{
+        position: center;
+        width: 330px;
+        border-radius: 15px;
+        border: none;
+        box-shadow: none;
+        height: 690px;
+        margin-left: 30px;
+    }
+
+    .input{
+        width: 260px;
+        margin: 20px 30px;
+    }
+
+    .alltasks{
+        width: 280px;
+        height: 330px;
+    }
+
+    .add-clear{
+        margin-left: 115px;
+        margin-top: 50px;
+    }
+
+    .add{
+        margin-left: 115px;
+    }
+
+    .search-bar{
+        width: 70%;
+    }
 }
