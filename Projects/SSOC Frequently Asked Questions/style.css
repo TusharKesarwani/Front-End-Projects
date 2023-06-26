@@ -1,47 +1,87 @@
 body {
-    font-family: Inter;
+  font-family: Inter;
+  margin: 0;
 }
 
 .title {
-    text-align: left;
-    margin-top: 125px;
-    margin-left: 165px;
-    margin-bottom: 45px;
+  padding: 25px;
+  background: #ffab01;
+  color: white;
+  text-align: center;
+  font-size: 28px;
 }
 
 .container {
-    width: 85%;
-    margin: 25px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+  width: 75%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .card {
-    width: 45%;
+  width: 45%;
 }
 
 .question-title {
-    border: 1px solid;
-    padding: 25px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border: 1px solid lightgrey;
-    border-left: 3px solid #ffab01;
-    font-weight: 500;
+  padding: 25px;
+  height: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  border-left: 3px solid #ffab01;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .question-title:hover {
-    color: #ffab01;
+  color: #ffab01;
 }
 
 .answer {
-    color: #5d5d5d;
-    border: 1px solid lightgray;
-    border-top: none;
-    border-left: 3px solid lightgrey;
+  color: #5d5d5d;
+  border: 1px solid lightgray;
+  border-top: none;
+  border-left: 3px solid lightgrey;
+  padding: 25px;
+  display: none;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 22px;
+    background: #ffab01;
+    color: white;
     padding: 25px;
-    display: none;
+    margin: auto;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+  }
+
+  .card {
+    width: 300px;
+    margin: -3px;
+  }
+
+  .question-title {
+    padding: 10px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 22px;
+  }
+
+  .answer {
+    margin-bottom: 5px;
+  }
 }
