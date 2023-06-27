@@ -5,10 +5,10 @@ body {
 
 .title {
   padding: 25px;
-  background: #ffab01;
+  background: #ab40f7;
   color: white;
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
   border: 1px solid lightgrey;
-  border-left: 3px solid #ffab01;
+  border-left: 3px solid #ab40f7;
   font-weight: 500;
   font-size: 16px;
   display: flex;
@@ -38,7 +38,7 @@ body {
 }
 
 .question-title:hover {
-  color: #ffab01;
+  color: #ab40f7;
 }
 
 .answer {
@@ -54,7 +54,7 @@ body {
 @media screen and (max-width: 576px) {
   .title {
     font-size: 22px;
-    background: #ffab01;
+    background: #ab40f7;
     color: white;
     padding: 25px;
     margin: auto;
