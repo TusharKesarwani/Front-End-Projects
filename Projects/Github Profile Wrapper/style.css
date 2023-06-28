@@ -30,6 +30,11 @@ body {
 h2{
   font-family: 'Kalam', cursive;
 }
+@media (min-width: 470px) {
+  #search-btn {
+     width:50px;
+  }
+}
 .container {
   width: 100%;
   height: 100%;
@@ -113,6 +118,35 @@ h2{
   background-color: bisque;
   color: #000000;
   box-shadow: 2px 3px grey;
+}
+@media (max-width: 470px) {
+  #search-btn {
+     width:70px;
+     height:25px;
+     font-size: small;
+  }
+}
+@media (max-width: 299px) {
+  h2{
+    font-size:small ;
+  }
+  #search-btn {
+    width:50px;
+    height:25px;
+    font-size: small;
+ }
+}
+ @media (max-width: 182px) {
+  h2{
+    font-size:x-small ;
+  }
+  #search-btn {
+    width:25px;
+    height:20px;
+    font-size:x-small;
+    letter-spacing: 0;
+ }
+
 }
 .card{
   
