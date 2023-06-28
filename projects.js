@@ -990,6 +990,14 @@ const projects = [
         "description":"This website can guess the gender just by entering the name of the person. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Guess%20The%20Gender%20By%20Name",
         "project-link":"Projects/Guess%20The%20Gender%20By%20Name/index.html"
+    },
+    {
+        "title":"Playable Piano",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Playable_Piano.png",
+        "description":"This project is a beginner friendly and helpful who are new to frontend technology. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
+        "project-link":"Projects/Playable_Piano/index.html"
     }
     
 ]
