@@ -5,16 +5,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Atmospheric Air Quality Checker</title>
 	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="/nav.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 <body>
+	<header>
+		<header class="header">
+			<nav class="nav">
+				<a href="#" class="nav_logo">AirQuality</a>
+				<ul class="nav_items">
+					<li class="nav_item">
+						<a href="#" class="nav_link">Ranking</a>
+						<a href="#" class="nav_link">Location</a>
+						<a href="#" class="nav_link">Resources</a>
+					</li>
+				</ul>
+				<button class="button">Sign In</button>
+			</nav> 
+		</header>
+	</header>
 	<div class="root">
-		<h1 class="heading">Atmospheric Air Quality Checker</h1>
 		<div class="location-container">
-			<h3 class="sub-heading">Please Enter Your Location:</h3>
-			<h4 class="">(For autometic location, kindly permit the system to access the location)</h4>
-			<label for="error-msg" style="color: red;"></label><br />
+			<h3 class="sub-heading">Enter Your Location:</h3>
+			<h4>(For automatic location, kindly permit the system to access the location)</h4>
+			<label for="error-msg" style="color: rgb(255, 0, 0);"></label><br />
 			<input
 				type="number"
 				name="lat"
@@ -79,7 +95,7 @@
 			</div>
 		</div>
 		<hr>
-		<h2 class="sub-heading">Self Analyze here and follow the Prevantion Measures:</h2>
+		<h2 class="sub-heading">Self Analyze here and follow the Prevention Measures:</h2>
 		<br>
 		<h3>Know more about Air Quality Index (AQI) <b><a href="https://en.wikipedia.org/wiki/Air_quality_index">Here!</a></b></h3><br>
 		<h3>For people with "GOOD" Air Quality Index (AQI) <b><a href="https://www3.epa.gov/region1/airquality/reducepollution.html">Here!</a></b></h3><br>
