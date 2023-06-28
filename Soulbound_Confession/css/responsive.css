@@ -1,0 +1,198 @@
+/* only small desktops */
+/* tablets */
+@media (min-width: 992px) and (max-width: 1190px) {
+	.countdown{
+		height: 285px;
+	}
+	.top-header .navbar .navbar-collapse ul li a{
+		font-size: 14px;
+	}
+	.lbox-details h2{
+		font-size: 26px;
+	}
+	.right-top ul li a{
+		padding: 0px 15px;
+	}
+}
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+	.top-header .navbar .navbar-collapse ul li a{
+		padding: 5px 15px;
+	}
+	.about-img{
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.gallery-box ul li{
+		width: 33.33%;
+	}
+	.top-header{
+		position: relative;
+	}
+	.lbox-details{
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+	.countdown #timer div#days, .countdown #timer div#hours, .countdown #timer div#minutes, .countdown #timer div#seconds{
+		position: inherit;
+		margin: 12px 0px;
+	}
+	.lbox-details::before{
+		background: rgba(0,0,0,0.9);
+	}
+	.countdown{
+		height: 188px;
+		border-radius: 0px;
+	}
+	.countdown #timer div{
+		width: 23%;
+		font-size: 24px;
+	}
+	figure.effect-service h2{
+		font-size: 12px;
+	}
+	.left-top{
+		display: inline-block;
+		width: 100%;
+	}
+	.mail-b{
+		float: right;
+	}
+	.right-top{
+		float: left;
+	}
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+	.navbar-brand{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.top-header .navbar .navbar-collapse ul li a{
+		padding: 5px 15px;
+	}
+	.right-top{
+		float: none;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+	}
+	.left-top{
+		text-align: center;
+	}
+	.left-top a{
+		float: none;
+		padding: 5px 20px;
+	}
+	.wel-nots{
+		float: none;
+		margin: 0;
+		text-align: center;
+	}
+	.right-top ul li{
+		float: none;
+		display: inline-block;
+	}
+	.mail-b{
+		float: none;
+	}
+	.mail-b a{
+		padding: 5px 20px;
+	}
+	.lbox-details h1{
+		font-size: 24px;
+	}
+	.lbox-details h2{
+		font-size: 18px;
+	}
+	.lbox-details p strong{
+		font-size: 20px;
+	}
+	.lbox-details a.btn{
+		display: none;
+	}
+	.title-box h2{
+		font-size: 38px;
+	}
+	.about-main-info h2{
+		font-size: 24px;
+	}
+	.about-img{
+		margin-bottom: 30px;
+	}
+	.main-timeline-box .separline::before{
+		left: 15px !important;
+	}
+	.main-timeline-box .iconBackground{
+		left: 15px !important;
+	}
+	.main-timeline-box .timeline-text-content{
+		margin-left: 0px;
+	}
+	.main-timeline-box .reverse .timeline-text-content{
+		margin-right: 0px;
+	}
+	.main-timeline-box .time-line-date-content{
+		margin-right: 0px;
+	}
+	.main-timeline-box .time-line-date-content p{
+		float: left;
+	}
+	.main-timeline-box .timeline-element{
+		padding: 0px 15px;
+	}
+
+	.top-header{
+		position: relative;
+	}
+	.lbox-details{
+		position: relative;
+		width: 100%;
+		padding: 5% 0%;
+	}
+	.about-m{
+		margin-top: 30px;
+	}
+	.countdown #timer div#days, .countdown #timer div#hours, .countdown #timer div#minutes, .countdown #timer div#seconds{
+		position: inherit;
+		margin: 12px 0px;
+	}
+	.lbox-details::before{
+		background: rgba(0,0,0,0.9);
+	}
+	.countdown{
+		height: 188px;
+		border-radius: 0px;
+	}
+	.countdown #timer div{
+		width: 23%;
+		font-size: 24px;
+	}
+	.about-m{
+		margin-bottom: 30px;
+	}
+	.timeLine .row .item{
+		margin-bottom: 30px;
+	}
+	figure.effect-service h2{
+		font-size: 14px;
+	}
+	.filter-button-group button{
+		margin-bottom: 5px;
+	}
+	.well-block{
+		margin-bottom: 30px;
+	}
+	.well-block .well-title h2{
+		font-size: 24px;
+	}
+	.blog-inner a{
+		padding: 10px 6px;
+	}
+	.cont-line{
+		
+	}
+	
+}
