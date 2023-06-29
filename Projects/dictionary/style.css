@@ -28,7 +28,7 @@ body {
 }
 
 .navbar {
-  background-color: rgb(174, 156, 255, 0.3);
+  background-color: rgb(174, 156, 255, 0.7);
   box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
 }
 
@@ -44,6 +44,9 @@ ul {
   font-size: large;
   font-weight: 800;
   font-family: "Times New Roman", Times, serif;
+}
+li:hover{
+    color: black;
 }
 h1 {
   text-align: center;
@@ -61,6 +64,12 @@ a {
   height: 3rem;
   display: flex;
   justify-content: space-between;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
 }
 .search-box input {
   padding: 5px;
