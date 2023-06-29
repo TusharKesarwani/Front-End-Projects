@@ -141,6 +141,7 @@
 
     </section>
 
+
     <section class="container get-the-app">
       <div class="semiContainer">
         <div class="left">
@@ -162,8 +163,57 @@
             </div>
           </div>
           <div class="input-container">
-            <input type="text" placeholder="Email">
-            <button>Share App Link</button>
+          
+              <style>
+                .error {
+                  color: red;
+                }
+                .error-input {
+                  border: 1px solid red;
+                }
+              </style>
+              <form>
+                <input type="text" id="phoneEmail" name="phoneEmail" placeholder="Enter phone number or email address">
+                <span class="error" id="phoneEmailError"></span>
+                
+                <button>Share App Link</button>
+              </form>
+            
+              <script>
+                const form = document.querySelector('form');
+                const phoneEmailInput = document.getElementById('phoneEmail');
+                const phoneEmailError = document.getElementById('phoneEmailError');
+            
+                form.addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  if (validatePhoneEmail()) {
+                    // Perform form submission
+                    form.submit();
+                  }
+                });
+            
+                phoneEmailInput.addEventListener('input', function() {
+                  validatePhoneEmail();
+                });
+            
+                function validatePhoneEmail() {
+                  const phoneEmail = phoneEmailInput.value.trim();
+                  const phoneRegex = /^\d{10}$/;
+                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+                  if (!phoneRegex.test(phoneEmail) && !emailRegex.test(phoneEmail)) {
+                    phoneEmailInput.classList.add('error-input');
+                    phoneEmailError.textContent = 'Please enter a valid phone number or email address.';
+                    return false;
+                  } else {
+                    phoneEmailInput.classList.remove('error-input');
+                    phoneEmailError.textContent = '';
+                    return true;
+                  }
+                }
+              </script>
+           
+          
           </div>
           <div class="download-app-container">
             <h5>Download App From</h5>
@@ -174,6 +224,7 @@
           </div>
         </div>
       </div>
+      
     </section>
 
     <footer class="container footer">

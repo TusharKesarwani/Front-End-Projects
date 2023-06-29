@@ -309,9 +309,18 @@
     border: none;
     background-color: rgb(239,79,95);
     color: white;
-    border-radius: 5px;
+    border-radius: 0.6rem;
     cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+    padding: 1.25rem 2.15rem;
+    height: 2.8rem;
+    font-family: Okra, Helvetica, sans-serif;
+    white-space: nowrap;
 }
+.input-container button:hover {
+    background-color: rgb(230,60,80); 
+  }
 
 .right .download-app-container{
     display: flex;
