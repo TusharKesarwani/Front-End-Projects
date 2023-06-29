@@ -4,8 +4,9 @@ The user has to enter the word in the text field and click on the search button.
 with pronunciation audio clip. It also displays word usage for appropriate words. For words where example cannot be provided, the word usage space is hidden.
 
 # Techstack
-Purely based on html, css and javascript
+Purely based on Html, CSS and Javascript
 
 # Screenshot
 
-![dic](https://user-images.githubusercontent.com/71088263/211833482-324c2306-2560-48fb-ab61-9dfe0a9b7659.png)
+![Alt text](image.png)
+![Alt text](image-1.png)
