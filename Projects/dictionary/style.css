@@ -1,24 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 *:not(i) {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 body {
-  background-color: #f6f5f9;
+  background-color: rgb(204, 199, 220, 0.8);
 }
 .container {
   background-color: #fefafa;
   width: 90vmin;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 60%;
   left: 50%;
   padding: 80px 50px;
   border-radius: 10px;
-  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.3);
   background-image: linear-gradient(
     to bottom,
     rgba(255, 0, 0, 0),
@@ -26,8 +27,38 @@ body {
   );
 }
 
+.navbar {
+  background-color: rgb(174, 156, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+ul {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 6rem;
+  margin: 10px;
+  padding: 10px;
+  font-size: large;
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  text-align: center;
+  margin: 80px auto;
+  color: #4e4f52;
+  font-weight: bolder;
+  font-size: xx-large;
+  letter-spacing: 3px;
+}
+a {
+  text-decoration: none;
+}
 .search-box {
   width: 100%;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -47,6 +78,10 @@ body {
   outline: none;
   color: #ffffff;
   border-radius: 5px;
+}
+.search-box button:hover {
+  background-color: rgb(174, 156, 255, 0.9);
+  scale: 1.05;
 }
 .result {
   position: relative;
@@ -87,9 +122,4 @@ body {
 .error {
   margin-top: 80px;
   text-align: center;
-}
-h1 {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
 }

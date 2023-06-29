@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        />
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Stylesheet -->
-        <link rel="stylesheet" href="style.css" />
-        <title>Dictionary</title>
-    </head>
-    <body>
-   <div class="main">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-        <audio id="sound"></audio>
-        <div class="container">
-            <div class="search-box">
-                <input
-                    type="text"
-                    placeholder="Type the word here.."
-                    id="inp-word"
-                />
-                <button id="search-btn">Search</button>
-            </div>
-            <div class="result" id="result"></div>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <ul>
+          <a href="#"> <li>Home</li></a>
+          <a
+            href="https://github.com/TusharKesarwani/Front-End-Projects/tree/37aad054d9dba6094844c96a08d72852b1c3368f/Projects/dictionary"
+            target="_blank"
+          >
+            <li>Github</li></a
+          >
+        </ul>
+      </div>
+      <div class="heading"><h1>word dictionary</h1></div>
+      <audio id="sound"></audio>
+      <div class="container">
+        <div class="search-box">
+          <input type="text" placeholder="Type the word here.." id="inp-word" />
+          <button id="search-btn">Search</button>
         </div>
+        <div class="result" id="result"></div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
