@@ -209,19 +209,22 @@ main .left p {
   background-color: #0d4360;
   border-radius: 0.2rem;
   transition: all 0.5s ease;
+  border-radius: 50px;
 }
 
 .project:hover {
   scale: 1.01;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .project img {
   width: 100%;
+  padding-bottom: 20px;
   height: auto;
   transition: all ease-in-out 0.2s;
-  border-top-left-radius: 0.2rem;
-  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .project-info {
@@ -268,8 +271,14 @@ main .left p {
   border-radius: 0.2rem;
   font-size: 0.8rem;
   margin-right: 0.2rem;
+  font-weight: bold;
 }
-
+.tech span:hover{
+  background-color: #05f2c7;
+  color:black;
+  transform: scale(1.01);
+  cursor:pointer;
+}
 .links {
   display: flex;
   gap: 0.5rem;
