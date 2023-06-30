@@ -991,7 +991,7 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Guess%20The%20Gender%20By%20Name",
         "project-link":"Projects/Guess%20The%20Gender%20By%20Name/index.html"
     },
-      {
+    {
         "title":"Text-Utilities",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Text_Utils.png",
