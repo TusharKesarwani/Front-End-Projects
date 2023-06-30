@@ -1,4 +1,5 @@
 # Front-End-Projects
+<div id="top">
 
 ![Front-End-Projects](https://socialify.git.ci/TusharKesarwani/Front-End-Projects/image?description=1&descriptionEditable=A%20place%20for%20Developers&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
@@ -138,3 +139,7 @@ You can refer to the following articles on **_basics of Git and Github and also 
 <h1 align=center>Happy Coding 👨‍💻</h1>
 
 Show some ❤️&nbsp; by giving the star to this repo
+
+<p align="right">
+  <a href="#top">Back to Top</a>
+</p>
