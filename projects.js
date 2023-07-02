@@ -998,6 +998,14 @@ const projects = [
         "description":"This website can be used to manipulate text in several ways such as change to uppercase or lowercase , and remove extra spaces etc.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Text-Utilities",
         "project-link":"Projects/Text-Utilities/index.html"
+    },
+    {
+        "title":"Video Player",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Video_Player.png",
+        "description":"This website can be used to play videos. This application give the feeling of video gallery as of our mobile phone.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Video-Player",
+        "project-link":"Projects/Video-Player/index.html"
     }
     
 ]
