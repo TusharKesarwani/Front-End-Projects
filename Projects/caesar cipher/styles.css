@@ -5,10 +5,10 @@ body{
 
 #message{
 
-    margin-left: 28%;
+    margin-left: 20%;
     height: 200px;
     width: 750px;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: #dacce6;
     border: 3px solid white;
 }
@@ -35,13 +35,14 @@ button{
 }
 
 #btn1{
-    margin-left: 45%;
+    margin-left: 48%;
 }
 
 #para{
-    margin-left: 28%;
+    margin-left: 20%;
     background-color: #dacce6;
     border: 3px solid white;
+    border-radius: 10px;
     height: 100px;
     width: 750px;
     margin-right: 15%;
@@ -50,7 +51,7 @@ button{
 
 u{
 
-    margin-left: 28%;
+    margin-left: 22%;
 
 }
 
@@ -58,20 +59,20 @@ u{
     
     #message{
 
-        margin-left: 14%;
+        margin-left: 28%;
         height: 200px;
         width: 350px;
-        border-radius: 4px;
+        border-radius: 10px;
         background-color: #dacce6;
         border: 3px solid white;
     }
     
     #key{
     
-        margin-left: 20%;
+        margin-left: 30%;
     }
     #para{
-        margin-left: 15%;
+        margin-left: 28%;
         background-color: #dacce6;
         border: 3px solid white;
         height: 150px;
@@ -85,24 +86,27 @@ u{
 @media screen and (max-width: 479px) {
     #message{
 
-        margin-left: 4%;
+        margin-left: 12%;
         height: 200px;
         width: 350px;
-        border-radius: 4px;
+        border-radius: 10px;
         background-color: #dacce6;
         border: 3px solid white;
+    }
+    u{
+        margin-left: 15%;
     }
     
     #key{
     
-        margin-left: 10%;
+        margin-left: 17%;
     }
     #btn1{
-        margin-left: 28%;
+        margin-left: 40%;
     }
     
     #para{
-        margin-left: 4%;
+        margin-left: 12%;
         background-color: #dacce6;
         border: 3px solid white;
         height: 150px;
