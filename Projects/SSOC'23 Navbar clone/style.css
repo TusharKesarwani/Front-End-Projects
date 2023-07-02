@@ -1,16 +1,17 @@
+
 body {
+  min-height: 40vh;
+  min-width: 40vh;
   font-family: Inter;
   margin: 0;
 }
-
 #navbar {
+  white-space: nowrap;
   box-shadow: 5px 5px 10px lightgray;
   color: white;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 12px;
+  overflow-x:auto;
 }
 
 a {
@@ -19,11 +20,12 @@ a {
 }
 
 .item {
+  display: inline-block;
   letter-spacing: 1px;
   font-size: 12.5px;
   font-weight: 700;
   cursor: pointer;
-  margin: 5px;
+  margin-left: 3%;
   padding: 10px;
 }
 
