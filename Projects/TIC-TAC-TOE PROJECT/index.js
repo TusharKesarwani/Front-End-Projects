@@ -51,25 +51,30 @@ function checkText(e)
 //Adding event listener on every cell
      Array.from(boxes).forEach(element=>{
      element.addEventListener('click',()=>{
-       if(element.innerText==="")
+        if (element.innerText !== "") 
+        {
+            return;
+        }
+        
+       else if(element.innerText==="")
        element.innerText=turn
-       fill++
+       fill++;
        check_for_win()
        if(k==1)
        {
-              Array.from(boxes).forEach(e=>{
-              e.disabled=true
-          })
-          document.getElementById("player-turn").innerText=`Player ${turn} won`;
+            Array.from(boxes).forEach(e=>{
+            e.disabled=true
+            })
+          document.getElementById("player-turn").innerText=`Player ${turn} won`
        }
        else if(fill===9)
        {
         document.getElementById("player-turn").innerText=`Game Over`
         Array.from(boxes).forEach(e=>{
         e.disabled=true
-       })
+       });
        }
-       else
+       else 
        {
            turn=changeturn()
            document.getElementById("player-turn").innerText=`Player ${turn} turn`
@@ -85,7 +90,7 @@ function checkText(e)
         e.innerText=""
         e.backgroundcolor="white"
  })
- turn="X"
+ turn="X" 
  k=0;
  fill=0;
  document.getElementById("player-turn").innerText=`Player ${turn} turn`
