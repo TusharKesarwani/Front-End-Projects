@@ -17,9 +17,19 @@ font-family:'Nunito',sans-serif;
     border: 2px solid grey;
 }
 .p-3{
-
+   
     background-color:blanchedalmond ;
 }
-   
- 
-   
+.nav col-12 col-lg-auto me-lg-auto ms-a li a:hover,.nav col-12 col-lg-auto me-lg-auto ms-a li a:active
+{
+  color: red;
+}
+.nav col-12 col-lg-auto me-lg-auto ms-a li a
+{
+  display: block;
+  padding: 8px;
+}
+ li a
+{
+  margin-right: 25px; margin-left: 25px; 
+}
