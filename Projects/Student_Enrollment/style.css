@@ -1,0 +1,149 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 251, 251);
+    font-size: larger;
+    /* background-color: rgb(239, 243, 239); */
+    background: radial-gradient(circle at center, 
+    rgb(50, 51, 51), rgb(30, 18, 68), rgb(2, 2, 13)),100% ;
+}
+
+.form-box{
+  width: 600px;
+  height: 530px;
+  /* background: rgba(25, 4, 47, 0.8); */
+  background: linear-gradient(to bottom, rgb(25, 4, 47) 0%, #1e1b20 100%);
+  padding: 20px;
+  
+  margin: auto;
+ border: 2px solid grey;
+  border-radius:  15px 50px;
+  color: white;
+ box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+input{
+  background: rgb(234, 227, 238);
+  }
+
+ 
+#entry{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(250, 251, 251);
+    padding-left: 40px;
+}
+
+h1{
+    background-color:   rgb(25, 4, 47);
+    margin: 0px;
+    text-align: center;
+    box-shadow: 5px 0px 0px 3px grey;
+    color: #ccc;
+}
+.custom-input {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .custom-input:hover{
+    box-shadow: 3px 3px   #aaaaaa;
+  }
+ 
+  #fname{
+    margin-left: 72px;
+  }
+  #email{
+    margin-left: 73px;
+  }
+  #website{
+    margin-left: 56px;
+  }
+  #image{
+    margin-left: 35px;
+  }
+  
+
+  .btn{
+    width: fit-content;
+    /* background-color: chartreuse; */
+    margin: auto;
+    margin-left: 100px;
+    
+  }
+  #btn-1{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(50, 47, 54);
+    margin-right: 10px;
+    padding: 6px;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    
+  }
+  #btn-1:hover{
+    background-color:  rgb(234, 227, 238);
+    color: black;
+  }
+  #btn-2{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(43, 42, 42);
+    margin-right: 10px;
+    padding: 6px;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  #btn-2:hover{
+    background-color:  rgb(234, 227, 238);
+    color: black;
+  }
+  
+ 
+ 
+ 
+
+.gen{
+  margin-left: 82px;
+}
+
+.gens{
+  margin-left: 146px;
+}
+
+.skills{
+  margin-left:70px;
+}
+
+.sks{
+  margin-left: 10px;
+}
+
+.En-output{
+  
+  margin-top: 40px;
+  
+}
+
+.submitted-data {
+  width: 300px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, rgb(25, 4, 47) 0%, #1e1b20 100%);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+a{
+  color: rgb(100, 100, 245);
+}

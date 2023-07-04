@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+   
+
+    <title>Registration portal</title>
+  </head>
+  <body>
+    <div class="divh1"><h1>Student Enrollement Form</h1></div>
+    <h5 style="color: white; text-align: center;">(Upload image on google drive , permit access )</h5>
+  
+     
+    <div class="form-box">
+      <div class="opacity">
+        <form id="registrationForm" >
+          <label for="fname">Name:</label
+          ><input
+            type="text"
+            class="custom-input"
+            id="fname"
+            placeholder="Enter your name"
+            required=""
+          />
+          <br /><br />
+
+          <label for="email">Email:</label
+          ><input
+            type="email"
+            class="custom-input"
+            name="femail"
+            id="email"
+            placeholder="Enter your Email"
+            required=""
+          />
+
+          <br /><br />
+          <label for="website">Website:</label
+          ><input
+            type="text"
+            class="custom-input"
+            name="fwebsite"
+            id="website"
+            placeholder="Enter your website"
+            required=""
+          />
+          <br /><br />
+
+          <label for="image">Image Link:</label
+          ><input
+            type="text"
+            class="custom-input"
+            name="Image"
+            id="image"
+            placeholder="Enter the link of your image"
+            required=""
+          /> 
+          <br /><br />
+
+          <label for="gender" id="gender">Gender:</label>
+          <label for="male" class="gen">Male</label
+          ><input type="radio" name="gender" style="margin-left: 21px" />
+          <br />
+          <label for="Female" class="gens">Female</label
+          ><input type="radio" name="gender" style="margin-left: 10px" />
+          <br />
+          <label for="others" class="gens">Others</label
+          ><input
+            type="radio"
+            name="gender"
+            style="margin-left: 14.5px"
+          /><br /><br />
+
+          <label for="skills">Skills:</label>
+          <label class="sks">HTML:</label><input type="checkbox" name="HTML" />
+          <label class="sks">CSS:</label><input type="checkbox" name="CSS" />
+          <label class="sks">Javascript:</label
+          ><input type="checkbox" name="Javascript" />
+          <label class="sks">React.js:</label
+          ><input type="checkbox" name="React.js" />
+          <label class="sks">MySQL:</label
+          ><input type="checkbox" name="MySQL" /> <br /><br /><br />
+
+          <div class="btn">
+            <input type="submit" name="submit" id="btn-1" value="Enroll" return="clearFormFields(registrationForms)" />
+            <input type="reset" name="reset" id="btn-2" value="Clear" />
+          </div>
+         
+        </form>
+      </div>
+    </div>
+
+    <div class="En-output"><h1>Enrolled Students</h1></div>
+     <div id="displayData" class="submitted-data"></div> 
+    <script src="script.js"></script>
+  </body>
+
+</html>
