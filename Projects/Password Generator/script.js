@@ -1,76 +1,87 @@
-var len = document.getElementById("length");
+// Functions for generating random number lowercase uppercase letters , symbols
 
+/* Math.random method genrate a random floating-point numbers
+Math.floor() function returns the largest integer less than or equal to a given number.
+For generating a random uppercase lowercase text random numbers symbols we use Charcode 
+http://stevehardie.com/2009/09/character-code-list-char-code/ */
 
-//PASSWORD GENERATOR FUNCTION
-function getPassword() {
-   const chars = '0123456789/%?@$#';
-    var lengthOfPassword = len.value;
-    flag=0;
-    if(lengthOfPassword==''){
-        window.alert('Please Enter the length');
-        flag=1;
-    }
-
-    if(lengthOfPassword<=4 && flag==0){
-        window.alert('Password length cannot be less than 4 characters');
-    }
-
-
-    //console.log(lengthOfPassword);
-    const clength = chars.length;
-    let password = '';
-    let p=0;
-    console.log(randomWord(chars.length))
-    while (p<lengthOfPassword) {
-        password = password.concat(randomWord(chars.length));
-        password = password.concat(chars[randomNumber(clength)]);
-        p++;
-    }
-    password = password.substring(0, p);
-    document.getElementById('password').value = password;
-    
-}
-
-function randomNumber(e) {
-    return Math.floor(Math.random() * e);
-}
-
-function randomWord() {
-    const number = randomNumber(words.length);
-    return words[number];
-}
-//////////////////////////////////////
-
-//COPY BUTTON SCRIPT
-function Copy() {
-    // Get the text field
-  var copyText = document.getElementById("password");
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-  
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
+function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
   }
-
-////////////////////////////////////////////////////////
-
-
-const words = ['BOB', 'BAM', 'BND', 'XOF', 'BIF',
-  'KHR', 'XAF', 'CVE', 'XAF', 'CLP', 'COP', 'KMF',
-  'CRC', 'CUP', 'CDF', 'DKK', 'DJF', 'XCD', 'DOP',
-  'EGP', 'XAF', 'ERN', 'ETB', 'FJD', 'XAF', 'GEL',
-  'mud', 'sky', 'grew', 'hard', 'ill', 'frame',
-  'XCD', 'GNF', 'GTQ', 'XOF', 'GYD', 'HTG', 'HNL',
-  'GNF', 'HNL', 'ISK', 'IRR', 'Japan', 'Australia', 'Afghanistan',
-  'Albania', 'Algeria', 'Brunei', 'Barbados', 'Chile', 'Dominica', 'Zambia',
-  'Aromatic', 'Hearty', 'Roux', 'Victuals', 'Chiffonade', 'Divine', 'Omakase',
-  'Sapid', 'Earthy', 'Fresh', 'Smoky', 'Sweet', 'Sour', 'Airy',
-  'Chewy', 'Creamy', 'Crumbly', 'Blackened', 'Broiled', 'Glazed', 'Sauteed',
-  'Basement', 'Den', 'Hall', 'Porch', 'Yard', 'Counter', 'Mirror',
-  'Sink', 'Armchair ', 'Rug', 'Glass', 'Napkin', 'Stove', 'Microwave',
-  'Toaster', 'dig', 'new', 'rest', 'play', 'win', 'strong'];
+  
+  function getRandomUpper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+  }
+  
+  function getRandomNumber() {
+    return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+  }
+  
+  function getRandomSymbol() {
+    const symbols = "!@#$%^&*(){}[]=<>/,.";
+    return symbols[Math.floor(Math.random() * symbols.length)];
+  }
+  
+  // adding a all functions into a object called randomFunc
+  const randomFunc = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol,
+  };
+  
+  // adding a click event listner to generate button
+  const generate = document.getElementById("generateBtn");
+  generate.addEventListener("click", () => {
+    const length = document.getElementById("Passwordlength").value;
+    const hasUpper = document.getElementById("uppercase").checked;
+    const hasLower = document.getElementById("lowercase").checked;
+    const hasNumber = document.getElementById("numbers").checked;
+    const hasSymbol = document.getElementById("symbols").checked;
+    const result = document.getElementById("PasswordResult");
+    result.innerText = generatePassword(
+      hasLower,
+      hasUpper,
+      hasNumber,
+      hasSymbol,
+      length
+    );
+    // console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+  });
+  
+  // function for generating random password
+  function generatePassword(lower, upper, number, symbol, length) {
+      let generatedPassword = "";
+      const typesCount = lower + upper + number + symbol;
+      // filter out unchecked types
+      const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(
+        (item) => Object.values(item)[0]
+      );
+      // console.log(typesArr);
+    
+      // creating a loop for calling generator function for each type
+      for (let i = 0; i < length; i += typesCount) {
+        typesArr.forEach((type) => {
+          const funcName = Object.keys(type)[0];
+          generatedPassword += randomFunc[funcName]();
+        });
+      }
+    
+      // slicing password from 0 to length
+      const finalPassword = generatedPassword.slice(0, length);
+      return finalPassword;
+    }
+    
+    // copy to clipboard
+  let button = document.getElementById("clipboardBtn");
+  // add click event listner on button
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    // execute command for copy text by selecting textarea text with id
+    document.execCommand(
+      "copy",
+      false,
+      document.getElementById("PasswordResult").select()
+    );
+  });
+  
