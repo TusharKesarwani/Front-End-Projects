@@ -616,6 +616,14 @@ const projects = [
         "project-link":"Projects/QR Code Generator/index.html"
     },
     {
+        "title":"QR Code Reader",
+        "tags":["HTML","CSS","JavaScript","Node Library"],
+        "img":"img/projects/QR Code Reader.png",
+        "description":"The user can upload or either scan the QR Code from their device and the application provides the link of the QR Code scanned.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/QR Code Reader",
+        "project-link":"Projects/QR Code Reader/index.html"
+    },
+    {
         "title":"Reaction_App",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Reaction_Time_Test.png",
