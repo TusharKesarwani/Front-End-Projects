@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <style>
+      *{
+          background-color:lightblue;
+      }
+      table, th, td {
+          border:1px solid red;
+          color: red;
+      }
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: green;">Sorting</h1>
+<h2>Sorting Theory</h2>
+<h4><a href="https://www.geeksforgeeks.org/bubble-sort/">Bubble Sort</a></h4><br>
+<h4><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort</a></h4>
+<h4><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort</a></h4><br>
+<h4><a href="https://www.geeksforgeeks.org/cycle-sort/">Cycle Sort</a></h4>
+<h4><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort</a></h4><br>
+<h4><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort</a></h4>
+<h2>Sorting Question Tabels</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>SNo</th>
+    <th>Problem</th>
+    <th>Types</th>
+    <th>link</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Merge Sorted Array</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/merge-sorted-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Majority Element</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/majority-element/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>Contains Duplicate</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/contains-duplicate/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td>Missing Number</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/missing-number/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td>Intersection of Two Arrays</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/intersection-of-two-arrays/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>06</td>
+    <td>Intersection of Two ArraysII</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td>Third Maximum Number</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/third-maximum-number/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td>Assign Cookies</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/assign-cookies/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td>Array Partition I</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/array-partition-i/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Maximum Product of Three Numbers</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/maximum-product-of-three-numbers/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Sort Array By Parity</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/sort-array-by-parity/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Sort Array By Parity II</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/sort-array-by-parity-ii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Largest Perimeter Triangle</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/largest-perimeter-triangle/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Squares of a Sorted Array</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/squares-of-a-sorted-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Matrix Cells in Distance Order</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/matrix-cells-in-distance-order/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Height Checker</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/height-checker/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Relative Sort Array</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/relative-sort-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Rank Transform of an Array</td>
+    <td>Easy</td>
+    <td><button><a href="">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Sort Integers by The Number of 1 Bits</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>How Many Numbers Are Smaller Than the Current Number</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Maximum Product of Two Elements in an Array</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Average Salary Excluding the Minimum and Maximum Salary</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Make Two Arrays Equal by Reversing Sub-arrays</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Can Make Arithmetic Progression From Sequence</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Sort Array by Increasing Frequency</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/sort-array-by-increasing-frequency/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Special Array With X Elements Greater Than or Equal X</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Find all numbers disappeared in an array</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Set Mismatch</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/set-mismatch/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>2Sum</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/two-sum/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>3Sum</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/3sum/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>3Sum Closest</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/3sum-closest/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>4Sum</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/4sum/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Group Anagrams</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/group-anagrams/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Merge Intervals</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/merge-intervals/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Sort Colors</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/sort-colors/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Insertion Sort List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/insertion-sort-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Sort List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/sort-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Largest Number</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/largest-number/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Kth Largest Element in an Array</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Find the Duplicate Number</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/find-the-duplicate-number/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Find all Duplicates in an array</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/find-all-duplicates-in-an-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>First missing Positive</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/first-missing-positive/">Leetcode</a></button></td>
+  </tr>
+  
+</table>
+</body>
+</html>
