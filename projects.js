@@ -968,6 +968,14 @@ const projects = [
         "project-link":"Projects/Zomato-Landing-Page/index.html"
     },
     {
+        "title":"MESSI MANIA",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/MESSI MANIA.png",
+        "description":"A simple fan made webpage of LIONEL MESSI",
+        "github-link":"https://github.com/Soumyajit2825/MESSI_MANIA",
+        "project-link":"Projects/MESSI MANIA/index.html"
+    },
+    {
         "title":"Morse Code Convertor",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Morse_Code_Convertor.png",
@@ -999,7 +1007,6 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Text-Utilities",
         "project-link":"Projects/Text-Utilities/index.html"
     }
-    
 ]
 
 export default projects;
