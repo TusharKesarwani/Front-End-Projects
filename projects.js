@@ -968,6 +968,14 @@ const projects = [
         "project-link":"Projects/Zomato-Landing-Page/index.html"
     },
     {
+        "title":"MESSI MANIA",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/MESSI MANIA.png",
+        "description":"A simple fan made webpage of LIONEL MESSI",
+        "github-link":"https://github.com/Soumyajit2825/MESSI_MANIA",
+        "project-link":"Projects/MESSI MANIA/index.html"
+    },
+    {
         "title":"Morse Code Convertor",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Morse_Code_Convertor.png",
@@ -998,8 +1006,15 @@ const projects = [
         "description":"This website can convert the entered number into the words instantly. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Number_To_Words_Convertor",
         "project-link":"Projects/Number_To_Words_Convertor/index.html"
+    },
+    {
+        "title":"Text-Utilities",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Text_Utils.png",
+        "description":"This website can be used to manipulate text in several ways such as change to uppercase or lowercase , and remove extra spaces etc.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Text-Utilities",
+        "project-link":"Projects/Text-Utilities/index.html"
     }
-    
 ]
 
 export default projects;

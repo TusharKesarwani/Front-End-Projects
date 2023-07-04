@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.7)), url(images/Loginbg.jpg);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+
+}
+
+.topnav {
+  display: flex;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  top: 0;
+  position: absolute;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  flex-direction: column;
+}
+
+.topnav a:hover {
+  color: cyan;
+}
+
+.topnav a.active {
+  color: cyan;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 380px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+.active {
+  color: cyan;
+}
+@media screen and (max-width: 380px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    padding: 10 10px;
+    text-align: center;
+  }
+}
+
+/* navbar end */
+
+.container{
+  position: relative;
+  height: 600px;
+  flex-basis: 390px;
+}
+
+.login-wrap, .signup-wrap{
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%, -50%);
+  height: auto;
+  box-sizing: border-box;
+  transform: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 300px;
+}
+
+.active{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+.title h1{
+  /* padding-bottom: 1.2rem; */
+  position: relative;
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+  /* width: 200px; */
+}
+
+.input-area{
+  margin-top: 1.2rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.input-area input{
+  width: 90%;
+  height: 3rem;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  outline: none;
+  background: black;
+  backdrop-filter: blur(1rem);
+  padding: 0 1.4rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input-area input:focus{
+  width: 100%;
+}
+
+.input-area label{
+  position: absolute;
+  top: 50%;
+  left: 2.6rem;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1.2rem;
+  transform: all 0.3s ease;
+}
+
+.input-area input:focus~label{
+  transform: translateY(-3rem);
+  left: 1rem;
+}
+
+.input-area input:valid~label{
+  transform:translateY(-3rem) ;
+}
+
+.forget-pass{
+  margin-top: 0.4rem;
+  position: relative;
+}
+
+.forget-pass a{
+  position: absolute;
+  top: 0;
+  left: 2.6rem;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.forget-pass a:hover{
+  color: cyan;
+}
+
+.button-area{
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+button{
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  color: cyan;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  width: 50%;
+  letter-spacing: 2px;
+  background: transparent;
+  border: 2px solid rgb(255, 180, 42);
+}
+
+.form-toggle-area{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form-toggle-area p{
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-toggle-area p span{
+  color: rgb(255, 180, 42);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.form-toggle-area p span:hover{
+  color: cyan;
+}
+
+@media screen and (max-width: 380px){
+  .title h1{
+    font-size: 1.5rem;
+  }
+
+  .login-wrap, .signup-wrap{
+    padding: 2rem  0.2rem;
+  }
+
+  .input-area input{
+    font-size: 0.9rem;
+  }
+  .input-area label{
+    font-size: 0.9rem;
+  }
+
+  button{
+    font-size: 1rem;
+  }
+
+  .form-toggle-area p{
+    font-size: 0.8rem;
+  }
+}
+
+
