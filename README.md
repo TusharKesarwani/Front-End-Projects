@@ -29,6 +29,8 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/TusharKesarwani/Front-End-Projects)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TusharKesarwani/Front-End-Projects)
  </p>
+ </p>
+ </div>
 </div>
  
  ## 📌 Open Source Program
