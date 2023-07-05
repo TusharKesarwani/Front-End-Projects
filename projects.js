@@ -616,6 +616,14 @@ const projects = [
         "project-link":"Projects/QR Code Generator/index.html"
     },
     {
+        "title":"QR Code Reader",
+        "tags":["HTML","CSS","JavaScript","Node Library"],
+        "img":"img/projects/QR Code Reader.png",
+        "description":"The user can upload or either scan the QR Code from their device and the application provides the link of the QR Code scanned.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/QR Code Reader",
+        "project-link":"Projects/QR Code Reader/index.html"
+    },
+    {
         "title":"Reaction_App",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Reaction_Time_Test.png",
@@ -968,6 +976,14 @@ const projects = [
         "project-link":"Projects/Zomato-Landing-Page/index.html"
     },
     {
+        "title":"MESSI MANIA",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/MESSI MANIA.png",
+        "description":"A simple fan made webpage of LIONEL MESSI",
+        "github-link":"https://github.com/Soumyajit2825/MESSI_MANIA",
+        "project-link":"Projects/MESSI MANIA/index.html"
+    },
+    {
         "title":"Morse Code Convertor",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Morse_Code_Convertor.png",
@@ -998,8 +1014,15 @@ const projects = [
         "description":"This website can be used to manipulate text in several ways such as change to uppercase or lowercase , and remove extra spaces etc.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Text-Utilities",
         "project-link":"Projects/Text-Utilities/index.html"
+    },
+    {
+        "title":"Playable Piano",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Playable_Piano.png",
+        "description":"This project is a beginner friendly and helpful who are new to frontend technology. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
+        "project-link":"Projects/Playable_Piano/index.html"
     }
-    
 ]
 
 export default projects;
