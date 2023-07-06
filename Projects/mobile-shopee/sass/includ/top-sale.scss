@@ -1,0 +1,36 @@
+/* top sale */
+
+#top-sale{
+    .owl-carousel .item .product a{
+        overflow: hidden;
+    }
+
+    .owl-carousel .item .product img{
+        transition: transform .5s ease;
+    }
+
+    .owl-carousel .item .product img:hover{
+        transform: scale(1.1);
+    }
+
+    .owl-carousel .owl-nav button{
+        position: absolute;
+        top: 30%;
+        outline: none;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev{
+        left: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev span,
+    .owl-carousel .owl-nav button.owl-next span{
+        font-size: 30px;
+        color: $color-primary;
+    }
+
+    .owl-carousel .owl-nav button.owl-next{
+        right: 0;
+    }
+
+}
