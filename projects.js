@@ -1022,6 +1022,14 @@ const projects = [
         "description":"This project is a beginner friendly and helpful who are new to frontend technology. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
         "project-link":"Projects/Playable_Piano/index.html"
+    },
+    {
+        "title":"Sound Equalizer",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Sound_Equalizer.png",
+        "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
+        "project-link":"Projects/Sound_Equalizer/index.html"
     }
 ]
 
