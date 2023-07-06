@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Mukta:wght@300&display=swap');
 ::-webkit-scrollbar {
@@ -28,7 +27,14 @@ body {
   background-image: url("bg.png");
   color: rgb(212 212 212);
 }
-
+h2{
+  font-family: 'Kalam', cursive;
+}
+@media (min-width: 470px) {
+  #search-btn {
+     width:50px;
+  }
+}
 .container {
   width: 100%;
   height: 100%;
@@ -39,8 +45,8 @@ body {
 }
 .main {
   padding: 5%;
-  width: 30%;
-  height: 30%;
+  width: 32%;
+  height: 32%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +79,7 @@ body {
 }
 
 .search-container:hover > #search-input {
-  width: 400px;
+  width: 300px;
 }
 
 .search-container #search-input {
@@ -92,9 +98,10 @@ body {
 
 #search-btn {
     font-size: 15px;
-  font-family: Arial;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 1px;
   width: 140px;
-  height: 50px;
+  height: 40px;
   border-width: 1px;
   color: #fff;
   border-color: rgba(29, 30, 29, 1);
@@ -106,6 +113,40 @@ body {
   box-shadow: 1px 1px 0px 1px rgba(20, 19, 19, 1);
   text-shadow: 1px 1px 0px rgba(15, 15, 15, 1);
   background-color: transparent;
+}
+#search-btn:hover{
+  background-color: bisque;
+  color: #000000;
+  box-shadow: 2px 3px grey;
+}
+@media (max-width: 470px) {
+  #search-btn {
+     width:70px;
+     height:25px;
+     font-size: small;
+  }
+}
+@media (max-width: 299px) {
+  h2{
+    font-size:small ;
+  }
+  #search-btn {
+    width:50px;
+    height:25px;
+    font-size: small;
+ }
+}
+ @media (max-width: 182px) {
+  h2{
+    font-size:x-small ;
+  }
+  #search-btn {
+    width:25px;
+    height:20px;
+    font-size:x-small;
+    letter-spacing: 0;
+ }
+
 }
 .card{
   
@@ -139,7 +180,8 @@ body {
   align-items: center;
 }
 .round{
-  
+  height:88%;
+  width: 88%;
   align-items: center;
   border: 1px solid #03BFCB;
 	border-radius: 50%;
