@@ -1,0 +1,69 @@
+#memes{
+    display:flex;
+    flex-wrap: wrap;
+     height: 80vh;
+    width:80vw;
+    margin : 150px auto;
+}
+#mm.holder{
+    height:200px;
+    width:200px;
+    display:flex;
+    flex-wrap:wrap;
+}
+#imageholder{
+    height:300px;
+    width:300px;
+    margin:30px;
+}
+body{
+
+  background-image: url(meme.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+#btn {
+    margin: 0;
+    position: absolute;
+    left: 45%;
+    background: #34c6d9;
+    background-image: -webkit-linear-gradient(top, #d95234, #2b71b8);
+    background-image: -moz-linear-gradient(top, #34c6d9, #2b71b8);
+    background-image: -ms-linear-gradient(top, #34c6d9, #2b71b8);
+    background-image: -o-linear-gradient(top, #34c6d9, #2b71b8);
+    background-image: linear-gradient(to bottom, #34c6d9, #2b71b8);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  #btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  #header{
+    border:2px solid black;
+    background-color:lightskyblue;
+    ;
+  }

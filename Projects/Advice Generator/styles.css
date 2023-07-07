@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-weight: 800;
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+button:focus {
+  outline: none !important;
+}
+
+body,
+.attribution a {
+  color: #446a46;
+}
+
+body,
+.btn {
+  font-family: "Dancing Script", cursive;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.advice {
+  height: 100px;
+}
+
+#heading {
+  font-size: 3rem;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+#time,
+#date {
+  margin-top: 0.5%;
+  font-size: 1.5rem;
+  margin-left: 5%;
+}
+
+.container {
+  margin-top: 1%;
+  height: 70vh;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  padding-top: 3px;
+  margin-top: 35px;
+  height: 40px;
+  width: 100px;
+  color: #fff;
+  background-color: #446a46;
+  cursor: pointer;
+}
+
+.btn,
+footer {
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer,
+.container {
+  text-align: center;
+}

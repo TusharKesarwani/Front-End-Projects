@@ -82,8 +82,8 @@ body {
     margin-top: 80px;
     text-align: center;
 }
-h1{
+h1{ padding: 100px;
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
+    text-decoration: underline;
+    text-underline-position: under;
 }
