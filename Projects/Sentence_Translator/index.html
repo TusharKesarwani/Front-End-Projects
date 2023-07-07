@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Script -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- Logo of the website -->
+	<link rel="shortcut icon"
+		href="data:image/png;base64,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"
+		type="image/x-icon">
+
+	<!-- Title of the website -->
+	<title>Sentence Translater</title>
+</head>
+
+<body>
+	<!-- Day and night mode -->
+	<div class="mode">
+		<label class="toggle" for="dark-mode-btn">
+			<div class="toggle-track">
+				<input type="checkbox" class="toggle-checkbox" id="dark-mode-btn" />
+				<span class="toggle-thumb"></span>
+				<img src="./images/sun.png" alt="" />
+				<img src="./images/moon.png" alt="" />
+			</div>
+		</label>
+	</div>
+
+	<!-- Main container of the application -->
+	<div class="container">
+		<div class="card input-wrapper">
+			<div class="from">
+				<span class="heading">From :</span>
+				<div class="dropdown-container" id="input-language">
+					<div class="dropdown-toggle">
+						<ion-icon name="globe-outline"></ion-icon>
+						<span class="selected" data-value="auto">Auto Detect</span>
+						<ion-icon name="chevron-down-outline"></ion-icon>
+					</div>
+					<ul class="dropdown-menu">
+						<li class="option active">DropDown Menu Item 1</li>
+						<li class="option">DropDown Menu Item 2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="text-area">
+				<textarea id="input-text" cols="30" rows="10" placeholder="Enter your text here"></textarea>
+				<div class="chars"><span id="input-chars">0</span> / 5000</div>
+			</div>
+			<div class="card-bottom">
+				<p>Or choose your document!</p>
+				<label for="upload-document">
+					<span id="upload-title">Choose File</span>
+					<ion-icon name="cloud-upload-outline"></ion-icon>
+					<input type="file" id="upload-document" hidden />
+				</label>
+			</div>
+		</div>
+
+		<div class="center">
+			<div class="swap-position">
+				<ion-icon name="swap-horizontal-outline"></ion-icon>
+			</div>
+		</div>
+
+		<div class="card output-wrapper">
+			<div class="to">
+				<span class="heading">To :</span>
+				<div class="dropdown-container" id="output-language">
+					<div class="dropdown-toggle">
+						<ion-icon name="globe-outline"></ion-icon>
+						<span class="selected" data-value="en">Englsih</span>
+						<ion-icon name="chevron-down-outline"></ion-icon>
+					</div>
+					<ul class="dropdown-menu">
+						<li class="option active">DropDown Menu Item 1</li>
+						<li class="option">DropDown Menu Item 2</li>
+					</ul>
+				</div>
+			</div>
+			<textarea id="output-text" cols="30" rows="10" placeholder="Translated text will appear here"
+				disabled></textarea>
+			<div class="card-bottom">
+				<p>Download as a document!</p>
+				<button id="download-btn">
+					<span>Download</span>
+					<ion-icon name="cloud-download-outline"></ion-icon>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- languages javascript file -->
+	<script src="languages.js"></script>
+
+	<!-- Main functioning javascript file -->
+	<script src="script.js"></script>
+</body>
+
+</html>

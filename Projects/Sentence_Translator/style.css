@@ -1,0 +1,370 @@
+/* Default settings */
+:root {
+	--primary-color: #356aff;
+	--bg-color: #f5f5f5;
+	--light-bg-color: #fff;
+	--text-color: #111116;
+	--light-text-color: #cdccd1;
+	--primary-text-color: #fff;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 30px;
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 30px;
+	background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--bg-color);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+}
+
+body.dark {
+	--bg-color: #111116;
+	--light-bg-color: #1c1b20;
+	--text-color: #fff;
+	--light-text-color: #58575c;
+}
+
+/* Styling the container of the application */
+.container {
+	position: relative;
+	width: 1200px;
+	padding: 0 20px;
+	display: flex;
+	gap: 10px;
+}
+
+.container .card {
+	flex: 1;
+	padding: 30px;
+	border-radius: 20px;
+	background-color: var(--light-bg-color);
+}
+
+.container .card .from,
+.container .card .to {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.container .card .from {
+	margin-right: 20px;
+}
+
+.container .card .to {
+	margin-left: 20px;
+}
+
+.container .card .heading {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--light-text-color);
+	white-space: nowrap;
+}
+
+/* Styling the dropdown container */
+.dropdown-container {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.dropdown-container .dropdown-toggle {
+	display: flex;
+	align-items: center;
+	padding: 15px 20px;
+	border-radius: 30px;
+	background-color: var(--bg-color);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.dropdown-container .dropdown-toggle span {
+	flex: 1;
+	margin-left: 10px;
+}
+
+.dropdown-container .dropdown-toggle ion-icon {
+	font-size: 20px;
+	transition: transform 0.3s ease;
+}
+
+.dropdown-container.active .dropdown-toggle {
+	border-radius: 20px 20px 0 0;
+}
+
+.dropdown-container.active .dropdown-toggle ion-icon:last-child {
+	transform: rotate(180deg);
+}
+
+.dropdown-container .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	overflow: auto;
+	display: none;
+	padding: 20px;
+	z-index: 1;
+	list-style: none;
+	flex-direction: column;
+	background-color: var(--bg-color);
+	transition: all 1s;
+	border-radius: 0 0 20px 20px;
+}
+
+.dropdown-container .dropdown-menu::-webkit-scrollbar {
+	display: none;
+}
+
+.dropdown-container.active .dropdown-menu {
+	display: flex;
+}
+
+.dropdown-container .dropdown-menu li {
+	padding: 10px 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	margin-bottom: 5px;
+	border-bottom: 1px solid var(--light-bg-color);
+	transition: all 0.3s ease;
+}
+
+.dropdown-container .dropdown-menu li:hover {
+	background-color: var(--light-bg-color);
+}
+
+.dropdown-container .dropdown-menu li.active {
+	color: var(--primary-text-color);
+	background-color: var(--primary-color);
+}
+
+.container .text-area {
+	position: relative;
+}
+
+.container textarea {
+	width: 100%;
+	padding: 20px;
+	margin: 10px 0;
+	background-color: transparent;
+	resize: none;
+	outline: none;
+	border: none;
+	color: var(--text-color);
+	font-size: 18px;
+	font-family: "Poppins", sans-serif;
+}
+
+.container .text-area .chars {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	font-size: 0.8rem;
+	color: var(--light-text-color);
+}
+
+.container .center {
+	position: relative;
+}
+
+.swap-position {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 5px solid var(--bg-color);
+	transition: all 0.3s ease;
+	color: var(--primary-text-color);
+	background-color: var(--primary-color);
+}
+
+.swap-position ion-icon {
+	font-size: 25px;
+}
+
+.swap-position:hover {
+	transform: translateX(-50%) scale(1.1);
+}
+
+.card-bottom {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 20px;
+	border-top: 2px solid var(--bg-color);
+}
+
+.card-bottom p {
+	margin-bottom: 20px;
+}
+
+.card-bottom label {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 0 20px;
+	cursor: pointer;
+	border-radius: 30px;
+	background-color: var(--bg-color);
+}
+
+.card-bottom label:hover {
+	color: var(--primary-text-color);
+	background-color: var(--primary-color);
+}
+
+.card-bottom span {
+	font-size: 12px;
+	pointer-events: none;
+}
+
+.card-bottom ion-icon {
+	font-size: 20px;
+}
+
+.card-bottom button {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 0 20px;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	color: var(--text-color);
+	cursor: pointer;
+	background-color: var(--bg-color);
+}
+
+.card-bottom button:hover {
+	color: var(--primary-text-color);
+	background-color: var(--primary-color);
+}
+
+/* Day and night mode toggle button */
+.mode {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1;
+}
+
+.toggle {
+	position: relative;
+	cursor: pointer;
+}
+
+.toggle-track {
+	width: 24px;
+	height: 50px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 3px 0;
+	justify-content: space-between;
+	border: 1px solid var(--light-text-color);
+	background-color: var(--light-bg-color);
+	transition: all 0.2s ease;
+}
+
+.toggle-checkbox {
+	display: none;
+}
+
+.toggle-thumb {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	transition: all 0.5s;
+}
+
+.toggle input:checked~.toggle-thumb {
+	transform: translateY(25px);
+}
+
+.toggle img {
+	width: 20px;
+	height: 20px;
+}
+
+/* media quiries */
+@media (max-width: 800px) {
+	.container {
+		width: 100%;
+		margin-top: 20px;
+		flex-direction: column;
+	}
+
+	.container .card {
+		width: 100%;
+	}
+
+	.container .card .from {
+		margin-right: 0;
+	}
+
+	.container .card .to {
+		margin-left: 0;
+	}
+
+	.container .card .from,
+	.container .card .to {
+		flex-direction: column;
+	}
+
+	.swap-position {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.swap-position:hover {
+		transform: translate(-50%, -50%) scale(1.1);
+	}
+
+	.swap-position ion-icon {
+		transform: rotate(90deg);
+	}
+}
