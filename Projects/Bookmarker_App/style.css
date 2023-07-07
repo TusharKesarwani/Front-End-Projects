@@ -6,7 +6,9 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 20px;
   background: linear-gradient(135deg, #d53369 0%, #daae51 100%);
 }
 
@@ -28,6 +30,13 @@ h1 {
   color: white;
   line-height: 1.5;
   animation: fadeIn 1s ease;
+}
+.clearfix {
+  /* background-color: #80bdff; */
+  background-color: #222;
+  border-radius: 0.25rem;
+  padding: 1.3em;
+  color: #fff;
 }
 
 .bookmarker {
