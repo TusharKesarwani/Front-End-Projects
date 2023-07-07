@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Burger</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/public/Gerald_G_Fast_Food_Lunch_Dinner_(FF_Menu)_6.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="loading-animation">
+      <img
+        class="load__icon"
+        src="./public/540f74001ca90a19263c66165621d597.gif"
+        alt=""
+        srcset=""
+      />
+      <div class="context">Loading....</div>
+    </div>
+    <div id="animation__body">
+      <!-- header  -->
+      <header class="header__super__burger">
+        <nav class="nav__bar">
+          <div class="container__nav__bar">
+            <div class="logo">
+              <img
+                class="logo__icon"
+                src="./public/Gerald_G_Fast_Food_Lunch_Dinner_(FF_Menu)_6.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="list" id="list__items">
+              <ul class="list__items">
+                <li>Meal</li>
+                <li>Order</li>
+                <li>Deals</li>
+                <li>Delivery</li>
+              </ul>
+            </div>
+          </nav>
+          <div class="icons" >
+            <div class="open__icons"><img id="openButton"  class="open__icon " onclick="change()" src="./public/4301493_burger_fast_fastfood_food_hamburger_icon.svg" alt="" srcset=""></div>
+          
+          <!-- <div class="close__icon"><img id="closeButton" class="close__icon" onclick="close()"  src="./public/7429347_food_delivery_service_take away_restaurant_icon.svg" alt="" srcset=""></div> -->
+        </div>
+      </header>
+
+      <main>
+        <section class="upper__section">
+          <div class="main__container">
+            <div class="content__image">
+              <img
+                class="center__img"
+                src="./public/Burger_month.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="main__content">
+              CELEBRATE BURGER MONTH <br />
+              WITH A JUICY BURGER
+            </div>
+            <div class="sub__content">
+              At Super Burger, we believe that a burger is more than just a
+              meal; it's a work of art.<br />
+              Our skilled chefs meticulously prepare each burger with passion
+              and expertise, ensuring every bite is a burst of flavor. <br />
+              We use only the finest ingredients, locally sourced whenever
+              possible, to guarantee freshness and quality in every bite.
+            </div>
+            <div class="promocode">
+              <div class="content">PROMO CODE : <b>20BURGERMONTH</b></div>
+            </div>
+          </div>
+        </section>
+        <section class="middle__section">
+          <div class="menu__content">
+            <div class="menu__header">BEST BURGERS OF ALL TIME</div>
+            <div class="sub__menu__header">
+              Prepare to be amazed by our diverse menu of burger creations. From
+              classic favorites like the Classic Cheeseburger and BBQ Bacon
+              Burger to our unique and innovative creations <br />
+              like the Avocado Ranch Burger and Spicy Sriracha Burger, there's
+              something to tantalize every taste bud. We also offer vegetarian
+              and vegan options, ensuring that everyone can enjoy the Super
+              Burger experience.
+            </div>
+            <div class="menu__card">
+              <div class="card">
+                <div class="img1">
+                  <img
+                    class="card__img__1"
+                    src="./public/smokey_bacon_1.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="header__card">Smokey Bacon</div>
+                  <div class="price">$ 12.99</div>
+                  <button type="submit" id="buy">Order Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img1">
+                  <img
+                    class="card__img__1"
+                    src="./public/ribs.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="header__card">Meat Lover</div>
+                  <div class="price">$ 24.99</div>
+                  <button type="submit" id="buy">Order Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img1">
+                  <img
+                    class="card__img__1"
+                    src="./public/steak_1.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="header__card">Dream Steak</div>
+                  <div class="price">$ 28.99</div>
+                  <button type="submit" id="buy">Order Now</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="img1">
+                  <img
+                    class="card__img__1"
+                    src="./public/BBQ_Dish.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="header__card">BBQ Dish</div>
+                  <div class="price">$ 40.99</div>
+                  <button type="submit" id="buy">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="menu__content__02">
+              <div class="menu__data">
+                <div class="header__data">
+                  Delicious Is Its First <br />
+                  Name
+                </div>
+                <div class="header__data__price">$ 12.99</div>
+                <div class="sub__header__data">
+                  Don't wait any longer to experience burger bliss. Visit Super
+                  Burger today and embark on a culinary journey that will excite
+                  your taste buds and leave you craving for more. Join us in
+                  celebrating the joy of burgers done right.
+                </div>
+                <button type="submit" class="menu__data__button">
+                  Order Now
+                </button>
+              </div>
+              <div class="menu__img">
+                <img
+                  class="menu__img__size"
+                  src="./public/smoke_burger.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="menu__content__03">
+              <div class="menu__data">
+                <div class="header__data">A Slice For Everyone</div>
+                <div class="header__data__price">$ 19.50</div>
+                <div class="sub__header__data">
+                  Satisfy your cravings and experience burger perfection like
+                  never before at Super Burger. We are dedicated to delivering
+                  an exceptional dining experience that will leave you craving
+                  more. From our mouthwatering patties to our fresh and
+                  flavorful toppings, we take pride in serving the best burgers
+                  in town.
+                </div>
+                <button type="submit" class="menu__data__button">
+                  Order Now
+                </button>
+              </div>
+              <div class="menu__img">
+                <img
+                  class="menu__img__size"
+                  src="./public/fresh_pizza.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lower__main">
+          <div class="lower__main__section">
+            <div class="lower__header__data">
+              Let's Bring Our Friends Together With A Bite
+            </div>
+            <div class="sub__lower__header__data">
+              Step into our welcoming and vibrant atmosphere, where friendly
+              staff awaits to provide you with top-notch service. <br />
+              Whether you're dining in with friends and family or grabbing a
+              quick bite on the go, we strive to make every visit memorable.
+              <br />
+              Our commitment to exceptional food and service is what sets us
+              apart.
+            </div>
+            <button type="submit" class="button__lower">Order Now</button>
+            <div class="lower_img">
+              <img  class="lower__brown__burger" src="./public/Burger_effect_1.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="footer__data">
+            <div class="company__data">
+              <div class="header__data__company">Company Name</div>
+              <div class="body__data">
+                where we are dedicated to revolutionizing Super Burger and
+                delivering exceptional Super Burger to our valued customers.
+                With a passion for innovation and a commitment to excellence, we
+                are your trusted partner in Super Burger.
+              </div>
+              <div class="icon">
+                <a
+                  href="https://www.facebook.com/your-page-url"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://www.twitter.com/your-page-url" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/your-page-url"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class="contact__info">
+              <div class="header__data__contact">Contact Info</div>
+              <div class="body__data">
+                UK (+23) 456 7890 <br />
+                US (+22) 456 7891 <br />
+                Order@company.com <br />
+                Order@company.com <br />
+              </div>
+            </div>
+            <div class="links">
+              <div class="header__data__contact">Links</div>
+              <div class="body__data">
+                Delivery <br />
+
+                Special Offers <br />
+
+                Menu <br />
+              </div>
+            </div>
+            <div class="new__letter">
+              <div class="header__data__contact__news">NewsLetter</div>
+              <div class="form__newsletter">
+                <form action="./">
+                  <label for="email" class="label">Email</label><br />
+                  <input
+                    type="text"
+                    class="input"
+                    name="email"
+                    placeholder="name@company.com"
+                  />
+                  <br />
+                  <button type="submit" class="signin__button">Sign In</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
