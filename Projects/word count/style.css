@@ -1,0 +1,61 @@
+body {
+  background: rgb(93, 160, 241);
+  font-family: Inter;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 35px;
+  font-size: 28px;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.items {
+  width: 700px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+}
+
+.item {
+  font-size: 18px;
+  width: 250px;
+  margin-top: 10px;
+  font-weight: 400;
+  display: flex;
+  gap: 8px;
+}
+
+.item > div {
+  color: red;
+  width: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+textarea {
+  color: black;
+  width: 700px;
+  height: 300px;
+  font-size: 20px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 8px;
+}
+
+textarea:focus {
+  outline: none;
+}
