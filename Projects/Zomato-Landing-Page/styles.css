@@ -108,6 +108,7 @@
     overflow: hidden;
     border: 1px solid #e0e0e0;
     transition: all 0.3sec ease;
+    margin: 25px;
 }
 
 .we-offer-card:hover{
@@ -121,16 +122,17 @@
     object-position: center;
 }
 
-.we-offer-container{
+.we-offer-content{
     padding: 10px;
 }
 
-.we-offer-container h2{
-    font-size: 20px;
-    font-weight: 400;
+.we-offer-content h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
 }
 
-.we-offer-container p{
+.we-offer-content p{
     font-size: 13px;
 }
 
@@ -159,7 +161,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 1.5rem;
+    margin: 30px;
 }
 
 .collections-cards-container .card{
