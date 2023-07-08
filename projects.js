@@ -1043,7 +1043,7 @@ const projects = [
         "title":"FAQ Application",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/FAQ_Application.png",
-        "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "description":"This FAQ website is a template for the productive websites. It is built using HTML, CSS and JavaScript.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/FAQ_Application",
         "project-link":"Projects/FAQ_Application/index.html"
     }
