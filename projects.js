@@ -1031,12 +1031,21 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
         "project-link":"Projects/Solar%20System%20Model/index.html"
     },
+    {
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Sound_Equalizer.png",
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Maths Practise",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Maths-practice.png",
+        "description":"Maths practice website is used for practising for the children. There are some arithmetic operations which are used to practising. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Maths-practice",
+        "project-link":"Projects/Maths-practice/index.html"
     }
 ]
 
