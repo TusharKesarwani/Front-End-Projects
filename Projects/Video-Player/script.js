@@ -1,5 +1,12 @@
 // Array of video file names in the current directory
-var currentDirVideoFiles = ['vid1.mp4', 'vid2.mp4', 'vid3.mp4', 'vid4.mp4', 'vid5.mp4', 'vid6.mp4'];
+var currentDirVideoFiles = [
+    'video.mp4', 
+    'video.mp4', 
+    'video.mp4', 
+    'video.mp4', 
+    'video.mp4', 
+    'video.mp4'
+];
 
 // Get the video container element from the HTML document
 const videoContainer = document.getElementsByClassName('video-container')[0];
