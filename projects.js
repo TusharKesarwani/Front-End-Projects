@@ -1031,6 +1031,7 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
         "project-link":"Projects/Solar%20System%20Model/index.html"
     },
+    {
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Sound_Equalizer.png",
