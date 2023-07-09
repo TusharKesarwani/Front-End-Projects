@@ -7,6 +7,9 @@
     font-family: "Poppins", sans-serif;
 }
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #ae9cff;
 }
 .container {
@@ -20,14 +23,33 @@ body {
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
 }
+@media(max-width:391px)
+{
+    .search-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 ;
+        height: 100px;
+        width: 400px;
+    }
+}
+@media(max-width:208px)
+{
+    .container{
+        min-width: fit-content;
+    }
+}
 .search-box {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .search-box input {
     padding: 5px;
-    width: 70%;
+    width: 50%;
+    min-width: 170px;
     border: none;
     outline: none;
     border-bottom: 3px solid #ae9cff;
@@ -35,7 +57,7 @@ body {
 }
 .search-box button {
     padding: 15px 0;
-    width: 25%;
+    width: 100px;
     background-color: #ae9cff;
     border: none;
     outline: none;
@@ -82,8 +104,17 @@ body {
     margin-top: 80px;
     text-align: center;
 }
-h1{ padding: 100px;
+h1{ 
+    padding-top: 80px;
+    font-size: 55px;
     text-align: center;
     text-decoration: underline;
     text-underline-position: under;
+    font-family: 'Cormorant Garamond', serif;
+}
+@media(max-width:371px)
+{
+    h1{
+        font-size: 35px;
+    }
 }
