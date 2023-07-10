@@ -98,9 +98,9 @@
 .we-offer{
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    /* gap: 10rem; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .we-offer-card{
@@ -121,13 +121,16 @@
     object-position: center;
 }
 
+.we-offer-content{
+    padding: 0.5rem;
+}
 .we-offer-container{
     padding: 10px;
 }
 
 .we-offer-container h2{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .we-offer-container p{
