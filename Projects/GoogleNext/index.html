@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="google.css">
+    <title>Google</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hdr">
+            <h1>Google</h1>
+        </div>
+        <form action="https://www.google.com/search" class="searchbar">
+            <i class="fas fa-search"></i>
+            <input name="q" class="search" id="search" type="search">
+                <!-- <input type="text" id="sbar"> -->
+                <div class="vsearch"></div>
+            </div>
+        </form>
+    </div>
+    <script>
+        const winWidth = window.screen.width
+        const winHeight = window.screen.height
+        const search = document.getElementById("search");
+        const randombg = `https://picsum.photos/${winWidth}/${winHeight}`;
+
+        document.body.style.background = `url(${randombg})`;
+    </script>
+</body>
+</html>
