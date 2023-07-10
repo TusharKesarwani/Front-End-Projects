@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #6943FF11;
+}
+
+.main-container{
+    width: 550px;
+    height: 745px;
+    background: #F4F4F4;
+}
+
+h3{
+    margin: 0;
+}
+
+.h3{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    padding-top: 32px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.main-header{
+    width: 550px;
+    height: 285px;
+    background: #6943FF;
+}
+
+.group1{
+    background: white;
+    width: 500px;
+    height: 108.57px;
+    margin: 36px 25px 23px 25px;
+}
+
+.group2{
+    background: white;
+    width: 500px;
+    height: 108.57px;
+    margin: 23px 25px 23px 25px;
+}
+
+.group3{
+    background: white;
+    width: 500px;
+    height: 108.57px;
+    margin: 23px 25px 36px 25px;
+}
+
+#input-text {
+
+    box-sizing: border-box;
+    width: 200px;
+    height: 83px;
+    margin: 25px 177px 0 177px;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    background: #6943FF;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 67px;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+#convert-btn {
+    width: 117px;
+    height: 42px;
+    margin-top:26px;
+    margin-left: 218px;
+    margin-right: 217px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D3D3D;
+}
+
+h5{
+    margin: 0;
+}
+
+.heading-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #5A537B;
+    padding-top: 31px;
+}
+
+#supporting-text-1,#supporting-text-2,#supporting-text-3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #353535;
+    padding-top:9px;
+}
