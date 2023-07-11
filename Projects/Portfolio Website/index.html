@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Name - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Amrit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Educaional Qualification</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <br><span class="text-purple">Amrit</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Visit GitHub</button>
+                    <button class="btn">Download Resume</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png" alt="Developer">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-text">
+                        Web Developer (2020-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Short description about your work
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">
+                        Graphic Designer (2020-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Short description about your work
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="android.png" alt="">
+                    <div class="vertical-text">
+                        Android Developer (2022-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Short description about your work
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>THANKS FOR VISITING</li>
+                    <br><br>
+                    <li><a href="\">CONTACT ME</a></li>
+            </div>
+            <div class="footer-rights">
+                xyzportfolio.com | ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Android Developer', 'Open Source Contributer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
