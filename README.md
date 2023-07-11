@@ -28,8 +28,6 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/TusharKesarwani/Front-End-Projects)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/TusharKesarwani/Front-End-Projects)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TusharKesarwani/Front-End-Projects)
- </p>
- </p>
  </div>
 </div>
  
