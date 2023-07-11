@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/43/43548.png" type="image/x-icon">
 
     <!-- Title of the website -->
-    <title>Lets practice</title>
+    <title>Let's practice</title>
 </head>
 
 <body>
@@ -46,27 +46,35 @@
     <!-- Script of division problems -->
     <script>
         var n1, n2, userrem = 0, userqou;
+        var correct = new Audio("./correct.wav");
+        var wrong = new Audio("./wrong.wav");
         n1 = Math.floor(Math.random() * 100 + 1);
         n2 = Math.floor(Math.random() * 10 + 1);
 
-        console.log(n1, n2);
+        document.getElementById('r').addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                jsGame();
+            }
+        });
 
         document.getElementById('v1').value = n1;
         document.getElementById('v2').value = n2;
 
         var quo = Math.floor(n1 / n2);
         var rem = n1 % n2;
+
         async function jsGame() {
             var userqou = document.getElementById("q").value;
-            console.log(userqou);
+            
             var userrem = document.getElementById("r").value;
-            console.log(userrem);
 
             if (userqou == quo && userrem == rem) {
-                alert('Well Done! Your answer is correct. ');
+                correct.play();
+                alert('Well Done! Your answer is correct.');
             }
             else {
-                alert("Correct quotient is " + quo + " remainder is" + rem + ". Try again. ");
+                wrong.play();
+                alert(`Correct quotient is ${quo} and remainder is ${rem}.\nTry again.`);
             }
             history.go(0);
         }

@@ -15,7 +15,7 @@
         type="image/x-icon">
 
     <!-- Title of the webpage -->
-    <title>Lets practice</title>
+    <title>Let's practice</title>
 </head>
 
 <body>
@@ -45,12 +45,18 @@
     <!-- Script of subtraction problems -->
     <script>
         var n1, n2, min, max;
+        var correct = new Audio("./correct.wav");
+        var wrong = new Audio("./wrong.wav");
         min = Math.ceil(50);
         max = Math.floor(100);
         n1 = Math.floor(Math.random() * (max - min) + min);
         n2 = Math.floor(Math.random() * 50 + 1);
 
-        console.log(n1, n2);
+        document.getElementById('answer').addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                jsGame();
+            }
+        });
 
         document.getElementById('v1').value = n1;
         document.getElementById('v2').value = n2;
@@ -58,13 +64,14 @@
         var ans = n1 - n2;
         async function jsGame() {
             var userans = document.getElementById("answer").value;
-            console.log(userans);
 
             if (userans == ans) {
-                alert('Well Done! Your answer is correct. ');
+                correct.play();
+                alert('Well Done! Your answer is correct.');
             }
             else {
-                alert("Correct answer is " + ans + ". Try again. ");
+                wrong.play();
+                alert(`Correct answer is ${ans}.\nTry again.`);
             }
             history.go(0);
         }
