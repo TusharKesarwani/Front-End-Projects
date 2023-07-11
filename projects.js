@@ -1031,12 +1031,21 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
         "project-link":"Projects/Solar%20System%20Model/index.html"
     },
+    {
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Sound_Equalizer.png",
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Amazon Prime Website Clone",
+        "tags":["HTML","CSS"],
+        "img":"img/projects/Amazon_Prime-Clone.png",
+        "description":"This project is the clone of Amazon Prime Login Page. It is built using HTML and CSS. It is a responsive and beginner friendly website.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Amazon_Prime-Clone",
+        "project-link":"Projects/Amazon_Prime-Clone/index.html"
     }
 ]
 
