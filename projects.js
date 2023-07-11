@@ -1031,12 +1031,21 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
         "project-link":"Projects/Solar%20System%20Model/index.html"
     },
+    {
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Sound_Equalizer.png",
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Distance Convertor",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Distance_Convertor.png",
+        "description":"This project can convert one unit of length to the other units. It is built using HTML, CSS and JavaScript. It is a responsive and a beginner friendly website.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Distance_Convertor",
+        "project-link":"Projects/Distance_Convertor/index.html"
     }
 ]
 
