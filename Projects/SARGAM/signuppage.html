@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<style>
+    *,
+    *:before,
+    *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(SARGAM\ \(2\).png);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    form { 
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.13); 
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        padding: 50px 35px;
+    }
+    
+    form {
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+    
+    form h3 {
+        color: aqua;
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    input {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.07);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    ::placeholder {
+        color: aqua;
+    }
+    
+    button {
+        margin-top: 40px;
+        width: 100%;
+        background-color: #ffffff;
+        color: #080710;
+        padding: 15px 0;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .credit a {
+        text-decoration: none;
+        font-weight: 800;
+        color: #00c3e2;
+    }
+
+    .credit {
+        margin: 10px;
+    }
+
+    .signup__error {
+        color: red;
+        margin-top: 0.4em;
+    }
+
+    form h4 {
+        text-align: center;
+        font-size: 18px;
+        padding-top: 20px;
+        color: aqua;
+    }
+
+    form img {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            position: relative;  
+            margin: 10px 28px;
+        }
+        
+        </style>
+
+<body>
+    <div class="background"> </div>
+    <form name="signup" onsubmit="return false;">
+        <h3>SIGN UP</h3>
+        <label for="signup__email"></label>
+        <input id="signup__email" placeholder="Email" name="email" type="email" required>
+        <label for="password"></label>
+        <input type="password" id="signup__password" placeholder="Password" name="password" required>
+        <label for="cpassword"></label>
+        <input type="password" id="signup__cpassword" placeholder="Confirm Password" name="cpassword" required onkeyup="handlePassword()">
+        <p id="signup__error" class="signup__error"></p>
+        <button id="submit" type="submit" name="submit" value="submit" formaction="http://127.0.0.1:5500/websites.html/SARGAM/SARGAM.html">Sign Up</button>
+        <h4>Sign Up with</h4>
+        <img src="googlelogo.png" alt="error">
+        <img src="Facebooklogo.png" alt="error">
+        <img src="Microsoftlogo.png" alt="error">
+    </form>
+    
+    <script src="SARGAM.js"></script>
+</body>
+</html>

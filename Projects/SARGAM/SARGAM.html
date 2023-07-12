@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARGAM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav {
+            background-color: black;
+            height: 130px;
+            width: 100%;
+        }
+
+        .nav .logo {
+            padding-left: 10px;
+            width: 60px;
+            height: 40px;
+            padding-top: 10px;
+            justify-content: space-between;
+        }
+
+        .menubar {
+            padding-top: 2px;
+            width: 40%;
+            margin-left: 10px;
+            padding-left: 730px;
+        }
+
+
+        .tag {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+        }
+
+        .list a {
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+
+        .list a:hover {
+            color: green;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        button {
+            height: 50px;
+            text-align: center;
+            background-color: blue;
+            font-size: 20px;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 1;
+            color: green;
+        }
+
+
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        .container {
+            padding: 60px;
+            height: 400px;
+        }
+
+        .container img {
+            padding-left: 270px;
+            height: 100px;
+            width: 300px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(245, 187, 187);
+            padding-top: 2px;
+        }
+
+        .modal-content {
+            background-color: black;
+            color: white;
+            margin: 5% auto 15% auto;
+            border: 1px solid #888;
+            width: 70%;
+        }
+
+        hr {
+            border: 2px solid blue;
+            margin-bottom: 15px;
+        }
+
+        .close {
+            position: absolute;
+            right: 150px;
+            top: 50px;
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #f44336;
+            cursor: pointer;
+        }
+
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .media {
+            float: center;
+            padding-left: 360px;
+        }
+
+        .media img {
+            display: inline-block;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+        }
+
+
+        .box1 {
+            /* background: url("BGIMG.png") no-repeat center;
+            background-size: cover;
+            height: 100%; */
+            background: linear-gradient(to bottom, #420232 0%, #92227a 90%);
+            height: 70vh;
+            color: aliceblue;
+            padding-left: 80px;
+            padding-top: 80px;
+        }
+
+        .box1 h1 {
+            font-size: 50px;
+        }
+
+        .box1 h3 {
+            padding-top: 70px;
+        }
+
+        .box1 h4 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .box1 h5 {
+            padding-top: 200px;
+            font-size: 15px;
+        }
+
+        .box1 .box2 {
+            background-color: black;
+            border-radius: 90px;
+            height: 40px;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            display: inline-flex;
+        }
+
+        .box1 .box2 a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            padding-left: 25px;
+            padding-top: 10px;
+        }
+
+        .box1 .box3 {
+            background-color: black;
+            border-color: white;
+            border-radius: 90px;
+            display: flex;
+            float: right;
+            margin-right: 800px;
+            padding-top: 5px;
+            height: 55px;
+            width: 200px;
+        }
+
+        .box1 .box3 a {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            padding-left: 53px;
+            padding-top: 14px;
+            color: white;
+        }
+
+        .box1 h5 {
+            padding-top: 70px;
+            text-decoration: none;
+        }
+
+        .box1 a {
+            color: black;
+        }
+
+        .box4 {
+            height: 700px;
+            background-color: #438da0;
+        }
+
+        .box4 h1 {
+            text-align: center;
+            padding: 60px;
+            font-size: 40px;
+        }
+
+        .box4 .box5 {
+            position: relative;
+            left: 100px;
+
+        }
+
+        .box4 .content {
+            /* padding-left: 40px; */
+            position: relative;
+            left: 105px;
+            font-size: 30px;
+        }
+
+        .box4 .box6 {
+            position: relative;
+            bottom: 600px;
+            left: 530px;
+            padding-top: 300px;
+        }
+
+        .box4 .content1 {
+            position: relative;
+            left: 530px;
+            bottom: 620px;
+            font-size: 30px;
+        }
+
+        .box4 .box7 {
+            position: relative;
+            left: 1000px;
+            bottom: 900px;
+
+        }
+
+        .box4 .content2 {
+            position: relative;
+            left: 1000px;
+            bottom: 900px;
+            font-size: 30px;
+        }
+
+        /* .box5 img {
+            border-radius: 50%;
+        }
+
+        .box6 img {
+            border-radius: 50%;
+            height: 220px;
+            width: 220px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .box7 img {
+            border-radius: 50%;
+            height: 220px;
+            width: 220px;
+            margin-top: 20px;
+        } */
+
+        .row {
+            display: flex;
+            padding-top: 50px;
+            padding-left: 180px;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 15px;
+        }
+
+        .column img {
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .column h2 {
+            padding-top: 30px;
+            padding-left: 13px;
+            font-size: 25px;
+        }
+
+        .footer {
+            background-color: rgb(238, 187, 120);
+            text-align: center;
+            padding-top: 10px;
+            height: 350px;
+            font-size: 40px;
+        }
+
+        .footer h4 {
+            text-align: top;
+            padding: 40px;
+        }
+
+        .footer .pay {
+            position: relative;
+            top: 30px;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgb(238, 187, 120);
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            column-gap: 50px;
+            justify-content: space-evenly;
+            height: 700px;
+        }
+
+        hr .line {
+            border: 10px solid red;
+        }
+
+
+        .grid-container .grid1 {
+            background-color: rgb(250, 241, 241);
+            padding: 20px;
+            text-align: left;
+            border-radius: 10px;
+            height: 600px;
+        }
+
+
+        .grid-container .grid2 {
+            background-color: rgb(250, 241, 241);
+            padding: 20px;
+            text-align: left;
+            border-radius: 10px;
+            height: 600px;
+        }
+
+
+        .grid-container .grid3 {
+            background-color: rgb(250, 241, 241);
+            padding: 20px;
+            text-align: left;
+            border-radius: 10px;
+            height: 600px;
+        }
+
+
+        .smallbox {
+            background-color: blue;
+            border-radius: 10px;
+            border-color: black;
+            padding-top: 8px;
+            width: 40%;
+            height: 5%;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+
+
+        ul {
+            list-style: none;
+            font-size: 18px;
+        }
+
+
+        .list ul li:before {
+            content: '✓';
+        }
+
+
+        .sbox {
+            background-color: black;
+            color: white;
+            height: 40px;
+            text-align: center;
+            padding-top: 20px;
+            padding-left: 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .sbox a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .last {
+            height: 500px;
+            background-color: black;
+        }
+
+
+        .last .logo1 {
+            /* position: relative; */
+            padding-left: 30px;
+            padding-top: 40px;
+        }
+
+
+        .sin ul,
+        .sin ul li {
+            color: gray;
+            font-size: 20px;
+            display: inline-block;
+            margin: 15px;
+            padding-left: 130px;
+            margin-top: 2px;
+        }
+
+
+        .cos {
+            float: center;
+            padding-left: 170px;
+        }
+
+
+        .cos ul,
+        .cos ul li {
+            color: white;
+            font-size: 20px;
+            font-weight: lighter;
+            display: inline-block;
+            margin: 5px;
+            min-width: 100px;
+            padding-left: 60px;
+        }
+
+
+        .tan ul,
+        .tan ul li {
+            color: gray;
+            display: inline-block;
+            padding-left: 80px;
+            font-size: 15px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"><img src="SARGAM (2).png" alt="error" height="120px" width="250px"></div>
+        <div class="menubar">
+            <ul class="tag">
+                <li class="list"><a href="#Premium">Premium</a></li>
+                <li class="list"><a href="http://127.0.0.1:5500/websites.html/SARGAM/support.html">Support</a></li>
+                <li class="list"><a href="#">Download</a></li>
+                <li class="list"><a href="#">|</a></li>
+                <li class="list"><a href="http://127.0.0.1:5500/signuppage.html">Sign Up</a></li>
+                <li class="list" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a
+                        href="#">Log In</a></li>
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <img src="SARGAM (2).png" alt="error">
+                            <hr>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                Remember me
+                            </label><br><br>
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                    Privacy</a>.</p><br>
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <button type="submit" class="signupbtn">Log In</button>
+                            </div>
+                        </div><br><br>
+                        <div class="media"><img src="Facebooklogo.png" alt="error">
+                            <img src="googlelogo.png" alt="error">
+                            <img src="Microsoftlogo.png" alt="error">
+                        </div>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <!--  Main Page Starts -->
+
+    <div class="box1">
+        <h1>Free one Month Premium</h1><br><br><br>
+        <h4>Start listening to ad-free music and offline, free for first one month. Cancel anytime.</h4>
+        <br><br><br>
+        <div class="box2"><a href="http://127.0.0.1:5500/signuppage.html">GET 1 MONTH FREE</a>
+        </div>
+        <div class="box3">
+            <a href="#Premium">View Plans</a>
+        </div>
+        <h3><a href="Terms and conditions apply.">Terms and conditions apply.</a> 1 month free not available for users
+            who have already tried Premium.</h3>
+    </div>
+    <div class="box4">
+        <h1>Why go Premium?</h1>
+        <div class="row">
+            <div class="column">
+                <img src="images (1).png" alt="error" style="width:60%">
+                <h2>Download Music<br>Listen Anywhere</h2>
+            </div>
+            <div class="column">
+                <img src="box6(1).png" alt="error" style="width:60%">
+                <h2>Ad-free Music listening<br>Enjoy Non-stop Music</h2>
+            </div>
+            <div class="column">
+                <img src="images (2).png" alt="error" style="width:60%">
+                <h2>Play any song<br> Even on mobile</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Starts -->
+
+    <div class="footer" id="Premium">
+        <h4>Pick your Premium</h4>
+        <h6>Listen without limits on your phone, Laptop and other devices.</h6>
+        <div class="pay"><img src="images (3).png" alt="error"></div>
+    </div>
+    <div class="grid-container">
+        <div class="grid1">
+            <div class="smallbox">
+                <h5>1 month free</h5>
+            </div><br>
+            <h2>Personal</h2><br>
+            <h3>&#8377;100/month after offer period, 1 account </h3><br><br>
+            <hr class="line"><br>
+            <div class="list">
+                <ul>
+                    <li> Ad-free music listening. </li><br>
+                    <li> Play anywhere - even offline. </li><br>
+                    <li> On-demand playback. </li><br>
+                </ul><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="sbox"><a href="http://127.0.0.1:5500/signuppage.html">GET STARTED</a>
+            </div><br>
+            <h4><a href="Terms and conditions apply.">Terms and conditions apply.</a>1 month free not available for
+                users who have already tried Premium.</h4>
+        </div>
+        <div class="grid2">
+            <div class="smallbox">
+                <h5>1 month free</h5>
+            </div><br>
+            <h2>Duo</h2><br>
+            <h3>&#8377;200/month after offer period upto 2 accounts</h3><br>
+            <hr class="line"><br>
+            <div class="list">
+                <ul>
+                    <li> 2 Premium accounts for a couple under one roof. </li><br>
+                    <li> Download thousands of songs and listen anywhere, anytime.</li><br><br>
+                </ul><br><br><br><br><br><br><br>
+            </div>
+            <div class="sbox"><a href="http://127.0.0.1:5500/signuppage.html">GET STARTED</a>
+            </div><br>
+            <h4><a href="Terms and conditions apply.">Terms and conditions apply.</a>1 month free not available for
+                users who have already tried Premium.</h4>
+        </div>
+        <div class="grid3">
+            <div class="smallbox">
+                <h5>1 month free</h5>
+            </div><br>
+            <h2>Family</h2><br>
+            <h3>&#8377;400/month after offer period Up to 6 accounts</h3><br>
+            <hr class="line"><br>
+            <div class="list">
+                <ul>
+                    <li> 6 Premium accounts for family members living under one roof. </li><br>
+                    <li> Parental Control for the kids account.</li><br>
+                    <li> Ad-free music listening, play offline, on-demand playback. </li><br>
+                    <li> SARGAM Kids: a separate app made just for kids. </li>
+                </ul><br><br><br>
+            </div>
+            <div class="sbox"><a href="http://127.0.0.1:5500/signuppage.html">GET STARTED</a></div>
+            <br>
+            <h4><a href="Terms and conditions apply.">Terms and conditions apply.</a>1 month free not available for
+                users who have already tried Premium.</h4>
+        </div>
+    </div>
+
+    <!-- Last Page Starts -->
+
+    <div class="last">
+        <div class="logo1"><img src="SARGAM (2).png" alt="error" height="100px" width="200px"></div>
+        <div class="sin">
+            <ul>
+                <li> Company </li>
+                <li> Communities</li>
+                <li> Useful Links </li>
+            </ul>
+        </div>
+        <div class="cos">
+            <ul>
+                <li>About</li><br><br>
+                <li> For Artists </li><br><br>
+                <li> Support </li><br><br>
+            </ul>
+            <ul>
+                <li>Jobs</li><br><br>
+                <li>Developers</li><br><br>
+                <li>Web Player </li><br><br>
+            </ul>
+            <ul>
+                <li>Vendors</li><br><br>
+                <li>Advertising</li><br><br>
+                <li>investors</li><br><br>
+            </ul>
+        </div><br><br>
+        <div class="tan">
+            <ul>
+                <li> Legal</li>
+                <li>Privacy Center</li>
+                <li>Cookie Settings</li>
+                <li>About Ads</li>
+                <li>Modern Slavery Acts</li>
+                <li>Tax Policy</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="SARGAM.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Gateway</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("nasa-Q1p7bh3SHj8-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: 1500px 800px;
+    }
+
+    .container {
+      max-width: 400px;
+      height: 580px;
+      margin: 40px auto;
+      padding-left: 40px;
+      padding-right: 50px;
+      border: 5px solid #111111;
+      border-radius: 5px;
+      background-color: rgb(92, 120, 151);
+    }
+
+    h2 {
+      text-align: center;
+      font-size:30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-group button {
+      display: block;
+      margin-top: 40px;
+      width: 105%;
+      padding: 14px;
+      background-color: #1352b1;
+      color: white;
+      border-color: black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+
+    .pay img {
+      height: 90px;
+      padding-left: 50px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Checkout Page</h2>
+    <form id="payment-form">
+      <div class="form-group">
+        <label for="name">Cardholder Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" required>
+      </div>
+      <div class="form-group" id="expiry-date" required>
+        <label for="expiry-date">Expiry Date</label>
+        <select>
+          <option value="01">January</option>
+          <option value="02">February </option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+      </select>
+      <select>
+          <option value="16"> 2023</option>
+          <option value="17"> 2024</option>
+          <option value="18"> 2025</option>
+          <option value="19"> 2026</option>
+          <option value="20"> 2027</option>
+          <option value="21"> 2028</option>
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit Payment</button>
+      </div>
+      <div class="pay">
+        <img src="images (3).png" alt="error">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Handle form submission
+    document.getElementById('payment-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      var name = document.getElementById('name').value;
+      var cardNumber = document.getElementById('card-number').value;
+      var expiryDate = document.getElementById('expiry-date').value;
+      var cvv = document.getElementById('cvv').value;
+
+      var paymentInfo = {
+        name: name,
+        cardNumber: cardNumber,
+        expiryDate: expiryDate,
+        cvv: cvv
+      };
+
+      alert(JSON.stringify(paymentInfo));
+    });
+  </script>
+</body>
+</html>
