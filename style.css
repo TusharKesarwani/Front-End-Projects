@@ -523,3 +523,9 @@ footer a {
     padding: 2rem 1rem;
   }
 }
+
+@media (max-width:818px) and (min-width:768px){
+  body{
+    width:107%;
+  }
+}
