@@ -26,6 +26,7 @@ body {
   
   .form-label {
 	font-size: larger;
+	font-weight: bolder;
   }
   
   .form-control {

@@ -11,6 +11,11 @@ function calculateTip() {
         alert("Please enter bill amount.");
         return;
     }
+    if(billAmount<0)
+    {
+        alert("Please enter positive bill amount");
+        return;
+    }
 
     // Calculate the total tip.
     function tipCalc() {
