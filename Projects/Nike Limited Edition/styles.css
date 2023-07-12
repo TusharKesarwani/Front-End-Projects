@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@300;700&family=Josefin+Sans&family=Lato:ital,wght@1,100&family=Lobster&family=Montserrat&family=Noto+Sans:wght@100&family=Oswald:wght@500;600&family=Pacifico&family=Righteous&family=Roboto+Mono:wght@500;600&family=Rubik:wght@600&family=Short+Stack&family=Staatliches&family=Tilt+Prism&family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@300;700&family=Josefin+Sans&family=Lato:ital,wght@1,100&family=Lobster&family=Montserrat&family=Noto+Sans:wght@100&family=Nunito:wght@300&family=Oswald:wght@500;600&family=Pacifico&family=Rajdhani:wght@500&family=Righteous&family=Roboto+Mono:wght@500;600&family=Rubik:wght@600&family=Short+Stack&family=Staatliches&family=Tilt+Prism&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+
+#nav{
+    height: 70px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#nav-part-1 img{
+    width: 125px;
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+#nav-part-1 h4{
+    margin-right: 60px;
+    text-transform: uppercase;
+    font-family: 'Geologica', sans-serif;
+}
+
+#nav-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-part-2 img{
+    width: 35px;
+}
+
+#nav-part-2 img{
+    margin-right: 30px;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 121px);
+    display: flex;
+    position: absolute;
+}
+
+#left{
+    width: 40%;
+    height: 100%;
+    background-color: #D0D4D5;
+    padding: 4%;
+}
+
+#left h5{
+    color: #636464;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#left h1{
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3px;
+    font-size: 60px;
+    line-height: 60px;
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+}
+
+#left p{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5c5c5c;
+    /* line-gap-override: 100px; */
+    font-weight: 100;
+}
+
+#left-btn{
+    background-color: black;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 70px;
+    font-size:smaller;
+    border-top-left-radius: 0px;
+    /* text-transform: uppercase; */
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+
+#right{
+    width: 65%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+    top: 9%;
+    white-space: nowrap;
+    overflow-x:  auto;
+    /* overflow-x: scroll; */
+    /* background-image: url(Images/nike-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+}
+
+#right::-webkit-scrollbar {
+    display:none;
+    scrollbar-width: 100px;
+    scroll-behavior: auto;
+}
+
+
+.elem{
+    height: 350px;
+    width: 300px;
+    position: relative;
+    border-radius: 10px;
+    /* border-bottom-right-radius: 5px; */
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.603);
+    margin-right: 20px;
+    display: inline-block;
+    /* margin-left: 2px; */
+    
+}
+
+.elem img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0%;    
+    border-radius: 7px;
+}
+
+.elem h4{
+    position: absolute;
+    background-color: #D0D4D5;
+    color: black;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    bottom: 0%;
+    right: 0%;
+    border-radius: 7px;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.elem h5{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    bottom: 12%;
+    right: 0%;
+    font-size: 18px;
+    border-radius: 7px;
+    font-weight: 600;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+/* .elem2{
+    border-radius: 10px;
+    position: relative;
+}
+.elem2 img{
+    
+} */
+
+/* .elem2 h5{
+    color: #EDA741;
+} */
+
