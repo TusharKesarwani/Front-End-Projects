@@ -16,20 +16,25 @@ body {
 /* navbar start */
 
 .topnav {
+  display: flex;
   background-color: black;
   overflow: hidden;
   width: 100%;
+  height: 70px;
+  align-items: center;
 }
 
 .topnav a {
   float: left;
-  display: block;
+  display: flex;
   color: #f2f2f2;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 14px 0;
   text-decoration: none;
   font-size: 17px;
-  width: 25%;
+  width: 20%;
+  flex-direction: column;
 }
 
 .topnav a:hover {
@@ -75,7 +80,6 @@ body {
     text-align: center;
   }
 }
-
 /* navbar end */
 
 /*villa-start*/
@@ -193,6 +197,116 @@ img {
 }
 
 /*slider end*/
+
+/*Footer*/
+
+#footerinfo{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.footercontainer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 130px;
+}
+
+.lastfoot ul{
+  margin-top: 25px;
+}
+
+.lastfoot p{
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.handles{
+  margin-top: 25px;
+}
+
+#footerinfo .bg1{
+  position: absolute;
+  right: 0;
+  border-radius: 800px;
+  height: 100px;
+  width: 100px;
+  margin: 190px 2px;
+}
+
+#footerinfo .bg2{
+  position: absolute;
+  right: 0;
+  border-radius: 800px;
+  height: 30px;
+  width: 30px;
+  margin: 145px 15px;
+}
+#footerinfo .bg3{
+  position: absolute;
+  right: 0;
+  border: solid;
+  border-color: white;
+  border-radius: 800px;
+  height: 15px;
+  width: 15px;
+  margin: 120px 50px;
+}
+
+#footerinfo .bg2left{
+  position: absolute;
+  left: 0;
+  border-radius: 800px;
+  height: 30px;
+  width: 30px;
+  margin: 10px 20px;
+}
+#footerinfo .bg3left{
+  position: absolute;
+  left: 0;
+  border: solid;
+  border-color: white;
+  border-radius: 800px;
+  height: 15px;
+  width: 15px;
+  margin: 50px 50px;
+}
+
+.copy{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 767px){
+  #footerinfo .bg1{
+    display: none;
+  }
+
+  #footerinfo .bg2{
+    display: none;
+  }
+  #footerinfo .bg3{
+    display: none;
+  }
+
+  #footerinfo .bg2left{
+    display: none;
+  }
+
+  #footerinfo .bg3left{
+    display: none;
+  }
+
+  .lastfoot{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
 
 /*reviews start*/
 .review {

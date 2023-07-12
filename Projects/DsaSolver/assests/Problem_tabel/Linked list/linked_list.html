@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked_list</title>
+    <style>
+        *{
+            background-color:lightblue;
+        }
+        table, th, td {
+            border:1px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center; color: green;">Linked List</h1>
+<h2>Linked List Theory</h2>
+<h4><a href="https://www.geeksforgeeks.org/data-structures/linked-list/">Linked List</a></h4>
+<h2>Linked List Question Tabels</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>SNo</th>
+    <th>Problem</th>
+    <th>Types</th>
+    <th>link</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Convert Binary Number in a Linked List to Integer</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Reverse Linked List</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/reverse-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>Middle of the Linked List</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/middle-of-the-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td>Merge Two Sorted Lists</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/merge-two-sorted-lists/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td>Delete Node in a Linked List</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/delete-node-in-a-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>06</td>
+    <td>Palindrome Linked List</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/palindrome-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td>Intersection of Two Linked Lists</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/intersection-of-two-linked-lists/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td>Linked List Cycle</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/linked-list-cycle/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td>Remove Duplicates from Sorted List</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Find All Numbers Disappeared in an Array</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Remove Linked List Elements</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/remove-linked-list-elements/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Design Twitter</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/design-twitter/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Design Linked List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/design-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Reverse Linked List II</td>
+    <td>Medium</td>
+    <td><button><a href="hhttps://leetcode.com/problems/reverse-linked-list-ii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Reorder List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/reorder-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Remove Nth Node From End of List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Swapping Nodes in a Linked List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/swapping-nodes-in-a-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Add Two Numbers</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/add-two-numbers/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Add Two Numbers II</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/add-two-numbers-ii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Linked List Cycle II</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/linked-list-cycle-ii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Flatten a Multilevel Doubly Linked List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Rotate List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/rotate-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Copy List with Random Pointer</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/copy-list-with-random-pointer/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>LRU Cache</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/lru-cache/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Remove Duplicates from Sorted List II</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/reshape-the-matrix/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Partition list</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/partition-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Find first node of loop in a linked list</td>
+    <td>Medium</td>
+    <td><button><a href="https://www.geeksforgeeks.org/find-first-node-of-loop-in-a-linked-list/">GFG</a></button></td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Swap Nodes in Pairs</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/swap-nodes-in-pairs/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Remove Zero Sum Consecutive Nodes from Linked List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Insertion Sort List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/insertion-sort-list/">Leetcode</a></button></td>
+  </tr><tr>
+    <td>31</td>
+    <td>Reverse Nodes in Even Length Groups</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/reverse-nodes-in-even-length-groups/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Linked List Random Node</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/linked-list-random-node/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Sort List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/sort-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Merge In Between Linked Lists</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/merge-in-between-linked-lists/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Design Browser History</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/design-browser-history/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Delete the Middle Node of a Linked List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Next Greater Node In Linked List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/next-greater-node-in-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Odd Even Linked List</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/odd-even-linked-list/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Linked List Random Node</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/linked-list-random-node/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Split Linked List in Parts</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/split-linked-list-in-parts/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Find the Minimum and Maximum Number of Nodes Between Critical Points</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Reverse Nodes in k-Group</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/reverse-nodes-in-k-group/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>LFU Cache</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/lfu-cache/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Merge k Sorted Lists</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/merge-k-sorted-lists/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Clone a linked list with next and random pointer</td>
+    <td>Hard</td>
+    <td><button><a href="https://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>All O'one Data Structure</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/all-oone-data-structure/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Design Skiplist</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/design-skiplist/">Leetcode</a></button></td>
+  </tr>
+</table>
+
+</body>
+</html>

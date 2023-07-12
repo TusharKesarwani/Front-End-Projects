@@ -5,23 +5,20 @@
     font-family: "roboto";
 }
 
-
-
 html,body{
     height: 100%;
 }
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-image: url('images/background.avif');
 }
 
 h2 {
-    position: absolute;
     top: 0;
-    padding-top: 100px;
     color: rgba(9, 6, 6, 0.567);
     font-size: 80px;
     text-align: center;
@@ -29,24 +26,18 @@ h2 {
     
   }
 
-
 img{
     size:48px;
     margin-right: 1.2rem;
 }
 
-label{
-    position: relative;
-}
-
-label input{
+ input{
     font-size: 1.5rem;
     padding: 1rem ;
     border-radius: 0.2rem;
     height: 60px;
     width: 350px;
 }
-
 
 input[type='button']:hover{
     cursor: pointer;
@@ -57,5 +48,11 @@ input[type='button']:hover{
     border-style: solid;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.368);
     font-family: roboto;
-    margin-top: 100px;
+}
+
+@media(max-width:373px)
+{
+    body{
+        width:fit-content;
+    }
 }
