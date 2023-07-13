@@ -16,6 +16,11 @@
                 font-family: "Jost", sans-serif;
                 background-color: #d5f1f5;
             }
+            .col-6{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
     
             .form__field {
                 font-family: "Jost", sans-serif;
@@ -75,6 +80,9 @@
                 padding: 20px;
                 font-weight: 800;
                 color: hsl(229, 84%, 12%);
+            }
+            p{
+                margin:0px;
             }
         </style>
 </head>
@@ -191,7 +199,7 @@
             </select>
             <input type="number" id="curconin" class="form__field1" placeholder="Enter Side" value="0" ; oninput="curcon();">
             <h5>To</h5>
-            <select id="curcon-2" class="form__field1" onchange="curcon()">
+            <select id="curcon-2" class="form__field" onchange="curcon()">
                 <option value="USD" class="form_field" style="background-color:var(--appblack);">USD
                 </option>
                 <option value="AED" class="form_field" style="background-color:var(--appblack);">AED
@@ -297,9 +305,9 @@
                 <option value="ZAR" class="form_field" style="background-color:var(--appblack);">ZAR
                 </option>
             </select>
-            <label>
-                <p id="curconou">0</p>
-            </label>
+            
+                <p id="curconou" class="form__field1">0</p>
+            
         </div>
     </div>
 
