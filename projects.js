@@ -1031,13 +1031,20 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
         "project-link":"Projects/Solar%20System%20Model/index.html"
     },
-        "title":"Sound Equalizer",
+    {    "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Sound_Equalizer.png",
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
-    }
+    },
+    {    "title":"Carbon FootPrint Calculator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/carbonFooCalc.png",
+        "description":"Carbon FootPrint Calculator is an Eco-Friendly Calculator to help you keep your carbon emissions in check and help save the environment, built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
+        "project-link":"Projects/Sound_Equalizer/index.html"
+    },
 ]
 
 export default projects;
