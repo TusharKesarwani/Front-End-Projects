@@ -15,9 +15,33 @@ body {
   background-color: white;
 }
 
+#progress{
+  cursor: pointer;
+  position:fixed;
+  right:10px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  z-index:111111;
+  display:none;
+  place-items: center;
+  border-radius:50%;
+  box-shadow:0 0 10px rgba(0, 0, 0,0.5);
+}
+#progress #progress-value{
+  display:block;
+  width:calc(100% - 10px);
+  height:calc(100% - 10px);
+  background-color:white;
+  border-radius:50%;
+  display:grid;
+  place-items: center;
+  font-size:25px;
+  color:#001a2e;
+}
+
 .container {
     max-width: 1280px;
-    /* border: 1px solid red; */
 }
 
 .flex {
@@ -332,9 +356,6 @@ main .left p {
     color: #0D4360;
     font-size: 3rem;
     position: absolute;
-    /* border: 1px solid red; */
-   
-    /* margin-top: -6rem; */
 }
 
 .contri-title::after {
@@ -470,9 +491,6 @@ footer a {
 
     .title, .contri-title {
         font-size: 2rem;
-    }
-    footer .container {
-        border: 1px solid red;
     }
     .github-btn {
         display: none;
