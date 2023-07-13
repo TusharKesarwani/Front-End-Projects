@@ -1040,10 +1040,10 @@ const projects = [
     },
     {    "title":"Carbon FootPrint Calculator",
         "tags":["HTML","CSS","JavaScript"],
-        "img":"img/projects/carbonFooCalc.png",
+        "img":"img/projects/carbonFootCalc.png",
         "description":"Carbon FootPrint Calculator is an Eco-Friendly Calculator to help you keep your carbon emissions in check and help save the environment, built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
-        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
-        "project-link":"Projects/Sound_Equalizer/index.html"
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Carbon-FootPrint-Calc",
+        "project-link":"Projects/Carbon-FootPrint-Calc/index.html"
     },
 ]
 
