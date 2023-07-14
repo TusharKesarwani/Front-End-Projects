@@ -1024,13 +1024,6 @@ const projects = [
         "project-link":"Projects/Playable_Piano/index.html"
     },
     {
-        "title":"Solar System Model",
-        "tags":["HTML","CSS","JavaScript"],
-        "img":"img/projects/Solar_System_Model.png",
-        "description":"Solar system model is the animated project using CSS. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device. Adding data of different solar bodies will makes this website more informative.",
-        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
-        "project-link":"Projects/Solar%20System%20Model/index.html"
-    },
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Sound_Equalizer.png",
