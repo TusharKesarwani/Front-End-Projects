@@ -1,0 +1,271 @@
+body {
+    font-family:  "PT sans","Cormorant Garamond",Crimson-Text;
+    background:url("./photos/wallpaperflare.com_wallpaper (8).jpg") no-repeat;
+    background-size:cover ;
+    /* display: flex; */
+}
+
+#content-box{
+    display:flex;
+    width: 600px;
+    height: 500px;
+    border: 10px solid rgb(28, 47, 53);
+    border-radius: 6px;
+    background-color: rgba(171, 4, 12, 0) ;
+    background: url("./photos/peakpx.jpg") no-repeat;
+    background-size: cover;
+    margin: 200px;
+    margin-top: 100px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0,0.3);
+
+}
+
+#pokemonInfo{
+    width: 400px;
+    height: 500px;
+    overflow-y: auto;
+    
+}
+
+#pokedescp{
+    width: 230px;
+    border: 2px solid rgb(90, 90, 90);
+    border-radius: 6px;
+    height: 150px;
+    margin-top: 7px;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    background-color: honeydew;
+    
+}
+
+
+#pokemonDiscription{
+    width: 200px;
+    height:500px;
+    background-color: rgb(12, 93, 66);
+}
+
+.search-container{
+    display:flex;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px ;
+    background-color:rgba(2, 22, 71, 0.512) ;
+    margin: 20px;
+    margin-top: 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.679);
+}   
+
+#search-input{
+    width: 430px;
+    background-color: rgba(169, 169, 169, 0.379);
+    border-radius: 20px ;
+    margin: 2px;
+}
+
+input::placeholder {
+    color: rgb(3, 0, 0);
+    font-style: italic;
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+#allNames{ 
+    /* display:flex; */
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 2px;
+    width: 300px;
+    height: 500px;
+    border: 10px solid rgba(2, 2, 59, 0.434);
+    border-radius: 6px;
+    background-color: rgba(21, 73, 152, 0.174) ;
+    
+    margin: 900px;
+    margin-top: -740px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.442);
+
+}
+
+
+.pokeName{
+    /* display: flex; */
+    width: 300px;
+    padding: 5px;
+    border: 2px solid rgba(0, 80, 199, 0.132);
+    border-radius: 2px;
+    background-color: rgba(111, 111, 111, 0.525);
+    font-size: medium;
+
+}
+
+
+#pokemonInfo img{
+    width: 350px;
+    height:390px ;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display:flexbox;
+    background-color: rgba(176, 176, 174, 0.408);
+}
+  
+#pokemonType{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Verdana', Courier, monospace;
+    font-weight: 100;
+}
+
+.type-box{
+    padding: 10px;
+    margin-left: 15px;
+    border: 2px solid darkgray;
+    border-radius: 7px;
+}
+
+.normal{
+    background-color: wheat;
+    color: black;
+}
+
+.fire{
+    background-color: orange;
+    color: white;
+}
+
+.grass{
+    background-color: green;
+    color: white;
+}
+
+.water{
+    background-color: blue;
+    color: white;
+}
+
+.flying{
+    background-color: skyblue;
+    color: black;
+}
+
+.bug{
+    background-color: yellowgreen;
+    color: white;
+}
+
+.ghost{
+    background-color: purple;
+    color: white;
+}
+
+.rock{
+    background-color: sienna;
+    color: white;
+}
+
+.ground{
+    background-color: burlywood;
+    color:black;
+}
+
+.steel{
+    background-color: silver;
+    color: black;
+}
+
+.poison{
+    background-color: #301934;
+    color: white;
+}
+
+.psychic{
+    background-color: rgb(255, 52, 120);
+    color: white;
+}
+
+.fairy{
+    background-color: pink;
+    color: black;
+}
+
+.dragon{
+    background-color: rgb(47, 23, 135);
+    color: white;
+}
+
+.electric{
+    background-color: rgb(255, 255, 0);
+    color: white;
+}
+
+.ice{
+    background-color: lightblue;
+    color: black;
+}
+
+.dark{
+    background-color: #301934;
+    color: white;
+}
+
+.fighting{
+    background-color: rgb(183, 27, 0);
+    color: white;
+}
+
+
+.search-container {
+    position: relative;
+    width: 320px;
+  }
+  
+  #search-results {
+    list-style-type: none;
+    overflow-y: auto;
+    padding: 0;
+    margin: 40px;
+    position: absolute;
+    width: 100%;
+    background-color: #b1b1b182;
+    border: 1px solid #3b3b3b85;
+    display: flexbox;
+    border-radius: 10px;
+}
+  
+  #search-results li {
+    padding: 14px;
+    border-bottom: 1px solid #dddddd47;
+  }
+  
+  #search-results li:last-child {
+    border-bottom: none;
+  }
+  
+  #search-results li:hover {
+    background-color: #787777;
+  }
+  
+#github{ 
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 180px;
+    height: 50px;
+    background-color: #ffffff8f;
+    border: 2px solid black;
+    border-radius: 55px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 70px;
+    margin-left: 750px;
+}
+#github img{
+    padding:6px;
+    margin-left: 7px;
+    width: 155px;
+    height: 37px;
+}
