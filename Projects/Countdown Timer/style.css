@@ -1,0 +1,85 @@
+body
+{
+    text-align: center;
+    color: white;
+}
+
+.heading
+{
+    margin-top: 3px;
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+.dateTime label
+{
+    font-size: 20px;
+    margin: 3px;
+    padding-bottom: 5px;
+}
+.dateTime input
+{
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px 7px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+button
+{
+    height: 23px;
+    width: 245px;
+    font-size:medium;
+    padding: 1px 3px;
+    margin: 15px 5px 3px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#stop, #reset{
+    height: 25px;
+    width: 150px;
+    padding: 1px 5px;
+}
+button:hover{
+    color: deeppink;
+    font-style: italic;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+.innerContainer
+{
+    margin: 25px 10px 10px 10px;
+}
+.innerContainer input
+{
+    height: 10vw;
+    width: 10vw;
+    color: white;
+    border-radius: 20rem;
+    background: transparent;
+    border: 1.5px solid black;
+    text-align: center;
+    font-size: 50px;
+}
+.name{
+    font-size: 15px;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .content {
+    position: fixed;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+  }
