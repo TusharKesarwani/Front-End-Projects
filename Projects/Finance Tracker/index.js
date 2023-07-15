@@ -25,6 +25,7 @@ function updateBalance() {
     const balance = transactions.reduce((acc, transaction) => {
       return transaction.type === "income" ? acc + transaction.amount : acc - transaction.amount;
     }, 0);
+<<<<<<< HEAD
 
     totalIncome = transactions.reduce((acc, transaction) => {
       return transaction.type === "income" ? acc + transaction.amount : acc;
@@ -34,6 +35,17 @@ function updateBalance() {
       return transaction.type === "expense" ? acc + transaction.amount : acc;
     }, 0);
 
+=======
+  
+    totalIncome = transactions.reduce((acc, transaction) => {
+      return transaction.type === "income" ? acc + transaction.amount : acc;
+    }, 0);
+  
+    totalExpense = transactions.reduce((acc, transaction) => {
+      return transaction.type === "expense" ? acc + transaction.amount : acc;
+    }, 0);
+  
+>>>>>>> a548c639afa0f1ac1cdb441c63180145b7acef31
     balanceAmount.textContent = balance.toFixed(2);
     incomeAmount.textContent = totalIncome.toFixed(2);
     expenseAmount.textContent = totalExpense.toFixed(2);
@@ -53,8 +65,13 @@ function addTransaction(event) {
         amount,
         type
     };
+<<<<<<< HEAD
 
 
+=======
+    
+    
+>>>>>>> a548c639afa0f1ac1cdb441c63180145b7acef31
     transactions.push(transaction);
     if(type==="income"){
         totalIncome+=amount;
@@ -84,7 +101,11 @@ function deleteTransaction(index) {
     updateTransactions();
     updateBalance();
     saveTransactions();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> a548c639afa0f1ac1cdb441c63180145b7acef31
 }
 
 // Function to save transactions to Local Storage
@@ -138,7 +159,11 @@ function editTransaction(index) {
             amount: updatedAmount,
             type: updatedType
           };
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> a548c639afa0f1ac1cdb441c63180145b7acef31
           if (transaction.type === "income") {
             totalIncome -= transaction.amount;
             totalIncome += updatedAmount;
@@ -146,13 +171,21 @@ function editTransaction(index) {
             totalExpense -= transaction.amount;
             totalExpense += updatedAmount;
           }
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> a548c639afa0f1ac1cdb441c63180145b7acef31
         transactions[index] = updatedTransaction;
         alert(`Transaction "${updatedTransaction.description}" updated successfully!`);
         updateTransactions();
         updateBalance();
         saveTransactions();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> a548c639afa0f1ac1cdb441c63180145b7acef31
     } else {
         alert("Invalid input! Please try again.");
     }
