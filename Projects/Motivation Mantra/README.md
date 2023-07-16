@@ -6,7 +6,7 @@ This project is built using:-
  - HTML5 (Structuring)  
  - CSS3 (Styling)  
  - JavaScript (Client Side Scripting)  
- - quotable (API)  
+ - Quotable (API)  
  - Git/GitHub (Version Control)  
  - Netlify (Hosting)  
  
