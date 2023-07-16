@@ -10,10 +10,4 @@ $(document).ready(function () {
 		responsive: true
 	}).data('plugin_pogoSlider');
 
-	var transitionDemoOpts = {
-		displayProgess: false,
-		generateNav: false,
-		generateButtons: false
-	}
-
 });

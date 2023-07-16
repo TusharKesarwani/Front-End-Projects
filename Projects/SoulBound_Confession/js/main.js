@@ -1,132 +1,117 @@
-(function($, window, document, undefined) {
+(function($, window, document) {
 
-    $.fn.slider = function() {
+    $.fn.slider = function(options) {
 
-        return this.each(function(options) {
+        return this.each(function() {
 
             var that = $(this);
 
             var defaults = {
                 start_timeout: 1000,
-                slide_animation : 1000,
-                speed_of_effects : 1.5,
-                delay_of_effects : 0.2
+                slide_animation: 1000,
+                speed_of_effects: 1.5,
+                delay_of_effects: 0.2
             };
 
-            var options = $.extend(defaults, options);
+            var settings = $.extend({}, defaults, options);
 
             var obj = {
-                slides : $(that).find('li'),
-                start : false,
-                clips_number : 8,
-                first_slide : function() {
+                slides: that.find('li'),
+                start: false,
+                clips_number: 8,
+                first_slide: function() {
                     return this.slides.eq(0);
                 },
-                start_clip_slide : function() {
+                start_clip_slide: function() {
                     return this.slides.eq(1);
                 },
-                loop : function loop(next_slide) {
+                loop: function(next_slide) {
 
-                        for (var i = 0; i < obj.clips_number; i++) {
+                    for (var i = 0; i < obj.clips_number; i++) {
 
-                            if(obj.start == false) {
-                                obj.start_clip_slide().css({
-                                    'zIndex': 1,
-                                    'display': 'block'
-                                });
-                            }
-
-                            var canvas_element = $('<canvas>').attr({
-                                id: 'canvasID_' + ( i + 1 ),
-                                class: 'canvasClass'
-                            }).attr({
-                                width: 100,
-                                height: 500
-                            }).css('left', 100 * i);
-
-                            if(obj.start == false) {
-                                canvas_element.appendTo(obj.start_clip_slide());
-                            } else {
-                                canvas_element.appendTo(next_slide);
-                            }
-
-                            var canvas = $('#canvasID_' + (i + 1))[0];
-
-                            var ctx = canvas.getContext('2d');
-                            ctx.mozImageSmoothingEnabled = false;
-                            ctx.webkitImageSmoothingEnabled = false;
-                            ctx.msImageSmoothingEnabled = false;
-                            ctx.imageSmoothingEnabled = false;
-
-                            var img = document.createElement('img');
-
-                            if(obj.start == false) {
-                                img_src = obj.start_clip_slide().find('img').attr('src');
-                            } else {
-                                img_src = next_slide.find('img').attr('src');
-                            }
-
-                            img.src = img_src;
-
-                            ctx.drawImage(img, 100 * i, 0, 100, 500, 0, 0, 100, 500);
-
+                        if (obj.start === false) {
+                            obj.start_clip_slide().css({
+                                'z-index': 1,
+                                'display': 'block'
+                            });
                         }
 
-                },
-                animation :  function animation() {
+                        var canvas_element = $('<canvas>').attr({
+                            id: 'canvasID_' + (i + 1),
+                            class: 'canvasClass'
+                        }).attr({
+                            width: 100,
+                            height: 500
+                        }).css('left', 100 * i);
 
-                    if(obj.start == false) {
+                        if (obj.start === false) {
+                            canvas_element.appendTo(obj.start_clip_slide());
+                        } else {
+                            canvas_element.appendTo(next_slide);
+                        }
+
+                        var canvas = document.getElementById('canvasID_' + (i + 1));
+                        var ctx = canvas.getContext('2d');
+                        ctx.imageSmoothingEnabled = false;
+
+                        var img = document.createElement('img');
+
+                        var img_src = '';
+                        if (obj.start === false) {
+                            img_src = obj.start_clip_slide().find('img').attr('src');
+                        } else {
+                            img_src = next_slide.find('img').attr('src');
+                        }
+
+                        img.src = img_src;
+
+                        ctx.drawImage(img, 100 * i, 0, 100, 500, 0, 0, 100, 500);
+                    }
+                },
+                animation: function() {
+                    if (obj.start === false) {
                         obj.loop();
                     }
                     obj.start = true;
 
                     var tl = new TimelineMax();
 
-                    tl.add( TweenMax.set('.canvasClass', {top: -500}) );
-                    tl.add( TweenMax.staggerTo(".canvasClass", options.speed_of_effects, {top: 0}, options.delay_of_effects, myCompleteAll ) );
+                    tl.add(TweenMax.set('.canvasClass', { top: -500 }));
+                    tl.add(TweenMax.staggerTo(".canvasClass", settings.speed_of_effects, { top: 0 }, settings.delay_of_effects, myCompleteAll));
 
                     function myCompleteAll() {
-                        setTimeout(obj.all_done, options.slide_animation);
+                        setTimeout(obj.all_done, settings.slide_animation);
                     }
-
                 },
-                change_slide : function change_slide(next_slide) {
-
+                change_slide: function(next_slide) {
                     $('canvas').remove();
-
-                    var next_slide = next_slide;
-
                     obj.loop(next_slide);
-
                     obj.animation();
-
                 },
-                all_done : function all_done() {
-
+                all_done: function() {
                     obj.slides.css({
-                        'zIndex': 1,
+                        'z-index': 1,
                         'display': 'block'
                     });
 
-                    var current_slide = $(that).find('li.active');
+                    var current_slide = that.find('li.active');
 
-                    if (current_slide.length == 0) {
+                    if (current_slide.length === 0) {
                         current_slide = obj.start_clip_slide();
                     }
 
                     current_slide.css({
-                        'zIndex': 2,
+                        'z-index': 2,
                         'display': 'block'
-                    }).find('img').css('visibility','visible');
+                    }).find('img').css('visibility', 'visible');
 
                     var next_slide = current_slide.next();
 
-                    if (next_slide.length == 0) {
-
+                    if (next_slide.length === 0) {
                         current_slide.css({
-                            'zIndex': 2,
+                            'z-index': 2,
                             'display': 'block'
-                        }).find('img').css('visibility','visible');
+                        }).find('img').css('visibility', 'visible');
 
                         next_slide = obj.first_slide();
                     }
@@ -135,30 +120,26 @@
                     next_slide.addClass('active');
 
                     next_slide.css({
-                        'zIndex': 3,
+                        'z-index': 3,
                         'display': 'block'
-                    }).find('img').css('visibility','hidden');
+                    }).find('img').css('visibility', 'hidden');
 
                     obj.change_slide(next_slide);
-
                 },
-                init : function () {
-
+                init: function() {
                     obj.first_slide().css({
-                        'zIndex': 1,
+                        'z-index': 1,
                         'display': 'block'
-                    }).find('img').css('visibility','visible');
+                    }).find('img').css('visibility', 'visible');
 
-                    obj.start_clip_slide().find('img').css('visibility','hidden');
+                    obj.start_clip_slide().find('img').css('visibility', 'hidden');
 
-                    setTimeout(obj.animation, defaults.start_timeout);
+                    setTimeout(obj.animation, settings.start_timeout);
                 }
             };
 
             obj.init();
-
         });
-
     };
 
     $(document).ready(function() {
