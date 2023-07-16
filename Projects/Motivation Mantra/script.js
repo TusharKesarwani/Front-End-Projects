@@ -1,4 +1,4 @@
-
+// Code for loading a new quote everytime the button is clicked
 function loadQuote()
 {
     document.getElementById("copy").innerText = "Copy" ;
@@ -14,6 +14,7 @@ function loadQuote()
         });
 }
 
+// Code to copy the quote
 function copyQuote()
 {
     copyText = document.getElementById("quoteLine").innerText + "   " + document.getElementById("author").innerText;
@@ -21,6 +22,7 @@ function copyQuote()
     document.getElementById("copy").innerText = "Copied" ;
 }
 
+// Code to enable speech feature
 function listen()
 {
     let utterance = new SpeechSynthesisUtterance(document.getElementById("quoteLine").innerText);
