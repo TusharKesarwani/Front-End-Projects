@@ -5,9 +5,9 @@ Welcome to the MotivationMantra! This website generates a random quote everytime
 This project is built using:-  
  - HTML5 (Structuring)  
  - CSS3 (Styling)  
- - JavaScript (Client side scripting)  
+ - JavaScript (Client Side Scripting)  
  - quotable (API)  
- - Git/GitHub (Version control)  
+ - Git/GitHub (Version Control)  
  - Netlify (Hosting)  
  
  ## Direct website link
