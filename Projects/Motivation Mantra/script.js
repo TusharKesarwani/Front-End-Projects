@@ -1,6 +1,5 @@
 // Code for loading a new quote everytime the button is clicked
-function loadQuote()
-{
+function loadQuote(){
     document.getElementById("copy").innerText = "Copy" ;
     document.getElementById("next").innerText = " loading..." ;
     var para = document.getElementById("quoteLine");
@@ -14,17 +13,17 @@ function loadQuote()
         });
 }
 
+
 // Code to copy the quote
-function copyQuote()
-{
+function copyQuote(){
     copyText = document.getElementById("quoteLine").innerText + "   " + document.getElementById("author").innerText;
     navigator.clipboard.writeText(copyText);
     document.getElementById("copy").innerText = "Copied" ;
 }
 
+
 // Code to enable speech feature
-function listen()
-{
+function listen(){
     let utterance = new SpeechSynthesisUtterance(document.getElementById("quoteLine").innerText);
     speechSynthesis.speak(utterance);
 }
