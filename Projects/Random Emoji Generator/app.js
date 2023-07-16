@@ -1,0 +1,47 @@
+function changeEmoji() {
+const emojis = [
+    "😆",
+    "😅",
+    "😎",
+    "😂",
+    "😀",
+    "🤑",
+    "🤨",
+    "🙂",
+    "😊",
+    "😗",
+    "😛",
+    "😏",
+    "🤥",
+    "😴",
+    "🥺",
+    "😧",
+    "😇",
+    "😳",
+    "🙃",
+    "🥴",
+    "🧐",
+    "🤨",
+    "😒",
+    "🤔",
+    "🤭",
+    "🥰",
+    "🤐",
+    "😁",
+    "😵‍💫",
+    "🤪",
+    "🥲",
+    "😃",
+    "😘",
+    "😬",
+    "😷",
+    "🤓",
+    "🫠",
+    "😤",
+    "🤠",
+  ];
+
+  document.querySelector('.emoji').innerHTML = emojis[Math.floor(Math.random() * emojis.length)];  //here Math.random() will return a float number between 0 and 1.
+  var element= document.querySelector('.emoji');
+  element.classList.toggle('new-style');
+}

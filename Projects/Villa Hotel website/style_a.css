@@ -10,6 +10,27 @@ body {
 
 /* navbar start */
 .topnav {
+  display: flex;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  flex-direction: column;
+}
+/* .topnav {
   background-color: black;
   overflow: hidden;
   width: 100%;
@@ -24,7 +45,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   width: 25%;
-}
+} */
 
 .topnav a:hover {
   color: cyan;

@@ -1,0 +1,378 @@
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  overflow-x: hidden;
+}
+:root {
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.infomer {
+  text-align: center;
+  font-size: 0.5rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+  margin-top: 2rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 739px) {
+  .nav__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14rem;
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .info {
+    display: none;
+  }
+  .but__signin {
+    border: 2.6px solid black;
+    padding: 0.5rem;
+    width: 4rem;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  .header {
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #email {
+    border: 2px solid black;
+    outline: none;
+    padding: 1rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+  }
+  form > button {
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #ffdd00;
+    width: 20rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 3rem;
+  }
+  .login__side {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: black;
+  }
+  .login__side::before {
+    content: "";
+    padding-left: 5rem;
+    /* padding-right: -121rem; */
+    background-color: black;
+    display: inline-block;
+    margin-right: 0.8rem;
+    height: 0.1rem;
+  }
+  .login__side::after {
+    content: "";
+    padding-left: 5rem;
+    /* padding-right: -121rem; */
+    background-color: black;
+    display: inline-block;
+    height: 0.1rem;
+    margin-left: 0.8rem;
+    /* margin-top: 0.8rem; */
+  }
+  span > img {
+    width: 2rem;
+    max-height: 10rem;
+    margin-right: 1rem;
+  }
+  .login_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .containers {
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    width: 21rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    /* gap: 1rem; */
+  }
+  .apple__icon {
+    margin-left: -1rem;
+  }
+  .google__icon {
+    margin-right: 2rem;
+  }
+}
+
+/* for tablet */
+
+@media screen and (min-width: 740px) and (max-width: 900px) {
+  .nav__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 39rem;
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .info {
+    display: none;
+  }
+  .but__signin {
+    border: 2.6px solid black;
+    padding: 0.5rem;
+    width: 4rem;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  section {
+    padding: 2rem;
+    margin-top: 15rem;
+  }
+  .header {
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #email {
+    border: 2px solid black;
+    outline: none;
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+  }
+  form > button {
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #ffdd00;
+    width: 28rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 3rem;
+  }
+  .login__side {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: black;
+  }
+  .login__side::before {
+    content: "";
+    padding-left: 6rem;
+    /* padding-right: -121rem; */
+    background-color: black;
+    display: inline-block;
+    margin-right: 0.8rem;
+    height: 0.1rem;
+  }
+  .login__side::after {
+    content: "";
+    padding-left: 6rem;
+    /* padding-right: -121rem; */
+    background-color: black;
+    display: inline-block;
+    height: 0.1rem;
+    margin-left: 0.8rem;
+    /* margin-top: 0.8rem; */
+  }
+  span > img {
+    width: 2rem;
+    max-height: 10rem;
+    margin-right: 1rem;
+  }
+  .login_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .containers {
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    width: 28rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    /* gap: 1rem; */
+  }
+  .apple__icon {
+    margin-left: -1rem;
+  }
+  .google__icon {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .nav__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35rem;
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .info {
+    display: block;
+    font-weight: 400;
+    width: 12rem;
+  }
+  .but__signin {
+    border: 2.6px solid black;
+    padding: 0.5rem;
+    width: 6rem;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  .signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  section {
+    padding: 2rem;
+    margin-top: 6rem;
+  }
+  .header {
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #email {
+    border: 2px solid black;
+    outline: none;
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+  }
+  form > button {
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #ffdd00;
+    width: 28rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 3rem;
+  }
+  .login__side {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: black;
+  }
+  .login__side::before {
+    content: "";
+    padding-left: 6rem;
+    /* padding-right: -121rem; */
+    background-color: black;
+    display: inline-block;
+    margin-right: 0.8rem;
+    height: 0.1rem;
+  }
+  .login__side::after {
+    content: "";
+    padding-left: 6rem;
+    /* padding-right: -121rem; */
+    background-color: black;
+    display: inline-block;
+    height: 0.1rem;
+    margin-left: 0.8rem;
+    /* margin-top: 0.8rem; */
+  }
+  span > img {
+    width: 2rem;
+    max-height: 10rem;
+    margin-right: 1rem;
+  }
+  .login_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .containers {
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    width: 28rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    /* gap: 1rem; */
+  }
+  .apple__icon {
+    margin-left: -1rem;
+  }
+  .google__icon {
+    margin-right: 2rem;
+  }
+}
