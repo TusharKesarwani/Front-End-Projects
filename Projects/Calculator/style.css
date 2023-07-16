@@ -31,7 +31,7 @@ header {
 
 body {
     display: block;
-    background-image: url(img/bg.jpg);
+    background-image: url(bg.jpg);
     background-repeat: no-repeat;
     height: fit-content;
     width: 100%;
