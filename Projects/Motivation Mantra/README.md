@@ -10,5 +10,3 @@ This project is built using:-
  - Git/GitHub (Version Control)  
  - Netlify (Hosting)  
  
- ## Direct website link
-  https://motivation-mantra.netlify.app/
