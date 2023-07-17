@@ -21,6 +21,7 @@ convertEl.addEventListener("click", function () {
         supText1.innerHTML = `Input must be greater than or equal to zero`
         supText2.innerHTML = `Input must be greater than or equal to zero`
         supText3.innerHTML = `Input must be greater than or equal to zero`
+    }
 })
 
 // input.addEventListener('keydown', function (event) {
