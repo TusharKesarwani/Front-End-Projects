@@ -1039,6 +1039,14 @@ const projects = [
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Instagram Logo Clone",
+        "tags":["HTML","CSS"],
+        "img":"img/projects/Instagram-logo-clone.png",
+        "description":"This website having a clone of the instagram logo. It is built using HTML and CSS. This is a beginner friendly website.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Instagram-logo-clone",
+        "project-link":"Projects/Instagram-logo-clone/index.html"
     }
 ]
 
