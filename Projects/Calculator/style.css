@@ -1,48 +1,72 @@
-*{
-    margin:0px;
-    padding:0px;
+/* css */
+* {
+    margin: 0px;
+    padding: 0px;
     scroll-behavior: smooth;
     text-align: center;
     font-size: 18px;
     box-sizing: border-box;
+
 }
-header{
+
+.top {
+    position: relative;
+    left: -15px;
+}
+
+header {
     color: azure;
 }
-.header_title{
+
+.header_title {
     text-align: center;
-    font-size:xxx-large;
+    font-size: xxx-large;
 }
-body{
-    display:block;
-    background-image: url("https://media.istockphoto.com/vectors/abstract-vector-background-for-use-in-design-vector-id183954960?k=20&m=183954960&s=612x612&w=0&h=n_Z933ml0u6ZKZJ3KOxKl2tSqNv_N9L1vheVVdBX_5Q=") ;
+
+.main {
+    position: relative;
+    left: 30px;
+    overflow-x: hidden;
+}
+
+body {
+    display: block;
+    background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    height: fit-content;
+    width: 100%;
 }
-.img1{
-    height:100vh;
+
+.img1 {
+    height: 100vh;
     width: 100vw;
 }
-.img_logo{
-    max-height: 40px;
-    max-width: 40px;
+
+.img_logo {
+    height: 36px;
+    width: 64px;
     margin-top: 20px;
 }
+
 .container {
-    background-color:none;
+    background-color: none;
     margin: 0 auto;
     max-width: 400px;
     border-radius: 10px;
-    margin-top: 80px;
+    margin-top: 65px;
+    height: 100%;
 }
+
 #screen {
+    position: relative;
+    top: -70px;
     margin: 4px auto;
-    width: 100%;
-    max-width: 400px;
-    height: 4rem;
+    width: 120%;
+    left: -60px;
+    height: 6rem;
     text-align: center;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(219, 168, 0);
     background-color: white;
     border-radius: 10px;
     overflow-x: scroll;
@@ -50,11 +74,17 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+#screen:hover {
+    border: 2px solid green;
+}
+
 #screen::-webkit-scrollbar {
     display: none;
 }
 
-#input, #result {
+#input,
+#result {
     margin: auto;
     width: 100%;
     height: 3rem;
@@ -81,14 +111,17 @@ body{
     right: 14px;
 }
 
-button, .bottom-buttons {
-    width: 100%;
+button,
+.bottom-buttons {
+    width: 6.5rem;
     height: 3rem;
     border: none;
     border-radius: 10px;
+    margin: 1px 1px;
 }
 
-button:hover, .bottom-buttons {
+button:hover,
+.bottom-buttons {
     cursor: pointer;
     background-color: #a87861a9;
 }
@@ -96,24 +129,39 @@ button:hover, .bottom-buttons {
 .table {
     margin: auto;
     width: 99%;
-    max-width: 768px;
+    overflow-x: hidden;
 }
 
 td {
     width: 100rem;
-    margin:100px;
+    margin: 100px;
 }
 
-#equals {
+.ac {
+    background-color: #eb981b;
+}
+
+#orange {
     height: 6rem;
-    background-color: #3b62e3;
+    background-color: #eb981b;
+    color: white;
+    font-weight: bold;
+}
+
+#equal {
+    height: 6rem;
+    background-color: #eb981b;
     color: white;
     font-weight: bold;
 }
 
 .white {
     font-weight: bold;
-    background-color: white;
+    background-color: #cdcdcd;
+}
+
+.gery {
+    background-color: #85b1a5;
 }
 
 .white:hover {
@@ -129,17 +177,78 @@ td {
 }
 
 .light {
-    background-color: #d9d9d9;
+    background-color: #b5b0d3;
 }
 
 .light:hover {
-    background-color: #d2d2d2;
+    background-color: #f3cece;
 }
 
 #equals:hover {
     background-color: #3b4ce3;
 }
 
-#topside, #downside {
+#topside,
+#downside {
     height: 5px;
+}
+
+#calc {
+    position: relative;
+    top: -70px;
+    left: -250px;
+    height: 10rem;
+}
+
+.twodig {
+    background-color: #7fb9ec;
+}
+
+.m {
+    background: #e1bddc;
+}
+
+.ac:hover {
+    background-color: #ff5151;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main {
+        left: 0px;
+    }
+
+    #screen {
+        width: 100%;
+        left: 0px;
+    }
+
+    #calc {
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header_title {
+        font-size: x-large;
+    }
+
+    #screen {
+        height: 4rem;
+        font-size: 16px;
+    }
+
+    #input,
+    #result {
+        height: 2rem;
+        font-size: 16px;
+    }
+
+    button,
+    .bottom-buttons {
+        width: 4.5rem;
+        height: 2.5rem;
+        font-size: 14px;
+    }
 }
