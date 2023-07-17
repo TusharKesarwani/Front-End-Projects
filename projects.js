@@ -1039,6 +1039,14 @@ const projects = [
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Random Meal Generator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Random-Meal-Generator.png",
+        "description":"Random Meal Generator can generator different meals. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Random-Meal-Generator",
+        "project-link":"Projects/Random-Meal-Generator/index.html"
     }
 ]
 
