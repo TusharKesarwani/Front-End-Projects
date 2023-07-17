@@ -1039,6 +1039,14 @@ const projects = [
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Lorem Ipsum Generator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Lorem-Ipsum-Generator.png",
+        "description":"This project can generate random written paragraphs. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Lorem-Ipsum-Generator",
+        "project-link":"Projects/Lorem-Ipsum-Generator/index.html"
     }
 ]
 
