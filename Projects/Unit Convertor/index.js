@@ -11,11 +11,16 @@ const supText3 = document.querySelector("#supporting-text-3")
 let input = document.querySelector("#input-text")
 
 convertEl.addEventListener("click", function () {
-    supText1.innerHTML = `${Number(input.value)} meters = ${(Number(input.value) * 3.281).toFixed(3)} feet | ${Number(input.value)} feet = ${Number(Number(input.value) * 0.3048).toFixed(3)} meters`
+    if (input.value >= 0) {    
+        supText1.innerHTML = `${Number(input.value)} meters = ${(Number(input.value) * 3.281).toFixed(3)} feet | ${Number(input.value)} feet = ${Number(Number(input.value) * 0.3048).toFixed(3)} meters`
 
-    supText2.innerHTML = `${Number(input.value)} liters = ${(Number(input.value) * 0.264).toFixed(3)} gallons | ${Number(input.value)} gallons = ${Number(Number(input.value) * 4.54609).toFixed(3)} liters`
+        supText2.innerHTML = `${Number(input.value)} liters = ${(Number(input.value) * 0.264).toFixed(3)} gallons | ${Number(input.value)} gallons = ${Number(Number(input.value) * 4.54609).toFixed(3)} liters`
 
-    supText3.innerHTML = `${Number(input.value)} kilos = ${(Number(input.value) * 2.204).toFixed(3)} pounds | ${Number(input.value)} pounds = ${Number(Number(input.value) * 0.453592).toFixed(3)}  kilos`
+        supText3.innerHTML = `${Number(input.value)} kilos = ${(Number(input.value) * 2.204).toFixed(3)} pounds | ${Number(input.value)} pounds = ${Number(Number(input.value) * 0.453592).toFixed(3)}  kilos`
+    } else {
+        supText1.innerHTML = `Input must be greater than or equal to zero`
+        supText2.innerHTML = `Input must be greater than or equal to zero`
+        supText3.innerHTML = `Input must be greater than or equal to zero`
 })
 
 // input.addEventListener('keydown', function (event) {
