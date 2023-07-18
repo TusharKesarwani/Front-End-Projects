@@ -72,6 +72,14 @@ const projects = [
         "project-link":"Projects/beautyzone/index.html"
     },
     {
+      "title":"Beyblade Card Catalog",
+      "tags":["HTML","CSS","JavaScript"],
+      "img":"img/projects/Beyblade_Card_Catalog.png",
+      "description":"Beyblade Card Catalog will showcase Beyblade cards. The project will leverage a JSON file containing data for various Beyblade cards. This data will be dynamically fetched and utilized to populate the card catalog. The frontend page will incorporate a filtering mechanism to allow users to narrow down their card search.",
+      "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Beyblade-Card-Catalog",
+      "project-link":"Projects/Beyblade-Card-Catalog/index.html"
+    },
+    {
         "title":"Bill Tip Calculator",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Tip_Calculator.png",
@@ -1023,14 +1031,8 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
         "project-link":"Projects/Playable_Piano/index.html"
     },
+   
     {
-        "title":"Solar System Model",
-        "tags":["HTML","CSS","JavaScript"],
-        "img":"img/projects/Solar_System_Model.png",
-        "description":"Solar system model is the animated project using CSS. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device. Adding data of different solar bodies will makes this website more informative.",
-        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
-        "project-link":"Projects/Solar%20System%20Model/index.html"
-    },
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Sound_Equalizer.png",
