@@ -72,6 +72,14 @@ const projects = [
         "project-link":"Projects/beautyzone/index.html"
     },
     {
+      "title":"Beyblade Card Catalog",
+      "tags":["HTML","CSS","JavaScript"],
+      "img":"img/projects/Beyblade_Card_Catalog.png",
+      "description":"Beyblade Card Catalog will showcase Beyblade cards. The project will leverage a JSON file containing data for various Beyblade cards. This data will be dynamically fetched and utilized to populate the card catalog. The frontend page will incorporate a filtering mechanism to allow users to narrow down their card search.",
+      "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Beyblade-Card-Catalog",
+      "project-link":"Projects/Beyblade-Card-Catalog/index.html"
+    },
+    {
         "title":"Bill Tip Calculator",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Tip_Calculator.png",
@@ -1023,6 +1031,7 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
         "project-link":"Projects/Playable_Piano/index.html"
     },
+   
     {
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
