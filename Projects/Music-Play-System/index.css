@@ -1,0 +1,84 @@
+.main{
+    background-image:url("https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.music-icon
+{
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+}
+
+.play
+{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 14%;
+    top: 80%;
+    
+}
+.svg
+{
+    border-radius: 50%;
+}
+.cont
+{
+    background-color: black;
+    gap: 10px;
+    border-radius: 10%;
+    padding-left: 30%;
+    border: 1px solid whitesmoke;
+   
+}
+.gif
+{
+    background-image: url("https://gifdb.com/images/high/lightning-like-sound-wave-a26vgycddqquootj.gif");
+}
+
+.d-block
+{
+    display: block;
+    border-radius: 10%;
+}
+.hlo
+{
+    position: relative;
+    left: 30%;
+}
+.name
+{
+    color: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 200px;
+}
+
+.wrapper.two {
+  
+    font-size: 7rem;
+    font-family: "Play", sans-serif;
+}
+.neon h3 {
+  
+    animation: neon 1s ease infinite;
+    font-size: 2.5rem;
+    text-align: center;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #eda0d3;
+    }
+}
