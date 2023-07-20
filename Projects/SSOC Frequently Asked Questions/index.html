@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Card</title>
+  </head>
+  <body>
+    <h1 class="title">SSOC'23 Frequently Asked Questions</h1>
+    <div class="container">
+      <div class="card" onclick="toggleAnswer1()">
+        <div class="question-title">What is open Source Development ?</div>
+        <div class="answer" id="answer1">
+          A software for which the original source code is made freely available
+          and may be redistributed and modified according to the requirement of
+          the user.
+        </div>
+      </div>
+      <div class="card" onclick="toggleAnswer2()">
+        <div class="question-title">Any age limit for participation?</div>
+        <div class="answer" id="answer2">No, it is open for all.</div>
+      </div>
+      <div class="card" onclick="toggleAnswer3()">
+        <div class="question-title">Is there any registration fees?</div>
+        <div class="answer" id="answer3">There is no participation fee.</div>
+      </div>
+      <div class="card" onclick="toggleAnswer4()">
+        <div class="question-title">What will be the prices and perks?</div>
+        <div class="answer" id="answer4">
+          All the participants with successful participation will get digital
+          certificates and some cool swags.
+        </div>
+      </div>
+      <div class="card" onclick="toggleAnswer5()">
+        <div class="question-title">Who all can participate?</div>
+        <div class="answer" id="answer5">
+          No matter if you are a beginner or an expert , SSOC is open for
+          everyone who has a zeal to learn new things and achieve heights.
+        </div>
+      </div>
+      <div class="card" onclick="toggleAnswer6()">
+        <div class="question-title">
+          Can I participate in SSOC both as a participant and mentor?
+        </div>
+        <div class="answer" id="answer6">
+          You can participate either as a mentor or as a participant but not as
+          both.
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
