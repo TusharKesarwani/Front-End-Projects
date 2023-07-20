@@ -20,24 +20,35 @@ const geolink = `${base}/geo/1.0/direct`;
 	const placeStateInp = document.getElementById("place-state");
 	const hint = document.getElementById("hint");
 
-	searchButton.addEventListener("click", function () {
-		let latitude;
-		let longitude;
+	// ... (existing code)
 
-		latitude = parseFloat(latInp.value);
-		longitude = parseFloat(lonInp.value);
+searchButton.addEventListener("click", function () {
+	let latitude;
+	let longitude;
 
-		if (isNaN(latitude) || isNaN(longitude)) {
-			// Display error message in the location input card
-			errorLabel.innerText = "Please enter valid coordinates.";
-			return;
-		}
+	latitude = parseFloat(latInp.value);
+	longitude = parseFloat(lonInp.value);
 
-		// Reset error message
-		errorLabel.innerText = "";
+	if (isNaN(latitude) || isNaN(longitude)) {
+		// Display error message in the location input card
+		errorLabel.innerText = "Please enter valid coordinates.";
+		alert("Please enter valid coordinates."); // Display alert message for invalid input
+		return;
+	}
 
-		getAirQuality(latitude.toFixed(4), longitude.toFixed(4));
-	});
+	// Reset error message
+	errorLabel.innerText = "";
+
+	if (latInp.value === "" || lonInp.value === "") {
+		alert("Please enter both latitude and longitude."); // Display alert message for empty input fields
+		return;
+	}
+
+	getAirQuality(latitude.toFixed(4), longitude.toFixed(4));
+});
+
+// ... (existing code)
+
 
 	closeModalButton.addEventListener("click", function () {
 		modal.style.display = "none";
