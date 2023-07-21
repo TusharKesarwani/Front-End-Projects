@@ -50,7 +50,7 @@ const projects = [
     {
         "title":"Fitness website",
         "tags":["HTML","CSS","JavaScript"],
-        "img":"img/projects/website1.png",
+        "img":"img/projects/website1.jpg",
         "description":"This website will show all types of exercises based on the muscle group chosen ,and also shows youtube tutorial to user, to correctly perform the excercise,it shows animation of the excercise  and will be a perfect companion to user.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/fitness-app",
         "project-link":"Projects/fitness-app/public/index.html"
