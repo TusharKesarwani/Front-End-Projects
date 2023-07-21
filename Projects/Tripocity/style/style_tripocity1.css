@@ -13,6 +13,9 @@ body{
 	background-repeat: no-repeat;
 	margin: 0;
 	padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
  
@@ -99,7 +102,6 @@ body{
 
 
 .main{
-    overflow: hidden;
     position: fixed;
     background-color: rgba(135,206,250,0.4);
     top: 0;

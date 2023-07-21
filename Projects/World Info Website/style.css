@@ -13,6 +13,7 @@ body {
   background-color: #ffffff;
   width: 80vw;
   max-width: 37.5em;
+  max-height: 100vh;
   padding: 3em 2.5em;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -35,6 +36,49 @@ body {
   padding: 0.8em 0;
   border: none;
   border-radius: 1.5em;
+  width: 100px;
+}
+
+@media(max-width:476px){
+.search-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+}
+
+@media(max-width:300px){
+  .search-wrapper {
+    width: 100%;
+  }
+  #result{
+    font-size: small;
+  }
+
+}
+
+@media(max-width:280px)
+{
+  #country-inp,#search-btn{
+    font-size:small;
+  }
+  #search-btn{
+    width:80px;
+  }
+}
+
+@media(max-width:226px)
+{
+  .container{
+    min-width: 140px;
+  }
+  #country-inp,#search-btn{
+    font-size:x-small;
+  }
+  #search-btn{
+    width:60px;
+  }
 }
 
 .search-wrapper input {
