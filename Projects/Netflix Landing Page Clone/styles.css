@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 73vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/netflix_1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    align-content: normal;
+    left: auto;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #e50914;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button1{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    border-radius: 6px;
+}
+
+.button1 img{
+    width: 15px;
+    margin-right: 5px;
+}
+.button1 .image img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 50px;
+}
+.header-content h1{
+    font-size: 44px;
+    line-height: 70px;
+    font-weight: 800; 
+    margin-bottom: 15px;
+}
+.header-content h3{
+    font-weight: 500;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.header-content p{
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+}
+.email-signup{
+    background-color: transparent;
+    border-radius: 4px;
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.button-submit{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 1px solid gray;
+    outline: 10px;
+    margin-left: 20px;
+    width: 350px;
+    height: 55px;
+    padding: 20px 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.button-submit button{
+    background: #e50914;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-weight: 600;
+}
+
+
+/*------FEATURES------*/
+.features{
+    
+    padding: 50px 12%;
+    font: 22px;
+}
+
+.row{
+   
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    width: 50%;
+    position: relative;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+   
+}
+.vid-col{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 17%;
+    height: 90%;
+    max-width: 80%;
+    max-height: 54%;
+    z-index: -2;
+  }
+  
+.vid-col video{
+    width: 90%;
+}
+
+.feature-2-container{
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 22em;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 110px;
+    padding: 0.25rem 0.6rem;
+    gap: 20px;
+}
+.poster-container{
+    width: 30%;
+}
+.poster{
+    width: 100%;
+    height: 100%;
+}
+.details{
+    width: 60%;
+}
+.details h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.details h6{
+    font-size: 15px;
+    font-weight: 500;
+    color: #0071eb;
+}
+.gif-container{
+    width: 20%;
+    height: 50%;
+}
+.gif{
+    width: 100%;
+    height: 100%;
+}
+.vid-col-2{
+    position: absolute;
+    width: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 8%;
+    left: 20%;
+}
+.vid-col-2 video{
+    width: 90%;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*-----FAQ-----*/
+
+.faq{
+    padding: 10px 12%;
+    border-top: 6px solid #333;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}  
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 3px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #2d2d2d;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .container{
+    background: #2d2d2d;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .container{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .sign-up{
+    display: flex;
+    justify-content: center;
+}
+.faq .email-signup{
+    background-color: transparent;
+    border-radius: 4px;
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.faq .button-submit{
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.faq .email-signup input{
+    flex: 1;
+    border: 1px solid gray;
+    outline: 10px;
+    margin-left: 20px;
+    width: 350px;
+    height: 55px;
+    padding: 20px 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    color: #ffffff;
+}
+.faq .button-submit button{
+    background: #e50914;
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-weight: 550;
+}
+.faq small{
+    font-size: 13px;
+}
+
+/*-----footer-----*/
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #ffffff;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    box-shadow: none;
+    border-radius: 2px;
+    opacity: 70%;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 10px;
+    opacity: 70%;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.button1{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: 7px 10px;
+    color: #ffffff;
+}
+
+.button1 img{
+    width: 15px;
+    margin-right: 10px;
+}
+.button1 .image img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.copyright-txt{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    opacity: 70%;
+}
+
+@media only screen and (max-width: 700px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .button1{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 0px;
+    }
+    .header-content h1{
+        font-size: 23px;
+        line-height: 35px;
+    }
+    .header-content h3{
+        font-size: 17px;
+    }
+    .header-content p{
+        font-size: 12px;
+    }
+    .button-submit button{
+        font-size: 12px;
+        padding: 10px 15px;
+        padding-right: 90px;
+    }
+    .faq .button-submit button{
+        font-size: 12px;
+        padding: 10px 15px;
+        padding-right: 90px;
+    }
+    .text-col, .img-col{
+        flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .box .container{
+        font-size: 14px;
+    }
+    .box li label{
+            padding: 10px;
+            font-size: 14px;
+    }
+    label:after{
+        font-size: 22px;
+    }
+}
