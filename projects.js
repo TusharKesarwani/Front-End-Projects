@@ -1031,7 +1031,14 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
         "project-link":"Projects/Playable_Piano/index.html"
     },
-   
+    {
+        "title":"Solar System Model",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Solar_System_Model.png",
+        "description":"Solar system model is the animated project using CSS. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device. Adding data of different solar bodies will makes this website more informative.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
+        "project-link":"Projects/Solar%20System%20Model/index.html"
+    },
     {
         "title":"Sound Equalizer",
         "tags":["HTML","CSS","JavaScript"],
@@ -1039,6 +1046,14 @@ const projects = [
         "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Video Player",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Video_Player.png",
+        "description":"This website can be used to play videos. This application give the feeling of video gallery as of our mobile phone.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Video-Player",
+        "project-link":"Projects/Video-Player/index.html"
     }
 ]
 
