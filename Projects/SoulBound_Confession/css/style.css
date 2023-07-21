@@ -708,16 +708,16 @@ button:focus {
 }
 .serviceBox:hover:before{ border-top-color: #00cb86 ; }
 .serviceBox .service-icon{
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    font-size: 30px;
-    color: #064774;
-    margin-bottom: 35px;
-    z-index: 1;
-    position: relative;
-    transition:all 0.3s ease 0s;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 75px;
+  font-size: 25px;
+  color: #064774;
+  margin-bottom: 30px;
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s ease 0s;
 }
 .serviceBox:hover .service-icon{ color: #fff; }
 .serviceBox .service-icon:before{
