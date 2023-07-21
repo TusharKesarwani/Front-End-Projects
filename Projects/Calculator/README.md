@@ -27,7 +27,6 @@ Sci-Fi Calc is a revolutionary scientific calculator that builds upon the standa
 
 
 ## Checklist
-
 Before contributing to the project, please make sure to go through this checklist:
 
 - I have developed this project independently and not copied from any other source.
@@ -37,18 +36,33 @@ Before contributing to the project, please make sure to go through this checklis
 - The title of my pull request is a concise description of the proposed changes, facilitating easy review and understanding.
 
 
+## Usage
+Sci-Fi Calc brings advanced mathematical functions to your fingertips, converting a standard calculator into a powerful scientific calculator. To make the most out of this enhanced tool, follow these usage guidelines:
+
+# Trigonometric Functions
+- For using trigonometric functions like sin, cos, tan, cot, sec, and cosec, first enter the desired value, and then press the corresponding function button to obtain the result.
+# Inverse Trigonometric Functions
+- To calculate the inverse trigonometric functions (sin-1, cos-1, tan-1), input the value and then press the respective function button.
+# Exponential Function (x^y)
+- To perform the exponentiation operation (x^y), start by entering the base value (x). Then, press the function button "x^y" and provide the exponent value (y) to compute the result.
+# Special Functions
+- For the following functions (x^2, √x, ln, log, 1/x, x!), input a number as the value of 'x', and then press the corresponding function button to obtain the calculated result.
+# Brackets Support
+- Sci-Fi Calc adheres to the BODMAS rule, allowing you to use parentheses for complex expressions and calculations.
+# Power of 10 (10^x)
+- To calculate the value of 10 raised to the power of 'x', first enter the value of 'x', then press the "10^x" function button to get the result.
+# Nth Root Function (y√x)
+- For the nth root function, first enter the value of 'y' (root), then press the "y√x" function button, and finally, provide the value of 'x' to compute the result.
 
 
 
 ## Demo
-
-Insert gif or link to demo
+Demo Video
 
 https://github-production-user-asset-6210df.s3.amazonaws.com/115206840/253906274-eb3ccd17-0758-4507-a0e2-2d7cd1bbbce9.mp4
 
 
 ## Screenshots
-
 ![Final](https://user-images.githubusercontent.com/115206840/253905933-58974fe0-e10c-465a-ae42-bee7aa132c0e.png)
 
 ![Before](https://user-images.githubusercontent.com/115206840/253905921-7e839104-4dc0-48c9-9352-4c02bc5bc3ca.jpg)
