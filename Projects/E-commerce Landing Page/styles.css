@@ -6,8 +6,15 @@
 } */
 
 body {
-  background-color: #fffbe9;
   font-family: "Montserrat", sans-serif;
+}
+p {
+  color:#000;
+ @media screen and (prefers-color-scheme:light)
+ {
+  color:#fff
+ }
+
 }
 
 .logo,
@@ -23,7 +30,7 @@ body {
 
 .logo .brand a {
     text-decoration: none;
-    color: black;
+    color: rgb(170, 108, 67);
 }
 
 .logo .search {
@@ -109,7 +116,7 @@ body {
 }
 
 .banner .nike {
-    color: #fff;
+  color: #ffffff;
     font-size: 40px;
     font-weight: bolder;
     position: absolute;
@@ -172,7 +179,6 @@ body {
   display: inline;
   padding: 3% 11%;
   border-radius: 10px;
-  color: #fff;
   font-size: 20px;
 }
 
@@ -189,7 +195,6 @@ body {
 
 .new-arrivals {
   display: flex;
-  background-color: #eeeeee;
   border-radius: 20px;
   margin: 40px;
 }
@@ -201,13 +206,14 @@ body {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  background-color: #fff;
   width: 20%;
   height: 400px;
 }
 
 .new-arrivals .box2 p {
   text-align: center;
+  color: #00acee;
+
 }
 
 .new-arrivals .box2 p .hide {
@@ -231,7 +237,6 @@ body {
 }
 
 .new-arrivals .first {
-  background-color: #eeeeee;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -256,7 +261,6 @@ body {
   text-align: center;
   background-color: coral;
   border-radius: 10px;
-  color: #fff;
   width: 100%;
   padding: 10px 0;
   margin-top: 5%;
@@ -303,12 +307,12 @@ body {
 }
 
 .categories .row .box3 p {
-  color: #fff;
-  font-size: 20px;
+  color: #ff0000;
+  font-size: 30px;
   position: relative;
   top: 43vh;
   left: 2vw;
-  font-weight: 600;
+  font-weight: 900;
   display: inline;
   background-color: rgba(0,0,0,0.5);
   padding: 5px;
@@ -340,7 +344,6 @@ body {
 }
 
 .best-offers {
-  background-color: #fffbe9;
   justify-content: space-evenly;
   align-items: center;
   margin-top: -20px;
@@ -352,7 +355,6 @@ body {
 }
 
 footer {
-  background-color: #eeeeee;
   padding: 50px 0;
   display: flex;
   justify-content: space-evenly;
