@@ -1216,23 +1216,29 @@ button:focus {
 	float: left;
 }
 .icon-b{
-	width: 60px;
-    height: 60px;
+	width: 40px;
+    height: 50px;
     text-align: center;
-    line-height: 34px;
-    font-size: 40px;
+    line-height: 30px;
+    font-size: 35px;
     border: 2px solid #000000;
-    margin: 6px;
-    padding: 8px;
+    margin: 1px;
+    padding: 3px;
     color: #00cb86;
     border-radius: 30%;
 }
-
+.flex{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .dit-right h4{
 	font-size: 18px;
 	color: #000000;
 	font-weight: 600;
 	padding-bottom: 0;
+  margin-left:10px; 
 }
 .dit-right{
 	padding-right: 14px;
@@ -1392,4 +1398,16 @@ select.form-control:not([size]):not([multiple]){
 
 .subscribe-inner .form-group button:hover {
 	color: #ffffff;
+}
+.fa-location-arrow  {
+  content: "\f124";
+  font-size: 20px;
+}
+.fa-envelope {
+  content: "\f0e0";
+  font-size: 20px;
+}
+.fa-volume-control-phone  {
+  content: "\f2a0";
+  font-size: 20px;
 }
