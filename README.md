@@ -1,7 +1,7 @@
 # Front-End-Projects
-<div id="top">
 ![Front-End-Projects](https://socialify.git.ci/TusharKesarwani/Front-End-Projects/image?description=1&descriptionEditable=A%20place%20for%20Developers&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
+<div id="top">
 <p align="center">
   <a href="https://frontendprojects.netlify.app/">
     <img src="https://forthebadge.com/images/badges/check-it-out.svg">
