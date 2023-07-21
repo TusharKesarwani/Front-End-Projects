@@ -1,0 +1,3 @@
+[submodule "Projects/fitness-app"]
+	path = Projects/fitness-app
+	url = git@github.com:shivam201483101/fitness-app.git
