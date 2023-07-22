@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "bold";
+  src: url("fonts/Gilroy-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("fonts/Gilroy-Medium.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "light";
+  src: url("fonts/Gilroy-Light.woff") format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("fonts/Gilroy-Regular.woff") format('woff');
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "regular", Arial, sans-serif;
+}
+
+/* Rest of the CSS code */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d2f3f6;
+    color: white;
+    color: inherit;
+    font-family: inherit;
+    font-size: 15px;
+  }
+  
+  /* header {
+    background-color: #a9ebf1;
+    padding: 20px;
+  }
+   */
+  /* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+  .navbar {
+    background-color: #b5eff4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .navbar img {
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 28px;
+     font-weight: bold;
+     
+  }
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    vertical-align: middle;
+  }
+  
+  .buttons .btn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #d44336;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons .btn-red {
+    background-color: #d44336;
+    color: #fff;
+  }
+  
+
+  footer {
+    background-color: #d2f3f6;
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    text-decoration-color: #000000;
+  }
+  
+  /* Path: styles.css  background-image: linear-gradient(135deg, #acded4, #00816c); */
+/* CSS for Crazy Website UI */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .animation {
+    background-color: #acded4;
+    background-image: linear-gradient(135deg, #acded4, #2c9c89);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tagline {
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    animation: moveText 2s linear infinite alternate;
+  }
+  
+  .typing-animation::after {
+    content: " Unleash Your Financial Superpowers  ";
+    animation: typing 2s steps(11) infinite;
+    color: #8b4402;
+  }
+  
+  @keyframes typing {
+    0%, 100% {
+      width: 0;
+    }
+    50% {
+      width: 160px;
+    }
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  
+  .about {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+    font-size: large;
+    text-align: center;
+  }
+  
+  .features {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    margin-bottom: 30px;
+  }
+  
+  .feature {
+    display: inline-block;
+    width: 300px;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature img {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Additional Styles for Attractiveness */
+  .container {
+    padding: 0 20px;
+  }
+  
+  .features .feature {
+    transition: transform 0.3s ease;
+  }
+  
+  .features .feature:hover {
+    transform: translateY(-10px);
+  }
+
+  .footer-content{
+    text-align: center;
+  
+    padding: 50px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .box img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .box-text {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

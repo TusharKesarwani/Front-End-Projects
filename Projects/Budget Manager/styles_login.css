@@ -1,0 +1,101 @@
+/* Shared CSS for all pages */
+
+@font-face {
+  font-family: "bold";
+  src: url("fonts/Gilroy-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("fonts/Gilroy-Medium.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "light";
+  src: url("fonts/Gilroy-Light.woff") format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("fonts/Gilroy-Regular.woff") format('woff');
+  font-style: italic;
+}
+/* CSS for navbar */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #b5eff4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar img {
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 28px;
+   font-weight: bold;
+   
+}
+
+.logout-btn {
+  background-color: #f44336;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #acded4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  a {
+    color: #acded4;
+    text-decoration: none;
+  }
+  
