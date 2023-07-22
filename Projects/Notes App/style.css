@@ -160,7 +160,7 @@ header img{
 .menu li i{
     padding-right: 10px;
 }
-.popup-box{
+.popup-box {
     position: fixed;
     top: 0;
     left: 0;
@@ -319,3 +319,12 @@ form .row label{
         margin-right:4px;
     }
 } 
+
+.starred{
+    background-color: gold;
+  }
+
+  .note.starred * {
+    color: black;
+  }
+  
