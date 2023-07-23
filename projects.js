@@ -46,7 +46,15 @@ const projects = [
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat provident incidunt fuga, nihil ex aperiam, debitis minus a recusandae quia, blanditiis ad eius modi! Minima sunt dolor ut minus totam.",
         "github-link":"#",
         "project-link":"#"
-    }
+    },
+    {
+        "title":"Coming Soon",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/website1.jpg",
+        "description":"this website will show all types of exercise based on the muscle group chosen ,and also shows youtube tutorial to user to correctly perform the excercise,it shows animation of the excercise suggested and will be a perfect companion to user.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Exercise",
+        "project-link":"Projects/Exercise/index.html"
+    },
 ]
 
 export default projects;
