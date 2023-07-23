@@ -1,5 +1,7 @@
 let searchBtn = document.getElementById("search-btn");
 let countryInp = document.getElementById("country-inp");
+let result = document.getElementById("result"); // Assuming there is an element with id "result" to display the search result
+
 searchBtn.addEventListener("click", () => {
   let countryName = countryInp.value;
   let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
@@ -7,7 +9,9 @@ searchBtn.addEventListener("click", () => {
   fetch(finalURL)
     .then((response) => response.json())
     .then((data) => {
-      result.innerHTML = `
+      // Create a div to hold the search result
+      let searchResult = document.createElement("div");
+      searchResult.innerHTML = `
         <img src="${data[0].flags.svg}" class="flag-img">
         <h2>${data[0].name.common}</h2>
         <div class="wrapper">
@@ -31,20 +35,41 @@ searchBtn.addEventListener("click", () => {
         <div class="wrapper">
             <div class="data-wrapper">
                 <h4>Currency:</h4>
-                <span>${data[0].currencies[Object.keys(data[0].currencies)].name
-        } - ${Object.keys(data[0].currencies)[0]}</span>
+                <span>${data[0].currencies[Object.keys(data[0].currencies)].name} - ${Object.keys(data[0].currencies)[0]}</span>
             </div>
         </div>
          <div class="wrapper">
             <div class="data-wrapper">
                 <h4>Common Languages:</h4>
-                <span>${Object.values(data[0].languages)
-          .toString()
-          .split(",")
-          .join(", ")}</span>
+                <span>${Object.values(data[0].languages).toString().split(",").join(", ")}</span>
             </div>
         </div>
       `;
+
+      // Remove the previous search result, if any
+      while (result.firstChild) {
+        result.firstChild.remove();
+      }
+
+      // Append the new search result to the result container
+      result.appendChild(searchResult);
+      
+      // Create a button to allow searching again
+      let searchAgainBtn = document.createElement("button");
+      searchAgainBtn.textContent = "Search Again";
+      searchAgainBtn.addEventListener("click", () => {
+        // Clear the input field
+        countryInp.value = "";
+        
+        // Remove the current search result
+        searchResult.remove();
+        
+        // Remove the search again button
+        searchAgainBtn.remove();
+      });
+      
+      // Append the search again button to the result container
+      result.appendChild(searchAgainBtn);
     })
     .catch(() => {
       if (countryName.length == 0) {

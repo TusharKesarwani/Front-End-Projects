@@ -1,28 +1,56 @@
 body{
-    text-align: center;
+    height:90vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .container {
-    background-color: #c2c2c2;
-    margin: 20px;
+    background-color:#d5f4e6;
     padding: 30px;
-    width: 40%;
-    align-items: center;
+    height:200px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 5px solid black;
+    border-radius: 20px;
   }
   button{
-    margin-top: 3%;
+    background-color: lightgray;
+    margin-top: 30px;
+    font-size: medium;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 2px;
   }
-  label{
+  button:hover{
+    box-shadow: 2px 5px black;
+    background-color: #618685;
+  }
+  label,#result{
     font-size: larger;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 2px;
   }
   #result {
     margin-top: 20px;
     padding: 20px;
-    /* background-color: #f2f2f2; */
     border-radius: 5px;
   }
-
+  #pincode{
+    font-size: small;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 2px;
+    border-radius: 4px;
+  }
+  @media(max-width:245px) {
+    .container{
+        width:fit-content;
+    }
+    #pincode{
+        width: 50%;
+    }
+  }
   .bg {
     background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
     background-size: cover;

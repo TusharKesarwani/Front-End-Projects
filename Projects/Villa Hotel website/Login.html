@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style_l.css">
+  <script src="https://kit.fontawesome.com/d40c21de34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a class="active" href="Login.html">Login</a>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <!-- <a href="Login.html">Login</a> -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="container">
+
+    <!-- Login Form -->
+    <div class="login-wrap active">
+      <div class="title">
+        <h1>LogIn</h1>
+      </div>
+
+      <form action="#">
+        <div class="input-area">
+          <input type="email" id="email" autocomplete="off" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-area">
+          <input type="password" id="password"  required>
+          <label for="password">Password</label>
+        </div>
+        
+        <div class="forget-pass">
+          <a href="#">Forget Password?</a>
+        </div>
+
+        <div class="button-area">
+          <button class="login-btn">Login</button>
+        </div>
+
+        <div class="form-toggle-area">
+          <p>Don't have an account? &nbsp &nbsp<span id="toggle-signup">SignUp</span></p>
+        </div>
+      </form>
+    </div>
+  
+
+
+    <!-- Signup Form -->
+    <div class="signup-wrap">
+      <div class="title">
+        <h1>Signup</h1>
+      </div>
+
+      <form action="#">
+        <div class="input-area">
+          <input type="text" id="name" autocomplete="off" required>
+          <label for="name">Name</label>
+        </div>
+
+        <div class="input-area">
+          <input type="email" id="email" autocomplete="off" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-area">
+          <input type="password" id="password"  required>
+          <label for="password">Password</label>
+        </div>
+
+        <div class="button-area">
+          <button class="signup-btn">Signup</button>
+        </div>
+
+        <div class="form-toggle-area">
+          <p>Already have an account? &nbsp &nbsp<span id="toggle-login">LogIn</span></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

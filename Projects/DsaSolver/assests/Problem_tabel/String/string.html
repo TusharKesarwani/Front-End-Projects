@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <style>
+        *{
+            background-color:lightblue;
+        }
+        table, th, td {
+            border:1px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: green;">String</h1>
+<h2>String Theory</h2>
+<h4><a href="https://www.geeksforgeeks.org/string-data-structure/">String</a></h4><br>
+<h2>String Question Tabels</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>SNo</th>
+    <th>Problem</th>
+    <th>Types</th>
+    <th>link</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Defanging an Ip address</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/defanging-an-ip-address/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Shuffle String</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/shuffle-string/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>Goal Parser Interpretation</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/goal-parser-interpretation/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td>Count Items Matching a rule</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/count-items-matching-a-rule/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td>Sorting the Sentence</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/sorting-the-sentence/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>06</td>
+    <td>Check if two strings are equivalent</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td>To Lower Case</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/determine-if-string-halves-are-alike/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td>Determine if string halves are alike</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/determine-if-string-halves-are-alike/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td>Decrypt String from Alphabet to Integer Mapping</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Number of Strings That Appear as Substrings in Word</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Robot Return to Origin</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/robot-return-to-origin/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Reverse Words in a String III</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/reverse-words-in-a-string-iii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Excel Sheet Column Title</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/excel-sheet-column-title/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Implement strStr()</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/implement-strstr/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Long Pressed Name</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/long-pressed-name/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Valid Palindrome</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/valid-palindrome/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Valid Palindrome II</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/valid-palindrome-ii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Longest Common Prefix</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/longest-common-prefix/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Maximum Repeating Substring</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/maximum-repeating-substring/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Check if Binary String Has at Most One Segment of Ones</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Merge Strings Alternately</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/merge-strings-alternately/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Reverse Prefix of Word</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/reverse-prefix-of-word/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Roman to Integer</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/roman-to-integer/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Valid Parentheses</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/valid-parentheses/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Length of last word</td>
+    <td>Easy</td>
+    <td><button><a href="https://leetcode.com/problems/length-of-last-word/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Jump Game VII</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/jump-game-vii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Split Two Strings to Make Palindrome</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/split-two-strings-to-make-palindrome/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Number of Ways to Split a String</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/number-of-ways-to-split-a-string/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Sentence Similarity III</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/sentence-similarity-iii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Repeated String Match</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/repeated-string-match/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Next Greater Element III</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/next-greater-element-iii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Maximum Number of Removable Characters</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/maximum-number-of-removable-characters/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Swap Adjacent in LR String</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/swap-adjacent-in-lr-string/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Multiply Strings</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/multiply-strings/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Basic Calculator II</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/basic-calculator-ii/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Minimum Length of String After Deleting Similar Ends</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Number of Substrings With Only 1s</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/number-of-substrings-with-only-1s/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Count Number of Homogenous Substrings</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/count-number-of-homogenous-substrings/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Get Equal Substrings Within Budget</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/get-equal-substrings-within-budget/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Shifting Letters</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/shifting-letters/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Minimum Time Difference</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/minimum-time-difference/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Find Kth Bit in Nth Binary String</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Camelcase Matching</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/camelcase-matching/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Print Words Vertically</td>
+    <td>Medium</td>
+    <td><button><a href="https://leetcode.com/problems/print-words-vertically/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Valid Number</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/valid-number/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Regular Expression Matching</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/regular-expression-matching/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Last Substring in Lexicographical Order</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/last-substring-in-lexicographical-order/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Basic Calculator</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/basic-calculator/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Minimum Number of Operations to Make String Sorted</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Check If String Is Transformable With Substring Sort Operations</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Orderly Queue</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/orderly-queue/">Leetcode</a></button></td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Special Binary String</td>
+    <td>Hard</td>
+    <td><button><a href="https://leetcode.com/problems/special-binary-string/">Leetcode</a></button></td>
+  </tr>
+  
+</table>
+    
+</body>
+</html>

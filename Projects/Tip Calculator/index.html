@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <p>Enter the bill amount and tip percentage to calculate the total and tip. If you want to split the bill with your friends then enter the total number of people.</p>
+        <label for="bill">Bill amount:</label>
+        <input type="number" id="bill">
+        <br/>
+        <label for="tip">Tip percentage:</label>
+        <input type="number" id="tip">
+        <br/>
+        <label for="split">Split among:</label>
+        <input type="number" id="split">
+        <br/>
+        <button id="calculate">Calculate</button>
+        <button id="reset">Reset</button>
+        <br/>
+        <label for="total">Total:</label>
+        <span id="total"></span>
+        <br/>
+        <label for="tipAmount">Tip amount:</label>
+        <span id="tipAmount"></span>
+        <br/>
+        <label for="amountPerPerson">Amount per person:</label>
+        <span id="amountPerPerson"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
