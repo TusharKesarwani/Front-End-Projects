@@ -48,7 +48,7 @@ const projects = [
         "project-link":"#"
     },
     {
-        "title":"Coming Soon",
+        "title":"fitness-website",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/website1.jpg",
         "description":"this website will show all types of exercise based on the muscle group chosen ,and also shows youtube tutorial to user to correctly perform the excercise,it shows animation of the excercise suggested and will be a perfect companion to user.",
