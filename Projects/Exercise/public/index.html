@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+
+
+    
+   <title>Fitness App</title>
+  </head>
+  <body>
+   
+  
+   
+        <header class="header">
+            <p class="logo"><a href="#">Fitness-App</a></p>
+          <ul class="main-nav">
+              <li style="border-bottom:3px solid #ff2625;"><a href="#Home">Home</a></li>
+              
+              <li><a href="#search">Search</a></li>
+              <li><a href="#exercises" >Exercises</a></li>
+              <li><a href="https://www.linkedin.com/in/shivam-pandey-a99296213/" target="blank">Contact</a></li>
+              <li><a href="https://github.com/shivam201483101/fitness-app.git"><img src="img/github.png"></a></li>
+          </ul>
+        </header> 
+        <div class="container" id="Home">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="./img/weight-lifting-1284616_1920.jpg" style="width:100%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="./img/resist.jpg" style="width:100%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="./img/chris-heria.jpg" style="width:100%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="./img/men-yoga.jpg" style="width:100%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="./img/treadmill.jpg" style="width:100%;">
+            </div>
+
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="./img/swimming.jpg" style="width:100%;">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption" ></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="./img/bells.jpg" style="width:100%" onclick="currentSlide(1)" alt="Strength Traning: Weight training is a type of strength training that uses weights for resistance.It provides a stress to the muscles that causes them to adapt and get stronger.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/resistband.jpg" style="width:100%" onclick="currentSlide(2)" alt="Resistance Training: Resistance training exercise is one of the four types of exercise along with endurance, balance and flexibility.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/pullup.jpg" style="width:100%" onclick="currentSlide(3)" alt="Calesthenics:It uses only your own body-weight. Making progress in calisthenics requires that you not only get stronger, but also that you develop balance, stability, flexibility, and control. ">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/yg.jpg" style="width:100%" onclick="currentSlide(4)" alt="Yoga: Yoga improves Flexibilty.Practising yoga is said to come with many physical and psychological wellness benefits.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/walk.jpg" style="width:100%" onclick="currentSlide(5)" alt="Cardio: Basically, cardio increases your cardiac output by making your heart and lungs stronger and muscles more efficient.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/cycle.jpg" style="width:100%" onclick="currentSlide(6)" alt="Dynamic Movements:Dynamic flexibility is the ability to move muscles and joints through their full range of motion during active movement.This improves performance and reduces the risk of injury.">
+              </div>
+            </div>
+          </div>
+         
+          <div id="root" ></div>
+
+<div class="footer"><p class="logo">Fitness-App &copy; 2022</p> 
+  <ul class="footer-item">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#search" >Search</a></li>
+    <li><a href="#exercises" >Exercises</a></li>
+    <li><a href="https://www.linkedin.com/in/shivam-pandey-a99296213/">Contact</a></li>
+    <li><a href="https://github.com/shivam201483101/fitness-app.git"><img src="./img/github.png" height="25px" width="25px"></a></li>
+  </ul>
+</div>
+
+    
+   <script src="slider.js"></script>
+  </body>
+</html>
