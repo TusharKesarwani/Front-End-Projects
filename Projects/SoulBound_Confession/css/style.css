@@ -20,7 +20,11 @@ a {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-
+img{
+  vertical-align: middle;
+  border-style: none;
+  width: 195px;
+}
 h1,
 h2,
 h3,
@@ -371,7 +375,7 @@ button:focus {
 .navbar-toggler {
   border: 1px solid #57cef8;
   border-radius: 0;
-  margin: 16px 15px;
+  margin: 11px 11px;
   padding: 10px 10px;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;

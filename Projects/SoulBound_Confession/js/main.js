@@ -1,3 +1,11 @@
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarCollapse = document.querySelector("#navbar-wd");
+
+navbarToggler.addEventListener("click", () => {
+  navbarCollapse.classList.toggle("show");
+});
+
+
 (function($, window, document) {
 
     $.fn.slider = function(options) {
