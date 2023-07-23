@@ -14,8 +14,12 @@
                 Air Quality and Pollution Checker
             </h2>
             <div class="card">
+                <input type="text" placeholder="Enter city name" id="place-name">
+                <div id="hint"></div>
+                <input type="text" placeholder="Enter state name (only for the USA)" id="place-state">
+            </div>          
+            <div class="card">
               <h2>Please enter the location</h2>
-
               <label for="error-msg" style="color: red;"></label><br />
               <input type="number"
                 name="lat"
@@ -23,7 +27,6 @@
                 id="latitude"
                 step="0.0001"
                 class="loc-input" /> 
-
               <input type="number"
 				name="lon"
 				placeholder="Enter Longitude Here"
@@ -83,6 +86,7 @@
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script type="module" src="countries.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
