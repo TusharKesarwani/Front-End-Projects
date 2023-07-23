@@ -8,45 +8,99 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Temperature Converter</h1>
+    <h1>Temperature Converter</h1>
     <div id="converter">
         <div class="bo">
-
-            <label id="yes">Celsius</label> <br>
-         <input type="number" value="0" id="cel" class="input">
+            <label>Celsius</label> <br>
+            <input type="number" value="0" id="cel" class="input">
         </div> 
         <div class="bo">
-            <label id="no">Fahrenheit</label><br>
-         <input type="number" value="32" id="value" class="input">
+            <label>Fahrenheit</label><br>
+            <input type="number" value="32" id="fah" class="input">
+        </div>
+        <div class="bo">
+            <label>Kelvin</label><br>
+            <input type="number" value="273.15" id="kel" class="input">
+        </div>
+        <div class="bo">
+            <label>Rankine</label><br>
+            <input type="number" value="491.67" id="ran" class="input">
         </div>
     </div>
     
-    
-
     <script>
         var cel = document.getElementById("cel");
+        var fah = document.getElementById("fah");
+        var kel = document.getElementById("kel");
+        var ran = document.getElementById("ran");
+        
+        
+        cel.addEventListener("input", function () {
+            if(cel.value<-273.15)
+        {
+            alert("Temperature in celcius cannot be less than −273.15 °C");
+            return;
+        }
+            let c = parseFloat(this.value);
+            let f = (c * 9/5) + 32;
+            let k = c + 273.15;
+            let r = (c + 273.15) * 9/5;
 
-var fah = document.getElementById("value");
+            fah.value = f.toFixed(2);
+            kel.value = k.toFixed(2);
+            ran.value = r.toFixed(2);
+        });
 
-cel.addEventListener("input", function () {
-     let c= this.value;
-     let f = (c *  9/5 ) +32;
-     
-     if(!Number.isInteger (f)){
-        f = f.toFixed(4);
-     }
-     fah.value= f;
-     
-});
+        fah.addEventListener("input", function () {
 
-fah.addEventListener("input",function () {
-    let f = this.value;
-    let c = (f - 32) * 5/9 ;
-    if(!Number.isInteger (c)){
-        c=c.toFixed(4);
-    }
-    cel.value = c;
-});
+            if(fah.value<-459.67)
+        {
+            alert("Temperature in fahrenheit cannot be less than -459.67 °F");
+            return;
+        }
+            let f = parseFloat(this.value);
+            let c = (f - 32) * 5/9;
+            let k = (f - 32) * 5/9 + 273.15;
+            let r = f + 459.67;
+
+            cel.value = c.toFixed(2);
+            kel.value = k.toFixed(2);
+            ran.value = r.toFixed(2);
+        });
+
+        kel.addEventListener("input", function () {
+            if(kel.value<0)
+        {
+            alert("Temperature in kelvin cannot be negative");
+            return;
+        }
+            let k = parseFloat(this.value);
+            let c = k - 273.15;
+            let f = (k - 273.15) * 9/5 + 32;
+            let r = k * 9/5;
+           
+            cel.value = c.toFixed(2);
+            fah.value = f.toFixed(2);
+            ran.value = r.toFixed(2);
+        });
+
+        ran.addEventListener("input", function () {
+            if(ran.value<0)
+        {
+            alert("Temperature in rankine cannot be negative");
+            return;
+        }
+            let r = parseFloat(this.value);
+            let c = (r - 491.67) * 5/9;
+            let f = r - 459.67;
+            let k = r * 5/9;
+           
+            cel.value = c.toFixed(2);
+            fah.value = f.toFixed(2);
+            kel.value = k.toFixed(2);
+        });
     </script>
 </body>
 </html>
+
+

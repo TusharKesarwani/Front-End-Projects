@@ -1,12 +1,15 @@
 body {
   background-color: #f0f0f0;
-  font size: 13px;
+  font-size:13px;
 }
 
 .card,
 .card-panel {
   padding: 15px, 20px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  
+}
+.card-panel:hover{
+  box-shadow: 5px 5px 5px 0 rgba(3, 3, 3, 0.314);
 }
 
 .container-fluid {
@@ -26,17 +29,18 @@ body {
 }
 
 .subheader {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.999);
   font-weight: 500;
+  font-size: 28px;
 }
 
 /* nav */
 nav {
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0, 3);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0, 0);
 }
 
 nav ul li {
-  text-align: :center;
+  text-align: center;
 }
 
 nav.ul.right {
@@ -60,11 +64,14 @@ nav ul a img {
 }
 
 .nav-wrapper ul a:hover {
-  background-color: transparent;
+  background-color:rgba(7, 160, 255, 0.177);
+  box-shadow: 5px 5px 5px 0 rgba(7, 160, 255, 0.177);
+  border-radius: 25px;
 }
 
 .nav-wrapper .title {
-  font-size: 1.4rem;
+  font-size: 25px;
+  color: #000000;
 }
 
 .nav-wrapp .btn-flat {
@@ -80,7 +87,7 @@ nav ul a img {
 .nav-2 i {
   height: 56px !important;
   line-height: 56px !important;
-  min-height: : 56px !important;
+  min-height: 56px !important;
 }
 
 .search-wrapper {
@@ -92,34 +99,36 @@ nav ul a img {
 }
 
 .search-wrapper i {
-  color: #757575;
+  color: #000000;
   position: absolute;
-  font-size: 24px;
+  font-size: 30px;
   top: 5px;
-  left: 24px;
+  left: 20px;
   line-height: 36px !important;
 }
 
 input[type=search]:not(.browser-default) {
   display: block;
-  padding: 11px 8px 11px 72px;
+  padding: 10px 50px;
+  
   width: 100%;
-  background: #f5f5f5;
+  background: #dcdcdc;
   height: 24px;
   border: none;
   font-size: 16px;
   outline: none;
-  border-radius: 2px;
-  color: #757575;
+  border-radius: 50px;
+  color: #000000;
 }
 
 input[type=search]:focus {
-  border-bottom: : none !important;
+  border-bottom:  none !important;
   box-shadow: none !important;
 }
 
 input[type="search"]::placeholder {
-  color: #757575;
+  color: #000000;
+  font-size: 20px;
 }
 
 /*sidenav*/
@@ -139,11 +148,12 @@ input[type="search"]::placeholder {
 }
 
 .side-nav .active {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(7, 160, 255, 0.177);
+  border-radius: 50px;
 }
 
 .side-nav .active a {
-  color: #212121;
+  color: #000000;
   font-weight: 500;
 }
 
@@ -170,12 +180,12 @@ input[type="search"]::placeholder {
 .side-nav li a {
   padding: 0 16px;
   font-weight: normal;
-  font-size: 13px;
-  color: #616161;
+  font-size: 18px;
+  color: #000000;
 }
 
 side-nav li a:hover {
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 /*folders*/
@@ -184,6 +194,10 @@ side-nav li a:hover {
   display: inline-block;
   margin: 15px 20px 0;
   font-weight: 500;
+  font-size: 15px;
+  border-radius: 30px;
+  box-shadow: #000000;
+  text-shadow: #000000;
 }
 
 .folder i {

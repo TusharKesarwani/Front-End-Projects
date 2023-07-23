@@ -1,0 +1,365 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+ul, li, ol {
+    list-style: none;
+    }
+
+    a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  li {
+    color: white;
+    height: 670px;
+  }
+  ul li{
+      margin-bottom: 5px;
+  }
+
+body, main{
+    margin: 0 auto;
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+header {
+    position: fixed;
+    top:0;
+    height: 52px;
+    width: 100%;
+    color: rgba(255, 253, 253, 0.87);
+    background-color: rgba(0,0,0,0.92);
+    z-index: 10;
+  }
+
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0;
+}
+.header-list li{
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+.header-list li a{
+    text-decoration: none;
+    color: #f5f5f7;
+}
+.logo{
+    width: 25px;
+}
+.search{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:30px;
+    float:right;
+    background-color: rgba(0,0,0,0.92);
+    border-radius:10px;
+}
+.contents {
+    background-color: white;
+}
+.image-container .hero {
+    height: 640px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.hero {
+    height: 100%;
+    background-image: url(https://www.apple.com/v/home/bb/images/heroes/macbook-air-15/hero_macbook_air_15__x63n8tqcpo2u_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    }
+
+.hero .title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.hero .title h1 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.897);
+    font-weight: 700;
+}
+.hero .title p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(41, 41, 41, 0.89)
+}
+
+ .cta-links {
+    text-align: center;
+}
+
+.image-container .hero-pro {
+    height: 640px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.hero-pro {
+    height: 90%;
+    min-height: 100%;
+    background-image: url( https://www.apple.com/in/home/heroes/back-to-school-2023/images/hero_bts2023_startframe__f787lg06y3ue_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-pro .title {
+    text-align: center;
+}
+.hero-pro .title h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.hero-pro .title p {
+    font-size: 30px;
+    font-weight: normal;
+}
+.hero-pro .cta-links {
+    text-align: center;
+}
+.image-container .fitness {
+    height: 500px;
+    width: 100%;
+    padding-top: 0%;
+    flex: auto;  
+}
+.fitness {
+    height: 90%;
+    min-height: 100%;
+    background-image: url(https://www.apple.com/in/home/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 00px;
+}
+.title .hello {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+
+
+ .title .A {
+     text-align: center;
+    font-size: 30px;
+    font-weight: normal;    
+}
+
+.fitness .cta-links {
+    text-align: center;
+}
+
+
+
+  .flex-list{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .flex-list li{
+      flex: auto;
+      width: 50%;
+  }
+  .img{
+      margin: 0 auto;
+      width: 100%;
+  }
+  .headline{
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+  .content{
+      overflow: hidden;
+  }
+  /* main themes content */
+  .theme-dark{
+    background-color: #000;
+    margin: 0 auto;
+  }
+  .theme-light{
+    background-color: #fbfbfd;
+    margin: 0 auto;
+    color: #1D1D1F;
+  }
+  .container-main{
+    width: 98%;
+    height: 100%;
+  }
+
+  ul li img{
+      width: 100%;
+  }
+
+  .cta-links a{
+      font-size: 23px;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #2997FF;
+      font-weight: normal;
+  }
+  .cta-links a:hover{
+      text-decoration: underline;
+  }
+  
+  .unit-image figure img{
+      transition: transform .2s;
+  }
+  .unit-image figure img:hover{
+      transform: scale(1.05);
+  }
+  .apple-watch-logo{
+    width: 25%;
+}
+  footer {
+      background-color: #f5f5f7;
+      padding: 40px;
+      height: 1000px;
+      color: #1d1d1f;
+  }
+
+  .logo-footer {
+      width: 50px;
+      margin-bottom: 10px;
+  }
+
+  .txt-copy {
+      margin: 0;
+  }
+
+  .txt-copy a {
+      color: #fff;
+  }
+
+  .txt-copy a:hover {
+      text-decoration: underline;
+  }
+  .footer-container{
+      display: flex;
+  }
+  .footer-list {
+      float: left;
+      width: 30%;
+      margin: 0 auto;
+      
+  }
+
+  .footer-list p a {
+      color: #1d1d1f;
+  }
+
+  .footer-list p a:hover {
+      text-decoration: underline;
+  }
+
+  .clear-footer {
+      clear: left;
+  }
+  .foot-notes ul li{
+      color: #86868b;
+      height: 2em;
+      margin: 10px 0;
+      text-align: left;
+  }
+  .footer-container, .footer-list-container{
+      width: 70%;
+      margin: 0 auto;
+  }
+
+
+/* responsive */
+.menu-logo{
+    visibility: hidden;
+    position: absolute;
+}
+.fa-searchs{
+    visibility: hidden;
+}
+
+
+@media (max-width: 1024px){
+    .flex-list{
+        flex-wrap: wrap;
+    }
+
+    .flex-list li{
+        width: 50%;
+        height: 400px;
+    }
+    .foot-notes{
+        height: 500px;
+    }
+    footer{
+        height: 1100px;
+    }
+    .fa-searchs{
+        visibility: visible;
+    }
+    .search{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+    
+@media (max-width: 670px){
+    .flex-list{
+        flex-direction: column;
+    }
+    .flex-list li, .img-container{
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+    }
+    .container-main{
+        width: 100%;
+    }
+    .sm-view-hide{
+        visibility: hidden;
+    }
+    .menu-logo{
+        visibility: visible;
+    }
+    .sm-view{
+        position: absolute;
+        
+    }
+    .header-shoping{
+        right: 10px;
+
+    }
+    .apple-header{
+        margin: 0 auto;
+    }
+    .menu-logo{
+        top: 18px;
+        left: 30px;
+    }
+    .footer-container, .footer-list-container{
+        width: 100%;
+    }
+    footer{
+        height: 800px;
+    }
+    .foot-notes{
+        height: 0;
+    }
+    .foot-notes ul li{
+        margin-bottom: 100px;
+        display: none;
+    }
+}

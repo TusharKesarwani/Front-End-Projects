@@ -1,0 +1,43 @@
+body {
+  font-family: Inter;
+  margin: 0;
+}
+
+#navbar {
+  box-shadow: 5px 5px 10px lightgray;
+  color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.item {
+  letter-spacing: 1px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+}
+
+.item:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+
+#main {
+  width: 55%;
+  margin: 215px auto;
+  padding: 50px;
+}
+
+.title {
+  text-align: center;
+}

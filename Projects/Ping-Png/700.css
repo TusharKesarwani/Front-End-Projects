@@ -1,3 +1,16 @@
-html{
-    font-size: 6px;
-}
+#header div:not(.middle) {
+    display: none;
+  }
+  #header {
+    display: flex;
+    justify-content: center;
+  }
+  #result-box {
+    width: 80%;
+  }
+  #player-score, #computer-score {
+    font-size:6rem;
+  }
+  #set-time {
+    width: 50%;
+  }

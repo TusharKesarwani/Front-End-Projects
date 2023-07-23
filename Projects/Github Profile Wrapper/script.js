@@ -10,8 +10,10 @@ document.getElementById("search-btn").addEventListener("click", async () => {
     getProfileDetails(data);
   } 
   else {
+      alert("Input is empty! Please enter a github username");
+    }
   }
-});
+);
 
 function getProfileDetails(profileData) {
   var profileDetails = {
