@@ -1,16 +1,17 @@
 const searchForm = document.querySelector("form");
 const searchResultDiv = document.querySelector(".search-result");
 const container = document.querySelector(".container");
+const accordionHeadings = document.querySelectorAll('.accordion-heading');
 let searchQuery = "";
-const APP_ID = "33b1a0ef";
-const APP_key = "5e12645236de1c7eb43b725fd06a49ee";
-//console.log(container);
+
+const APP_ID = '33b1a0ef';
+const APP_key = '5e12645236de1c7eb43b725fd06a49ee';
+
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   searchQuery = e.target.querySelector("input").value;
   fetchAPI();
-  //console.log(searchQuery);
 });
 
 async function fetchAPI() {
@@ -83,15 +84,24 @@ function generateHTML(results) {
             result.recipe.url
           }">View Recipe</a>
         </div>
-        <p class="item-data">Calories : ${result.recipe.calories.toFixed(2)}</p>
-        <p class="item-data">Diet label : ${
-          result.recipe.dietLabels.length > 0
-            ? result.recipe.dietLabels
-            : "No Data Found"
-        }</p>
-        <p class="item-data">Health labels : ${result.recipe.healthLabels}</p>
+        <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h3 class="accordion-heading">Diet Labels</h3>
+            <div class="accordion-content">
+              <p class="item-data">${result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels : "No Data Found"}</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-heading">Health Labels</h3>
+            <div class="accordion-content">
+              <p class="item-data">${result.recipe.healthLabels}</p>
+            </div>
+          </div>
+        </div>
       </div>
     `;
   });
   searchResultDiv.innerHTML = generatedHTML;
 }
+

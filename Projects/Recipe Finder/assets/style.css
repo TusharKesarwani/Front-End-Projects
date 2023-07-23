@@ -152,6 +152,9 @@ input {
   .container.initial form {
     max-width: 500px;
   }
+  .accordion-heading {
+    min-width: 540px;
+  }
   .container.initial form input {
     padding: 10px;
     font-size: 2rem;
@@ -186,4 +189,5 @@ input {
 .selectedLink {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+
 }
