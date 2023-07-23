@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="bgvideo.mp4" >
+      </video>
+      <div class="content">
+        <h1 class="heading">COUNTDOWN TIMER</h1>
+    <div class="dateTime">
+        <label>Enter the date: 
+        <input type="date" id="enterDate" required></label><br>
+        <br>
+        <label>Enter the Time: 
+        <input type="time" id="enterTime" required></label>
+    </div>
+    <div>
+        <button id="button">Let's Begin the Countdown</button>
+    </div>
+    
+    <button id="stop" onclick="myFunction()">Stop Timer</button>
+    <button id="reset">Reset Timer</button>
+    
+    <div class="container">
+        <div class="innerContainer" id="day">
+            <input type="text" class="select" id="day" readonly>
+            <br>
+            <p class="name">Days</p>
+        </div>
+        <div class="innerContainer" id="hour">
+            <input type="text" class="select" id="hour" readonly>
+            <br>
+            <p class="name">Hours</p>
+        </div>
+        <div class="innerContainer" id="min">
+            <input type="text" class="select" id="min" readonly>
+            <br>
+            <p class="name">Minutes</p>
+        </div>
+        <div class="innerContainer" id="sec">
+            <input type="text" class="select" id="sec" readonly>
+            <br>
+            <p class="name">Seconds</p>
+        </div>
+    </div>
+      </div>
+   <script src="script.js"></script>
+</body>
+</html>

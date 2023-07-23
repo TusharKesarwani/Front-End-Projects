@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,109 +8,108 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Bookcase</title>
 </head>
+
 <body>
-    
-        <!-- navigation bar -->
-        <header>
-        
-            <nav class="navbar">
-                <a href="#" class="nav-logo">BOOKCASE.</a>
-                <ul class="nav-menu">
-                
-                    <li class="nav-item">
-                        <a href="#add" class="nav-link">Add Book</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a href="#u-bookcase" class="nav-link">Unfinished Books</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a href="#f-bookcase" class="nav-link">finished Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#search" class="nav-link">Search</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                 <span class="bar"></span>
-                </div>
-            </nav>
-    
-<!-- navigation bar ends     -->
-        <div class="jumbotron">
-            <div class="content">
-                <h1>Bookcase</h1>
-                <h2>a website where you can store your finished and unfinished books!</h2>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Bookcase</a>
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="#add" class="nav-link">Add Book</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#u-bookcase" class="nav-link">Unfinished</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#f-bookcase" class="nav-link">Finished</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <img src="./assets/book.png" alt="Books">
-            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,122.7C384,160,480,224,576,261.3C672,299,768,309,864,288C960,267,1056,213,1152,213.3C1248,213,1344,267,1392,293.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        </div>
+        </nav>
+
     </header>
 
     <main>
-        <div class="title">
-            <h2>Store a New Book</h2>
-        </div>
-            <div class="inputBookcase">
-                <!--Input section-->
-                <section id="add">
-                    <h2>Input Book</h2>
-                    <form class="form" id="form" action="#">
-                        <label for="title">Title</label>
-                        <input type="text" id="title" name="title" placeholder="Title of the Book" required>
-                    
-                        <label for="author">Author</label>
-                        <input type="text" id="author" name="author" placeholder="Author of the Book" required>
-                    
-                        <label for="year">Year</label>
-                        <input type="number" id="year" name="year" placeholder="Book Released Year" required>
-    
-                        <input id="finishedBook" type="checkbox" name="finishedBook">
-                        <label for="finishedBook">Finished</label>
-                      
-                        <input type="submit" value="Submit" name="Submit">
-                      </form>
-                </section>
-
-                <!--Show section-->
-                <section id="u-bookcase"> <!--unfinished books-->
-                    <h1>Unfinished Books</h1>
-                    <div id="incompleteBookshelfList">
-                        
-                    </div>
-                </section>
-
-                <section id="f-bookcase"><!--finished books-->
-                    <h1>Finished Books</h1>
-                    <div id="completeBookshelfList">
-
-                    </div>
-                </section>
-            </div>
-
-            <!--search section-->
+        <div class="home__search">
             <div class="searchBookcase">
+                <div class="modal">
+                    <div class="modal-container">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Book Details</h2>
+                            <div class="book-details"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h1>Bookcase</h1>
+                    <h2>A website where you can keep track on your finished and unfinished books!</h2>
+                </div>
                 <section id="search-bar">
-                    <h2>Search Book</h2>
                     <form id="search" action="#" class="search">
-                        <label for="search">Search for the specific Book Title</label>
-                        <input type="text" name="search" placeholder="Search"  id="cari">
-    
-                        <input type="submit" value="Search" name="cari">
+                        <input type="text" name="search" placeholder="Search your book..." id="cari">
+                        <input type="submit" id="searchButton" value="Search" name="cari">
                     </form>
                 </section>
             </div>
+        </div>
+        <div class="inputBookcase">
+
+            <section id="add">
+                <div class="title">
+                    <h2>Store a New Book</h2>
+                </div>
+                <h2 class="add-section-header">Input Book</h2>
+                <form class="form" id="form" action="#">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Title of the Book" required>
+
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" placeholder="Author of the Book" required>
+
+                    <label for="year">Year</label>
+                    <input type="number" id="year" name="year" placeholder="Book Released Year" required>
+
+                    <input id="finishedBook" type="checkbox" name="finishedBook">
+                    <label for="finishedBook">Finished</label>
+
+                    <input type="submit" value="Submit" name="Submit">
+                </form>
+            </section>
+
+            <section id="u-bookcase">
+                <div class="title">
+                    <h2>Unfinished Books</h2>
+                </div>
+                <div id="incompleteBookshelfList">
+
+                </div>
+            </section>
+
+            <section id="f-bookcase">
+                <div class="title">
+                    <h2>Finished books</h2>
+                </div>
+                <div id="completeBookshelfList">
+
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <footer>
         <p>Keegan Colaco &copy; 2023</p>
     </footer>
+    <script src="script.js"></script>
 
-    <script src="./js/data.js"></script>
-    <script src="./js/dom.js"></script>
-    <script src="./js/script.js"></script>
 </body>
+
 </html>
