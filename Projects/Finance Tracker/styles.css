@@ -184,3 +184,57 @@ color: red;
     background-color:#333;
     position: relative;
 }
+
+@media (max-width: 507px) {
+    .logo{
+        height: 60px;
+        
+    }
+    #currentDateTime{
+        font-size:14px;
+        margin-left: 100px;
+    }
+    .hello-height{
+        font-size: 20px;
+    }
+    #transactionListSection {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    #balanceSection{
+        /* max-width: 100%;
+        padding:10px 10px; */
+        flex-direction: column; 
+        font-size: 17px;
+        
+    }
+    .balance{
+        flex:1 1 100%;
+        margin: 5px;
+    }
+    header{
+        height: 140px;
+        text-align: center;
+        display: flex;
+        justify-content:flex-start;
+    }
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.income {
+    color: green;
+}
+  
+.expense {
+color: red;
+}
+
+#bottom{
+    height: 30px;
+    width: 100%;
+    background-color:#333;
+    position: relative;
+}
