@@ -1,0 +1,108 @@
+.profile-container {
+    background-color: #ffff;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    width: 355px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 10px;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.developer-image {
+    width: 155px;
+    border-radius: 50%;
+}
+
+.circle {
+    height: 165px;
+    width: 165px;
+    background-color: #dee0df;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.social-links {
+    width: 25px;
+    height: 25px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    align-items: center;
+}
+
+.dev-name {
+    text-align: center;
+    font-size: 25px;
+    margin: 11px 0;
+}
+
+.dev-bio {
+    font-size: 17px;
+    text-align: justify;
+    margin: 12px 0px;
+}
+
+.TVMW-desc {
+    font-size: 15px;
+    margin: 15px 0 10px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+}
+
+
+.joining-date,
+.user-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    width: 297px;
+    background-color: #ffff;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin: 10px auto;
+    display: flex;
+}
+
+.panel a {
+    font-size: 16px;
+    color: black;
+}
+
+.panel a:hover {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.panel img {
+    margin-right: 8px;
+}
