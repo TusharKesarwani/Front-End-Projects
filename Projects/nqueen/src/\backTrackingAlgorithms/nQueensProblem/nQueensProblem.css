@@ -1,0 +1,132 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+  /* 1 */
+  .btn-1 {
+      padding-top: 5px;
+    background: rgb(6,14,131);
+    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+    border: none;
+  }
+  .btn-1:hover {
+     background: rgb(0,3,255);
+  background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+  }
+  .btn-2 {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    width: 60px;
+  background: rgb(64, 202, 233);
+  background: linear-gradient(0deg, rgb(65, 168, 233) 0%, rgb(65, 187, 221) 100%);
+  border: black;
+  color:black;
+  font-weight:bold;
+}
+.btn-2:hover {
+   background: rgb(7, 11, 252);
+background: linear-gradient(0deg, rgb(8, 12, 246) 0%, rgb(19, 131, 244) 100%);
+color:#f0f0f0;
+}
+  
+
+
+@keyframes popupQueen {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+.Qboard {
+    position: relative;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+}
+.Qboard .q-array-tile {
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    border-radius: 2px;
+}
+.Qboard .q-array-tile i.fa-crown {
+    font-size: 25px;
+    color: #fff;
+}
+
+.popupQueen {
+    animation-name: popupQueen;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-timing-function: ease-in-out;
+    transition: 400ms all;
+}
+
+.Qbox {
+    display: grid;
+    grid-gap: 0 0;
+    background-color: #fff;
+    grid-template-rows: repeat(var(--Qgrid-rows), 1fr);
+    grid-template-columns: repeat(var(--Qgrid-cols), 1fr);
+
+    box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.Qgrid-item {
+    padding-top: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.highlight {
+    transition: ease-in 300ms;
+    transform: scale3d(1.25, 1.25, 1.25);
+    margin: 1.5rem;
+}
+
+#NQueenResults {
+    width: 100%;
+    height: 50vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.alert-success {
+    background-color: #abebc6;
+}
