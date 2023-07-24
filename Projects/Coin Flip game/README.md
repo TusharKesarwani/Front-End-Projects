@@ -21,7 +21,7 @@ As the name suggest this is a small game where the user selects from the head an
 ---
 ![Project demo 3](./assets/img3.png)
 ---
-![Project demo 3](./assets/img4.png)
+![Project demo 4](./assets/img4.png)
 ---
 
 ## How to run it locally?
