@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+body {
+    background-color: #000;
+}
+header {
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+h1 {
+    font-size: 4rem;
+    display: inline-block;
+    font-family: 'Nosifer', cursive;
+    background: url(oranges.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.1px green;
+    -webkit-text-fill-color: transparent;
+    animation: text 3s linear infinite, hover 3s linear infinite;
+}
+@keyframes text{
+    from{
+        background-position: 100% 20%;
+    }
+    to {
+        background-position: 10% 0%;
+    }
+}
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
