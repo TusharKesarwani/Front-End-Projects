@@ -1,5 +1,6 @@
 let baseNumber = null;
 let squareNumber = null;
+let cubeNumber = null;
 let input;
 let inputValue = "";
 let result;
@@ -116,6 +117,14 @@ for (item of buttons) {
         input.innerHTML = squareNumber + " ^ 2";
         break;
 
+      case "x³":
+        cubeNumber = eval(inputValue);
+        inputValue = "";
+        input.innerHTML = "";
+        result.innerHTML = "";
+        input.innerHTML = cubeNumber + " ^ 3";
+        break;
+
       case "²√":
         squareRoot();
         break;
@@ -125,7 +134,6 @@ for (item of buttons) {
         inputValue = "";
         input.innerHTML = rootIndex + "√";
         break;
-
       case "ln":
         naturalLog();
         break;
@@ -136,10 +144,6 @@ for (item of buttons) {
 
       case "10^x":
         powerOfTen();
-        break;
-
-      case "e":
-        e();
         break;
 
       case "x!":
@@ -170,6 +174,17 @@ function ans() {
     result.innerHTML = power;
     inputValue = power;
     squareNumber = null;
+  } else if (rootIndex) {
+    let radicand = parseFloat(inputValue);
+    let resultValue = Math.pow(radicand, 1 / rootIndex);
+    result.innerHTML = resultValue;
+    inputValue = resultValue;
+    rootIndex = null;
+  } else if (cubeNumber) {
+    let power = cubeNumber ** "3";
+    result.innerHTML = power;
+    inputValue = power;
+    cubeNumber = null;
   } else {
     if (inputValue !== "") {
       if (inputValue.includes("%")) {
@@ -205,6 +220,11 @@ function equal() {
     result.innerHTML = resultValue;
     inputValue = resultValue;
     rootIndex = null;
+  } else if (cubeNumber) {
+    let power = cubeNumber ** "3";
+    result.innerHTML = power;
+    inputValue = power;
+    cubeNumber = null;
   } else {
     if (inputValue !== "") {
       if (inputValue.includes("%")) {
@@ -327,11 +347,6 @@ function inverseTan() {
 
 // Other Functions
 
-function e() {
-  input.innerHTML = Math.E;
-  inputValue = result.innerHTML;
-}
-
 function squareRoot() {
   const value = parseFloat(inputValue);
   if (!isNaN(value)) {
@@ -371,7 +386,7 @@ function log() {
   const value = parseFloat(inputValue);
   let logResult;
   if (isNaN(value) || value <= 0) {
-      logResult = "Invalid input";
+    logResult = "Invalid input";
   } else {
     logResult = Math.log(value) / Math.log(10);
   }
