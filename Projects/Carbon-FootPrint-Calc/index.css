@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.box {
+    font-size: 5rem;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), black);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color:white;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(107, 107, 107),rgb(83, 72, 72));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+nav h1{
+    font-size: 2rem;
+    word-spacing: 25px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.box h4 {
+    color: aliceblue;
+    font-size: 1.7rem;
+    margin: 15px 0;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+}
+
+.container a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media screen and (max-width:900px){
+    nav h1{
+        font-size: 1.7rem;
+        word-spacing: 0px;
+        letter-spacing: 4px;
+    }
+    .box{
+        width: 170px;
+        height: 170px;
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:590px) {
+    nav{
+        height: 100px;
+    }
+    nav h1{
+        /* font-size: 1.4rem; */
+        word-spacing: 2px;
+        letter-spacing: 1px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}

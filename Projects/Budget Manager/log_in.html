@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="styles_login.css">
+    <style>
+      body {
+        font-family: 'Open Sans', Arial, sans-serif;
+      }
+    </style>
+    <title>Budget Tracker</title>
+    <link rel="icon" type="image/x-icon" href="./images/budget.png">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div>
+          <img src="./images/budget.png" alt="Buget_Tracker">
+          <a href="https://www.your-website.com">Buget Tracker</a>
+        </div>
+        <button class="logout-btn"><a href="./main.html">Home</a></button>
+      </div>
+  
+    <main>
+      <div class="form-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="admin">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="password">
+          </div>
+          <button type="submit">Login</button>
+         
+        </form>
+      </div>
+    </main>
+  
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Gingka Hagane",
+    "description": "Gingka Hagane is the main protagonist of Beyblade Metal Fusion. He is a skilled Blader and the owner of the Storm Pegasus 105RF Beyblade. Gingka is determined, brave, and passionate about Beyblade. He seeks to become the number one Blader in the world and protect it from evil forces.",
+    "beyblade": "Storm Pegasus 105RF",
+    "imageURL": "https://cdn.wallpapersafari.com/24/68/d7ULbn.png"
+  },
+  {
+    "id": 2,
+    "name": "Kyoya Tategami",
+    "description": "Kyoya Tategami is a fierce and competitive Blader. He is known for his strong and aggressive Beyblade, Rock Leone 145WB. Kyoya initially clashes with Gingka but later becomes one of his closest allies. He is determined to prove his strength and be recognized as a top Blader.",
+    "beyblade": "Rock Leone 145WB",
+    "imageURL": "https://images4.fanpop.com/image/photos/18300000/Kyouya-Tategami-kyouya-tategami-18343205-967-544.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ryuga",
+    "description": "Ryuga is the primary antagonist of Beyblade Metal Fusion. He is a powerful Blader and the owner of the Lightning L-Drago 100HF Beyblade. Ryuga is known for his ruthless and aggressive style, as well as his desire for power. He aims to dominate the Beyblade world and will do whatever it takes to achieve his goals.",
+    "beyblade": "Lightning L-Drago 100HF",
+    "imageURL": "https://qph.cf2.quoracdn.net/main-qimg-237c5e086743b2f055356a4a5412499f-lq"
+  },
+  {
+    "id": 4,
+    "name": "Kenta Yumiya",
+    "description": "Kenta Yumiya is a kind-hearted and enthusiastic Blader. He owns the Flame Sagittario C145S Beyblade. Kenta is initially a weaker Blader but gains confidence and strength through his friendship with Gingka and the others. He values friendship and always strives to improve his skills.",
+    "beyblade": "Flame Sagittario C145S",
+    "imageURL": "https://i.pinimg.com/originals/f0/00/7f/f0007f20bb60a408cd73126f4d6e7337.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Benkei Hanawa",
+    "description": "Benkei Hanawa is a loyal and passionate Blader who becomes one of Kyoya's most trusted friends. He wields the Dark Bull H145SD Beyblade. Benkei is known for his loud personality and fierce battling style. Despite his tough exterior, he cares deeply for his friends and is always ready to support them.",
+    "beyblade": "Dark Bull H145SD",
+    "imageURL": "https://e1.pxfuel.com/desktop-wallpaper/129/225/desktop-wallpaper-trololo-blogg-fusion-beyblade-metal-fusion.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Tsubasa Otori",
+    "description": "Tsubasa Otori is a skilled and mysterious Blader who initially joins the Dark Nebula organization. He later becomes a loyal ally of Gingka and the others. Tsubasa uses the Earth Eagle 145WD Beyblade and is known for his strategic approach to battles. He seeks redemption for his past actions.",
+    "beyblade": "Earth Eagle 145WD",
+    "imageURL": "https://i.pinimg.com/550x/2f/cc/d9/2fccd92c6d1d283b21f87f183c8d9cdf.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Yu Tendo",
+    "description": "Yu Tendo is a cheerful and energetic Blader who loves to perform for his fans. He owns the Flame Libra T125ES Beyblade. Yu is known for his showmanship and ability to entertain the crowd. He is a good friend and supports Gingka in his battles against evil forces.",
+    "beyblade": "Flame Libra T125ES",
+    "imageURL": "https://pbs.twimg.com/media/BlYLCnKCMAE8LrO.jpg:large"
+  },
+  {
+    "id": 8,
+    "name": "Masamune Kadoya",
+    "description": "Masamune Kadoya is a determined Blader from the African branch of the Beyblade training camp. He wields the Ray Striker D125CS Beyblade. Masamune is confident and competitive, aiming to surpass Gingka as the top Blader.",
+    "beyblade": "Ray Striker D125CS",
+    "imageURL": "https://e1.pxfuel.com/desktop-wallpaper/680/397/desktop-wallpaper-masamune-kadoya.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Ryo Hagane",
+    "description": "Ryo Hagane is Gingka's father and a legendary Blader. He is the original owner of the Storm Pegasus Beyblade. Ryo has a calm and wise demeanor and is always there to offer guidance and support to Gingka and his friends.",
+    "beyblade": "Storm Pegasus",
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNEMHz3oxM1LMY0KqXk-_uPMTN3c_F8j1CqA&usqp=CAU"
+  },
+  {
+    "id": 10,
+    "name": "Hikaru Hasama",
+    "description": "Hikaru Hasama is a talented Blader and a member of Team GanGan Galaxy. She wields the Cyber Pegasus 105F Beyblade. Hikaru is determined and focused on improving her skills. She forms a strong bond with Gingka and the team as they strive for victory.",
+    "beyblade": "Cyber Pegasus 105F",
+    "imageURL": "https://pm1.aminoapps.com/7270/78801b57ec4dee26b66f5517e1428236ccd32365r1-720-404v2_uhq.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Ryutaro Fukami",
+    "description": "Ryutaro Fukami is a member of Team GanGan Galaxy and a close friend of Gingka. He uses the Flame Sagittario C145S Beyblade. Ryutaro is cheerful and energetic, always bringing a positive atmosphere to the team. He is a reliable and supportive teammate.",
+    "beyblade": "Flame Sagittario C145S",
+    "imageURL": "https://64.media.tumblr.com/736e4603d20ba2db61073f6cb8b2e901/tumblr_o5n9pgiCM31ro33voo2_540.png"
+  },
+  {
+    "id": 12,
+    "name": "Damian Hart",
+    "description": "Damian Hart is a member of Team Excalibur, an elite Beyblade team. He wields the Phantom Orion B:D Beyblade. Damian is calm, strategic, and confident in his abilities. He seeks to prove the superiority of Team Excalibur and aims to defeat Gingka and his friends.",
+    "beyblade": "Phantom Orion B:D",
+    "imageURL": "https://i.pinimg.com/originals/5b/41/13/5b4113b835694f87ee06446786434eaa.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Julian Konzern",
+    "description": "Julian Konzern is a former member of Team Excalibur and a skilled Blader. He owns the Gravity Destroyer AD145WD Beyblade. Julian is arrogant and believes in the power of money. However, he undergoes character development and learns the importance of friendship and true strength.",
+    "beyblade": "Gravity Destroyer AD145WD",
+    "imageURL": "https://i.pinimg.com/736x/3b/1f/2d/3b1f2d8e365a7f0cba6dc1f4684e869d.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Aguma",
+    "description": "Aguma is a powerful Blader and a member of the African Beyblade team. He owns the Scythe Kronos T125EDS Beyblade. Aguma is serious and focused, always aiming for victory. He possesses great skill and is a formidable opponent in battles.",
+    "beyblade": "Scythe Kronos T125EDS",
+    "imageURL": "https://pbs.twimg.com/media/E_CWMFHWYAAq9Ol.png"
+  },
+  {
+    "id": 15,
+    "name": "Bao",
+    "description": "Bao is a young Blader and a member of the Chinese Beyblade team. He wields the Archer Griffin C145S Beyblade. Bao is enthusiastic and eager to prove himself in battles. He possesses natural talent and seeks to improve his skills through experience.",
+    "beyblade": "Archer Griffin C145S",
+    "imageURL": "https://i.pinimg.com/originals/a1/27/32/a12732a1be258ead443bb494424e3625.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Chao Xin",
+    "description": "Chao Xin is a skilled Blader and a member of the Chinese Beyblade team. He uses the Phantom Fenrir T125JB Beyblade. Chao Xin is calm and analytical, always strategizing his moves in battles. He values teamwork and supports his teammates in their pursuit of victory.",
+    "beyblade": "Phantom Fenrir T125JB",
+    "imageURL": "https://64.media.tumblr.com/48d45b71a118f4be22f0032535f5df2c/254a7505a483a275-de/s400x600/582a87be3d84e4a949f22add50b3257ee3370768.jpg"
+  }
+]
