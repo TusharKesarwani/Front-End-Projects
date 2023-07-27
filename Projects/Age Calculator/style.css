@@ -5,19 +5,22 @@
     box-sizing: border-box;
 }
 .container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(90deg, rgba(9,9,121,1) 8%, rgba(0,241,255,1) 100%, rgba(0,212,255,1) 100%);
     color: #fff;
-    padding: 10px;
 }
 .calculator{
     width: 100%;
     max-width: 600px;
     margin-left: 10%;
     margin-top: 10%;
+    margin-right: 10%;
 }
 .calculator h1{
+    text-align: center;
     font-size: 60px;
     color: #ffff76;
 }
