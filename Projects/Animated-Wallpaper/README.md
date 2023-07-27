@@ -3,8 +3,8 @@
 <h2 align="center"> Hello Harsh text have background animation </h2>
 
 - ⚡ I made this project for Fun
-  
-<img src="https://github.com/harshsinghcs/Front-End-Projects-1/assets/115187902/b20cf99c-dcc2-4a3d-a744-787d6248c042"
+
+<img src="https://github.com/harshsinghcs/Front-End-Projects-1/assets/115187902/dd8a6c98-4a1d-4636-bbf7-a97733dfe48a"
 width="50%" height="50%">
 
 You can adjust the text or font size as u need just a simple change in CSS in the height attribute
