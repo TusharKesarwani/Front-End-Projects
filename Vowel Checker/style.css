@@ -1,0 +1,125 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(173,204,204);
+    background-image: url(pexels-suzy-hazelwood-1822568.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-700px);
+    }
+
+    70%,100%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes headi{
+    0%{
+        font-size: 20px;
+    }
+    100%{
+        font-size: 36px;
+    }
+}
+
+.container{
+    background-color: rgba(255,255,255,0.40);
+    /* backdrop-filter: blur(0px); */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    
+}
+
+.container:hover{
+    
+    box-shadow: rgb(255, 102, 179) 0px 20px 30px -10px;
+}
+
+.container h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+textarea{
+    width: 500px;
+    height: 350px;
+    margin: 10px auto;
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    resize: none;
+    opacity: 70%;
+    animation: fade 2.5s ease-in 1s 1 normal none;
+}
+
+textarea:hover {
+    width: 500px;
+    height: 350px;
+    margin: 10px auto;
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    /* background-color: #D3EFBD; */
+    border-radius: 5px;
+    resize: none;
+    opacity: 100%;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    animation: bounce 0.75s ease-in 1s 1 normal none;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+#result{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000000;
+    font-weight: bold;
+    animation: fade 0.5s ease-in 1s 1 normal none;
+}
+
