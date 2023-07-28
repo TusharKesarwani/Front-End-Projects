@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Comment</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+
+                <h3 class="d-flex justify-content-center align-items-center">Realtime Comment System</h3>
+
+                <p>
+                    A real-time comment system application is an interactive and dynamic platform that enables users to engage in immediate
+                    discussions and share their thoughts on various content, such as articles, videos, or social media posts. Unlike
+                    traditional comment systems, which require manual page refreshing to see new comments, real-time comment systems offer
+                    instant updates without the need for page reloads.
+                    
+                    This application leverages technologies like WebSockets or Server-Sent Events (SSE) to establish a continuous connection
+                    between the user's browser and the server. As a result, when a user submits a comment, it is instantly displayed to all
+                    other users accessing the same content, creating a seamless and engaging conversation flow.
+                    
+                    The real-time nature of this comment system fosters vibrant discussions, enhances user engagement, and encourages more
+                    immediate interactions between participants. This instant feedback loop can be particularly valuable for live events,
+                    breaking news stories, or time-sensitive discussions where staying up-to-date is crucial.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row mt-5">
+
+            <div class="col-md-12">
+                <h4 class="border-bottom pb-2">
+                    Comments
+                </h4>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="textarea">Write a Comment</label>
+                    <textarea id="textarea" rows="3" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <button  type="submit" id="submitBtn" class="btn btn-primary float-end mt-4">
+                    Post Comment
+                </button>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="typing text-success"></div>
+                <ul class="comment-box">
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+        
+            <div class="col-md-12">
+                <ul class="comment-box">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js">
+    </script>
+
+</body>
+</html>

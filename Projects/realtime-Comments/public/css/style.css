@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;800&display=swap');
+
+
+body {
+    background-color: whitesmoke;
+    --webkit-font-smoothing: antialiased;
+    font-family: 'Muli', sans-serif;
+}
+
+.posted-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.clock-img {
+    width: 15px;
+}
+
+
+.comment-box {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.comment-box .comment h6 {
+    font-weight: 800;
+}
+
+
+p {
+    font-size: 16px;
+}
+
+
+.comment {
+    animation: something 0.6s ease forward;
+}
+
+
+@keyframes something {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
