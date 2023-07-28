@@ -560,6 +560,14 @@ const projects = [
         "project-link":"Projects/Notes App/index.html"
     },
     {
+        "title":"NQueen visualizer",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/nqueen.jpg",
+        "description":"This project is a web application that allows you to visualize the N-Queen problem using HTML, CSS, and JavaScript. The N-Queen problem is a classic puzzle where you need to place N queens on an N×N chessboard in such a way that no two queens attack each other. The goal of this visualizer is to demonstrate how the algorithm solves the N-Queen problem step by step. It is built using HTML, CSS and JavaScript.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Nqueen",
+        "project-link":"Projects/Nqueen/index.html"
+    },
+    {
         "title":"Number_Guessing_Game",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Number_guessing.png",
