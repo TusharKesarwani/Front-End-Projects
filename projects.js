@@ -1075,10 +1075,10 @@ const projects = [
     {
         "title": "Chatbot",
         "tags":["HTML","CSS","JavaScript"],
-        "img": "",
-        "description": "",
-        "github-link":"",
-        "project-link": ""
+        "img": "img/projects/Chatbot.png",
+        "description": "This is a Chatbot Website you can ask your any doubts this provides your solutions with the help of GPT fetched API.",
+        "github-link": "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/ChatBot",
+        "project-link": "Projects/Chatbot/index.html"
     }
 ]
 
