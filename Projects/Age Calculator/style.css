@@ -13,6 +13,10 @@
     color: #fff;
 }
 .calculator{
+    position: relative;
+    left: 20%;
+    top: 3rem;
+    text-align: center;
     width: 100%;
     max-width: 600px;
     margin-left: 10%;
