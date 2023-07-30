@@ -1,5 +1,3 @@
-Sure, here's an improved version of the feature request template for an open-source project:
-
 ---
 name: Feature Request
 about: Suggest an idea for enhancing the project
