@@ -49,7 +49,7 @@ git checkout -b <your_branch_name>
 
 10. Check your changes
 ```
-git staus
+git status
 ```
 ```
 git diff
