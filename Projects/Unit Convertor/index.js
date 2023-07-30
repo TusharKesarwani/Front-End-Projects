@@ -11,6 +11,14 @@ const supText3 = document.querySelector("#supporting-text-3")
 let input = document.querySelector("#input-text")
 
 convertEl.addEventListener("click", function () {
+    
+    if(input.value<0)
+    {
+        alert("Please enter a positive value!");
+        window.location.reload();
+        return;
+    }
+
     supText1.innerHTML = `${Number(input.value)} meters = ${(Number(input.value) * 3.281).toFixed(3)} feet | ${Number(input.value)} feet = ${Number(Number(input.value) * 0.3048).toFixed(3)} meters`
 
     supText2.innerHTML = `${Number(input.value)} liters = ${(Number(input.value) * 0.264).toFixed(3)} gallons | ${Number(input.value)} gallons = ${Number(Number(input.value) * 4.54609).toFixed(3)} liters`

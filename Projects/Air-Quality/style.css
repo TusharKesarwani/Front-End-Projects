@@ -192,6 +192,7 @@ button:hover {
 
 /* CSS for screens less than 480px */
 @media (max-width: 480px) {
+  
   .header {
     font-size: 18px;
   }
@@ -203,4 +204,8 @@ button:hover {
   .sub-heading{
     font-size: 20x;
   }
+  .modal-container{
+    margin-top: 80px;
+  }
 }
+

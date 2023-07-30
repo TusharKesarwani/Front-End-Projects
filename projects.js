@@ -1078,6 +1078,14 @@ const projects = [
         "project-link":"Projects/Video-Player/index.html"
     },
     {
+        "title": "Chatbot",
+        "tags":["HTML","CSS","JavaScript"],
+        "img": "img/projects/Chatbot.png",
+        "description": "This is a Chatbot Website you can ask your any doubts this provides solutions with the help of GPT fetched API.",
+        "github-link": "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Chatbot",
+        "project-link": "Projects/Chatbot/index.html"
+    },
+    {
         "title":"Random Meal Generator",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Random-Meal-Generator.png",
