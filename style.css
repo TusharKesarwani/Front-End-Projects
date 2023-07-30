@@ -444,8 +444,15 @@ nav {
   background-color: #0d4360;
   padding: 0 2rem;
   margin: 0 auto;
+  position: sticky;
+  top: 2px;
+  z-index: 100;
 }
+nav:hover{
+  box-shadow: 5px 5px 10px 5px rgba(1, 12, 77, 0.2);
+  transition-duration: .5s;
 
+}
 nav img {
   width: 50px;
   height: auto;
@@ -486,34 +493,48 @@ main {
   padding: 2rem;
   gap: 4rem;
   margin: 0 8rem;
+  position: sticky;
+  top:0%;
+  z-index: -1;
+
 }
 
 main .right img {
   animation: imgUp 1s linear infinite alternate;
+  
+
 }
 main .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4rem;
+  
+
 }
 
 main .left .headings {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  
+
 }
 
 main .left h1 {
   font-size: 4rem;
   color: #0d4360;
   line-height: 100%;
+  
+
 }
 
 main .left p {
   font-size: 0.8rem;
   width: 90%;
   color: #3d3d3d;
+  
+
 }
 
 .github-btn-cta {
@@ -524,15 +545,31 @@ main .left p {
   width: 12.6rem;
   font-size: 1rem;
   transition: all ease-in-out 0.2s;
+    
+
 }
 
 .github-btn-cta:hover {
   background-color: #05f2c7;
   color: #0d4360;
+    
+
 }
 
 .project-section {
-  margin: -2.5rem 8rem 6rem 8rem;
+  border: 1px rgb(185, 185, 185) solid;
+  background-color:rgb(255, 255, 255); 
+  /* margin-left : .6rem;
+  margin-right : .6rem; */
+  /* margin: -2.5rem 8rem 6rem 8rem; */
+  padding: 6rem;
+  /* margin-bottom:1rem ; */
+  z-index: 10000;
+}
+.project-section:hover{
+  box-shadow: 2px 2px 2px 2px rgb(163, 163, 163);
+  transition-duration: 0.5s;
+
 }
 
 .title {
@@ -574,6 +611,10 @@ main .left p {
   text-align: center;
   border: 2px solid #0d4360;
   border-radius: 1rem;
+}
+.project-header #searchForm:hover{
+  border: 2px solid #0d4360a0;
+  transition-duration: .5s;
 }
 
 .project-header #search {
@@ -682,7 +723,11 @@ main .left p {
 }
 
 .contributors {
-  margin: -2.5rem 8rem 4rem 8rem;
+  /* margin: -2.5rem 8rem 4rem 8rem; */
+  margin:8rem;
+  border: 1px solid white;
+  background-color: white;
+  
 }
 
 .contributors .list-section {
