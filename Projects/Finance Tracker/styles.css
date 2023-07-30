@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:lightblue;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+
+    height: 50px;
+    transition: transform 0.3s ease;
+    margin-right: 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+#currentDateTime{
+    margin-left: 400px;
+    margin-right:15px;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#balanceSection{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap:wrap;
+    /* flex-direction:row; */
+    justify-content: center;
+}
+.balance{
+    flex:1 1 200px;
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 5px;
+    background-color: azure;
+    /* margin-left:20px;
+    margin-right:20px; */
+    margin:10px;
+    padding: 10px;
+    
+}
+#balanceAmount,#incomeAmount {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    /* margin-top: 0px;
+    margin-left:20px;
+    margin-right:20px;
+    box-sizing: border-box; */
+}
+#expenseAmount{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    /* margin-top: 0px;
+    margin-left:20px;
+    margin-right:20px;
+    box-sizing: border-box; */
+}
+
+.balance:hover {
+    transform: translate(2,2);
+}
+#transactionSection {
+    margin-bottom: 30px;
+}
+
+#transactionForm div {
+    margin-bottom: 20px;
+}
+
+#transactionForm label {
+    display: block;
+    font-weight: bold;
+}
+
+#transactionForm input,
+#transactionForm select {
+    width: 100%;
+    padding: 10px;
+}
+
+#transactionListSection {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#transactionList li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#transactionList li .transaction-actions button {
+    margin-left: 10px;
+}
+
+#noTransactionMessage {
+    display: none;
+    text-align: center;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        height: 60px;
+        
+    }
+    #currentDateTime{
+        font-size:14px;
+        margin-left: 100px;
+    }
+    .hello-height{
+        font-size: 20px;
+    }
+    #transactionListSection {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    #balanceSection{
+        /* max-width: 100%;
+        padding:10px 10px; */
+        flex-direction: column; 
+        font-size: 17px;
+        
+    }
+    .balance{
+        flex:1 1 100%;
+        margin: 5px;
+    }
+    header{
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content:flex-start;
+    }
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.income {
+    color: green;
+}
+  
+.expense {
+color: red;
+}
+
+#bottom{
+    height: 30px;
+    width: 100%;
+    background-color:#333;
+    position: relative;
+}
+
+@media (max-width: 507px) {
+    .logo{
+        height: 60px;
+        
+    }
+    #currentDateTime{
+        font-size:14px;
+        margin-left: 100px;
+    }
+    .hello-height{
+        font-size: 20px;
+    }
+    #transactionListSection {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    #balanceSection{
+        /* max-width: 100%;
+        padding:10px 10px; */
+        flex-direction: column; 
+        font-size: 17px;
+        
+    }
+    .balance{
+        flex:1 1 100%;
+        margin: 5px;
+    }
+    header{
+        height: 140px;
+        text-align: center;
+        display: flex;
+        justify-content:flex-start;
+    }
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.income {
+    color: green;
+}
+  
+.expense {
+color: red;
+}
+
+#bottom{
+    height: 30px;
+    width: 100%;
+    background-color:#333;
+    position: relative;
+}
