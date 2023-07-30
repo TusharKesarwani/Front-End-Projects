@@ -1,0 +1,312 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-image: linear-gradient(to right, rgb(0, 255, 202), rgb(201, 243, 246), aliceblue);
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.icon{
+    display: flex;
+    border: none;
+}
+
+.icon1{
+    margin: 2px;
+    padding: 1px;
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.icon2{
+    margin: 2px;
+    padding: 1px;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-left: 20px;
+}
+
+.nav-tabs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.news{
+    padding: 2px;
+    margin-right: 15px;
+    border: none;
+    color: rgb(56, 104, 94);
+    cursor: pointer;
+}
+
+.news:hover{
+    color: aliceblue;
+    border: 0.5px solid white;
+    background-clip: padding-box;
+    border-top: none;
+    border-radius: 5px;
+}
+
+.subscribe{
+    margin-left: 40vw;
+    /* margin-top: 3vh; */
+    padding: 5px;
+    display: flex;
+}
+
+.subscribe button{
+    margin-top: 2vh;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 202);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+    height: 30px;
+    cursor: pointer;
+}
+
+.subscribe button:hover{
+    border: 0.5px solid rgb(17, 20, 20);
+    border-top: none;
+}
+
+.subscribe img{
+    margin-top: 2.5vh;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side{
+    width: 69%;
+    height: 100%;
+    margin: 20px auto 10px 20px;
+    /* border-right: 1px solid rgb(153, 151, 151); */
+}
+
+.news-1 img{
+    width: 60vw;
+    height: 60vh;
+}
+
+.news-1 p{
+    font-size: 3rem;
+    margin: 5px auto 5px auto;
+    font-weight: bold;
+}
+
+.right-side{
+    width: auto;
+    height: 100%;
+    margin: 20vh auto auto 20px;
+}
+
+.right-news{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-news-1{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto 30px auto;
+}
+
+.right-news-1 a{
+    text-decoration: none;
+}
+
+.right-news-1 p{
+    width: 25vw;
+    height: auto;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+.right-news-1 p:hover{
+    color: gray;
+}
+
+.right-news-1 img{
+    width: 10vw;
+    height: 12vh;
+    border: none;
+    border-radius: 15px;
+    margin: auto 10px auto auto;
+}
+
+.big-news{
+    width: 90vw;
+    margin: 10px auto auto auto;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.stay-tune{
+    margin: 10px auto auto 60px;
+    width: 30vw;
+    height: 5vh;
+    border: 0.5 solid pink;
+    background-color: pink;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.stay-tune h3{
+    margin: auto 10px auto 10px;
+}
+
+.subscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 5px black;
+    border-radius: 15px;
+    width: 40vw;
+    margin: 3vw auto auto 30vw;
+}
+
+.subscription p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.subscription form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription form input{
+    margin: 10px;
+    width: 250px;
+    height: 26px;
+    padding-left: 10px;
+    color: black;
+    background-color: rgb(0, 255, 202);
+    border: 1px solid rgb(0, 255, 166);
+    border-radius: 20px;
+}
+
+.subscription form input:hover,
+.subscription form input:active{
+    border: 1px solid rgb(0, 255, 166);
+    background-color: aliceblue;
+}
+
+.subscription form button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 1rem;
+    margin: 10px 10px 15px 10px;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 166);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.subscription form button:hover,
+.subscription form button:active{
+    background-color: aliceblue;
+    color: rgb(0, 255, 166);
+    border: 1px solid rgb(0, 255, 166);
+}
+
+footer{
+    background-image: linear-gradient(to right, rgb(0, 255, 202), rgb(201, 243, 246), aliceblue);
+    margin-top: 40px;
+}
+
+.footer-icon{
+    display: flex;
+    border: none;
+}
+
+.f-icon1{
+    margin: 15px 0px 0px 20px;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+    font-size: 2.3rem;
+}
+
+.f-icon2{
+    margin: 15px auto auto 0px;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 2.3rem;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px 50px 40px;
+    align-items: center;
+}
+
+.about hr{
+    width: 100px;
+}
+
+.about a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-evenly;
+    margin: 15px auto auto 30px;
+    padding-bottom: 15px;
+}
+
+.social i{
+    font-size: 1.3rem;
+}
+
+.copyright{
+    margin: 10px auto auto 20px;
+    padding-bottom: 2px;
+}

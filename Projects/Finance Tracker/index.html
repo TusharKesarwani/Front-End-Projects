@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Personal Finance Tracker</title>
+</head>
+
+
+<body>
+    <header>
+        <img class="logo" src="https://i.pinimg.com/564x/61/ea/07/61ea07e06fa139ef7e4609c95f0ae8ed.jpg">
+        <h1 class="hello-height">Personal Finance Tracker</h1>
+        <p id="currentDateTime"></p>
+    </header>
+
+    <main>
+        <nav id="balanceSection">
+            <div class="balance">
+                <h2>Your Balance:</h2>
+                <div id="balanceAmount">0.00</div>
+            </div>
+            <div class="balance">
+                <h2>Income:</h2>
+                <div id="incomeAmount">0.00</div>
+            </div>
+            <div class="balance">
+                <h2>Expense:</h2>
+                <div id="expenseAmount">0.00</div>
+            </div>
+        </nav>
+
+        <section id="transactionSection">
+            <h2>Add Transaction</h2>
+            <form id="transactionForm">
+                <div>
+                    <label for="descriptionInput">Description:</label>
+                    <input type="text" id="descriptionInput" placeholder="Enter description" required>
+                </div>
+                <div>
+                    <label for="amountInput">Amount:</label>
+                    <input type="number" id="amountInput" placeholder="Enter amount" required>
+                </div>
+                <div>
+                    <label for="typeSelect">Type:</label>
+                    <select id="typeSelect">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section id="transactionListSection">
+            <h2>Transaction History</h2>
+            <ul id="transactionList"></ul>
+            <p id="noTransactionMessage">No transactions yet.</p>
+        </section>
+        <section id="bottom"></section>
+
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
