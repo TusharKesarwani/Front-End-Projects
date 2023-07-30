@@ -1,0 +1,170 @@
+(function ($) {
+    $.fn.responsiveSlides = function (options) {
+      var defaults = {
+        auto: true,
+        speed: 500,
+        timeout: 4000,
+        pager: false,
+        nav: false,
+        random: false,
+        pause: false,
+        pauseControls: true,
+        prevText: "Previous",
+        nextText: "Next",
+        maxwidth: "",
+        navContainer: "",
+        manualControls: "",
+        namespace: "rslides",
+        before: $.noop,
+        after: $.noop
+      };
+  
+      var settings = $.extend({}, defaults, options);
+  
+      return this.each(function () {
+        var $this = $(this);
+        var $slides = $this.children();
+        var slideCount = $slides.length;
+        var currentIndex = 0;
+        var interval;
+        var namespace = settings.namespace;
+        var namespaceIndex = 0;
+        var $pager, $nav;
+        var isTransitionSupported = (function () {
+          var bodyStyle = (document.body || document.documentElement).style;
+          var supported = "transition";
+          if (typeof bodyStyle[supported] === "string") {
+            return true;
+          }
+          var prefixes = ["Moz", "Webkit", "Khtml", "O", "ms"];
+          var supportedCapitalized = supported.charAt(0).toUpperCase() + supported.substr(1);
+          for (var i = 0; i < prefixes.length; i++) {
+            if (typeof bodyStyle[prefixes[i] + supportedCapitalized] === "string") {
+              return true;
+            }
+          }
+          return false;
+        })();
+  
+        $this.addClass(namespace);
+  
+        if (settings.random) {
+          $slides.sort(function () {
+            return Math.round(Math.random()) - 0.5;
+          });
+          $this.empty().append($slides);
+        }
+  
+        $slides.each(function (i) {
+          this.id = namespace + namespaceIndex + i;
+        });
+  
+        $this.css("position", "relative").css("overflow", "hidden");
+  
+        var updateIndex = function (newIndex) {
+          settings.before(newIndex);
+          if (isTransitionSupported) {
+            $slides.removeClass(namespace + "_on").eq(newIndex).addClass(namespace + "_on");
+            currentIndex = newIndex;
+            setTimeout(function () {
+              settings.after(newIndex);
+            }, settings.speed);
+          } else {
+            $slides.stop().fadeOut(settings.speed, function () {
+              $(this).removeClass(namespace + "_on");
+            }).eq(newIndex).fadeIn(settings.speed, function () {
+              $(this).addClass(namespace + "_on");
+              settings.after(newIndex);
+            });
+            currentIndex = newIndex;
+          }
+        };
+  
+        var transitionSlides = function () {
+          updateIndex(currentIndex + 1 < slideCount ? currentIndex + 1 : 0);
+        };
+  
+        if (settings.auto) {
+          interval = setInterval(transitionSlides, settings.timeout);
+        }
+  
+        var pauseSlides = function () {
+          clearInterval(interval);
+        };
+  
+        var resumeSlides = function () {
+          if (settings.auto) {
+            interval = setInterval(transitionSlides, settings.timeout);
+          }
+        };
+  
+        if (settings.pause) {
+          $this.hover(pauseSlides, resumeSlides);
+        }
+  
+        if (settings.pager) {
+          $pager = $("<ul>").addClass(namespace + "_tabs");
+          $slides.each(function (i) {
+            var pageNum = i + 1;
+            var $pagerItem = $("<li>").append($("<a>").attr("href", "#").addClass(namespace + pageNum).text(pageNum));
+            $pager.append($pagerItem);
+          });
+          if (settings.manualControls) {
+            $(settings.manualControls).append($pager);
+          } else {
+            $this.after($pager);
+          }
+          $pager.on("click", "a", function (e) {
+            e.preventDefault();
+            var index = $pager.find("a").index(this);
+            if (currentIndex !== index && !$slides.is(":animated")) {
+              updateIndex(index);
+            }
+          });
+          $pager.find("li").eq(0).addClass("rslides_here");
+          if (settings.pauseControls) {
+            $pager.hover(pauseSlides, resumeSlides);
+          }
+        }
+  
+        if (settings.nav) {
+          $nav = $("<div>").addClass(namespace + "_nav");
+          var $prevLink = $("<a>").attr("href", "#").addClass(namespace + " prev").text(settings.prevText);
+          var $nextLink = $("<a>").attr("href", "#").addClass(namespace + " next").text(settings.nextText);
+          $nav.append($prevLink).append($nextLink);
+          if (settings.navContainer) {
+            $(settings.navContainer).append($nav);
+          } else {
+            $this.after($nav);
+          }
+          $prevLink.on("click", function (e) {
+            e.preventDefault();
+            if (!$slides.is(":animated")) {
+              updateIndex(currentIndex - 1);
+            }
+          });
+          $nextLink.on("click", function (e) {
+            e.preventDefault();
+            if (!$slides.is(":animated")) {
+              updateIndex(currentIndex + 1);
+            }
+          });
+          if (settings.pauseControls) {
+            $nav.hover(pauseSlides, resumeSlides);
+          }
+        }
+  
+        if (typeof document.body.style.maxWidth === "undefined" && settings.maxwidth !== "") {
+          var adjustSlidesWidth = function () {
+            $this.css("width", "100%");
+            if ($this.width() > settings.maxwidth) {
+              $this.css("width", settings.maxwidth);
+            }
+          };
+          adjustSlidesWidth();
+          $(window).on("resize", adjustSlidesWidth);
+        }
+      });
+    };
+  })(jQuery);
+  
