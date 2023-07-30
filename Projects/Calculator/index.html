@@ -13,10 +13,10 @@
 </head>
 
 <body>
-        <div class="desktop-message">
-            Please switch to the desktop version for a better experience.
-        </div>
-        
+    <div class="desktop-message">
+        Please switch to the Mobile (with 382 px or more) or desktop version for a better experience.
+    </div>
+
     <section class="main">
         <header class="top">
             <nav>
@@ -37,6 +37,7 @@
             </div>
             <table>
                 <tbody id="calc">
+
                     <tr>
                         <td class="main-buttons">
                             <button onclick="solve('sin')" class="light">sin</button>
@@ -50,6 +51,7 @@
                             <button onclick="solve('tan')" class="light">tan</button>
                         </td>
 
+   
                         <td class="main-buttons">
                             <button onclick="solve('sin-1')" class="m" id="inverse">sin-1</button>
                         </td>
@@ -62,7 +64,6 @@
                             <button onclick="solve('tan-1')" class="m" id="inverse">tan-1</button>
                         </td>
 
-                        <!-- fix this  -->
                         <td class="main-buttons">
                             <button onclick="solve('p')" class="twodig">%</button>
                         </td>
@@ -163,7 +164,7 @@
 
                     </tr>
 
-                    <tr>
+                    <tr class="tr5">
                         <td class="main-buttons">
                             <button onclick="input('(')" class="light">(</button>
                         </td>
@@ -173,7 +174,7 @@
                         </td>
 
                         <td class="main-buttons">
-                            <button onclick="squareRoot()"  class="light">²√</button>
+                            <button onclick="squareRoot()" class="light">²√</button>
                         </td>
 
 
@@ -196,7 +197,7 @@
                     </tr>
 
 
-                    <tr>
+                    <tr class="tr6">
 
                         <td class="main-buttons">
                             <button id="btn-power" class="gery">10^x</button>

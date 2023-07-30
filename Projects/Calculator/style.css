@@ -212,10 +212,10 @@ td {
     background-color: #ff5151;
 }
 
-
-/* Responsive message for screens below 893px width */
-@media only screen and (max-width: 893px) {
-.top {
+/* ------------------------------------------------------------- */
+/* Responsive message for screens below 381px width */
+@media only screen and (max-width: 381px) {
+    .top {
         position: relative;
     }
 
@@ -225,7 +225,7 @@ td {
 
     .header_title {
         text-align: center;
-        font-size: xxx-large;
+        font-size: 20px;
     }
 
     .main {
@@ -237,7 +237,397 @@ td {
     .desktop-message {
         display: block;
         text-align: center;
-        font-size: 24px;
+        font-size: 10px;
+        background-color: #f9f9f9;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+/* Small devices such as large phones (382px and up) */
+@media only screen and (min-width: 382px) and (max-width: 499px) {
+
+    .container {
+        position: relative;
+    }
+
+    .top {
+        position: relative;
+        top: -16px;
+        left: 2px;
+        font-size: 2rem;
+        align-items: center;
+
+    }
+
+    #screen {
+        position: absolute;
+        top: -72px;
+        width: 75%;
+        left: 31px;
+        height: 86px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(219, 168, 0);
+        background-color: white;
+        border-radius: 10px;
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
+
+    .main-buttons {
+        width: 100%;
+    }
+
+    #equal {
+        grid-column: span 3;
+    }
+
+    #input {
+        font-size: 18px;
+        padding-top: 16px;
+        margin-top: -13px;
+        word-spacing: 0.07em;
+    }
+
+    #result {
+        font-size: 22px;
+    }
+
+    #memory {
+        position: absolute;
+        font-size: 14px;
+        top: 12px;
+        right: 14px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    button,
+    .bottom-buttons {
+        width: 2.8rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        margin: .8px .8px;
+
+    }
+
+    #calc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -4px;
+        top: -2px;
+    }
+
+    .main-buttons {
+        width: calc(33.33% - 8px);
+        margin: 1px;
+    }
+
+    .tr5 {
+        position: relative;
+        top: -30px;
+        left: 0px;
+    }
+
+    .tr6 {
+        position: relative;
+        top: -60px;
+        left: 0px;
+    }
+
+    #equal {
+        position: relative;
+        top: 27px;
+        right: 2px;
+        height: 114px;
+    }
+}
+
+/* -------------------------------------------------- */
+
+/* Medium devices such as tablets (500px and up) */
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+
+    .container {
+        position: relative;
+    }
+
+    .top {
+        position: relative;
+        top: -20px;
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    #screen {
+        position: absolute;
+        top: -72px;
+        width: 100%;
+        left: -21px;
+        height: 100px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(219, 168, 0);
+        background-color: white;
+        border-radius: 10px;
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
+
+    .main-buttons {
+        width: 100%;
+        /* margin: 1px 0; */
+    }
+
+    #input {
+        font-size: 18px;
+        padding-top: 16px;
+        margin-top: -13px;
+        word-spacing: 0.07em;
+    }
+
+    #result {
+        font-size: 22px;
+    }
+
+    #memory {
+        position: absolute;
+        font-size: 14px;
+        top: 12px;
+        right: 14px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    button,
+    .bottom-buttons {
+        width: 3.7rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        margin: .8px .8px;
+
+    }
+
+    #calc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        position: relative;
+        top: 6px;
+        left: -58px;
+    }
+
+    .main-buttons {
+        width: calc(33.33% - 8px);
+        margin: .3px;
+    }
+
+    .tr5 {
+        position: relative;
+        top: -29px;
+        left: 0px;
+    }
+
+    .tr6 {
+        position: relative;
+        top: -59px;
+        left: 0px;
+    }
+
+    #equal {
+        position: relative;
+        top: 29px;
+        right: -2px;
+        height: 114px;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+/* Large devices such as laptops (769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 909px) {
+    .container {
+        position: relative;
+    }
+
+    .top {
+        position: relative;
+        top: -20px;
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    #screen {
+        position: relative;
+        top: -93px;
+        margin: 4px auto;
+        width: 120%;
+        left: -60px;
+        height: 6rem;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(219, 168, 0);
+        background-color: white;
+        border-radius: 10px;
+        overflow-x: scroll;
+        overflow-y: visible;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    #screen:hover {
+        border: 2px solid green;
+    }
+
+    #screen::-webkit-scrollbar {
+        display: none;
+    }
+
+    #input,
+    #result {
+        margin: auto;
+        width: 100%;
+        height: 3rem;
+        max-width: 768px;
+        text-align: left;
+        border: none;
+    }
+
+    #input {
+        font-size: 20px;
+        padding-top: 16px;
+        margin-top: -13px;
+        word-spacing: 0.07em;
+    }
+
+    #result {
+        font-size: 25px;
+    }
+
+    #memory {
+        position: absolute;
+        font-size: 18px;
+        top: 12px;
+        right: 14px;
+    }
+
+    .main-buttons {
+        width: 100%;
+        /* margin: 1px 0; */
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    button,
+    .bottom-buttons {
+        width: 5.9rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        margin: 1px 1px;
+    }
+
+    button:hover,
+    .bottom-buttons {
+        cursor: pointer;
+        background-color: #a87861a9;
+    }
+
+    #calc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        left: -205px;
+    }
+
+    /* Adjust button width to have 3 buttons in each column */
+    .main-buttons {
+        width: calc(33.33% - 8px);
+        margin: .3px;
+    }
+
+    .tr5 {
+        position: relative;
+        top: -30px;
+        left: 0px;
+    }
+
+    .tr6 {
+        position: relative;
+        top: -60px;
+        left: 0px;
+    }
+
+    #equal {
+        position: relative;
+        top: 27px;
+        right: 2px;
+        height: 115px;
+    }
+}
+
+/* -------------------------------------------------- */
+
+/* Large devices such as laptops (1025px and up) */
+@media only screen and (min-width: 910px) and (max-width: 6149px) {
+    /* default css */
+}
+
+
+/* ------------------------------------------------------ */
+
+/* Large devices such as laptops (6149px and up) */
+@media only screen and (min-width: 6149px) {
+
+    header {
+        color: azure;
+    }
+
+    .header_title {
+        text-align: center;
+        font-size: 100px;
+    }
+
+    body {
+        background-image: none;
+        background-color: white;
+    }
+
+    .main {
+        position: relative;
+        left: 30px;
+        display: none;
+    }
+
+    .desktop-message {
+        display: block;
+        text-align: center;
+        font-size: 300px;
         background-color: #f9f9f9;
     }
 }
