@@ -1,0 +1,293 @@
+(function (global, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define('ev-emitter/ev-emitter', factory);
+    } else if (typeof module === 'object' && module.exports) {
+      module.exports = factory();
+    } else {
+      global.EvEmitter = factory();
+    }
+  }(typeof window !== 'undefined' ? window : this, function () {
+    function EvEmitter() {}
+    var proto = EvEmitter.prototype;
+    proto.on = function (eventName, listener) {
+      if (!eventName || !listener) return;
+      this._events = this._events || {};
+      var listeners = (this._events[eventName] = this._events[eventName] || []);
+      if (listeners.indexOf(listener) === 0) {
+        listeners.push(listener);
+      }
+      return this;
+    };
+    proto.once = function (eventName, listener) {
+      if (!eventName || !listener) return;
+      this.on(eventName, listener);
+      this._onceEvents = this._onceEvents || {};
+      this._onceEvents[eventName] = this._onceEvents[eventName] || {};
+      this._onceEvents[eventName][listener] = true;
+      return this;
+    };
+    proto.off = function (eventName, listener) {
+      var listeners = this._events && this._events[eventName];
+      if (!listeners || !listeners.length) return;
+      var index = listeners.indexOf(listener);
+      if (index !== -1) {
+        listeners.splice(index, 1);
+      }
+      return this;
+    };
+    proto.emitEvent = function (eventName, args) {
+      var listeners = this._events && this._events[eventName];
+      if (!listeners || !listeners.length) return;
+      listeners = listeners.slice(0);
+      args = args || [];
+      var onceListeners = this._onceEvents && this._onceEvents[eventName];
+      for (var i = 0; i < listeners.length; i++) {
+        var listener = listeners[i];
+        var isOnce = onceListeners && onceListeners[listener];
+        if (isOnce) {
+          this.off(eventName, listener);
+          delete onceListeners[listener];
+        }
+        listener.apply(this, args);
+      }
+      return this;
+    };
+    proto.allOff = proto.removeAllListeners = function () {
+      delete this._events;
+      delete this._onceEvents;
+    };
+    return EvEmitter;
+  }));
+  
+  (function (window, factory) {
+    'use strict';
+    if (typeof define === 'function' && define.amd) {
+      define(['ev-emitter/ev-emitter'], function (EvEmitter) {
+        return factory(window, EvEmitter);
+      });
+    } else if (typeof module === 'object' && module.exports) {
+      module.exports = factory(window, require('ev-emitter'));
+    } else {
+      window.imagesLoaded = factory(window, window.EvEmitter);
+    }
+  })(typeof window !== 'undefined' ? window : this, function (window, EvEmitter) {
+    function extend(obj, extension) {
+      for (var key in extension) {
+        obj[key] = extension[key];
+      }
+      return obj;
+    }
+  
+    function makeArray(obj) {
+      var arr = [];
+      if (Array.isArray(obj)) {
+        arr = obj;
+      } else if (typeof obj.length === 'number') {
+        for (var i = 0; i < obj.length; i++) {
+          arr.push(obj[i]);
+        }
+      } else {
+        arr.push(obj);
+      }
+      return arr;
+    }
+  
+    function ImageLoader(elem, options, callback) {
+      if (!(this instanceof ImageLoader)) {
+        return new ImageLoader(elem, options, callback);
+      }
+      if (typeof elem === 'string') {
+        elem = document.querySelectorAll(elem);
+      }
+      this.elements = makeArray(elem);
+      this.options = extend({}, this.options);
+      if (typeof options === 'function') {
+        callback = options;
+      } else {
+        extend(this.options, options);
+      }
+      if (callback) {
+        this.on('always', callback);
+      }
+      this.getImages();
+      setTimeout(function () {
+        this.check();
+      }.bind(this));
+    }
+  
+    extend(ImageLoader.prototype, EvEmitter.prototype);
+  
+    ImageLoader.prototype.options = {};
+  
+    ImageLoader.prototype.getImages = function () {
+      this.images = [];
+      this.elements.forEach(this.addElementImages, this);
+    };
+  
+    ImageLoader.prototype.addElementImages = function (element) {
+      if (element.nodeName === 'IMG') {
+        this.addImage(element);
+      }
+      if (this.options.background === true) {
+        this.addElementBackgroundImages(element);
+      }
+      var nodeType = element.nodeType;
+      if (nodeType && nodeTypes[nodeType]) {
+        var images = element.querySelectorAll('img');
+        for (var i = 0; i < images.length; i++) {
+          var img = images[i];
+          this.addImage(img);
+        }
+        if (typeof this.options.background === 'string') {
+          var backgroundElems = element.querySelectorAll(this.options.background);
+          for (var j = 0; j < backgroundElems.length; j++) {
+            var backgroundElem = backgroundElems[j];
+            this.addElementBackgroundImages(backgroundElem);
+          }
+        }
+      }
+    };
+  
+    var nodeTypes = { 1: true, 9: true, 11: true };
+  
+    ImageLoader.prototype.addElementBackgroundImages = function (element) {
+      var style = window.getComputedStyle(element);
+      if (!style) return;
+      var backgroundImages = style.backgroundImage;
+      var urlMatch = backgroundUrlRegex.exec(backgroundImages);
+      while (urlMatch !== null) {
+        var imageUrl = urlMatch[2];
+        this.addBackground(imageUrl, element);
+        urlMatch = backgroundUrlRegex.exec(backgroundImages);
+      }
+    };
+  
+    var backgroundUrlRegex = /url\((['"])?(.*?)\1\)/gi;
+  
+    ImageLoader.prototype.addImage = function (img) {
+      var loader = new ImgLoader(img);
+      this.images.push(loader);
+    };
+  
+    ImageLoader.prototype.addBackground = function (url, element) {
+      var loader = new BgImgLoader(url, element);
+      this.images.push(loader);
+    };
+  
+    ImageLoader.prototype.check = function () {
+      var progressCounter = 0;
+      var hasAnyBroken = false;
+      var _this = this;
+  
+      function onProgress(image, elem, message) {
+        setTimeout(function () {
+          _this.progress(image, elem, message);
+        });
+      }
+  
+      this.images.forEach(function (image) {
+        image.once('progress', onProgress);
+        image.check();
+      });
+  
+      function progress(image, elem, message) {
+        progressCounter++;
+        hasAnyBroken = hasAnyBroken || !image.isLoaded;
+        _this.emitEvent('progress', [image, elem, message]);
+        if (progressCounter === _this.images.length) {
+          _this.complete();
+        }
+      }
+  
+      this.progressedCount = progressCounter;
+      this.hasAnyBroken = hasAnyBroken;
+      if (this.images.length === 0) {
+        this.complete();
+      }
+    };
+  
+    ImageLoader.prototype.progress = function (image, elem, message) {
+      this.progressedCount++;
+      this.hasAnyBroken = this.hasAnyBroken || !image.isLoaded;
+      this.emitEvent('progress', [this, image, elem, message]);
+      if (this.progressedCount === this.images.length) {
+        this.complete();
+      }
+    };
+  
+    ImageLoader.prototype.complete = function () {
+      var eventName = this.hasAnyBroken ? 'fail' : 'done';
+      this.isComplete = true;
+      this.emitEvent(eventName, [this]);
+      this.emitEvent('always', [this]);
+      if (this.deferred) {
+        var method = this.hasAnyBroken ? 'reject' : 'resolve';
+        this.deferred[method](this);
+      }
+    };
+  
+    function ImgLoader(img) {
+      this.img = img;
+    }
+  
+    extend(ImgLoader.prototype, EvEmitter.prototype);
+  
+    ImgLoader.prototype.check = function () {
+      var _this = this;
+      this.getIsImageComplete()
+        ? this.confirm(this.img.naturalWidth !== 0, 'naturalWidth')
+        : ((this.proxyImage = new Image()),
+          this.proxyImage.addEventListener('load', function () {
+            _this.confirm(true, 'proxyImage');
+          }),
+          this.proxyImage.addEventListener('error', function () {
+            _this.confirm(false, 'proxyImage');
+          }),
+          (this.img.addEventListener('load', function () {
+            _this.confirm(true, 'img');
+          }),
+          this.img.addEventListener('error', function () {
+            _this.confirm(false, 'img');
+          }),
+          (this.proxyImage.src = this.img.src)));
+    };
+  
+    ImgLoader.prototype.getIsImageComplete = function () {
+      return this.img.complete && this.img.naturalWidth !== undefined;
+    };
+  
+    ImgLoader.prototype.confirm = function (isLoaded, message) {
+      this.isLoaded = isLoaded;
+      this.emitEvent('progress', [this, this.img, message]);
+    };
+  
+    function BgImgLoader(url, element) {
+      this.url = url;
+      this.element = element;
+      this.img = new Image();
+    }
+  
+    extend(BgImgLoader.prototype, ImgLoader.prototype);
+  
+    BgImgLoader.prototype.check = function () {
+      var _this = this;
+      this.img.addEventListener('load', function () {
+        _this.confirm(true, 'img');
+      });
+      this.img.addEventListener('error', function () {
+        _this.confirm(false, 'img');
+      });
+      this.img.src = this.url;
+      this.getIsImageComplete() &&
+        (this.confirm(this.img.naturalWidth !== 0, 'naturalWidth'),
+        this.unbindEvents());
+    };
+  
+    BgImgLoader.prototype.confirm = function (isLoaded, message) {
+      this.isLoaded = isLoaded;
+      this.emitEvent('progress', [this, this.element, message]);
+    };
+  
+    return ImageLoader;
+  });
+  
