@@ -19,7 +19,6 @@ h2 {
 
 #heading1 {
   color: cyan;
-
 }
 #heading2 {
   color: cyan;
@@ -46,12 +45,14 @@ h2 {
   color: cyan;
 }
 
-#encode, #decode {
+#encode,
+#decode {
   margin-top: 1rem;
   margin-right: 0.2rem;
 }
 
-#step2, #step3 {
+#step2,
+#step3 {
   display: none;
 }
 
@@ -86,57 +87,49 @@ h2 {
   /* Decrease the z-index to make it appear below the main content */
 }
 
-
-
 ///  Graph Css ////
 
 #step4 {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 .background-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
 }
 
 .background-container canvas {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
 
 //// NEW////
-.boxes{
-    position: absolute;
-    display: block;
-    width: 40%;
-    height: 100%;
-    margin-left: 5%;
+.boxes {
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
 }
-
-
-
-
-
 
 #binary_digit {
   visibility: hidden;
 }
-#encoded_digit{
+#encoded_digit {
   visibility: hidden;
 }
-#result{
+#result {
   visibility: hidden;
 }
-#text_digit{
+#text_digit {
   visibility: hidden;
 }
 #paragraph_text {
@@ -161,8 +154,6 @@ h2 {
   overflow: auto;
   display: flex;
 }
-
-
 
 svg {
   position: absolute;
