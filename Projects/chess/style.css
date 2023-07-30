@@ -1,6 +1,212 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
+
+}
+
+#container {
+    height: 565px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    background-color: #51504c;
+    z-index: 1;
+
+}
+
+
+.board {
+    position: absolute;
+    top: 58px;
+    left: 100px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+#player1 {
+    position: absolute;
+    height: 54px;
+    width: 446px;
+    background-color: #393834;
+    top: 2px;
+    left: 101px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#player1Time {
+    position: absolute;
+    height: 36px;
+    width: 108px;
+    color: black;
+    background-color: white;
+    top: 10px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#player2Time {
+    position: absolute;
+    height: 36px;
+    width: 108px;
+    color: black;
+    background-color: white;
+    top: 10px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#player2 {
+    position: absolute;
+    height: 54px;
+    width: 446px;
+    background-color: #393834;
+    top: 508px;
+    left: 101px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar {
+    position: absolute;
+    height: 565px;
+    width: 57px;
+    top: 0px;
+    left: 0px;
+    background-color: #31302d;
+
+}
+
+
+#area1 {
+    position: absolute;
+    height: 63px;
+    width: 686px;
+    top: 6px;
+    right: 5px;
+    background-color: #292826;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+
+.area1_column {
+    flex: 2.33%;
+    height: 20px;
+    margin: 19px;
+    text-align: center;
+    background-color: #292826;
+    color: rgb(255, 255, 255);
+    border: 0px solid #292826;
+    font-size: 0.9rem;
+}
+
+.area1_column:hover {
+    color: bisque;
+    font-size: 1.1rem;
+}
+
+.area2_column:hover {
+    color: bisque;
+    font-size: 1.5rem;
+}
+
+#area2 {
+    position: absolute;
+    height: 427px;
+    width: 676px;
+    top: 63px;
+    right: 0px;
+    color: white;
+    background-color: #42423e;
+    overflow-y: scroll;
+    margin: 2px 5px;
+    padding: 2px 5px;
+}
+
+.area2heading {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #eba5a5;
+
+}
+
+.leftheading {
+    position: relative;
+    top: 8px;
+    left: 100px;
+    font-size: 1.4rem;
+    color: #ea8d26;
+}
+
+.rightheading {
+    position: relative;
+    top: 11px;
+    right: -276px;
+    font-size: 1.4rem;
+    color: #ea8d26;
+}
+
+.leftcolumn {
+    position: relative;
+    top: 14px;
+    left: 121px;
+    font-size: 1rem;
+    color: white;
+    z-index: 10;
+}
+
+.rightcolumn {
+    position: relative;
+    top: 16px;
+    right: -299px;
+    font-size: 1rem;
+    color: black;
+    z-index: 10;
+}
+
+
+#area3 {
+    position: absolute;
+    height: 66px;
+    width: 687px;
+    top: 496px;
+    right: 4px;
+    background-color: #292826;
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.area2_column {
+    flex: 2.33%;
+    height: 20px;
+    margin: 19px;
+    text-align: center;
+    background: #292826;
+    color: rgb(255, 255, 255);
+    border: 0px solid #292826;
+    font-size: 1.2rem;
+
+}
+
+#tog {
+    flex: 2.33%;
+    height: 20px;
+    margin: 19px;
+    text-align: center;
+    background: #292826;
+    color: rgb(255, 255, 255);
+    border: 0px solid #292826;
+    font-size: 1.2rem;
 }
 
 body {
@@ -9,14 +215,6 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-    margin: 10px;
-}
-
-ul {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
 .divv {
     display: flex;
@@ -31,18 +229,14 @@ li {
 
 .box {
     margin: .5px;
-    width: 75px;
-    height: 75px;
-}
-
-#tog {
-    margin: 10px 0px;
+    width: 55px;
+    height: 55px;
 }
 
 
 
 .allimg {
-    width: 45px;
+    width: 50px;
     position: relative;
     bottom: 5px;
 }
@@ -59,22 +253,4 @@ li {
     float: right;
     margin-right: 50px;
 
-}
-
-
-@media (max-width:650px){
-
-    #tog {
-        margin-bottom: 70px;
-
-    }
-
-    .box {
-        width: 11vw;
-        height: 11vw;
-    }
-
-    .allimg {
-        width: 7vw;
-    }
 }

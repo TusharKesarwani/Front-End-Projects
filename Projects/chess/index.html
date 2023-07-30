@@ -6,98 +6,439 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alisha Bharti">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Chess</title>
 </head>
 
 <body>
-   <h1>CHESS</h1>
-   <marquee> <h2 id="tog">White's Turn</h2></marquee>
-    <ul>
+    <div id="container">
 
-        <div class="divv" id="row8">
-            <li class="box" id="b801">Brook</li>
-            <li class="box" id="b802">Bknight</li>
-            <li class="box" id="b803">Bbishop</li>
-            <li class="box" id="b804">Bqueen</li>
-            <li class="box" id="b805">Bking</li>
-            <li class="box" id="b806">Bbishop</li>
-            <li class="box" id="b807">Bknight</li>
-            <li class="box" id="b808">Brook</li>
-        </div>
-        <div class="divv" id="row7">
-            <li class="box" id="b701">Bpawn</li>
-            <li class="box" id="b702">Bpawn</li>
-            <li class="box" id="b703">Bpawn</li>
-            <li class="box" id="b704">Bpawn</li>
-            <li class="box" id="b705">Bpawn</li>
-            <li class="box" id="b706">Bpawn</li>
-            <li class="box" id="b707">Bpawn</li>
-            <li class="box" id="b708">Bpawn</li>
-        </div>
-        <div class="divv" id="row6">
-            <li class="box" id="b601"></li>
-            <li class="box" id="b602"></li>
-            <li class="box" id="b603"></li>
-            <li class="box" id="b604"></li>
-            <li class="box" id="b605"></li>
-            <li class="box" id="b606"></li>
-            <li class="box" id="b607"></li>
-            <li class="box" id="b608"></li>
-        </div>
-        <div class="divv" id="row5">
-            <li class="box" id="b501"></li>
-            <li class="box" id="b502"></li>
-            <li class="box" id="b503"></li>
-            <li class="box" id="b504"></li>
-            <li class="box" id="b505"></li>
-            <li class="box" id="b506"></li>
-            <li class="box" id="b507"></li>
-            <li class="box" id="b508"></li>
-        </div>
-        <div class="divv" id="row4">
-            <li class="box" id="b401"></li>
-            <li class="box" id="b402"></li>
-            <li class="box" id="b403"></li>
-            <li class="box" id="b404"></li>
-            <li class="box" id="b405"></li>
-            <li class="box" id="b406"></li>
-            <li class="box" id="b407"></li>
-            <li class="box" id="b408"></li>
-        </div>
-        <div class="divv" id="row3">
-            <li class="box" id="b301"></li>
-            <li class="box" id="b302"></li>
-            <li class="box" id="b303"></li>
-            <li class="box" id="b304"></li>
-            <li class="box" id="b305"></li>
-            <li class="box" id="b306"></li>
-            <li class="box" id="b307"></li>
-            <li class="box" id="b308"></li>
+        <div id="player1">Black
+            <div id="player1Time">
+                <span class="digit" id="hr">
+                    &nbsp; 00 :&nbsp;</span>
+
+                <span class="digit" id="min">
+                    00 :&nbsp;</span>
+
+                <span class="digit" id="sec">
+                    00 &nbsp;</span>
+
+
+            </div>
         </div>
 
-        <div class="divv" id="row2">
-            <li class="box Wpawn" id="b201">Wpawn</li>
-            <li class="box Wpawn" id="b202">Wpawn</li>
-            <li class="box Wpawn" id="b203">Wpawn</li>
-            <li class="box Wpawn" id="b204">Wpawn</li>
-            <li class="box Wpawn" id="b205">Wpawn</li>
-            <li class="box Wpawn" id="b206">Wpawn</li>
-            <li class="box Wpawn" id="b207">Wpawn</li>
-            <li class="box Wpawn" id="b208">Wpawn</li>
-        </div>
-        <div class="divv" id="row1">
-            <li class="box" id="b101">Wrook</li>
-            <li class="box" id="b102">Wknight</li>
-            <li class="box" id="b103">Wbishop</li>
-            <li class="box" id="b104">Wqueen</li>
-            <li class="box" id="b105">Wking</li>
-            <li class="box" id="b106">Wbishop</li>
-            <li class="box" id="b107">Wknight</li>
-            <li class="box" id="b108">Wrook</li>
+        <div id="player2">White
+            <div id="player2Time">
+                <span class="digit" id="hr">
+                    &nbsp; 00 :&nbsp;</span>
+
+                <span class="digit" id="min">
+                    00 :&nbsp;</span>
+
+                <span class="digit" id="sec">
+                    00 &nbsp;</span>
+
+
+            </div>
         </div>
 
-    </ul>
-    <script src="Code.js"></script>
+        <div id="sidebar"></div>
+
+        <div id="area"></div>
+
+        <div id="area1">
+
+
+            <select name="time" id="timecontrol" class="area1_column">
+                <option value="60">1 min</option>
+                <option value="180">3 min</option>
+                <option value="300">5 min</option>
+                <option value="600">10 min</option>
+                <option value="900">15 min</option>
+            </select>
+
+            <button id="reset" class="area1_column">Abort</button>
+
+            <button id="newgame" class="area1_column">New game</button>
+
+        </div>
+
+
+        <div id="area2">
+
+            <div class="area2heading">
+                Moves Played
+            </div>
+
+            <table class="table">
+                <tr class="table_head">
+                    <th class="leftheading"> White moves </th>
+                    <th class="rightheading"> Black moves </th>
+                </tr>
+
+                <!-- <tr>
+                    <td class="leftcolumn"> 1 - </td>
+                    <td class="rightcolumn"> 2 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 3 - </td>
+                    <td class="rightcolumn"> 4 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 5 - </td>
+                    <td class="rightcolumn"> 6 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 7 - </td>
+                    <td class="rightcolumn"> 8 - </td>
+                </tr> -->
+
+                <!--
+                <tr>
+                    <td class="leftcolumn"> 9 - </td>
+                    <td class="rightcolumn"> 10 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 11 - </td>
+                    <td class="rightcolumn"> 12 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 13 - </td>
+                    <td class="rightcolumn"> 14 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 15 - </td>
+                    <td class="rightcolumn"> 16 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 17 - </td>
+                    <td class="rightcolumn"> 18 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 19 - </td>
+                    <td class="rightcolumn"> 20 - </td>
+                </tr>
+
+
+                <tr>
+                    <td class="leftcolumn"> 21 - </td>
+                    <td class="rightcolumn"> 22 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 23 - </td>
+                    <td class="rightcolumn"> 24 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 25 - </td>
+                    <td class="rightcolumn"> 26 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 27 - </td>
+                    <td class="rightcolumn"> 28 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 29 - </td>
+                    <td class="rightcolumn"> 30 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 31 - </td>
+                    <td class="rightcolumn"> 32 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 33 - </td>
+                    <td class="rightcolumn"> 34 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 35 - </td>
+                    <td class="rightcolumn"> 36 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 37 - </td>
+                    <td class="rightcolumn"> 38 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 39 - </td>
+                    <td class="rightcolumn"> 40 - </td>
+                </tr>
+
+
+                <tr>
+                    <td class="leftcolumn"> 41 - </td>
+                    <td class="rightcolumn"> 42 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 43 - </td>
+                    <td class="rightcolumn"> 44 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 45 - </td>
+                    <td class="rightcolumn"> 46 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 47- </td>
+                    <td class="rightcolumn"> 48- </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 49 - </td>
+                    <td class="rightcolumn"> 50 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 51 - </td>
+                    <td class="rightcolumn"> 52 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 53 - </td>
+                    <td class="rightcolumn"> 54 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 55 - </td>
+                    <td class="rightcolumn"> 56 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 57 - </td>
+                    <td class="rightcolumn"> 58 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 59 - </td>
+                    <td class="rightcolumn"> 60 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 61 - </td>
+                    <td class="rightcolumn"> 62 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 63 - </td>
+                    <td class="rightcolumn"> 64 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 65 - </td>
+                    <td class="rightcolumn"> 66 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 67 - </td>
+                    <td class="rightcolumn"> 68 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 69 - </td>
+                    <td class="rightcolumn"> 70 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 71 - </td>
+                    <td class="rightcolumn"> 72 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 73 - </td>
+                    <td class="rightcolumn"> 74 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 75 - </td>
+                    <td class="rightcolumn"> 76 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 77 - </td>
+                    <td class="rightcolumn"> 78 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 79 - </td>
+                    <td class="rightcolumn"> 80 - </td>
+                </tr>
+
+
+                <tr>
+                    <td class="leftcolumn"> 81 - </td>
+                    <td class="rightcolumn"> 82 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 83 - </td>
+                    <td class="rightcolumn"> 84 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 85 - </td>
+                    <td class="rightcolumn"> 86 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 87 - </td>
+                    <td class="rightcolumn"> 88 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 89 - </td>
+                    <td class="rightcolumn"> 90 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 91 - </td>
+                    <td class="rightcolumn"> 92 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 93 - </td>
+                    <td class="rightcolumn"> 94 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 95 - </td>
+                    <td class="rightcolumn"> 96 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 97 - </td>
+                    <td class="rightcolumn"> 98 - </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"> 99 - </td>
+                    <td class="rightcolumn"> 100 - </td>
+                </tr> -->
+            </table>
+
+
+
+        </div>
+
+
+
+        <div id="area3">
+            <button id="undo" class="area2_column">&lt;</button>
+
+
+            <button id="tog">White's Turn</button>
+
+
+            <button id="redo" class="area2_column">&gt;</button>
+
+        </div>
+
+        <div class="board">
+
+            <div class="divv" id="row8">
+                <li class="box" id="b801">Brook</li>
+                <li class="box" id="b802">Bknight</li>
+                <li class="box" id="b803">Bbishop</li>
+                <li class="box" id="b804">Bqueen</li>
+                <li class="box" id="b805">Bking</li>
+                <li class="box" id="b806">Bbishop</li>
+                <li class="box" id="b807">Bknight</li>
+                <li class="box" id="b808">Brook</li>
+            </div>
+            <div class="divv" id="row7">
+                <li class="box" id="b701">Bpawn</li>
+                <li class="box" id="b702">Bpawn</li>
+                <li class="box" id="b703">Bpawn</li>
+                <li class="box" id="b704">Bpawn</li>
+                <li class="box" id="b705">Bpawn</li>
+                <li class="box" id="b706">Bpawn</li>
+                <li class="box" id="b707">Bpawn</li>
+                <li class="box" id="b708">Bpawn</li>
+            </div>
+            <div class="divv" id="row6">
+                <li class="box" id="b601"></li>
+                <li class="box" id="b602"></li>
+                <li class="box" id="b603"></li>
+                <li class="box" id="b604"></li>
+                <li class="box" id="b605"></li>
+                <li class="box" id="b606"></li>
+                <li class="box" id="b607"></li>
+                <li class="box" id="b608"></li>
+            </div>
+            <div class="divv" id="row5">
+                <li class="box" id="b501"></li>
+                <li class="box" id="b502"></li>
+                <li class="box" id="b503"></li>
+                <li class="box" id="b504"></li>
+                <li class="box" id="b505"></li>
+                <li class="box" id="b506"></li>
+                <li class="box" id="b507"></li>
+                <li class="box" id="b508"></li>
+            </div>
+            <div class="divv" id="row4">
+                <li class="box" id="b401"></li>
+                <li class="box" id="b402"></li>
+                <li class="box" id="b403"></li>
+                <li class="box" id="b404"></li>
+                <li class="box" id="b405"></li>
+                <li class="box" id="b406"></li>
+                <li class="box" id="b407"></li>
+                <li class="box" id="b408"></li>
+            </div>
+            <div class="divv" id="row3">
+                <li class="box" id="b301"></li>
+                <li class="box" id="b302"></li>
+                <li class="box" id="b303"></li>
+                <li class="box" id="b304"></li>
+                <li class="box" id="b305"></li>
+                <li class="box" id="b306"></li>
+                <li class="box" id="b307"></li>
+                <li class="box" id="b308"></li>
+            </div>
+            <div class="divv" id="row2">
+                <li class="box Wpawn" id="b201">Wpawn</li>
+                <li class="box Wpawn" id="b202">Wpawn</li>
+                <li class="box Wpawn" id="b203">Wpawn</li>
+                <li class="box Wpawn" id="b204">Wpawn</li>
+                <li class="box Wpawn" id="b205">Wpawn</li>
+                <li class="box Wpawn" id="b206">Wpawn</li>
+                <li class="box Wpawn" id="b207">Wpawn</li>
+                <li class="box Wpawn" id="b208">Wpawn</li>
+            </div>
+            <div class="divv" id="row1">
+                <li class="box" id="b101">Wrook</li>
+                <li class="box" id="b102">Wknight</li>
+                <li class="box" id="b103">Wbishop</li>
+                <li class="box" id="b104">Wqueen</li>
+                <li class="box" id="b105">Wking</li>
+                <li class="box" id="b106">Wbishop</li>
+                <li class="box" id="b107">Wknight</li>
+                <li class="box" id="b108">Wrook</li>
+            </div>
+
+
+            <script src="Code.js"></script>
+        </div>
 </body>
+
 </html>
+
+<!-- ------------------- -->
