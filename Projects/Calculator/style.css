@@ -53,13 +53,13 @@ body {
     margin: 0 auto;
     max-width: 400px;
     border-radius: 10px;
-    margin-top: 65px;
+    margin-top: 60px;
     height: 100%;
 }
 
 #screen {
     position: relative;
-    top: -70px;
+    top: -93px;
     margin: 4px auto;
     width: 120%;
     left: -60px;
@@ -195,7 +195,7 @@ td {
 
 #calc {
     position: relative;
-    top: -70px;
+    top: -95px;
     left: -250px;
     height: 10rem;
 }
@@ -212,43 +212,32 @@ td {
     background-color: #ff5151;
 }
 
-@media only screen and (max-width: 768px) {
 
-    .main {
-        left: 0px;
+/* Responsive message for screens below 893px width */
+@media only screen and (max-width: 893px) {
+.top {
+        position: relative;
     }
 
-    #screen {
-        width: 100%;
-        left: 0px;
+    header {
+        color: azure;
     }
-
-    #calc {
-        left: 0px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
 
     .header_title {
-        font-size: x-large;
+        text-align: center;
+        font-size: xxx-large;
     }
 
-    #screen {
-        height: 4rem;
-        font-size: 16px;
+    .main {
+        position: relative;
+        left: 30px;
+        display: none;
     }
 
-    #input,
-    #result {
-        height: 2rem;
-        font-size: 16px;
-    }
-
-    button,
-    .bottom-buttons {
-        width: 4.5rem;
-        height: 2.5rem;
-        font-size: 14px;
+    .desktop-message {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        background-color: #f9f9f9;
     }
 }

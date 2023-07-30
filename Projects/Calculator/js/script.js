@@ -32,6 +32,16 @@ for (item of buttons) {
         result.innerHTML = "";
         break;
 
+      case "+":
+        inputValue += "+";
+        input.innerHTML += "+";
+        break;
+
+      case "-":
+        inputValue += "-";
+        input.innerHTML += "-";
+        break;
+
       case "*":
         inputValue += "*";
         input.innerHTML += "*";
