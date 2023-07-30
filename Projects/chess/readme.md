@@ -13,3 +13,13 @@ Alisha Bharti
 
 Hope you will enjoy the game  !!!!
 
+## Last contributed by 
+- Abhyuday Pratap Singh | SSOC'23
+# 🚀 About Me
+Hey folks! 👋 I'm Abhyuday Pratap Singh, a passionate technologist driven by the art of creating immersive and visually captivating web experiences. 
+
+
+# 🔗 Contact Me
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://linktr.ee/abhyuday12)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhyuday12/)
+
