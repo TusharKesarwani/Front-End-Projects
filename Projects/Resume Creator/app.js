@@ -64,6 +64,49 @@ function handleSubmit(e) {
   company_description_resume.innerHTML = company_description.value;
 }
 
+const clearResume = () => {
+  const name_resume = document.getElementById("name_resume");
+  const email_resume = document.getElementById("email_resume");
+  const phone_resume = document.getElementById("phone_resume");
+  const github_resume = document.getElementById("github_resume");
+  const linkedin_resume = document.getElementById("linkedin_resume");
+  const degree_resume = document.getElementById("degree_resume");
+  const college_resume = document.getElementById("college_resume");
+  const Syear_resume = document.getElementById("Syear_resume");
+  const Pyear_resume = document.getElementById("Pyear_resume");
+  const cgpa_resume = document.getElementById("cgpa_resume");
+  const skill_resume = document.getElementById("skill_resume");
+  const project_resume = document.getElementById("project_resume");
+  const project_description_resume = document.getElementById(
+    "project_description_resume"
+  );
+  const link_resume = document.getElementById("link_resume");
+  const company_resume = document.getElementById("company_resume");
+  const designation_resume = document.getElementById("designation_resume");
+  const duration_resume = document.getElementById("duration_resume");
+  const company_description_resume = document.getElementById(
+    "company_description_resume"
+  );
+
+  name_resume.innerHTML = "";
+  email_resume.innerHTML = "";
+  phone_resume.innerHTML = "";
+  github_resume.innerHTML = "";
+  linkedin_resume.innerHTML = "";
+  degree_resume.innerHTML = "";
+  college_resume.innerHTML = "";
+  Syear_resume.innerHTML = "";
+  Pyear_resume.innerHTML = "";
+  cgpa_resume.innerHTML = "";
+  skill_resume.innerHTML = "";
+  project_resume.innerHTML = "";
+  project_description_resume.innerHTML = "";
+  link_resume.innerHTML = "";
+  company_resume.innerHTML = "";
+  designation_resume.innerHTML = "";
+  duration_resume.innerHTML = "";
+  company_description_resume.innerHTML = "";
+};
 function handleLeft() {
   const left = document.querySelector(".left");
   left.style.display = "none";

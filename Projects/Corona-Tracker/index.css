@@ -1,56 +1,52 @@
-.a
-{
-    margin: 1%;
-
-    
+.a {
+  margin: 1%;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
 }
-a
-{
-width:100px;
+a {
+  width: 100px;
 }
-*
-{
-margin:0px;
-padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-input
-{
-border: 1px solid #f2522e;
-background-color:#ededef;
+input {
+  border: 1px solid #f2522e;
+  background-color: #ededef;
 }
-input:hover
-{
-border:px solid #383959;
+input:hover {
+  border: px solid #383959;
 }
 
-input[type=submit]
-{
-    background-color: #f2a344;
-    color: black;
-    width: 65px;
-    height: 26px;
-    border: 1px solid gray;
-    border-radius: 3px;
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #f2a344;
+  color: black;
+  font-weight: 600;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+input[type="submit"]:hover {
+  background-color: #f09a30;
+  color: black;
 }
 
-#submit:hover
-{
-    cursor: pointer;
+#submit:hover {
+  cursor: pointer;
 }
-body{
-    background-image:url(m.jpg);
-       background-position: center;
-       background-attachment: fixed;
-       background-size: cover;
-        background-repeat: no-repeat;
+body {
+  background-image: url(m.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--text_dark);
   padding: 70px;
 }
-#add
-{
-    padding: 10px;
-    margin: auto;
+#add {
+  padding: 10px;
+  margin: auto;
   width: 40%;
   color: white;
   background-color: #393a59;
@@ -58,14 +54,10 @@ body{
   border: 1px solid #f2522e;
 }
 @media screen and (max-width: 400px) {
-    .a
-{
+  .a {
     margin: 1%;
-    
-}
   }
-input {font-weight: 500;}
-
-
-  
-  
+}
+input {
+  font-weight: 500;
+}
