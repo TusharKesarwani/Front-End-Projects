@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background: #111111;
     color: #FFF;
@@ -15,38 +13,58 @@ body{
     align-items: center;
     font-family: 'Orbitron', sans-serif;
 }
+div
+{
+    margin: auto;
+    position:relative;
+    font: size 5rem;
+    text-transform:uppercase ;
+    letter-spacing: 3px ;
+    line-height: 80px;;
+}
 
 .heading{
-    margin-top: 100px;
-    font-size: 3em;
-    padding-bottom: 80px;
-    text-align: center;
-    display: block;
+    margin-top: 10%;
+    margin-left: 40%;
+    color: transparent;
+    -webkit-text-stroke: 1px 
+    rgba(255, 255, 255,0.6);
 }
+.hover-text{
+    margin-left: 40%;
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    color: #1af7ff;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    }
+div:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 40px #1af7ff);
+    }
+
 
 .clock{
     position: relative;
-    margin: auto;
+    margin-top: 10%;
     width: 470px;
     height: 120px;
-    background: #fff;
     border-radius: 5px;
     color: #000;
-    z-index: 1000;
 }
 
 .clock .container{
+    margin-top: 10%;
     height: 100%;
     display: flex; 
     justify-content: center;
-    align-items: center;
+ align-items: center;
 }
-
 .clock .container h2{
     font-size: 3.5rem;
     color: #000;
 }
-
 .clock .container h2:nth-child(odd){
     width: 110px;
     text-align: center;
@@ -57,20 +75,17 @@ body{
 }
 
 .dot{
-    margin: 5px;
-    top: 30px;
+    margin-top: 5%;
+    color: #fff;
     font-size: 3rem;
     font-weight: 700;
 }
 
 #ampm{
+    color: #fff;
     position: relative;
     margin-left: 10px;
-    top: 30px;
+    top: 20px;
     font-size: 1rem;
     font-weight: 700;
 }
-
-/* This project is built by Harshit Raj.
-This projects belongs to MedusaVerse.
-©Medusaverse */
