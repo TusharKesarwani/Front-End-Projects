@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | GitHub user search app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="title">
+          <h1>Github Finder</h1>
+          <div class="modes">
+            <p class="dark-mode">Dark <img src="assets/icon-moon.svg" /></p>
+            <p class="light-mode">Light <img src="assets/icon-sun.svg" /></p>
+          </div>
+        </div>
+        <section class="search-section">
+          <img src="assets/icon-search.svg" /><input
+            class="search-input"
+            type="search"
+            placeholder="Search"
+          /><button class="search-btn" type="submit" value="">Search</button>
+        </section>
+        <section class="user-details" id="user-details">
+          <img
+            class="image"
+            id="user-img"
+            alt="User Icon"
+          />
+          <div class="name">
+            <h1 id="name">Name</h1>
+            <p id="username">@Username</p>
+          </div>
+
+          <div class="joined" id="joined">Join Date</div>
+
+          <div class="para" id="bio">Bio</div>
+
+          <div class="stats">
+            <div class="repo">
+              <h3>Repo</h3>
+              <h2 id="repo">--</h2>
+            </div>
+            <div class="Follower">
+              <h3>Follower</h3>
+              <h2 id="follower">--</h2>
+            </div>
+            <div class="Following">
+              <h3>Following</h3>
+              <h2 id="following">--</h2>
+            </div>
+          </div>
+
+          <div class="location flex-baseline">
+            <img src="assets/icon-location.svg" />
+            <p id="location">Location</p>
+          </div>
+          <div class="link flex-baseline">
+            <img src="assets/icon-website.svg" />
+            <p id="website">Blog</p>
+          </div>
+          <div class="twitter flex-baseline">
+            <img src="assets/icon-twitter.svg" />
+            <p id="twitter">Twitter</p>
+          </div>
+          <div class="company flex-baseline">
+            <img src="assets/icon-company.svg" />
+            <p id="company">Company</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

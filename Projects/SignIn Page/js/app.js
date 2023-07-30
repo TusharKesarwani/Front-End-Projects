@@ -67,7 +67,8 @@ function showMessage(RESPONSE) {
 
 //validate email and key inputs
 function validate(email, key) {
-    if (email == '' || key == '') {
+    var contain_space = email.replace(/\s\s+/g," ")
+    if (email==" "||"" || key =="" || contain_space.length!==email.length ) {
         return false;
     }
     return true;

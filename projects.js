@@ -72,6 +72,14 @@ const projects = [
         "project-link":"Projects/beautyzone/index.html"
     },
     {
+      "title":"Beyblade Card Catalog",
+      "tags":["HTML","CSS","JavaScript"],
+      "img":"img/projects/Beyblade_Card_Catalog.png",
+      "description":"Beyblade Card Catalog will showcase Beyblade cards. The project will leverage a JSON file containing data for various Beyblade cards. This data will be dynamically fetched and utilized to populate the card catalog. The frontend page will incorporate a filtering mechanism to allow users to narrow down their card search.",
+      "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Beyblade-Card-Catalog",
+      "project-link":"Projects/Beyblade-Card-Catalog/index.html"
+    },
+    {
         "title":"Bill Tip Calculator",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Tip_Calculator.png",
@@ -616,6 +624,14 @@ const projects = [
         "project-link":"Projects/QR Code Generator/index.html"
     },
     {
+        "title":"QR Code Reader",
+        "tags":["HTML","CSS","JavaScript","Node Library"],
+        "img":"img/projects/QR Code Reader.png",
+        "description":"The user can upload or either scan the QR Code from their device and the application provides the link of the QR Code scanned.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/QR Code Reader",
+        "project-link":"Projects/QR Code Reader/index.html"
+    },
+    {
         "title":"Reaction_App",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Reaction_Time_Test.png",
@@ -968,6 +984,14 @@ const projects = [
         "project-link":"Projects/Zomato-Landing-Page/index.html"
     },
     {
+        "title":"MESSI MANIA",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/MESSI MANIA.png",
+        "description":"A simple fan made webpage of LIONEL MESSI",
+        "github-link":"https://github.com/Soumyajit2825/MESSI_MANIA",
+        "project-link":"Projects/MESSI MANIA/index.html"
+    },
+    {
         "title":"Morse Code Convertor",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Morse_Code_Convertor.png",
@@ -998,8 +1022,69 @@ const projects = [
         "description":"This website can be used to manipulate text in several ways such as change to uppercase or lowercase , and remove extra spaces etc.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Text-Utilities",
         "project-link":"Projects/Text-Utilities/index.html"
+    },
+    {
+        "title":"Playable Piano",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Playable_Piano.png",
+        "description":"This project is a beginner friendly and helpful who are new to frontend technology. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
+        "project-link":"Projects/Playable_Piano/index.html"
+    },
+    {
+        "title":"Solar System Model",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Solar_System_Model.png",
+        "description":"Solar system model is the animated project using CSS. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device. Adding data of different solar bodies will makes this website more informative.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
+        "project-link":"Projects/Solar%20System%20Model/index.html"
+    },
+    {
+        "title":"Solar System Model",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Solar_System_Model.png",
+        "description":"Solar system model is the animated project using CSS. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device. Adding data of different solar bodies will makes this website more informative.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
+        "project-link":"Projects/Solar%20System%20Model/index.html"
+    },
+    {    "title":"Sound Equalizer",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Sound_Equalizer.png",
+        "description":"Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
+        "project-link":"Projects/Sound_Equalizer/index.html"
+    },
+    {
+        "title":"Lorem Ipsum Generator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Lorem-Ipsum-Generator.png",
+        "description":"This project can generate random written paragraphs. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Lorem-Ipsum-Generator",
+        "project-link":"Projects/Lorem-Ipsum-Generator/index.html"
+    },
+    {    "title":"Carbon FootPrint Calculator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/carbonFootCalc.png",
+        "description":"Carbon FootPrint Calculator is an Eco-Friendly Calculator to help you keep your carbon emissions in check and help save the environment, built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Carbon-FootPrint-Calc",
+        "project-link":"Projects/Carbon-FootPrint-Calc/index.html"
+    },
+    {
+        "title":"Video Player",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Video_Player.png",
+        "description":"This website can be used to play videos. This application give the feeling of video gallery as of our mobile phone.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Video-Player",
+        "project-link":"Projects/Video-Player/index.html"
+    },
+    {
+        "title":"Random Meal Generator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Random-Meal-Generator.png",
+        "description":"Random Meal Generator can generator different meals. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Random-Meal-Generator",
+        "project-link":"Projects/Random-Meal-Generator/index.html"
     }
-    
 ]
 
 export default projects;

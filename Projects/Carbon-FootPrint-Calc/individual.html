@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carbon FootPrint Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Carbon FootPrint Calculator</h1>
+        <form action="" method="POST" class="box ind-form">
+            <label for="bill">Electricity Consumption : </label>
+            <input type="text" id="bill" name="bill" placeholder="Enter Amount of Units Consumed">
+            <label for="vehicle">Car Type : </label>
+            <select name="vehicle" id="vehicle">
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+                <option value="cng">CNG</option>
+                <option value="ev">Ev and Hybrids</option>
+            </select>
+            <label for="mileage">MileAge : </label>
+            <input type="text" name="mileage" id="mileage" placeholder="Enter MileAge of your car">
+            <label for="distance">Distance Travelled : </label>
+            <input type="text" id="distance" name="distance" placeholder="Enter Distance Travelled">
+            <label for="ac">Air Conditioner Usage : </label>
+            <input type="text" id="ac" name="ac" placeholder="Enter Air Condition Consumption">
+            <label for="gas">LPG Consumption (in grams) : </label>
+            <input type="text" id="gas" name="gas" placeholder="Enter LPG Consumption">
+            <span>
+                <button type="submit">Calculate</button>
+                <a class="link" href="./index.html">Home</a>
+            </span>
+        </form>
+        <div class="answer-box">
+
+            <h1 class="result"> </h1>
+            <button id="btn">Calculate Again</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
