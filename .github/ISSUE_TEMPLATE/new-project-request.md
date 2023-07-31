@@ -2,7 +2,7 @@
 name: New Project Request
 about: Add any website template you have for this repository
 title: ''
-labels: 'SSOC 2.0'
+labels: ''
 assignees: ''
 
 ---
