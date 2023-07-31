@@ -102,11 +102,6 @@ fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contribut
             
         });
 
-        const li = document.createElement("li");
-        li.innerHTML =`<img src="https://avatars.githubusercontent.com/u/90692103?v=4" alt="shivam201483101">`;
-            contributorsList.appendChild(li);
-
-
 
        //-----------for scrollbar button---------------
 
