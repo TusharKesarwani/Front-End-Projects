@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7qLE6v7zgvlwN9SlFr1STuhyFG-jAdl4ubA&usqp=CAU" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7qLE6v7zgvlwN9SlFr1STuhyFG-jAdl4ubA&usqp=CAU"
+        type="image/x-icon">
 </head>
+
 <body>
-    <section>
-        <header>
+    <div class="desktop-message">
+        Please switch to the Mobile (with 382 px or more) or desktop version for a better experience.
+    </div>
+
+    <section class="main">
+        <header class="top">
             <nav>
-                <img src="./img/icon.png" alt="This is logo" class="img_logo">
+                <img src="img/inew.png" alt="This is logo" class="img_logo">
                 <span class="header_title">
                     Calculator
                 </span>
@@ -20,99 +28,215 @@
         </header>
         <div class="container">
             <div id="topside"></div>
-            <div id="screen">
-                <div id="input"></div>
-                <div id="result"></div>
+            <p id=area></p>
+            <p id=Answer>0</p>
+            <div input id="screen">
+                <div input id="input"></div>
+                <div input id="result"></div>
                 <div id="memory"></div>
             </div>
             <table>
-                <tbody>
+                <tbody id="calc">
+
                     <tr>
                         <td class="main-buttons">
-                            <button type="button" class="light">mc</button>
+                            <button onclick="solve('sin')" class="light">sin</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="light">m+</button>
+                            <button onclick="solve('cos')" class="light">cos</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="light">m-</button>
+                            <button onclick="solve('tan')" class="light">tan</button>
                         </td>
+
+   
                         <td class="main-buttons">
-                            <button type="button" class="light">mr</button>
+                            <button onclick="solve('sin-1')" class="m" id="inverse">sin-1</button>
                         </td>
+
+                        <td class="main-buttons">
+                            <button onclick="solve('cos-1')" class="m" id="inverse">cos-1</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="solve('tan-1')" class="m" id="inverse">tan-1</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="solve('p')" class="twodig">%</button>
+                        </td>
+
                     </tr>
+
                     <tr>
                         <td class="main-buttons">
-                            <button type="button" class="light">C</button>
+                            <button onclick="solve('sec')" class="gery">sec</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="light">/</button>
+                            <button onclick="solve('cosec')" class="gery">cosec</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="light">x</button>
+                            <button onclick="solve('cot')" class="gery">cot</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="light">⌫</button>
+                            <button onclick="ac()" id="clear" class="ac">C</button>
                         </td>
+
+                        <td class="main-buttons">
+                            <button onclick="divmul('mult')" class="twodig">*</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick=" divmul('div')" class="twodig">/</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="del()" class="ac">⌫</button>
+                        </td>
+
                     </tr>
+
                     <tr>
                         <td class="main-buttons">
-                            <button type="button" class="white">7</button>
+                            <button onclick="power(inputValue)" class="light">x^y</button>
+
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">8</button>
+                            <button onclick="power(inputValue)" class="light">x²</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">9</button>
+                            <button onclick="squareRoot()" onclick="power(inputValue)" class="light">x³</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="light">-</button>
+                            <button onclick="input('7')" class="white">7</button>
                         </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('8')" class="white">8</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('9')" class="white">9</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('-')" class="twodig">-</button>
+                        </td>
+
                     </tr>
+
                     <tr>
                         <td class="main-buttons">
-                            <button type="button" class="white">4</button>
+                            <button onclick="naturalLog()" class="gery">ln</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">5</button>
+                            <button onclick="log()" class="gery">log</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">6</button>
+                            <button onclick="factorial()" class="gery">x!</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="light">+</button>
+                            <button onclick="input('4')" class="white">4</button>
                         </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('5')" class="white">5</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('6')" class="white">6</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('+')" class="twodig">+</button>
+                        </td>
+
                     </tr>
-                    <tr>
+
+                    <tr class="tr5">
                         <td class="main-buttons">
-                            <button type="button" class="white">1</button>
+                            <button onclick="input('(')" class="light">(</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">2</button>
+                            <button onclick="input(')')" class="light">)</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">3</button>
+                            <button onclick="squareRoot()" class="light">²√</button>
                         </td>
+
+
+                        <td class="main-buttons">
+                            <button class="white" onclick="input('1')">1</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button class="white" onclick="input('2')">2</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('3')" class="white">3</button>
+                        </td>
+
                         <td class="main-buttons" rowspan="2">
-                            <button type="button" class="light" id="equals">=</button>
+                            <button onclick="equal()" id="equal">=</button>
+
                         </td>
                     </tr>
-                    <tr>
+
+
+                    <tr class="tr6">
+
                         <td class="main-buttons">
-                            <button type="button" class="white">%</button>
+                            <button id="btn-power" class="gery">10^x</button>
+
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">0</button>
+                            <button id="degree-button" class="gery" onclick="toggleMode()">y√x</button>
                         </td>
+
                         <td class="main-buttons">
-                            <button type="button" class="white">.</button>
+
+                            <button class="gery">1/x</button>
+
                         </td>
+
+                        <td class="main-buttons">
+                            <button onclick="ans()" class="twodig">Ans</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('0')" class="white">0</button>
+                        </td>
+
+                        <td class="main-buttons">
+                            <button onclick="input('.')" class="twodig">.</button>
+                        </td>
+
                     </tr>
+
+
                 </tbody>
+
             </table>
         </div>
     </section>
-    
+
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
