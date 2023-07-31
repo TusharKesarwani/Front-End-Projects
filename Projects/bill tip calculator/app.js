@@ -101,6 +101,17 @@ function init() {
 
 }
 
+
+// reset current state
+resetBtn.onclick = () => {
+    numOfPeople = 1;
+    tipPercentage = 0;
+    billAmt = 0;
+    billTotal.innerHTML = `$ 0.00`
+    tipTotalPerPerson.innerHTML = `$ 0.00`
+    billTipPerPerson.innerHTML = `$ 0.00`
+}
+
 function calculateTip(billAmt, numberOfPeople, tipPercentage) {
     const tipAmt = (billAmt * (tipPercentage / 100))
     const tipAmtPerPeron = (tipAmt / numberOfPeople)
