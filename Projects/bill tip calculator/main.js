@@ -88,15 +88,15 @@ function init() {
     }
 
     // handle custom tip selection
-    customTipBtn.onclick = () => {
+    customTipBtn.onclick = ()=> {
         customTipBtn.classList.remove("visible")
         customTipBtn.classList.add("hidden")
         customTipSelect.classList.remove("hidden")
     }
 
     // handle custom tip selection
-    customTipSelect.onchange = (e) => {
-        tipPercentage = e.target.value
+    customTipSelect.onchange = (e)=>{
+        tipPercentage =  e.target.value
     }
 
 }
@@ -107,9 +107,9 @@ function calculateTip(billAmt, numberOfPeople, tipPercentage) {
     const totalPerPerson = ((billAmt / 4) + tipAmtPerPeron)
     const billTotalAmt = (billAmt + tipAmt);
 
-    billTotal.innerHTML = `$ ${billTotalAmt.toFixed(2)}`
-    tipTotalPerPerson.innerHTML = `$ ${totalPerPerson.toFixed(2)}`
-    billTipPerPerson.innerHTML = `$ ${tipAmtPerPeron.toFixed(2)}`
+    billTotal.innerHTML = `$ ${billTotalAmt.toFixed(2) }`
+    tipTotalPerPerson.innerHTML = `$ ${totalPerPerson.toFixed(2) }`
+    billTipPerPerson.innerHTML = `$ ${tipAmtPerPeron.toFixed(2) }`
 
     console.log({ tip: tipAmt.toFixed(2), perP: tipAmtPerPeron.toFixed(2), total: totalPerPerson.toFixed(2), billTotalAmt })
 }

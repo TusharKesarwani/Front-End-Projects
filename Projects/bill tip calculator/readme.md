@@ -16,6 +16,10 @@ HTML , CSS and JAVASCRIPT.
 Alisha Bharti
 
 # SNAPSHOT OF THE WEBSITE:
+### Before
+![bill](https://user-images.githubusercontent.com/84632701/212969976-5abc79e1-e1b0-4712-8a1e-6801b6232c4e.png)
+
+### After
 ![bill](https://user-images.githubusercontent.com/84632701/212969976-5abc79e1-e1b0-4712-8a1e-6801b6232c4e.png)
 
 
