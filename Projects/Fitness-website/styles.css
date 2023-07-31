@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+	box-sizing: border-box;
+}
+body {
+
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #ff2652;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+
+  font-family:  'Lobster', cursive;
+	font-size: 1.45em;
+  color:#ff2652;
+  margin-left: 30px;
+
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+ 
+	display: block;
+}
+
+.main-nav a {
+	color: #ff2652;
+	font-size: .99em;
+
+}
+
+
+.main-nav a:hover {
+	color: #fff;
+    background :#ff2652;
+    opacity:0.3;
+}
+
+
+.header {
+	
+	border: 1px solid #a2a2a2;
+	background-color: #e6ebebd9;
+ 
+            background-attachment:fixed;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow:hidden;
+       position: relative;
+        top:0;
+        padding:0;
+        margin:0;
+	
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+.main-nav img{
+  cursor: pointer;
+  background: transparent;
+  height:25px;
+  width:25px;
+}
+
+/*slider         kanxlkscdavnhidsohbiofdbhgiobjognj*/
+.container {
+    position: relative;
+    height: 750px;
+   
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height:450px;
+    overflow: hidden;
+    
+  
+  }
+  .mySlides img{
+    width:100%;
+  height: 480px;
+    object-fit:cover;
+  }
+  .column{
+    width:50px;
+    height:200px;
+  }
+
+  .column img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background: #fff ;
+    padding: 20px 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 30px;
+ 
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  /*footer#######################################*/
+  
+
+.footer{
+
+  cursor: pointer;
+  background: rgba(144, 129, 129, 0.4);
+ 
+ height: 100px;
+}
+
+.footer-item{
+  color: #ff2652;
+  font-size: 25px;
+  margin: 0;
+    list-style: none;
+
+    
+ 
+}
+.footer li{
+margin-left: 20px;
+float:left;
+font-size: 15px;
+color:black;
+  
+  
+}
+
+.footer li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;  
+  
+
+}
+.footer img{
+  color: white;
+}
