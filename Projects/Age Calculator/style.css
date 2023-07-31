@@ -12,6 +12,10 @@
     padding: 10px;
 }
 .calculator{
+    text-align: center;
+    position: relative;
+    left: 18%;
+    top: 2rem;
     width: 100%;
     max-width: 600px;
     margin-left: 10%;

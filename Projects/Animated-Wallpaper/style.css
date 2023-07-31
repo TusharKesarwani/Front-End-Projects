@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    color: whitesmoke;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+body {
+    background-color: #1a237e;
+}
+header {
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+header {
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+  
+h1 {
+    font-size: 4rem;
+    display: inline-block;
+    font-family: 'Nosifer', cursive;
+    background: url(oranges.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.1px green;
+    -webkit-text-fill-color: transparent;
+    animation: text 3s linear infinite, hover 3s linear infinite;
+}
+
+.button {
+    border: solid 5px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 34px;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #b81159;
+  }
+  
+  .button3:hover {
+    background-color: #dd133f;
+    color: white;
+  }
+
+@keyframes text{
+    from{
+        background-position: 100% 20%;
+    }
+    to {
+        background-position: 10% 0%;
+    }
+}
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
