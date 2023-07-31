@@ -254,3 +254,37 @@ li {
     margin-right: 50px;
 
 }
+/* Responsive message for screens below 381px width */
+@media only screen and (max-width: 381px) {
+
+.display_message{
+display: block;
+font-size: 15px;
+
+}}
+
+/* ------------------------------------------------------ */
+
+/* Small devices such as large phones (382px and up) */
+@media only screen and (min-width: 382px) and (max-width: 499px) {}
+
+/* -------------------------------------------------- */
+
+/* Medium devices such as tablets (500px and up) */
+@media only screen and (min-width: 500px) and (max-width: 768px) {}
+
+/* -------------------------------------------------- */
+
+/* Large devices such as laptops (769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 909px) {}
+
+/* -------------------------------------------------- */
+
+/* Large devices such as laptops (1025px and up) */
+@media only screen and (min-width: 910px) and (max-width: 6149px) {}
+
+
+/* ------------------------------------------------------ */
+
+/* Large devices such as laptops (6149px and up) */
+@media only screen and (min-width: 6149px) {}
