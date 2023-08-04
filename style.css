@@ -54,11 +54,17 @@ nav {
 nav:hover{
   box-shadow: 5px 5px 10px 5px rgba(1, 12, 77, 0.2);
   transition-duration: .5s;
-
+  
 }
 nav img {
   width: 50px;
   height: auto;
+}
+nav img:hover{
+  box-shadow: 3px 3px 3px 3px rgba(245, 245, 245, 0.2);
+  transition-duration: 0.5s;
+  /* border-radius: 50%; */
+  
 }
 
 nav ul {
@@ -69,24 +75,30 @@ nav ul {
 
 nav ul li a {
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
   transition: all ease-in-out 0.2s;
 }
 
 nav ul li a:hover {
-  color: #05f2c7;
+  color: #65ffe3;
+  font-weight:normal;
+  transition-duration: 0.25s;
 }
+
+
+
 
 .github-btn {
   background-color: #fff;
   color: #3d3d3d;
   padding: 0.6rem 1rem;
   border-radius: 3rem;
+  
 }
-
 .github-btn:hover {
-  background-color: #05f2c7;
-  color: #0d4360;
+  background-color: #dbfcf6;
+  color: black;
+  /* box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.922); */
 }
 
 main {
@@ -152,12 +164,12 @@ main .left p {
 
 }
 
-.github-btn-cta:hover {
-  background-color: #05f2c7;
+/* .github-btn-cta:hover {
+  background-color: #ffffff;
   color: #0d4360;
     
 
-}
+} */
 
 .project-section {
   border: 1px rgb(185, 185, 185) solid;
