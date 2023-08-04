@@ -344,6 +344,14 @@ const projects = [
         "project-link":"Projects/Filters/index.html"
     },
     {
+        "title":"Fitness-website",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/website.jpg",
+        "description":"The Fitness Website is alanding page , web application designed to help users learn and visualize various exercises for different muscle groups.It is built using html, css and javascript .",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Fitness-website",
+        "project-link":"Projects/Fitness-website/index.html"
+    },
+    {
         "title":"Github Profile Wrapper",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Github_Profile_Wrapper.png",
@@ -1054,7 +1062,14 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
         "project-link":"Projects/Sound_Equalizer/index.html"
     },
-
+    {
+        "title":"Lorem Ipsum Generator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Lorem-Ipsum-Generator.png",
+        "description":"This project can generate random written paragraphs. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Lorem-Ipsum-Generator",
+        "project-link":"Projects/Lorem-Ipsum-Generator/index.html"
+    },
     {    "title":"Carbon FootPrint Calculator",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/carbonFootCalc.png",
@@ -1062,7 +1077,6 @@ const projects = [
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Carbon-FootPrint-Calc",
         "project-link":"Projects/Carbon-FootPrint-Calc/index.html"
     },
-
     {
         "title":"Video Player",
         "tags":["HTML","CSS","JavaScript"],
@@ -1070,6 +1084,22 @@ const projects = [
         "description":"This website can be used to play videos. This application give the feeling of video gallery as of our mobile phone.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Video-Player",
         "project-link":"Projects/Video-Player/index.html"
+    },
+    {
+        "title": "Chatbot",
+        "tags":["HTML","CSS","JavaScript"],
+        "img": "img/projects/Chatbot.png",
+        "description": "This is a Chatbot Website you can ask your any doubts this provides solutions with the help of GPT fetched API.",
+        "github-link": "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Chatbot",
+        "project-link": "Projects/Chatbot/index.html"
+    },
+    {
+        "title":"Random Meal Generator",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/Random-Meal-Generator.png",
+        "description":"Random Meal Generator can generator different meals. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Random-Meal-Generator",
+        "project-link":"Projects/Random-Meal-Generator/index.html"
     }
 ]
 
