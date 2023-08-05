@@ -282,7 +282,7 @@
     </div>
     <div class="copyright">
       Made by <a href="https://www.linkedin.com/in/sumit-kumar-rai-b59290233/" target="_blank"> Sumit Kumar</a> &copy;
-      2022 | All rights reserved
+      <span id='date'></span> | All rights reserved
     </div>
   </footer>
 
@@ -294,6 +294,7 @@
       AOS.init({
         duration: 1000,
       });
+      document.getElementById('date').innerHTML = new Date().getFullYear();
     </script>
 </body>
 

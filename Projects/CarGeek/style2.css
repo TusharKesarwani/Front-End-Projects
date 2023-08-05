@@ -1,0 +1,66 @@
+*{font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 50%; /* Adjust the width as needed */
+  margin: 20px auto; /* Center the table horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tick, .cross {
+  font-size: 20px;
+}
+
+.tick {
+  color: green;
+}
+
+.cross {
+  color: red;
+}
+.frame{
+  text-align: center;
+  position: relative;
+ 
+
+}
+.frame1{
+  text-align: center;
+  
+}
+.frame2{
+  text-align: center;
+}
+.frame3{
+  text-align: center;
+}
+.frame4{
+  text-align: center;
+}
+.frame5{
+  text-align: center;
+}

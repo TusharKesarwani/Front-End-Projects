@@ -100,6 +100,7 @@ fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contribut
             li.innerHTML = `<a href="${contributor.profileUrl}"><img src="${contributor.avatarUrl}" alt="${contributor.username}"></a>`;
             contributorsList.appendChild(li);
         });
+       
     });
 
        //-----------for scrollbar button---------------

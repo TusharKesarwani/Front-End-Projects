@@ -20,7 +20,7 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  gap: 20%;
+  gap: 10%;
 }
 
 .header {
@@ -54,7 +54,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
-input[type="number"] {
+input[type="number"],
+input[type="text"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -176,8 +177,22 @@ button:hover {
   margin-top: 3px;
 }
 
+.hint-item {
+	border: 1px solid grey;
+}
+
+.hint-item:hover {
+	cursor: pointer;
+	background-color: lightgray;
+}
+
+.hint-item:last-child {
+	margin-bottom: 10px;
+}
+
 /* CSS for screens less than 480px */
 @media (max-width: 480px) {
+  
   .header {
     font-size: 18px;
   }
@@ -189,4 +204,8 @@ button:hover {
   .sub-heading{
     font-size: 20x;
   }
+  .modal-container{
+    margin-top: 80px;
+  }
 }
+

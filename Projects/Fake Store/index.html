@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes Shopping Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <h1>Clothes Shopping Website</h1>
+    </div>
+  </header>
+  <main class="container my-5">
+     <div id="confetti-container">
+    <div class="row">
+      <div class="col-lg-3 mb-4">
+        <div class="filters bg-light p-4">
+          <div class="form-group">
+            <input type="text" class="form-control" id="search-input" placeholder="Search products">
+          </div>
+          <div class="form-group">
+            <label for="category-filter">Category:</label>
+            <select class="form-control" id="category-filter">
+              <option value="">All</option>
+              <option value="men's clothing">Men's Clothing</option>
+              <option value="women's clothing">Women's Clothing</option>
+              <option value="jewelery">Jewelery</option>
+              <option value="electronics">Electronics</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="price-range">Price Range:</label>
+            <input type="range" class="form-control-range" id="price-range" min="0" max="1000">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="product-list row">
+          <!-- Product cards will be dynamically loaded here -->
+        </div>
+      </div>
+    </div>
+    <div class="cart bg-light p-4 mt-5">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items" class="list-group">
+        <!-- Card items -->
+      </ul>
+      <button id="checkout-btn" class="btn btn-dark btn-block mt-3">Checkout</button>
+    </div>
+  </main>
+ <div id="confetti-container"></div>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

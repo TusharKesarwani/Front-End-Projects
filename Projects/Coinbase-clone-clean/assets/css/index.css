@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-primary,
+.btn-primary-small {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: rgb(0, 82, 255);
+    color: white;
+    font-weight: 500;
+    border: solid 1px rgb(0, 82, 255);
+}
+
+.btn-secondary,
+.btn-secondary-small {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: #000;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-secondary-small {
+    font-size: 1rem;
+    padding: 0.1rem 1rem;
+}
+
+.btn-primary-small {
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.3rem 2rem;
+}
+
+.btn-primary-small:hover {
+    background-color: rgb(1, 76, 236);
+}
+
+.btn-primary:hover {
+    background-color: rgb(1, 76, 236);
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid rgb(236, 239, 241);
+    top: 0px;
+    background: rgb(255, 255, 255);
+    position: sticky;
+}
+
+
+.header-div {
+    max-width: 1180px;
+    margin: 0px auto;
+    display: flex;
+    align-items: stretch;
+    padding: 0px 20px;
+    box-sizing: content-box;
+    min-height: 66px;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex: 6 1 0%;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+}
+
+.main-menu {
+    margin-bottom: 0;
+
+}
+
+.main-menu li {
+    font-size: 0.9375rem;
+    list-style: none;
+    display: inline;
+    margin-right: 1.5rem;
+    color: rgb(5, 15, 25);
+    font-weight: 550;
+}
+
+.icon-sm i {
+    font-size: 1.25rem;
+    padding: 0.4rem 0.65rem;
+    color: #0075FF;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000040;
+}
+
+.main-menu li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.get-started-div {
+    padding: 0 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.get-started-div button {
+    height: 40px;
+    border-radius: 40px;
+}
+
+.get-started-div .sign-in:hover {
+    color: #0075FF;
+}
+
+.first-section-home {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1142px;
+    margin: auto;
+    padding: 3rem;
+
+}
+
+.first-section-home .home-call-to-action .home-description {
+    color: rgb(10, 11, 13);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.first-section-home .home-call-to-action .call-to-action-text {
+    cursor: pointer;
+    display: flex;
+    gap: 0.4rem;
+    font-weight: 500;
+    color: rgb(0, 82, 255);
+
+}
+
+.first-section-home .home-call-to-action .call-to-action-text:hover {
+    text-decoration: underline;
+
+}
+
+.first-section-home .home-call-to-action .home-title {
+    margin-top: 8px;
+    max-width: 425px;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.first-section-home .input-text {
+    width: 100%;
+    padding: 1.3rem;
+    font-size: 1.125rem;
+    line-height: 1.15;
+}
+
+.first-section-home .input-button {
+    padding: 1.3rem;
+    font-size: 1.125rem;
+    line-height: 1.15;
+}
+
+
+.main-menu li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    flex: 2 1 0%;
+}
+
+.logo a img {
+    max-width: 7rem;
+    display: inline-flex;
+    max-height: 20px;
+}
+
+
+.home-img {
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+.home-img img {
+    height: 534px;
+    width: 100%;
+    min-width: 400px;
+    object-fit: contain;
+
+}
+
+.second-section-features {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(10, 11, 13);
+    margin: auto;
+    padding: 2rem;
+
+}
+
+.second-section-features button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 590;
+    background-color: rgb(55, 115, 245);
+    border: 1px solid #0000;
+    height: 3.4rem;
+    border-radius: 4rem;
+    width: 13rem;
+}
+
+.second-section-features button i {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.second-section-features button:hover {
+    background-color: rgb(71, 126, 246);
+}
+
+.web-3-title {
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+}
+
+.web-3-description-div {
+    max-width: 700px;
+}
+
+.web-3-description {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.web-3-buttons {
+    min-width: 205px;
+}
+
+.third-section-tables {
+    padding: 0px;
+    max-width: 1142px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px 0 rgba(50, 53, 61, 0.02);
+    border: 1px solid rgba(91, 97, 110, 0.2);
+    border-radius: 4px;
+}
+
+.coinbase-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.coinbase-table th,
+.coinbase-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.coinbase-table th {
+    font-weight: 200;
+    color: gray;
+}
+
+
+.coinbase-table tbody tr:hover {
+    background-color: rgb(238, 240, 243);
+}
+
+.coinbase-table button {
+    padding: 6px 16px;
+    width: auto;
+    margin: 0px;
+    border-radius: 4px;
+    color: rgb(var(--gray0));
+    font-size: 14px;
+    border: 1px solid rgb(9, 133, 81);
+    background-color: rgb(9, 133, 81);
+    font-weight: 500;
+}
+
+.coinbase-table button:hover {
+    background-color: rgb(10, 167, 102);
+}
+
+
+
+.coinbase-table button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    color: white;
+    font-weight: 500;
+}
+
+.max-padding {
+    padding: 16px 48px 16px 0px;
+    width: 100% !important;
+}
+
+.text-red {
+    color: rgb(207, 32, 47);
+}
+
+.text-gray {
+    color: rgb(91, 97, 110);
+    font-weight: 400;
+}
+
+.fourth-section-earnings {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.fourth-section-earnings h2 {
+    line-height: 1.3;
+    color: rgb(var(--gray100));
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.fourth-section-earnings .text-container {
+    max-width: 350px;
+    justify-content: center;
+    z-index: 1;
+    min-width: 250px;
+    flex: 1 1 50%;
+}
+
+.fourth-section-earnings .graph-container {
+    min-width: 500px;
+}
+
+.fourth-section-earnings .graph-card {
+    cursor: pointer;
+    margin-bottom: 16px;
+    padding: 24px;
+    white-space: nowrap;
+    border: none;
+    transition: box-shadow 500ms ease, opacity 500ms ease, z-index 0ms ease-out;
+}
+
+.fourth-section-earnings .graph-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.fourth-section-earnings .card-title .bold {
+    line-height: 1.3;
+    color: rgb(10, 11, 13);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.fourth-section-earnings .card-title img {
+    line-height: 1.3;
+    color: rgb(10, 11, 13);
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.fourth-section-earnings .card-title .bold-light {
+    line-height: 1.3;
+    color: rgb(10, 11, 13);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 16px;
+}
+
+.fourth-section-earnings .card-pricing .card-pricing-text {
+    margin-left: 24px;
+    color: rgb(9, 133, 81);
+    font-weight: 500;
+}
+
+.fourth-section-earnings a {
+    color: rgb(0, 82, 255) !important;
+    display: block;
+    cursor: pointer;
+    margin-top: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.fourth-section-earnings a:hover {
+    color: rgb(71, 126, 246) !important;
+}
+
+
+.sec-features {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 24px;
+}
+
+.sec-features .features {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.sec-features .section-title {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: var(--spacing-1);
+    color: rgb(10, 11, 13);
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.h2-bold {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: var(--spacing-1);
+    color: rgb(10, 11, 13);
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.p-bold {
+    color: rgb(91, 97, 110);
+    font-size: 18px;
+    margin: 0px;
+}
+
+.sec-features p {
+    color: rgb(10, 11, 13);
+}
+
+.sec-features .main-div {
+    width: 100%;
+    margin-top: 30px;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.sec-features .main-div .icon-svg {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-right: 32px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(218, 225, 233, 0.557) 0px 8px 16px;
+}
+
+.sec-features .feature-list .feature h2 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.sec-features .feature-list {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    flex: 1 1 0%;
+}
+
+.sec-features .feature-list .feature p {
+    margin: 0px;
+    line-height: 1.6;
+    color: rgb(91, 97, 110);
+}
+
+.sec-features .feature-list {
+    margin-top: 40px;
+    margin-right: 16px;
+}
+
+.sec-features .feature-list .feature {
+    margin-bottom: 40px;
+}
+
+.sec-features .feature-img {
+    max-width: 700px;
+}
+
+.sec-features a {
+    color: #0667d0 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(238, 240, 243);
+}
+
+.sec-benefits {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+}
+
+.sec-benefits .benefit-cards {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.sec-benefits .benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sec-benefits .benefit h2 {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(10, 11, 13);
+    text-align: center;
+}
+
+.sec-benefits .benefit p {
+    color: rgb(91, 97, 110);
+    margin: 16px 0 24px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.sec-benefits .benefit a {
+    color: rgb(0, 82, 255);
+    cursor: pointer;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.25s ease 0s;
+}
+
+.sec-kpis {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 82, 255);
+    color: white;
+    padding: 3rem;
+    /* Add this property */
+}
+
+.sec-kpis {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 82, 255);
+    color: white;
+    padding: 3rem;
+}
+
+.sec-kpis .kpi {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-kpis .kpi .number {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.sec-kpis .kpi .desc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-onboarding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.sec-onboarding .intro {
+    margin-bottom: 2rem;
+}
+
+.sec-onboarding .intro h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sec-onboarding .intro p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.sec-onboarding .steps {
+    padding: 0 7rem 5rem 7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-onboarding .steps .step-separator {
+    flex: 1;
+    height: 1px;
+    margin-bottom: 40px;
+    background-color: rgb(91, 97, 110);
+}
+
+.sec-footer-cta {
+    width: 100%;
+    background-color: #f4f8fe;
+    padding: 5rem;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.sec-footer-cta .footer-cta {
+    width: 50%;
+}
+
+.sec-footer-cta .footer-cta .cta-title {
+    font-size: 2rem;
+}
+
+.sec-footer-cta .footer-cta .cta-description {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+    .sec-kpis .kpi {
+        flex: 1 1 33.33%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .coinbase-table th,
+    .coinbase-table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .coinbase-table button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .max-padding {
+        padding: 8px 24px 8px 0px;
+    }
+}
+
+
+
+@media (min-width: 1171px) {
+    .main-div {
+        margin-top: 64px;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 1171px) {
+    .feature-list {
+        margin-top: 0px;
+        margin-right: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .inner-section {
+        display: flex;
+        flex-direction: column !important;
+        padding: 16px;
+        border-radius: 0px;
+    }
+
+
+
+    .graph-container {
+        min-width: 100px !important;
+        padding: 16px;
+        border-radius: 0px;
+    }
+
+    .graph-card {
+        display: block !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .sec-onboarding .steps {
+
+        flex-direction: column;
+    }
+
+    .sec-onboarding .steps .icon-desc .title {
+        text-align: center;
+    }
+
+    .sec-footer-cta {
+        background-image: none;
+    }
+
+    .sec-footer-cta .footer-cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec-benefits .intro {
+        text-align: center;
+    }
+
+    .sec-benefits .intro h3 {
+        font-size: 2rem;
+    }
+
+    .sec-features .intro h3,
+    .sec-benefits .intro .intro h3,
+    .sec-onboarding .intro .intro h3 {
+        font-size: 2rem;
+    }
+
+    .sec-features .intro p,
+    .sec-benefits .intro .intro p,
+    .sec-onboarding .intro .intro p {
+        font-size: 1rem;
+    }
+
+    .sec-kpis {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .get-started-div button {
+        height: 50px;
+        font-size: smaller;
+        border-radius: 40px;
+    }
+}

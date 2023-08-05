@@ -23,11 +23,15 @@ body {
 .container {
   margin: 10px auto;
   width: 350px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 5px;
 }
 
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
@@ -39,6 +43,7 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .inc-exp-container {

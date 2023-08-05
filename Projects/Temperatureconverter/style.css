@@ -1,67 +1,70 @@
 body {
-    
-    background-color: palevioletred;
-    background-attachment: fixed;
-    
-}
-h1{
-    color: #fff;
-    margin: auto;
-    margin-top: 2%;
-    text-align: center;
-
-}
-
-#converter{
-
-    background-color: #ffff;
-    margin: auto;
-    padding: 40px;
-    height: 100px;
-    width: 500px;
-    margin-top: 2.5%;
-    
-}
-.bo{
-    display: inline-block;
-    
-}
-
-
-#cel{
-    padding: 2%;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
-    margin-right: 20%;
-    width: 120%;
-    
-    
-}
-
-#value{
-    padding:2%;
-    margin-left: 50%;
+  }
+  
+  input[type="number"],
+  input[type="text"],
+  select {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .formulas {
+    margin-top: 30px;
+  }
+  
+  .formulas h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .formulas p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  footer {
+    margin-top: 20px;
     text-align: center;
-    font-weight: bolder;
-    width: 120%;
-    
-    
-
-}
-#yes{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-left: 20%;
-
-
-
-}
-#no{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-left: 70%;
-
-
-
-}
-
+    color: #888;
+  }
+  
