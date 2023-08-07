@@ -1,9 +1,4 @@
-import EditorJS from "@editorjs/editorjs";
-import Header from "@editorjs/header";
-import List from "@editorjs/list";
-import Checklist from "@editorjs/checklist"
-import moment from "moment/moment";
-import { DB, Util } from "./helper";
+import { DB, Util } from "./utils.js";
 
 
 const $ = (elm) => document.querySelector(elm);
@@ -20,44 +15,31 @@ const searchInp = $(".search-inp")
 
 let createdNotesRenderer = $(".created-notes");
 
-let activeNoteId = localStorage.getItem("active_note") ?? null;
+let activeNoteId = localStorage.getItem("active_note") === null ? null : JSON.parse(localStorage.getItem("active_note")).id;
 
 delNoteBtn.onclick = deleteNote
 
 // WYSIWYG editor config
-const editor = new EditorJS({
-    holder: 'editorjs',
-    autofocus: true,
-    placeholder: 'Type your note here.',
-    onChange: (api, event) => {
-        saveEditorjsContent()
-    },
-    onReady: () => {
-        getActiveNoteEditorContent()
-    },
-    tools: {
-        header: {
-            class: Header,
-            inlineToolbar: ["link"],
-            config: {
-                placeholder: 'Enter a header',
-                levels: [1, 2, 3, 4],
-                defaultLevel: 3
-            }
-        },
-        list: {
-            class: List,
-            inlineToolbar: true,
-            config: {
-                defaultStyle: 'unordered'
-            }
-        },
-        checklist: {
-            class: Checklist,
-            inlineToolbar: true,
-        }
-    },
+const quill = new Quill('#editor', {
+    theme: 'snow'
 });
+
+quill.focus();
+
+
+quill.on('text-change', function (delta, oldDelta, source) {
+    if (source == 'api') {
+        console.log("An API call triggered this change.");
+    } else if (source == 'user') {
+        const textWithoutTags = quill.getText()
+        const withTags = quill.container.innerHTML
+        saveEditorContent(withTags, textWithoutTags)
+    }
+});
+
+quill.update("welcome")
+
+
 
 // create new note button handler
 newNoteBtn.onclick = () => {
@@ -111,7 +93,16 @@ function createNote() {
 
         activeNoteId = noteId;
 
-        // editor?.blocks?.render([])
+        localStorage.setItem("active_note", JSON.stringify({ id: activeNoteId }))
+
+        quill.pasteHTML("<p></p>")
+
+        // save  first render to localstorage to prevent:
+        // addRange(): The given range isn't in document error
+
+        localStorage.setItem("first_render", true)
+
+        quill.setText('')
 
         fetchAndRenderAllNotes();
     }
@@ -133,6 +124,13 @@ function createNote() {
             return;
         }
         activeNoteId = noteId;
+
+        localStorage.setItem("active_note", JSON.stringify({ id: activeNoteId }))
+
+        localStorage.setItem("first_render", true)
+
+        quill.setText('')
+
         fetchAndRenderAllNotes()
         // editor?.blocks?.render([{}])
     }
@@ -164,12 +162,10 @@ function fetchAndRenderAllNotes() {
             // disable the create new note button
             newNoteBtn.classList.add("disabled");
             newNoteBtn.setAttribute("disabled", true);
-
         }
         else {
             newNoteBtn.classList.remove("disabled");
             newNoteBtn.removeAttribute("disabled");
-
         }
 
         createdNotesRenderer.innerHTML = ""
@@ -182,7 +178,7 @@ function fetchAndRenderAllNotes() {
             card.setAttribute("data-id", d.id);
             card.onclick = handleNoteSelecting
             card.innerHTML = `
-                <h2 class="title ppSB">${d.title}</h2>
+                <h2 class="title ppSB">${Util.shortenWrd(d.title.length > 0 ? d.title : "New Notes")}</h2>
                 <div class="info flex-row">
                     <span class="note-createdAt ppMD">${d.formattedDate}</span>
                     <p class="subtitle ppMD">${Util.shortenWrd(d.description.length > 0 ? d.description : "Note additional text")}</p>
@@ -190,6 +186,16 @@ function fetchAndRenderAllNotes() {
             `
             createdNotesRenderer.append(card)
         })
+
+        // get active note
+        const active_note_id = localStorage.getItem("active_note") === null ? null : JSON.parse(localStorage.getItem("active_note")).id;
+        const first_render = localStorage.getItem("first_render") ?? null;
+
+        if (active_note_id !== null && first_render === null) {
+            const activeNote = allNotes.filter(n => n.id === active_note_id)[0];
+            log(active_note_id)
+            quill.pasteHTML(JSON.parse(activeNote?.editorCont))
+        }
     }
 }
 
@@ -224,49 +230,47 @@ function handleNoteSelecting(e) {
 
 
     activeNoteId = noteId;
-    localStorage.setItem("active_note", noteId);
+    localStorage.setItem("active_note", JSON.stringify({ id: noteId }));
     fetchAndRenderAllNotes()
     getActiveNoteEditorContent()
 }
 
 // handle saving content from editorjs
-function saveEditorjsContent() {
+function saveEditorContent(content, text) {
     if (activeNoteId) {
         const allNotes = DB.get("notes") ?? [];
         const otherNotes = allNotes.filter(n => n.id
             !== activeNoteId);
         const activeNote = allNotes.filter(n => n.id === activeNoteId)[0];
 
-
-        editor.save().then((outputData) => {
-            const firstblockData = outputData.blocks[0]?.data?.text;
-            const secondblockData = outputData.blocks[1]?.data?.text ?? "No additional text";
-            activeNote["title"] = firstblockData ?? "New Note";
-            activeNote["description"] = secondblockData ?? "No additional data";
-            activeNote["editorCont"] = JSON.stringify(outputData);
-
-            if (typeof firstblockData === "undefined" || typeof secondblockData === "undefined") {
-                activeNote["editorCont"] = null;
-            }
-
-            // save updated note to local db
-            const comb = [activeNote, ...otherNotes];
-            const isUpdated = DB.save("notes", comb);
+        const title = text.split("\n").filter(d => d.length > 0)[0];
+        const desc = text.split("\n").filter(d => d.length > 0)[1];
 
 
-            if (isUpdated === false) {
-                alert("Failed saving note.")
-            }
-            fetchAndRenderAllNotes()
-        }).catch((error) => {
-            console.log('Saving failed: ', error)
-        });
+        activeNote["title"] = title ?? "New Note";
+        activeNote["description"] = desc ?? "No additional data";
+        activeNote["editorCont"] = JSON.stringify(content);
+
+        if (typeof title === "undefined" || typeof desc === "undefined") {
+            activeNote["editorCont"] = null;
+        }
+
+        // save updated note to local db
+        const comb = [activeNote, ...otherNotes];
+        const isUpdated = DB.save("notes", comb);
+
+
+        if (isUpdated === false) {
+            alert("Failed saving note.")
+        }
+        fetchAndRenderAllNotes()
     }
 }
 
 // get active note editor content
 function getActiveNoteEditorContent() {
-    const activeNoteId = localStorage.getItem("active_note") ?? null;
+    const activeNoteId = localStorage.getItem("active_note") === null ? null : JSON.parse(localStorage.getItem("active_note")).id;
+
     if (activeNoteId === null) {
         log("No active note selected!.")
         return {}
@@ -276,7 +280,7 @@ function getActiveNoteEditorContent() {
     const activeNote = allNotes.filter(n => n.id === activeNoteId)[0] ?? null;
     const content = activeNote !== null ? JSON.parse(activeNote?.editorCont) : null;
     if (content !== null) {
-        editor?.blocks?.render(content)
+        quill.pasteHTML(content)
         return;
     }
 }
@@ -284,7 +288,7 @@ function getActiveNoteEditorContent() {
 // handle deleting of note
 function deleteNote() {
     const allLocalNotes = DB.get("notes") ?? [];
-    const activeNoteId = localStorage.getItem("active_note") ?? null;
+    const activeNoteId = localStorage.getItem("active_note") === null ? null : JSON.parse(localStorage.getItem("active_note")).id;
     if (activeNoteId === null || activeNoteId.length === 0) {
 
         // check if there are notes
@@ -328,8 +332,7 @@ function deleteNote() {
 // search handler
 function handleSearch(value) {
     const allNotes = DB.get("notes");
-    const filteredNote = allNotes.filter(n => n.title.includes(value))
-
+    const filteredNote = allNotes.filter(n => n.title.toLowerCase().includes(value.toLowerCase()))
     if (value.length === 0) {
         createdNotesRenderer.innerHTML = ""
         allNotes.sort((a, b) => {

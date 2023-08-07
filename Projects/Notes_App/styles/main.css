@@ -107,8 +107,8 @@ input::-webkit-inner-spin-button {
 
 /* Note sidebar */
 .note-sidebar {
-  width: 40%;
-  max-width: 400px;
+  width: 35%;
+  max-width: 350px;
   height: 100vh;
   /* background: #232021; */
   background: #f5f6fa;
@@ -190,7 +190,6 @@ input::-webkit-inner-spin-button {
 .note-sidebar .top-bar input.not-expand {
   width: 0px;
   visibility: hidden;
-  /* margin-right: 0px; */
   transition: all 0.1s ease-in;
   margin-right: 3px;
 }
@@ -284,13 +283,38 @@ input::-webkit-inner-spin-button {
   color: #000;
 }
 
+.note-sidebar .save-btn-cont {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.note-sidebar .save-btn-cont button {
+  width: 100%;
+  padding: 10px 15px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background: #3f7bfc;
+  margin-right: 20px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
 /* Main note area */
 .main-note-area {
   width: 75%;
   height: 100vh;
   background: #fff;
   color: #000;
-  overflow-y: hidden;
+  overflow-y: scroll;
   position: relative;
 }
 
@@ -357,4 +381,9 @@ input::-webkit-inner-spin-button {
 
 .main-note-area .editor-msg.hidden {
   visibility: hidden !important;
+}
+
+/* CKEDIRTOR */
+.ck-editor__editable_inline {
+  min-height: 100vh;
 }

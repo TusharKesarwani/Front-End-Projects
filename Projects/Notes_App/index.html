@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note App</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container flex-row">
@@ -40,8 +44,9 @@
           </button> -->
         </div>
       </div>
-      <div class="main-note-area">
-        <div class="main-section hideScrollBar" id="editorjs"></div>
+      <div class="main-note-area hideScrollBar">
+        <div class="main-section hideScrollBar" id="editor"></div>
+        <tinymce-editor api-key="your-tiny-cloud-api-key"></tinymce-editor>
 
         <div class="editor-msg hidden">
           <span>😁</span>
@@ -58,8 +63,10 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script> -->
-    <!-- <script src="./assets/editorjs.mjs"></script> -->
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="./module/moment.min.js"></script>
+
     <script src="./app.js" type="module"></script>
   </body>
 </html>
