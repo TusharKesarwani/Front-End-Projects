@@ -1,69 +1,416 @@
+html {
+  font-family: "Times New Roman" !important;
+}
+
+@font-face {
+  font-family: ppSB;
+  src: url("./fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: ppRG;
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: ppL;
+  src: url("./fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: ppMD;
+  src: url("./fonts/Poppins-Medium.ttf");
+}
+
 body {
-    max-width: 100vw;
-    background: rgb(242, 242, 255);
-    color: #081625;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background: url(background.jpg) no-repeat top center fixed;
-    background-size: cover;
-  }
-  
-  .header {
-    border-bottom: 1px solid #f0f0f0;
-    font-size: 1.35em;
-  }
-  
-  .container {
+  width: 100%;
+  height: 100vh;
+  background: #242522;
+  /* background: linear-gradient(#000000ea 70%, #cccccc2b) ; */
+  overflow-x: hidden !important;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.pp-RG {
+  font-family: ppRG !important;
+}
+
+.pp-SB {
+  font-family: ppSB !important;
+}
+
+.pp-L {
+  font-family: ppL !important;
+}
+
+.pp-MD {
+  font-family: ppMD !important;
+}
+
+.padding-container {
+  padding: 10px 20px 0px 20px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-gray-100 {
+  color: #ccc;
+}
+.text-gray-200 {
+  color: #777;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.bg-blur {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#000000;
+    /* background-color: rgb(0,0,0); */
+  /* background-color: rgba(0,0,0, 0.4); */
+   filter: blur(10px);
+    -webkit-filter: blur(8px);
+}
+
+.bg-blur::before{
+    content: "";
+    width: 350px;
+    height: 200px;
+    background: #ea5d2a88;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    padding-bottom: 30px;
-    background: white ;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px 0 black;
-  }
-  
-  form {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  input, select {
-    width: 80%;
-    height: 30px;
-    background-color: #ffffff;
-    border-radius: 5px;
-  }
-  
-  .calc {
-    margin: 10px;
-    padding: 20px 30px;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 1px;
-    background-color: #3B3B98;  
-    cursor: pointer;
-  }
-  
-  #single, #multiple {
-    margin: 30px 0;
-    font-size: 1.3em;
+    left: -20px;
+    top: -20px;
+    border-radius: 30px;
+    transform: rotate(20deg);
+}
+
+.bg-blur::after{
+    content: "";
+    width: 350px;
+    height: 200px;
+    background: #ea5d2a88;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    border-radius: 30px;
+    transform: rotate(20deg);
+}
+
+.blur {
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto;
+  height: auto;
+  position: relative;
+  /* background: #242522; */
+  transform: scale(1);
+  border-radius: 10px;
+  padding-top: 40px;
+  z-index: 300;
+}
+
+.container .heading {
+  width: 100%;
+  height: auto;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .heading .menu {
+  width: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  transform: scale(0.86);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.container .heading .menu .dot {
+  padding: 3px;
+  background: #fff;
+  margin: 2px;
+  border-radius: 50%;
+}
+
+/* bill section */
+.bill-section {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.bill-section .bill-inp label {
+  font-size: 20px;
+}
+
+.bill-section .bill-inp input {
+  padding: 15px;
+  padding-left: 40px;
+  background: #1b1816;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #fff;
+  font-family: ppSB;
+  font-size: 20px;
+}
+
+/* Tip selection */
+.tip-selection {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.tip-selection .sel-cont p {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.tip-selection .sel-cont .selection-btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tip-selection .sel-cont .selection-btns button {
+  width: 100%;
+  max-width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 35px 12px 35px;
+  border-radius: 30px;
+  border: 2px solid #ea5d2a;
+  background: #242522;
+  color: #ea5d2a;
+  font-family: ppSB;
+  font-size: 15px;
+  cursor: pointer;
+  transform: scale(0.85);
+  transition: all 0.1s ease-in;
+}
+
+.tip-selection .sel-cont .selection-btns button:hover {
+  background: #ea5d2a;
+  color: #000;
+  transition: all 0.1s ease-in;
+  transform: scale(1);
+}
+
+.tip-selection .sel-cont .selection-btns button.active {
+  background: #ea5d2a;
+  color: #000;
+}
+
+.tip-selection .sel-cont .custom-tip-btn {
+  width: 100%;
+  height: auto;
+  padding: 15px 35px 15px 35px;
+  border-radius: 12px;
+  font-family: ppSB;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #1b1816;
+  transition: all 0.1s ease-in;
+  transform: scale(0.95);
+}
+
+.tip-selection .sel-cont .custom-tip-btn:hover {
+  color: #ccc;
+  transition: all 0.1s ease-in;
+  transform: scale(0.98);
+}
+
+.tip-selection .sel-cont .custom-tip-btn.hidden{
+    display: none;
+}
+
+.tip-selection .custom-tip-percentage {
+    width: 100%;
+  height: auto;
+  padding: 15px 35px 15px 35px;
+  border-radius: 12px;
+  font-family: ppSB;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #1b1816;
+  transition: all 0.1s ease-in;
+  transform: scale(0.95);
+  color: #fff;
+}
+
+.tip-selection .custom-tip-percentage.hidden {
+    display: none;
+}
+/* Number of people */
+.numofpeople {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.numofpeople .cont {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.numofpeople .cont div {
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.numofpeople .cont p{
+  color: #ccc;
+}
+
+.numofpeople .cont button {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: #1b1816;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: ppSB;
+  font-size: 20px;
+  transform: scale(0.75);
+  text-align: center;
+  cursor: pointer;
+}
+
+.numofpeople .cont div  .people-oup{
+
+}
+
+/* Bill output */
+.bill-output {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 10px;
+}
+
+.bill-output .cont {
+  /* width: 100%; */
+  max-width: 420px;
+  background: #1b1816;
+  margin: 0px auto;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+.bill-output .cont h2 {
+  font-size: 15px;
+  max-width: 100px;
+}
+
+/* Reset btn */
+.reset-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 35px 12px 35px;
+  border-radius: 30px;
+  border: 3px solid #ea5d2a;
+  background: #1b1816;
+  color: #fff;
+  /* font-family: ppMD; */
+  font-size: 15px;
+  cursor: pointer;
+  transform: scale(0.85);
+  transition: all 0.1s ease-in;
+  font-size: 20px;
+}
+
+.calc-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 35px 12px 35px;
+  border-radius: 30px;
+  border: none;
+  border: 3px solid #ea5d2a;
+  background: #1b1816;
+  color: #fff;
+  /* font-family: ppMD; */
+  font-size: 15px;
+  cursor: pointer;
+  transform: scale(0.85);
+  transition: all 0.1s ease-in;
+  font-size: 20px;
+}
+
+.calc-btn:hover, .reset-btn:hover{
+    background: #ea5d2a;
+    color: #000;
+}
+
+@media (max-width: 450px) {
+  .container {
+    transform: scale(1);
   }
 
-  @media screen and (max-width: 468px) {
-    .container{
-      left: 50%;
-      transform: translate(-50%, -50%);
-      min-width: 95%;
-    }
-    
+  .bill-output{
+     transform: scale(.95);
   }
+}
