@@ -1,48 +1,72 @@
-*{
-    margin:0px;
-    padding:0px;
+/* css */
+* {
+    margin: 0px;
+    padding: 0px;
     scroll-behavior: smooth;
     text-align: center;
     font-size: 18px;
     box-sizing: border-box;
+
 }
-header{
+
+.top {
+    position: relative;
+    left: -15px;
+}
+
+header {
     color: azure;
 }
-.header_title{
+
+.header_title {
     text-align: center;
-    font-size:xxx-large;
+    font-size: xxx-large;
 }
-body{
-    display:block;
-    background-image: url("https://media.istockphoto.com/vectors/abstract-vector-background-for-use-in-design-vector-id183954960?k=20&m=183954960&s=612x612&w=0&h=n_Z933ml0u6ZKZJ3KOxKl2tSqNv_N9L1vheVVdBX_5Q=") ;
+
+.main {
+    position: relative;
+    left: 30px;
+    overflow-x: hidden;
+}
+
+body {
+    display: block;
+    background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    height: fit-content;
+    width: 100%;
 }
-.img1{
-    height:100vh;
+
+.img1 {
+    height: 100vh;
     width: 100vw;
 }
-.img_logo{
-    max-height: 40px;
-    max-width: 40px;
+
+.img_logo {
+    height: 36px;
+    width: 64px;
     margin-top: 20px;
 }
+
 .container {
-    background-color:none;
+    background-color: none;
     margin: 0 auto;
     max-width: 400px;
     border-radius: 10px;
-    margin-top: 80px;
+    margin-top: 60px;
+    height: 100%;
 }
+
 #screen {
+    position: relative;
+    top: -93px;
     margin: 4px auto;
-    width: 100%;
-    max-width: 400px;
-    height: 4rem;
+    width: 120%;
+    left: -60px;
+    height: 6rem;
     text-align: center;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(219, 168, 0);
     background-color: white;
     border-radius: 10px;
     overflow-x: scroll;
@@ -50,11 +74,17 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+#screen:hover {
+    border: 2px solid green;
+}
+
 #screen::-webkit-scrollbar {
     display: none;
 }
 
-#input, #result {
+#input,
+#result {
     margin: auto;
     width: 100%;
     height: 3rem;
@@ -81,14 +111,17 @@ body{
     right: 14px;
 }
 
-button, .bottom-buttons {
-    width: 100%;
+button,
+.bottom-buttons {
+    width: 6.5rem;
     height: 3rem;
     border: none;
     border-radius: 10px;
+    margin: 1px 1px;
 }
 
-button:hover, .bottom-buttons {
+button:hover,
+.bottom-buttons {
     cursor: pointer;
     background-color: #a87861a9;
 }
@@ -96,24 +129,39 @@ button:hover, .bottom-buttons {
 .table {
     margin: auto;
     width: 99%;
-    max-width: 768px;
+    overflow-x: hidden;
 }
 
 td {
     width: 100rem;
-    margin:100px;
+    margin: 100px;
 }
 
-#equals {
+.ac {
+    background-color: #eb981b;
+}
+
+#orange {
     height: 6rem;
-    background-color: #3b62e3;
+    background-color: #eb981b;
+    color: white;
+    font-weight: bold;
+}
+
+#equal {
+    height: 6rem;
+    background-color: #eb981b;
     color: white;
     font-weight: bold;
 }
 
 .white {
     font-weight: bold;
-    background-color: white;
+    background-color: #cdcdcd;
+}
+
+.gery {
+    background-color: #85b1a5;
 }
 
 .white:hover {
@@ -129,17 +177,457 @@ td {
 }
 
 .light {
-    background-color: #d9d9d9;
+    background-color: #b5b0d3;
 }
 
 .light:hover {
-    background-color: #d2d2d2;
+    background-color: #f3cece;
 }
 
 #equals:hover {
     background-color: #3b4ce3;
 }
 
-#topside, #downside {
+#topside,
+#downside {
     height: 5px;
+}
+
+#calc {
+    position: relative;
+    top: -95px;
+    left: -250px;
+    height: 10rem;
+}
+
+.twodig {
+    background-color: #7fb9ec;
+}
+
+.m {
+    background: #e1bddc;
+}
+
+.ac:hover {
+    background-color: #ff5151;
+}
+
+/* ------------------------------------------------------------- */
+/* Responsive message for screens below 381px width */
+@media only screen and (max-width: 381px) {
+    .top {
+        position: relative;
+    }
+
+    header {
+        color: azure;
+    }
+
+    .header_title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .main {
+        position: relative;
+        left: 30px;
+        display: none;
+    }
+
+    .desktop-message {
+        display: block;
+        text-align: center;
+        font-size: 10px;
+        background-color: #f9f9f9;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+/* Small devices such as large phones (382px and up) */
+@media only screen and (min-width: 382px) and (max-width: 499px) {
+
+    .container {
+        position: relative;
+    }
+
+    .top {
+        position: relative;
+        top: -16px;
+        left: 2px;
+        font-size: 2rem;
+        align-items: center;
+
+    }
+
+    #screen {
+        position: absolute;
+        top: -72px;
+        width: 75%;
+        left: 31px;
+        height: 86px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(219, 168, 0);
+        background-color: white;
+        border-radius: 10px;
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
+
+    .main-buttons {
+        width: 100%;
+    }
+
+    #equal {
+        grid-column: span 3;
+    }
+
+    #input {
+        font-size: 18px;
+        padding-top: 16px;
+        margin-top: -13px;
+        word-spacing: 0.07em;
+    }
+
+    #result {
+        font-size: 22px;
+    }
+
+    #memory {
+        position: absolute;
+        font-size: 14px;
+        top: 12px;
+        right: 14px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    button,
+    .bottom-buttons {
+        width: 2.8rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        margin: .8px .8px;
+
+    }
+
+    #calc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -4px;
+        top: -2px;
+    }
+
+    .main-buttons {
+        width: calc(33.33% - 8px);
+        margin: 1px;
+    }
+
+    .tr5 {
+        position: relative;
+        top: -30px;
+        left: 0px;
+    }
+
+    .tr6 {
+        position: relative;
+        top: -60px;
+        left: 0px;
+    }
+
+    #equal {
+        position: relative;
+        top: 27px;
+        right: 2px;
+        height: 114px;
+    }
+}
+
+/* -------------------------------------------------- */
+
+/* Medium devices such as tablets (500px and up) */
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+
+    .container {
+        position: relative;
+    }
+
+    .top {
+        position: relative;
+        top: -20px;
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    #screen {
+        position: absolute;
+        top: -72px;
+        width: 100%;
+        left: -21px;
+        height: 100px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(219, 168, 0);
+        background-color: white;
+        border-radius: 10px;
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
+
+    .main-buttons {
+        width: 100%;
+        /* margin: 1px 0; */
+    }
+
+    #input {
+        font-size: 18px;
+        padding-top: 16px;
+        margin-top: -13px;
+        word-spacing: 0.07em;
+    }
+
+    #result {
+        font-size: 22px;
+    }
+
+    #memory {
+        position: absolute;
+        font-size: 14px;
+        top: 12px;
+        right: 14px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    button,
+    .bottom-buttons {
+        width: 3.7rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        margin: .8px .8px;
+
+    }
+
+    #calc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        position: relative;
+        top: 6px;
+        left: -58px;
+    }
+
+    .main-buttons {
+        width: calc(33.33% - 8px);
+        margin: .3px;
+    }
+
+    .tr5 {
+        position: relative;
+        top: -29px;
+        left: 0px;
+    }
+
+    .tr6 {
+        position: relative;
+        top: -59px;
+        left: 0px;
+    }
+
+    #equal {
+        position: relative;
+        top: 29px;
+        right: -2px;
+        height: 114px;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+/* Large devices such as laptops (769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 909px) {
+    .container {
+        position: relative;
+    }
+
+    .top {
+        position: relative;
+        top: -20px;
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    #screen {
+        position: relative;
+        top: -93px;
+        margin: 4px auto;
+        width: 120%;
+        left: -60px;
+        height: 6rem;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(219, 168, 0);
+        background-color: white;
+        border-radius: 10px;
+        overflow-x: scroll;
+        overflow-y: visible;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    #screen:hover {
+        border: 2px solid green;
+    }
+
+    #screen::-webkit-scrollbar {
+        display: none;
+    }
+
+    #input,
+    #result {
+        margin: auto;
+        width: 100%;
+        height: 3rem;
+        max-width: 768px;
+        text-align: left;
+        border: none;
+    }
+
+    #input {
+        font-size: 20px;
+        padding-top: 16px;
+        margin-top: -13px;
+        word-spacing: 0.07em;
+    }
+
+    #result {
+        font-size: 25px;
+    }
+
+    #memory {
+        position: absolute;
+        font-size: 18px;
+        top: 12px;
+        right: 14px;
+    }
+
+    .main-buttons {
+        width: 100%;
+        /* margin: 1px 0; */
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    button,
+    .bottom-buttons {
+        width: 5.9rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        margin: 1px 1px;
+    }
+
+    button:hover,
+    .bottom-buttons {
+        cursor: pointer;
+        background-color: #a87861a9;
+    }
+
+    #calc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        left: -205px;
+    }
+
+    /* Adjust button width to have 3 buttons in each column */
+    .main-buttons {
+        width: calc(33.33% - 8px);
+        margin: .3px;
+    }
+
+    .tr5 {
+        position: relative;
+        top: -30px;
+        left: 0px;
+    }
+
+    .tr6 {
+        position: relative;
+        top: -60px;
+        left: 0px;
+    }
+
+    #equal {
+        position: relative;
+        top: 27px;
+        right: 2px;
+        height: 115px;
+    }
+}
+
+/* -------------------------------------------------- */
+
+/* Large devices such as laptops (1025px and up) */
+@media only screen and (min-width: 910px) and (max-width: 6149px) {
+    /* default css */
+}
+
+
+/* ------------------------------------------------------ */
+
+/* Large devices such as laptops (6149px and up) */
+@media only screen and (min-width: 6149px) {
+
+    header {
+        color: azure;
+    }
+
+    .header_title {
+        text-align: center;
+        font-size: 100px;
+    }
+
+    body {
+        background-image: none;
+        background-color: white;
+    }
+
+    .main {
+        position: relative;
+        left: 30px;
+        display: none;
+    }
+
+    .desktop-message {
+        display: block;
+        text-align: center;
+        font-size: 300px;
+        background-color: #f9f9f9;
+    }
 }

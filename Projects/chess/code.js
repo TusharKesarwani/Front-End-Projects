@@ -148,42 +148,50 @@ document.querySelectorAll('.box').forEach(item => {
         function whosTurn(toggle) {
 
             // PAWN
-
             if (item.innerText == `${toggle}pawn`) {
-                item.style.backgroundColor = 'pink'
-
+                item.style.backgroundColor = 'pink';
+            
                 if (tog % 2 !== 0 && aup < 800) {
-
                     if (document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'green';
                     }
-
+            
+                    // Check for the initial double move for black pawns (from row 2)
+                    if (aup < 300 && document.getElementById(`b${a + 200}`).innerText.length == 0) {
+                        document.getElementById(`b${a + 200}`).style.backgroundColor = 'green';
+                    }
+            
                     if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'green';
                     }
-
+            
                     if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'green'
-
+                        document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'green';
                     }
                 }
-
+            
                 if (tog % 2 == 0 && aup > 100) {
-
                     if (document.getElementById(`b${a - 100}`).innerText.length == 0) {
-                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'green';
                     }
+            
+                    // Check for the initial double move for white pawns (from row 7)
+                    if (aup > 500 && document.getElementById(`b${a - 200}`).innerText.length == 0) {
+                        document.getElementById(`b${a - 200}`).style.backgroundColor = 'green';
+                    }
+            
                     if (aside < 8 && document.getElementById(`b${a - 100 + 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'green';
                     }
+            
                     if (aside > 1 && document.getElementById(`b${a - 100 - 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'green'
-
+                        document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'green';
                     }
                 }
-
-
             }
+            
+
+            
 
             // KING
 

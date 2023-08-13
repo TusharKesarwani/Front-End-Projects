@@ -344,6 +344,14 @@ const projects = [
         "project-link":"Projects/Filters/index.html"
     },
     {
+        "title":"Fitness-website",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/website.jpg",
+        "description":"The Fitness Website is alanding page , web application designed to help users learn and visualize various exercises for different muscle groups.It is built using html, css and javascript .",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Fitness-website",
+        "project-link":"Projects/Fitness-website/index.html"
+    },
+    {
         "title":"Github Profile Wrapper",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Github_Profile_Wrapper.png",
