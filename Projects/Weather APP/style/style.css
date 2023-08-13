@@ -22,7 +22,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);kk
   border: 1px solid rgba(202, 141, 141, 0.4);
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -130,4 +130,3 @@ footer {
     bottom: 80px;
   }
 }
-
