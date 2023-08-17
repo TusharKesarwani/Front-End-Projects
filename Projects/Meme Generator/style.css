@@ -47,14 +47,14 @@
 
 .button-container {
   display: flex;
-  width: 400px;
+  width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .generate-meme-btn,
 .download-meme-btn {
-  width: 180px;
+  width: 300px;
   height: 50px;
   padding: 5px;
   text-transform: capitalize;
@@ -89,7 +89,7 @@
 }
 .meme-title {
   text-transform: capitalize;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 5px;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .meme-generator img {
-  object-fit: cover;
+  object-fit: contain;
   width: 500px;
   display: flex;
   align-items: center;
@@ -133,6 +133,7 @@
   border: 2px solid rgb(125, 178, 230);
   overflow-x: hidden;
   border-radius: 10px;
+  max-height: 70%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -142,13 +143,8 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
-  }
-
-  .generate-meme-btn,
-  .download-meme-btn {
-    margin: 15px;
   }
 
   .meme-generator img {
