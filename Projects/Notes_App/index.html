@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container flex-row">
+      <div class="note-sidebar hideScrollBar">
+        <div class="top-bar flex-row">
+          <h3 class="ppSB">Notes</h3>
+          <div class="navbar-icons flex-row">
+            <!-- Create new icon -->
+            <button class="new-note-btn flex-row">
+              New <ion-icon name="create-outline"></ion-icon>
+            </button>
+            <!-- Delete Note icon -->
+            <button class="del-note-btn flex-row">
+              <ion-icon name="trash"></ion-icon>
+            </button>
+            <!-- Search btn -->
+            <input type="text" class="search-inp not-expand" />
+            <button class="search-btn expand flex-row">
+              <ion-icon name="search"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="created-notes flex-col">
+          <!-- <div class="msg">
+            <p class="ppL flex-row"><ion-icon name="add"></ion-icon> Create Notes</p>
+          </div> -->
+          <!-- <button class="card flex-col">
+            <h2 class="title ppSB">Note Title</h2>
+            <div class="info flex-row">
+              <span class="note-createdAt ppMD">4 May 2023, 5:00 AM</span>
+              <p class="subtitle ppMD">Note additional text...</p>
+            </div>
+          </button> -->
+        </div>
+      </div>
+      <div class="main-note-area hideScrollBar">
+        <div class="main-section hideScrollBar" id="editor"></div>
+        <tinymce-editor api-key="your-tiny-cloud-api-key"></tinymce-editor>
+
+        <div class="editor-msg hidden">
+          <span>😁</span>
+          <p class="title ppL">Start by creating your first note.</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="./module/moment.min.js"></script>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+
+<!-- Revamp by: Benaiah @Benrobo https://github.com/benrobo -->
