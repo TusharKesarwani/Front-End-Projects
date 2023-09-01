@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SmartNotezz</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            SmartNotezz
+        </div>
+        <img src="assets/S.svg" href="/">
+    </header>
+    <nav>
+        <form class="form">
+            <input type="search" id="searchTxt"class="search" placeholder="Search your Notes">
+            <button class="btn" type="submit"><i class="uil uil-search"></i></button>
+        </form>
+    </nav>
+    <div class="your-notes">
+        Your Notes
+        <ul id="notesContainer"></ul>
+    </div>
+    <div class="popup-box">
+        <div class="popup">
+            <div class="content">
+                <header>
+                    <p>Add a New Note</p>
+                    <i class="ui uil-times"></i>
+                </header>
+                <form action="#">
+                    <div class="row-title">
+                        <label>Title</label>
+                        <input type="text">
+                    </div>
+                    <div class="row-description">
+                        <label>Description</label>
+                        <textarea></textarea>
+                    </div>
+                    <button>Add Note</button>
+                    <input type="file" id="file">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <li class="add-box">
+            <div class="icon">
+                <img src="assets/add.svg" alt="Add">
+            </div>
+            <p>Add New Note</p>
+        </li>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
