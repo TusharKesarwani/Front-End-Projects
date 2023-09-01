@@ -1,90 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Tip Calculator</title>
-    <link rel="stylesheet" href="./style.css">
+	<meta charset="utf-8">
+	<title> Bill Tip Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div class="bg-blur">
-    </div>
-    <div class="blur"></div>
-
-    <div class="container">
-        <div class="heading">
-            <h2 class="h2 pp-SB">Bill Splitter</h2>
-        </div>
-        <div class="bill-output">
-            <div class="cont padding-container flex-row">
-                <div class="left flex-col">
-                    <h2 class="title pp-RG text-gray-100">Tip per Person</h2>
-                    <h3 class="value bill-tip-amt pp-SB">
-                        <span class="tip-curr">$</span>
-                        0.00
-                    </h3>
-                </div>
-                <div class="left flex-col">
-                    <h2 class="title pp-RG text-gray-100">Total per Person</h2>
-                    <h3 class="value total-per-person pp-SB">
-                        <span class="tip-curr">$</span>
-                        0.00
-                    </h3>
-                </div>
-                <div class="right flex-col">
-                    <h2 class="title pp-RG text-gray-100">Bill Total Amount</h2>
-                    <h3 class="value bill-total pp-SB">
-                        <span class="tip-curr">$</span>
-                        0.00
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="bill-section ">
-            <div class="bill-inp padding-container flex-col ">
-                <label for="" class="pp-MD text-gray-100">Bill</label>
-                <input type="number" id="bill-input" class="pp-SB" placeholder="2000">
-            </div>
-        </div>
-        <div class="tip-selection">
-            <div class="sel-cont padding-container flex-col ">
-                <p class="pp-MD">Select Tip %</p>
-                <div class="selection-btns">
-                    <button class="tip-btn pp-SB active" value="5">5%</button>
-                    <button class="tip-btn pp-SB" value="10">10%</button>
-                    <button class="tip-btn pp-SB" value="15">15%</button>
-                    <button class="tip-btn pp-SB" value="20">20%</button>
-                </div>
-                <button class="custom-tip-btn pp-SB text-gray-200 visible">Custom</button>
-                <select name="" id="" class="custom-tip-percentage hidden">
-                    <option value="1">1%</option>
-                    <option value="2">2%</option>
-                    <option value="3">3%</option>
-                    <option value="5">5%</option>
-                    <option value="10">10%</option>
-                    <option value="15">15%</option>
-                    <option value="20">20%</option>
-                    <option value="30">30%</option>
-                </select>
-            </div>
-        </div>
-        <div class="numofpeople">
-            <div class="cont padding-container flex-row">
-                <p class="pp-MD text-gray-200">Number of people</p>
-                <div class="flex-row">
-                    <button class="btn dec">-</button>
-                    <div class="people-oup pp-SB">1</div>
-                    <button class="btn inc">+</button>
-                </div>
-            </div>
-        </div>
-        <div class="flex-row">
-            <button class="reset-btn pp-RG text-gray-100">Reset</button>
-            <button class="calc-btn pp-RG text-gray-100">Calculate</button>
-        </div>
-        <br>
-    </div>
-
-    <script src="./app.js"></script>
+	<div class="container">
+		<div class="header">
+			<h2>Tip Calculator</h2>
+		</div>
+		<form>
+			<p><b>How much is the bill?</b></p>
+			<input type="number" id="amount" placeholder="Bill Amount" maxlength="9">
+			<p><b>How much would you like to tip?</b></p>
+			<select id="tip">
+				<option value="0.01">1%</option>
+				<option value="0.02">2%</option>
+				<option value="0.03">3%</option>
+				<option value="0.05">5%</option>
+				<option value="0.1">10%</option>
+				<option value="0.15">15%</option>
+				<option value="0.2">20%</option>
+				<option value="0.3">30%</option>
+			</select>
+			<p><b>How many people are sharing the bill?</b></p>
+			<select id="numberPeople">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+			</select>
+		</form>
+		<button class="calc" onclick="calculateTip()">Calculate</button>
+		<div id="single">
+			<p><b>Tip: ₹<span id="tipAmount"></span></b></p>
+			<p><b>Total: ₹<span id="billTotal"></span></b></p>
+		</div>
+		<div id="multiple">
+			<p><b>Tip Per Person: ₹<span id="totalTipMultiple"></span></b></p>
+			<p><b>Total Per Person: ₹<span id="totalAmountEach"></span></b></p>
+			<p><b>Bill Total: ₹<span id="billTotalmultiple"></span></b></p>
+		</div>
+	</div>
+	<script src="app.js"></script>
 </body>
+
 </html>
