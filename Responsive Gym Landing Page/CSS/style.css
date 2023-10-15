@@ -1,0 +1,110 @@
+/* body {
+    font-family: 'Montserrat', 'sans-serif';
+    color: white;
+    margin: 0px;
+    padding: 12px 15px;
+    background: url('../img/gym4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left {
+    line-height: 1;
+    font-size: 80%;
+    display: inline-block;
+    position: absolute;
+    left: 49px;
+    top: 20px;
+}
+
+.left img {
+    width: 90px;
+    height: 52px;
+    filter: invert(100%);
+}
+
+.left div {
+    text-align: center;
+}
+
+.mid {
+    display: block;
+    width: 37%;
+    margin: 20px auto;
+
+}
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    font-size: 15px;
+    list-style: none;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 22px 13px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: rgba(59, 127, 127, 0.937);
+    padding: 22px 16px;
+}
+
+.btn {
+    font-family: 'Montserrat', 'sans-serif';
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(77, 81, 81, 0.937)
+}
+
+.container {
+    margin: 78px 652px;
+    padding: 20px 48px;
+    width: 38%;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 94%;
+    margin: 3% auto;
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 455px;
+    padding: 7px;
+    border: 2px solid black;
+    margin: 3px auto;
+    font-size: 20px;
+    border-radius: 13px;
+} */

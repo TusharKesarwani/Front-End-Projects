@@ -1,0 +1,156 @@
+/* /* @media screen and (max-width: 1316px) {
+  .navbar li a{
+    padding: 22px 12px;
+  }
+}
+@media screen and (max-width: 1232px) {
+  .navbar li a{
+    padding: 22px 12px;
+  }
+  .container{
+    margin: 76px 563px;
+  }
+  .container button{
+    width: 103%;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .form-group input{
+    width: 425px;
+  }
+  .container{
+    margin: 75px 341px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .form-group input{
+   width: 390px;
+  }
+}
+@media screen and (max-width: 1000px) {
+    .form-group input{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 958px) {
+    .form-group input{
+        width: 400px;
+    }
+    .container{
+        padding: 24px 59px;
+        width: 44%;
+    }
+}
+@media screen and (max-width: 852px) {
+  .container{
+    margin: 75px 199px;
+  }
+  .form-group input{
+    width: 351px;
+  }
+}
+@media screen and (max-width: 716px) {
+  .container{
+      margin: 75px 166px;
+  }
+  .form-group input {
+    width: 277px;
+  }
+  .container button {
+    width: 99%;
+   }
+} */
+ /*body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header Styles */
+  /*.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.mid {
+  flex-grow: 1;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Styles */
+/* @media (max-width: 768px) {
+  h1 {
+      font-size: 24px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  .navbar li {
+      margin-right: 10px;
+  }
+
+  .btn {
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar li {
+      margin: 10px 0;
+  }
+}  */
