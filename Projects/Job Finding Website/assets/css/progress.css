@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /*===========Main theme colours==========*/
+    --first-color: #0e2431;
+    --second-color: #4C50D3;
+    --third-color: #777;
+
+    /*===========Hover colours==========*/
+    --hover-color: #614fd0;
+
+    /*===========Backgroung colours==========*/
+    --body-bg-color: #E7E8FF;
+    --card-bg-color: #fff;
+    --modal-bg-colour: #fff;
+    --bg-tansparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-colour-01: rgba(0, 0, 0, 0.1);
+    --transparent-colour-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /*===========Color Filter==========*/
+    --color-filter: invert(1);
+
+    /*===========Box Shadow==========*/
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+    /*===========Font size==========*/
+    --small-font-size: 0.9em;
+    --normal-font-size: 1em;
+
+    /*=========Scroll bar colours========*/
+    --scroll-bar-color: #c5cadf;
+    --scroll-thum-color: #70768a;
+    --scroll-thum-hover-color: #454f6b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BACK BUTTON */
+button{
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 6px;
+    background-color: #4C50D3;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: #5029bc;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 1rem 0 0 0;
+    transition: .5s ease;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.container h1{
+    font-size: 50px;
+    color: var(--second-color);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.skills .container .content{
+    width: 100%;
+}
+
+.skills-description{
+    max-width: 700px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.skills-description h3{
+    font-size: 2em;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.skills-info{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 250px;
+    margin: 0 100px;
+}
+
+.skills-info h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.skills-info h4 label{
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.education-all{
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+
+.edu-list .item{
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    border-bottom: 3px solid var(--second-color);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: .3s ease;
+    width: 500px;
+}
+
+.edu-list .item .year{
+    font-size: var(--small-font-size);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edu-list .item p{
+    color: var(--third-color);
+    font-size: var(--small-font-size);
+}
+
+.edu-list .item p span{
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+.bars{
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.bars .info{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 5px;
+    font-size: var(--small-font-size);
+}
+
+.bars .info span{
+    font-weight: 500;
+}
+
+.bars .line{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background: #c5cadf;
+    border-radius: 2px;
+}
+
+.bars .line:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: var(--second-color);
+    border-radius: 2px;
+    
+}
+
+.bars .html:before{
+    width: 100%;
+}
+
+.bars .css:before{
+    width: 40%;
+}
+
+.bars .javascript:before{
+    width: 13%;
+}
+
+.bars .python:before{
+    width: 47%;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(85, 84, 84, 0.364);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #161616fb;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4c50d3;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1b0093
+  }

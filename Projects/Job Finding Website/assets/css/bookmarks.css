@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+:root{
+    --primaryColor: #4c50d3;
+    --secondaryColor:#50c2d8;;
+    --fontColor: #1e1e1e;
+    --whiteColor: #fff;
+    --greyColor: #e7e7e7;
+    --darkgreyColor: #5f5f5f;
+    --sofPurple: #e7e8ff;
+    --softBlue: #c3e1ff;
+    --softyellow: #fff5cc;
+    --softRed: #ffcbc8;
+}
+
+/* BACK BUTTON */
+button{
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 6px;
+    background-color: #4C50D3;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: #5029bc;
+}
+
+.full-background{
+    background-color: #E7E8FF;
+}
+.header h1{
+    font-family: 'Young Serif', serif;
+    text-align: center;
+}
+html{
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.full{
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3%;
+    margin: 0 1%;
+    background-color: var(--whiteColor);
+    line-height: 1.5;
+    gap: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 8px;
+}
+
+.card-left{
+    width: 10%;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+.card-left img{
+    width: 100%;
+    height: auto;
+    min-width: 60px;
+    padding: 1rem;
+}
+
+.card-center {
+    width: 50%;
+}
+
+.card-loc, .card-sub{
+    font-size: 13px;
+    color: var(--darkGreyColor); 
+}
+
+.card-sub{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-sub p{
+    display: flex;
+    padding: 0 0.5rem 0 0;
+    align-items: center;
+}
+
+.card-right{
+    width: 15%;
+}
+
+.card-tag a{
+    color: var(--fontColor);
+    font-size: 13px;
+}
+
+.card-salary{
+    padding: 0.5rem 0;
+    color: var(--primaryColor);
+}
+
+.card-salary span{
+    color: var(--fontColor);
+    font-size: 13px;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(85, 84, 84, 0.364);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #161616fb;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4c50d3;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1b0093
+  }

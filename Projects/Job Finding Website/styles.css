@@ -1,0 +1,473 @@
+:root{
+    --primaryColor: #4c50d3;
+    --secondaryColor:#50c2d8;;
+    --fontColor: #1e1e1e;
+    --whiteColor: #fff;
+    --greyColor: #e7e7e7;
+    --darkgreyColor: #5f5f5f;
+    --sofPurple: #e7e8ff;
+    --softBlue: #c3e1ff;
+    --softyellow: #fff5cc;
+    --softRed: #ffcbc8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Lato',sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    position: fixed;
+    left: 0;
+}
+
+.logo{
+    letter-spacing: 2;
+}
+
+.menus{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menus a{
+    display: flex;
+    align-items: center;
+    color: var(--whiteColor);
+    text-decoration: none;
+}
+
+.menus ion-icon{
+    margin-right: 0.5rem;
+}
+
+.menus a:hover{
+    color: var(--secondaryColor);
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--whiteColor);
+    color: var(--fontColor);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+.profile:hover{
+    background-color: var(--secondaryColor);
+}
+
+.profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.profile-name p{
+    font-size: 12px;
+}
+
+.main{
+    width: calc(100% - 20% - 25%);
+    min-height: 100%;
+    min-width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2%;
+    margin-left: 20%;
+    background-color: var(--sofPurple);
+    z-index: 1;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*will hide menu for desktop view, show Later on mobile view*/
+.menu-bar{
+    background-color: var(--whiteColor);
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: none;
+} 
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: var(--whiteColor);
+}
+   
+.search input{
+    width: 90%;
+    border: none;
+}
+
+.btn-search{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    border: none;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+
+.btn-search:hover{
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+}
+
+.filter-wrapper{
+    margin: 1rem 0;
+    font-size: 14px;
+}
+
+.filter{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.btn-filter{
+    min-width: 110px;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+}
+
+.btn-filter:hover{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sort{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sort p{
+    font-size: 14px;
+}
+
+.sort-list select{
+    height: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0 0.5rem;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3%;
+    margin: 0 1%;
+    background-color: var(--whiteColor);
+    line-height: 1.5;
+    gap: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 8px;
+}
+
+.card-left{
+    width: 10%;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+.card-left img{
+    width: 100%;
+    height: auto;
+    min-width: 60px;
+    padding: 1rem;
+}
+
+.card-center {
+    width: 50%;
+}
+
+.card-loc, .card-sub{
+    font-size: 13px;
+    color: var(--darkGreyColor); 
+}
+
+.card-sub{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-sub p{
+    display: flex;
+    padding: 0 0.5rem 0 0;
+    align-items: center;
+}
+
+.card-right{
+    width: 15%;
+}
+
+.card-tag a{
+    color: var(--fontColor);
+    font-size: 13px;
+}
+
+.card-salary{
+    padding: 0.5rem 0;
+    color: var(--primaryColor);
+}
+
+.card-salary span{
+    color: var(--fontColor);
+    font-size: 13px;
+}
+
+.blue-bg{
+    background-color: var(--softBlue);
+}
+
+.yellow-bg{
+    background-color: var(--softyellow);
+}
+
+.red-bg{
+    background-color: var(--softRed); 
+}
+
+.purple-bg{
+    background-color: var(--sofPurple); 
+}
+.blue-bg{
+    background-color: var(--softBlue);  
+}
+
+.detail{
+    width: 25%;
+    min-width: 250px;
+    height: 100%;
+    padding: 2rem;
+    position: fixed;
+    right: 0;
+    background-color: var(--whiteColor);
+    overflow: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*will show close button on mobile view */
+.close-detail{
+    display: none;
+}
+
+.detail-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-header img{
+    width: 50px;
+    height: 50px;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: var(--greyColor);
+    border: none;
+    margin: 1rem 0;
+}
+
+.detail-desc{
+    line-height: 1.5;
+}
+
+.about a{
+    margin: 0.5rem 0 0 0;
+    color: var(--primaryColor);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.detail-btn{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.btn-apply{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-save{
+    background-color: var(--secondaryColor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-apply:hover{
+    border: 1px solid var(--primaryColor);
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
+.btn-save:hover{
+    border: 1px solid var(--secondaryColor);
+    background-color: transparent;
+}
+
+/*showing menu when click menubar*/
+.sidebar.active{
+    display: flex;
+    width: 220px;
+    z-index: 100;
+}
+
+/*screen with max width 880px*/
+
+@media screen and (max-width:880px){
+    .menu-bar{
+        display: block;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .main{
+        width: calc(100% - 40%);
+        margin-left: 0;
+    }
+
+    .detail{
+        width: 40%;
+    }
+}
+
+/* more small screen */
+
+@media screen and (max-width:700px){
+    .main{
+        width: 100%;
+    }
+
+    .detail{
+        display: none;
+    }
+
+    /*adding click on card to show detail*/
+
+    .detail.active{
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    /*adding button close */
+    .detail.active.close-detail{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:480px){
+    .card-loc, .card-sub, .card-tag{
+        display: none;
+    }
+}
+
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(85, 84, 84, 0.364);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #161616fb;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4c50d3;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1b0093
+  }
+

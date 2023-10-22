@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bookmarks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>JobsPlace - Bookmarks</title>
+</head>
+<body class="full-background">
+    <div class="back">
+        <button onclick="goBack()"><i class="fas fa-arrow-left"></i>   Back To Home</button>
+        </div>
+    
+        <script>
+        function goBack() {
+        window.history.back();
+        }
+        </script>
+    <div class="full">
+        <div class="header">
+            <h1>Here are Your Bookmarked Jobs</h1>
+        </div>
+
+        <div class="wrapper">
+            <!--google-->
+            <div class="card">
+                <div class="card-left blue-bg">
+                    <img src="../images/google.png">
+                </div>
+                <div class="card-center">
+                    <h3>Google</h3>
+                    <p class="card-detail">Data Science, Data Engineer(Onsite)</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Bengaluru,Karnataka</p>
+                    <div class="card-sub">
+                        <p><ion-icon name="today-outline"></ion-icon>1 mins ago</p>
+                        <p><ion-icon name="hourglass-outline"></ion-icon>Full-time</p>
+                        <p><ion-icon name="people-outline"></ion-icon>200 Applications</p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="#">Data Engineer</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$350k</b><span>/Year</span></p>
+                    </div>
+                </div>
+            </div>
+        <!--tiktok-->
+            <div class="card">
+                <div class="card-left yellow-bg">
+                    <img src="../images/tik-tok.png">
+                </div>
+                <div class="card-center">
+                    <h3>Tiktok</h3>
+                    <p class="card-detail">Data Analyst , Product Analyst</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Los Angeles,California</p>
+                    <div class="card-sub">
+                        <p><ion-icon name="today-outline"></ion-icon>10 mins ago</p>
+                        <p><ion-icon name="hourglass-outline"></ion-icon>Full-time</p>
+                        <p><ion-icon name="people-outline"></ion-icon>130 Applications</p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="#">Data Science</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$200k</b><span>/Year</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--facebook-->
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
