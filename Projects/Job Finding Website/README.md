@@ -28,6 +28,4 @@
 - **User Accounts:** Create personalized accounts to manage preferences and performance records. 👤
 - **Mobile Responsiveness:** Enjoy a seamless experience on various devices, including mobile phones and tablets. 📱
 
-## 🏆 **Part of SoftCode Hack 2.0** 🏆
 
-We are excited to be participating in SoftCode Hack 2.0, an innovative hackathon where we are dedicated to building and expanding "Career-crafters" to empower users in their career journeys.
