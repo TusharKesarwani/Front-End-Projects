@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 
 img {
   width: 100%;
@@ -38,7 +37,7 @@ section {
 }
 
 .container .brand {
-  font-family: 'Potta One', cursive;
+  font-family: "Potta One", cursive;
   text-align: center;
   font-size: 4rem;
   color: whitesmoke;
@@ -94,7 +93,7 @@ input {
 }
 
 .search-result .title {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(248, 54, 174);
   margin: 20px 10px 20px 0;
   font-size: 1.8rem;
@@ -118,7 +117,7 @@ input {
 }
 
 .view-btn:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.295);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.295);
 }
 
 .item-data {
@@ -153,8 +152,42 @@ input {
   .container.initial form {
     max-width: 500px;
   }
+  .accordion-heading {
+    min-width: 540px;
+  }
   .container.initial form input {
     padding: 10px;
     font-size: 2rem;
   }
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 1rem;
+  /* width: 100%; */
+}
+
+.paginationLink {
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  text-decoration: none;
+  border-radius: 15%;
+  margin: 0.5rem 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.paginationLink:hover {
+  background-color: rgb(222, 222, 222);
+}
+
+.selectedLink {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+
 }

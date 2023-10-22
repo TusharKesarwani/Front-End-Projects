@@ -8,6 +8,7 @@
     <meta name="keywords" content="Front-End, Projects, Templates" />
     <meta name="author" content="Tushar Kesarwani" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="WpdMF3NaKepMJ5EE4qv_3tK5eKD_sWnUYk02Lc5EtXQ" />
     <title>Front-End Projects | Home Page</title>
     <!--Main CSS-->
     <link rel="stylesheet" href="style.css">
@@ -19,8 +20,19 @@
     <link rel="icon" href="img/favicon.ico" type="image/png" />
 </head>
 
-<body onload="myfunction()">
-    <div id="load"></div>
+<body class="notLoaded">
+
+    <!-- Preloader Animation -->
+    <div id="load">
+        <h1 class="loading-text">Loading...</h1>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
 
     <!-- scrollbar button -->
     <div id="progress">
@@ -109,11 +121,28 @@
     </script>
     <script type="module" src="script.js"></script>
     <script>
-        var preloader = document.getElementById('load');
+        // Code for preloader starts
+    document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(fadeout, 2000);
+    // fadeout;
+});
 
-        function myfunction() {
-            preloader.style.display = 'none';
-        }
+function fadeout() {
+    let loadElement = document.getElementById("load");
+    if (loadElement) {
+        setTimeout(function() {
+            loadElement.style.opacity = 0;
+            setTimeout(function() {
+                loadElement.style.display = "none";
+                let notLoadedElements = document.querySelectorAll(".notLoaded");
+                notLoadedElements.forEach(function(element) {
+                    element.classList.remove("notLoaded");
+                });
+            }, 0); 
+        }, 0);
+    }
+}
+// code for preloader ends
     </script>
 </body>
 

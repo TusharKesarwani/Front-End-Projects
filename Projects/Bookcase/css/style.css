@@ -8,7 +8,8 @@
 
 html {
     scroll-behavior: smooth;
-
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 body {
@@ -399,7 +400,7 @@ footer {
     background: #B8A481;
     padding: 20px 23px;
     color: #fff;
-    width: 100%;
+    width: 102%;
     height: 60px;
     clear: both;
 }

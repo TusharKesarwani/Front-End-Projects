@@ -280,6 +280,7 @@ header {
 /* ========================================== FAQs ========================================== */
 
 .faqs {
+   
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
@@ -295,7 +296,7 @@ header {
     display: flex;
     align-items: center;
     gap: 1.4rem;
-    height: fit-content;
+    height:100px;
     background: var(--color-primary);
     cursor: pointer;
 }
@@ -319,6 +320,10 @@ header {
     display: block;
 }
 
+
+.faqheight{
+    height: fit-content;
+}
 
 /* ========================================== TESTIMONIALS ========================================== */
 

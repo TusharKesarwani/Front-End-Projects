@@ -9,6 +9,8 @@ const addBox = document.querySelector(".add-box"),
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+const notesContainer = document.getElementById("notesContainer");
+
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
 let isUpdate = false, updateId;
 
@@ -26,9 +28,13 @@ closeIcon.addEventListener("click", () => {
 })
 
 function showNote() {
+    
+    notesContainer.innerHTML = "";
     document.querySelectorAll(".note").forEach(note =>note.remove());
     notes.forEach((note, index) => {
-        liTag = `<li class="note">
+      const liClass = note.isImportant ? "note starred" : "note";
+  
+      const liTag = `<li class="${liClass}" style="background-color: ${note.isImportant ? 'gold' : ''}; color:${note.isImportant ? 'black' : 'white'}">
         <div class="details">
             <p>${note.title}</p>
             <span>${note.description}</span>
@@ -40,13 +46,14 @@ function showNote() {
                 <ul class="menu">
                     <li onclick="updateNote(${index},'${note.title}','${note.description}')"> <i class="uil uil-pen"></i>Edit</li>
                     <li onclick="deleteNote(${index})"> <i class="uil uil-trash"></i>Delete</li>
+                    <li onclick="importantNote(${index})"> <i class="uil uil-heart${note.isImportant ? '-break' : ''}"></i>${note.isImportant ? 'Unstar' : 'Star'}</li>
                 </ul>
             </div>
         </div>
-    </li>`
-    addBox.insertAdjacentHTML("afterend", liTag);
+      </li>`;
+      addBox.insertAdjacentHTML("afterend", liTag);
     });
-}
+  }
 showNote();
 
 function showMenu(elem){
@@ -75,6 +82,38 @@ function updateNote(noteId,title,desc){
     addBtn[0].innerText="Update Note";
    popupTitle.innerText="Update a Note";
     console.log(noteId,title,desc);
+}
+
+function importantNote(noteId) {
+    notes[noteId].isImportant = !notes[noteId].isImportant;
+    renderNotes();
+  }
+
+function renderNotes() {
+    notesContainer.innerHTML = "";
+    document.querySelectorAll(".note").forEach(note =>note.remove());
+    notes.forEach((note, index) => {
+        const liClass = note.isImportant ? "note starred" : "note";
+
+        const liTag = `<li class="${liClass}" style="background-color: ${note.isImportant ? 'gold' : ''};">
+            <div class="details">
+                <p>${note.title}</p>
+                <span>${note.description}</span>
+            </div>
+            <div class="bottom-content">
+                <span>${note.date}</span>
+                <div class="settings">
+                    <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
+                    <ul class="menu">
+                        <li onclick="updateNote(${index},'${note.title}','${note.description}')"> <i class="uil uil-pen"></i>Edit</li>
+                        <li onclick="deleteNote(${index})"> <i class="uil uil-trash"></i>Delete</li>
+                        <li onclick="importantNote(${index})"> <i class="uil uil-heart${note.isImportant ? '-break' : ''}"></i>${note.isImportant ? 'Unstar' : 'Star'}</li>
+                    </ul>
+                </div>
+            </div>
+        </li>`;
+        addBox.insertAdjacentHTML("afterend", liTag);
+    });
 }
 
  for (var i = 0; i < addBtn.length; i++) {
@@ -125,3 +164,6 @@ function updateNote(noteId,title,desc){
 
         })
     })
+
+showNote();
+renderNotes();

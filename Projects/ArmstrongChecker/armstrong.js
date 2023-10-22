@@ -15,8 +15,11 @@ function textfxn() {
         checkbtn.classList.add("buttonjs");
     }
     else {
+        alert("invalid input!")
         checkbtn.style.opacity = "0.25";
         checkbtn.classList.remove("buttonjs");
+        window.location.reload();
+        return;
     }
 }
 

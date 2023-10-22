@@ -9,6 +9,7 @@ let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songItemPlay = document.getElementsByClassName('songItemPlay');
+let likesong = document.getElementById('likesong');
 
 
 let songs = [
@@ -26,9 +27,14 @@ let songs = [
 
 songItems.forEach((element, i)=>{ 
     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
-    element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
+    masterSongName.innerHTML = songs[i].songName;
+    masterSongName.style.marginLeft = "20px"
 })
- 
+
+likesong.addEventListener('click', function onclick(event){
+    likesong.style.color = "rgb(35, 209, 35)";
+})
 
 // Handle play/pause click
 masterPlay.addEventListener('click', ()=>{
@@ -87,7 +93,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         masterPlay.classList.add('fa-pause-circle');
         
     })
-})
+}) 
 
 
 
