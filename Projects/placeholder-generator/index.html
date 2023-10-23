@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generate Placeholder image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="title">upload your file generate placeholder image</h1>
+
+     <div class="input-wrap">
+        <h2>upload file here</h2>
+        <input id="fileinput" type="file" accept="image/*" placeholder="upload image" />
+        <button class="generateBtn">generate image</button>
+     </div>
+
+     
+    <div class="preview-wrap">
+        <h3>Preview image</h3>
+        <img alt="Preview Image" id="imagePreview" style="display: none">
+    </div>
+
+    <a href="#" id="download" download>download image</a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
