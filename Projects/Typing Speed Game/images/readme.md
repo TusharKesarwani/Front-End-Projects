@@ -1,1 +1,0 @@
-All images are present

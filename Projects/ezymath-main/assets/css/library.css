@@ -1,8 +1,0 @@
-:root {
-    --appblack: #25282B;
-    --apppink: #FF23BB;
-    --appwhite: #eeeeee;
-}
-body{
-    background-color: var(--appblack);    
-}
