@@ -1,30 +1,10 @@
 (function () {
   var questions = [
-    {
-      question: "What is 2*5?",
-      choices: [2, 5, 10, 15, 20],
-      correctAnswer: 2,
-    },
-    {
-      question: "What is 3*6?",
-      choices: [3, 6, 9, 12, 18],
-      correctAnswer: 4,
-    },
-    {
-      question: "What is 8*9?",
-      choices: [72, 99, 108, 134, 156],
-      correctAnswer: 0,
-    },
-    {
-      question: "What is 1*7?",
-      choices: [4, 5, 6, 7, 8],
-      correctAnswer: 3,
-    },
-    {
-      question: "What is 8*8?",
-      choices: [20, 30, 40, 50, 64],
-      correctAnswer: 4,
-    },
+    generateRandomQuestion(),
+    generateRandomQuestion(),
+    generateRandomQuestion(),
+    generateRandomQuestion(),
+    generateRandomQuestion(),
   ];
 
   var questionCounter = 0; // Tracks question number
@@ -79,6 +59,8 @@
     updateNavigationPanel();
     $("#start").hide();
     navigationPanel.show(); // Show the navigation panel when starting over
+    window.location.reload();
+
   });
 
   // Click handler for the navigation buttons
@@ -254,3 +236,58 @@ function updateNavigationPanel() {
   navigationPanel.find('.navigation-button[data-question="' + questionCounter + '"]').addClass("active");
 }
 })();
+
+function generateRandomQuestion(){
+  let number1 =  getRandomInt(1, 9);
+  let number2 =  getRandomInt(1, 9);
+  let wrongAnswer1 = getRandomInt(1, 99)
+  let wrongAnswer2 = getRandomInt(1, 99)
+  let wrongAnswer3 = getRandomInt(1, 99)
+  let wrongAnswer4 = getRandomInt(1, 99)
+  let choices = [(number1*number2), wrongAnswer1, wrongAnswer2, wrongAnswer3, wrongAnswer4]
+  choices = shuffle(choices)
+  /* 
+      {
+      question: "What is 2*5?",
+      choices: [2, 5, 10, 15, 20],
+      correctAnswer: 2,
+    },
+  */
+  let object = {
+      question: `What is ${number1}*${number2}`,
+      choices: choices,
+      correctAnswer: choices.indexOf(number1*number2)
+
+  }
+  return object
+}
+
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+/*OPEN TRIVIA 
+DEFAULT MODE... AND ANOTHERS MODES
+https://opentdb.com/api_config.php
+
+
+*/

@@ -6,7 +6,7 @@
 
 body {
     font-family: Open Sans;
-    background-color: rgb(119, 199, 241);
+    background-image: url("https://r4.wallpaperflare.com/wallpaper/712/851/599/artistic-pixel-art-8-bit-wallpaper-5930082d711aed1bd6f7f82fd021962d.jpg");
 }
 
 main{
@@ -15,15 +15,16 @@ main{
 }
 
 #project-name{
-    border: 2px solid black;
+    border: 2px solid wh;
     width: fit-content;
     margin: 30px auto;
     padding: 20px 60px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(50, 104, 220);
     font-size: 24px;
     border-radius: 8px;
     font-weight: bold;
+    color: yellow;
     /* margin-bottom: 30px; */
 }
 
