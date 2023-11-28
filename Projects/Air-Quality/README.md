@@ -18,6 +18,8 @@ Air-Quality is a web application that allows users to input coordinates and fetc
 - JavaScript
 
 ## Screenshots
+<img width="960" alt="image" src="https://github.com/TusharKesarwani/Front-End-Projects/assets/96890436/846e871c-6538-49a0-ba20-678859850a7b">
+
 
 ![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/2fc47a46-6b8d-427f-863d-33b885e01c4e)
 
