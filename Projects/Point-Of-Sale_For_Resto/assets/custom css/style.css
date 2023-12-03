@@ -1,0 +1,51 @@
+body {
+  background: #eee; }
+
+#side_nav {
+  background: #26424f;
+  min-width: 58px;
+  max-width: 58px; }
+
+.content {
+  background: #e5ebee;
+  min-height: 100vh;
+  min-width: 70%;
+  max-width: 70%; }
+
+.receipt {
+  min-height: 100vh;
+  min-width: 27%;
+  max-width: 27%; }
+
+hr.h-color {
+  background: #eee; }
+
+hr.details-hcolor {
+  background-color: #26424f; }
+
+.text-dark-green {
+  color: #26424f; }
+
+.sidebar li.active {
+  color: #6D7F87; }
+
+.sidebar li.active a, .sidebar li.active a:hover {
+  color: #000; }
+
+.sidebar li a {
+  color: #fff; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #0d6efd; }
+
+.place-button {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+.order-btn {
+  align-self: center;
+  margin-top: auto; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Point of Sale</title>
+
+        <script src="https://kit.fontawesome.com/b78ed6278d.js" crossorigin="anonymous"></script>
+        <script src="assets/custom js/script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="assets/custom css/style.css">
+        <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="main-container d-flex">
+            <div class="sidebar" id="side_nav">
+                <div class="header-box px-2 pt-3 pb-2">
+                    <h1 class="fs-4"><a href="index.html" class="text-decoration-none"><span class="bg-white text-dark-green rounded shadow px-2 me-2"><i class="fa-solid fa-utensils"></i></span></a></h1>
+                    <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><span><i class="material-icons">menu</i></span></button>
+                </div>
+                <hr class="h-color mx-2">
+
+                <ul class="list-unstyled px-3 py-3">
+                    <li class="pb-4"><a href="#" class="text-white text-decoration-none"><i class="material-icons">app_registration</i></a></li>
+                    <li class="pb-4"><a href="#" class="text-white text-decoration-none"><i class="material-icons">point_of_sale</i></a></li>
+                    <li class=""><a href="#" class="text-white text-decoration-none"><i class="material-icons">table_bar</i></a></li>
+                </ul>
+                <hr class="h-color mx-2">
+
+                <ul class="list-unstyled px-3 py-4 fixed-bottom">
+                    <li class="pb-4"><a href="#" class="text-white text-decoration-none"><i class="material-icons">settings</i></a></li>
+                    <li class="pb-4"><a href="#" class="text-white text-decoration-none"><i class="material-icons">assignment_ind</i></a></li>
+                    <li class=""><a href="" class="text-white text-decoration-none"><i class="material-icons">logout</i></a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-primary">search</button>
+                        </div>
+                    </div>
+                </nav>
+        
+                <div class="dashboard-content px-3 pt-4">
+                    <section id="#foodCat" class="d-flex justify-content-center">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Appetizer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Main Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dessert</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Snack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Beverages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Other</a>
+                            </li>
+                          </ul>
+                    </section>
+                    <section id="#foodList" class="mt-5 d-flex flex-wrap px-4 mx-4">
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/food1.jpg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">Asian Bowl</h5>
+                                <p class="card-text">$10</p>
+                                <a href="#" class="btn btn-primary">Place Order</a>
+                            </div>
+                        </div>
+
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/food2.jpg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">Diet Bowl</h5>
+                                <p class="card-text">$12</p>
+                                <a href="#" class="btn btn-primary">Edit</a>
+                            </div>
+                        </div>
+
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/images.jpeg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">$9</h5>
+                                <p class="card-text">Food Description</p>
+                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/l-intro-1645057933.jpg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">Indian Plate</h5>
+                                <p class="card-text">$17</p>
+                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="#foodList" class="mt-5 d-flex flex-wrap px-4 mx-4">
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/food1.jpg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">Asian Bowl</h5>
+                                <p class="card-text">$10</p>
+                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/food2.jpg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">Diet Bowl</h5>
+                                <p class="card-text">$12</p>
+                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/images.jpeg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">$9</h5>
+                                <p class="card-text">Food Description</p>
+                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="card border-primary m-2" style="width: 18rem;">
+                            <img src="img/l-intro-1645057933.jpg" class="card-img-top" alt="food-name">
+                            <div class="card-body">
+                                <h5 class="card-title">Indian Plate</h5>
+                                <p class="card-text">$17</p>
+                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <div class="receipt pt-4 px-4">
+                <section id="order-details" class="pt-4">
+                    <h2>Table 14</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Shrimp Toast</td>
+                                    <td>$10</td>
+                                    <td>2</td>
+                                    <td>$20</td>
+                                </tr>
+                                <tr>
+                                    <td>Steak Frites</td>
+                                    <td>$20</td>
+                                    <td>1</td>
+                                    <td>$20</td>
+                                </tr>
+                                <tr>
+                                    <td>Iced Tea</td>
+                                    <td>$5</td>
+                                    <td>3</td>
+                                    <td>$15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <hr class="details-hcolor mx-2">
+
+                <section id="payment-details" class="pt-4">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td><h5>Subtotal</h5></td>
+                                <td>$55</td>
+                            </tr>
+                            <tr>
+                                <td><h6>Discount</h6></td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td><h6>Tax(10%)</h6></td>
+                                <td>$5.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <hr class="details-hcolor mx-2">
+
+                <section id="payment-details" class="pt-4">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><h5>Grand Total</h5></td>
+                            <td>$60.5</td>
+                        </tr>
+                    </table>
+                </section>
+
+            </div>
+        </div>
+    </body>
+</html>

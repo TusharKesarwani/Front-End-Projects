@@ -1,0 +1,67 @@
+$dark-green: #26424f;
+$fore-dark-green: #6D7F87;
+$hover-dark-green:#aaa;
+$orange: #ff7913;
+$light-grey: #e5ebee;
+
+body{
+    background: #eee;
+}
+
+#side_nav{
+    background: $dark-green;
+    min-width: 58px;
+    max-width: 58px;
+}
+
+.content{
+    background: $light-grey;
+    min-height: 100vh;
+    min-width: 70%;
+    max-width: 70%;
+}
+
+.receipt{
+    min-height: 100vh;
+    min-width: 27%;
+    max-width: 27%;
+}
+
+hr.h-color{
+    background: #eee;
+}
+
+hr.details-hcolor{
+    background-color: #26424f;
+}
+
+.text-dark-green{
+    color: $dark-green;
+}
+
+.sidebar li.active{
+    color: $fore-dark-green;
+ }
+ 
+ .sidebar li.active a, .sidebar li.active a:hover {
+  color: #000;
+ }
+ .sidebar li a{
+  color: #fff;
+ }
+
+ .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #0d6efd;
+  }
+
+  .place-button {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   }
+   
+   .order-btn {
+    align-self: center;
+    margin-top: auto;
+   }
