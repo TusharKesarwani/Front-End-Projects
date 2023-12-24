@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind</title>
+</head>
+
+<body class=" text-slate-400 bg-slate-900">
+
+    <div class="mb-20 overflow-hidden sm:mb-32 md:mb-40">
+        <!-- header start -->
+        <header class="relative">
+            <div class="px-4 sm:px-6 md:px-8">
+                <div
+                    class="relative pt-6 lg:pt-8 flex items-center justify-between font-semibold text-sm leading-6 text-slate-200">
+                    <!-- tailwind logo -->
+                    <img src="./images/SVG.png" alt="TailwindCss" />
+
+                    <div class="flex items-center">
+                        <button type="button"
+                            class="text-slate-300  w-8 h-8 -my-1 flex items-center justify-center md:hidden">
+                            <!-- search icon svg -->
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="m19 19-3.5-3.5">
+                                </path>
+                                <circle cx="11" cy="11" r="6">
+                                </circle>
+                            </svg>
+                        </button>
+                        <div class="-my-1 ml-2 -mr-1 md:hidden">
+                            <button type="button"
+                                class="text-slate-400 w-8 h-8 flex items-center justify-center hover:text-slate-300">
+                                <!-- three dot menu icon svg -->
+                                <svg width="24" height="24" fill="none" aria-hidden="true">
+                                    <path
+                                        d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <!-- nav bar start -->
+
+                        <div class="hidden md:flex items-center">
+
+                            <nav>
+                                <ul class="flex items-center gap-x-8">
+                                    <li><a class="hover:text-sky-400 " href="#">Docs</a></li>
+                                    <li><a href="#" class="hover:text-sky-400 ">Components</a>
+                                    </li>
+                                    <li><a class="hover:text-sky-400 " href="#">Blog</a></li>
+                                    <li><a class="hover:text-sky-400 " href="#">Showcase</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="flex items-center border-l border-slate-800 ml-6 pl-6 ">
+                                <button type="button">
+                                    <span class="inline">
+                                        <!-- theme change icon svg -->
+                                        <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                                                class="fill-sky-400/20">
+                                            </path>
+                                            <path
+                                                d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                                                class="fill-sky-500">
+                                            </path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+                                                class="fill-sky-500">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <a href="#" class="ml-6 block text-slate-400 hover:text-slate-300">
+                                    <!-- github icon -->
+                                    <svg viewBox="0 0 16 16" class="w-5 h-5" fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- nav bar start -->
+                    </div>
+                </div>
+
+                <div class="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
+                    <h1 class="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center text-white">
+                        Rapidly build modern websites without ever leaving your HTML.</h1>
+
+                    <p class="mt-6 text-lg text-slate-400 text-center max-w-3xl mx-auto">A
+                        utility-first CSS framework
+                        packed with classes like<!-- --> <code
+                            class="font-mono font-medium text-sky-400 ">flex</code>,<!-- -->
+                        <code class="font-mono font-medium text-sky-400">pt-4</code>,<!-- -->
+                        <code class="font-mono font-medium text-sky-400">text-center</code>
+                        <!-- -->and<!-- --> <code class="font-mono font-medium text-sky-400">rotate-90</code>
+                        <!-- -->that can be composed to
+                        build any design, directly in your markup.
+                    </p>
+
+                    <div class="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
+
+                        <a class="active:bg-blue-500 focus:outline-none text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto bg-sky-500 hover:bg-sky-400"
+                            href="#">Get started</a>
+
+                        <button type="button"
+                            class="hidden sm:flex items-center w-72 text-left space-x-3 px-4 h-12 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg bg-slate-800 ring-0 text-slate-300  hover:bg-slate-700">
+
+                            <!-- search icon svg -->
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="flex-none text-slate-400"
+                                aria-hidden="true">
+                                <path d="m19 19-3.5-3.5"></path>
+                                <circle cx="11" cy="11" r="6"></circle>
+                            </svg>
+
+                            <span class="flex-auto">Quick search...</span>
+                            <kbd class="font-sans font-semibold text-slate-500">
+                                <abbr title="Control" class="no-underline text-slate-500">Ctrl </abbr>
+                                K
+                            </kbd>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-20 sm:mt-24 lg:mt-32 lg:grid lg:gap-8 lg:grid-cols-12 lg:items-center">
+
+                <!-- right section start -->
+
+                <div class="relative row-start-1 col-start-6 xl:col-start-7 col-span-7 xl:col-span-6 p-4">
+                    <div class="-mx-4 sm:mx-0">
+                        <div
+                            class="relative overflow-hidden shadow-xl flex h-[31.625rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34.6875rem] xl:h-[31.625rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10 ">
+
+                            <div class="relative w-full flex flex-col">
+                                <div class="flex-none border-b border-slate-500/30">
+                                    <div class="flex items-center h-8 space-x-1.5 px-3">
+                                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                        </div>
+                                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                        </div>
+                                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative min-h-0 flex-auto flex flex-col">
+                                    <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                        <div class="w-full relative flex-auto">
+                                            <pre class="flex min-h-full text-sm leading-6">                                                        <div aria-hidden="true" class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right select-none" style="width:50px">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+                                                    </div>
+                                                    
+                                                    <code class="flex-auto relative block text-slate-50 pt-4 pb-4 px-4 overflow-auto"><span><span>&lt;</span>figure<!-- --> <span>class</span><span><span>=</span><span>"</span><span>m</span><span>d</span><span>:</span><span>f</span><span>l</span><span>e</span><span>x</span><span> </span>bg-slate-100 rounded-xl<span> </span><span>p</span><span>-</span><span>8</span><span> </span><span>m</span><span>d</span><span>:</span><span>p</span><span>-</span><span>0</span> dark:bg-slate-800<span>"</span></span><span>&gt;</span></span>
+  <span><span>&lt;</span>img<!-- --> <span>class</span><span><span>=</span><span>"</span>w-24 h-24<span> </span><span>m</span><span>d</span><span>:</span><span>w</span><span>-</span><span>4</span><span>8</span><span> </span><span>m</span><span>d</span><span>:</span><span>h</span><span>-</span><span>a</span><span>u</span><span>t</span><span>o</span><span> </span><span>m</span><span>d</span><span>:</span><span>r</span><span>o</span><span>u</span><span>n</span><span>d</span><span>e</span><span>d</span><span>-</span><span>n</span><span>o</span><span>n</span><span>e</span><span> </span><span>r</span><span>o</span><span>u</span><span>n</span><span>d</span><span>e</span><span>d</span><span>-</span><span>f</span><span>u</span><span>l</span><span>l</span><span> </span><span>m</span><span>x</span><span>-</span><span>a</span><span>u</span><span>t</span><span>o</span><span>"</span></span> <span>src</span><span><span>=</span><span>"</span>/sarah-dayan.jpg<span>"</span></span> <span>alt</span><span><span>=</span><span>"</span><span>"</span></span> <span>width</span><span><span>=</span><span>"</span>384<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>512<span>"</span></span><span>&gt;</span></span>
+  <span><span>&lt;</span>div<!-- --> <span>class</span><span><span>=</span><span>"</span>pt-6<span> </span><span>m</span><span>d</span><span>:</span><span>p</span><span>-</span><span>8</span><span> </span><span>t</span><span>e</span><span>x</span><span>t</span><span>-</span><span>c</span><span>e</span><span>n</span><span>t</span><span>e</span><span>r</span><span> </span><span>m</span><span>d</span><span>:</span><span>t</span><span>e</span><span>x</span><span>t</span><span>-</span><span>l</span><span>e</span><span>f</span><span>t</span> space-y-4<span>"</span></span><span>&gt;</span></span>
+    <span><span>&lt;</span>blockquote<span>&gt;</span></span>
+      <span><span>&lt;</span>p<!-- --> <span>class</span><span><span>=</span><span>"</span>text-lg<span> </span><span>f</span><span>o</span><span>n</span><span>t</span><span>-</span><span>m</span><span>e</span><span>d</span><span>i</span><span>u</span><span>m</span><span>"</span></span><span>&gt;</span></span>
+        “Tailwind CSS is the only framework that I've seen scale
+        on large teams. It’s easy to customize, adapts to any design,
+        and the build size is tiny.”
+      <span><span>&lt;/</span>p<span>&gt;</span></span>
+    <span><span>&lt;/</span>blockquote<span>&gt;</span></span>
+    <span><span>&lt;</span>figcaption<span> </span><span><span>c</span><span>l</span><span>a</span><span>s</span><span>s</span></span><span><span><span>=</span></span><span><span>"</span></span><span>f</span><span>o</span><span>n</span><span>t</span><span>-</span><span>m</span><span>e</span><span>d</span><span>i</span><span>u</span><span>m</span><span><span>"</span></span></span><span>&gt;</span></span>
+      <span><span>&lt;</span>div<span> </span><span><span>c</span><span>l</span><span>a</span><span>s</span><span>s</span></span><span><span><span>=</span></span><span><span>"</span></span><span>t</span><span>e</span><span>x</span><span>t</span><span>-</span><span>s</span><span>k</span><span>y</span><span>-</span><span>5</span><span>0</span><span>0</span><span> </span><span>d</span><span>a</span><span>r</span><span class="border -mx-px" style="height: 1.125rem;"></span><span>k</span><span>:</span><span>t</span><span>e</span><span>x</span><span>t</span><span>-</span><span>s</span><span>k</span><span>y</span><span>-</span><span>4</span><span>0</span><span>0</span><span><span>"</span></span></span><span>&gt;</span></span>
+        Sarah Dayan
+      <span><span>&lt;/</span>div<span>&gt;</span></span>
+      <span><span>&lt;</span>div<span> </span><span><span>c</span><span>l</span><span>a</span><span>s</span><span>s</span></span><span><span><span>=</span></span><span><span>"</span></span><span>t</span><span>e</span><span>x</span><span>t</span><span>-</span><span>s</span><span>l</span><span>a</span><span>t</span><span>e</span><span>-</span><span>7</span><span>0</span><span>0</span><span> </span><span>d</span><span>a</span><span>r</span><span>k</span><span>:</span><span>t</span><span>e</span><span>x</span><span>t</span><span>-</span><span>s</span><span>l</span><span>a</span><span>t</span><span>e</span><span>-</span><span>5</span><span>0</span><span>0</span><span><span>"</span></span></span><span>&gt;</span></span>
+        Staff Engineer, Algolia
+      <span><span>&lt;/</span>div<span>&gt;</span></span>
+    <span><span>&lt;/</span>figcaption<span>&gt;</span></span>
+  <span><span>&lt;/</span>div<span>&gt;</span></span>
+<span><span>&lt;/</span>figure<span>&gt;</span></span>
+</code>
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right section end -->
+
+                <!-- left section start -->
+                <div class="relative row-start-1 col-start-1 col-span-5 xl:col-span-6 mt-14">
+                    <div class="max-w-xl mx-auto lg:max-w-none flex items-center justify-center">
+                        <div class="w-full">
+                            <div class="lg:-mr-18">
+                                <div
+                                    class="relative z-10 rounded-lg shadow-xl mx-auto sm:w-[23.4375rem] text-slate-300">
+                                    <div class="rounded-lg overflow-hidden bg-slate-800 p-8">
+                                        <div
+                                            class="relative z-20 overflow-hidden flex-none mx-auto w-24 h-24 rounded-full">
+                                            <img src="./images/sarah-dayan.de9b3815.jpg.png" alt="sarah-dayan"
+                                                class="object-cover w-full h-full bg-slate-100">
+                                        </div>
+                                        <div class="pt-6">
+                                            <div class="mb-4">
+                                                <span class="text-lg font-semibold">“Tailwind
+                                                    CSS is the only
+                                                    framework
+                                                    that I've seen
+                                                    scale on large
+                                                    teams. It’s easy
+                                                    to customize,
+                                                    adapts
+                                                    to any design,
+                                                    and the build
+                                                    size is
+                                                    tiny.”</span>
+                                            </div>
+                                            <div class="flex flex-col items-start">
+                                                <p class="text-sky-400">
+                                                    Sarah Dayan</p>
+                                                <p class="text-slate-500">
+                                                    Staff Engineer,
+                                                    Algolia</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- left section end -->
+        </header>
+
+        <section class="text-center px-8 mt-20 sm:mt-32 md:mt-40">
+            <h2 class=" text-4xl tracking-tight font-extrabold sm:text-5xl text-white">
+                “Best practices” don’t actually work.
+            </h2>
+            <figure>
+                <blockquote>
+                    <p class="mt-6 max-w-3xl mx-auto text-lg">I’ve written<!-- -->
+                        <a href="#" class="font-semibold text-sky-400">a few thousand words</a>
+                        <!-- -->on why traditional “semantic class names” are the reason CSS is
+                        hard to maintain, but
+                        the truth is you’re never going to believe me until you actually try it.
+                        If you can suppress the
+                        urge to retch long enough to give it a chance, I really think you’ll
+                        wonder how you ever worked
+                        with CSS any other way.
+                    </p>
+                </blockquote>
+                <figcaption class="mt-6 flex items-center justify-center space-x-4 text-left">
+                    <img src="./images/adam.26d0119c.jpg.png" alt="Adam" class="w-14 h-14 rounded-full"
+                        loading="lazy" />
+                    <div>
+                        <div class="font-semibold text-white">Adam Wathan</div>
+                        <div class="mt-0.5 text-sm leading-6">Creator of Tailwind CSS</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </section>
+    </div>
+
+    <!-- Testimonials starts -->
+
+    <section class="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5">
+        <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-h-[33rem] overflow-hidden">
+            <!-- cards start -->
+            <ul class="space-y-8">
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800 ">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>I feel like an idiot for not using Tailwind CSS until now.
+                            </p>
+                        </blockquote>
+
+                        <figcaption class="flex items-center space-x-4">
+                            <img src="./images/ryan-florence.3af9c9d9.jpg.png" alt="Ryan"
+                                class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base font-semibold text-slate-300">
+                                    <a href="#">Ryan Florence</a>
+                                </div>
+                                <div class="mt-0.5">Remix &amp; React Training</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>If I had to recommend a way of getting into programming
+                                today, it would be HTML + CSS
+                                with Tailwind CSS.</p>
+                        </blockquote>
+
+                        <figcaption class="flex items-center space-x-4">
+                            <img src="./images/guillermo-rauch.8a24ab88.jpg.png" alt="Guillermo"
+                                class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base text-slate-900 font-semibold dark:text-slate-300">
+                                    <a href="https://twitter.com/rauchg/status/1225611926320738304">Guillermo
+                                        Rauch</a>
+                                </div>
+                                <div class="mt-0.5">Vercel</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>I have no design skills and with Tailwind I can actually make
+                                good looking websites with
+                                ease and it's everything I ever wanted in a CSS
+                                framework.</p>
+                        </blockquote>
+
+                        <figcaption class="flex items-center space-x-4">
+                            <img src="./images/sara-vieira.e2bfc631.jpg" alt="sara-vieira"
+                                class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base  font-semibold text-slate-300">
+                                    Sara Vieira</div>
+                                <div class="mt-0.5">CodeSandbox</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+            <ul class="space-y-8 hidden sm:block">
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>Have been working with CSS for over ten years and Tailwind
+                                just makes my life easier. It
+                                is still CSS and you use flex, grid, etc. but just
+                                quicker to write and maintain.</p>
+                        </blockquote>
+
+                        <figcaption class="flex items-center space-x-4"><img
+                                src="./images/debbie-obrien.69d3104d.jpg.png" alt="Debbie"
+                                class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base font-semibold text-slate-300">
+                                    <a href="#">Debbie O'Brien</a>
+                                </div>
+                                <div class="mt-0.5">Senior Program Manager at Microsoft
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>I’ve been writing CSS for over 20 years, and up until 2017,
+                                the way I wrote it changed
+                                frequently. It’s not a coincidence Tailwind was released
+                                the same year. It might look
+                                wrong, but spend time with it and you’ll realize
+                                semantic CSS was a 20 year mistake.</p>
+                        </blockquote>
+
+                        <figcaption class="flex items-center space-x-4"><img src="./images/frontendben.7c4b54bd.jpg.png"
+                                alt="Ben" class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base font-semibold text-slate-300">
+                                    <a href="#">Ben Furfie</a>
+                                </div>
+                                <div class="mt-0.5">Developer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+            </ul>
+
+            <ul class="space-y-8 hidden lg:block">
+
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>Skip to the end. Use @tailwindcss.</p>
+                        </blockquote>
+
+                        <figcaption class="flex items-center space-x-4"><img src="images/kentcdodds.90894efe.jpg.png"
+                                alt="kentcdodds" class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base font-semibold text-slate-300">
+                                    <a href="#">Kent C.Dodds</a>
+                                </div>
+                                <div class="mt-0.5">Developer and Educator</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800 ">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>I was bad at front-end until I discovered Tailwind CSS. I
+                                have learnt a lot more about
+                                design and CSS itself after I started working with
+                                Tailwind. Creating web pages is 5x
+                                faster now.</p>
+                        </blockquote>
+
+                        <figcaption class="flex items-center space-x-4">
+                            <img src="./images/shrutibalasa.8c3514ba.jpg.png" alt="shrutibalasa"
+                                class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base font-semibold text-slate-300">
+                                    <a href="#">Shruti Balasa</a>
+                                </div>
+                                <div class="mt-0.5">Full Stack Web Developer &amp; Tech
+                                    Educator
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse rounded-lg p-6 bg-slate-800 ">
+                        <blockquote class="mt-6 text-slate-300">
+                            <p>I don't use it but if I would use something I'd use Tailwind!
+                            </p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                            <img src="./images/YlXMBzhp_400x400.jpg" alt="Pieter"
+                                class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy" />
+                            <div class="flex-auto">
+                                <div class="text-base text-slate-900 font-semibold dark:text-slate-300">
+                                    <a href="#">Pieter Levels</a>
+                                </div>
+                                <div class="mt-0.5">Maker</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+            </ul>
+        </div>
+        <!-- cards end -->
+
+        <div class="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t pt-32 pb-8 from-slate-900 absolute">
+            <button type="button"
+                class="relative text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center bg-slate-700 hover:bg-slate-600">Show
+                more...</button>
+        </div>
+    </section>
+
+    <!-- Testimonials ends -->
+
+    <!-- card1 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-indigo-500">
+                    <img src="./images/div.hidden-(2).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-indigo-400">
+                    Constraint-based
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    An API for your design system.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Utility classes help you work within the constraints of a system instead of littering your
+                    stylesheets with arbitrary values. They make it easy to be consistent with color choices, spacing,
+                    typography, shadows, and everything else that makes up a well-engineered design system.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+                <div class="mt-10">
+                    <div class="flex overflow-auto -mx-4 sm:mx-0">
+                        <ul class="flex justify-center gap-4 lg:gap-12 px-4 sm:px-0">
+                            <li>
+                                <button>
+                                    <img src="./images/Button.svg" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Button-(1).svg" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item.svg" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item-(1).svg" alt="Logo" />
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="relative xl:pt-0  xl:mt-2 flex justify-center flex-col lg:flex-row">
+                <!-- left section -->
+                <div>
+                    <img src="./images/div.flex.png" alt="Image" />
+                </div>
+
+                <!-- right -->
+                <div class=" -mx-4 sm:mx-0 lg:mt-0 lg:w-5/12 p-6">
+                    <div
+                        class="relative overflow-hidden shadow-xl flex h-[31rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34rem] xl:h-[31rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10">
+                        <div class="relative w-full flex flex-col">
+                            <div class="flex-none border-b border-slate-500/30">
+                                <div class="flex items-center h-8 space-x-1.5 px-3">
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative min-h-0 flex-auto flex flex-col">
+                                <div class="w-full flex-auto flex min-h-0">
+                                    <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                        <div class="w-full relative flex-auto">
+                                            <pre class="flex min-h-full text-sm leading-6">
+                                                                            <div class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right w-[3.125rem]">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27</div><code class="flex-auto relative block text-slate-50 overflow-auto p-4"><div><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>space-y-4</span><span>"</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-96</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-96</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-80</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-80</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-72</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-72</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-64</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-64</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-60</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-60</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-56</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-56</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-52</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-52</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span><span>w-48</span> bg-white shadow rounded</span><span>"</span><span>&gt;</span><span></span></div><div><span>      w-48</span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span></span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span></span></div></code>
+                                                                    </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card1 end -->
+
+    <!-- card2 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-pink-500">
+                    <img src="./images/div.hidden-(3).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-pink-400">
+                    Build anything
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    Build whatever you want, seriously.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with
+                    the same color palette and sizing scale, it's easy to build the same component with a completely
+                    different look in the next project.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Get
+                    started <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+                <div class="mt-10">
+                    <div class="flex overflow-auto -mx-4 sm:mx-0">
+                        <ul class="flex justify-center gap-4 lg:gap-12 px-4 sm:px-0">
+                            <li>
+                                <button>
+                                    <img src="./images/Item-(2).svg" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item-(3).svg" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item-(4).svg" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item-(5).svg" alt="Logo" />
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="relative xl:pt-0  xl:mt-2 flex justify-center flex-col lg:flex-row">
+                <!-- left section -->
+                <div class="flex items-center justify-center">
+                    <img src="./images/div.relative-(3).png" alt="Image" />
+                </div>
+
+                <!-- right -->
+                <div class=" -mx-4 sm:mx-0 lg:mt-0 lg:w-5/12 p-6">
+                    <div
+                        class="relative overflow-hidden shadow-xl flex h-[31rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34rem] xl:h-[31rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10">
+                        <div class="relative w-full flex flex-col">
+                            <div class="flex-none border-b border-slate-500/30">
+                                <div class="flex items-center h-8 space-x-1.5 px-3">
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative min-h-0 flex-auto flex flex-col">
+                                <div class="w-full flex-auto flex min-h-0">
+                                    <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                        <div class="w-full relative flex-auto">
+                                            <pre class="flex min-h-full text-sm leading-6"><div class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right select-none w-[3.125rem]">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63<br>64<br>65<br>66<br>67<br>68<br>69<br>70<br>71</div><code class="flex-auto relative block text-slate-50 overflow-auto p-4"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex font-sans</span><span>"</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex-none w-48 relative</span><span>"</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span>/classic-utility-jacket.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>absolute inset-0 w-full h-full object-cover</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span>lazy</span><span>"</span><span> </span><span>/&gt;</span><span></span>
+<span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;</span><span>form</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex-auto p-6</span><span>"</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex flex-wrap</span><span>"</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;</span><span>h1</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex-auto text-lg font-semibold text-slate-900</span><span>"</span><span>&gt;</span><span></span>
+<!-- -->        <span>Utility Jacket</span>
+<span>      </span><span>&lt;/</span><span>h1</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>text-lg font-semibold text-slate-500</span><span>"</span><span>&gt;</span><span></span>
+<!-- -->        <span>$110.00</span>
+<span>      </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-full flex-none text-sm font-medium text-slate-700 mt-2</span><span>"</span><span>&gt;</span><span></span>
+<span>        In stock</span>
+<span>      </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200</span><span>"</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>space-x-2 flex text-sm</span><span>"</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>label</span><span>&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>input</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only peer</span><span>"</span><span> </span><span>name</span><span>=</span><span>"</span><span>size</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span> </span><span>value</span><span>=</span><span>"</span><span>xs</span><span>"</span><span> </span><span>checked</span><span> </span><span>/&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white</span><span>"</span><span>&gt;</span><span></span>
+<span>            XS</span>
+<span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;/</span><span>label</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>label</span><span>&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>input</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only peer</span><span>"</span><span> </span><span>name</span><span>=</span><span>"</span><span>size</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span> </span><span>value</span><span>=</span><span>"</span><span>s</span><span>"</span><span> </span><span>/&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white</span><span>"</span><span>&gt;</span><span></span>
+<span>            S</span>
+<span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;/</span><span>label</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>label</span><span>&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>input</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only peer</span><span>"</span><span> </span><span>name</span><span>=</span><span>"</span><span>size</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span> </span><span>value</span><span>=</span><span>"</span><span>m</span><span>"</span><span> </span><span>/&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white</span><span>"</span><span>&gt;</span><span></span>
+<span>            M</span>
+<span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;/</span><span>label</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>label</span><span>&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>input</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only peer</span><span>"</span><span> </span><span>name</span><span>=</span><span>"</span><span>size</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span> </span><span>value</span><span>=</span><span>"</span><span>l</span><span>"</span><span> </span><span>/&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white</span><span>"</span><span>&gt;</span><span></span>
+<span>            L</span>
+<span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;/</span><span>label</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>label</span><span>&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>input</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only peer</span><span>"</span><span> </span><span>name</span><span>=</span><span>"</span><span>size</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span> </span><span>value</span><span>=</span><span>"</span><span>xl</span><span>"</span><span> </span><span>/&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white</span><span>"</span><span>&gt;</span><span></span>
+<span>            XL</span>
+<span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;/</span><span>label</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex space-x-4 mb-6 text-sm font-medium</span><span>"</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex-auto flex space-x-4</span><span>"</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>button</span><span> </span><span>class</span><span>=</span><span>"</span><span>h-10 px-6 font-semibold rounded-md bg-black text-white</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>submit</span><span>"</span><span>&gt;</span><span></span>
+<span>          Buy now</span>
+<span>        </span><span>&lt;/</span><span>button</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>button</span><span> </span><span>class</span><span>=</span><span>"</span><span>h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>button</span><span>"</span><span>&gt;</span><span></span>
+<span>          Add to bag</span>
+<span>        </span><span>&lt;/</span><span>button</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;</span><span>button</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>button</span><span>"</span><span> </span><span>aria-label</span><span>=</span><span>"</span><span>Like</span><span>"</span><span>&gt;</span><span></span>
+<span>        </span><span>&lt;</span><span>svg</span><span> </span><span>width</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>height</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>fill</span><span>=</span><span>"</span><span>currentColor</span><span>"</span><span> </span><span>aria-hidden</span><span>=</span><span>"</span><span>true</span><span>"</span><span>&gt;</span><span></span>
+<span>          </span><span>&lt;</span><span>path</span><span> </span><span>fill-rule</span><span>=</span><span>"</span><span>evenodd</span><span>"</span><span> </span><span>clip-rule</span><span>=</span><span>"</span><span>evenodd</span><span>"</span><span> </span><span>d</span><span>=</span><span>"</span><span>M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z</span><span>"</span><span> </span><span>/&gt;</span><span></span>
+<span>        </span><span>&lt;/</span><span>svg</span><span>&gt;</span><span></span>
+<span>      </span><span>&lt;/</span><span>button</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>p</span><span> </span><span>class</span><span>=</span><span>"</span><span>text-sm text-slate-700</span><span>"</span><span>&gt;</span><span></span>
+<span>      Free shipping on all continental US orders.</span>
+<span>    </span><span>&lt;/</span><span>p</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;/</span><span>form</span><span>&gt;</span><span></span>
+<span></span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span></span>
+</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card2 end -->
+
+    <!-- card3 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-sky-500">
+                    <img src="./images/div.hidden-(4).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-sky-500">
+                    Performance
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    It’s tiny — never ship unused CSS again.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Tailwind automatically removes all unused CSS when building for production, which means your final
+                    CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB
+                    of CSS to the client.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    More <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+                <div class="pt-8">
+                    <img src="./images/div.max-w-7xl.png" alt="logo" />
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <!-- card3 end -->
+
+    <!-- card4 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-indigo-500">
+                    <img src="./images/div.hidden-(5).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-indigo-400">
+                    Mobile-first
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    Responsive everything.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Wrestling with a bunch of complex media queries in your CSS sucks, so Tailwind lets you build
+                    responsive designs right in your HTML instead.
+                </p>
+                <br />
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Throw a screen size in front of literally any utility class and watch it magically apply at a
+                    specific breakpoint.
+                </p>
+
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+            </div>
+
+
+            <div class="relative p-8 xl:pt-6 xl:pl-36 xl:mt-2 flex justify-center flex-col ">
+                <!-- left section -->
+                <div>
+                    <img src="./images/div.relative-(4).png" alt="Image" />
+                </div>
+
+                <!-- right -->
+                <div class=" -mx-4 sm:mx-0 lg:mt-0 lg:w-full p-6">
+                    <div
+                        class="relative overflow-hidden shadow-xl flex h-[31rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34rem] xl:h-[31rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10">
+                        <div class="relative w-full flex flex-col">
+                            <div class="flex-none border-b border-slate-500/30">
+                                <div class="flex items-center h-8 space-x-1.5 px-3">
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="relative min-h-0 flex-auto flex flex-col">
+                                <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                    <div class="w-full relative flex-auto">
+                                        <pre
+                                            class="flex min-h-full text-sm leading-6"><div class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right select-none w-[3.125rem]">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40</div><code class="flex-auto relative block text-slate-50 overflow-auto p-4"><div><span>&lt;</span><span>main</span><span> </span><span>class</span><span>=</span><span>"</span><span>py-6</span><span> </span><span>px-4</span><span> </span><span >sm:p-6</span><span> </span><span >md:py-10</span><span> </span><span >md:px-8</span><span>"</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>max-w-4xl</span><span> </span><span>mx-auto</span><span> </span><span>grid</span><span> </span><span>grid-cols-1</span><span> </span><span >lg:max-w-5xl</span><span> </span><span >lg:gap-x-20</span><span> </span><span >lg:grid-cols-2</span><span>"</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>relative</span><span> </span><span>p-3</span><span> </span><span>col-start-1</span><span> </span><span>row-start-1</span><span> </span><span>flex</span><span> </span><span>flex-col-reverse</span><span> </span><span>rounded-lg</span><span> </span><span>bg-gradient-to-t</span><span> </span><span>from-black/75</span><span> </span><span>via-black/0</span><span> </span><span >sm:bg-none</span><span> </span><span >sm:row-start-2</span><span> </span><span >sm:p-0</span><span> </span><span >lg:row-start-1</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>h1</span><span> </span><span>class</span><span>=</span><span>"</span><span>mt-1</span><span> </span><span>text-lg</span><span> </span><span>font-semibold</span><span> </span><span>text-white</span><span> </span><span >sm:text-slate-900</span><span> </span><span >md:text-2xl</span><span> </span><span>dark:sm:text-white</span><span>"</span><span>&gt;</span><span>Beach House in Collingwood</span><span>&lt;/</span><span>h1</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>p</span><span> </span><span>class</span><span>=</span><span>"</span><span>text-sm</span><span> </span><span>leading-4</span><span> </span><span>font-medium</span><span> </span><span>text-white</span><span> </span><span >sm:text-slate-500</span><span> </span><span>dark:sm:text-slate-400</span><span>"</span><span>&gt;</span><span>Entire house</span><span>&lt;/</span><span>p</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>grid</span><span> </span><span>gap-4</span><span> </span><span>col-start-1</span><span> </span><span>col-end-3</span><span> </span><span>row-start-1</span><span> </span><span >sm:mb-6</span><span> </span><span >sm:grid-cols-4</span><span> </span><span >lg:gap-6</span><span> </span><span >lg:col-start-2</span><span> </span><span >lg:row-end-6</span><span> </span><span >lg:row-span-6</span><span> </span><span >lg:mb-0</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span>/beach-house.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-full</span><span> </span><span>h-60</span><span> </span><span>object-cover</span><span> </span><span>rounded-lg</span><span> </span><span >sm:h-52</span><span> </span><span >sm:col-span-2</span><span> </span><span >lg:col-span-full</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span>lazy</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span>/beach-house-interior-1.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>hidden</span><span> </span><span>w-full</span><span> </span><span>h-52</span><span> </span><span>object-cover</span><span> </span><span>rounded-lg</span><span> </span><span >sm:block</span><span> </span><span >sm:col-span-2</span><span> </span><span >md:col-span-1</span><span> </span><span >lg:row-start-2</span><span> </span><span >lg:col-span-2</span><span> </span><span >lg:h-32</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span>lazy</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span>/beach-house-interior-2.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>hidden</span><span> </span><span>w-full</span><span> </span><span>h-52</span><span> </span><span>object-cover</span><span> </span><span>rounded-lg</span><span> </span><span >md:block</span><span> </span><span >lg:row-start-2</span><span> </span><span >lg:col-span-2</span><span> </span><span >lg:h-32</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span>lazy</span><span>"</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>dl</span><span> </span><span>class</span><span>=</span><span>"</span><span>mt-4</span><span> </span><span>text-xs</span><span> </span><span>font-medium</span><span> </span><span>flex</span><span> </span><span>items-center</span><span> </span><span>row-start-2</span><span> </span><span >sm:mt-1</span><span> </span><span >sm:row-start-3</span><span> </span><span >md:mt-2.5</span><span> </span><span >lg:row-start-2</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>dt</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only</span><span>"</span><span>&gt;</span><span>Reviews</span><span>&lt;/</span><span>dt</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>dd</span><span> </span><span>class</span><span>=</span><span>"</span><span>text-indigo-600</span><span> </span><span>flex</span><span> </span><span>items-center</span><span> </span><span>dark:text-indigo-400</span><span>"</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>svg</span><span> </span><span>width</span><span>=</span><span>"</span><span>24</span><span>"</span><span> </span><span>height</span><span>=</span><span>"</span><span>24</span><span>"</span><span> </span><span>fill</span><span>=</span><span>"</span><span>none</span><span>"</span><span> </span><span>aria-hidden</span><span>=</span><span>"</span><span>true</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>mr-1</span><span> </span><span>stroke-current</span><span> </span><span>dark:stroke-indigo-500</span><span>"</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>path</span><span> </span><span>d</span><span>=</span><span>"</span><span>m12 5 2 5h5l-4 4 2.103 5L12 16l-5.103 3L9 14l-4-4h5l2-5Z</span><span>"</span><span>  </span><span>stroke-width</span><span>=</span><span>"</span><span>2</span><span>"</span><span> </span><span>stroke-linecap</span><span>=</span><span>"</span><span>round</span><span>"</span><span> </span><span>stroke-linejoin</span><span>=</span><span>"</span><span>round</span><span>"</span><span> </span><span>/&gt;</span><span></span></div><div><span>        </span><span>&lt;/</span><span>svg</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>span</span><span>&gt;</span><span>4.89 </span><span>&lt;</span><span>span</span><span> </span><span>class</span><span>=</span><span>"</span><span>text-slate-400</span><span> </span><span>font-normal</span><span>"</span><span>&gt;</span><span>(128)</span><span>&lt;/</span><span>span</span><span>&gt;</span><span>&lt;/</span><span>span</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;/</span><span>dd</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>dt</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only</span><span>"</span><span>&gt;</span><span>Location</span><span>&lt;/</span><span>dt</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>dd</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex</span><span> </span><span>items-center</span><span>"</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>svg</span><span> </span><span>width</span><span>=</span><span>"</span><span>2</span><span>"</span><span> </span><span>height</span><span>=</span><span>"</span><span>2</span><span>"</span><span> </span><span>aria-hidden</span><span>=</span><span>"</span><span>true</span><span>"</span><span> </span><span>fill</span><span>=</span><span>"</span><span>currentColor</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>mx-3</span><span> </span><span>text-slate-300</span><span>"</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>circle</span><span> </span><span>cx</span><span>=</span><span>"</span><span>1</span><span>"</span><span> </span><span>cy</span><span>=</span><span>"</span><span>1</span><span>"</span><span> </span><span>r</span><span>=</span><span>"</span><span>1</span><span>"</span><span> </span><span>/&gt;</span><span></span></div><div><span>        </span><span>&lt;/</span><span>svg</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>svg</span><span> </span><span>width</span><span>=</span><span>"</span><span>24</span><span>"</span><span> </span><span>height</span><span>=</span><span>"</span><span>24</span><span>"</span><span> </span><span>fill</span><span>=</span><span>"</span><span>none</span><span>"</span><span> </span><span>stroke</span><span>=</span><span>"</span><span>currentColor</span><span>"</span><span> </span><span>stroke-width</span><span>=</span><span>"</span><span>2</span><span>"</span><span> </span><span>stroke-linecap</span><span>=</span><span>"</span><span>round</span><span>"</span><span> </span><span>stroke-linejoin</span><span>=</span><span>"</span><span>round</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>mr-1</span><span> </span><span>text-slate-400</span><span> </span><span>dark:text-slate-500</span><span>"</span><span> </span><span>aria-hidden</span><span>=</span><span>"</span><span>true</span><span>"</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>path</span><span> </span><span>d</span><span>=</span><span>"</span><span>M18 11.034C18 14.897 12 19 12 19s-6-4.103-6-7.966C6 7.655 8.819 5 12 5s6 2.655 6 6.034Z</span><span>"</span><span> </span><span>/&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>path</span><span> </span><span>d</span><span>=</span><span>"</span><span>M14 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z</span><span>"</span><span> </span><span>/&gt;</span><span></span></div><div><span>        </span><span>&lt;/</span><span>svg</span><span>&gt;</span><span></span></div><div><span>        Collingwood, Ontario</span></div><div><span>      </span><span>&lt;/</span><span>dd</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>dl</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>mt-4</span><span> </span><span>col-start-1</span><span> </span><span>row-start-3</span><span> </span><span>self-center</span><span> </span><span >sm:mt-0</span><span> </span><span >sm:col-start-2</span><span> </span><span >sm:row-start-2</span><span> </span><span >sm:row-span-2</span><span> </span><span >lg:mt-6</span><span> </span><span >lg:col-start-1</span><span> </span><span >lg:row-start-3</span><span> </span><span >lg:row-end-4</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>button</span><span> </span><span>type</span><span>=</span><span>"</span><span>button</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>bg-indigo-600</span><span> </span><span>text-white</span><span> </span><span>text-sm</span><span> </span><span>leading-6</span><span> </span><span>font-medium</span><span> </span><span>py-2</span><span> </span><span>px-3</span><span> </span><span>rounded-lg</span><span>"</span><span>&gt;</span><span>Check availability</span><span>&lt;/</span><span>button</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>p</span><span> </span><span>class</span><span>=</span><span>"</span><span>mt-4</span><span> </span><span>text-sm</span><span> </span><span>leading-6</span><span> </span><span>col-start-1</span><span> </span><span >sm:col-span-2</span><span> </span><span >lg:mt-6</span><span> </span><span >lg:row-start-4</span><span> </span><span >lg:col-span-1</span><span> </span><span>dark:text-slate-400</span><span>"</span><span>&gt;</span><span></span></div><div><span>      This sunny and spacious room is for those traveling light and looking for a comfy and cosy place to lay their head for a night or two. This beach house sits in a vibrant neighborhood littered with cafes, pubs, restaurants and supermarkets and is close to all the major attractions such as Edinburgh Castle and Arthur's Seat.</span></div><div><span>    </span><span>&lt;/</span><span>p</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span></span><span>&lt;/</span><span>main</span><span>&gt;</span><span></span></div><div><span></span></div></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card4 end -->
+
+    <!-- card5 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-blue-500">
+                    <img src="./images/div.hidden-(6).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-blue-500">
+                    State variants
+                </h2>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Want to style something on hover? Stick
+                    <span class="font-mono font-medium text-slate-200 ">hover:</span>
+                    at the beginning of the class you want to add. Works for <span
+                        class="font-mono font-medium text-slate-200">focus</span>, <span
+                        class="font-mono font-medium text-slate-200">active</span>, <span
+                        class="font-mono font-medium text-slate-200">disabled</span>, <span
+                        class="font-mono font-medium text-slate-200">focus-within</span>, <span
+                        class="font-mono font-medium text-slate-200">focus-visible</span>, and even fancy states we
+                    invented ourselves like <span class="font-mono font-medium text-slate-200">-hover</span>.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    More <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+            </div>
+
+
+            <div class="relative xl:pt-0  xl:mt-2 flex justify-center flex-col lg:flex-row p-4">
+                <!-- left section -->
+                <div class="lg:col-span-5 xl:col-span-6 flex flex-col">
+                    <div
+                        class="relative z-10 rounded-xl shadow-xl ring-1 ring-slate-900/5 overflow-hidden my-auto xl:mt-18 bg-slate-800">
+                        <section>
+                            <header class="rounded-t-xl space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
+                                <div class="flex items-center justify-between">
+                                    <h2 class="font-semibold text-white">Projects</h2>
+                                    <div
+                                        class="flex items-center rounded-md bg-blue-500 text-white text-sm font-medium pl-2 pr-3 py-2 cursor-pointer shadow-sm hover:bg-blue-400">
+                                        <img src="./images/SVG-(1).svg" alt="logo" />New
+                                    </div>
+                                </div>
+                                <div class=" relative rounded-md bg-slate-700 focus-within:bg-transparent">
+                                    <img src="./images/SVG-(2).svg" alt="logo" class="absolute top-[25%] left-[1%]" />
+                                    <input type="text" aria-label="Filter projects" placeholder="Filter projects..."
+                                        class=" w-full text-sm leading-6 bg-transparent rounded-md py-2 pl-10  shadow-sm focus:outline-none focus:ring-blue-500 text-slate-100 placeholder:text-slate-500 ring-0 focus:ring-2">
+                                </div>
+                            </header>
+                            <ul
+                                class=" p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 text-sm leading-6 bg-slate-900/40 ring-1 ring-white/5">
+                                <li
+                                    class=" cursor-pointer rounded-md p-3   ring-slate-200 shadow-sm hover:ring-blue-500 hover:shadow-md bg-slate-700 ring-0 hover:bg-blue-500">
+                                    <dl class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                        <div>
+                                            <dd class="font-semibold hover:text-white text-slate-100">
+                                                API Integration</dd>
+                                        </div>
+                                        <div>
+                                            <dd class="hover:text-blue-200">Engineering</dd>
+                                        </div>
+                                        <div class="col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4">
+                                            <dd
+                                                class="flex justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-1.5">
+                                                <img src="./images/photo-1531123897727-8f129e1688ce (1).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin.png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (1).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (2).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (3).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </li>
+
+                                <li
+                                    class=" cursor-pointer rounded-md p-3   ring-slate-200 shadow-sm hover:ring-blue-500 hover:shadow-md bg-slate-700 ring-0 hover:bg-blue-500">
+                                    <dl class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                        <div>
+                                            <dd class="font-semibold hover:text-white text-slate-100">
+                                                New Benefits Plan
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dd class="hover:text-blue-200">Human Resources</dd>
+                                        </div>
+                                        <div class="col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4">
+                                            <dd
+                                                class="flex justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-1.5">
+                                                <img src="./images/photo-1517841905240-472988babdf9.png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (4).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (5).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (6).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (7).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </li>
+
+                                <li
+                                    class=" cursor-pointer rounded-md p-3   ring-slate-200 shadow-sm hover:ring-blue-500 hover:shadow-md bg-slate-700 ring-0 hover:bg-blue-500">
+                                    <dl class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                        <div>
+                                            <dd class="font-semibold hover:text-white text-slate-100">
+                                                Onboarding Emails
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dd class="hover:text-blue-200">Customer Success</dd>
+                                        </div>
+                                        <div class="col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4">
+                                            <dd
+                                                class="flex justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-1.5">
+                                                <img src="./images/photo-1546525848-3ce03ca516f6.png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (8).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (9).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (10).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                                <img src="./images/Img_margin (11).png" alt="Image"
+                                                    class="w-6 h-6 rounded-full bg-slate-100 ring-2  ring-slate-700 hover:ring-white"
+                                                    loading="lazy" />
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </li>
+
+                                <li class="flex">
+                                    <div
+                                        class=" w-full flex flex-col items-center justify-center rounded-md border-2 border-dashed text-sm leading-6 font-medium py-3 cursor-pointer border-slate-700 text-slate-100 hover:border-blue-500 hover:bg-transparent hover:text-blue-500">
+                                        <img src="./images/SVG-(1).svg" alt="logo" />New project
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- right -->
+                <div class=" -mx-4 sm:mx-0 lg:mt-0 lg:w-5/12 p-6">
+                    <div
+                        class="relative overflow-hidden shadow-xl flex h-[31rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34rem] xl:h-[31rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10">
+                        <div class="relative w-full flex flex-col">
+                            <div class="flex-none border-b border-slate-500/30">
+                                <div class="flex items-center h-8 space-x-1.5 px-3">
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative min-h-0 flex-auto flex flex-col">
+                                <div class="w-full flex-auto flex min-h-0">
+                                    <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                        <div class="w-full relative flex-auto">
+                                            <pre
+                                                class="flex min-h-full text-sm leading-6"><div class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right select-none w-[3.125rem]">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52</div><code class="flex-auto relative block text-slate-50 overflow-auto p-4"><div class="mono"><div><span>&lt;</span><span>section</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>header</span><span> </span><span>class</span><span>=</span><span>"</span><span>bg-white</span><span> </span><span>space-y-4</span><span> </span><span>p-4</span><span> </span><span>sm:px-8</span><span> </span><span>sm:py-6</span><span> </span><span>lg:p-4</span><span> </span><span>xl:px-8</span><span> </span><span>xl:py-6</span><span>"</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex</span><span> </span><span>items-center</span><span> </span><span>justify-between</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>h2</span><span> </span><span>class</span><span>=</span><span>"</span><span>font-semibold</span><span> </span><span>text-slate-900</span><span>"</span><span>&gt;</span><span>Projects</span><span>&lt;/</span><span>h2</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>a</span><span> </span><span>href</span><span>=</span><span>"</span><span>/new</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>hover:bg-blue-400</span><span> </span><span>group</span><span> </span><span>flex</span><span> </span><span>items-center</span><span> </span><span>rounded-md</span><span> </span><span>bg-blue-500</span><span> </span><span>text-white</span><span> </span><span>text-sm</span><span> </span><span>font-medium</span><span> </span><span>pl-2</span><span> </span><span>pr-3</span><span> </span><span>py-2</span><span> </span><span>shadow-sm</span><span>"</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>svg</span><span> </span><span>width</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>height</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>fill</span><span>=</span><span>"</span><span>currentColor</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>mr-2</span><span>"</span><span> </span><span>aria-hidden</span><span>=</span><span>"</span><span>true</span><span>"</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>path</span><span> </span><span>d</span><span>=</span><span>"</span><span>M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z</span><span>"</span><span> </span><span>/&gt;</span><span></span></div><div><span>        </span><span>&lt;/</span><span>svg</span><span>&gt;</span><span></span></div><div><span>        New</span></div><div><span>      </span><span>&lt;/</span><span>a</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>form</span><span> </span><span>class</span><span>=</span><span>"</span><span>group</span><span> </span><span>relative</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>svg</span><span> </span><span>width</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>height</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>fill</span><span>=</span><span>"</span><span>currentColor</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>absolute</span><span> </span><span>left-3</span><span> </span><span>top-1/2</span><span> </span><span>-mt-2.5</span><span> </span><span>text-slate-400</span><span> </span><span>pointer-events-none</span><span> </span><span>group-focus-within:text-blue-500</span><span>"</span><span> </span><span>aria-hidden</span><span>=</span><span>"</span><span>true</span><span>"</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>path</span><span> </span><span>fill-rule</span><span>=</span><span>"</span><span>evenodd</span><span>"</span><span> </span><span>clip-rule</span><span>=</span><span>"</span><span>evenodd</span><span>"</span><span> </span><span>d</span><span>=</span><span>"</span><span>M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z</span><span>"</span><span> </span><span>/&gt;</span><span></span></div><div><span>      </span><span>&lt;/</span><span>svg</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>input</span><span> </span><span>class</span><span>=</span><span>"</span><span>focus:ring-2</span><span> </span><span>focus:ring-blue-500</span><span> </span><span>focus:outline-none</span><span> </span><span>appearance-none</span><span> </span><span>w-full</span><span> </span><span>text-sm</span><span> </span><span>leading-6</span><span> </span><span>text-slate-900</span><span> </span><span>placeholder-slate-400</span><span> </span><span>rounded-md</span><span> </span><span>py-2</span><span> </span><span>pl-10</span><span> </span><span>ring-1</span><span> </span><span>ring-slate-200</span><span> </span><span>shadow-sm</span><span>"</span><span> </span><span>type</span><span>=</span><span>"</span><span>text</span><span>"</span><span> </span><span>aria-label</span><span>=</span><span>"</span><span>Filter projects</span><span>"</span><span> </span><span>placeholder</span><span>=</span><span>"</span><span>Filter projects...</span><span>"</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>form</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;/</span><span>header</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;</span><span>ul</span><span> </span><span>class</span><span>=</span><span>"</span><span>bg-slate-50</span><span> </span><span>p-4</span><span> </span><span>sm:px-8</span><span> </span><span>sm:pt-6</span><span> </span><span>sm:pb-8</span><span> </span><span>lg:p-4</span><span> </span><span>xl:px-8</span><span> </span><span>xl:pt-6</span><span> </span><span>xl:pb-8</span><span> </span><span>grid</span><span> </span><span>grid-cols-1</span><span> </span><span>sm:grid-cols-2</span><span> </span><span>lg:grid-cols-1</span><span> </span><span>xl:grid-cols-2</span><span> </span><span>gap-4</span><span> </span><span>text-sm</span><span> </span><span>leading-6</span><span>"</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>li</span><span> </span><span>x-for</span><span>=</span><span>"</span><span>project in projects</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>a</span><span> </span><span>:href</span><span>=</span><span>"</span><span>project.url</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>hover:bg-blue-500</span><span> </span><span>hover:ring-blue-500</span><span> </span><span>hover:shadow-md</span><span> </span><span>group</span><span> </span><span>rounded-md</span><span> </span><span>p-3</span><span> </span><span>bg-white</span><span> </span><span>ring-1</span><span> </span><span>ring-slate-200</span><span> </span><span>shadow-sm</span><span>"</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>dl</span><span> </span><span>class</span><span>=</span><span>"</span><span>grid</span><span> </span><span>sm:block</span><span> </span><span>lg:grid</span><span> </span><span>xl:block</span><span> </span><span>grid-cols-2</span><span> </span><span>grid-rows-2</span><span> </span><span>items-center</span><span>"</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>div</span><span>&gt;</span><span></span></div><div><span>            </span><span>&lt;</span><span>dt</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only</span><span>"</span><span>&gt;</span><span>Title</span><span>&lt;/</span><span>dt</span><span>&gt;</span><span></span></div><div><span>            </span><span>&lt;</span><span>dd</span><span> </span><span>class</span><span>=</span><span>"</span><span>group-hover:text-white</span><span> </span><span>font-semibold</span><span> </span><span>text-slate-900</span><span>"</span><span>&gt;</span><span></span></div><div><span>              {project.title}</span></div><div><span>            </span><span>&lt;/</span><span>dd</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>div</span><span>&gt;</span><span></span></div><div><span>            </span><span>&lt;</span><span>dt</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only</span><span>"</span><span>&gt;</span><span>Category</span><span>&lt;/</span><span>dt</span><span>&gt;</span><span></span></div><div><span>            </span><span>&lt;</span><span>dd</span><span> </span><span>class</span><span>=</span><span>"</span><span>group-hover:text-blue-200</span><span>"</span><span>&gt;</span><span>{project.category}</span><span>&lt;/</span><span>dd</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span>col-start-2</span><span> </span><span>row-start-1</span><span> </span><span>row-end-3</span><span> </span><span>sm:mt-4</span><span> </span><span>lg:mt-0</span><span> </span><span>xl:mt-4</span><span>"</span><span>&gt;</span><span></span></div><div><span>            </span><span>&lt;</span><span>dt</span><span> </span><span>class</span><span>=</span><span>"</span><span>sr-only</span><span>"</span><span>&gt;</span><span>Users</span><span>&lt;/</span><span>dt</span><span>&gt;</span><span></span></div><div><span>            </span><span>&lt;</span><span>dd</span><span> </span><span>x-for</span><span>=</span><span>"</span><span>user in project.users</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex</span><span> </span><span>justify-end</span><span> </span><span>sm:justify-start</span><span> </span><span>lg:justify-end</span><span> </span><span>xl:justify-start</span><span> </span><span>-space-x-1.5</span><span>"</span><span>&gt;</span><span></span></div><div><span>              </span><span>&lt;</span><span>img</span><span> </span><span>:src</span><span>=</span><span>"</span><span>user.avatar</span><span>"</span><span> </span><span>:alt</span><span>=</span><span>"</span><span>user.name</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>w-6</span><span> </span><span>h-6</span><span> </span><span>rounded-full</span><span> </span><span>bg-slate-100</span><span> </span><span>ring-2</span><span> </span><span>ring-white</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span>lazy</span><span>"</span><span>&gt;</span><span></span></div><div><span>            </span><span>&lt;/</span><span>dd</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;/</span><span>dl</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;/</span><span>a</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>li</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;</span><span>li</span><span> </span><span>class</span><span>=</span><span>"</span><span>flex</span><span>"</span><span>&gt;</span><span></span></div><div><span>      </span><span>&lt;</span><span>a</span><span> </span><span>href</span><span>=</span><span>"</span><span>/new</span><span>"</span><span> </span><span>class</span><span>=</span><span>"</span><span>hover:border-blue-500</span><span> </span><span>hover:border-solid</span><span> </span><span>hover:bg-white</span><span> </span><span>hover:text-blue-500</span><span> </span><span>group</span><span> </span><span>w-full</span><span> </span><span>flex</span><span> </span><span>flex-col</span><span> </span><span>items-center</span><span> </span><span>justify-center</span><span> </span><span>rounded-md</span><span> </span><span>border-2</span><span> </span><span>border-dashed</span><span> </span><span>border-slate-300</span><span> </span><span>text-sm</span><span> </span><span>leading-6</span><span> </span><span>text-slate-900</span><span> </span><span>font-medium</span><span> </span><span>py-3</span><span>"</span><span>&gt;</span><span></span></div><div><span>        </span><span>&lt;</span><span>svg</span><span> </span><span>class</span><span>=</span><span>"</span><span>group-hover:text-blue-500</span><span> </span><span>mb-1</span><span> </span><span>text-slate-400</span><span>"</span><span> </span><span>width</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>height</span><span>=</span><span>"</span><span>20</span><span>"</span><span> </span><span>fill</span><span>=</span><span>"</span><span>currentColor</span><span>"</span><span> </span><span>aria-hidden</span><span>=</span><span>"</span><span>true</span><span>"</span><span>&gt;</span><span></span></div><div><span>          </span><span>&lt;</span><span>path</span><span> </span><span>d</span><span>=</span><span>"</span><span>M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z</span><span>"</span><span> </span><span>/&gt;</span><span></span></div><div><span>        </span><span>&lt;/</span><span>svg</span><span>&gt;</span><span></span></div><div><span>        New project</span></div><div><span>      </span><span>&lt;/</span><span>a</span><span>&gt;</span><span></span></div><div><span>    </span><span>&lt;/</span><span>li</span><span>&gt;</span><span></span></div><div><span>  </span><span>&lt;/</span><span>ul</span><span>&gt;</span><span></span></div><div><span></span><span>&lt;/</span><span>section</span><span>&gt;</span><span></span></div><div><span></span></div></div></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card5 end -->
+
+    <!-- card6 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-sky-500">
+                    <img src="./images/div.hidden (7).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-sky-500">
+                    Component-driven
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    Worried about duplication? Don’t be.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    If you're repeating the same utilities over and over and over again, all you have to do is extract
+                    them into a component or template partial and boom — you've got a single source of truth so you can
+                    make changes in one place.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+                <div class="mt-10">
+                    <div class="flex overflow-auto -mx-4 sm:mx-0">
+                        <ul class="flex justify-center gap-4 lg:gap-12 px-4 sm:px-0">
+                            <li>
+                                <button>
+                                    <img src="./images/Item.png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item (1).png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item (2).png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item (3).png" alt="Logo" />
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-8">
+                    <img src="./images/div.max-w-7xl (1).png" alt="logo" />
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card6 end -->
+
+    <!-- card7 Start -->
+    <section class="flex flex-col lg:flex-row">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+            <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                Component-driven
+            </p>
+            <p class="mt-4 max-w-3xl space-y-6 ">
+                Use Tailwind's <span class="font-mono font-medium text-slate-200 ">@apply</span> directive to extract
+                repeated utility patterns into custom CSS classes just by copying and pasting the list of class names.
+            </p>
+
+            <a href="#"
+                class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                more <img src="./images/Vector.png" alt="Logo" />
+            </a>
+
+
+
+            <div class="pt-10 ">
+                <div class="relative z-10 rounded-xl shadow-xl ring-1 ring-slate-900/5 bg-slate-800">
+                    <article>
+                        <h2 class="text-lg font-semibold  pt-4 pb-2 px-4 sm:px-6 lg:px-4 xl:px-6 text-slate-100">
+                            Weekly one-on-one</h2>
+                        <dl
+                            class="flex flex-wrap divide-y  border-b  text-sm sm:text-base lg:text-sm xl:text-base divide-slate-200/5 border-slate-200/5">
+                            <div class="px-4 sm:px-6 lg:px-4 xl:px-6 pb-4">
+                                <p>Thu Nov 15, 2020 10:00am - 11:00am EST</p>
+                            </div>
+                            <div class="w-full flex-none flex items-center p-4 sm:p-6 lg:p-4 xl:p-6">
+                                <dt class="w-2/5 sm:w-1/4 flex-none font-medium text-slate-300 ">
+                                    Location
+                                </dt>
+                                <dd>Kitchener, <abbr title="Ontario">ON</abbr></dd>
+                            </div>
+                            <div class="w-full flex-none flex items-center p-4 sm:p-6 lg:p-4 xl:p-6">
+                                <dt class="w-2/5 sm:w-1/4 flex-none font-medium text-slate-300">
+                                    Description
+                                </dt>
+                                <dd class="italic ">No meeting description</dd>
+                            </div>
+                            <div class="w-full flex-none flex items-center p-4 sm:py-5 sm:px-6 lg:p-4 xl:py-5 xl:px-6">
+                                <dt class="w-2/5 sm:w-1/4 flex-none font-medium text-slate-300 ">
+                                    Attendees</dt>
+                                <dd class="text-sm font-medium rounded-full py-1 px-3 bg-slate-700 text-slate-300">
+                                    Andrew McDonald</dd>
+                            </div>
+                        </dl>
+                        <div
+                            class="grid grid-cols-2 gap-x-4 sm:gap-x-6 lg:gap-x-4 xl:gap-x-6 p-4 sm:px-6 sm:py-5 lg:p-4 xl:px-6 xl:py-5">
+                            <div
+                                class="text-base font-medium rounded-lg py-3 text-center cursor-pointer bg-slate-600 text-slate-400">
+                                Decline
+                            </div>
+                            <div
+                                class="text-base font-medium rounded-lg bg-sky-500 text-white py-3 text-center cursor-pointer">
+                                Accept</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="p-4">
+            <img src="./images/div.mt-4_margin.png" alt="images" />
+        </div>
+    </section>
+    <!-- card7 end -->
+
+    <!-- card8 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-slate-600">
+                    <img src="./images/div.hidden (8).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-slate-500">
+                    Dark mode
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    Now with Dark Mode.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">Don’t want to be one of those websites that blinds people when they
+                    open it on their phone at 2am? Enable dark mode in your configuration file then throw <span
+                        class="font-mono font-medium text-slate-200 ">dark:</span> in front of any color utility to
+                    apply it when dark mode is active. Works for background colors, text colors, border colors, and even
+                    gradients.</p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+            </div>
+
+
+            <div class="relative xl:pt-0  xl:mt-2 flex justify-center flex-col lg:flex-row">
+                <!-- left section -->
+                <div>
+                    <img src="./images/div.flex (1).png" alt="Image" />
+                </div>
+
+                <!-- right -->
+                <div class=" -mx-4 sm:mx-0 lg:mt-0 lg:w-5/12 p-6">
+                    <div
+                        class="relative overflow-hidden shadow-xl flex h-[31rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34rem] xl:h-[31rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10">
+                        <div class="relative w-full flex flex-col">
+                            <div class="flex-none border-b border-slate-500/30">
+                                <div class="flex items-center h-8 space-x-1.5 px-3">
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative min-h-0 flex-auto flex flex-col">
+                                <div class="w-full flex-auto flex min-h-0">
+                                    <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                        <div class="w-full relative flex-auto">
+                                            <pre class="flex min-h-full text-sm leading-6"><div class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right select-none">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+</div><code class="flex-auto relative block text-slate-50 pt-4 pb-4 px-4 overflow-auto"><span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>bg-white</span> <span>border-slate-100</span> <span>dark:bg-slate-800</span> <span>dark:border-slate-500</span> <span>border-b</span> <span>rounded-t-xl</span> <span>p-4</span> <span>pb-6</span> <span>sm:p-10</span> <span>sm:pb-8</span> <span>lg:p-6</span> <span>xl:p-10</span> <span>xl:pb-8</span> <span>space-y-6</span> <span>sm:space-y-8</span> <span>lg:space-y-6</span> <span>xl:space-y-8</span><span>"</span></span><span>&gt;</span></span>
+  <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>flex</span> <span>items-center</span> <span>space-x-4</span><span>"</span></span><span>&gt;</span></span>
+    <span ><span>&lt;</span>img <span>src</span><span><span>=</span><span>"</span>/full-stack-radio.png<span>"</span></span> <span>alt</span><span><span>=</span><span>"</span><span>"</span></span> <span>width</span><span><span>=</span><span>"</span>88<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>88<span>"</span></span> <span>class</span><span><span>=</span><span>"</span><span>flex-none</span> <span>rounded-lg</span> <span>bg-slate-100</span><span>"</span></span> <span>loading</span><span><span>=</span><span>"</span>lazy<span>"</span></span> <span>/&gt;</span></span>
+    <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>min-w-0</span> <span>flex-auto</span> <span>space-y-1</span> <span>font-semibold</span><span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>p <span>class</span><span><span>=</span><span>"</span><span>text-cyan-500</span> <span>dark:text-cyan-400</span> <span>text-sm</span> <span>leading-6</span><span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>abbr <span>title</span><span><span>=</span><span>"</span>Episode<span>"</span></span><span>&gt;</span></span>Ep.<span ><span>&lt;/</span>abbr<span>&gt;</span></span> 128
+      <span ><span>&lt;/</span>p<span>&gt;</span></span>
+      <span ><span>&lt;</span>h2 <span>class</span><span><span>=</span><span>"</span><span>text-slate-500</span> <span>dark:text-slate-400</span> <span>text-sm</span> <span>leading-6</span> <span>truncate</span><span>"</span></span><span>&gt;</span></span>
+        Scaling CSS at Heroku with Utility Classes
+      <span ><span>&lt;/</span>h2<span>&gt;</span></span>
+      <span ><span>&lt;</span>p <span>class</span><span><span>=</span><span>"</span><span>text-slate-900</span> <span>dark:text-slate-50</span> <span>text-lg</span><span>"</span></span><span>&gt;</span></span>
+        Full Stack Radio
+      <span ><span>&lt;/</span>p<span>&gt;</span></span>
+    <span ><span>&lt;/</span>div<span>&gt;</span></span>
+  <span ><span>&lt;/</span>div<span>&gt;</span></span>
+  <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>space-y-2</span><span>"</span></span><span>&gt;</span></span>
+    <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>relative</span><span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>bg-slate-100</span> <span>dark:bg-slate-700</span> <span>rounded-full</span> <span>overflow-hidden</span><span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>bg-cyan-500</span> <span>dark:bg-cyan-400</span> <span>w-1/2</span> <span>h-2</span><span>"</span></span> <span>role</span><span><span>=</span><span>"</span>progressbar<span>"</span></span> <span>aria-label</span><span><span>=</span><span>"</span>music progress<span>"</span></span> <span>aria-valuenow</span><span><span>=</span><span>"</span>1456<span>"</span></span> <span>aria-valuemin</span><span><span>=</span><span>"</span>0<span>"</span></span> <span>aria-valuemax</span><span><span>=</span><span>"</span>4550<span>"</span></span><span>&gt;</span></span><span ><span>&lt;/</span>div<span>&gt;</span></span>
+      <span ><span>&lt;/</span>div<span>&gt;</span></span>
+      <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>ring-cyan-500</span> <span>dark:ring-cyan-400</span> <span>ring-2</span> <span>absolute</span> <span>left-1/2</span> <span>top-1/2</span> <span>w-4</span> <span>h-4</span> <span>-mt-2</span> <span>-ml-2</span> <span>flex</span> <span>items-center</span> <span>justify-center</span> <span>bg-white</span> <span>rounded-full</span> <span>shadow</span><span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>w-1.5</span> <span>h-1.5</span> <span>bg-cyan-500</span> <span>dark:bg-cyan-400</span> <span>rounded-full</span> <span>ring-1</span> <span>ring-inset</span> <span>ring-slate-900/5</span><span>"</span></span><span>&gt;</span></span><span ><span>&lt;/</span>div<span>&gt;</span></span>
+      <span ><span>&lt;/</span>div<span>&gt;</span></span>
+    <span ><span>&lt;/</span>div<span>&gt;</span></span>
+    <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>flex</span> <span>justify-between</span> <span>text-sm</span> <span>leading-6</span> <span>font-medium</span> <span>tabular-nums</span><span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>text-cyan-500</span> <span>dark:text-slate-100</span><span>"</span></span><span>&gt;</span></span>24:16<span ><span>&lt;/</span>div<span>&gt;</span></span>
+      <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>text-slate-500</span> <span>dark:text-slate-400</span><span>"</span></span><span>&gt;</span></span>75:50<span ><span>&lt;/</span>div<span>&gt;</span></span>
+    <span ><span>&lt;/</span>div<span>&gt;</span></span>
+  <span ><span>&lt;/</span>div<span>&gt;</span></span>
+<span ><span>&lt;/</span>div<span>&gt;</span></span>
+<span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>bg-slate-50</span> <span>text-slate-500</span> <span>dark:bg-slate-600</span> <span>dark:text-slate-200</span> <span>rounded-b-xl</span> <span>flex</span> <span>items-center</span><span>"</span></span><span>&gt;</span></span>
+  <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>flex-auto</span> <span>flex</span> <span>items-center</span> <span>justify-evenly</span><span>"</span></span><span>&gt;</span></span>
+    <span ><span>&lt;</span>button <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>aria-label</span><span><span>=</span><span>"</span>Add to favorites<span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>svg <span>width</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>24<span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M7 6.931C7 5.865 7.853 5 8.905 5h6.19C16.147 5 17 5.865 17 6.931V19l-5-4-5 4V6.931Z<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+      <span ><span>&lt;/</span>svg<span>&gt;</span></span>
+    <span ><span>&lt;/</span>button<span>&gt;</span></span>
+    <span ><span>&lt;</span>button <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>class</span><span><span>=</span><span>"</span><span>hidden</span> <span>sm:block</span> <span>lg:hidden</span> <span>xl:block</span><span>"</span></span> <span>aria-label</span><span><span>=</span><span>"</span>Previous<span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>svg <span>width</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>none<span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>m10 12 8-6v12l-8-6Z<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M6 6v12<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+      <span ><span>&lt;/</span>svg<span>&gt;</span></span>
+    <span ><span>&lt;/</span>button<span>&gt;</span></span>
+    <span ><span>&lt;</span>button <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>aria-label</span><span><span>=</span><span>"</span>Rewind 10 seconds<span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>svg <span>width</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>none<span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M6.492 16.95c2.861 2.733 7.5 2.733 10.362 0 2.861-2.734 2.861-7.166 0-9.9-2.862-2.733-7.501-2.733-10.362 0A7.096 7.096 0 0 0 5.5 8.226<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M5 5v3.111c0 .491.398.889.889.889H9<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+      <span ><span>&lt;/</span>svg<span>&gt;</span></span>
+    <span ><span>&lt;/</span>button<span>&gt;</span></span>
+  <span ><span>&lt;/</span>div<span>&gt;</span></span>
+  <span ><span>&lt;</span>button <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>class</span><span><span>=</span><span>"</span><span>bg-white</span> <span>text-slate-900</span> <span>dark:bg-slate-100</span> <span>dark:text-slate-700</span> <span>flex-none</span> <span>-my-2</span> <span>mx-auto</span> <span>w-20</span> <span>h-20</span> <span>rounded-full</span> <span>ring-1</span> <span>ring-slate-900/5</span> <span>shadow-md</span> <span>flex</span> <span>items-center</span> <span>justify-center</span><span>"</span></span> <span>aria-label</span><span><span>=</span><span>"</span>Pause<span>"</span></span><span>&gt;</span></span>
+    <span ><span>&lt;</span>svg <span>width</span><span><span>=</span><span>"</span>30<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>32<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>currentColor<span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>rect <span>x</span><span><span>=</span><span>"</span>6<span>"</span></span> <span>y</span><span><span>=</span><span>"</span>4<span>"</span></span> <span>width</span><span><span>=</span><span>"</span>4<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>rx</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>/&gt;</span></span>
+      <span ><span>&lt;</span>rect <span>x</span><span><span>=</span><span>"</span>20<span>"</span></span> <span>y</span><span><span>=</span><span>"</span>4<span>"</span></span> <span>width</span><span><span>=</span><span>"</span>4<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>rx</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>/&gt;</span></span>
+    <span ><span>&lt;/</span>svg<span>&gt;</span></span>
+  <span ><span>&lt;/</span>button<span>&gt;</span></span>
+  <span ><span>&lt;</span>div <span>class</span><span><span>=</span><span>"</span><span>flex-auto</span> <span>flex</span> <span>items-center</span> <span>justify-evenly</span><span>"</span></span><span>&gt;</span></span>
+    <span ><span>&lt;</span>button <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>aria-label</span><span><span>=</span><span>"</span>Skip 10 seconds<span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>svg <span>width</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>none<span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M17.509 16.95c-2.862 2.733-7.501 2.733-10.363 0-2.861-2.734-2.861-7.166 0-9.9 2.862-2.733 7.501-2.733 10.363 0 .38.365.711.759.991 1.176<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M19 5v3.111c0 .491-.398.889-.889.889H15<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+      <span ><span>&lt;/</span>svg<span>&gt;</span></span>
+    <span ><span>&lt;/</span>button<span>&gt;</span></span>
+    <span ><span>&lt;</span>button <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>class</span><span><span>=</span><span>"</span><span>hidden</span> <span>sm:block</span> <span>lg:hidden</span> <span>xl:block</span><span>"</span></span> <span>aria-label</span><span><span>=</span><span>"</span>Next<span>"</span></span><span>&gt;</span></span>
+      <span ><span>&lt;</span>svg <span>width</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>height</span><span><span>=</span><span>"</span>24<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>none<span>"</span></span><span>&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M14 12 6 6v12l8-6Z<span>"</span></span> <span>fill</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+        <span ><span>&lt;</span>path <span>d</span><span><span>=</span><span>"</span>M18 6v12<span>"</span></span> <span>stroke</span><span><span>=</span><span>"</span>currentColor<span>"</span></span> <span>stroke-width</span><span><span>=</span><span>"</span>2<span>"</span></span> <span>stroke-linecap</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>stroke-linejoin</span><span><span>=</span><span>"</span>round<span>"</span></span> <span>/&gt;</span></span>
+      <span ><span>&lt;/</span>svg<span>&gt;</span></span>
+    <span ><span>&lt;/</span>button<span>&gt;</span></span>
+    <span ><span>&lt;</span>button <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>class</span><span><span>=</span><span>"</span><span>rounded-lg</span> <span>text-xs</span> <span>leading-6</span> <span>font-semibold</span> <span>px-2</span> <span>ring-2</span> <span>ring-inset</span> <span>ring-slate-500</span> <span>text-slate-500</span> <span>dark:text-slate-100</span> <span>dark:ring-0</span> <span>dark:bg-slate-500</span><span>"</span></span><span>&gt;</span></span>
+      1x
+    <span ><span>&lt;/</span>button<span>&gt;</span></span>
+  <span ><span>&lt;/</span>div<span>&gt;</span></span>
+<span ><span>&lt;/</span>div<span>&gt;</span></span>
+</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card8 end -->
+
+    <!-- card9 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-pink-500">
+                    <img src="./images/div.hidden (9).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-pink-400">
+                    Customization
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    Extend it, tweak it, change it.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Tailwind includes an expertly crafted set of defaults out-of-the-box, but literally everything can
+                    be customized — from the color palette to the spacing scale to the box shadows to the mouse cursor.
+                </p>
+                <br />
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Use the tailwind.config.js file to craft your own design system, then let Tailwind transform it into
+                    your own custom CSS framework.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+                <div class="mt-10">
+                    <div class="flex overflow-auto -mx-4 sm:mx-0">
+                        <ul class="flex justify-center gap-4 lg:gap-12 px-4 sm:px-0">
+                            <li>
+                                <button>
+                                    <img src="./images/Item (4).png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Button.png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item (5).png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item (6).png" alt="Logo" />
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="relative xl:pt-0  xl:mt-2 flex justify-center flex-col lg:flex-row">
+                <!-- left section -->
+                <div class="pt-4">
+                    <img src="./images/div.relative (5).png" alt="Image" />
+                </div>
+
+                <!-- right -->
+                <div class=" -mx-4 sm:mx-0 lg:mt-0 lg:w-5/12 p-6">
+                    <div
+                        class="relative overflow-hidden shadow-xl flex h-[31rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34rem] xl:h-[31rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10">
+                        <div class="relative w-full flex flex-col">
+                            <div class="flex-none border-b border-slate-500/30">
+                                <div class="flex items-center h-8 space-x-1.5 px-3">
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative min-h-0 flex-auto flex flex-col">
+                                <div class="w-full flex-auto flex min-h-0">
+                                    <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                        <div class="w-full relative flex-auto">
+                                            <pre class="flex min-h-full text-sm leading-6"><div class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right select-none" style="width: 50px;">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+</div><code class="flex-auto relative block text-slate-50 pt-4 pb-4 px-4 overflow-auto">module<span >.</span><span>exports</span> <span>=</span> <span >{</span>
+  <span>theme</span><span>:</span> <span >{</span>
+    <span>fontFamily</span><span>:</span> <span >{</span>
+      <span>display</span><span>:</span> <span >[</span><span>'<span>Inter</span>'</span><span >,</span> <span>'<span>system-ui</span>'</span><span >,</span> <span>'<span>sans-serif</span>'</span><span >]</span><span >,</span>
+      <span>body</span><span>:</span> <span >[</span><span>'<span>Inter</span>'</span><span >,</span> <span>'<span>system-ui</span>'</span><span >,</span> <span>'<span>sans-serif</span>'</span><span >]</span><span >,</span>
+    <span >}</span><span >,</span>
+    <span>colors</span><span>:</span> <span >{</span>
+      <span>primary</span><span>:</span> <span >{</span>
+        <span >50</span><span>:</span> <span>'<span>#eff6ff</span>'</span><span >,</span>
+        <span >100</span><span>:</span> <span>'<span>#dbeafe</span>'</span><span >,</span>
+        <span >200</span><span>:</span> <span>'<span>#bfdbfe</span>'</span><span >,</span>
+        <span >300</span><span>:</span> <span>'<span>#93c5fd</span>'</span><span >,</span>
+        <span >400</span><span>:</span> <span>'<span>#60a5fa</span>'</span><span >,</span>
+        <span >500</span><span>:</span> <span>'<span>#3b82f6</span>'</span><span >,</span>
+        <span >600</span><span>:</span> <span>'<span>#2563eb</span>'</span><span >,</span>
+        <span >700</span><span>:</span> <span>'<span>#1d4ed8</span>'</span><span >,</span>
+        <span >800</span><span>:</span> <span>'<span>#1e40af</span>'</span><span >,</span>
+        <span >900</span><span>:</span> <span>'<span>#1e3a8a</span>'</span><span >,</span>
+      <span >}</span><span >,</span>
+      <span><span>secondary</span></span><span>:</span> <span >{</span>
+        <span >50</span><span>:</span> <span>'<span>#f8fafc</span>'</span><span >,</span>
+        <span >100</span><span>:</span> <span>'<span>#f1f5f9</span>'</span><span >,</span>
+        <span >200</span><span>:</span> <span>'<span>#e2e8f0</span>'</span><span >,</span>
+        <span >300</span><span>:</span> <span>'<span>#cbd5e1</span>'</span><span >,</span>
+        <span >400</span><span>:</span> <span>'<span>#94a3b8</span>'</span><span >,</span>
+        <span >500</span><span>:</span> <span>'<span>#64748b</span>'</span><span >,</span>
+        <span >600</span><span>:</span> <span>'<span>#475569</span>'</span><span >,</span>
+        <span >700</span><span>:</span> <span>'<span>#334155</span>'</span><span >,</span>
+        <span >800</span><span>:</span> <span>'<span>#1e293b</span>'</span><span >,</span>
+        <span >900</span><span>:</span> <span>'<span>#0f172a</span>'</span><span >,</span>
+      <span >}</span><span >,</span>
+    <span >}</span><span >,</span>
+  <span >}</span><span >,</span>
+<span >}</span>
+</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card9 end -->
+
+    <!-- card10 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-indigo-500">
+                    <img src="./images/div.hidden (10).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-indigo-400">
+                    Modern features
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    Cutting-edge is our comfort zone.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Tailwind is unapologetically modern, and takes advantage of all the latest and greatest CSS features
+                    to make the developer experience as enjoyable as possible.
+                </p>
+                <br />
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    We've got first-class CSS grid support, composable transforms and gradients powered by CSS
+                    variables, support for modern state selectors like <span
+                        class="font-mono font-medium text-slate-200 ">:focus-visible</span>, and tons more.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+                <div class="mt-10">
+                    <div class="flex overflow-auto -mx-4 sm:mx-0">
+                        <ul class="flex justify-center gap-4 lg:gap-12 px-4 sm:px-0">
+                            <li>
+                                <button>
+                                    <img src="./images/Item (7).png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item (8).png" alt="Logo" />
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./images/Item (9).png" alt="Logo" />
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="relative xl:pt-0  xl:mt-2 flex justify-center flex-col lg:flex-row">
+                <!-- left section -->
+                <div>
+                    <img src="./images/div.flex (2).png" alt="Image" />
+                </div>
+
+                <!-- right -->
+                <div class=" -mx-4 sm:mx-0 lg:mt-0 lg:w-5/12 p-6">
+                    <div
+                        class="relative overflow-hidden shadow-xl flex h-[31rem] max-h-[60vh] sm:max-h-[none] rounded-xl lg:h-[34rem] xl:h-[31rem] bg-slate-900/70 backdrop-blur ring-1 ring-inset ring-white/10">
+                        <div class="relative w-full flex flex-col">
+                            <div class="flex-none border-b border-slate-500/30">
+                                <div class="flex items-center h-8 space-x-1.5 px-3">
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 bg-slate-600 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative min-h-0 flex-auto flex flex-col">
+                                <div class="w-full flex-auto flex min-h-0">
+                                    <div class="w-full flex-auto flex min-h-0 overflow-auto">
+                                        <div class="w-full relative flex-auto">
+                                            <pre class="flex min-h-full text-sm leading-6"><div class="hidden md:block text-slate-600 flex-none py-4 pr-4 text-right select-none w-[3.125rem]">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18</div><code class="flex-auto relative block text-slate-50 overflow-auto p-4"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span >grid grid-flow-col grid-rows-2 grid-cols-3 gap-8</span><span>"</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span >/mountains-1.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span >lazy</span><span>"</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span >col-start-3</span><span>"</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span >/mountains-2.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span >lazy</span><span>"</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span >/mountains-3.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span >lazy</span><span>"</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;</span><span>div</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span >/mountains-4.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span >lazy</span><span>"</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"</span><span >row-start-1 col-start-2 col-span-2</span><span>"</span><span>&gt;</span><span></span>
+<span>    </span><span>&lt;</span><span>img</span><span> </span><span>src</span><span>=</span><span>"</span><span >/mountains-5.jpg</span><span>"</span><span> </span><span>alt</span><span>=</span><span>"</span><span>"</span><span> </span><span>loading</span><span>=</span><span>"</span><span >lazy</span><span>"</span><span>&gt;</span><span></span>
+<span>  </span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span></span><span>&lt;/</span><span>div</span><span>&gt;</span><span></span>
+<span></span>
+</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- card10 end -->
+
+    <!-- card11 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-sky-500">
+                    <img src="./images/div.hidden (11).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-sky-500">
+                    Editor tools
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    World-class IDE integration.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Worried about remembering all of these class names? The Tailwind CSS IntelliSense extension for VS
+                    Code has you covered.
+                </p>
+                <br />
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Get intelligent autocomplete suggestions, linting, class definitions and more, all within your
+                    editor and with no configuration required.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+                <div class="pt-4">
+                    <img src="./images/div.relative (6).png" alt="Image" />
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- card11 end -->
+
+    <!-- card12 Start -->
+    <section
+        class="pt-20 mb-20 flex flex-col gap-y-20 overflow-hidden sm:pt-32 sm:mb-32 sm:gap-y-32 md:pt-40 md:mb-40 md:gap-y-40">
+        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="w-16 h-16 p-1 rounded-full shadow overflow-hidden bg-indigo-500">
+                    <img src="./images/div.hidden (12).png" alt="Logo" />
+                </div>
+                <h2 class="mt-8 font-semibold text-indigo-400">
+                    Ready-made components
+                </h2>
+                <p class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-50 ">
+                    Move even faster with Tailwind UI.
+                </p>
+                <p class="mt-4 max-w-3xl space-y-6 ">
+                    Tailwind UI is a collection of beautiful, fully responsive UI components, designed and developed by
+                    us, the creators of Tailwind CSS. It's got hundreds of ready-to-use examples to choose from, and is
+                    guaranteed to help you find the perfect starting point for what you want to build.
+                </p>
+
+                <a href="#"
+                    class="gap-3 inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8">Learn
+                    more <img src="./images/Vector.png" alt="Logo" />
+                </a>
+
+
+                <div class="pt-4">
+                    <img src="./images/div.max-w-7xl_mask-group.png" alt="Image" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- card12 end -->
+
+
+    <!-- Footer start -->
+    <footer class="pb-16 text-sm leading-6">
+        <div class="max-w-7xl mx-auto divide-y px-4 sm:px-6 md:px-8 divide-slate-700">
+            <div class="flex gap-4">
+                <div class="flex-none w-1/2 space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
+                    <div class="lg:flex-none lg:w-1/2">
+                        <h2 class="font-semibold text-slate-100">Getting Started</h2>
+                        <ul class="mt-3 space-y-2">
+                            <li><a class="hover:text-slate-300" href="#">Installation</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Editor Setup</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Using with
+                                    Preprocessors</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Optimizing for
+                                    Production</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Browser Support</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Upgrade Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:flex-none lg:w-1/2">
+                        <h2 class="font-semibold text-slate-100">Core Concepts</h2>
+                        <ul class="mt-3 space-y-2">
+                            <li><a class="hover:text-slate-300" href="#">Utility-First
+                                    Fundamentals</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Handling Hover,
+                                    Focus, and Other States</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Responsive
+                                    Design</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Dark Mode</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Reusing Styles</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Adding Custom
+                                    Styles</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Functions &amp;
+                                    Directives</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="flex-none w-1/2 space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
+                    <div class="lg:flex-none lg:w-1/2">
+                        <h2 class="font-semibold text-slate-900 dark:text-slate-100">
+                            Customization</h2>
+                        <ul class="mt-3 space-y-2">
+                            <li><a class="hover:text-slate-300" href="#">Configuration</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Content
+                                    Configuration</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Theme
+                                    Configuration</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Customizing
+                                    Screens</a>
+                            </li>
+                            <li><a class="hover:text-slate-300" href="#">Customizing
+                                    Colors</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Customizing
+                                    Spacing</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Plugins</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Presets</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:flex-none lg:w-1/2">
+                        <h2 class="font-semibold text-slate-900 dark:text-slate-100">Community
+                        </h2>
+                        <ul class="mt-3 space-y-2">
+                            <li><a class="hover:text-slate-300" href="#">GitHub</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Discord</a></li>
+                            <li><a class="hover:text-slate-300" href="#">Twitter</a></li>
+                            <li><a class="hover:text-slate-300" href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-10">
+                <img src="./images/SVG.png" alt="TailwindCss" />
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+</body>
+
+</html>
