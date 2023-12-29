@@ -1100,6 +1100,14 @@ const projects = [
         "description":"Random Meal Generator can generator different meals. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Random-Meal-Generator",
         "project-link":"Projects/Random-Meal-Generator/index.html"
+    },
+    {
+        "title":"Simple Cartoon Portfolio",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/cartoonWebsite.png",
+        "description":"Simple Cartoon Portfolio Website designed to showcase a sample representation of kids website.",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Simple-Cartoon-Portfolio",
+        "project-link":"Projects/Simple-Cartoon-Portfolio/index.html"
     }
 ]
 

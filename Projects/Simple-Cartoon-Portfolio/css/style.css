@@ -1,0 +1,195 @@
+  /* fonts */
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: #211c22;
+  width: 90%;
+  margin: auto;
+}
+
+/* navbar */
+.navbar {
+  height: 100px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3% 5% 0 5%;
+  margin: auto;
+}
+
+.logo {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.7rem;
+  color: white;
+  width: 20%;
+  letter-spacing: -3px;
+}
+
+.logo span {
+  color: rgb(255, 0, 0);
+  letter-spacing: -3px;
+}
+
+.menu-items {
+  display: flex;
+  padding: 0 2% 0 10%;
+  width: 65%;
+}
+
+.menu-items ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.menu-items li {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-items li:hover {
+  color: bisque;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.nav-btn {
+  width: 20%;
+}
+
+.nav-btn button {
+  width: 200px;
+  border-radius: 5%;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* bdy */
+
+.bdy {
+  width: 80%;
+  height: min-content;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3%;
+}
+
+.txt-section {
+  padding-top: 10%;
+}
+
+.txt-section h1 {
+  margin: 0;
+  color: white;
+  padding-left: 2%;
+  width: 255px;
+  font-family: "Style Script", cursive;
+  position: relative;
+  bottom: -45px;
+  left: 25px;
+}
+
+.txt-section span {
+  font-size: 8rem;
+  color: white;
+  font-family: "Style Script", cursive;
+}
+
+.t2 {
+  padding-left: 4%;
+  font-size: 3rem;
+  color: white;
+  width: 255px;
+  position: relative;
+  top: -66px;
+}
+
+.img-section {
+  width: 50%;
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.contact-section {
+  width: 300px;
+  padding-top: 0%;
+  position: relative;
+  top: -56px;
+}
+
+.contact-section form {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+.contact-section form input:first-child {
+  width: 450px;
+  display: inline-block;
+  padding: 14px 0px 14px 15px;
+  border: 2px solid #f9004d;
+  border-radius: 30px;
+}
+
+.contact-section form input:last-child {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: #f9004d;
+  color: white;
+  top: 6px;
+  right: -162px;
+}
+
+.icons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 150%;
+  padding: 2%;
+}
+
+.icons img {
+  filter: invert(100);
+  width: 6%;
+  padding: 2%;
+  transition: all 0.2s ease-in-out;
+}
+
+.icons img:hover {
+  filter: invert(100);
+  width: 6%;
+  padding: 2%;
+  animation: glow 0.2s ease-in-out infinite alternate;
+  scale: 1.5;
+}
+
+.selected{
+  color: bisque;
+  scale: 1.2;
+  cursor: pointer;
+}

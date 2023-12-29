@@ -1,0 +1,53 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+margin: auto;
+text-align: center;
+letter-spacing: 0;
+}
+
+.width-max{
+    width: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5%;
+}
+
+.form-head-h2{
+    color: white;
+    font-size: 2rem;
+    margin: 2% auto 0 auto;
+}
+
+.form-head-h3{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin: auto;
+    padding: 1% 0 0 0   ;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 5px 0;
+}
+
+input{
+    border-radius: .7rem;
+    height: 35px;
+    padding: 0%;
+}

@@ -1,0 +1,44 @@
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #211c22;
+}
+
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+.bdy {
+    width: 100%;
+    height: min-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.rows{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 7%;
+}
+
+.items{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+iframe{
+    width: 500px;
+    height: 320px;
+    margin: 2%;
+}
