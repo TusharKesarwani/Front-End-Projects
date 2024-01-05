@@ -50,8 +50,8 @@ Example: activeSorrtingOrder(1, 1) which add a active class to the descending ic
 
 # Screenshots of the Project
 
-!(Desktop View)[screenshots/desktop_view.png]
-!(Mobile View)[screenshots/mobile_view.png]
+![Desktop View](screenshots/desktop_view.png)
+![Mobile View](screenshots/mobile_view.png)
 
 # Contributed By :
 Dinesh Kumar
