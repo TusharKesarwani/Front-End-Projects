@@ -52,8 +52,6 @@
 
 
 
-
-
 <h2 align= center> Tech Stacks used ✨ </h2>
 
 <p align="center">
