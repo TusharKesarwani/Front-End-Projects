@@ -49,8 +49,8 @@ Example: activeSorrtingOrder(1, 1) which add a active class to the descending ic
 -> This function basically selects all the icon which are contains 'active' class and remove 'active' class from them one by one. This function is called when the sortData function is called.
 
 # Screenshots of the Project
-<img src="/screenshots/desktop_view.png" alt=""/><br />
-<img src="/screenshots/mobile_view.png" alt=""/><br />
+!(Desktop View)[https://github.com/DineshK3012/Front-End-Projects/blob/invoice_filter/Projects/Invoice_Filter/screenshots/desktop_view.png]
+!(Mobile View)[https://github.com/DineshK3012/Front-End-Projects/blob/invoice_filter/Projects/Invoice_Filter/screenshots/mobile_view.png]
 
 # Contributed By :
 Dinesh Kumar
