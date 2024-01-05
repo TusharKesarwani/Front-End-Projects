@@ -1,0 +1,197 @@
+{
+  "invoices": [
+    {
+      "invoice_id": 16,
+      "client_name": "Thomas Lynial",
+      "date": "2019-12-06",
+      "due_date": "2019-12-22",
+      "total": 450,
+      "balance": 367,
+      "status": "Draft",
+      "client_type": "In-State"
+    },
+
+    {
+      "invoice_id": 18,
+      "client_name": "Jason Jornal",
+      "date": "2018-07-05",
+      "due_date": "2018-08-12",
+      "total": 797,
+      "balance": 597,
+      "status": "Paid",
+      "client_type": "Out-State"
+    },
+    
+    {
+      "invoice_id": 17,
+      "client_name": "Micheal Strikes",
+      "date": "2019-11-05",
+      "due_date": "2019-11-12",
+      "total": 458,
+      "balance": 568,
+      "status": "Partial Payment",
+      "client_type": "In-State"
+    },
+
+    {
+      "invoice_id": 20,
+      "client_name": "Jenson Clark",
+      "date": "2020-10-05",
+      "due_date": "2020-11-12",
+      "total": 576,
+      "balance": 340,
+      "status": "Draft",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 1,
+      "client_name": "Valentin Polgreen",
+      "date": "2020-08-10",
+      "due_date": "2022-01-22",
+      "total": 5979,
+      "balance": 4691,
+      "status": "Paid",
+      "client_type": "In-State"
+    },
+    {
+      "invoice_id": 2,
+      "client_name": "Ardelis Marshalleck",
+      "date": "2020-02-03",
+      "due_date": "2019-08-10",
+      "total": 1803,
+      "balance": 7250,
+      "status": "Paid",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 3,
+      "client_name": "Trstram MacCafferky",
+      "date": "2019-02-23",
+      "due_date": "2021-03-09",
+      "total": 5966,
+      "balance": 8093,
+      "status": "Partial Payment",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 4,
+      "client_name": "Thomasina Acarson",
+      "date": "2021-08-09",
+      "due_date": "2021-05-04",
+      "total": 1763,
+      "balance": 815,
+      "status": "Paid",
+      "client_type": "In-State"
+    },
+    {
+      "invoice_id": 5,
+      "client_name": "Karlee Alvares",
+      "date": "2020-03-22",
+      "due_date": "2021-03-24",
+      "total": 3843,
+      "balance": 2909,
+      "status": "Draft",
+      "client_type": "In-State"
+    },
+    {
+      "invoice_id": 6,
+      "client_name": "Jacklin Lescop",
+      "date": "2019-07-23",
+      "due_date": "2020-03-05",
+      "total": 3552,
+      "balance": 3947,
+      "status": "Paid",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 7,
+      "client_name": "Horatio Hairsine",
+      "date": "2022-06-26",
+      "due_date": "2019-05-27",
+      "total": 4869,
+      "balance": 5803,
+      "status": "Draft",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 8,
+      "client_name": "Stevana Matthessen",
+      "date": "2020-01-03",
+      "due_date": "2021-07-24",
+      "total": 7750,
+      "balance": 3419,
+      "status": "Partial Payment",
+      "client_type": "In-State"
+    },
+    {
+      "invoice_id": 9,
+      "client_name": "Noreen MacMaster",
+      "date": "2020-11-09",
+      "due_date": "2021-12-13",
+      "total": 4159,
+      "balance": 9196,
+      "status": "Partial Payment",
+      "client_type": "In-State"
+    },
+    {
+      "invoice_id": 10,
+      "client_name": "Penni Castaner",
+      "date": "2020-02-16",
+      "due_date": "2022-04-24",
+      "total": 4115,
+      "balance": 3401,
+      "status": "Draft",
+      "client_type": "In-State"
+    },
+    {
+      "invoice_id": 11,
+      "client_name": "Clevie Yegorovnin",
+      "date": "2022-01-03",
+      "due_date": "2020-02-06",
+      "total": 9320,
+      "balance": 3580,
+      "status": "Partial Payment",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 12,
+      "client_name": "Modestia Antrack",
+      "date": "2019-12-01",
+      "due_date": "2022-04-18",
+      "total": 2707,
+      "balance": 5994,
+      "status": "Paid",
+      "client_type": "In-State"
+    },
+    {
+      "invoice_id": 13,
+      "client_name": "Eolande Mavin",
+      "date": "2022-10-04",
+      "due_date": "2021-07-09",
+      "total": 1268,
+      "balance": 3305,
+      "status": "Partial Payment",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 14,
+      "client_name": "Ervin Matelaitis",
+      "date": "2020-06-12",
+      "due_date": "2020-06-28",
+      "total": 1940,
+      "balance": 7174,
+      "status": "Paid",
+      "client_type": "Out-State"
+    },
+    {
+      "invoice_id": 15,
+      "client_name": "Ilse Lum",
+      "date": "2021-03-21",
+      "due_date": "2022-05-22",
+      "total": 9377,
+      "balance": 4157,
+      "status": "Draft",
+      "client_type": "In-State"
+    }
+  ]
+}
