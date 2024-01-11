@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact form </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" name="name" content="Sanju Gurung">
+	<meta charset="utf-8" name="name" description="Online Mobile Store">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+	<!-- Go to Top Button -->
+	<button class="topButton" id="topButton" onclick="goToTop();">Go to Top</button>
+	
+	<!-- Main Header and Navbar -->
+	<header>
+		<!-- header section starts  -->
+
+<header>
+
+    <div class="header-1">
+
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Primrose</a>
+
+        <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+         <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact Us</a>
+           </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+			</nav>
+		</div>
+	</header>
+
+
+<!--section starts -->
+
+
+
+<section id="contact-form">
+        <div class="container d-flex">
+            <div class="form-box" style="padding-right: 50px;">
+                <form onsubmit="return contactValidation();" action="index.html">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="contact-email" class="form-control" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea rows="4" id="message" placeholder="Write any message you want to convey to me"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            
+            </div>
+            
+        </div>
+    </section>
+
+<!-- section ends-->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Primrose</a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam culpa sit enim nesciunt rerum laborum illum quam error ut alias!</p>
+            <div class="share">
+                <a href="#" class="btn fab fa-facebook-f"></a>
+                <a href="#" class="btn fab fa-twitter"></a>
+                <a href="#" class="btn fab fa-instagram"></a>
+                <a href="#" class="btn fab fa-linkedin"></a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3>our location</h3>
+            <div class="links">
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+                <a href="#">Japan</a>
+                <a href="#">Nepal</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <div class="links">
+                <a href="index.html">home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="products.html">product</a>
+                <a href="research.html">research</a>
+                <a href="contact.html">contact</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>download app</h3>
+            <div class="links">
+                <a href="https://play.google.com/store/games">google play</a>
+                <a href="https://www.apple.com/app-store/">app store</a>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Primrose</span> | all rights reserved! </h1>
+
+</section>
+
+<!-- footer section ends -->
+<script type="text/javascript" src="./js/script.js"></script>
+
+<script type="text/javascript">
+        
+        function contactValidation() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('contact-email').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
+
+            if(name == "" || email == "" || phone == "" || message == "") {
+                alert("Please fill all the details in the form");
+                return false;
+            } else {
+                alert('You have submitted the form successfully');
+                return true;
+            }
+        }
+        
+    </script>
+</body>
+</html>
