@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock Paper Sscissors</title>
+  </head>
+  <body>
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-[100vh]">
+      <div class="xl:w-[50%] md-w-[100%] m-auto pt-5 flex flex-col gap-[100px]">
+        <div class="border-2 rounded-md p-5 flex justify-between">
+          <img src="./assets/svg/logo.svg" />
+          <div
+            class="flex flex-col justify-center text-center bg-white rounded-lg p-5 gap-3"
+          >
+            <span class="text-2xl text-blue-400">Score</span>
+            <span class="font-bold text-4xl text-blue-400" id="score">0</span>
+          </div>
+        </div>
+        <div class="justify-center flex">
+          <div
+            class="relative bg-[url('./assets/svg/bg-triangle.svg')] h-[300px] w-[305px] bg-no-repeat bg-center"
+          >
+            <div
+              class="bg-white absolute left-0 top-[-10%] rounded-full w-[100px] h-[100px] flex hover:shadow-[0_1px_20px_10px_#f8f8f8]"
+            >
+              <img src="./assets/svg/icon-paper.svg" class="m-auto" />
+            </div>
+            <div
+              class="bg-white absolute right-0 top-[-10%] rounded-full w-[100px] h-[100px] flex hover:shadow-[0_1px_20px_10px_#f8f8f8]"
+            >
+              <img src="./assets/svg/icon-scissors.svg" class="m-auto" />
+            </div>
+            <div
+              class="bg-white absolute left-[34%] bottom-0 rounded-full w-[100px] h-[100px] flex hover:shadow-[0_1px_20px_10px_#f8f8f8]"
+            >
+              <img src="./assets/svg/icon-rock.svg" class="m-auto" />
+            </div>
+          </div>
+        </div>
+        <button
+          class="bg-white w-[100px] border-0 text-sky-500 rounded-lg m-auto pointer"
+        >
+          Reset game
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
