@@ -18,7 +18,6 @@ const Main = {
   result: "",
 
   play(type) {
-    console.log("ok");
     this.computer = this.getRandomItem([PAPER, SCISSORS, ROCK]);
     this.player = type;
 
