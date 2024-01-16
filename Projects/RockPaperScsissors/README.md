@@ -34,3 +34,7 @@ No special setup is required to run the game. Simply open the index.html file in
 - index.html: The main HTML file containing the game structure.
 - style.css: The CSS file for styling the game.
 - main.js: The JavaScript file containing the game logic.
+
+# CONTRIBUTED BY:
+
+[https://github.com/nguyenkhoi2806](KHOI)
