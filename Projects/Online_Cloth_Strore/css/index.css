@@ -1,0 +1,104 @@
+/* index.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Add more styles as needed */
+/* ... */
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-box-container {
+    position: relative;
+}
+
+#search-box {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
+
+#search-box:focus {
+    outline: none;
+}
+
+/* Add more header styles as needed */
+/* ... */
+
+/* Home section styles */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.image img {
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 0 50px;
+}
+
+/* Add more home section styles as needed */
+/* ... */
+
+/* Newsletter section styles */
+.newsletter {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Add more newsletter section styles as needed */
+/* ... */
+
+/* Footer section styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
