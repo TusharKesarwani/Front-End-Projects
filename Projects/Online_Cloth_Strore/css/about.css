@@ -1,0 +1,28 @@
+/* CSS styles for aboutus.html */
+
+p {
+    font-size: 20px;
+}
+
+#readmore_title {
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#paragraph_readmore {
+    font-size: 20px;
+}
+
+#more-text {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    padding-top: 60px;
+}
+
+img.center {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
