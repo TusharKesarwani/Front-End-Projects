@@ -138,5 +138,3 @@ You can refer to the following articles on **_basics of Git and Github and also 
 
 Show some ❤️&nbsp; by giving the star to this repo
 <p align="right"><a href="https://github.com/TusharKesarwani/Front-End-Projects">Back to top</a></p>
-
-## test
