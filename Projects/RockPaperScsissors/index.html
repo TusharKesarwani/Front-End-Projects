@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock Paper Sscissors</title>
+  </head>
+  <body>
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-[100vh]">
+      <div class="xl:w-[50%] md-w-[100%] m-auto pt-5 flex flex-col gap-[100px]">
+        <div class="border-2 rounded-md p-5 flex justify-between">
+          <img src="./assets/svg/logo.svg" />
+          <div
+            class="flex flex-col justify-center text-center bg-white rounded-lg p-5 gap-3"
+          >
+            <span class="text-2xl text-blue-400">Score</span>
+            <span class="font-bold text-4xl text-blue-400" id="score">0</span>
+          </div>
+        </div>
+        <div class="justify-center flex" id="game">
+          <div
+            class="relative bg-[url('./assets/svg/bg-triangle.svg')] h-[300px] w-[305px] bg-no-repeat bg-center"
+          >
+            <div
+              onclick="Main.play(PAPER)"
+              class="bg-white absolute left-0 top-[-10%] rounded-full w-[100px] h-[100px] flex hover:shadow-[0_1px_20px_10px_#f8f8f8]"
+            >
+              <img
+                src="./assets/svg/icon-paper.svg"
+                alt="paper"
+                class="m-auto"
+              />
+            </div>
+            <div
+              onclick="Main.play(SCISSORS)"
+              class="bg-white absolute right-0 top-[-10%] rounded-full w-[100px] h-[100px] flex hover:shadow-[0_1px_20px_10px_#f8f8f8]"
+            >
+              <img
+                src="./assets/svg/icon-scissors.svg"
+                alt="scissors"
+                class="m-auto"
+              />
+            </div>
+            <div
+              onclick="Main.play(ROCK)"
+              class="bg-white absolute left-[34%] bottom-0 rounded-full w-[100px] h-[100px] flex hover:shadow-[0_1px_20px_10px_#f8f8f8]"
+            >
+              <img src="./assets/svg/icon-rock.svg" alt="rock" class="m-auto" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-between w-[100%] md:w-[80%] m-auto hidden"
+          id="result"
+        >
+          <div class="flex-col flex gap-5 items-center">
+            <span class="text-xl md:text-2xl font-bold text-white"
+              >You picked</span
+            >
+            <div class="bg-white rounded-full w-[100px] h-[100px] flex">
+              <img alt="player" class="m-auto" id="player" />
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <span
+              class="text-xl md:text-2xl font-bold text-white"
+              id="result-text"
+              >You win</span
+            >
+            <button
+              onclick="Main.playAgain()"
+              class="bg-white w-[100px] border-0 text-sky-500 rounded-lg pointer"
+            >
+              Play again
+            </button>
+          </div>
+          <div class="flex-col flex items-center gap-5">
+            <span class="text-xl md:text-2xl font-bold text-white"
+              >Computer pick</span
+            >
+            <div class="bg-white rounded-full w-[100px] h-[100px] flex">
+              <img alt="computer" id="computer" class="m-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
