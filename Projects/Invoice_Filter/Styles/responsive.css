@@ -1,0 +1,54 @@
+@media only screen and (max-width: 850px) {
+  .filter .fields {
+    flex-wrap: wrap;
+  }
+
+  #invoice_tbl thead tr th {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  #invoice_tbl tbody tr td {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    border-radius: 16px;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .filter .fields label {
+    font-size: 0.8rem;
+  }
+
+  .filter .fields > div input,
+  .filter .fields > div select {
+    margin: 0.3rem 0;
+    font-size: 0.6rem;
+    padding: 9px 12px;
+    border-radius: 8px;
+  }
+
+  .filter p {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  #invoice_tbl {
+    border-radius: 8px;
+  }
+
+  #invoice_tbl thead tr th {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+
+  #invoice_tbl tbody tr td {
+    font-size: 0.5rem;
+    padding: 0.2rem;
+  }
+}

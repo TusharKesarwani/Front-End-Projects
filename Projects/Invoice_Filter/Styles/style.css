@@ -1,0 +1,157 @@
+/*************************** poppins font ***************************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --violet: #5858ba;
+  --blue: #6f8dfa;
+  --red: #f58c93;
+  --other: #9fa3e0;
+  --bg: #f6f6fe;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+/************************************** styling filter section **************************************/
+.filter {
+  background-color: #f5e9eb;
+  border-radius: 20px;
+  margin: 1rem auto;
+  width: 85%;
+  padding: 1rem 2rem;
+}
+
+.filter h2 {
+  color: #f3737d;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.filter .fields {
+  display: flex;
+  align-items: center;
+}
+
+.filter .fields label {
+  font-weight: 600;
+}
+
+.filter p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgb(95, 92, 92);
+}
+
+.filter .fields > div {
+  margin-top: 1rem;
+  margin-right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter .fields > div input,
+.filter .fields > div select {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  color-scheme: dark;
+}
+
+/********************************* styling invoices table *********************************/
+#invoice_tbl {
+  margin: 2rem auto;
+  width: 85%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+#invoice_tbl thead tr {
+  border-bottom: 1rem solid var(--bg);
+}
+
+#invoice_tbl thead tr th {
+  font-size: 1.1rem;
+  padding: 1rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+/********************** for asc/desc icons **********************/
+#invoice_tbl thead tr th div {
+  display: inline-block;
+  margin: 0rem 0.3rem;
+}
+
+#invoice_tbl thead tr th div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#invoice_tbl thead tr th div > div > i {
+  height: 2px;
+}
+/********************************************/
+
+#invoice_tbl tr {
+  border-bottom: 1px solid rgb(224, 218, 218);
+}
+
+#invoice_tbl tbody tr:last-child {
+  border: none;
+}
+
+#invoice_tbl tbody tr td:nth-child(1),
+#invoice_tbl tbody tr td:nth-child(2) {
+  color: #5858ba;
+}
+
+#invoice_tbl tbody td {
+  padding: 1rem;
+}
+
+.active {
+  color: #f58c93;
+}
+
+/******************** css color classes ********************/
+.red {
+  background-color: var(--red);
+}
+
+.violet {
+  background-color: var(--violet);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.other {
+  background-color: var(--other);
+}
+
+/************ class to style status of invoice ************/
+.status {
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 3px 12px;
+}
+
+/************ class to hide something ************/
+.hide {
+  display: none;
+}
