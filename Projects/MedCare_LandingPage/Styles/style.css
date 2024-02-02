@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #2a6fa7;
+    --dark-blue: #144166;
+    --secondary-color: #ee2881;
+    --bg-color: #eaf1f2;
+    --icon-color: #dc8e47;
+    --smooth: 0.3s all ease-in-out;
+}
+
+/********************************** main section css **********************************/
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background: url("imgs/background.png");
+    margin: auto;
+}
+
+.main .logo {
+    width: 30%;
+    margin-bottom: 0.2rem;
+}
+
+.main>div {
+    width: 45%;
+    margin: 0.5rem;
+}
+
+.main .featureDiv {
+    /* d-flex justify-content-around */
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .featureDiv>div {
+    width: 20%;
+}
+
+.main .form-div {
+    width: 30%;
+    color: white;
+    text-align: center;
+}
+
+.main .form-div>i {
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.main .form-div>p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 10;
+    text-transform: uppercase;
+    font-size: x-small;
+}
+
+.main .form-div form {
+    /* d-flex flex-column text-start py-4 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0;
+    width: 100%;
+}
+
+.main .form-div form label {
+    text-align: left;
+    padding-top: 0.3rem;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main .form-div form input,
+.main .form-div form select {
+    width: 80%;
+    padding: 0.6rem;
+    margin: 0.3rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1) inset;
+    font-size: small;
+    outline: none;
+    border: none;
+}
+
+.main .form-div form select {
+    font-weight: 500;
+    border-radius: 1px;
+    box-shadow: 0;
+    background-color: var(--bg-color);
+}
+
+.main .form-div form button {
+    padding: 10px 0;
+    margin: 1rem;
+    align-self: center;
+}
+
+/************************************* model section css *************************************/
+.model-container {
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.model-container .model {
+    width: 280px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.model-container>div {
+    width: 80%;
+    float: right;
+    text-align: center;
+}
+
+.facilities {
+    width: 20%;
+}
+
+.model-container .divbot {
+    border-bottom: 3px solid var(--primary-color);
+    padding: 0.2rem 0;
+}
+
+.model-container>div>div {
+    width: 75%;
+    float: right;
+}
+
+/********************************** stats section css **********************************/
+.stats-item {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 18%;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.stats-item img {
+    height: 80%;
+}
+
+/*********************************** advantages section css ***********************************/
+table {
+    font-size: medium;
+    border: 0.5px solid gray;
+    border-left: 0;
+    border-right: 0;
+}
+
+table thead td {
+    font-size: 1.2rem;
+    font-weight: 450;
+    line-height: 1.2;
+}
+
+table td {
+    padding: 1rem 1rem !important;
+}
+
+table th {
+    width: 35%;
+    vertical-align: middle;
+    color: #144166;
+    font-weight: normal;
+    text-align: left;
+}
+
+.arrow-div {
+    width: 2.5px;
+    position: relative;
+    /* border: 10px solid var(#144166) !important; */
+}
+
+.arrow-div img.arrow {
+    position: absolute;
+    width: 60px;
+    top: 15%;
+    left: -6000%;
+}
+
+/******************************* faq section css *******************************/
+.ques .que {
+    /* blue-txt border border-dark rounded-2 w-50 mx-auto my-4 py-2 */
+    cursor: pointer;
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    margin: 1.5rem auto;
+    width: 50%;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.onHover {
+    background-color: var(--dark-blue);
+    color: white !important;
+}
+
+.ques .que:hover {
+    color: white;
+    background-color: var(--dark-blue);
+    transition: var(--smooth);
+}
+
+.ans {
+    display: none;
+    background-color: var(--dark-color);
+    color: white;
+    border-top: 2px solid white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+/******************************* general css classes *******************************/
+.text-sm {
+    font-size: 13px;
+}
+
+.icon-size {
+    width: 60%;
+}
+
+i {
+    display: inline;
+}
+
+b {
+    display: block;
+}
+
+/************************************* emi section *************************************/
+.emi {
+    /*  d-flex flex-wrap justify-content-center align-items-center py-5  */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.emi ul {
+    list-style: none;
+}
+
+.blue-txt {
+    color: var(--dark-blue);
+}
+
+.pri-ft {
+    color: var(--primary-color);
+}
+
+.sec-ft {
+    color: var(--secondary-color);
+}
+
+.other-ft {
+    color: var(--icon-color);
+}
+
+.pri-bg {
+    background-color: var(--primary-color);
+}
+
+.sec-bg {
+    background-color: var(--secondary-color);
+}
+
+.other-bg {
+    background-color: var(--bg-color);
+}
+
+.button {
+    width: 240px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.4rem 1rem;
+    margin: 0.5rem;
+    text-transform: uppercase;
+    font-size: medium;
+    transition: var(--smooth);
+}
+
+.button:hover {
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.blue-btn:hover {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/************************************* footer section css *************************************/
+footer {
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}

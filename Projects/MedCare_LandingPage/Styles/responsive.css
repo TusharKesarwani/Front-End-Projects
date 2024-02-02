@@ -1,0 +1,214 @@
+@media only screen and (max-width: 400px) {
+
+    /************************ main section css ************************/
+    .main {
+        flex-direction: column;
+    }
+
+    .main>div {
+        width: 100%;
+        margin: 0rem;
+        padding: 0 0.5rem;
+        text-align: center;
+    }
+
+    .main>.main-part1>p {
+        font-size: 1.4rem !important;
+    }
+
+    .main>div>div>p {
+        font-size: 0.7rem !important;
+    }
+
+    .main>div div.featureDiv {
+        width: 100% !important;
+    }
+
+    .main>div div.featureDiv>div>p {
+        font-size: 8px;
+    }
+
+    .main>div div.featureDiv>div>img {
+        width: 25%;
+    }
+
+    .main .form-div {
+        width: 100%;
+        margin: 0.5rem 0 !important;
+    }
+
+    /**************************** model section css ****************************/
+    .model-container {
+        margin: 0 1rem !important;
+    }
+
+    .model-container .model {
+        width: 110px;
+        position: absolute;
+        left: 90%;
+        top: -15%;
+    }
+
+    .model-container .divbot {
+        width: 100% !important;
+    }
+
+    .model-container>div {
+        margin: 0 !important;
+        width: 100% !important;
+
+        padding: 0.5rem 0 !important;
+    }
+
+    .model-container>div>div {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .model-container>div>div>p {
+        width: 100% !important;
+        text-align: left !important;
+        font-size: 0.6rem !important;
+        margin: 0 !important;
+    }
+
+    .model-container .divbot h1 {
+        font-size: 1.3rem !important;
+    }
+
+    .stats-sec {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stats-sec .stats-item {
+        width: 50%;
+    }
+
+    .stats-sec .stats-item img {
+        width: 30% !important;
+        height: 50% !important;
+    }
+
+    .stats-sec .stats-item>div>p:nth-child(1) {
+        font-size: 14px !important;
+    }
+
+    .stats-sec .stats-item>div>p:nth-child(2) {
+        font-size: 10px !important;
+    }
+
+    /**************************** advantage section ****************************/
+    .advantage {
+        padding: 0.5rem !important;
+    }
+
+    .advantage>h5 {
+        font-size: 1.2rem !important;
+    }
+
+    .advantage>p {
+        font-size: 0.8rem !important;
+    }
+
+    .advantage table {
+        width: 100%;
+        font-size: 12px;
+        margin: 0 auto !important;
+    }
+
+    .advantage table thead tr td {
+        font-size: 12px;
+    }
+
+    /*************************** medfin section css ***************************/
+    .medfin {
+        padding: 1rem 0 !important;
+    }
+
+    .medfin>div>ul li {
+        font-size: 14px;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .arrow-div {
+        margin: 2rem 0 !important;
+        width: 100%;
+        height: 4px;
+    }
+
+    .arrow-div img.arrow {
+        width: 13%;
+        top: -800%;
+        left: 30%;
+    }
+
+    /**************************** faq section css ****************************/
+    .faq {
+        padding: 0.5rem !important;
+    }
+
+    .faq .ques .que {
+        font-size: 13px !important;
+        width: 100%;
+        padding: 0.3rem;
+        margin: 1rem 0 !important;
+    }
+
+    /**************************** emi section css ****************************/
+    .emi {
+        padding: 1rem 0 !important;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .emi>div {
+        text-align: center;
+        align-items: center;
+    }
+
+    .emi .image img {
+        width: 70% !important;
+    }
+
+    .emi>div>p {
+        padding: 0.5rem 0;
+        font-size: 1.3rem !important;
+    }
+
+    .emi>div>ul li {
+        justify-content: center;
+    }
+
+    /******************* why should you choose section css *******************/
+    .whsc {
+        padding: 0.5rem 0 !important;
+    }
+
+    .whsc>div {
+        padding: 1rem 0;
+        width: 100% !important;
+    }
+
+    .whsc>div>div>p {
+        font-size: 13px !important;
+    }
+
+    /************************* contact section *************************/
+    .contact p {
+        width: 100% !important;
+        font-size: 1.2rem !important;
+    }
+
+    /************************* general css *************************/
+    .button {
+        font-size: small;
+    }
+
+    /************************* footer section *************************/
+    footer {
+        font-size: 13px;
+    }
+}
