@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link to Google Icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body >
+    <img src="" class="backgroundCity hidden" alt=" ">
+     <div>
+        <h1 class="title">Check the Weather</h1>
+        <button class="restart hidden">Search again</button>
+    </div>
+    <div class="formContainer ">
+        <div class="form">
+            <input type="text" id="input" value="" placeholder="Search for City">
+            <button type="button" id="search">Check Weather</button>
+        </div>
+        
+    </div> 
+    <!-- Container to display data  -->
+    <div class="hidden" id="hide">
+        <div class="container ">
+            <div class="containerBg"></div>
+            <div class="card">
+
+                <div class="cardHeader">
+                    <div id="cityName"></div>
+                    <div id="temp"></div>
+                    <div class="difference">
+                        <div class="high"></div>
+                        <div class="low"></div>
+                    </div>
+                </div>
+
+                <div class="cardBody">
+                    <div class="dataContainer">
+                        <div class="dataBackground"></div>
+                        <div class="daily">
+                            <div class="dailyContainer">
+                                <div class="today"></div>
+                                <h2>Today</h2>
+                                    <p class="icon"></p>
+                                    
+                            </div>
+                        </div>
+                        <div class="weekly">
+                            <div class="weeklyContainer">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
