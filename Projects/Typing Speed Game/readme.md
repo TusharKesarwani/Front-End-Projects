@@ -23,6 +23,8 @@ Typing Speed Game is a web application which allow's users to test their typing 
 
 ## Getting Started
 
+### Installation
+
 To run Typing Speed Game locally:
 
 1. Clone the repository:
@@ -42,4 +44,13 @@ To run Typing Speed Game locally:
 
  4. Begin typing the text that appears to test your typing speed!
 
+ ### Usage
+
+ 1. Begin typing the displayed text as it appears. The timer will begin once you start typing.
+
+ 2. If you make a mistake, use the backspace button to undo it or continue typing.
+
+ 3. Try to finish typing the text before time runs out.
+
+ 4. Click the "Try Again" button to play again with a different text!
 
