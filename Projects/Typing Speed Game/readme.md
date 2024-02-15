@@ -1,7 +1,7 @@
 # Typing Speed Game
 
 ## Description
-Typing Speed Game is a web application which allow's users to test their typing speed by typing various texts as fast as they can. During the game, users can see typing metrics such as number of mistakes, WPM (words per minute) and CPM (characters per minute).
+Typing Speed Game is a web application which allow's users to test their typing speed by typing various texts as fast as they can. During the game, users can see typing metrics such as number of mistakes, WPM (words per minute), and CPM (characters per minute).
 
 ## Technologies used
 
