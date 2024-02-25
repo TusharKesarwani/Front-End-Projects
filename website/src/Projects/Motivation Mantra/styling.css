@@ -1,0 +1,118 @@
+.material-symbols-outlined 
+{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 900 ;
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  color: rgb(56, 3, 99);
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right , rgb(21, 3, 49) , rgb(106, 89, 204));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#main
+{
+    background-color: rgb(102, 116, 192);
+    border-radius: 20px;
+    width: 99vw;
+    max-width: 550px;
+    height: 350px;
+    box-shadow: rgb(21, 10, 61) 15px 15px 60px;
+    border-top: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+}
+#listen
+{
+    font-size: 40px;
+}
+#listen:hover
+{
+    font-size: 45px;
+    color: aliceblue;
+    cursor: pointer;
+}
+#quote-space
+{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.quote
+{
+    color: rgb(253, 250, 250);
+    width: 90%;
+    font-size: 21px;
+    word-wrap: break-word;
+    text-align: center;
+    z-index: 1;
+}
+#author
+{
+    font-style: italic;
+    color: rgb(200, 210, 250);
+    font-size: 19px;
+    line-height: 10px;
+}
+#next
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 49.8%;
+    height:45px;
+    background-color: rgb(163, 175, 243);
+    box-shadow: rgb(83, 94, 163) 0 0 40px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(56, 3, 99);
+    z-index: 2;
+}
+#copy
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 49.8%;
+    height:45px;
+    background-color: rgb(163, 175, 243);
+    box-shadow: rgb(83, 94, 163) 0 0 40px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(56, 3, 99);
+}
+#next:hover , #copy:hover
+{
+    background-color: rgb(208, 219, 247);
+    cursor: pointer;
+    z-index: 5;
+}
+@media (max-width: 400px)
+{
+    .quote
+    {
+        font-size: 18px;
+    }
+    #author
+    {
+        font-size: 16px;
+    }
+}

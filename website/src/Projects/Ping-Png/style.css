@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #262626;
+  overflow: hidden;
+  position: relative;
+}
+
+/* header css  */
+
+#header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+}
+#header .left,
+#header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+#header .left {
+  background-color: #3a97da;
+  border-right: 2px solid black;
+}
+#header .right {
+  background-color: #e24040;
+  border-left: 2px solid black;
+}
+#header .middle {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px;
+  align-items: center;
+}
+
+/* playing area css  */
+
+#playing-area {
+  width: 100%;
+  height: calc(100% - 50px);
+  background-color: #262626;
+  position: relative;
+}
+
+#player-score,
+#computer-score {
+  position: absolute;
+  font-size: 10rem;
+  color: #1e1e1e;
+  bottom: 10%;
+  font-weight: bolder;
+  font-family: Patua One;
+}
+
+#player-score {
+  left: 20%;
+}
+
+#computer-score {
+  right: 20%;
+}
+
+.paddle {
+  position: absolute;
+  width: 2vw;
+  border-radius: 6px;
+  height: 20%;
+  transform: translateY(-50%);
+}
+
+.paddle-left {
+  --position: 50;
+  top: calc(var(--position) * 1%);
+  left: 1.5vw;
+  background-color: #3a97da;
+  transform: translateY(-50%);
+}
+
+.paddle-right {
+  --position: 50;
+  background-color: #e24040;
+  top: calc(var(--position) * 1%);
+  transform: translateY(-50%);
+  right: 1.5vw;
+}
+
+.ball {
+  --x: 50;
+  --y: 60;
+  background-color: #34ef69;
+  position: absolute;
+  left: calc(var(--x) * 1%);
+  top: calc(var(--y) * 1%);
+  z-index: 1;
+  transform: translateY(-10%);
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+}
+
+#start {
+  box-shadow: black 0px 0px 1px 0px, black 0px 2px 1px 0px;
+  padding: 10px 15px;
+  max-height: 35px;
+  border: none;
+  border-radius: 6px;
+  background-color: green;
+}
+
+#refresh {
+  box-shadow: black 0px 0px 1px 0px, black 0px 2px 1px 0px;
+  padding: 10px 15px;
+  max-height: 35px;
+  border-radius: 6px;
+  border: none;
+  background-color: royalblue;
+}
+#set-time {
+  font-size: 1.3rem;
+  box-shadow: black 0px 0px 1px 0px, black 0px 2px 1px 0px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 15px;
+  max-height: 35px;
+  border-radius: 6px;
+}
+
+#clock {
+  max-height: 35px;
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  display: none;
+  padding: 0 5px;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+button[disabled="disabled"],
+button:disabled {
+  color: rgb(210, 208, 208);
+}
+
+#result-box {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  width: 50%;
+  height: 200px;
+  background-color: #1e1e1e;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#result-box button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#result-box h1 {
+  font-size: 4rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

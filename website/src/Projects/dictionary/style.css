@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ae9cff;
+}
+.container {
+    background-color: #ffffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+@media(max-width:391px)
+{
+    .search-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 ;
+        height: 100px;
+        width: 400px;
+    }
+}
+@media(max-width:208px)
+{
+    .container{
+        min-width: fit-content;
+    }
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.search-box input {
+    padding: 5px;
+    width: 50%;
+    min-width: 170px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ae9cff;
+    font-size: 16px;
+}
+.search-box button {
+    padding: 15px 0;
+    width: 100px;
+    background-color: #ae9cff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.result {
+    position: relative;
+}
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+h1{ 
+    padding-top: 80px;
+    font-size: 55px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    font-family: 'Cormorant Garamond', serif;
+}
+@media(max-width:371px)
+{
+    h1{
+        font-size: 35px;
+    }
+}

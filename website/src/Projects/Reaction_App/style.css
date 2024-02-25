@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.clickable-area {
+  height: 100vh;
+  width: 100%;
+  cursor: pointer;
+  background: limegreen;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.end-screen,
+.main-menu {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #0d3b66;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.main-menu.active,
+.end-screen.active {
+  display: grid;
+  place-items: center;
+}
+
+.main-menu {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 700px;
+  padding: 0 32px;
+}
+
+.main-menu h1 {
+  font-size: 70px;
+  margin: 8px 0;
+}
+
+.container p {
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 800;
+  margin: 0;
+}
+
+.end-screen h1 {
+  font-size: 30px;
+}
+
+.reaction-time-text {
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.end-screen .play-again-btn {
+  border: none;
+  background: #faf0ca;
+  font-size: 20px;
+  padding: 8px 32px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 4px;
+  cursor: pointer;
+}

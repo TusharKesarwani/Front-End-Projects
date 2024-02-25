@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Pollution - Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2 class="header">
+                Air Quality and Pollution Checker
+            </h2>
+            <div class="card">
+                <input type="text" placeholder="Enter city name" id="place-name">
+                <div id="hint"></div>
+                <input type="text" placeholder="Enter state name (only for the USA)" id="place-state">
+            </div>          
+            <div class="card">
+              <h2>Please enter the location</h2>
+              <label for="error-msg" style="color: red;"></label><br />
+              <input type="number"
+                name="lat"
+                placeholder="Enter Latitude Here"
+                id="latitude"
+                step="0.0001"
+                class="loc-input" /> 
+              <input type="number"
+				name="lon"
+				placeholder="Enter Longitude Here"
+				id="longitude"
+				step="0.0001"
+				class="loc-input" />
+
+              <button class="search-btn">Search</button>
+            </div>
+        </div>
+          
+        <div id="myModal" class="modal">
+            <div class="modal-container">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 class="sub-heading">Air Quality Index is <span class="air-quality">...</span>
+                <span class="air-quality-status">...</span>
+            </h2>
+              
+              <div class="component-container">
+                <h2 class="sub-heading">Concentration of Pollutants in the air</h2>
+                <div>
+                    <h3 class="component-names">Carbon Monoxide:</h3>
+                    <span class="component-val" data-comp="co"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Nitrogen Monoxide:</h3>
+                    <span class="component-val" data-comp="no"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Nitrogen Dioxide:</h3>
+                    <span class="component-val" data-comp="no2"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Ozone:</h3>
+                    <span class="component-val" data-comp="o3"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Sulphur Dioxide:</h3>
+                    <span class="component-val" data-comp="so2"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Fine Particles Matter:</h3>
+                    <span class="component-val" data-comp="pm2_5"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Coarse Particulate Matter:</h3>
+                    <span class="component-val" data-comp="pm10"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Ammonia:</h3>
+                    <span class="component-val" data-comp="nh3"></span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="countries.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

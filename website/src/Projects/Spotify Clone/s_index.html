@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png\">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your Web Player</title>
+    <link rel="stylesheet" href="s_style.css">
+</head>
+
+<body>
+    <div class="top-page">
+        <nav>
+            <ul>
+                <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+                <li class="nav_bar"><i class="fa fa-home"></i><a href="#">Home</a></li>
+                <li class="nav_bar"><i class="fa fa-search"></i><a href="#">Search</a></li>
+            </ul>
+
+            <div class="yourlib">
+                <div class="lib-head">
+                    <h3>Your Library</h3>
+                    <div class="add-playlist">
+                        <i class="fa fa-plus"></i>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="filter-options">
+                    <a href="#">Playlists</a>
+                    <a href="#">Artists</a>
+                    <a href="#">Podcasts & Shows</a>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <select name="Sort by" id="sort">
+                        <option value="Recents">Recents</option>
+                        <option value="Recently added">Recently added</option>
+                        <option value="Alphabetical">Alphabetical</option>
+                        <option value="Creator">Creator</option>
+                    </select>
+                </div>
+                <div class="playlists-container">
+                    <div class="playlists">
+                        <i class="fa fa-heart"></i>
+                        <p>Liked Songs</p>
+                    </div>
+                    <div class="playlists">
+                        <i class="fa fa-bookmark"></i>
+                        <p>Your Episodes</p>
+                    </div>
+                    <div class="playlists">
+                        <i class="fa fa-star"></i>
+                        <p>Favourite Songs</p>
+                    </div>
+                    <div class="playlists">
+                        <i class="fa fa-headset"></i>
+                        <p>My Playlist</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="songList">
+                <h1>Himanshu's PlayList :</h1>
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="0"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="1"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="2"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="3"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="4"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="5"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="6"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="7"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="8"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/1.jpg" alt="1">
+                        <span class="songName">Falling</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <span><img src="playing.gif" width="42px" alt="" id="gif"><span id="masterSongName"></span><i id="likesong"
+                    class="fa fa-heart"></i></span>
+        </div>
+    </div>
+    <script src="s_script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

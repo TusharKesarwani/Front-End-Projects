@@ -8,8 +8,12 @@ const ProjectCard = ({
   Tag,
   Key,
 }) => {
+  const handleClick = () => {
+    console.log("ProjectLink", ProjectLink);
+    window.open(ProjectLink, "_blank");
+  };
   return (
-    <div className="project" key={Key}>
+    <div className="project" key={Key} onClick={handleClick}>
       <img src={ProjectImage} alt={ProjectTitle} />
       <div className="project-info">
         <h2>{ProjectTitle}</h2>

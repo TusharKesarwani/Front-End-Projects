@@ -1,0 +1,24 @@
+.otp_field{
+    border-radius: 5px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    margin: 1%;
+    text-align: center;
+    border: 2px solid #cacaca;
+}
+.fields-input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.otp_field::-webkit-inner-spin-button,
+.otp_field::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.otp_field:valid{
+    border-color: #3095d8;
+    box-shadow: 0 10px 10px -5px rgb(0,0,0,0.25);
+}

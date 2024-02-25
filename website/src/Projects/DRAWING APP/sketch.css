@@ -1,0 +1,221 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/439/682/original/cartoon-background-simple-beach-free-video.jpg");
+}
+.heading {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: hsl(277, 94%, 79%);
+  margin-top: 1%;
+}
+
+.heading h1 {
+  border: 2px solid rebeccapurple;
+  width: 20%;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: rebeccapurple;
+}
+div.big-box {
+  border-radius: 3%;
+  background-color: white;
+  margin-left: 5%;
+}
+div.small-box {
+  background-color: white;
+}
+.wrapper {
+  display: grid;
+  margin-top: 2%;
+  margin-left: 10%;
+  grid-template-columns: 200px 750px;
+  grid-auto-rows: 530px;
+}
+.allops,
+.clrs {
+  list-style: none;
+  padding-left: 10%;
+  margin-top: 5%;
+}
+.title {
+  padding-left: 13%;
+  padding-top: 5%;
+}
+.option #size-slider {
+  width: 90%;
+  height: 5px;
+  margin-top: 10px;
+}
+.option {
+  padding: 2%;
+  margin: 2%;
+  cursor: pointer;
+}
+.option:is(:hover, .active) img {
+  filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg)
+    brightness(100%) contrast(100%);
+}
+.option:is(:hover, .active) :where(span, label) {
+  color: #4a98f7;
+}
+input#fill-color {
+  height: 16px;
+  width: 33px;
+  margin: 0%;
+  cursor: pointer;
+}
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0%;
+}
+.btnn {
+  margin: 0 auto;
+  width: 165px;
+  padding: 5%;
+}
+#save {
+  margin-top: 8%;
+}
+#clear {
+  margin-top: 3%;
+}
+.shape-box,
+.color-box,
+.tool-box {
+  margin-top: 10%;
+}
+.image {
+  margin-right: 6%;
+}
+.color-box {
+  height: 15%;
+}
+li.opt {
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  padding-left: 0%;
+  padding-right: 10%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  cursor: pointer;
+  height: 20px;
+}
+.clrs {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.color-box .option:nth-child(1) {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+}
+.color-box .opt:nth-child(2) {
+  background-color: #000;
+}
+.color-box .opt:nth-child(3) {
+  background-color: #e02020;
+}
+.color-box .opt:nth-child(4) {
+  background-color: #6dd400;
+}
+.color-box .opt:nth-child(5) {
+  background-color: #4a98f7;
+}
+.clrs .opt.selected::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 12px;
+  width: 12px;
+  background: inherit;
+  border-radius: inherit;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+}
+.opt #color-picker {
+  opacity: 0;
+  cursor: pointer;
+  width: 0px;
+  padding: 0px;
+}
+.btn-box .btnn {
+  font-size: medium;
+  background-color: #d495fc;
+  border: 2px solid #d495fc;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btnn:hover {
+  background-color: #fff;
+}
+.big-box canvas {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 900px) and (max-width: 1020px) {
+  .wrapper {
+    margin-left: 3%;
+    margin-top: 10%;
+    grid-template-columns: 200px 650px;
+  }
+  .heading {
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .heading {
+    display: none;
+  }
+  .wrapper {
+    display: inline-block;
+    margin-left: 2%;
+  }
+  .small-box {
+    display: grid;
+    grid-template-columns: 140px 100px 200px 190px;
+    justify-content: space-between;
+    margin-left: 2%;
+  }
+  .big-box {
+    margin-top: 3%;
+  }
+  .btn-box {
+    margin-top: 10%;
+  }
+  div.big-box {
+    height: 850px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .heading {
+    display: none;
+  }
+  .wrapper {
+    display: inline-block;
+    margin-left: 2%;
+  }
+  .small-box {
+    display: grid;
+    grid-template-columns: 140px 100px 200px;
+    justify-content: space-between;
+    margin-left: 2%;
+  }
+  .btn-box {
+    display: grid;
+    grid-template-columns: 218px 100px;
+    position: absolute;
+    bottom: 0px;
+  }
+  div.big-box {
+    margin-top: 4%;
+    height: 440px;
+    margin-left: 0%;
+  }
+}

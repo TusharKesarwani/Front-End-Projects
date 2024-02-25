@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&family=Open+Sans:wght@500&family=Varela+Round&display=swap');
+
+body{
+
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black;
+     color: white; 
+}
+*{
+     font-family: 'Baloo Bhai 2', cursive;
+     font-size:18px;
+}
+
+.title{
+    font-weight: bold;
+    color: rgb(247, 44, 44);
+    font-size: 40px;
+    /* position:sticky; */
+     padding: 2px 5px;
+     margin-left: 3px;
+}
+header img{
+    width:75px;
+    margin-top: 3px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.search{
+    padding: 4px 15px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    width: 13rem;
+}
+.search:hover{
+    background-color: rgb(224, 222, 222);
+    cursor: pointer;
+}
+.btn{
+    margin:5px;
+    border: none;
+    border-radius: 18px;
+    width: 2rem;
+    padding: 2px 8px;
+    font-size: 17px;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: rgb(224, 222, 222);
+}
+.your-notes{
+    font-size: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px;
+    margin-top:10px;
+    font-weight: bolder;
+}
+.wrapper{
+    justify-content: center;
+    margin:50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, 275px);
+}
+.wrapper li{
+    height: 250px;
+    list-style: none;
+    background: rgb(185, 47, 47);
+    border-radius: 20px;
+    padding:15px;
+}
+.add-box, .icon, .bottom-content, .settings .menu li, .popup, header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-box{
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.add-box .icon{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 2px dashed black;
+}
+.wrapper .note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-box p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.note .details{
+    max-height: 160px;
+    overflow-y: auto;
+}
+.note p{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.note span{
+    display:block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.note .bottom-content{
+    padding: 10px;
+    border-top: 1px solid rgb(175, 44, 44);
+}
+.bottom-content span{
+    color: #d8d8d8;
+    font-size: 14px;
+}
+.bottom-content .settings{
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.settings{
+    position: relative;
+}
+.settings .menu{
+    position: absolute;
+    bottom:0;
+    right: -5px;
+    padding: 3px 0;
+    border-radius: 4px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+ .settings.show .menu{
+    transform: scale(1);
+} 
+.settings .menu li{
+    height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 15px;
+    justify-content: flex-start;
+}
+.menu li:hover{
+    background: rgb(189, 74, 74);
+}
+.menu li i{
+    padding-right: 10px;
+}
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: rgba(0,0,0,0.6);
+    padding: 5px;
+}
+.popup-box .popup{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: inherit;
+    max-width: 450px;
+    width: 100%;
+    justify-content: center;
+    background: rgb(247, 44, 44);
+    transform: translate(50%, -50%);
+}
+.popup-box, .popup-box .popup{
+    opacity:0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+.popup-box.show, .popup-box.show .popup{
+    opacity:1;
+    pointer-events:auto;
+}
+.popup .content{
+    width: calc(100% - 15px);
+    background: rgb(160, 39, 39);
+    border-radius: 5px;
+}
+.popup .content header{
+    padding: 15px 25px;
+    border-bottom: 1px solid rgb(124, 30, 30);
+}
+.content header p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.content header i{
+    font-size: 22px;
+    cursor:pointer;
+}
+.content form{
+    margin: 15px 23px 35px; 
+}
+.content form .row{
+    margin-bottom: 20px;
+}
+form .row label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content form :where(input,textarea){
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #999;
+    font-size: 18px;
+    padding: 5px;
+}
+.content form textarea{
+    height: 150px;
+    resize: none;
+    padding: 4px;
+}
+.content form button:hover{
+    background: rgb(189, 74, 74);
+}
+.content form button{
+    margin-top: 8px;
+    padding: 4px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(247, 44, 44);
+}
+.content form #file{
+    margin-top: 8px;
+    padding: 10px;
+    width: 95%;
+    height: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(247, 44, 44);
+    justify-content: center;
+}
+
+ @media(max-width: 450px)
+{
+    .popup-box .popup{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        z-index: inherit;
+        max-width: 370px;
+        width: 100%;
+        justify-content: center;
+        background: rgb(247, 44, 44);
+        transform: translate(50%, -50%);
+    }
+}
+ @media(max-width: 375px)
+{
+    .popup-box .popup{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        z-index: inherit;
+        max-width: 320px;
+        max-height: 350px;
+        width: 100%;
+        justify-content: center;
+        background: rgb(247, 44, 44);
+        transform: translate(50%, -50%);
+    }
+}
+@media(max-width: 530px){
+    .search{
+        width: 10rem;
+        margin-top: 10px;
+        margin-right: 12px;
+    }
+}
+@media(max-width: 630px){
+    .form{
+        display: flex;
+    }
+    .search{
+        width: 10rem;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+    .btn{
+        margin:8px;
+    }
+}
+ @media(max-width: 470px){
+    .search{
+        width: 10rem;
+        font-size: 17px;
+    }
+    header img{
+        margin-right:4px;
+    }
+} 
+
+.starred{
+    background-color: gold;
+  }
+
+  .note.starred * {
+    color: black;
+  }
+  

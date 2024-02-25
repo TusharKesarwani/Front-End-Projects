@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    padding: 5%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(28, 1, 81);
+    color: #fff;
+    font-size: 1.4rem;
+    /* flex-wrap: wrap; */
+}
+
+.title{
+    margin-top: 0;
+    margin-bottom: 20vh;
+}
+
+.datetime{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 340px;
+    background: rgb(28, 1, 81);
+    border: 5px solid white;
+    padding: 30px 20px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.date{
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.time{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.time span:last-child{
+    background: rgb(230, 230, 230);
+    color: blueviolet;
+    padding: 0 3px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.timezone-toggle{
+    margin-top: 10vh;
+    font-size: 1.5rem;
+    font-family:cursive;
+}
+
+.timezone-toggle select{
+    border-radius: 5px;
+    border: 2px ;
+    background: rgb(2, 76, 69);
+    color: white;
+    margin: 10px;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+    max-height: 50px;
+}
+
+select::after{
+    border: 2px solid white;
+}
+
+#timezone-select::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Optional: Add some padding to the dropdown options */
+#timezone-select option {
+    padding: 5px 10px;
+}

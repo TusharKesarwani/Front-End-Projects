@@ -26,7 +26,7 @@ const Contributor = () => {
   }, []);
 
   return (
-    <section className="contributors">
+    <section data-scroll-section className="contributors">
     <div className="head">
         <h1 className="bg-title">CONTRIBUTORS</h1>
         <h1 className="title">Contributors</h1>

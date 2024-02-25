@@ -1,0 +1,120 @@
+html {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: /* Gradient in Hex */
+    linear-gradient(to right, #4671B1 0%, 0%, #0D1B34 0%, 50%, #542C42 100%, 100%, #30313C 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.d1 {
+    height: 430px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: absolute;
+    top: 140px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 68px;
+    line-height: 1;
+    position: relative;
+    bottom: 4px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    min-height: 30px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 35px;
+}
+
+.text {
+    padding: 20px;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#input {
+    background: /* Gradient in Hex */
+    linear-gradient(to right, #4671B1 0%, 0%, #0D1B34 0%, 50%, #542C42 100%, 100%, #30313C 100%);
+    padding: 8px;
+    width: 420px;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 22px;
+    border-radius: 10px;
+}
+
+#input:focus {
+    color: #fff
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 6px 14px;
+    border: unset;
+    border-radius: 6px;
+    color: #fff8f8;
+    z-index: 1;
+    background: /* Gradient in Hex */
+    linear-gradient(to right, #4671B1 0%, 0%, #0D1B34 0%, 50%, #542C42 100%, 100%, #30313C 100%);
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    top: 15px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 6px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+button:hover {
+    color: #e8e8e8;
+}
+
+button:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,159 @@
+/******* Bootstrap Theming ********/
+
+$primary: #194376;
+$secondary: #46C6CE;
+$light: #F3F6FF;
+$dark: #1A1A1A;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "light": $light,
+    "dark": $dark,
+);
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$body-color: #757575;
+
+$headings-color: $primary;
+
+$enable-responsive-font-sizes: true;
+
+$enable-rounded: false;
+
+@import "bootstrap/scss/bootstrap";
+
+
+/********** Template CSS ************/
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 800 !important;
+}
+
+h3,
+h4,
+.font-weight-medium {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+[class^=flaticon-]:before,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+.nav-bar::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background: $primary;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 30px 15px;
+    color: #757575;
+    font-weight: 600;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: $secondary;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    #header-carousel,
+    .page-header {
+        margin-top: -42px;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .contact-info {
+        position: relative;
+        margin-top: -100px !important;
+        z-index: 1;
+    }
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #dddddd;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: $secondary;
+}
+
+.contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

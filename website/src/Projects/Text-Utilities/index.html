@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>Text Utilities - Word counter | character counter | lowercase to uppercase | uppercase to lowercase</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Text Utilities</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <!-- <a class="nav-link disabled">Disabled</a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- <h1 class='mb-4'>Text- Utility </h1> -->
+        <div class="mb-3">
+            <textarea class="form-control" id="myBox"
+                rows="8"></textarea>
+        </div>
+        <button class="btn btn-primary mx-1 my-1"id="uppercase">Convert to
+            Uppercase</button>
+        <button class="btn btn-primary mx-1 my-1" id="lowercase">Convert to
+            Lowercase</button>
+        <button class="btn btn-primary mx-1 my-1" id="clear">Clear
+            Text</button>
+        <button class="btn btn-primary mx-1 my-1" id="copy">Copy Text</button>
+        <button class="btn btn-primary mx-1 my-1" id="trim">Remove Extra
+            Spaces</button>
+    </div>
+    <div class="container my-3">
+        <h2>Your text summary</h2>
+        <p id="first"> </p>
+        <h2 >Preview</h2>
+        <p id="third"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
