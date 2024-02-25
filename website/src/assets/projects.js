@@ -1,140 +1,8 @@
-import {
-  LOGO,
-  comming_soon,
-  SSOC,
-  SWOC_Qr,
-  ThreeDmaze,
-  ArmstrongChecker,
-  AutoTextEffectAnimation,
-  BeautyZone,
-  BMICalculator,
-  Bookcase,
-  BookmarkerApp,
-  BreatheMeditation,
-  CaesaeCipher,
-  Calculator,
-  Calendar,
-  CaptchaChecker,
-  CardsComponent,
-  Chess,
-  CodeEditor,
-  CoronaTracker,
-  Countify,
-  CryptoDashboard,
-  Dashboard,
-  DayPlanner,
-  DictionaryWebApp,
-  DigitalClock,
-  DrawingApp,
-  DrinkWaterReminderApplication,
-  DynamicJsQuiz,
-  EcommerceLandingPage,
-  EducationWebsite,
-  EmojiRating,
-  ExpandingImage,
-  ExpenseTracker,
-  Ezymath,
-  FAQPage,
-  FaviconFetcher,
-  Filters,
-  FitnessWebsite,
-  GithubProfileWrapper,
-  GoeeyCursor,
-  GoogleClone,
-  GoogleDriveClone,
-  GymWebsite,
-  HexCodeGenerator,
-  HiddenSearch,
-  HoolixDigitalAgencyWebsite,
-  ImageEditor,
-  ImageSlider,
-  JaguarCarWebsite,
-  JumbleWord,
-  LanguageTranslator,
-  LoanCalculator,
-  LyricsSearch,
-  MagicBalls,
-  MemeGenerator,
-  MemoryGame,
-  Mixtape,
-  ModernCreditCardFormWebpage,
-  MovieDatabase,
-  MusicPlayer,
-  MusicPlayerUsingJavaScript,
-  MyntraClone,
-  NotesApp,
-  NumberGuessingGame,
-  OTPVerification,
-  PalindromeChecker,
-  PasswordGenerator,
-  PDFMerger,
-  PincodeChecker,
-  PingPong,
-  PrimeChecker,
-  QRCodeGenerator,
-  QRCodeReader,
-  ReactionTimeTest,
-  RecipeFinder,
-  SaveTextAsFile,
-  ScreenRecorder,
-  Shades,
-  SignInPage,
-  SortingVisualizer,
-  SpaceTourismWebsite,
-  SplitLandingPage,
-  SpotifyClone,
-  StepProgressBar,
-  RockPaperScissors,
-  StopWatch,
-  StudentEnrollmentForm,
-  StudentServicePortal,
-  TalkingChatBot,
-  TaskList,
-  TemperatureConvertor,
-  TextUtils,
-  TheGreatDrumKit,
-  SnakeWaterGun,
-  ThemeSwitcher,
-  TicTacToe,
-  Timer,
-  TinyMCE,
-  Tourism,
-  Tripocity,
-  TruthTableGenerator,
-  TypingSpeedGame,
-  VillaHotelWebsite,
-  VirtualKeyboard,
-  VisitCounter,
-  VoyageSliderGsap,
-  WeatherDetails,
-  WeightConvertor,
-  WhackAMole,
-  WhiteBoard,
-  Wikipedia,
-  Windows11,
-  ResumeCreator,
-  RealtimeCurrencyConverter,
-  WorldInfoWebsite,
-  HuffmanCompressor,
-  ZomatoLandingPage,
-  MessiMania,
-  MorseCodeConvertor,
-  LeapYearsInARange,
-  GuessTheGenderByName,
-  PlayablePiano,
-  SoundEqualizer,
-  LoremIpsumGenerator,
-  CarbonFootPrintCalculator,
-  VideoPlayer,
-  Chatbot,
-  RandomMealGenerator,
-} from "./images";
-console.log(ThreeDmaze);
 const projects = [
   {
     title: "3D Maze",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: { ThreeDmaze },
+    img: "src/assets/img/projects/3D_Maze.png",
     description:
       "This is a 3D maze made using HTML, CSS and JavaScript.It navigates through the maze using the arrow keys on the keyboard. Once the maze is completed, there would be a secret key.",
     "github-link":
@@ -144,7 +12,7 @@ const projects = [
   {
     title: "Air Quality",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Air_Quality.png",
+    img: "src/assets/img/projects/Air_Quality.png",
     description:
       "It is atmospheric Air Quality checker built using HTML, CSS and JavaScript. Based on Latitude and Longitude, it shows the Air Quality Index(concentration of pollutants) of that particular location.",
     "github-link":
@@ -154,7 +22,7 @@ const projects = [
   {
     title: "Analog Clock",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Analog_Clock.png",
+    img: "src/assets/img/projects/Analog_Clock.png",
     description:
       "It is analog clock built using HTML, CSS and JavaScript. It shows the current time of the system. It is a simple analog clock with hour, minute and second hands.",
     "github-link":
@@ -164,7 +32,7 @@ const projects = [
   {
     title: "Logistic-Company",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/logiC.png",
+    img: "src/assets/img/projects/logiC.png",
     description:
       "It is a Logistic Company landing Page with essential features for a logistic company",
     "github-link":
@@ -174,7 +42,7 @@ const projects = [
   {
     title: "Animated Card",
     tags: ["HTML", "CSS"],
-    img: "./img/projects/Animated_Card.png",
+    img: "src/assets/img/projects/Animated_Card.png",
     description: "It is animated card built using HTML,CSS.",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Animated Card",
@@ -183,7 +51,7 @@ const projects = [
   {
     title: "Armstrong Number Checker",
     tags: ["HTML", "CSS, JavaScript"],
-    img: "./img/projects/Armstrong_checker.png",
+    img: "src/assets/img/projects/Armstrong_checker.png",
     description:
       "It is a simple Armstrong Number Checker built using HTML, CSS and JavaScript. It checks whether the given number is an Armstrong Number or not.",
     "github-link":
@@ -193,7 +61,7 @@ const projects = [
   {
     title: "Audio-Text Converter",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Text_to_Speech.png",
+    img: "src/assets/img/projects/Text_to_Speech.png",
     description:
       "It is basic audio to text convertor that uses Voice Recognition.",
     "github-link":
@@ -203,7 +71,7 @@ const projects = [
   {
     title: "Beauty Zone",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/BeautyZone.png",
+    img: "src/assets/img/projects/BeautyZone.png",
     description:
       "It is a bridal makeup website built using HTML, CSS and JavaScript.",
     "github-link":
@@ -213,7 +81,7 @@ const projects = [
   {
     title: "Beyblade Card Catalog",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Beyblade_Card_Catalog.png",
+    img: "src/assets/img/projects/Beyblade_Card_Catalog.png",
     description:
       "Beyblade Card Catalog will showcase Beyblade cards. The project will leverage a JSON file containing data for various Beyblade cards. This data will be dynamically fetched and utilized to populate the card catalog. The frontend page will incorporate a filtering mechanism to allow users to narrow down their card search.",
     "github-link":
@@ -223,7 +91,7 @@ const projects = [
   {
     title: "Bill Tip Calculator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Tip_Calculator.png",
+    img: "src/assets/img/projects/Tip_Calculator.png",
     description:
       "Bill Tip Calculator is used to calculate tips per person and is built using html, css and javascript .",
     "github-link":
@@ -233,7 +101,7 @@ const projects = [
   {
     title: "Blog Project Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Blog_Website.png",
+    img: "src/assets/img/projects/Blog_Website.png",
     description:
       "It is a simple blog website built using html,css and javascript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -243,7 +111,7 @@ const projects = [
   {
     title: "BMICalculator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/BMI_Calculator.png",
+    img: "src/assets/img/projects/BMI_Calculator.png",
     description:
       "BMI calculator is used to calculate BMI of the person based on height and weight.",
     "github-link":
@@ -253,7 +121,7 @@ const projects = [
   {
     title: "Bookcase",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/BookCase.png",
+    img: "src/assets/img/projects/BookCase.png",
     description:
       "Book case is a website where one can store their all the finished and unfinished books.",
     "github-link":
@@ -263,7 +131,7 @@ const projects = [
   {
     title: "Bookmarker_App",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/BookMarker_App.png",
+    img: "src/assets/img/projects/BookMarker_App.png",
     description:
       "BookMarker App is used to save bookmarks using name of website.",
     "github-link":
@@ -273,7 +141,7 @@ const projects = [
   {
     title: "Breathe Meditation",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Breathe_Meditation.png",
+    img: "src/assets/img/projects/Breathe_Meditation.png",
     description:
       "Breathe Meditation is used to relax the mind and body. It is built using html, css and javascript .",
     "github-link":
@@ -283,7 +151,7 @@ const projects = [
   {
     title: "Caesar Cipher",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Caesae_Cipher.png",
+    img: "src/assets/img/projects/Caesae_Cipher.png",
     description:
       "Caesar Cipher is the encryption tool that encrypts the text by shifting the letters by a certain number of places. It is built using html, css and javascript .",
     "github-link":
@@ -293,7 +161,7 @@ const projects = [
   {
     title: "Calculator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Calculator.png",
+    img: "src/assets/img/projects/Calculator.png",
     description:
       "Calculator is used to perform basic arithmetic operations. It is built using html, css and javascript .",
     "github-link":
@@ -303,7 +171,7 @@ const projects = [
   {
     title: "Calendar",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Calendar.png",
+    img: "src/assets/img/projects/Calendar.png",
     description:
       "Calendar is used to display the current date. It is built using html, css and javascript .",
     "github-link":
@@ -313,7 +181,7 @@ const projects = [
   {
     title: "Captcha Checker",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Captcha_Checker.png",
+    img: "src/assets/img/projects/Captcha_Checker.png",
     description:
       "Captcha Checker is used to check if the entered captcha is valid or not.",
     "github-link":
@@ -323,7 +191,7 @@ const projects = [
   {
     title: "Cards Component",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Card_Components.png",
+    img: "src/assets/img/projects/Card_Components.png",
     description: "Cards components is built using html, css and javascript .",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Cards Component",
@@ -332,7 +200,7 @@ const projects = [
   {
     title: "Chess",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Chess.png",
+    img: "src/assets/img/projects/Chess.png",
     description:
       "Chess is a two player strategy board game played on a chessboard, a checkered game board with 64 squares arranged in an 8×8 grid. It is built using html, css and javascript .",
     "github-link":
@@ -342,7 +210,7 @@ const projects = [
   {
     title: "Code Editor",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Code_Editor.png",
+    img: "src/assets/img/projects/Code_Editor.png",
     description:
       "Code Editor is used to write and edit the source code of computer programs. It is built using html, css and javascript .",
     "github-link":
@@ -352,7 +220,7 @@ const projects = [
   {
     title: "Corona Tracker",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Corona_update.png",
+    img: "src/assets/img/projects/Corona_update.png",
     description:
       "Corona update is used to track the number of cases, deaths and recoveries of corona virus. It is built using html, css and javascript .",
     "github-link":
@@ -362,7 +230,7 @@ const projects = [
   {
     title: "Countify",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Countify.png",
+    img: "src/assets/img/projects/Countify.png",
     description:
       "Countify is used to count the number of words, characters in a paragraph. It is built using html, css and javascript .",
     "github-link":
@@ -372,7 +240,7 @@ const projects = [
   {
     title: "Crypto Dashboard",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Crypto_dashboard.png",
+    img: "src/assets/img/projects/Crypto_dashboard.png",
     description: "Crypto Dashboard is used to get get crypto related updates.",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Crypto Dashboard",
@@ -381,7 +249,7 @@ const projects = [
   {
     title: "DashBoard",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Dashboard.png",
+    img: "src/assets/img/projects/Dashboard.png",
     description:
       "DashBoard is used to display the status. It is built using html, css and javascript .",
     "github-link":
@@ -391,7 +259,7 @@ const projects = [
   {
     title: "Day Planner",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Day_Planner.png",
+    img: "src/assets/img/projects/Day_Planner.png",
     description:
       "Day Planner is used to plan the day. It is built using html, css and javascript .",
     "github-link":
@@ -401,7 +269,7 @@ const projects = [
   {
     title: "Dictionary",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Dictionary.png",
+    img: "src/assets/img/projects/Dictionary.png",
     description:
       "Dictionary is used to get the meaning of the word. It is built using html, css and javascript .",
     "github-link":
@@ -411,7 +279,7 @@ const projects = [
   {
     title: "Dictionary WebApp",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Dictionary_WebApp.png",
+    img: "src/assets/img/projects/Dictionary_WebApp.png",
     description:
       "It is a dictionary web app built using HTML, CSS and JavaScript. It uses the Oxford Dictionary API to fetch the meaning of the word.",
     "github-link":
@@ -421,7 +289,7 @@ const projects = [
   {
     title: "Digital Clock",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Digital_Clock.png",
+    img: "src/assets/img/projects/Digital_Clock.png",
     description:
       "Digital Clock is used to display the current time. It is built using html, css and javascript .",
     "github-link":
@@ -431,7 +299,7 @@ const projects = [
   {
     title: "Drawing App",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Drawing_App.png",
+    img: "src/assets/img/projects/Drawing_App.png",
     description:
       "Drawing App is used to draw on the screen. It is built using html, css and javascript .",
     "github-link":
@@ -441,7 +309,7 @@ const projects = [
   {
     title: "Drink Water Reminder Application",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Drink_Water_Reminder.png",
+    img: "src/assets/img/projects/Drink_Water_Reminder.png",
     description:
       "Drink Water Reminder Application is used to remind the user to drink water after every fixed interval. It is built using html, css and javascript .",
     "github-link":
@@ -451,7 +319,7 @@ const projects = [
   {
     title: "Dynamic JS Quiz",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Quiz.png",
+    img: "src/assets/img/projects/Quiz.png",
     description: "It is a quiz app built using html, css and javascript .",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Dynamic js Quiz",
@@ -460,7 +328,7 @@ const projects = [
   {
     title: "E-commerce Landing Page",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Ecommerce.png",
+    img: "src/assets/img/projects/Ecommerce.png",
     description:
       "E commerce Landing page is used to display the products of the company. It is built using html, css and javascript .",
     "github-link":
@@ -470,7 +338,7 @@ const projects = [
   {
     title: "Education Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Education_Website.png",
+    img: "src/assets/img/projects/Education_Website.png",
     description:
       "It is an education website built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -480,7 +348,7 @@ const projects = [
   {
     title: "Emoji Rating",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Emoji_Rating.png",
+    img: "src/assets/img/projects/Emoji_Rating.png",
     description:
       "Emoji Rating is used to rate the product. It is built using html, css and javascript .",
     "github-link":
@@ -490,7 +358,7 @@ const projects = [
   {
     title: "Expanding Card Design",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Expanding_Image.png",
+    img: "src/assets/img/projects/Expanding_Image.png",
     description:
       "Expanding Card Design is used to display the image in a bigger size. It is built using html, css and javascript .",
     "github-link":
@@ -500,7 +368,7 @@ const projects = [
   {
     title: "Expense Tracker",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Expense_Tracker.png",
+    img: "src/assets/img/projects/Expense_Tracker.png",
     description:
       "Expense Tracker is used to track the expenses. It is built using html, css and javascript .",
     "github-link":
@@ -510,7 +378,7 @@ const projects = [
   {
     title: "EzyMath",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Ezy_math.png",
+    img: "src/assets/img/projects/Ezy_math.png",
     description:
       "Ezy Math is a website that helps students to learn mathematics in a fun way. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -520,7 +388,7 @@ const projects = [
   {
     title: "FAQ Page",
     tags: ["HTML", "CSS"],
-    img: "./img/projects/FAQ.png",
+    img: "src/assets/img/projects/FAQ.png",
     description:
       "It contains the frequently asked questions and their answers. It is built using HTML and CSS.",
     "github-link":
@@ -530,7 +398,7 @@ const projects = [
   {
     title: "Favicon Fetcher",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Favicon_Fetcher.png",
+    img: "src/assets/img/projects/Favicon_Fetcher.png",
     description:
       "Favicon Fetcher is used to fetch the favicon of the website. It is built using html, css and javascript .",
     "github-link":
@@ -540,7 +408,7 @@ const projects = [
   {
     title: "Filters",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Filters.png",
+    img: "src/assets/img/projects/Filters.png",
     description:
       "Filters is used to filter the images based on the category. It is built using html, css and javascript .",
     "github-link":
@@ -550,7 +418,7 @@ const projects = [
   {
     title: "Fitness-website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/website.jpg",
+    img: "src/assets/img/projects/website.jpg",
     description:
       "The Fitness Website is alanding page , web application designed to help users learn and visualize various exercises for different muscle groups.It is built using html, css and javascript .",
     "github-link":
@@ -560,7 +428,7 @@ const projects = [
   {
     title: "Github Profile Wrapper",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Github_Profile_Wrapper.png",
+    img: "src/assets/img/projects/Github_Profile_Wrapper.png",
     description:
       "Github Profile Wrapper is used to display the github profile of the user. It is built using html, css and javascript .",
     "github-link":
@@ -570,7 +438,7 @@ const projects = [
   {
     title: "Gooey Cursor",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Goeey_Cursor.png",
+    img: "src/assets/img/projects/Goeey_Cursor.png",
     description:
       "Gooey Cursor is used to display the cursor in a different way. It is built using html, css and javascript .",
     "github-link":
@@ -580,7 +448,7 @@ const projects = [
   {
     title: "Google Clone",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Google_Clone.png",
+    img: "src/assets/img/projects/Google_Clone.png",
     description:
       "Google Clone is a clone of the google search engine. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -590,7 +458,7 @@ const projects = [
   {
     title: "Google Drive Clone",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Google_drive.png",
+    img: "src/assets/img/projects/Google_drive.png",
     description:
       "Google Drive Clone is a clone of the google drive. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -600,7 +468,7 @@ const projects = [
   {
     title: "Gym-Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Gym_Website.png",
+    img: "src/assets/img/projects/Gym_Website.png",
     description:
       "Gym Website is a website that displays the information about the gym. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -610,7 +478,7 @@ const projects = [
   {
     title: "Hex Code Generator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Hexacode.png",
+    img: "src/assets/img/projects/Hexacode.png",
     description:
       "Hex Code Generator is used to generate the hex code of the color. It is built using html, css and javascript .",
     "github-link":
@@ -620,7 +488,7 @@ const projects = [
   {
     title: "Hidden Search",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Hidden_Search_Bar.png",
+    img: "src/assets/img/projects/Hidden_Search_Bar.png",
     description:
       "Hidden Search is used to display the search bar when the user clicks on the search icon. It is built using html, css and javascript .",
     "github-link":
@@ -630,7 +498,7 @@ const projects = [
   {
     title: "Hoolix-Digital Agency Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Digital_Agency_Website.png",
+    img: "src/assets/img/projects/Digital_Agency_Website.png",
     description:
       "Digital Agency Website is a website that displays the information about the digital agency. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -640,7 +508,7 @@ const projects = [
   {
     title: "Image Editor",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Img_editor.png",
+    img: "src/assets/img/projects/Img_editor.png",
     description:
       "Image Editor is used to edit the image. It is built using html, css and javascript .",
     "github-link":
@@ -650,7 +518,7 @@ const projects = [
   {
     title: "Image Slider",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Img_Slider.png",
+    img: "src/assets/img/projects/Img_Slider.png",
     description:
       "Image Slider is used to display the images in a slider. It is built using html, css and javascript .",
     "github-link":
@@ -660,7 +528,7 @@ const projects = [
   {
     title: "Jaguar Car Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Jaguar_Website.png",
+    img: "src/assets/img/projects/Jaguar_Website.png",
     description:
       "It is a Jaguar Car Website built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -670,7 +538,7 @@ const projects = [
   {
     title: "Jumble Word",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Jumble_Word.png",
+    img: "src/assets/img/projects/Jumble_Word.png",
     description:
       "Jumble Word is a game in which the user has to guess the word. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -680,7 +548,7 @@ const projects = [
   {
     title: "Language Translator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Language_Translator.png",
+    img: "src/assets/img/projects/Language_Translator.png",
     description:
       "Language Translator is used to translate the text from one language to another. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -690,7 +558,7 @@ const projects = [
   {
     title: "Loan Calculator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Loan_Calculator.png",
+    img: "src/assets/img/projects/Loan_Calculator.png",
     description:
       "Loan Calculator is used to calculate the loan amount, interest and monthly payment. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -700,7 +568,7 @@ const projects = [
   {
     title: "Lyrics Search",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Lyrics_Search.png",
+    img: "src/assets/img/projects/Lyrics_Search.png",
     description:
       "Lyrics_Search is used to search the lyrics of the song. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -710,7 +578,7 @@ const projects = [
   {
     title: "Magic Balls",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Magic_Ball.png",
+    img: "src/assets/img/projects/Magic_Ball.png",
     description:
       "Magic balls is a game in which the user has to ask YES/NO question. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -720,7 +588,7 @@ const projects = [
   {
     title: "Meme Generator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Meme_generator.png",
+    img: "src/assets/img/projects/Meme_generator.png",
     description:
       "Meme Generator is used to generate the memes. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -730,7 +598,7 @@ const projects = [
   {
     title: "Memory Game",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Memeory_Game.png",
+    img: "src/assets/img/projects/Memeory_Game.png",
     description:
       "Memory Game is a game in which the user has to remember the colour. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -740,7 +608,7 @@ const projects = [
   {
     title: "MixTape",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/MixTape.png",
+    img: "src/assets/img/projects/MixTape.png",
     description:
       "Mix Tape is a music player built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -750,7 +618,7 @@ const projects = [
   {
     title: "Modern Credit Card Form",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Modern_credit_Card.png",
+    img: "src/assets/img/projects/Modern_credit_Card.png",
     description:
       "Modern Credit Card Form is used to display the credit card form. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -760,7 +628,7 @@ const projects = [
   {
     title: "MovieDataBase",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Movie_Database.png",
+    img: "src/assets/img/projects/Movie_Database.png",
     description:
       "Movie Database is used to display the information about the movies. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -770,7 +638,7 @@ const projects = [
   {
     title: "Music Player",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Music_Player.png",
+    img: "src/assets/img/projects/Music_Player.png",
     description:
       "Music Player is used to play the music. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -780,7 +648,7 @@ const projects = [
   {
     title: "Myntra Clone",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Myntra.png",
+    img: "src/assets/img/projects/Myntra.png",
     description:
       "Myntra Clone is a clone of the Myntra website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -790,7 +658,7 @@ const projects = [
   {
     title: "Notes App",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Notes_App.png",
+    img: "src/assets/img/projects/Notes_App.png",
     description:
       "Notes App is used to take notes. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -800,7 +668,7 @@ const projects = [
   {
     title: "Number_Guessing_Game",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Number_guessing.png",
+    img: "src/assets/img/projects/Number_guessing.png",
     description:
       "Number Guessing Game is a game in which the user has to guess the number. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -810,7 +678,7 @@ const projects = [
   {
     title: "OTP Verification",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/OTP_Verification.png",
+    img: "src/assets/img/projects/OTP_Verification.png",
     description:
       "OTP Verification is used to verify the OTP. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -820,7 +688,7 @@ const projects = [
   {
     title: "Palindrome Checker",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Palindrome_Checker.png",
+    img: "src/assets/img/projects/Palindrome_Checker.png",
     description:
       "Palindrome Checker is used to check whether the word is palindrome or not. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -830,7 +698,7 @@ const projects = [
   {
     title: "Password Generator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Password_Generator.png",
+    img: "src/assets/img/projects/Password_Generator.png",
     description:
       "Password Generator is used to generate the password. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -840,7 +708,7 @@ const projects = [
   {
     title: "PDF Merger",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/PDF_merger.png",
+    img: "src/assets/img/projects/PDF_merger.png",
     description:
       "Pdf Merger is used to merge the pdf files. It is built using html, css and javascript .",
     "github-link":
@@ -850,7 +718,7 @@ const projects = [
   {
     title: "PinCode Checker",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Pincode_checker.png",
+    img: "src/assets/img/projects/Pincode_checker.png",
     description:
       "PinCode Checker is used to check the pincode of the area. It is built using html, css and javascript .",
     "github-link":
@@ -860,7 +728,7 @@ const projects = [
   {
     title: "Ping-Pong",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Ping Pong.png",
+    img: "src/assets/img/projects/Ping Pong.png",
     description:
       "Ping Pong is a game in which the user has to hit the ball. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -870,7 +738,7 @@ const projects = [
   {
     title: "Prime Number Checker",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Prime_Number.png",
+    img: "src/assets/img/projects/Prime_Number.png",
     description:
       "It is used to check number is odd or even. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -880,7 +748,7 @@ const projects = [
   {
     title: "QR Code Generator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/QR_Code_Generator.png",
+    img: "src/assets/img/projects/QR_Code_Generator.png",
     description:
       "QR Code Generator is used to generate the QR Code of the text. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -890,7 +758,7 @@ const projects = [
   {
     title: "QR Code Reader",
     tags: ["HTML", "CSS", "JavaScript", "Node Library"],
-    img: "./img/projects/QR Code Reader.png",
+    img: "src/assets/img/projects/QR Code Reader.png",
     description:
       "The user can upload or either scan the QR Code from their device and the application provides the link of the QR Code scanned.",
     "github-link":
@@ -900,7 +768,7 @@ const projects = [
   {
     title: "Reaction_App",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Reaction_Time_Test.png",
+    img: "src/assets/img/projects/Reaction_Time_Test.png",
     description:
       "Reaction Time Test is a game in which the user has to click on the screen when the color changes. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -910,7 +778,7 @@ const projects = [
   {
     title: "Recipe Finder",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Recipe_Finder.png",
+    img: "src/assets/img/projects/Recipe_Finder.png",
     description:
       "Recipe Finder is used to find the recipe of the dish. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -920,7 +788,7 @@ const projects = [
   {
     title: "Save Text as File",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Save_File.png",
+    img: "src/assets/img/projects/Save_File.png",
     description:
       "Save Text as File is used to save the text as file of various formats. It is built using html, css and javascript .",
     "github-link":
@@ -930,7 +798,7 @@ const projects = [
   {
     title: "Screen Recorder",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Screen_recorder.png",
+    img: "src/assets/img/projects/Screen_recorder.png",
     description:
       "Screen Recorder is used to record the screen. It is built using html, css and javascript .",
     "github-link":
@@ -940,7 +808,7 @@ const projects = [
   {
     title: "Shades - Business Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Shades.png",
+    img: "src/assets/img/projects/Shades.png",
     description:
       "Shades is a business website built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -950,7 +818,7 @@ const projects = [
   {
     title: "SignIn Page",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/SignIn.png",
+    img: "src/assets/img/projects/SignIn.png",
     description: "It is a sign in page built using HTML, CSS and JavaScript.",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/SignIn Page",
@@ -959,7 +827,7 @@ const projects = [
   {
     title: "Sorting Visualizer",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Sorting_Visualizer.png",
+    img: "src/assets/img/projects/Sorting_Visualizer.png",
     description:
       "Sorting Visualizer is used to visualize the sorting algorithms. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -969,7 +837,7 @@ const projects = [
   {
     title: "Space Tourism Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Space_Tour.png",
+    img: "src/assets/img/projects/Space_Tour.png",
     description:
       "Space Tourism Website is a website that displays the information about the space tourism. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -979,7 +847,7 @@ const projects = [
   {
     title: "Split landing Page",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Landing_Page.png",
+    img: "src/assets/img/projects/Landing_Page.png",
     description:
       "Split Landing Page is used to display information about more than one thing. It is built using html, css and javascript .",
     "github-link":
@@ -989,7 +857,7 @@ const projects = [
   {
     title: "Spotify Clone",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Spotify_Clone.png",
+    img: "src/assets/img/projects/Spotify_Clone.png",
     description:
       "Spotify Clone is a clone of the spotify website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -999,7 +867,7 @@ const projects = [
   {
     title: "Step Progress Bar",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Step_Wise_Progress.png",
+    img: "src/assets/img/projects/Step_Wise_Progress.png",
     description:
       "Step Progress Bar is used to display the progress of the steps. It is built using html, css and javascript .",
     "github-link":
@@ -1009,7 +877,7 @@ const projects = [
   {
     title: "Stone Paper Scissors",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Rock_Paper_Scissors.png",
+    img: "src/assets/img/projects/Rock_Paper_Scissors.png",
     description:
       "Stone Paper Game is a game in which the user has to choose the stone, paper or scissor. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -1019,7 +887,7 @@ const projects = [
   {
     title: "Stop Watch",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Stop_Watch.png",
+    img: "src/assets/img/projects/Stop_Watch.png",
     description:
       "Stop Watch is used to display the time. It is built using html, css and javascript .",
     "github-link":
@@ -1029,7 +897,7 @@ const projects = [
   {
     title: "Student Enrollment Form",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Student_Enrollment_Form.png",
+    img: "src/assets/img/projects/Student_Enrollment_Form.png",
     description:
       "Student Enrollment Form is used to enroll the student. It is built using html, css and javascript .",
     "github-link":
@@ -1039,7 +907,7 @@ const projects = [
   {
     title: "Student Service Portal",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Student_Service.png",
+    img: "src/assets/img/projects/Student_Service.png",
     description:
       "Student Service Portal is used to display the information about the services for student. It is built using html, css and javascript .",
     "github-link":
@@ -1049,7 +917,7 @@ const projects = [
   {
     title: "Talking ChatBot",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Talking_ChatBot.png",
+    img: "src/assets/img/projects/Talking_ChatBot.png",
     description:
       "Talking ChatBot is used to chat with the bot. It is built using html, css and javascript .",
     "github-link":
@@ -1059,7 +927,7 @@ const projects = [
   {
     title: "TaskList",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Day_Planner.png",
+    img: "src/assets/img/projects/Day_Planner.png",
     description:
       "Task List is used to add the task. It is built using html, css and javascript .",
     "github-link":
@@ -1069,7 +937,7 @@ const projects = [
   {
     title: "Temperature Converter",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Temperature_Convertor.png",
+    img: "src/assets/img/projects/Temperature_Convertor.png",
     description:
       "Temperature Converter is used to convert the temperature from one unit to another. It is built using html, css and javascript .",
     "github-link":
@@ -1079,7 +947,7 @@ const projects = [
   {
     title: "Text-Utils",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Text-utils.jpg",
+    img: "src/assets/img/projects/Text-utils.jpg",
     description:
       "Text Utils is used to perform various operations on the text. It is built using html, css and javascript .",
     "github-link":
@@ -1089,7 +957,7 @@ const projects = [
   {
     title: "The Great DrumKit",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Drumkit.png",
+    img: "src/assets/img/projects/Drumkit.png",
     description: "",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/The Great Drumkit",
@@ -1098,7 +966,7 @@ const projects = [
   {
     title: "Snake, Water and Gun Game",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Snake_Water_Gun.png",
+    img: "src/assets/img/projects/Snake_Water_Gun.png",
     description:
       "Snake, Water and Gun Game is a game in which the user has to choose the snake, water or gun. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -1108,7 +976,7 @@ const projects = [
   {
     title: "Theme Switcher",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Switch_theme.png",
+    img: "src/assets/img/projects/Switch_theme.png",
     description: "",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Theme Switcher",
@@ -1117,7 +985,7 @@ const projects = [
   {
     title: "Tic Tac Toe Game",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Tic Tac Toe.png",
+    img: "src/assets/img/projects/Tic Tac Toe.png",
     description:
       "Tic Tac Toe Game is a game in which the user has to play with X's and O's. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -1127,7 +995,7 @@ const projects = [
   {
     title: "Timer",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Stop_Watch (2).png",
+    img: "src/assets/img/projects/Stop_Watch (2).png",
     description: "It is a timer built using HTML, CSS and JavaScript.",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Timer",
@@ -1136,7 +1004,7 @@ const projects = [
   {
     title: "Tiny MCE",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Tiny_MCE.png",
+    img: "src/assets/img/projects/Tiny_MCE.png",
     description: "TinyMCE is built using html, css and javascript .",
     "github-link":
       "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/TinyMCE synonym plugin",
@@ -1145,7 +1013,7 @@ const projects = [
   {
     title: "Tourism",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Tourism_Website.png",
+    img: "src/assets/img/projects/Tourism_Website.png",
     description:
       "Tourism is a website that displays the information about the tourism. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1155,7 +1023,7 @@ const projects = [
   {
     title: "Tripocity",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Tripocity.png",
+    img: "src/assets/img/projects/Tripocity.png",
     description:
       "Tripocity is a website that displays the information about the tourism. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1165,7 +1033,7 @@ const projects = [
   {
     title: "Truth Table Generator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Truth_Table.png",
+    img: "src/assets/img/projects/Truth_Table.png",
     description:
       "Truth Table Generator is used to generate the truth table of the given expression. It is built using html, css and javascript .",
     "github-link":
@@ -1175,7 +1043,7 @@ const projects = [
   {
     title: "Typing Speed Game",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Typing_speed.png",
+    img: "src/assets/img/projects/Typing_speed.png",
     description:
       "Typing Speed Game is a game in which the user has to type the word and some parameters would be tested. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -1185,7 +1053,7 @@ const projects = [
   {
     title: "Villa Hotel Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Villa.png",
+    img: "src/assets/img/projects/Villa.png",
     description:
       "Villa Hotel Website is a website that displays the information about the hotel. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1195,7 +1063,7 @@ const projects = [
   {
     title: "Virtual Keyboard",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Virtual_Keyboard.png",
+    img: "src/assets/img/projects/Virtual_Keyboard.png",
     description:
       "Virtual Keyboard is used to type the text without mechanical keyboard. It is built using html, css and javascript .",
     "github-link":
@@ -1205,7 +1073,7 @@ const projects = [
   {
     title: "Visit Counter",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Visit_Counter.png",
+    img: "src/assets/img/projects/Visit_Counter.png",
     description:
       "Visit Counter is used to count the number of visitors on the website. It is built using html, css and javascript .",
     "github-link":
@@ -1215,7 +1083,7 @@ const projects = [
   {
     title: "Voyage Slider GSAP",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Voyage_Slider.png",
+    img: "src/assets/img/projects/Voyage_Slider.png",
     description:
       "Voyage Slider GSAP is used to display the images in a slider. It is built using html, css and javascript .",
     "github-link":
@@ -1225,7 +1093,7 @@ const projects = [
   {
     title: "Weather",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Weather_Details.png",
+    img: "src/assets/img/projects/Weather_Details.png",
     description:
       "Weather website is used to display the weather details of the city. It is built using html, css and javascript .",
     "github-link":
@@ -1235,7 +1103,7 @@ const projects = [
   {
     title: "Weight Convertor",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Weight_Convertor.png",
+    img: "src/assets/img/projects/Weight_Convertor.png",
     description:
       "Weight Convertor is used to convert the weight from one unit to another. It is built using html, css and javascript .",
     "github-link":
@@ -1245,7 +1113,7 @@ const projects = [
   {
     title: "Whack A Mole",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Whack_A_Mole.png",
+    img: "src/assets/img/projects/Whack_A_Mole.png",
     description:
       "Whack a mole is a game in which the user has to hit the mole. It is built using HTML, CSS and JavaScript.",
     "github-link":
@@ -1255,7 +1123,7 @@ const projects = [
   {
     title: "WhiteBoard",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/WiteBoard.png",
+    img: "src/assets/img/projects/WiteBoard.png",
     description:
       "White Board is used to draw on the screen. It is built using html, css and javascript .",
     "github-link":
@@ -1265,7 +1133,7 @@ const projects = [
   {
     title: "Wikipedia",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Wikipedia.png",
+    img: "src/assets/img/projects/Wikipedia.png",
     description:
       "Wikipedia is used to search the information about the topic. It is built using html, css and javascript .",
     "github-link":
@@ -1275,7 +1143,7 @@ const projects = [
   {
     title: "Windows 11",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Windows11.png",
+    img: "src/assets/img/projects/Windows11.png",
     description:
       "Windows 11 is a clone of the windows 11. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1285,7 +1153,7 @@ const projects = [
   {
     title: "Resume Creator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Resume_Creator.png",
+    img: "src/assets/img/projects/Resume_Creator.png",
     description:
       "This project uses Basic HTML, CSS, JavaScript to create a basic Resume Creator, where you can create your resume and most important download the created Resume.",
     "github-link":
@@ -1295,7 +1163,7 @@ const projects = [
   {
     title: "Realtime Currency Converter",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/CurrencyConverter.png",
+    img: "src/assets/img/projects/CurrencyConverter.png",
     description:
       "This is a currency converter web application that fetches real-time data for currency conversion rates using HTML, CSS, and JavaScript. The application allows users to convert currencies by selecting the source currency and the target currency, and it provides an interface to easily switch between the two selected values.",
     "github-link": "https://github.com/Alkaison/Currency-Converter/",
@@ -1304,7 +1172,7 @@ const projects = [
   {
     title: "World Info Website",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/World_Info.png",
+    img: "src/assets/img/projects/World_Info.png",
     description:
       "World Info Website is used to display the information about the world. It is built using html, css and javascript .",
     "github-link":
@@ -1314,7 +1182,7 @@ const projects = [
   {
     title: "Huffman Compressor",
     tags: ["HTML", "CSS", "JavaScript", "C++"],
-    img: "./img/projects/huffman.png",
+    img: "src/assets/img/projects/huffman.png",
     description:
       "Implemented the Huffman coding algorithm achieving efficient data compression without loss of information.",
     "github-link":
@@ -1324,7 +1192,7 @@ const projects = [
   {
     title: "Zomato Landing Page",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Zomato_Clone.png",
+    img: "src/assets/img/projects/Zomato_Clone.png",
     description:
       "Zomato Landing Page is a clone of the zomato website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1334,7 +1202,7 @@ const projects = [
   {
     title: "MESSI MANIA",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/MESSI MANIA.png",
+    img: "src/assets/img/projects/MESSI MANIA.png",
     description: "A simple fan made webpage of LIONEL MESSI",
     "github-link": "https://github.com/Soumyajit2825/MESSI_MANIA",
     "project-link": "Projects/MESSI MANIA/index.html",
@@ -1342,7 +1210,7 @@ const projects = [
   {
     title: "Morse Code Convertor",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Morse_Code_Convertor.png",
+    img: "src/assets/img/projects/Morse_Code_Convertor.png",
     description:
       "This website can convert the morse code into the text and text into the morse code. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1352,7 +1220,7 @@ const projects = [
   {
     title: "Leap Years In A Range",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Leap_Years_In_A_Range.png",
+    img: "src/assets/img/projects/Leap_Years_In_A_Range.png",
     description:
       "This website can find the number of leap years in between the ranges and enlist all the leap years between the range of years. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1362,7 +1230,7 @@ const projects = [
   {
     title: "Guess The Gender By Name",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Guess_The_Gender.png",
+    img: "src/assets/img/projects/Guess_The_Gender.png",
     description:
       "This website can guess the gender just by entering the name of the person. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
     "github-link":
@@ -1372,7 +1240,7 @@ const projects = [
   {
     title: "Text-Utilities",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Text_Utils.png",
+    img: "src/assets/img/projects/Text_Utils.png",
     description:
       "This website can be used to manipulate text in several ways such as change to uppercase or lowercase , and remove extra spaces etc.",
     "github-link":
@@ -1382,7 +1250,7 @@ const projects = [
   {
     title: "Playable Piano",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Playable_Piano.png",
+    img: "src/assets/img/projects/Playable_Piano.png",
     description:
       "This project is a beginner friendly and helpful who are new to frontend technology. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
     "github-link":
@@ -1392,7 +1260,7 @@ const projects = [
   {
     title: "Sound Equalizer",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Sound_Equalizer.png",
+    img: "src/assets/img/projects/Sound_Equalizer.png",
     description:
       "Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1402,7 +1270,7 @@ const projects = [
   {
     title: "Lorem Ipsum Generator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Lorem-Ipsum-Generator.png",
+    img: "src/assets/img/projects/Lorem-Ipsum-Generator.png",
     description:
       "This project can generate random written paragraphs. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1412,7 +1280,7 @@ const projects = [
   {
     title: "Carbon FootPrint Calculator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/carbonFootCalc.png",
+    img: "src/assets/img/projects/carbonFootCalc.png",
     description:
       "Carbon FootPrint Calculator is an Eco-Friendly Calculator to help you keep your carbon emissions in check and help save the environment, built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
@@ -1422,7 +1290,7 @@ const projects = [
   {
     title: "Video Player",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Video_Player.png",
+    img: "src/assets/img/projects/Video_Player.png",
     description:
       "This website can be used to play videos. This application give the feeling of video gallery as of our mobile phone.",
     "github-link":
@@ -1432,7 +1300,7 @@ const projects = [
   {
     title: "Chatbot",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Chatbot.png",
+    img: "src/assets/img/projects/Chatbot.png",
     description:
       "This is a Chatbot Website you can ask your any doubts this provides solutions with the help of GPT fetched API.",
     "github-link":
@@ -1442,7 +1310,7 @@ const projects = [
   {
     title: "Random Meal Generator",
     tags: ["HTML", "CSS", "JavaScript"],
-    img: "./img/projects/Random-Meal-Generator.png",
+    img: "src/assets/img/projects/Random-Meal-Generator.png",
     description:
       "Random Meal Generator can generator different meals. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
     "github-link":
