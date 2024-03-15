@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices</title>
+
+    <!-- fontawesome script for icons -->
+    <script src="https://kit.fontawesome.com/76448c9004.js" crossorigin="anonymous"></script>
+
+    <!-- linking the stylesheet -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/responsive.css">
+</head>
+
+<body onload="loadinvoices()">
+    <section>
+        <!-- filter options -->
+        <div class="filter">
+            <h2>All Invoices</h2>
+
+            <div class="fields">
+                <div>
+                    <label for="date">Begin Date</label>
+                    <input type="date" name="date" id="date" onchange="filter()" class="violet">
+                </div>
+
+                <div>
+                    <label for="duedate">End Date</label>
+                    <input type="date" name="duedate" id="duedate" onchange="filter()" class="other">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select name="status" id="status" onchange="filter()" class="red">
+                        <option value="Any">Any</option>
+                        <option value="Draft">Draft</option>
+                        <option value="Paid">Paid</option>
+                        <option value="Partial Payment">Partial Payment</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="client">Client</label>
+                    <select name="client" id="client" onchange="filter()" class="blue">
+                        <option value="Any">Any</option>
+                        <option value="In-State">In-state</option>
+                        <option value="Out-State">Out-state</option>
+                    </select>
+                </div>
+            </div>
+
+            <p>*The data has been shown according to your given information</p>
+        </div>
+
+        <!-- table to show all the invoices  -->
+        <table id="invoice_tbl">
+            <thead>
+                <tr>
+                    <th onclick='sortData("id")'>Invoice
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th onclick='sortData("name")'>Client Name
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th onclick='sortData("type")'>Client Type
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th onclick='sortData("date")'>Date
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th onclick='sortData("duedate")'>Due Date
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th onclick='sortData("total")'>Total
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th onclick='sortData("balance")'>Balance
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th onclick='sortData("status")'>Status
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-sort-up"></i>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- linking the script.js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

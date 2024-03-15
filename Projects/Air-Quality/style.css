@@ -35,7 +35,7 @@ main {
 .card {
   width: 50%;
   max-width: 400px;
-  padding: 30px;
+  padding: 20px;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -192,7 +192,6 @@ button:hover {
 
 /* CSS for screens less than 480px */
 @media (max-width: 480px) {
-  
   .header {
     font-size: 18px;
   }

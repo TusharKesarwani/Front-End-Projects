@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserret', serif;
+}
+
+.schedule-section{
+    margin-top: 50px;
+}
+
+.scheduleHeading h1{
+    text-align: center;
+    font-size: 20px;
+    color: #08080a;
+    font-weight:600;
+    letter-spacing: 9px;
+}
+
+.schedule{
+    position: relative;
+    margin-top: 30px;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.schedule:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 94%;
+    /* background: #6AB6BB; */
+    background: linear-gradient(#3f1f26,#803b09);
+}
+.schedule ul{
+    margin: 0;
+    padding: 0;
+}
+
+.schedule ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+
+.schedule ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.schedule ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.schedule-content{
+    padding-bottom: 20px;
+}
+
+.schedule-content p{
+    width: 90%;
+    float: right;
+    text-align: justify;
+    color: rgb(58, 57, 57);
+}
+
+.sch-2 p, .sch-4 p{
+    float: left;
+}
+
+.schedule ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top:24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgb(165, 16, 23);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 76, 0.2);
+}
+
+.schedule ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top:24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #a51024;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 60, 0.2);
+}
+
+.schedule ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #a51010;
+    
+}
+
+.schedule ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.schedule ul li .schedule-register h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.schedule ul li:nth-child(1) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -210px;
+    margin: 0;
+    padding: 8px 16px;
+    /* background: #109CA5; */
+    background: linear-gradient(#3f1f26,#800909);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 70, 0.3);
+}
+.schedule ul li:nth-child(3) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -245px;
+    margin: 0;
+    padding: 8px 16px;
+    /* background: #109CA5; */
+    background: linear-gradient(#3f1f26,#800917);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 43, 0.3);
+}
+.schedule ul li:nth-child(5) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -180px;
+    margin: 0;
+    padding: 8px 16px;
+    /* background: #109CA5; */
+    background: linear-gradient(#3f1f26,#80091b);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 53, 0.3);
+}
+.schedule ul li:nth-child(2) .schedule-register{
+    position: absolute;
+    top: 12px;
+    left: -230px;
+    margin: 0;
+    padding: 8px 16px;
+    /* background: #109CA5; */
+    background: linear-gradient(#3f1f26,#800911);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 36, 0.3);
+}
+.schedule ul li:nth-child(4) .schedule-register{
+    position: absolute;
+    top: 12px;
+    left: -205px;
+    margin: 0;
+    padding: 8px 16px;
+    /* background: #109CA5; */
+    background: linear-gradient(#3f1f26,#d60849);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
+}
+/* .schedule ul li:nth-child(odd) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -230px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
+} */
+
+/* .schedule ul li:nth-child(even) .schedule-register{
+    position: absolute;
+    top: 12px;
+    left: -230px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
+} */
+
+.schedule-content p span{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+@media (max-width: 1000px){
+    .schedule{
+        width:100%;
+    }
+    .schedule p{
+        width: 80%;
+    }
+    .schedule-content p span{
+        font-weight: 600;
+        font-size: 11px;
+    }
+}
+@media (max-width: 767px) {
+    .scheduleHeading h1{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(94, 12, 22);
+        font-weight: bold;
+        letter-spacing: 8px;
+    }
+    .schedule p{
+        float: left;
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .schedule{
+        width:100%;
+        margin: 0;
+    }
+    .schedule:before{
+        left: 20px;
+    }
+    .schedule ul li{
+        margin:27px 0;
+    }
+    .schedule ul li:nth-child(odd),
+    .schedule ul li:nth-child(even){
+        width:100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+    .schedule ul li:nth-child(odd):before,
+    .schedule ul li:nth-child(even):before{
+        top: -18px;
+        left:16px;
+    }
+    .schedule ul li:nth-child(odd) .schedule-register,
+    .schedule ul li:nth-child(even) .schedule-register{
+        top: -30px;
+        left: 50px;
+        right: inherit;
+
+    }
+
+}

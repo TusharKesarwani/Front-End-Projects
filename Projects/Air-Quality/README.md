@@ -1,5 +1,6 @@
 # Air-Quality
 
+# LIVE: https://airquality-lime.vercel.app/
 Air-Quality is a web application that allows users to input coordinates and fetch air pollution details such as the concentration of pollutants in the air and the status of air quality based on the pollution level. The application provides a user-friendly interface and also supports retrieving data based on the user's current location if location services are enabled.
 
 ## Features
@@ -18,6 +19,8 @@ Air-Quality is a web application that allows users to input coordinates and fetc
 - JavaScript
 
 ## Screenshots
+<img width="960" alt="image" src="https://github.com/TusharKesarwani/Front-End-Projects/assets/96890436/846e871c-6538-49a0-ba20-678859850a7b">
+
 
 ![](https://github.com/TusharKesarwani/Front-End-Projects/assets/90151736/2fc47a46-6b8d-427f-863d-33b885e01c4e)
 
