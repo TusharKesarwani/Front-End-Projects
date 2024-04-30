@@ -55,9 +55,10 @@ function fetchbookmarks() {
             <div class="col-9">
                 <h5>${bookmarks[i].name}</h5>    
             </div>
-            <div class="col-3">
-                <a class="btn btn-sm btn-success" href="https://${bookmarks[i].url}" target="_blank">Visit</a>
-                <a onclick="deletebookmark(${i});" class="btn btn-danger text-light btn-sm" >Delete</a> 
+            <div class="col-3 button-container">
+                <a class="btn btn-sm " href="https://${bookmarks[i].url}" target="_blank">Visit</a>
+                <a onclick="copyToClipboard('${bookmarks[i].url}')" class="btn btn-sm ">Copy</a>
+                <a onclick="deletebookmark(${i});" class="btn btn-sm" >Delete</a> 
             </div>
         </div>   
         <small>Created at : ${Date().slice(4, 15)}</small>                    
@@ -81,4 +82,15 @@ function validateform(sitename, siteurl) {
         return false;
     }
     return true;
+}
+function copyToClipboard(url) {
+    var input = document.createElement('input');
+    input.style.position = 'fixed';
+    input.style.opacity = 0;
+    input.value = url;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    alert('Link Copied!');
 }
