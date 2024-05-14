@@ -445,7 +445,7 @@ nav {
   padding: 0 2rem;
   margin: 0 auto;
   position: sticky;
-  top: 2px;
+  top: 0;
   z-index: 100;
 }
 nav:hover{
@@ -493,15 +493,12 @@ main {
   padding: 2rem;
   gap: 4rem;
   margin: 0 8rem;
-  position: sticky;
-  top:0%;
-  z-index: -1;
 
 }
 
 main .right img {
   animation: imgUp 1s linear infinite alternate;
-  
+  z-index: -1;
 
 }
 main .left {
