@@ -556,13 +556,15 @@ main .left p {
 
 }
 
-.project-section {
+.project-section {  
+  width: 100%; 
+  margin: 10px; 
+  padding: 50px;
   border: 1px rgb(185, 185, 185) solid;
   background-color:rgb(255, 255, 255); 
   /* margin-left : .6rem;
   margin-right : .6rem; */
   /* margin: -2.5rem 8rem 6rem 8rem; */
-  padding: 6rem;
   /* margin-bottom:1rem ; */
   z-index: 10000;
 }
@@ -644,13 +646,15 @@ main .left p {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
+  transition: all 0.5s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
   background-color: #0d4360;
   border-radius: 0.2rem;
-  transition: all 0.5s ease;
 }
 
 .project:hover {
-  scale: 1.01;
+  scale: 1.01; 
+  transform: translateY(-5px); 
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
