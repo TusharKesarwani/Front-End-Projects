@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --mainFont: "Poppins";
+    --fontcolor: white;
+    --maincolor: black;
+    --backcolor: rgb(53, 52, 52);
+}
+*
+{
+    margin: 0px;
+}
+body
+{
+    font-family: var(--mainFont);
+    background-color: rgb(77, 76, 76);
+    padding: 60px;
+}
+.container
+{
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgb(5, 1, 14);
+    opacity: 0.9;
+    filter: brightness(70%);
+}
+.nav
+{
+    width: 8%;
+    height: 98%;
+    border-radius: 30px;
+    display: flex;
+    padding-top: 30px;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--backcolor);
+}
+.navBar
+{
+    list-style-type: none;
+    color: var(--fontcolor);
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    overflow: auto;
+    gap: 30px;
+}
+.main
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.gray
+{
+    background-color: var(--backcolor);
+
+}
+.s
+{
+    width: 100%;
+    height: 6%;
+}
+.search
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.display
+{   width: 100%;
+    height: 40%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.NameDisplay
+{   width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 50px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--fontcolor);
+}
+#CityName
+{
+    font-size: 40px;
+}
+#Rain
+{
+    color: gray;
+}
+.temp
+{
+    font-size: 70px;
+}
+.image
+{
+    width:50%;
+     height: 95%;
+}
+.img 
+{
+    object-fit: contain;
+}
+.forecast
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: var(--mainFont);
+   color: var(--fontcolor);
+   flex-wrap: wrap;
+   overflow: auto;
+}
+::-webkit-scrollbar
+{
+    background-color: var(--backcolor);
+    border-radius: 30px;
+    scroll-behavior: smooth;
+}
+.heading
+{
+    width: 100%;
+    height: 10%;
+    margin:  auto;
+    font-size: 50px;
+    padding: 20px;
+    margin-left: 60px;
+}
+.timetble
+{   width: 100%;
+    height: 100%;
+    display: flex;
+   align-items: center;
+   gap: 30px;
+  
+   font-family: var(--mainFont);
+   color: var(--fontcolor);
+}
+
+.time
+{
+    width: 30%;
+    height: 70%;
+    border-right: 1px solid gray;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conditions
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+   align-items: center;
+   font-family: var(--mainFont);
+   color: var(--fontcolor);
+}
+.pm{
+    border: none;
+}
+.down
+{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+}
+.cond
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.condi {
+    width: 100%;
+    height: 100%;   
+}
+.left
+{
+    background-color:var(--backcolor);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 40%;
+    border-radius: 20px;
+}
+.leftTime
+{   width: 85%;
+    height: 30%;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 60px;
+    font-size: 20px;
+}
+.sixth
+{
+    border-bottom: none;
+}
+@media screen and (max-width: 1000px ) {
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .main
+    {
+        width: 100%;
+    }
+    .left
+    {
+        width: 100%;
+    }
+    .nav
+    {
+        height: 8%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .navBar
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .forecast
+    {
+        width: 100%;
+        height: 40%;
+       
+    }
+}
