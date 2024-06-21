@@ -56,6 +56,7 @@ function fetchbookmarks() {
                 <h5>${bookmarks[i].name}</h5>    
             </div>
             <div class="col-3">
+                <button class="btn btn-sm btn-primary" onClick="copyToClipBoard(url)">Copy Url</button>
                 <a class="btn btn-sm btn-success" href="https://${bookmarks[i].url}" target="_blank">Visit</a>
                 <a onclick="deletebookmark(${i});" class="btn btn-danger text-light btn-sm" >Delete</a> 
             </div>
@@ -64,7 +65,12 @@ function fetchbookmarks() {
         </div>`;
     }
 }
-
+// Copy selected site's URL to clipboard
+function copyToClipBoard(url) {
+    navigator.clipboard.writeText(url);
+    // Alert the copied text
+    alert("URL Copied");
+}
 // Validate Form
 function validateform(sitename, siteurl) {
     if (!sitename || !siteurl) {
