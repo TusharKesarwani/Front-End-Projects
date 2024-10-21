@@ -1,0 +1,128 @@
+/* Header.module.css */
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%
+}
+
+.textContainer {
+    max-width: 50%;
+}
+
+.mainHeading {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.subHeading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.iconsRow {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    filter: invert(0) brightness(0);
+}
+
+.icon2 {
+    transform: scaleY(-1);
+    width: 100px;
+    height: 100px;
+    filter: invert(0) brightness(0);
+}
+
+.inputContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.emailInput {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+.getStartedButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.imageContainer {
+    max-width: 50%;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: opacity 0.5s ease-in, transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    /* Custom cubic-bezier for bounce effect */
+}
+
+.imageLoaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10;
+    }
+    .heroImage {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .imageContainer {
+        max-width: 100%;
+        opacity: 0;
+        transform: translateY(-150px);
+        transition: opacity 0.5s ease-in, transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        /* Custom cubic-bezier for bounce effect */
+    }
+    .imageLoaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .textContainer {
+        max-width: 95%;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .icon2 {
+        transform: scaleY(-1);
+        width: 50px;
+        height: 50px;
+    }
+    .inputContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

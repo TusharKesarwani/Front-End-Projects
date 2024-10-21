@@ -1,0 +1,120 @@
+/* Navbar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../../public/navimg.svg);
+    background-color: #3b5998;
+    padding: 10px 0;
+    width: 100%;
+    height: 25vh;
+    background-blend-mode: color-burn;
+    margin-top: -3%;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Hide nav links by default on mobile */
+
+.navLinks.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #3b5998;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.navItem a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navItem a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Contact button styles */
+
+.contactContainer {
+    display: flex;
+    align-items: center;
+}
+
+.contactButton {
+    background-color: #7f9cf5;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.contactButton:hover {
+    background-color: #6c85db;
+}
+
+
+/* Hamburger button styles */
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* Mobile responsive styles */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: fit-content;
+    }
+    .navLinks {
+        display: none;
+        /* Hide nav links initially on mobile */
+    }
+    .navLinks.open {
+        display: block;
+        /* Display nav links when open */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navList {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navItem a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .hamburger {
+        display: block;
+        color: #ffffff;
+        /* Show hamburger icon on mobile */
+    }
+}

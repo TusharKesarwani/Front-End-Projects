@@ -1,0 +1,70 @@
+.techStack {
+    background: linear-gradient(to right, #7a8cc9, #aec8e0);
+    padding: 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.categoryButton {
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.categoryButton.active {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.techItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techIcon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .iconContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .techIcon {
+        width: 60px;
+        height: 60px;
+    }
+    .categoryButton {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}

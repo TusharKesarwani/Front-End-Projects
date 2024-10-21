@@ -1,0 +1,1399 @@
+const projects = [
+  {
+    title: "Doctor appointment booking system",
+    tags: ["React JS, Node JS, Express JS, MongoDB"],
+    img: "img/projects/Medimeet.jpg",
+    description:
+      "This is a 3D SignUp or SignIn page made using HTML, CSS and JavaScript.",
+    githublink: "https://github.com/Zufiya99/MediMeet-frontend",
+    projectLink: "https://medimeet-doctor-appointment-booking.netlify.app/",
+  },
+  {
+    title: "The Quaero",
+    tags: ["React JS, Node JS, Express JS, MongoDB"],
+    img: "img/projects/Quaero.jpg",
+    description:
+      "This is a 3D SignUp or SignIn page made using HTML, CSS and JavaScript.",
+    githublink: "https://github.com/Zufiya99/The-Quaero-website",
+    projectLink: "https://thequaero.netlify.app/",
+  },
+  {
+    title: "Bonker website",
+    tags: ["HTML", "CSS", "JavaScript", "Angular JS"],
+    img: "img/projects/Bonkers.jpg",
+    description:
+      "This is a 3D SignUp or SignIn page made using HTML, CSS and JavaScript.",
+    githublink: "https://github.com/Arzaan-k/BonkerAngular",
+    projectLink: "https://bonkers.onrender.com/",
+  },
+  {
+    title: "3D Login Page",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/3D form.png",
+    description:
+      "This is a 3D SignUp or SignIn page made using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/3D Login Page",
+    projectLink: "Projects/3D Login Page/index.html",
+  },
+  {
+    title: "3D Maze",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/3D Maze.png",
+    description:
+      "This is a 3D maze made using HTML, CSS and JavaScript.It navigates through the maze using the arrow keys on the keyboard. Once the maze is completed, there would be a secret key.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/3D Maze",
+    projectLink: "Projects/3D Maze/index.html",
+  },
+  {
+    title: "Air Quality",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Air_Quality.png",
+    description:
+      "It is atmospheric Air Quality checker built using HTML, CSS and JavaScript. Based on Latitude and Longitude, it shows the Air Quality Index(concentration of pollutants) of that particular location.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Air-Quality",
+    projectLink: "Projects/Air-Quality/index.html",
+  },
+  {
+    title: "Analog Clock",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Analog_Clock.png",
+    description:
+      "It is analog clock built using HTML, CSS and JavaScript. It shows the current time of the system. It is a simple analog clock with hour, minute and second hands.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Analog Clock",
+    projectLink: "Projects/Analog Clock/index.html",
+  },
+  {
+    title: "Logistic-Company",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/logiC.png",
+    description:
+      "It is a Logistic Company landing Page with essential features for a logistic company",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Logistic Company",
+    projectLink: "Projects/Logistic Company/index.html",
+  },
+  {
+    title: "Animated Card",
+    tags: ["HTML", "CSS"],
+    img: "img/projects/Animated_Card.png",
+    description: "It is animated card built using HTML,CSS.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Animated Card",
+    projectLink: "Projects/Animated Card/animated_card.html",
+  },
+  {
+    title: "Armstrong Number Checker",
+    tags: ["HTML", "CSS, JavaScript"],
+    img: "img/projects/Armstrong_checker.png",
+    description:
+      "It is a simple Armstrong Number Checker built using HTML, CSS and JavaScript. It checks whether the given number is an Armstrong Number or not.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/ArmstrongChecker",
+    projectLink: "Projects/ArmstrongChecker/armstrong.html",
+  },
+  {
+    title: "Audio-Text Converter",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Text_to_Speech.png",
+    description:
+      "It is basic audio to text convertor that uses Voice Recognition.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Audio-Text-Convertor",
+    projectLink: "Projects/Audio-Text-Convertor/index.html",
+  },
+  {
+    title: "Beauty Zone",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/BeautyZone.png",
+    description:
+      "It is a bridal makeup website built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/beautyzone",
+    projectLink: "Projects/beautyzone/index.html",
+  },
+  {
+    title: "Beyblade Card Catalog",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Beyblade_Card_Catalog.png",
+    description:
+      "Beyblade Card Catalog will showcase Beyblade cards. The project will leverage a JSON file containing data for various Beyblade cards. This data will be dynamically fetched and utilized to populate the card catalog. The frontend page will incorporate a filtering mechanism to allow users to narrow down their card search.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Beyblade-Card-Catalog",
+    projectLink: "Projects/Beyblade-Card-Catalog/index.html",
+  },
+  {
+    title: "Bill Tip Calculator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Tip_Calculator.png",
+    description:
+      "Bill Tip Calculator is used to calculate tips per person and is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/bill tip calculator",
+    projectLink: "Projects/bill tip calculator/index.html",
+  },
+  {
+    title: "Blog Project Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Blog_Website.png",
+    description:
+      "It is a simple blog website built using html,css and javascript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Blog Project Website",
+    projectLink: "Projects/Blog Project Website/index.html",
+  },
+  {
+    title: "BMICalculator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/BMI_Calculator.png",
+    description:
+      "BMI calculator is used to calculate BMI of the person based on height and weight.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/BMICalculator",
+    projectLink: "Projects/BMICalculator/index.html",
+  },
+  {
+    title: "Bookcase",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/BookCase.png",
+    description:
+      "Book case is a website where one can store their all the finished and unfinished books.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Bookcase",
+    projectLink: "Projects/Bookcase/index.html",
+  },
+  {
+    title: "Bookmarker_App",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/BookMarker_App.png",
+    description:
+      "BookMarker App is used to save bookmarks using name of website.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Bookmarker_App",
+    projectLink: "Projects/Bookmarker_App/index.html",
+  },
+  {
+    title: "Breathe Meditation",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Breathe_Meditation.png",
+    description:
+      "Breathe Meditation is used to relax the mind and body. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Breathe Meditation",
+    projectLink: "Projects/Breathe Meditation/index.html",
+  },
+  {
+    title: "Caesar Cipher",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Caesae_Cipher.png",
+    description:
+      "Caesar Cipher is the encryption tool that encrypts the text by shifting the letters by a certain number of places. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/caesar cipher",
+    projectLink: "Projects/caesar cipher/index.html",
+  },
+  {
+    title: "Calculator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Calculator.png",
+    description:
+      "Calculator is used to perform basic arithmetic operations. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Caculator",
+    projectLink: "Projects/Calculator/index.html",
+  },
+  {
+    title: "Calendar",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Calendar.png",
+    description:
+      "Calendar is used to display the current date. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Calendar",
+    projectLink: "Projects/Calendar/index.html",
+  },
+  {
+    title: "Captcha Checker",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Captcha_Checker.png",
+    description:
+      "Captcha Checker is used to check if the entered captcha is valid or not.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Captcha Checker",
+    projectLink: "Projects/Captcha Checker/index.html",
+  },
+  {
+    title: "Cards Component",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Card_Components.png",
+    description: "Cards components is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Cards Component",
+    projectLink: "Projects/Cards Component/index.html",
+  },
+  {
+    title: "Chess",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Chess.png",
+    description:
+      "Chess is a two player strategy board game played on a chessboard, a checkered game board with 64 squares arranged in an 8×8 grid. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/chess",
+    projectLink: "Projects/chess/index.html",
+  },
+  {
+    title: "Code Editor",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Code_Editor.png",
+    description:
+      "Code Editor is used to write and edit the source code of computer programs. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Code-editor",
+    projectLink: "Projects/Code-editor/index.html",
+  },
+  {
+    title: "Corona Tracker",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Corona_update.png",
+    description:
+      "Corona update is used to track the number of cases, deaths and recoveries of corona virus. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Corona-Tracker",
+    projectLink: "Projects/Corona-Tracker/index.html",
+  },
+  {
+    title: "Countify",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Countify.png",
+    description:
+      "Countify is used to count the number of words, characters in a paragraph. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/countify",
+    projectLink: "Projects/countify/index.html",
+  },
+  {
+    title: "Crypto Dashboard",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Crypto_dashboard.png",
+    description: "Crypto Dashboard is used to get get crypto related updates.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Crypto Dashboard",
+    projectLink: "Projects/Crypto Dashboard/index.html",
+  },
+  {
+    title: "DashBoard",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Dashboard.png",
+    description:
+      "DashBoard is used to display the status. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/dashboard",
+    projectLink: "Projects/dashboard/index.html",
+  },
+  {
+    title: "Day Planner",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Day_Planner.png",
+    description:
+      "Day Planner is used to plan the day. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Day Planner",
+    projectLink: "Projects/Day Planner/index.html",
+  },
+  {
+    title: "Dictionary",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Dictionary.png",
+    description:
+      "Dictionary is used to get the meaning of the word. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/dictionary",
+    projectLink: "Projects/dictionary/index.html",
+  },
+  {
+    title: "Dictionary WebApp",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Dictionary_WebApp.png",
+    description:
+      "It is a dictionary web app built using HTML, CSS and JavaScript. It uses the Oxford Dictionary API to fetch the meaning of the word.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Dictionary_WebApp",
+    projectLink: "Projects/Dictionary_WebApp/index.html",
+  },
+  {
+    title: "Digital Clock",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Digital_Clock.png",
+    description:
+      "Digital Clock is used to display the current time. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Digital Clock",
+    projectLink: "Projects/Digital Clock/index.html",
+  },
+  {
+    title: "Drawing App",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Drawing_App.png",
+    description:
+      "Drawing App is used to draw on the screen. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/DRAWING APP",
+    projectLink: "Projects/DRAWING APP/landing.html",
+  },
+  {
+    title: "Drink Water Reminder Application",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Drink_Water_Reminder.png",
+    description:
+      "Drink Water Reminder Application is used to remind the user to drink water after every fixed interval. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/DrinkWaterReminderApplication",
+    projectLink: "Projects/DrinkWaterReminderApplication/index.html",
+  },
+  {
+    title: "Dynamic JS Quiz",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Quiz.png",
+    description: "It is a quiz app built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Dynamic js Quiz",
+    projectLink: "Projects/Dynamic js Quiz/index.html",
+  },
+  {
+    title: "E-commerce Landing Page",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Ecommerce.png",
+    description:
+      "E commerce Landing page is used to display the products of the company. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/E-commerce Landing Page",
+    projectLink: "Projects/E-commerce Landing Page/index.html",
+  },
+  {
+    title: "Education Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Education_Website.png",
+    description:
+      "It is an education website built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Education Website",
+    projectLink: "Projects/Education Website/index.html",
+  },
+  {
+    title: "Emoji Rating",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Emoji_Rating.png",
+    description:
+      "Emoji Rating is used to rate the product. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Emoji Rating",
+    projectLink: "Projects/Emoji Rating/index.html",
+  },
+  {
+    title: "Expanding Card Design",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Expanding_Image.png",
+    description:
+      "Expanding Card Design is used to display the image in a bigger size. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Expanding Card Design",
+    projectLink: "Projects/Expanding Card Design/index.html",
+  },
+  {
+    title: "Expense Tracker",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Expense_Tracker.png",
+    description:
+      "Expense Tracker is used to track the expenses. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Expense Tracker",
+    projectLink: "Projects/Expense Tracker/index.html",
+  },
+  {
+    title: "EzyMath",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Ezy_math.png",
+    description:
+      "Ezy Math is a website that helps students to learn mathematics in a fun way. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/ezymath-main",
+    projectLink: "Projects/ezymath-main/index.html",
+  },
+  {
+    title: "FAQ Page",
+    tags: ["HTML", "CSS"],
+    img: "img/projects/FAQ.png",
+    description:
+      "It contains the frequently asked questions and their answers. It is built using HTML and CSS.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/FAQ Page",
+    projectLink: "Projects/FAQ Page/faq_page.html",
+  },
+  {
+    title: "Favicon Fetcher",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Favicon_Fetcher.png",
+    description:
+      "Favicon Fetcher is used to fetch the favicon of the website. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Favicon Fetcher",
+    projectLink: "Projects/Favicon Fetcher/index.html",
+  },
+  {
+    title: "Filters",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Filters.png",
+    description:
+      "Filters is used to filter the images based on the category. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Filters",
+    projectLink: "Projects/Filters/index.html",
+  },
+  {
+    title: "Fitness-website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/website.jpg",
+    description:
+      "The Fitness Website is alanding page , web application designed to help users learn and visualize various exercises for different muscle groups.It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Fitness-website",
+    projectLink: "Projects/Fitness-website/index.html",
+  },
+  {
+    title: "Github Profile Wrapper",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Github_Profile_Wrapper.png",
+    description:
+      "Github Profile Wrapper is used to display the github profile of the user. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Github Profile Wrapper",
+    projectLink: "Projects/Github Profile Wrapper/index.html",
+  },
+  {
+    title: "Gooey Cursor",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Goeey_Cursor.png",
+    description:
+      "Gooey Cursor is used to display the cursor in a different way. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Gooey Cursor",
+    projectLink: "Projects/Gooey Cursor/index.html",
+  },
+  {
+    title: "Google Clone",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Google_Clone.png",
+    description:
+      "Google Clone is a clone of the google search engine. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Google Clone",
+    projectLink: "Projects/Google Clone/index.html",
+  },
+  {
+    title: "Google Drive Clone",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Google_drive.png",
+    description:
+      "Google Drive Clone is a clone of the google drive. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Google Drive Clone",
+    projectLink: "Projects/Google Drive Clone/index.html",
+  },
+  {
+    title: "Gym-Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Gym_Website.png",
+    description:
+      "Gym Website is a website that displays the information about the gym. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Gym-Website",
+    projectLink: "Projects/Gym-Website/index.html",
+  },
+  {
+    title: "Hex Code Generator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Hexacode.png",
+    description:
+      "Hex Code Generator is used to generate the hex code of the color. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Hex Code Generator",
+    projectLink: "Projects/Hex Code Generator/index.html",
+  },
+  {
+    title: "Hidden Search",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Hidden_Search_Bar.png",
+    description:
+      "Hidden Search is used to display the search bar when the user clicks on the search icon. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Hidden Search",
+    projectLink: "Projects/Hidden Search/hidden_search.html",
+  },
+  {
+    title: "Hoolix-Digital Agency Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Digital_Agency_Website.png",
+    description:
+      "Digital Agency Website is a website that displays the information about the digital agency. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/hoolix-digital agency website",
+    projectLink: "Projects/hoolix-digital agency website/index.html",
+  },
+  {
+    title: "Image Editor",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Img_editor.png",
+    description:
+      "Image Editor is used to edit the image. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/image editor",
+    projectLink: "Projects/image editor/index.html",
+  },
+  {
+    title: "Image Slider",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Img_Slider.png",
+    description:
+      "Image Slider is used to display the images in a slider. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/image slider",
+    projectLink: "Projects/image slider/index.html",
+  },
+  {
+    title: "Jaguar Car Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Jaguar_Website.png",
+    description:
+      "It is a Jaguar Car Website built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Jaguar Car Website",
+    projectLink: "Projects/Jaguar Car Website/index.html",
+  },
+  {
+    title: "Jumble Word",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Jumble_Word.png",
+    description:
+      "Jumble Word is a game in which the user has to guess the word. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/JumbleWord",
+    projectLink: "Projects/JumbleWord/index.html",
+  },
+  {
+    title: "Language Translator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Language_Translator.png",
+    description:
+      "Language Translator is used to translate the text from one language to another. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Langugaetranslator",
+    projectLink: "Projects/Langugaetranslator/index.html",
+  },
+  {
+    title: "Loan Calculator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Loan_Calculator.png",
+    description:
+      "Loan Calculator is used to calculate the loan amount, interest and monthly payment. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Loan-calculator",
+    projectLink: "Projects/Loan-calculator/index.html",
+  },
+  {
+    title: "Lyrics Search",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Lyrics_Search.png",
+    description:
+      "Lyrics_Search is used to search the lyrics of the song. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Lyrics Search",
+    projectLink: "Projects/Lyrics Search/index.html",
+  },
+  {
+    title: "Magic Balls",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Magic_Ball.png",
+    description:
+      "Magic balls is a game in which the user has to ask YES/NO question. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Magic-balls",
+    projectLink: "Projects/Magic-balls/index.html",
+  },
+  {
+    title: "Meme Generator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Meme_generator.png",
+    description:
+      "Meme Generator is used to generate the memes. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Meme Generator",
+    projectLink: "Projects/Meme Generator/index.html",
+  },
+  {
+    title: "Memory Game",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Memeory_Game.png",
+    description:
+      "Memory Game is a game in which the user has to remember the colour. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Memory Game",
+    projectLink: "Projects/Memory Game/index.html",
+  },
+  {
+    title: "MixTape",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/MixTape.png",
+    description:
+      "Mix Tape is a music player built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Mixtape",
+    projectLink: "Projects/Mixtape/index.html",
+  },
+  {
+    title: "Modern Credit Card Form",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Modern_credit_Card.png",
+    description:
+      "Modern Credit Card Form is used to display the credit card form. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Modern credit Card form Webpage",
+    projectLink: "Projects/Modern credit Card form Webpage/index.html",
+  },
+  {
+    title: "MovieDataBase",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Movie_Database.png",
+    description:
+      "Movie Database is used to display the information about the movies. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Movie DataBase",
+    projectLink: "Projects/Movie DataBase/index.html",
+  },
+  {
+    title: "Music Player",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Music_Player.png",
+    description:
+      "Music Player is used to play the music. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Music Player",
+    projectLink: "Projects/Music Player/index.html",
+  },
+  {
+    title: "Music Player",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/musicPlayer.png",
+    description:
+      "Music Player is used to play the music. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/musicPlayer",
+    projectLink: "Projects/musicPlayer/index.html",
+  },
+  {
+    title: "Music Player",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Music_Player_using_JS.png",
+    description:
+      "Music Player is used to play the music. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/MusicPlayer using JavaScript",
+    projectLink: "Projects/MusicPlayer using JavaScript/index.html",
+  },
+  {
+    title: "Myntra Clone",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Myntra.png",
+    description:
+      "Myntra Clone is a clone of the Myntra website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/myntra-clone",
+    projectLink: "Projects/myntra-clone/index.html",
+  },
+  {
+    title: "Notes App",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Notes_App.png",
+    description:
+      "Notes App is used to take notes. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Notes App",
+    projectLink: "Projects/Notes App/index.html",
+  },
+  {
+    title: "Number_Guessing_Game",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Number_guessing.png",
+    description:
+      "Number Guessing Game is a game in which the user has to guess the number. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/number_guessing_game",
+    projectLink: "Projects/number_guessing_game/index.html",
+  },
+  {
+    title: "OTP Verification",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/OTP_Verification.png",
+    description:
+      "OTP Verification is used to verify the OTP. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/OTP Verification",
+    projectLink: "Projects/OTP Verification/home.html",
+  },
+  {
+    title: "Palindrome Checker",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Palindrome_Checker.png",
+    description:
+      "Palindrome Checker is used to check whether the word is palindrome or not. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/palindrome",
+    projectLink: "Projects/palindrome/palindrome.html",
+  },
+  {
+    title: "Password Generator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Password_Generator.png",
+    description:
+      "Password Generator is used to generate the password. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Password Generator",
+    projectLink: "Projects/Password Generator/index.html",
+  },
+  {
+    title: "PDF Merger",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/PDF_merger.png",
+    description:
+      "Pdf Merger is used to merge the pdf files. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/PdfMerger",
+    projectLink: "Projects/PdfMerger/index.html",
+  },
+  {
+    title: "PinCode Checker",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Pincode_checker.png",
+    description:
+      "PinCode Checker is used to check the pincode of the area. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Pincode checker",
+    projectLink: "Projects/Pincode checker/index.html",
+  },
+  {
+    title: "Ping-Pong",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Ping Pong.png",
+    description:
+      "Ping Pong is a game in which the user has to hit the ball. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Ping-Png",
+    projectLink: "Projects/Ping-Png/index.html",
+  },
+  {
+    title: "Prime Number Checker",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Prime_Number.png",
+    description:
+      "It is used to check number is odd or even. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/prime checker",
+    projectLink: "Projects/prime checker/prime.html",
+  },
+  {
+    title: "QR Code Generator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/QR_Code_Generator.png",
+    description:
+      "QR Code Generator is used to generate the QR Code of the text. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/QR Code Generator",
+    projectLink: "Projects/QR Code Generator/index.html",
+  },
+  {
+    title: "QR Code Reader",
+    tags: ["HTML", "CSS", "JavaScript", "Node Library"],
+    img: "img/projects/QR Code Reader.png",
+    description:
+      "The user can upload or either scan the QR Code from their device and the application provides the link of the QR Code scanned.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/QR Code Reader",
+    projectLink: "Projects/QR Code Reader/index.html",
+  },
+  {
+    title: "Reaction_App",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Reaction_Time_Test.png",
+    description:
+      "Reaction Time Test is a game in which the user has to click on the screen when the color changes. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Reaction_App",
+    projectLink: "Projects/Reaction_App/index.html",
+  },
+  {
+    title: "Recipe Finder",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Recipe_Finder.png",
+    description:
+      "Recipe Finder is used to find the recipe of the dish. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Recipe Finder",
+    projectLink: "Projects/Recipe Finder/index.html",
+  },
+  {
+    title: "Save Text as File",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Save_File.png",
+    description:
+      "Save Text as File is used to save the text as file of various formats. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Save Text as File",
+    projectLink: "Projects/Save Text as File/index.html",
+  },
+  {
+    title: "Screen Recorder",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Screen_recorder.png",
+    description:
+      "Screen Recorder is used to record the screen. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/screen recording website",
+    projectLink: "Projects/screen recording website/index.html",
+  },
+  {
+    title: "Shades - Business Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Shades.png",
+    description:
+      "Shades is a business website built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Shades",
+    projectLink: "Projects/Shades/index.html",
+  },
+  {
+    title: "SignIn Page",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/SignIn.png",
+    description: "It is a sign in page built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/SignIn Page",
+    projectLink: "Projects/SignIn Page/index.html",
+  },
+  {
+    title: "Sorting Visualizer",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Sorting_Visualizer.png",
+    description:
+      "Sorting Visualizer is used to visualize the sorting algorithms. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sorting Visualizer",
+    projectLink: "Projects/Sorting Visualizer/index.html",
+  },
+  {
+    title: "Space Tourism Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Space_Tour.png",
+    description:
+      "Space Tourism Website is a website that displays the information about the space tourism. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Space Tourism Website",
+    projectLink: "Projects/Space Tourism Website/index.html",
+  },
+  {
+    title: "Split landing Page",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Landing_Page.png",
+    description:
+      "Split Landing Page is used to display information about more than one thing. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Split Landing Page",
+    projectLink: "Projects/Split Landing Page/index.html",
+  },
+  {
+    title: "Spotify Clone",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Spotify_Clone.png",
+    description:
+      "Spotify Clone is a clone of the spotify website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Spotify Clone",
+    projectLink: "Projects/Spotify Clone/index.html",
+  },
+  {
+    title: "Step Progress Bar",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Step_Wise_Progress.png",
+    description:
+      "Step Progress Bar is used to display the progress of the steps. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/step-progress-bar",
+    projectLink: "Projects/step-progress-bar/index.html",
+  },
+  {
+    title: "Stone Paper Scissors",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Rock_Paper_Scissors.png",
+    description:
+      "Stone Paper Game is a game in which the user has to choose the stone, paper or scissor. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/stone paper game",
+    projectLink: "Projects/stone paper game/index.html",
+  },
+  {
+    title: "Stop Watch",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Stop_Watch.png",
+    description:
+      "Stop Watch is used to display the time. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/stopwatch",
+    projectLink: "Projects/stopwatch/Stopwatch.html",
+  },
+  {
+    title: "Student Enrollment Form",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Student_Enrollment_Form.png",
+    description:
+      "Student Enrollment Form is used to enroll the student. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Student Enrollment Form",
+    projectLink: "Projects/Student Enrollment Form/index.html",
+  },
+  {
+    title: "Student Service Portal",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Student_Service.png",
+    description:
+      "Student Service Portal is used to display the information about the services for student. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Student Service Portal",
+    projectLink: "Projects/Student Service Portal/index.html",
+  },
+  {
+    title: "Talking ChatBot",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Talking_ChatBot.png",
+    description:
+      "Talking ChatBot is used to chat with the bot. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Talking chatbot",
+    projectLink: "Projects/Talking chatbot/index.html",
+  },
+  {
+    title: "TaskList",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Day_Planner.png",
+    description:
+      "Task List is used to add the task. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/TaskList",
+    projectLink: "Projects/TaskList/index.html",
+  },
+  {
+    title: "Temperature Converter",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Temperature_Convertor.png",
+    description:
+      "Temperature Converter is used to convert the temperature from one unit to another. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Temperatureconvertor",
+    projectLink: "Projects/Temperatureconvertor/index.html",
+  },
+  {
+    title: "Text-Utils",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Text-utils.jpg",
+    description:
+      "Text Utils is used to perform various operations on the text. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Text-Utils",
+    projectLink: "Projects/Text-Utils/index.html",
+  },
+  {
+    title: "The Great DrumKit",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Drumkit.png",
+    description: "",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/The Great Drumkit",
+    projectLink: "Projects/The Great Drumkit/index.html",
+  },
+  {
+    title: "Snake, Water and Gun Game",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Snake_Water_Gun.png",
+    description:
+      "Snake, Water and Gun Game is a game in which the user has to choose the snake, water or gun. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/The Snake,Water and Gun Game",
+    projectLink: "Projects/The Snake,Water and Gun Game/index.html",
+  },
+  {
+    title: "Theme Switcher",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Switch_theme.png",
+    description: "",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Theme Switcher",
+    projectLink: "Projects/Theme Switcher/switch_theme.html",
+  },
+  {
+    title: "Tic Tac Toe Game",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Tic Tac Toe.png",
+    description:
+      "Tic Tac Toe Game is a game in which the user has to play with X's and O's. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/TIC-TAC-TOE PROJECT",
+    projectLink: "Projects/TIC-TAC-TOE PROJECT/index.html",
+  },
+  {
+    title: "Timer",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Stop_Watch (2).png",
+    description: "It is a timer built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Timer",
+    projectLink: "Projects/Timer/index.html",
+  },
+  {
+    title: "Tiny MCE",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Tiny_MCE.png",
+    description: "TinyMCE is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/TinyMCE synonym plugin",
+    projectLink: "Projects/TinyMCE synonym plugin/index.html",
+  },
+  {
+    title: "Tourism",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Tourism_Website.png",
+    description:
+      "Tourism is a website that displays the information about the tourism. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Tourism",
+    projectLink: "Projects/Tourism/index.html",
+  },
+  {
+    title: "Tripocity",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Tripocity.png",
+    description:
+      "Tripocity is a website that displays the information about the tourism. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Tripocity",
+    projectLink: "Projects/Tripocity/index.html",
+  },
+  {
+    title: "Truth Table Generator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Truth_Table.png",
+    description:
+      "Truth Table Generator is used to generate the truth table of the given expression. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/truth table generator",
+    projectLink: "Projects/truth table generator/index.html",
+  },
+  {
+    title: "Typing Speed Game",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Typing_speed.png",
+    description:
+      "Typing Speed Game is a game in which the user has to type the word and some parameters would be tested. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Typing Speed Game",
+    projectLink: "Projects/Typing Speed Game/index.html",
+  },
+  {
+    title: "Villa Hotel Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Villa.png",
+    description:
+      "Villa Hotel Website is a website that displays the information about the hotel. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Villa Hotel website",
+    projectLink: "Projects/Villa Hotel website/index.html",
+  },
+  {
+    title: "Virtual Keyboard",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Virtual_Keyboard.png",
+    description:
+      "Virtual Keyboard is used to type the text without mechanical keyboard. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Virtual Keyboard",
+    projectLink: "Projects/Virtual Keyboard/index.html",
+  },
+  {
+    title: "Visit Counter",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Visit_Counter.png",
+    description:
+      "Visit Counter is used to count the number of visitors on the website. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Visit Counter",
+    projectLink: "Projects/Visit Counter/index.html",
+  },
+  {
+    title: "Voyage Slider GSAP",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Voyage_Slider.png",
+    description:
+      "Voyage Slider GSAP is used to display the images in a slider. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Voyage Slider Gsap",
+    projectLink: "Projects/Voyage Slider Gsap/index.html",
+  },
+  {
+    title: "Weather",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Weather_Details.png",
+    description:
+      "Weather website is used to display the weather details of the city. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Weather",
+    projectLink: "Projects/Weather/index.html",
+  },
+  {
+    title: "Weight Convertor",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Weight_Convertor.png",
+    description:
+      "Weight Convertor is used to convert the weight from one unit to another. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Weight_converter",
+    projectLink: "Projects/Weight_converter/index.html",
+  },
+  {
+    title: "Whack A Mole",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Whack_A_Mole.png",
+    description:
+      "Whack a mole is a game in which the user has to hit the mole. It is built using HTML, CSS and JavaScript.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Whack-A-Mole",
+    projectLink: "Projects/Whack-A-Mole/index.html",
+  },
+  {
+    title: "WhiteBoard",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/WiteBoard.png",
+    description:
+      "White Board is used to draw on the screen. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/WhiteBoard",
+    projectLink: "Projects/WhiteBoard/index.html",
+  },
+  {
+    title: "Wikipedia",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Wikipedia.png",
+    description:
+      "Wikipedia is used to search the information about the topic. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Wikipedia",
+    projectLink: "Projects/Wikipedia/index.html",
+  },
+  {
+    title: "Windows 11",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Windows11.png",
+    description:
+      "Windows 11 is a clone of the windows 11. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/windows 11",
+    projectLink: "Projects/windows 11/index.html",
+  },
+  {
+    title: "Resume Creator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Resume_Creator.png",
+    description:
+      "This project uses Basic HTML, CSS, JavaScript to create a basic Resume Creator, where you can create your resume and most important download the created Resume.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Resume%20Creator",
+    projectLink: "Projects/Resume Creator/index.html",
+  },
+  {
+    title: "Realtime Currency Converter",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/CurrencyConverter.png",
+    description:
+      "This is a currency converter web application that fetches real-time data for currency conversion rates using HTML, CSS, and JavaScript. The application allows users to convert currencies by selecting the source currency and the target currency, and it provides an interface to easily switch between the two selected values.",
+    githublink: "https://github.com/Alkaison/Currency-Converter/",
+    projectLink: "Projects/Realtime%20Currency%20Converter/index.html",
+  },
+  {
+    title: "World Info Website",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/World_Info.png",
+    description:
+      "World Info Website is used to display the information about the world. It is built using html, css and javascript .",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/World Info Website",
+    projectLink: "Projects/World Info Website/index.html",
+  },
+  {
+    title: "Huffman Compressor",
+    tags: ["HTML", "CSS", "JavaScript", "C++"],
+    img: "img/projects/huffman.png",
+    description:
+      "Implemented the Huffman coding algorithm achieving efficient data compression without loss of information.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/HuffmanCompression",
+    projectLink: "Projects/HuffmanCompressor/index.html",
+  },
+  {
+    title: "Zomato Landing Page",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Zomato_Clone.png",
+    description:
+      "Zomato Landing Page is a clone of the zomato website. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Zomato-Landing-Page",
+    projectLink: "Projects/Zomato-Landing-Page/index.html",
+  },
+  {
+    title: "MESSI MANIA",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/MESSI MANIA.png",
+    description: "A simple fan made webpage of LIONEL MESSI",
+    githublink: "https://github.com/Soumyajit2825/MESSI_MANIA",
+    projectLink: "Projects/MESSI MANIA/index.html",
+  },
+  {
+    title: "Morse Code Convertor",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Morse_Code_Convertor.png",
+    description:
+      "This website can convert the morse code into the text and text into the morse code. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Morse%20Code%20Convertor",
+    projectLink: "Projects/Morse%20Code%20Convertor/index.html",
+  },
+  {
+    title: "Leap Years In A Range",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Leap_Years_In_A_Range.png",
+    description:
+      "This website can find the number of leap years in between the ranges and enlist all the leap years between the range of years. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Leap_Years_In_A_Range",
+    projectLink: "Projects/Leap_Years_In_A_Range/index.html",
+  },
+  {
+    title: "Guess The Gender By Name",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Guess_The_Gender.png",
+    description:
+      "This website can guess the gender just by entering the name of the person. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Guess%20The%20Gender%20By%20Name",
+    projectLink: "Projects/Guess%20The%20Gender%20By%20Name/index.html",
+  },
+  {
+    title: "Text-Utilities",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Text_Utils.png",
+    description:
+      "This website can be used to manipulate text in several ways such as change to uppercase or lowercase , and remove extra spaces etc.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Text-Utilities",
+    projectLink: "Projects/Text-Utilities/index.html",
+  },
+  {
+    title: "Playable Piano",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Playable_Piano.png",
+    description:
+      "This project is a beginner friendly and helpful who are new to frontend technology. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed even on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Playable_Piano",
+    projectLink: "Projects/Playable_Piano/index.html",
+  },
+  {
+    title: "Solar System Model",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Solar_System_Model.png",
+    description:
+      "Solar system model is the animated project using CSS. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device. Adding data of different solar bodies will makes this website more informative.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
+    projectLink: "Projects/Solar%20System%20Model/index.html",
+  },
+  {
+    title: "Solar System Model",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Solar_System_Model.png",
+    description:
+      "Solar system model is the animated project using CSS. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device. Adding data of different solar bodies will makes this website more informative.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Solar%20System%20Model",
+    projectLink: "Projects/Solar%20System%20Model/index.html",
+  },
+  {
+    title: "Sound Equalizer",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Sound_Equalizer.png",
+    description:
+      "Sound Equalizer is a clone of the sound equalizer system. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Sound_Equalizer",
+    projectLink: "Projects/Sound_Equalizer/index.html",
+  },
+  {
+    title: "Lorem Ipsum Generator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Lorem-Ipsum-Generator.png",
+    description:
+      "This project can generate random written paragraphs. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Lorem-Ipsum-Generator",
+    projectLink: "Projects/Lorem-Ipsum-Generator/index.html",
+  },
+  {
+    title: "Carbon FootPrint Calculator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/carbonFootCalc.png",
+    description:
+      "Carbon FootPrint Calculator is an Eco-Friendly Calculator to help you keep your carbon emissions in check and help save the environment, built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Carbon-FootPrint-Calc",
+    projectLink: "Projects/Carbon-FootPrint-Calc/index.html",
+  },
+  {
+    title: "Video Player",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Video_Player.png",
+    description:
+      "This website can be used to play videos. This application give the feeling of video gallery as of our mobile phone.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Video-Player",
+    projectLink: "Projects/Video-Player/index.html",
+  },
+  {
+    title: "Chatbot",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Chatbot.png",
+    description:
+      "This is a Chatbot Website you can ask your any doubts this provides solutions with the help of GPT fetched API.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Chatbot",
+    projectLink: "Projects/Chatbot/index.html",
+  },
+  {
+    title: "Random Meal Generator",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "img/projects/Random-Meal-Generator.png",
+    description:
+      "Random Meal Generator can generator different meals. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
+    githublink:
+      "https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Random-Meal-Generator",
+    projectLink: "Projects/Random-Meal-Generator/index.html",
+  },
+];
+
+export default projects;

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: none;
+}
+
+.WhyChooseSection {
+  background-color: #f8a92c;
+  height: 100%;
+}
+
+.TestimonialSection {
+  background-color: rgb(168, 210, 215);
+  height: 100%;
+}
+
+.BlogSection {
+  background-color: blueviolet;
+  height: 100%;
+}
+
+.footer {
+  background-color: pink;
+  height: 100%;
+}

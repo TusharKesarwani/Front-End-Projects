@@ -1,0 +1,85 @@
+.projectsCarousel {
+    background: linear-gradient(to right, #7a8cc9, #aec8e0);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.projectInfo {
+    background-color: #6b44a3;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projectInfo h3 {
+    font-size: 1.8rem;
+}
+
+.projectInfo p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.projectImage img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.carouselButton {
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carouselButton:hover {
+    background-color: #357ab8;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+    }
+    .projectImage img {
+        max-width: 100%;
+    }
+    .projectInfo h3 {
+        font-size: 1.5rem;
+    }
+    .projectInfo p {
+        font-size: 0.9rem;
+    }
+}
