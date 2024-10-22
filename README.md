@@ -1,6 +1,6 @@
 # Front-End-Projects
 ![Front-End-Projects](https://socialify.git.ci/TusharKesarwani/Front-End-Projects/image?description=1&descriptionEditable=A%20place%20for%20Developers&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
-
+<div>
 <p align="center">
   <a href="https://frontendprojects.netlify.app/">
     <img src="https://forthebadge.com/images/badges/check-it-out.svg">
@@ -10,6 +10,8 @@
 
 <div align="center">
  <p>
+ </div>
+ change is about adding div
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
