@@ -38,7 +38,7 @@
     <div id="progress">
         <i id="progress-value" class="fas fa-arrow-up"></i>
     </div>
-    
+
     <!-- Navigation Section -->
     <nav>
         <div>
@@ -48,7 +48,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="https://github.com/TusharKesarwani/Front-End-Projects" class="github-btn"><i class="fa-brands fa-github"></i> &nbsp; Goto GitHub Repository</a></li>
+                <li><a href="https://github.com/TusharKesarwani/Front-End-Projects" class="github-btn"><i
+                            class="fa-brands fa-github"></i> &nbsp; Goto GitHub Repository</a></li>
             </ul>
         </div>
     </nav>
@@ -60,12 +61,16 @@
         <div class="left">
             <div class="headings">
                 <h1>Front End<br>Projects</h1>
-                <p>A Repository where different types of Front - End Projects are present. If you have any front end project then you can contribute to this open source repository.</p>
+                <p>A Repository where different types of Front - End Projects are present. If you have any front end
+                    project then you can contribute to this open source repository.</p>
             </div>
-            <a href="https://github.com/TusharKesarwani/Front-End-Projects" class="github-btn-cta"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;Contribute Now&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/TusharKesarwani/Front-End-Projects" target="_blank" class="github-btn-cta">
+                <i class="fa-brands fa-github"></i>&nbsp;&nbsp;Contribute Now&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
         <div class="right">
-            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-4788760-3988051.png" alt="front-end coder">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-4788760-3988051.png"
+                alt="front-end coder">
         </div>
     </main>
 
@@ -78,7 +83,7 @@
                 <h1 class="title">Projects</h1>
             </div>
             <form id="searchForm">
-                <input id ="search" type="text" placeholder="Enter projects to search" />
+                <input id="search" type="text" placeholder="Enter projects to search" />
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
@@ -113,7 +118,9 @@
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d6de929348.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -122,27 +129,27 @@
     <script type="module" src="script.js"></script>
     <script>
         // Code for preloader starts
-    document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(fadeout, 2000);
-    // fadeout;
-});
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(fadeout, 2000);
+            // fadeout;
+        });
 
-function fadeout() {
-    let loadElement = document.getElementById("load");
-    if (loadElement) {
-        setTimeout(function() {
-            loadElement.style.opacity = 0;
-            setTimeout(function() {
-                loadElement.style.display = "none";
-                let notLoadedElements = document.querySelectorAll(".notLoaded");
-                notLoadedElements.forEach(function(element) {
-                    element.classList.remove("notLoaded");
-                });
-            }, 0); 
-        }, 0);
-    }
-}
-// code for preloader ends
+        function fadeout() {
+            let loadElement = document.getElementById("load");
+            if (loadElement) {
+                setTimeout(function () {
+                    loadElement.style.opacity = 0;
+                    setTimeout(function () {
+                        loadElement.style.display = "none";
+                        let notLoadedElements = document.querySelectorAll(".notLoaded");
+                        notLoadedElements.forEach(function (element) {
+                            element.classList.remove("notLoaded");
+                        });
+                    }, 0);
+                }, 0);
+            }
+        }
+        // code for preloader ends
     </script>
 </body>
 
