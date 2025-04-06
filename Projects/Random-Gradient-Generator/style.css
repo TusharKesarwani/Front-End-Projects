@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+    background-color: #222;
+  }
+  .gradient {
+    width: 100%;
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    font-size: 16px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #515151;
+    color: #fff;
+  }
+
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-container input[type="text"] {
+    width: 400px;
+    height: 4rem;
+    background-color: #717171;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50rem;
+    outline: none;
+  }
+
+  .input-container input[type="text"]:focus {
+    border-color: #222;
+  }
+
+  .copy-button {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .copy-button:hover {
+    background-color: #515151;
+  }
+  /* Media Query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .input-container input[type="text"] {
+      width: 90%; /* Adjusted width for smaller screens */
+    }
+  }
