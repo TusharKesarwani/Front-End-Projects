@@ -87,3 +87,12 @@ function rating(url_spec, book_no) {
       }
     });
 }
+
+// Improved the functionality by adding Enter button trigger
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("searchbar").addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      search_book();
+    }
+  });
+});

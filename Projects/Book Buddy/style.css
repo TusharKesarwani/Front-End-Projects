@@ -77,6 +77,8 @@ body {
   border: none;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
+  /* Change the button cursor to Pointer */
+  cursor: pointer;
 }
 
 #search:active {
