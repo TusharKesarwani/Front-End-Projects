@@ -63,7 +63,14 @@ body {
   margin-top: 30px;
   background-color: #f1ecec;
 }
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.button-container a:hover {
+  color: #d74946;
+}
 @media screen and (min-width: 768px) {
 
   .header,
