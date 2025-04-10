@@ -83,7 +83,7 @@
                     <h1 class="title">Projects</h1>
                 </div>
                 <form id="searchForm">
-                    <input id="search" type="text" placeholder="Enter projects to search" />
+                    <input id="search" type="text" placeholder="Search projects (Ctrl + K)" />
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
@@ -157,6 +157,19 @@
             }
             // code for preloader ends
         </script>
+        <script>
+            // Focus search input on Ctrl+K or Cmd+K
+            document.addEventListener("keydown", function (e) {
+                if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+                    e.preventDefault(); // Prevent browser's default search (if any)
+                    const searchInput = document.getElementById("search");
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
+                }
+            });
+        </script>
+        
     </body>
 
 </html>
