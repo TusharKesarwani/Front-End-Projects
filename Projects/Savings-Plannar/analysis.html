@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze My Savings</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://kit.fontawesome.com/37df75b44e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="analysis.css">
+</head>
+<body>
+    <h1 id="view">Due to large table columns and calendar This website only supports Desktop View</h1>
+    <div class="analysis-container">
+        <button id="back-button" title="Back to Home"><i class="fa-solid fa-house"></i></button>
+        <h1>My Savings Analysis</h1>
+        
+        <div class="chart-row">
+            <div class="chart-item">
+                <canvas id="monthly-pie-chart"></canvas>
+            </div>
+            <div class="chart-item">
+                <canvas id="yearly-pie-chart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-item">
+                <canvas id="savings-bar-chart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-item">
+                <canvas id="savings-line-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- Data Table Section -->
+        <div class="data-table">
+            <h2>Data Analysis Summary</h2>
+            <table id="savings-data-table" class="savings-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                        <th>Total Saving (Yearly)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically populated here -->
+                </tbody>
+            </table>                       
+        </div>
+
+        <button id="download-pdf" title="Download" class="downloadPdf"><i class="fa-solid fa-download"></i></button>
+    </div>
+    <script src="analysis.js"></script>
+</body>
+</html>
