@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoCommerce - Simple E-commerce Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-store text-2xl text-blue-600"></i>
+                <h1 class="text-2xl font-bold text-blue-600">NoCommerce</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Categories</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button id="search-btn" class="text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="cart-btn" class="relative text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </button>
+                <button class="md:hidden text-gray-600 hover:text-blue-600" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-md">
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Shop</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Categories</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+        
+        <!-- Search Bar -->
+        <div id="search-bar" class="hidden bg-white py-3 px-4 shadow-md">
+            <div class="container mx-auto flex">
+                <input type="text" placeholder="Search products..." class="flex-grow px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Welcome to NoCommerce</h2>
+            <p class="text-xl mb-8">The simplest way to shop online</p>
+            <button class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300">
+                Shop Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Shop by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+                    <div class="h-40 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-laptop text-5xl text-blue-600"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg">Electronics</h3>
+                        <p class="text-gray-600 text-sm">100+ products</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+                    <div class="h-40 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-tshirt text-5xl text-green-600"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg">Clothing</h3>
+                        <p class="text-gray-600 text-sm">200+ products</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+                    <div class="h-40 bg-yellow-100 flex items-center justify-center">
+                        <i class="fas fa-home text-5xl text-yellow-600"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg">Home & Garden</h3>
+                        <p class="text-gray-600 text-sm">150+ products</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+                    <div class="h-40 bg-red-100 flex items-center justify-center">
+                        <i class="fas fa-dumbbell text-5xl text-red-600"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg">Sports</h3>
+                        <p class="text-gray-600 text-sm">80+ products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold">Featured Products</h2>
+                <button class="text-blue-600 hover:underline">View All</button>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="products-container">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
+            <p class="mb-6 max-w-2xl mx-auto">Stay updated with our latest products and exclusive offers.</p>
+            <div class="flex max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-md text-gray-900 focus:outline-none">
+                <button class="bg-blue-800 px-6 py-3 rounded-r-md hover:bg-blue-900 transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-store mr-2"></i> NoCommerce
+                    </h3>
+                    <p class="text-gray-400">The simplest e-commerce platform for your shopping needs.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Customer Service</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">My Account</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Order Tracking</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Wishlist</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Commerce St, Digital City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@nocommerce.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 NoCommerce. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-4 h-full flex flex-col">
+            <div class="flex justify-between items-center border-b pb-4">
+                <h3 class="text-xl font-bold">Your Cart</h3>
+                <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="flex-grow overflow-y-auto py-4" id="cart-items">
+                <!-- Cart items will be loaded here -->
+                <div class="text-center text-gray-500 py-8" id="empty-cart-message">
+                    <i class="fas fa-shopping-cart text-4xl mb-4"></i>
+                    <p>Your cart is empty</p>
+                </div>
+            </div>
+            
+            <div class="border-t pt-4">
+                <div class="flex justify-between mb-2">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="flex justify-between mb-4 font-bold">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="cart-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
