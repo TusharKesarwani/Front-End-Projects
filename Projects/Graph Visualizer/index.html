@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualizer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Graph Visualizer</h1>
+        <p>Visualize your complex graph with ease!</p>
+    </div>
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Enter your graph data in the input area below:</li>
+            <ul>
+                <li>Each line represents a node or an edge in the graph.</li>
+                <li>To define a node, enter a single number.</li>
+                <li>To define an edge, enter two numbers separated by a space, representing the source and destination nodes.</li>
+                </pre>
+            </ul>
+            <li>As you make changes in the input area, the graph visualization will update automatically in real-time.</li>
+        </ol>
+    </div>
+    <div id="container">
+        <div id="input-panel">
+            <h2>Graph Input</h2>
+            <textarea id="input"></textarea>
+        </div>
+        <div id="output-panel">
+            <h2>Graph Output Visualization</h2>
+            <div id="svg-container">
+                <svg id="graph-svg"></svg>
+              </div>
+              <button id="download-btn">Download Graph</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2023 Graph Visualizer. All rights reserved.</p>
+    </div>
+</body>
+</html>

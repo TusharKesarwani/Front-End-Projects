@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+}
+
+#input-panel {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#input {
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+/* #output-panel {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+} */
+#output-panel {
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+#circles_canvas {
+    width: 100%;
+    height: 100%;
+    max-width: 800px; /* Set a maximum width if needed */
+    max-height: 600px; /* Set a maximum height if needed */
+    border: 1px solid green;
+}
+
+/* #circles_canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+
+#footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+#instructions {
+    /* max-width: 800px; */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+#submit {
+    margin-top: 10px;
+}
+
+#graph-svg {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+#svg-container {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  #download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #34ae3a;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  #download-btn:hover {
+    background-color: #45a049;
+  }

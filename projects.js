@@ -1100,6 +1100,14 @@ const projects = [
         "description":"Random Meal Generator can generator different meals. It is built using HTML, CSS and JavaScript. It is a responsive website that can be viewed on any device.",
         "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Random-Meal-Generator",
         "project-link":"Projects/Random-Meal-Generator/index.html"
+    },
+    {
+        "title": "Graph Visualizer",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "img": "img/projects/graphVisualizer.png",
+        "description": "Graph Visualizer is a tool to visualize complex graphs easily by entering nodes and edges as input. Built with HTML, CSS, and JavaScript, it updates the graph visualization in real-time and supports downloading the graph as a PNG image. The interface is clean and user-friendly.",
+        "github-link": "https://github.com/vivekxsh/graph_visualizer",
+        "project-link": "https://vivekxsh.github.io/graph_visualizer/",
     }
 ]
 
