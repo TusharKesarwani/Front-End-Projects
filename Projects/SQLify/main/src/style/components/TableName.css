@@ -1,0 +1,44 @@
+/* TableNameField.css */
+
+.table-name-field-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  max-width: 500px;
+}
+
+.table-name-field-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.table-name-input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.table-name-input:focus {
+  border-color: #40a9ff;
+  box-shadow: 0 0 5px rgba(64, 169, 255, 0.5);
+}
+
+.table-name-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

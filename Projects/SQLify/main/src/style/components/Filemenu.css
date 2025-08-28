@@ -1,0 +1,48 @@
+.file-menu {
+  border: none; /* niente bordo */
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: inline-block;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.menu-buttons {
+  display: flex;
+  gap: 20px; /* più spazio tra i pulsanti */
+  flex-wrap: wrap;
+}
+
+.menu-button {
+  border: none; /* niente bordo */
+  border-radius: 8px;
+  padding: 10px 20px; /* più spazio interno */
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* leggera profondità */
+}
+
+.menu-button:disabled:hover {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.menu-button:not(:disabled):hover,
+.menu-button:focus {
+  background-color: #1a73e8;
+  color: #ffffff;
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.menu-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}

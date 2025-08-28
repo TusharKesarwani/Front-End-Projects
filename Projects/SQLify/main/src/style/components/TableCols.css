@@ -1,0 +1,114 @@
+.table-cols-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.table-cols-title {
+  text-align: center;
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.columns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.column-item {
+  width: 100%;
+  max-width: 280px;
+}
+
+.column-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.column-label:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.column-label:has(.column-checkbox:checked) {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.column-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.column-name {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.include-text {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.column-label:has(.column-checkbox:checked) .column-name {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.column-label:has(.column-checkbox:checked) .include-text {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .table-cols-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .columns-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  
+  .table-cols-title {
+    font-size: 1.3rem;
+  }
+}

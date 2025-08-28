@@ -1,0 +1,31 @@
+/* App.css */
+
+/* Reset generale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo principale */
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #1a202c;
+}
+
+/* Link generali */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container principale app */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: inherit;
+}

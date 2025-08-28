@@ -1,0 +1,30 @@
+/* src/style/components/TextArea.css */
+
+.text-area {
+  display: block;
+  margin: 50px auto;          /* centra orizzontalmente e aggiunge margine sopra */
+  padding: 15px;
+  width: 80%;                 /* occupa l'80% della larghezza della finestra */
+  max-width: 800px;           /* larghezza massima */
+  min-width: 300px;           /* larghezza minima */
+  height: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  resize: vertical;           /* permette solo di ridimensionare verticalmente */
+}
+
+.text-area:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+  outline: none;
+}
+
+.sql-output {
+  /* eventuali stili specifici per le output SQL */
+  background-color: #f9f9f9;
+}
