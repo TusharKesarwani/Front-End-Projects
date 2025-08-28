@@ -1,0 +1,305 @@
+/* FromExcel.css */
+
+/* Container principale */
+.from-excel-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Main content wrapper */
+.from-excel-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header section */
+.from-excel-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  animation: slideInFromTop 0.8s ease-out;
+}
+
+.from-excel-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.from-excel-description {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-weight: 400;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main sections container */
+.from-excel-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card styling */
+.from-excel-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideInFromBottom 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.from-excel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 32px 64px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Staggered animations */
+.from-excel-card:nth-child(1) { animation-delay: 0.1s; }
+.from-excel-card:nth-child(2) { animation-delay: 0.2s; }
+.from-excel-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* File menu section */
+.filemenu-section {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.filemenu-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.filemenu-section:hover::before {
+  transform: translateX(100%);
+}
+
+.filemenu-section:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+}
+
+/* Text area section */
+.textarea-section {
+  padding: 0;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+/* Loading states */
+.from-excel-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.from-excel-loading::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 3px solid #e5e7eb;
+  border-top: 3px solid #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 0.75rem;
+}
+
+/* Success/Error notifications */
+.from-excel-notification {
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  animation: slideInFromRight 0.4s ease-out;
+}
+
+.from-excel-success {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.from-excel-error {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+/* Animations */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Focus states per accessibilità */
+.from-excel-card:focus-within {
+  outline: 3px solid #4f46e5;
+  outline-offset: 3px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .from-excel-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .from-excel-content {
+    padding: 3rem 2rem;
+  }
+  
+  .from-excel-card {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .from-excel-content {
+    padding: 1rem;
+  }
+  
+  .from-excel-header {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .from-excel-description {
+    font-size: 1rem;
+  }
+  
+  .from-excel-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .from-excel-card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .from-excel-sections {
+    gap: 1.5rem;
+  }
+}
+
+/* Dark mode support */
+
+
+/* Utility classes */
+.from-excel-fade-in {
+  animation: slideInFromBottom 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.from-excel-pulse {
+  animation: pulse 2s infinite;
+}
+
+.from-excel-hidden {
+  display: none;
+}
+
+.from-excel-visible {
+  display: block;
+}
+
+/* Print styles */
+@media print {
+  .from-excel-page {
+    background: white;
+    color: black;
+  }
+  
+  .from-excel-card {
+    background: white;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  .filemenu-section {
+    background: white;
+    color: black;
+  }
+}
