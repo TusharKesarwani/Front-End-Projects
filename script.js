@@ -71,11 +71,21 @@ searchForm.addEventListener("submit",(e) => {
     const searchText = document.getElementById("search");
     e.preventDefault();
     
-    if (searchText.value == (searchQuery ? searchQuery : "")) {
+    // Trim whitespace from input
+    const trimmedValue = searchText.value.trim();
+    
+    // Validate: reject blank or whitespace-only entries
+    if (trimmedValue === "") {
+        alert("Please enter a valid search query!");
+        return;
+    }
+    
+    // Check if search query is the same as current query
+    if (trimmedValue === (searchQuery ? searchQuery : "")) {
         return;
     }
 
-    window.location = `/index.html?s=${searchText.value}`;
+    window.location = `index.html?s=${encodeURIComponent(trimmedValue)}`;
 })
 
 // For contributors list
