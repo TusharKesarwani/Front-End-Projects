@@ -1,135 +1,149 @@
 import projects from "./projects.js";
 
 const urlParams = new URLSearchParams(window.location.search);
-const searchQuery = urlParams.get('s');
+const searchQuery = urlParams.get("s");
 
-let filteredProjects = (searchQuery && searchQuery != "") ? projects.filter((project) => project.title.toLowerCase().includes(searchQuery.toLowerCase())) : projects;
+let filteredProjects =
+  searchQuery && searchQuery != ""
+    ? projects.filter((project) =>
+        project.title.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : projects;
 
 // displaying filtered projects
-const projects_div = document.getElementsByClassName("projects")[0]
+const projects_div = document.getElementsByClassName("projects")[0];
 for (let project of filteredProjects) {
-    const project_div = document.createElement("div");
-    project_div.className="project";
+  const project_div = document.createElement("div");
+  project_div.className = "project";
 
-    const img = document.createElement("img")
-    img.src = project.img;
-    project_div.appendChild(img);
+  const img = document.createElement("img");
+  img.src = project.img;
+  // Performance & a11y: lazy-load grid images and add descriptive alt
+  img.loading = "lazy";
+  img.alt = project.title;
+  project_div.appendChild(img);
 
-    const project_info = document.createElement("div");
-    project_info.className = "project-info";
-    const heading = document.createElement("h2");
-    heading.innerHTML = project.title;
-    project_info.appendChild(heading);
-    
-    const row = document.createElement("div");
-    row.className="row";
-    const tech = document.createElement("tech");
-    tech.className="tech";
+  const project_info = document.createElement("div");
+  project_info.className = "project-info";
+  const heading = document.createElement("h2");
+  heading.innerHTML = project.title;
+  project_info.appendChild(heading);
 
-    for (let t of project.tags) {
-        const span = document.createElement("span");
-        span.innerHTML = t;
-        tech.appendChild(span);
-    }
+  const row = document.createElement("div");
+  row.className = "row";
+  const tech = document.createElement("tech");
+  tech.className = "tech";
 
-    row.appendChild(tech);
+  for (let t of project.tags) {
+    const span = document.createElement("span");
+    span.innerHTML = t;
+    tech.appendChild(span);
+  }
 
-    const links = document.createElement("div");
-    links.className = "links";
+  row.appendChild(tech);
 
-    const project_link = document.createElement("a");
-    project_link.href = project['project-link'];
-    project_link.innerHTML = `<i class="fa-solid fa-link"></i>`;
-    project_link.target="_blank"
-    links.appendChild(project_link);
+  const links = document.createElement("div");
+  links.className = "links";
 
-    const github_link = document.createElement("a");
-    github_link.href = project['github-link'];
-    github_link.innerHTML = `<i class="fa-brands fa-github"></i>`;
-    github_link.target="_blank"
-    links.appendChild(github_link);
+  const project_link = document.createElement("a");
+  project_link.href = project["project-link"];
+  project_link.innerHTML = `<i class="fa-solid fa-link"></i>`;
+  project_link.target = "_blank";
+  // Security & a11y: prevent opener leak and add label for icon-only link
+  project_link.rel = "noopener noreferrer";
+  project_link.setAttribute("aria-label", `${project.title} live demo`);
+  links.appendChild(project_link);
 
-    row.appendChild(links);
-    project_info.appendChild(row);
+  const github_link = document.createElement("a");
+  github_link.href = project["github-link"];
+  github_link.innerHTML = `<i class="fa-brands fa-github"></i>`;
+  github_link.target = "_blank";
+  // Security & a11y for icon-only link
+  github_link.rel = "noopener noreferrer";
+  github_link.setAttribute("aria-label", `${project.title} source on GitHub`);
+  links.appendChild(github_link);
 
-    const desc = document.createElement('p');
-    desc.className="description";
-    desc.innerHTML=project.description;
-    project_info.appendChild(desc);
+  row.appendChild(links);
+  project_info.appendChild(row);
 
-    project_div.appendChild(project_info);
-    projects_div.appendChild(project_div);
+  const desc = document.createElement("p");
+  desc.className = "description";
+  desc.innerHTML = project.description;
+  project_info.appendChild(desc);
+
+  project_div.appendChild(project_info);
+  projects_div.appendChild(project_div);
 }
 
 // For search query form
 
 if (searchQuery && searchQuery != "")
-    document.getElementById("search").value = searchQuery
+  document.getElementById("search").value = searchQuery;
 
 const searchForm = document.getElementById("searchForm");
-searchForm.addEventListener("submit",(e) => {
-    const searchText = document.getElementById("search");
-    e.preventDefault();
-    
-    if (searchText.value == (searchQuery ? searchQuery : "")) {
-        return;
-    }
+searchForm.addEventListener("submit", (e) => {
+  const searchText = document.getElementById("search");
+  e.preventDefault();
 
-    window.location = `/index.html?s=${searchText.value}`;
-})
+  if (searchText.value == (searchQuery ? searchQuery : "")) {
+    return;
+  }
+
+  window.location = `/index.html?s=${searchText.value}`;
+});
 
 // For contributors list
 
-fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contributors?per_page=50", {
-        headers: {
-            'Authorization': ''
-        }
-    }).then(response => response.json())
-    .then(data => {
-        // Extract the data for each contributor
-        const contributors = data.map(contributor => ({
-            username: contributor.login,
-            avatarUrl: contributor.avatar_url,
-            profileUrl: contributor.html_url
-        }));
+fetch(
+  "https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contributors?per_page=50",
+  {
+    headers: {
+      Authorization: "",
+    },
+  }
+)
+  .then((response) => response.json())
+  .then((data) => {
+    // Extract the data for each contributor
+    const contributors = data.map((contributor) => ({
+      username: contributor.login,
+      avatarUrl: contributor.avatar_url,
+      profileUrl: contributor.html_url,
+    }));
 
-        // Create and append HTML elements to display the contributors
-        const contributorsList = document.querySelector("#contributors-list");
-        contributors.forEach(contributor => {
-            const li = document.createElement("li");
-            li.innerHTML = `<a href="${contributor.profileUrl}"><img src="${contributor.avatarUrl}" alt="${contributor.username}"></a>`;
-            contributorsList.appendChild(li);
-        });
-       
+    // Create and append HTML elements to display the contributors
+    const contributorsList = document.querySelector("#contributors-list");
+    contributors.forEach((contributor) => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${contributor.profileUrl}"><img src="${contributor.avatarUrl}" alt="${contributor.username}"></a>`;
+      contributorsList.appendChild(li);
     });
+  });
 
-       //-----------for scrollbar button---------------
+//-----------for scrollbar button---------------
 
+function calculateScrollValue() {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
 
-       function calculateScrollValue(){
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
 
-        let scrollProgress=document.getElementById('progress');
-        let progressValue=document.getElementById('progress-value');
+  let scrollValue = Math.round((pos * 100) / calcHeight);
 
-        let pos=document.documentElement.scrollTop;
-        let calcHeight=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  // for hiding scrollbar button
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
 
-        let scrollValue=Math.round((pos*100)/calcHeight);
-
-        // for hiding scrollbar button
-        if(pos>100){
-            scrollProgress.style.display='grid';
-        }
-        else{
-            scrollProgress.style.display='none';
-        }
-
-
-        scrollProgress.addEventListener('click',()=>{
-            document.documentElement.scrollTop=0;
-        })
-       scrollProgress.style.background=`conic-gradient(#0D4360 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-      
-    }
-    window.onscroll=calculateScrollValue;
-    window.onload=calculateScrollValue;
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#0D4360 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+}
+window.onscroll = calculateScrollValue;
+window.onload = calculateScrollValue;
