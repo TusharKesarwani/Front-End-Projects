@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golu Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+
+      .navbar.scrolled {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px 50px;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #fff, #a8edea);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width 0.3s ease;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .particle {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        animation: float 6s infinite ease-in-out;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) translateX(0);
+        }
+        50% {
+          transform: translateY(-20px) translateX(20px);
+        }
+      }
+
+      .hero-content {
+        z-index: 1;
+        animation: fadeInUp 1s ease;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero h1 {
+        font-size: 64px;
+        margin-bottom: 20px;
+        background: linear-gradient(90deg, #fff, #a8edea);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hero p {
+        font-size: 24px;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+
+      .cta-button {
+        padding: 15px 40px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      .section {
+        min-height: 100vh;
+        padding: 100px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .about {
+        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+      }
+
+      .projects {
+        background: linear-gradient(135deg, #667eea 0%, #f093fb 100%);
+      }
+
+      .skills {
+        background: linear-gradient(135deg, #f093fb 0%, #667eea 100%);
+      }
+
+      .contact {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .container {
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: 48px;
+        margin-bottom: 50px;
+        text-align: center;
+        animation: fadeInUp 1s ease;
+      }
+
+      .about-content {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+      }
+
+      .about-text {
+        flex: 1;
+        font-size: 18px;
+        line-height: 1.8;
+      }
+
+      .about-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .profile-pic {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 120px;
+        margin: 0 auto;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        animation: pulse 3s infinite;
+      }
+
+      .GksPic {
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #fff;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .project-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .project-card h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .project-card p {
+        line-height: 1.6;
+        opacity: 0.9;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+      }
+
+      .skill-item {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .skill-item:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .skill-icon {
+        font-size: 48px;
+        margin-bottom: 15px;
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 0.2);
+        border-color: #fff;
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 150px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .social-links a {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 24px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+
+      .social-links a:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Golu</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="particles" id="particles"></div>
+      <div class="hero-content">
+        <h1>Hello, I'm Golu</h1>
+        <p>Not the buzz||Not the balance|| The mission</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate developer and designer with a love for creating
+              beautiful, functional experiences. With expertise in modern web
+              technologies, I bring ideas to life through clean code and
+              stunning visuals.
+            </p>
+            <br />
+            <p>
+              When I'm not coding, you'll find me exploring our home "The Milky
+              way 🌌🪐💫☄️", contributing drops in the ocean of humanity, or
+              sharing love with no reason.
+            </p>
+          </div>
+          <div class="about-image">
+            <div class="profile-pic">
+              <img class="GksPic" src="myavatar.jpg" alt="profile-pic" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>🚀 Project One</h3>
+            <p>
+              A cutting-edge web application built with modern frameworks,
+              featuring real-time updates and intuitive UI.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>💡 Project Two</h3>
+            <p>
+              An innovative solution that streamlines workflows and enhances
+              productivity through smart automation.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>🎨 Project Three</h3>
+            <p>
+              A creative portfolio showcasing stunning visuals and seamless
+              interactions for an immersive experience.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>⚡ Project Four</h3>
+            <p>
+              High-performance application optimized for speed and scalability,
+              handling thousands of requests.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>🌟 Project Five</h3>
+            <p>
+              Award-winning design that combines aesthetics with functionality
+              for an unforgettable user experience.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>🔥 Project Six</h3>
+            <p>
+              Revolutionary platform that connects people and ideas, fostering
+              collaboration and innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">💻</div>
+            <div>Web Development</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🎨</div>
+            <div>UI/UX Design</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">📱</div>
+            <div>Version Control</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">⚛</div>
+            <div>React</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🟢</div>
+            <div>Node.js</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🗄</div>
+            <div>Databases</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">☁</div>
+            <div>APIs</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🔧</div>
+            <div>DevOps</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+        <div class="social-links">
+          <a href="https://github.com/Golu-007" title="GitHub">🐙</a>
+          <a href="https://github.com/Ram77-code" title="GitHub">🐙</a>
+
+          <a
+            href="https://www.linkedin.com/in/anish-kumar-84136032a"
+            title="LinkedIn"
+            >💼</a
+          >
+          <a
+            href="https://www.linkedin.com/in/golu-kumar-9207183a2"
+            title="LinkedIn"
+            >💼</a
+          >
+
+          <a href="#" title="Twitter">🐦</a>
+          <a href="#" title="Instagram">📷</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Create floating particles
+      const particlesContainer = document.getElementById("particles");
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement("div");
+        particle.className = "particle";
+        particle.style.width = Math.random() * 5 + 2 + "px";
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + "%";
+        particle.style.top = Math.random() * 100 + "%";
+        particle.style.animationDelay = Math.random() * 6 + "s";
+        particle.style.animationDuration = Math.random() * 4 + 4 + "s";
+        particlesContainer.appendChild(particle);
+      }
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Form submission
+      document
+        .querySelector(".contact-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Thank you for your message! I'll get back to you soon.");
+          e.target.reset();
+        });
+
+      // Animate elements on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = "fadeInUp 1s ease forwards";
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".project-card, .skill-item").forEach((el) => {
+        el.style.opacity = "0";
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
