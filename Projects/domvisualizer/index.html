@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-left">
+        <span class="logo">&#9670; DOM Visualizer</span>
+        </div>
+        <div class="topbar-right">
+        <div class="search-wrap">
+            <span class="search-icon">&#128269;</span>
+            <input
+            id="searchInput"
+            type="text"
+            placeholder="Search by tag or .class…"
+            autocomplete="off"
+            spellcheck="false"
+            />
+            <button id="clearSearch" title="Clear">&#10005;</button>
+        </div>
+        <span id="matchCount" class="match-count"></span>
+        </div>
+    </header>
+  <main class="workspace">
+    <section class="panel preview-panel" id="previewPanel">
+      <div class="panel-header">
+        <span class="panel-title">&#9654; Preview</span>
+        <span class="panel-hint">Click element to inspect</span>
+      </div>
+      <div class="panel-body" id="previewBody">
+
+        <div id="sampleRoot" class="sample-root">
+
+          <header class="page-header">
+            <h1 class="site-title">Acme <span class="accent">Corp</span></h1>
+            <nav class="main-nav">
+              <a href="#" class="nav-link active">Home</a>
+              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">Services</a>
+              <a href="#" class="nav-link">Contact</a>
+            </nav>
+          </header>
+
+          <section class="hero">
+            <p class="hero-sub">Next-generation solutions</p>
+            <h2 class="hero-title">Build Something <em>Remarkable</em></h2>
+            <div class="cta-group">
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline">Learn More</button>
+            </div>
+          </section>
+
+          <section class="cards">
+            <article class="card">
+              <div class="card-icon">&#9728;</div>
+              <h3 class="card-title">Performance</h3>
+              <p class="card-body">Blazing fast with zero dependencies.</p>
+              <a href="#" class="card-link">Read more &rarr;</a>
+            </article>
+            <article class="card">
+              <div class="card-icon">&#9873;</div>
+              <h3 class="card-title">Scalability</h3>
+              <p class="card-body">Grows with your product seamlessly.</p>
+              <a href="#" class="card-link">Read more &rarr;</a>
+            </article>
+            <article class="card">
+              <div class="card-icon">&#128274;</div>
+              <h3 class="card-title">Security</h3>
+              <p class="card-body">Enterprise-grade protection built-in.</p>
+              <a href="#" class="card-link">Read more &rarr;</a>
+            </article>
+          </section>
+
+          <form class="contact-form" id="contactForm">
+            <h3 class="form-title">Contact Us</h3>
+            <div class="field-row">
+              <label class="field-label" for="nameInput">Name</label>
+              <input class="field-input" id="nameInput" type="text" placeholder="Jane Doe" />
+            </div>
+            <div class="field-row">
+              <label class="field-label" for="emailInput">Email</label>
+              <input class="field-input" id="emailInput" type="email" placeholder="jane@example.com" />
+            </div>
+            <div class="field-row">
+              <label class="field-label" for="msgInput">Message</label>
+              <textarea class="field-input" id="msgInput" rows="3" placeholder="Your message…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <footer class="page-footer">
+            <p>&copy; 2026 Acme Corp &mdash; <small>All rights reserved</small></p>
+          </footer>
+
+        </div>
+      </div>
+    </section>
+    
+    <section class="panel right-panel">
+
+      <div class="panel panel-tree" id="treePanel">
+        <div class="panel-header">
+          <span class="panel-title">&#11206; DOM Tree</span>
+          <div class="tree-actions">
+            <button id="expandAll" class="action-btn" title="Expand all">&#43;</button>
+            <button id="collapseAll" class="action-btn" title="Collapse all">&minus;</button>
+          </div>
+        </div>
+        <div class="panel-body" id="treeBody"></div>
+      </div>
+
+      <div class="panel panel-info" id="infoPanel">
+        <div class="panel-header">
+          <span class="panel-title">&#9432; Inspector</span>
+        </div>
+        <div class="panel-body" id="infoBody">
+          <p class="info-placeholder">Select an element to inspect it.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
