@@ -571,7 +571,7 @@ main .left p {
 }
 
 .project-section {
-	border: 1px rgb(185, 185, 185) solid;
+	border: 2px solid white;
 	background-color: rgb(255, 255, 255);
 	/* margin-left : .6rem;
   margin-right : .6rem; */
@@ -608,6 +608,10 @@ main .left p {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 2rem;
+	border: 1px solid #3d3d3d;
+	border-radius: 2rem;
+	padding: 1.2rem;
+	background-color: #0a3045;
 }
 
 .project-header {
@@ -673,8 +677,9 @@ main .left p {
 	align-items: center;
 	margin-top: 4rem;
 	background-color: #0d4360;
-	border-radius: 0.2rem;
+	border-radius: 1rem;
 	transition: all 0.5s ease;
+	border: 2px solid #888;
 }
 
 .project:hover {
@@ -686,8 +691,8 @@ main .left p {
 	width: 100%;
 	height: auto;
 	transition: all ease-in-out 0.2s;
-	border-top-left-radius: 0.2rem;
-	border-top-right-radius: 0.2rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
 }
 
 .project-info {
