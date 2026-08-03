@@ -4,7 +4,21 @@ const urlParams = new URLSearchParams(window.location.search);
 const searchQuery = urlParams.get('s');
 
 let filteredProjects = (searchQuery && searchQuery != "") ? projects.filter((project) => project.title.toLowerCase().includes(searchQuery.toLowerCase())) : projects;
+// for togling dark mode and light mode 
+const themeButton=document.getElementById("btn")
+const savedTheme=localStorage.getItem("theme")
+if(savedTheme==="dark"){
+    document.body.classList.add("dark-mode")
+    themeButton.textContent="☀️"
+}
+themeButton.addEventListener("click",()=>{
+    document.body.classList.toggle("dark-mode")
+    const darkModeEnabled=document.body.classList.contains("dark-mode")
 
+    themeButton.textContent=darkModeEnabled?"☀️":"🌙"
+    themeButton.setAttribute("aria-label", darkModeEnabled ? "Enable Light Mode" : "Enable Dark Mode");
+    localStorage.setItem("theme",darkModeEnabled?"dark":"light")
+})
 // displaying filtered projects
 const projects_div = document.getElementsByClassName("projects")[0]
 for (let project of filteredProjects) {

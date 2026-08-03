@@ -6,6 +6,26 @@
 	scroll-behavior: smooth;
 	box-sizing: border-box;
 }
+:root{
+	--background:#ffffff;
+	--surface:#ffffff;
+	--heading:#0d4360;
+	--text:#3d3d3d;
+}
+body.dark-mode{
+	--background: rgb(26, 21, 35);
+	--surface: rgb(37, 29, 51);
+	--heading: rgb(192, 132, 252);
+	--text: rgb(226, 217, 239);
+}
+.btn{
+	border: none;
+	background:transparent ;
+	color: white;
+	font-size: 1.3rem;
+	cursor:pointer;
+	margin-left:1rem;
+}
 
 /*  CSS preloader starts */
 
@@ -441,7 +461,9 @@ a {
 }
 
 body {
-	background-color: white;
+	background-color: var(--background);
+	color: var(--text);
+	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 #progress {
@@ -542,22 +564,24 @@ main .left .headings {
 	flex-direction: column;
 	gap: 1.5rem;
 }
-
+main .left h1, .title{
+	color: var(--heading);
+}
 main .left h1 {
 	font-size: 4rem;
-	color: #0d4360;
-	line-height: 100%;
+	color: var(--heading);
+	line-height: 1.2;
 }
 
 main .left p {
 	font-size: 0.8rem;
 	width: 90%;
-	color: #3d3d3d;
+	color: var(--text);
 }
 
 .github-btn-cta {
-	background-color: #0d4360;
-	color: white;
+	background-color: var(--heading);
+	color: var(--background);
 	padding: 0.6rem 1rem;
 	border-radius: 3rem;
 	width: 12.6rem;
@@ -572,7 +596,7 @@ main .left p {
 
 .project-section {
 	border: 1px rgb(185, 185, 185) solid;
-	background-color: rgb(255, 255, 255);
+	background-color: var(--surface);
 	/* margin-left : .6rem;
   margin-right : .6rem; */
 	/* margin: -2.5rem 8rem 6rem 8rem; */
