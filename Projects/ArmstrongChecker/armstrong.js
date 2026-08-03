@@ -1,44 +1,41 @@
-const textinput = document.querySelector(".text");
-console.log(textinput);
 const res = document.getElementById("demo");
 const checkbtn = document.getElementById("btn");
-function textfxn() {
-    res.innerHTML = "";
-    let text = document.getElementById("text").value;
-    let newtext = text.replace(/[^0-9]/g, '');
-    let alphatext = text.replace(/[0-9]/g, '');
-    console.log(newtext, alphatext);
+const input = document.getElementById("text");
 
-    if (newtext && !alphatext) {
-        checkbtn.style.opacity = "1";
-        document.getElementById("btn").addEventListener("click", check);
-        checkbtn.classList.add("buttonjs");
-    }
-    else {
-        alert("invalid input!")
-        checkbtn.style.opacity = "0.25";
-        checkbtn.classList.remove("buttonjs");
-        window.location.reload();
-        return;
-    }
-}
+// Clear message while typing
+input.addEventListener("input", () => {
+  res.textContent = "";
+  checkbtn.style.opacity = "1";
+  checkbtn.classList.add("buttonjs");
+});
 
-function check() {
-    let text = document.getElementById("text").value;
-    let newtext = text.replace(/[^0-9]/g, '');
-    const numberOfDigits = newtext.length;
-    let temp = newtext;
-    let sum = 0;
-    while (temp > 0) {
-        let remainder = temp % 10;
-        sum += remainder ** numberOfDigits;
-        temp = parseInt(temp / 10);
-    }
-    if (sum == newtext) {
-        res.innerHTML = (`${newtext} is an Armstrong number`);
-    }
-    else {
-        res.innerHTML = (`${newtext} is not an Armstrong number.`);
-    }
-}
-// });value;
+// Validate and check Armstrong number on click
+checkbtn.addEventListener("click", () => {
+  const text = input.value.trim();
+
+  // Empty or invalid input
+  if (!text || /[^0-9]/.test(text)) {
+    res.textContent = "⚠️ Please enter a valid positive number.";
+    res.style.color = "#f87171"; // red
+    return;
+  }
+
+  const num = Number(text);
+  const digits = text.length;
+  let temp = num;
+  let sum = 0;
+
+  while (temp > 0) {
+    const remainder = temp % 10;
+    sum += Math.pow(remainder, digits);
+    temp = Math.floor(temp / 10);
+  }
+
+  res.style.color = "#fff"; // reset color
+
+  if (sum === num) {
+    res.textContent = `${num} is an Armstrong number.`;
+  } else {
+    res.textContent = `${num} is not an Armstrong number.`;
+  }
+});
