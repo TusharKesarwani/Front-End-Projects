@@ -585,16 +585,25 @@ main .left p {
 	transition-duration: 0.5s;
 }
 
+.head {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .title {
 	color: #0d4360;
 	font-size: 3rem;
-	margin-top: -6rem;
+	position: absolute;
+	z-index: 2;
 }
 
 .bg-title {
 	font-size: 6rem;
 	color: rgb(234, 233, 233);
-	margin-left: -6rem;
+	position: relative;
+	z-index: 1;
 }
 
 @keyframes imgUp {
@@ -817,11 +826,9 @@ footer a {
 	}
 	.title {
 		font-size: 2.5rem;
-		margin-top: -5rem;
 	}
 	.bg-title {
 		font-size: 6rem;
-		margin-left: -4rem;
 	}
 	.projects {
 		margin: 4rem 1rem;
@@ -896,11 +903,9 @@ footer a {
 	}
 	.title {
 		font-size: 2rem;
-		margin-top: -3rem;
 	}
 	.bg-title {
 		font-size: 4rem;
-		margin-left: -2rem;
 	}
 	.projects {
 		margin-top: 1rem;
@@ -972,11 +977,9 @@ footer a {
 	}
 	.title {
 		font-size: 1.5rem;
-		margin-top: -2rem;
 	}
 	.bg-title {
 		font-size: 3rem;
-		margin-left: -1rem;
 	}
 	.projects {
 		margin: 0rem;
@@ -1004,3 +1007,96 @@ footer a {
 		padding: 2rem 1rem;
 	}
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+	background-color: #121212;
+	color: #ffffff;
+}
+
+body.dark-mode p {
+	color: #b3b3b3;
+}
+
+body.dark-mode nav {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .github-btn {
+	background-color: #2b2b2b;
+	color: #ffffff;
+}
+
+body.dark-mode .github-btn:hover {
+	background-color: #05f2c7;
+	color: #1a1a1a;
+}
+
+body.dark-mode .theme-btn:hover {
+	color: #05f2c7 !important;
+}
+
+body.dark-mode main .left h1 {
+	color: #ffffff;
+}
+
+body.dark-mode main .left p {
+	color: #b3b3b3;
+}
+
+body.dark-mode .github-btn-cta {
+	background-color: #1a1a1a;
+	border: 1px solid #05f2c7;
+	width: max-content;
+	padding: 0.6rem 1.5rem;
+}
+
+body.dark-mode .project-section {
+	background-color: #1a1a1a;
+	border-color: #333;
+}
+
+body.dark-mode .title {
+	color: #ffffff;
+}
+
+body.dark-mode .bg-title {
+	color: #2b2b2b;
+}
+
+body.dark-mode .project-header #searchForm {
+	border-color: #05f2c7;
+}
+
+body.dark-mode .project-header #search {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+body.dark-mode .project-header #search::placeholder {
+	color: #888;
+}
+
+body.dark-mode .project-header button {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+body.dark-mode .project {
+	background-color: #2b2b2b;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .project:hover {
+	box-shadow: 0 0 15px rgba(5, 242, 199, 0.2);
+}
+
+body.dark-mode .contributors {
+	background-color: #1a1a1a;
+	border-color: #333;
+}
+
+body.dark-mode .contributors .list-section {
+	background-color: #2b2b2b;
+}
+

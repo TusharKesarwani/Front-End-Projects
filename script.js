@@ -9,7 +9,7 @@ let filteredProjects = (searchQuery && searchQuery != "") ? projects.filter((pro
 const projects_div = document.getElementsByClassName("projects")[0]
 for (let project of filteredProjects) {
     const project_div = document.createElement("div");
-    project_div.className="project";
+    project_div.className = "project";
 
     const img = document.createElement("img")
     img.src = project.img;
@@ -20,11 +20,11 @@ for (let project of filteredProjects) {
     const heading = document.createElement("h2");
     heading.innerHTML = project.title;
     project_info.appendChild(heading);
-    
+
     const row = document.createElement("div");
-    row.className="row";
+    row.className = "row";
     const tech = document.createElement("tech");
-    tech.className="tech";
+    tech.className = "tech";
 
     for (let t of project.tags) {
         const span = document.createElement("span");
@@ -40,21 +40,21 @@ for (let project of filteredProjects) {
     const project_link = document.createElement("a");
     project_link.href = project['project-link'];
     project_link.innerHTML = `<i class="fa-solid fa-link"></i>`;
-    project_link.target="_blank"
+    project_link.target = "_blank"
     links.appendChild(project_link);
 
     const github_link = document.createElement("a");
     github_link.href = project['github-link'];
     github_link.innerHTML = `<i class="fa-brands fa-github"></i>`;
-    github_link.target="_blank"
+    github_link.target = "_blank"
     links.appendChild(github_link);
 
     row.appendChild(links);
     project_info.appendChild(row);
 
     const desc = document.createElement('p');
-    desc.className="description";
-    desc.innerHTML=project.description;
+    desc.className = "description";
+    desc.innerHTML = project.description;
     project_info.appendChild(desc);
 
     project_div.appendChild(project_info);
@@ -67,10 +67,10 @@ if (searchQuery && searchQuery != "")
     document.getElementById("search").value = searchQuery
 
 const searchForm = document.getElementById("searchForm");
-searchForm.addEventListener("submit",(e) => {
+searchForm.addEventListener("submit", (e) => {
     const searchText = document.getElementById("search");
     e.preventDefault();
-    
+
     if (searchText.value == (searchQuery ? searchQuery : "")) {
         return;
     }
@@ -81,10 +81,10 @@ searchForm.addEventListener("submit",(e) => {
 // For contributors list
 
 fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contributors?per_page=50", {
-        headers: {
-            'Authorization': ''
-        }
-    }).then(response => response.json())
+    headers: {
+        'Authorization': ''
+    }
+}).then(response => response.json())
     .then(data => {
         // Extract the data for each contributor
         const contributors = data.map(contributor => ({
@@ -100,36 +100,64 @@ fetch("https://api.github.com/repos/TusharKesarwani/Front-End-Projects/contribut
             li.innerHTML = `<a href="${contributor.profileUrl}"><img src="${contributor.avatarUrl}" alt="${contributor.username}"></a>`;
             contributorsList.appendChild(li);
         });
-       
+
     });
 
-       //-----------for scrollbar button---------------
+//-----------for scrollbar button---------------
 
 
-       function calculateScrollValue(){
+function calculateScrollValue() {
 
-        let scrollProgress=document.getElementById('progress');
-        let progressValue=document.getElementById('progress-value');
+    let scrollProgress = document.getElementById('progress');
+    let progressValue = document.getElementById('progress-value');
 
-        let pos=document.documentElement.scrollTop;
-        let calcHeight=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-        let scrollValue=Math.round((pos*100)/calcHeight);
+    let scrollValue = Math.round((pos * 100) / calcHeight);
 
-        // for hiding scrollbar button
-        if(pos>100){
-            scrollProgress.style.display='grid';
-        }
-        else{
-            scrollProgress.style.display='none';
-        }
-
-
-        scrollProgress.addEventListener('click',()=>{
-            document.documentElement.scrollTop=0;
-        })
-       scrollProgress.style.background=`conic-gradient(#0D4360 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-      
+    // for hiding scrollbar button
+    if (pos > 100) {
+        scrollProgress.style.display = 'grid';
     }
-    window.onscroll=calculateScrollValue;
-    window.onload=calculateScrollValue;
+    else {
+        scrollProgress.style.display = 'none';
+    }
+
+
+    scrollProgress.addEventListener('click', () => {
+        document.documentElement.scrollTop = 0;
+    })
+    scrollProgress.style.background = `conic-gradient(#0D4360 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+
+}
+window.onscroll = calculateScrollValue;
+window.onload = calculateScrollValue;
+
+// Dark Mode Toggle Logic
+const themeToggleBtn = document.getElementById("theme-toggle");
+if (themeToggleBtn) {
+    const body = document.body;
+    const icon = themeToggleBtn.querySelector("i");
+
+    // Check local storage for theme preference
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    }
+
+    themeToggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        } else {
+            localStorage.setItem("theme", "light");
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
+        }
+    });
+}
