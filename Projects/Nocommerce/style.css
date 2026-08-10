@@ -1,0 +1,21 @@
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.cart-item-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.cart-item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease-in;
+}
+.cart-item-exit {
+  opacity: 1;
+}
+.cart-item-exit-active {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 300ms ease-out;
+}

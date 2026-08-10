@@ -552,6 +552,14 @@ const projects = [
         "project-link":"Projects/myntra-clone/index.html"
     },
     {
+        "title":"Nocommerce",
+        "tags":["HTML","CSS","JavaScript"],
+        "img":"img/projects/NoCommerce.png",
+        "description":"E commerce Landing page is used to display the products of the company. It is built using html, css and javascript .",
+        "github-link":"https://github.com/TusharKesarwani/Front-End-Projects/tree/main/Projects/Nocommerce",
+        "project-link":"Projects/Nocommerce/index.html"
+    },
+    {
         "title":"Notes App",
         "tags":["HTML","CSS","JavaScript"],
         "img":"img/projects/Notes_App.png",
