@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PeerWave Voice Chat API</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 2vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #ff5e00;
+      margin-bottom: 2vh;
+    }
+
+    .section {
+      width: 90%;
+      max-width: 400px;
+      margin-bottom: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 3vh;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.149);
+    }
+
+    input[type="text"] {
+      padding: 2cqb;
+      margin-bottom: 10px;
+      width: 93%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 3vh;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.068);
+    }
+
+    button {
+      padding: 12px;
+      width: 100%;
+      background-color: #ff5e00;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 3vh;
+    }
+    button:hover {
+      background-color: #e74c00;
+    }
+
+    #push {
+      margin-top: 20px;
+      background-color: #ff5e00;
+      color: white;
+      font-size: 16px;
+      width: 40%;
+      height: 10%;
+      border-radius: 3vh;
+      border: none;
+      cursor: pointer;
+    }
+
+  
+  </style>
+</head>
+<body>
+
+  <h1>🔊 PeerWave Voice Chat</h1>
+
+  <div class="section">
+    <h3>Step 1: Connect</h3>
+    <input type="text" id="peer-id" value="arun" placeholder="Enter your ID">
+    <button onclick="clicked()">Connect</button>
+  </div>
+
+  <div class="section">
+    <h3>Step 2: Call</h3>
+    <input type="text" id="target-peerid" value="arun" placeholder="Enter target ID">
+    <button onclick="callclicked()">Call Peer</button>
+  </div>
+
+  <button class="button-mute" id="push" onclick="AllowVoice()">mute/unmute</button>
+
+  <!-- PeerJS CDN -->
+  <script src="https://unpkg.com/peerjs@1.5.5/dist/peerjs.min.js"></script>
+
+  <!-- PeerWave Library -->
+  <script src="https://arunmohankml.github.io/PeerWave-server/voice.js"></script>
+
+  <!-- Client Usage -->
+  <script src="client.js"></script>
+
+</body>
+</html>
