@@ -9,23 +9,24 @@ function textfxn() {
     let alphatext = text.replace(/[0-9]/g, '');
     console.log(newtext, alphatext);
 
-    if (newtext && !alphatext) {
-        checkbtn.style.opacity = "1";
-        document.getElementById("btn").addEventListener("click", check);
-        checkbtn.classList.add("buttonjs");
-    }
-    else {
+    checkbtn.style.opacity = "1";
+    document.getElementById("btn").addEventListener("click", check);
+    checkbtn.classList.add("buttonjs");
+}
+
+function check() {
+    let text = document.getElementById("text").value;
+    let newtext = text.replace(/[^0-9]/g, '');
+    let alphatext = text.replace(/[0-9]/g, '');
+
+    if (alphatext) {
         alert("invalid input!")
         checkbtn.style.opacity = "0.25";
         checkbtn.classList.remove("buttonjs");
         window.location.reload();
         return;
     }
-}
 
-function check() {
-    let text = document.getElementById("text").value;
-    let newtext = text.replace(/[^0-9]/g, '');
     const numberOfDigits = newtext.length;
     let temp = newtext;
     let sum = 0;
