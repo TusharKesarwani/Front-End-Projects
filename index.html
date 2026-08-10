@@ -10,19 +10,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="WpdMF3NaKepMJ5EE4qv_3tK5eKD_sWnUYk02Lc5EtXQ" />
         <title>Front-End Projects | Home Page</title>
-        <!--Main CSS-->
         <link rel="stylesheet" href="style.css">
-        <!--fontawesome-->
         <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-        <!--Animate.css--->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <!-- Favicon -->
         <link rel="icon" href="img/favicon.ico" type="image/png" />
     </head>
 
     <body class="notLoaded">
 
-        <!-- Preloader Animation -->
         <div id="load">
             <h1 class="loading-text">Loading...</h1>
             <div class="container">
@@ -34,30 +29,29 @@
             </div>
         </div>
 
-        <!-- scrollbar button -->
         <div id="progress">
             <i id="progress-value" class="fas fa-arrow-up"></i>
         </div>
 
-        <!-- Navigation Section -->
         <nav>
             <div>
                 <a href="index.html"><img src="img/LOGO.png" alt="logo"></a>
             </div>
-            <div>
+            <div class="nav-right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="https://github.com/TusharKesarwani/Front-End-Projects" class="github-btn"><i
                                 class="fa-brands fa-github"></i> &nbsp; Goto GitHub Repository</a></li>
                 </ul>
+                <button id="theme-toggle-btn" aria-label="Switch to dark mode" title="Switch to dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
             </div>
         </nav>
 
-        <!-- Body Section -->
         <main>
 
-            <!-- Hero -->
             <div class="left">
                 <div class="headings">
                     <h1>Front End<br>Projects</h1>
@@ -127,6 +121,8 @@
             AOS.init();
         </script>
         <script type="module" src="script.js"></script>
+        <!-- CHANGE: Load theme toggle script — added for dark/light mode feature -->
+        <script src="theme.js"></script>
         <script>
             // Code for preloader starts
             document.addEventListener( "DOMContentLoaded", function ()
