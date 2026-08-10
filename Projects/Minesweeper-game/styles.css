@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    margin: 20px 0 10px;
+  }
+  
+  #timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #game-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 0; 
+    margin: 20px auto;
+    background-color: #333;
+    padding: 0; 
+  }
+  
+  
+  .cell {
+    width: 30px; /* Adjust size to your preference */
+    height: 30px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+    background-color: #c0c0c0;
+  }
+  
+  .cell.revealed {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    cursor: default;
+  }
+  
+  .cell.mine img,
+  .cell.flag img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .cell.mine img,
+  .cell.flag img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cell.mine {
+    background-color: #ff4d4d;
+    animation: shake 0.5s;
+  }
+  
+  .cell.flag {
+    background-color: #f9e79f;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
