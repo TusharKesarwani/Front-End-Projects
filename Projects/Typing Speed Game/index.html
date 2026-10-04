@@ -1,43 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Speed Checker</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Theme">
+      <i class="fa-solid fa-moon" id="themeIcon"></i>
+    </button>
     <div class="wrapper">
-        <input type="text" class="input-field">
-        <div class="content-box">
-            <div class="typing-text">
-                <p></p>
-            </div>
-            <div class="content">
-                <ul class="result">
-                    <li class="time">
-                        <p>Time Left:</p>
-                        <span><b>60</b>s</span>
-                    </li>
-                    <li class="mistakes">
-                        <p>Mistakes:</p>
-                        <span>0</span>
-                    </li>
-                    <li class="wpm">
-                        <p>WPM:</p>
-                        <span>0</span>
-                    </li>
-                    <li class="cpm">
-                        <p>CPM:</p>
-                        <span>0</span>
-                    </li>
-                </ul>
-                <button>Try Again</button>
-            </div>
+      <input type="text" class="input-field" />
+      <div class="content-box">
+        <div class="time-options">
+          <button class="time-btn" data-time="30">30s</button>
+          <button class="time-btn active" data-time="60">60s</button>
+          <button class="time-btn" data-time="120">2m</button>
+          <button class="time-btn" data-time="300">5m</button>
+          <button class="time-btn" data-time="600">10m</button>
         </div>
+        <div class="content">
+          <ul class="result">
+            <li class="time">
+              <p>Time Left:</p>
+              <span><b>60</b> s</span>
+            </li>
+            <li class="mistakes">
+              <p>Mistakes:</p>
+              <span>0</span>
+            </li>
+            <li class="wpm">
+              <p>WPM:</p>
+              <span>0</span>
+            </li>
+            <li class="cpm">
+              <p>CPM:</p>
+              <span>0</span>
+            </li>
+          </ul>
+        </div>
+        <div class="typing-text">
+          <p class="typing-area"></p>
+        </div>
+        <div class="button-group">
+          <button class="try-again-btn">Try Again</button>
+          <button class="reset-btn">Reset</button>
+        </div>
+        <div class="shortcut-note">
+          <small>Try again: press <b>Tab</b> | Reset: press <b>Enter</b></small>
+        </div>
+      </div>
     </div>
     <script src="./js/paragraph.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
