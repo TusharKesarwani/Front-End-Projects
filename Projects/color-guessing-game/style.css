@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #143260;
+}
+
+.game-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 7px 4px 14px 2px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 7px 4px 14px 2px rgba(0,0,0,0.64);
+    -moz-box-shadow: 7px 4px 14px 2px rgba(0,0,0,0.64);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box-color {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.game-status {
+    margin-bottom: 10px;
+}
+
+.score {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+
+}
+
+.new-game-btn {
+    padding: 10px 20px;
+    background-color: #143260;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-game-button:hover {
+    background-color: #282C34;
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.color-option {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-option:hover {
+    transform: scale(1.05);
+}
+
+.game-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.game-status {
+    font-size: 1em;
+    margin: 8px 0;
+    min-height: 1.2em;
+}
+
+.score {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.new-game-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #143260;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.new-game-btn:hover {
+    background-color: #3d4147;
+}
+
+.correct-animation {
+    animation: celebrate 0.5s ease;
+}
+
+.wrong-animation {
+    animation: shake 0.5s ease;
+}
+
+@keyframes celebrate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
